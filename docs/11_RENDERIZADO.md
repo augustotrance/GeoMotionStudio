@@ -117,7 +117,7 @@ Posteriormente se describen el ciclo de renderizado, la actualización de la int
 
 Finalmente se establece su integración con el resto de la documentación arquitectónica del proyecto.
 
-
+---
 # CAPÍTULO 1 · Fundamentos de la Arquitectura de Renderizado
 
 ## 1.1 Objetivo
@@ -197,7 +197,7 @@ La Arquitectura de Renderizado proporciona el marco conceptual que regula la rep
 
 Sus principios garantizan una correspondencia consistente entre el estado de la aplicación y la interfaz de usuario, proporcionando una base sólida para construir un Frontend eficiente, mantenible y escalable.
 
-
+---
 # CAPÍTULO 2 · El Renderizado como Disciplina Arquitectónica
 
 ## 2.1 Objetivo
@@ -288,7 +288,7 @@ El renderizado representa el proceso mediante el cual la información administra
 
 Como disciplina arquitectónica, establece los principios que garantizan una representación consistente, eficiente y desacoplada del resto de las responsabilidades del Frontend.
 
-
+---
 # CAPÍTULO 3 · Principios del Renderizado
 
 ## 3.1 Objetivo
@@ -357,7 +357,7 @@ Los principios del renderizado establecen el marco conceptual que regula la repr
 
 La construcción de la interfaz basada en el estado, el determinismo, la actualización controlada, la independencia, la modularidad y la escalabilidad proporcionan una base sólida para el desarrollo y la evolución del Frontend.
 
-
+---
 # CAPÍTULO 4 · El Ciclo de Renderizado
 
 ## 4.1 Objetivo
@@ -462,7 +462,7 @@ El ciclo de renderizado representa el proceso continuo mediante el cual la infor
 
 La definición de sus etapas, la estabilidad del proceso y su independencia respecto de tecnologías concretas permiten construir una arquitectura sólida, preparada para evolucionar junto con el resto de la plataforma.
 
-
+---
 # CAPÍTULO 5 · Actualización de la Interfaz
 
 ## 5.1 Objetivo
@@ -545,7 +545,7 @@ La actualización de la interfaz constituye una consecuencia directa de la evolu
 
 La aplicación de principios como coherencia, selectividad, continuidad, predictibilidad y eficiencia garantiza una representación visual consistente, estable y preparada para acompañar el crecimiento continuo de GeoMotion Studio.
 
-
+---
 # CAPÍTULO 6 · Optimización Arquitectónica del Renderizado
 
 ## 6.1 Objetivo
@@ -628,7 +628,7 @@ La optimización del renderizado constituye una responsabilidad arquitectónica 
 
 La minimización del trabajo de representación, la localización de los cambios, la simplicidad arquitectónica y la independencia tecnológica permiten construir un Frontend preparado para evolucionar de forma sostenible.
 
-
+---
 # CAPÍTULO 7 · Relación entre el Estado y el Renderizado
 
 ## 7.1 Objetivo
@@ -721,7 +721,7 @@ La Arquitectura del Estado Global organiza la información; la Arquitectura de R
 
 La separación de responsabilidades, la utilización del estado como única fuente de verdad y la sincronización permanente entre ambas disciplinas constituyen la base sobre la que se construye la experiencia de usuario de GeoMotion Studio.
 
-
+---
 # CAPÍTULO 8 · Relación entre Componentes y Renderizado
 
 ## 8.1 Objetivo
@@ -852,7 +852,7 @@ La Arquitectura de Renderizado define cómo dicha estructura representa visualme
 
 La separación entre ambas responsabilidades favorece la reutilización, reduce el acoplamiento entre módulos y proporciona una base sólida para la evolución sostenible del Frontend.
 
-
+---
 # CAPÍTULO 9 · Renderizado y Experiencia de Usuario
 
 ## 9.1 Objetivo
@@ -955,7 +955,7 @@ La Arquitectura de Renderizado influye directamente en la calidad de la experien
 
 La continuidad, la estabilidad, la predictibilidad y la representación consistente de la información constituyen principios esenciales para ofrecer una experiencia de usuario profesional y sostenible a largo plazo.
 
-
+---
 # CAPÍTULO 10 · Evolución de la Arquitectura de Renderizado
 
 ## 10.1 Objetivo
@@ -1054,7 +1054,7 @@ La Arquitectura de Renderizado ha sido diseñada para evolucionar junto con GeoM
 
 Su adaptabilidad, escalabilidad, compatibilidad, independencia tecnológica y gobernanza permiten incorporar nuevas capacidades sin comprometer la estabilidad del modelo arquitectónico que sustenta la representación visual de la plataforma.
 
-
+---
 # CAPÍTULO 11 · Relación con la Arquitectura General
 
 ## 11.1 Objetivo
@@ -1147,7 +1147,7 @@ La Arquitectura de Renderizado se integra con el resto de las disciplinas del Fr
 
 Su colaboración con el Estado Global, la Arquitectura de Componentes, la Arquitectura Responsive y la Arquitectura de Layouts permite construir una representación visual consistente, desacoplada y alineada con los principios generales de GeoMotion Studio.
 
-
+---
 # CAPÍTULO 12 · Cierre
 
 ## 12.1 Síntesis

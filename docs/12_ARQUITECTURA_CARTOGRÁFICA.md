@@ -102,7 +102,7 @@ Posteriormente se describe el modelo territorial, la organización de la informa
 
 Finalmente se analiza la integración de esta arquitectura con el resto del sistema y los principios que permitirán su evolución futura.
 
-
+---
 # CAPÍTULO 1 · Fundamentos de la Arquitectura Cartográfica
 
 ## 1.1 Objetivo
@@ -190,7 +190,7 @@ La Arquitectura Cartográfica define los principios que permiten construir el Te
 
 Más que describir la representación del espacio geográfico, establece la arquitectura que hace posible comprender, organizar e interactuar con el territorio como parte integral de la plataforma.
 
-
+---
 # CAPÍTULO 2 · El Territorio Digital
 
 ## 2.1 Objetivo
@@ -343,7 +343,7 @@ El Principio de Inmersión Territorial establece que toda experiencia comienza m
 
 Esta concepción proporciona una arquitectura preparada para evolucionar, integrarse con el resto del sistema y ofrecer una experiencia territorial consistente en cualquier escenario de utilización.
 
-
+---
 # CAPÍTULO 3 · Modelo Territorial
 
 ## 3.1 Objetivo
@@ -572,7 +572,7 @@ Su función consiste en describir el territorio independientemente de la forma e
 
 Esta separación permite que todas las vistas de GeoMotion Studio compartan una única realidad territorial y que la plataforma pueda evolucionar sin depender de motores gráficos, formatos o soluciones tecnológicas particulares.
 
-
+---
 # CAPÍTULO 4 · Organización del Territorio
 
 ## 4.1 Objetivo
@@ -817,7 +817,7 @@ Su función consiste en facilitar la comprensión y el trabajo sin fragmentar el
 
 La navegación, la orientación y la persistencia del contexto deberán preservar una experiencia continua desde la vista global hasta el detalle operativo, tanto en la representación tridimensional principal como en las vistas especializadas.
 
-
+---
 # CAPÍTULO 5 · Información Territorial
 
 ## 5.1 Objetivo
@@ -1132,7 +1132,7 @@ La arquitectura deberá preservar su procedencia, calidad, vigencia y consistenc
 
 De esta manera, GeoMotion Studio podrá construir un territorio informado, comprensible y preparado para respaldar decisiones dentro de contextos operativos diversos.
 
-
+---
 # CAPÍTULO 6 · Representación del Territorio
 
 ## 6.1 Objetivo
@@ -1505,7 +1505,7 @@ La simbología, la jerarquía visual, la generalización, la visibilidad context
 
 De esta forma, GeoMotion Studio podrá evolucionar sus capacidades visuales sin comprometer la estabilidad conceptual del Territorio Digital.
 
-
+---
 # CAPÍTULO 7 · Interacción Territorial
 
 ## 7.1 Objetivo
@@ -1928,7 +1928,7 @@ La arquitectura deberá preservar la continuidad entre vistas, proporcionar retr
 
 De esta manera, GeoMotion Studio convierte el territorio en un espacio de trabajo coherente y no únicamente en una superficie de visualización.
 
-
+---
 # CAPÍTULO 8 · Integración Arquitectónica
 
 ## 8.1 Objetivo
@@ -2380,7 +2380,7 @@ La separación entre modelo, estado, representación e interacción permite cons
 
 De esta forma, GeoMotion Studio puede evolucionar como un sistema integrado donde todas las capacidades colaboran alrededor de una única realidad territorial.
 
-
+---
 # CAPÍTULO 9 · Evolución de la Arquitectura Territorial
 
 ## 9.1 Objetivo
@@ -2733,7 +2733,7 @@ La evolución deberá apoyarse en decisiones trazables, experimentación control
 
 De esta forma, GeoMotion Studio podrá incorporar nuevas capacidades sin fragmentar su identidad ni comprometer el conocimiento territorial construido a lo largo del tiempo.
 
-
+---
 # CAPÍTULO 10 · Gobierno de la Arquitectura Territorial
 
 ## 10.1 Objetivo
@@ -3043,6 +3043,7 @@ La revisión arquitectónica, la validación con usuarios y especialistas, la co
 
 De esta manera, la plataforma podrá innovar manteniendo una identidad territorial clara, estable y compartida.
 
+---
 # CAPÍTULO 11 · Cierre
 
 ## 11.1 Objetivo

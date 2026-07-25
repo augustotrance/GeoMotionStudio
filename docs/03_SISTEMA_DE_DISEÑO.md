@@ -101,7 +101,7 @@ En particular, mantiene una relación directa con:
 
 Los aspectos técnicos de implementación se documentarán posteriormente en documentos especializados, como los dedicados a layouts, componentes o renderizado de la interfaz.
 
-
+---
 # CAPÍTULO 1 · Filosofía del Diseño
 
 ## 1.1 Objetivo
@@ -242,7 +242,7 @@ La Filosofía del Diseño define los principios que orientan toda la experiencia
 
 Estos principios priorizan la claridad, la consistencia y el control del usuario, proporcionando una base sólida para la evolución del Sistema de Diseño y garantizando una experiencia coherente a lo largo del tiempo.
 
-
+---
 # CAPÍTULO 2 · Principios de Experiencia de Usuario (UX)
 
 ## 2.1 Objetivo
@@ -404,7 +404,7 @@ Los principios de Experiencia de Usuario establecen el marco que orientará toda
 
 Su aplicación sistemática permitirá construir una plataforma intuitiva, eficiente y preparada para evolucionar sin perder coherencia ni calidad de uso.
 
-
+---
 # CAPÍTULO 3 · Principios de Interfaz de Usuario (UI)
 
 ## 3.1 Objetivo
@@ -592,7 +592,7 @@ Los principios de Interfaz de Usuario definen el lenguaje visual de GeoMotion St
 
 Su aplicación permitirá construir una interfaz consistente, clara y profesional, preparada para evolucionar sin perder identidad ni afectar la experiencia de los usuarios.
 
-
+---
 # CAPÍTULO 4 · Sistema Visual
 
 ## 4.1 Objetivo
@@ -809,7 +809,7 @@ El Sistema Visual proporciona las reglas que permiten construir una interfaz coh
 
 Su aplicación sistemática garantizará que todos los componentes de GeoMotion Studio compartan un mismo lenguaje visual, facilitando tanto el desarrollo como la experiencia de usuario.
 
-
+---
 # CAPÍTULO 5 · Layout y Espacios de Trabajo
 
 ## 5.1 Objetivo
@@ -985,7 +985,7 @@ El sistema de layout define la organización espacial de GeoMotion Studio.
 
 Su objetivo es ofrecer una interfaz estable, flexible y centrada en el contenido, permitiendo que los usuarios adapten su espacio de trabajo sin perder coherencia ni eficiencia.
 
-
+---
 # CAPÍTULO 6 · Sistema de Componentes
 
 ## 6.1 Objetivo
@@ -1199,7 +1199,7 @@ El Sistema de Componentes proporciona el marco conceptual para construir una int
 
 Su aplicación permitirá desarrollar GeoMotion Studio mediante componentes independientes, fáciles de mantener y preparados para evolucionar de forma controlada.
 
-
+---
 # CAPÍTULO 7 · Estados e Interacciones
 
 ## 7.1 Objetivo
@@ -1390,7 +1390,7 @@ El sistema de estados e interacciones establece el comportamiento común que deb
 
 Su aplicación permitirá construir una interfaz coherente, predecible y orientada a ofrecer una experiencia de trabajo fluida, reduciendo la incertidumbre y facilitando la interacción con la plataforma.
 
-
+---
 # CAPÍTULO 8 · Accesibilidad
 
 ## 8.1 Objetivo
@@ -1576,7 +1576,7 @@ La accesibilidad forma parte de la calidad intrínseca de GeoMotion Studio.
 
 La aplicación de estos principios permitirá construir una plataforma más inclusiva, robusta y preparada para responder a las necesidades de una comunidad diversa de usuarios, manteniendo al mismo tiempo una experiencia coherente y profesional.
 
-
+---
 # CAPÍTULO 9 · Responsive y Adaptabilidad
 
 ## 9.1 Objetivo
@@ -1743,7 +1743,7 @@ El sistema de Responsive y Adaptabilidad garantiza que GeoMotion Studio pueda of
 
 La interfaz deberá reorganizarse de forma inteligente, priorizando siempre el contenido, la continuidad del flujo de trabajo y la productividad del usuario.
 
-
+---
 # CAPÍTULO 10 · Evolución del Sistema de Diseño
 
 ## 10.1 Objetivo
@@ -1883,7 +1883,7 @@ La evolución del Sistema de Diseño constituye un proceso permanente orientado 
 
 La aplicación sistemática de estos principios permitirá que la plataforma evolucione de forma ordenada, manteniendo una identidad sólida y una experiencia de usuario consistente a lo largo del tiempo.
 
-
+---
 # CAPÍTULO 11 · Conclusiones
 
 ## 11.1 El Sistema de Diseño como activo estratégico

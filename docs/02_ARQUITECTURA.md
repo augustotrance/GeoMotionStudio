@@ -380,7 +380,7 @@ Planifica la evolución del proyecto.
 
 Todos estos documentos deberán evolucionar de forma coordinada.
 
-
+---
 # CAPÍTULO 1 · Visión General de la Arquitectura
 
 ## 1.1 Objetivo
@@ -610,7 +610,7 @@ Esta organización busca equilibrar simplicidad, flexibilidad y capacidad de evo
 
 Los capítulos siguientes desarrollarán en detalle cada una de las capas, sistemas y principios aquí presentados.
 
-
+---
 # CAPÍTULO 2 · Modelo Arquitectónico
 
 ## 2.1 Objetivo
@@ -805,7 +805,7 @@ La organización propuesta favorece el bajo acoplamiento, la alta cohesión y la
 
 Este modelo servirá como base para definir, en los capítulos siguientes, la estructura del repositorio, los módulos del sistema y las reglas de comunicación entre ellos.
 
-
+---
 # CAPÍTULO 3 · Organización del Monorepo
 
 ## 3.1 Objetivo
@@ -1083,7 +1083,7 @@ La organización propuesta favorece la reutilización del código, la separació
 
 Todos los desarrollos futuros deberán respetar esta estructura para mantener la coherencia arquitectónica del sistema.
 
-
+---
 # CAPÍTULO 4 · Organización Interna de las Aplicaciones
 
 ## 4.1 Objetivo
@@ -1355,7 +1355,7 @@ La organización interna de las aplicaciones refleja la arquitectura funcional d
 
 La separación entre layouts, features, componentes reutilizables, servicios y utilidades proporciona una base sólida para el crecimiento de GeoMotion Studio y facilita el desarrollo colaborativo.
 
-
+---
 # CAPÍTULO 5 · Sistema de Proyectos
 
 ## 5.1 Objetivo
@@ -1561,7 +1561,7 @@ El Sistema de Proyectos constituye el núcleo lógico de GeoMotion Studio.
 
 Su responsabilidad es coordinar el ciclo de vida de los proyectos, garantizar la integridad de la información y servir como punto de integración entre los distintos sistemas funcionales de la plataforma.
 
-
+---
 # CAPÍTULO 6 · Sistema de Escenas
 
 ## 6.1 Objetivo
@@ -1751,7 +1751,7 @@ Cada escena constituye un espacio de trabajo autónomo que coordina múltiples s
 
 Esta organización proporciona flexibilidad, reutilización y una base sólida para proyectos de cualquier complejidad.
 
-
+---
 # CAPÍTULO 7 · Sistema Cartográfico
 
 ## 7.1 Objetivo
@@ -1940,7 +1940,7 @@ El Sistema Cartográfico proporciona el contexto geográfico sobre el cual opera
 
 Su responsabilidad es ofrecer una representación precisa, eficiente y extensible del entorno terrestre, permitiendo que el resto de los sistemas se concentren en sus propias responsabilidades sin implementar lógica cartográfica.
 
-
+---
 # CAPÍTULO 8 · Sistema de Objetos
 
 ## 8.1 Objetivo
@@ -2173,7 +2173,7 @@ El Sistema de Objetos administra todas las entidades presentes en una escena.
 
 Su diseño separa claramente los recursos físicos de sus instancias, proporcionando una arquitectura eficiente, escalable y preparada para proyectos de gran complejidad.
 
-
+---
 # CAPÍTULO 9 · Sistema de Assets
 
 ## 9.1 Objetivo
@@ -2394,7 +2394,7 @@ El Sistema de Assets constituye el repositorio central de recursos de GeoMotion 
 
 Su diseño garantiza la reutilización, la integridad de los datos y un uso eficiente de la memoria, permitiendo que los proyectos crezcan sin duplicar innecesariamente la información.
 
-
+---
 # CAPÍTULO 10 · Sistema de Timeline
 
 ## 10.1 Objetivo
@@ -2581,7 +2581,7 @@ El Sistema de Timeline constituye el eje temporal de GeoMotion Studio.
 
 Su diseño garantiza una gestión coherente del tiempo, facilita la edición de animaciones complejas y proporciona una base sólida para la reproducción y exportación de proyectos audiovisuales.
 
-
+---
 # CAPÍTULO 11 · Sistema de Render
 
 ## 11.1 Objetivo
@@ -2777,7 +2777,7 @@ El Sistema de Render transforma el estado lógico del proyecto en una representa
 
 Su diseño desacoplado favorece el rendimiento, la mantenibilidad y la evolución futura del motor gráfico, permitiendo incorporar nuevas capacidades sin alterar el resto de la arquitectura.
 
-
+---
 # CAPÍTULO 12 · Sistema de Exportación
 
 ## 12.1 Objetivo
@@ -2989,7 +2989,7 @@ El Sistema de Exportación constituye la etapa final del flujo de trabajo de Geo
 
 Su diseño modular permite incorporar nuevos formatos de salida, mantener la integridad del proyecto y ofrecer procesos de exportación robustos, reproducibles y escalables.
 
-
+---
 # CAPÍTULO 13 · Sistema de Eventos
 
 ## 13.1 Objetivo
@@ -3192,7 +3192,7 @@ El Sistema de Eventos proporciona un mecanismo flexible y desacoplado para la co
 
 Su incorporación favorece la escalabilidad de la arquitectura y simplifica la evolución del proyecto al reducir las dependencias entre los distintos sistemas funcionales.
 
-
+---
 # CAPÍTULO 14 · Sistema de Gestión del Estado
 
 ## 14.1 Objetivo
@@ -3419,7 +3419,7 @@ El Sistema de Gestión del Estado proporciona una organización clara, consisten
 
 La separación entre estado global, estado de dominio, estado de interfaz y estado temporal permite mantener una arquitectura modular, preparada para crecer sin perder coherencia.
 
-
+---
 # CAPÍTULO 15 · Sistema de Persistencia
 
 ## 15.1 Objetivo
@@ -3619,7 +3619,7 @@ El Sistema de Persistencia garantiza que los proyectos puedan almacenarse, recup
 
 Su diseño modular facilita la incorporación de nuevas funcionalidades y reduce el impacto de los cambios sobre el formato de almacenamiento.
 
-
+---
 # CAPÍTULO 16 · Sistema de Plugins
 
 ## 16.1 Objetivo
@@ -3840,7 +3840,7 @@ El Sistema de Plugins proporciona un mecanismo seguro y escalable para ampliar l
 
 Su diseño favorece la evolución de la plataforma, la colaboración con terceros y la creación de un ecosistema de extensiones sin comprometer la estabilidad del núcleo.
 
-
+---
 # CAPÍTULO 17 · APIs Internas
 
 ## 17.1 Objetivo
@@ -4020,7 +4020,7 @@ Las APIs Internas constituyen el contrato de comunicación entre los distintos s
 
 Su correcta definición garantiza una arquitectura modular, mantenible y preparada para evolucionar durante todo el ciclo de vida del proyecto.
 
-
+---
 # CAPÍTULO 18 · Seguridad y Robustez
 
 ## 18.1 Objetivo
@@ -4186,7 +4186,7 @@ La Seguridad y Robustez representan un conjunto de principios transversales dest
 
 Su aplicación sistemática permitirá construir una plataforma preparada para proyectos profesionales y para evolucionar de forma segura a lo largo del tiempo.
 
-
+---
 # CAPÍTULO 19 · Testing y Calidad del Software
 
 ## 19.1 Objetivo
@@ -4396,7 +4396,7 @@ La estrategia de calidad de GeoMotion Studio combina pruebas automatizadas, vali
 
 El objetivo no es únicamente detectar errores, sino prevenir su aparición y preservar la arquitectura definida para la plataforma.
 
-
+---
 # CAPÍTULO 20 · Rendimiento y Escalabilidad
 
 ## 20.1 Objetivo
@@ -4579,7 +4579,7 @@ La arquitectura de GeoMotion Studio incorpora desde su diseño principios orient
 
 Este enfoque permitirá afrontar proyectos cada vez más complejos manteniendo una experiencia de usuario estable y una base técnica preparada para evolucionar.
 
-
+---
 # CAPÍTULO 21 · Convenciones de Desarrollo
 
 ## 21.1 Objetivo
@@ -4767,7 +4767,7 @@ Las convenciones de desarrollo proporcionan un marco común para la construcció
 
 Su aplicación sistemática favorecerá la legibilidad, mantenibilidad y escalabilidad del proyecto, permitiendo que múltiples desarrolladores colaboren de forma consistente sobre una misma base de código.
 
-
+---
 # CAPÍTULO 22 · Evolución de la Arquitectura
 
 ## 22.1 Objetivo
@@ -4961,7 +4961,7 @@ La arquitectura de GeoMotion Studio está concebida para evolucionar a lo largo 
 
 Su crecimiento se basará en decisiones fundamentadas, documentación actualizada y una mejora continua que preserve la coherencia del sistema sin limitar su capacidad de adaptación.
 
-
+---
 # CAPÍTULO 23 · Conclusiones y Visión a Largo Plazo
 
 ## 23.1 La arquitectura como fundamento

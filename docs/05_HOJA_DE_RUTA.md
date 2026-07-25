@@ -89,7 +89,7 @@ Su contenido se relaciona especialmente con:
 - **06_CONSTITUCIÓN_DEL_PROYECTO.md**, donde se formalizan las normas que regulan el funcionamiento del proyecto.
 - **15_BITÁCORA_DE_DESARROLLO.md**, que registra la evolución real del desarrollo y las decisiones adoptadas.
 
-
+---
 # CAPÍTULO 1 · Visión Estratégica
 
 ## 1.1 Objetivo
@@ -189,7 +189,7 @@ La visión estratégica establece la dirección que guiará la evolución de Geo
 
 Su propósito es asegurar que todas las decisiones de planificación contribuyan al crecimiento ordenado, sostenible y coherente del proyecto.
 
-
+---
 # CAPÍTULO 2 · Principios de Planificación
 
 ## 2.1 Objetivo
@@ -300,7 +300,7 @@ Los principios de planificación proporcionan el marco necesario para organizar 
 
 Su aplicación permitirá adaptar la evolución del proyecto sin perder coherencia con su visión estratégica.
 
-
+---
 # CAPÍTULO 3 · Ciclo de Vida del Proyecto
 
 ## 3.1 Objetivo
@@ -382,7 +382,7 @@ La experiencia acumulada permitirá optimizar progresivamente los procesos de de
 
 El ciclo de vida define el marco general que guía la evolución de GeoMotion Studio, promoviendo un desarrollo continuo, incremental y orientado a la mejora permanente.
 
-
+---
 # CAPÍTULO 4 · Fases de Desarrollo
 
 ## 4.1 Objetivo
@@ -473,7 +473,7 @@ La transición entre fases deberá realizarse únicamente cuando los objetivos d
 
 Las fases de desarrollo proporcionan una estructura ordenada para organizar el crecimiento de GeoMotion Studio, permitiendo evolucionar el producto de forma controlada y sostenible.
 
-
+---
 # CAPÍTULO 5 · Niveles de Madurez del Producto
 
 ## 5.1 Objetivo
@@ -686,7 +686,7 @@ El crecimiento sostenible no depende de desarrollar más funcionalidades, sino d
 
 Cada nuevo nivel representa una ampliación responsable de las capacidades del sistema y un compromiso permanente con la estabilidad, la mantenibilidad y la evolución a largo plazo.
 
-
+---
 # CAPÍTULO 6 · Priorización de Funcionalidades
 
 ## 6.1 Objetivo
@@ -861,7 +861,7 @@ La priorización de funcionalidades constituye un proceso estratégico orientado
 
 Las decisiones deberán favorecer la consolidación progresiva de GeoMotion Studio, garantizando que el crecimiento funcional se produzca sobre una base técnica suficientemente estable y preparada para evolucionar durante muchos años.
 
-
+---
 # CAPÍTULO 7 · Gestión de Entregas
 
 ## 7.1 Objetivo
@@ -1002,7 +1002,7 @@ Las entregas representan mucho más que la publicación de nuevas versiones.
 
 Constituyen el mecanismo mediante el cual GeoMotion Studio consolida su evolución, incrementa su nivel de madurez y garantiza que cada avance quede respaldado por una arquitectura estable, una documentación consistente y un producto preparado para afrontar los desafíos de las siguientes etapas de desarrollo.
 
-
+---
 # CAPÍTULO 8 · Gestión de Riesgos
 
 ## 8.1 Objetivo
@@ -1193,7 +1193,7 @@ La gestión de riesgos constituye un mecanismo esencial para preservar la estabi
 
 Su propósito no consiste únicamente en evitar problemas, sino en garantizar que cada decisión contribuya a fortalecer progresivamente la calidad, la arquitectura y la madurez del producto.
 
-
+---
 # CAPÍTULO 9 · Gestión del Cambio
 
 ## 9.1 Objetivo
@@ -1324,7 +1324,7 @@ La gestión del cambio permite que GeoMotion Studio evolucione sin perder cohere
 
 Cada modificación deberá fortalecer la arquitectura, preservar la identidad del producto y contribuir al incremento progresivo de su nivel de madurez.
 
-
+---
 # CAPÍTULO 10 · Métricas de Progreso
 
 ## 10.1 Objetivo
@@ -1490,7 +1490,7 @@ Las métricas constituyen una herramienta para comprender la evolución de GeoMo
 
 Su propósito no consiste en medir cuánto trabajo se realiza, sino en verificar que el producto continúa avanzando hacia mayores niveles de calidad, estabilidad y madurez.
 
-
+---
 # CAPÍTULO 11 · Evolución del Producto
 
 ## 11.1 Objetivo
@@ -1655,7 +1655,7 @@ Cada modificación deberá contribuir a reforzar la estabilidad del sistema, inc
 
 El éxito de GeoMotion Studio dependerá tanto de su capacidad para incorporar nuevas capacidades como de su habilidad para evolucionar sin perder coherencia.
 
-
+---
 # CAPÍTULO 12 · Mantenimiento
 
 ## 12.1 Objetivo
@@ -1802,7 +1802,7 @@ El mantenimiento constituye uno de los principales mecanismos para preservar la 
 
 Su finalidad no consiste únicamente en corregir problemas existentes, sino en garantizar que el producto continúe evolucionando sobre una base técnica sólida, estable y preparada para afrontar nuevos desafíos.
 
-
+---
 # CAPÍTULO 13 · Mantenimiento
 
 ## 13.1 Objetivo
@@ -1949,7 +1949,7 @@ El mantenimiento constituye uno de los principales mecanismos para preservar la 
 
 Su finalidad no consiste únicamente en corregir problemas existentes, sino en garantizar que el producto continúe evolucionando sobre una base técnica sólida, estable y preparada para afrontar nuevos desafíos.
 
-
+---
 # CAPÍTULO 14 · Conclusiones
 
 ## 14.1 La Hoja de Ruta como instrumento estratégico

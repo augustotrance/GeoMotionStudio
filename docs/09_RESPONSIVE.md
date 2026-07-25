@@ -118,7 +118,7 @@ En primer lugar se presenta la filosofía de la Arquitectura Responsive y los pr
 
 Posteriormente se describen los distintos contextos de utilización, la adaptación de layouts, componentes y navegación, así como los criterios que garantizan la continuidad de la experiencia de usuario y la evolución futura de la arquitectura responsive.
 
-
+---
 # CAPÍTULO 1 · Fundamentos de la Arquitectura Responsive
 
 ## 1.1 Objetivo
@@ -194,7 +194,7 @@ La Arquitectura Responsive proporciona el marco conceptual que regula la adaptac
 
 Sus principios garantizan una experiencia consistente, accesible y preparada para evolucionar junto con la plataforma y con los dispositivos sobre los que será utilizada.
 
-
+---
 # CAPÍTULO 2 · Contextos de Utilización
 
 ## 2.1 Objetivo
@@ -275,7 +275,7 @@ La Arquitectura Responsive adapta la experiencia de usuario considerando el cont
 
 Este enfoque permite construir una plataforma flexible, preparada para responder a distintos escenarios presentes y futuros sin perder coherencia arquitectónica.
 
-
+---
 # CAPÍTULO 3 · Estrategia de Adaptación
 
 ## 3.1 Objetivo
@@ -362,7 +362,7 @@ Entre ellos destacan:
 
 La Arquitectura Responsive adapta la experiencia reorganizando la interfaz de acuerdo con el contexto de utilización, preservando la organización funcional del sistema y garantizando una experiencia consistente en toda la plataforma.
 
-
+---
 # CAPÍTULO 4 · Breakpoints Arquitectónicos
 
 ## 4.1 Objetivo
@@ -440,7 +440,7 @@ Los breakpoints representan mecanismos arquitectónicos para reorganizar la expe
 
 Su definición garantiza una adaptación consistente, flexible y preparada para evolucionar junto con la plataforma.
 
-
+---
 # CAPÍTULO 5 · Adaptación de los Layouts
 
 ## 5.1 Objetivo
@@ -517,7 +517,7 @@ La adaptación de los layouts permite mantener una experiencia coherente en todo
 
 Este enfoque garantiza continuidad, claridad y flexibilidad sin modificar la arquitectura funcional de la plataforma.
 
-
+---
 # CAPÍTULO 6 · Adaptación de los Componentes
 
 ## 6.1 Objetivo
@@ -602,7 +602,7 @@ La adaptación de los componentes garantiza que GeoMotion Studio ofrezca una exp
 
 La conservación de las responsabilidades funcionales, junto con una adaptación flexible de la presentación y la interacción, constituye uno de los principios fundamentales de la Arquitectura Responsive.
 
-
+---
 # CAPÍTULO 7 · Adaptación de la Navegación
 
 ## 7.1 Objetivo
@@ -686,7 +686,7 @@ La adaptación de la navegación permite mantener un acceso claro, eficiente y c
 
 La reorganización de los mecanismos de navegación preserva la continuidad de la experiencia y facilita la utilización de la plataforma en todos los contextos de uso.
 
-
+---
 # CAPÍTULO 8 · Adaptación de los Espacios de Trabajo
 
 ## 8.1 Objetivo
@@ -769,7 +769,7 @@ La adaptación de los espacios de trabajo permite mantener una experiencia produ
 
 La reorganización inteligente del entorno garantiza un uso eficiente del espacio disponible sin alterar la organización funcional definida por la arquitectura.
 
-
+---
 # CAPÍTULO 9 · Continuidad de la Experiencia
 
 ## 9.1 Objetivo
@@ -858,7 +858,7 @@ La continuidad de la experiencia garantiza que GeoMotion Studio mantenga una int
 
 Este principio permite que la adaptación responsive preserve la identidad funcional de la plataforma, facilitando el trabajo del usuario y fortaleciendo la calidad de la experiencia ofrecida.
 
-
+---
 # CAPÍTULO 10 · Accesibilidad Responsive
 
 ## 10.1 Objetivo
@@ -941,7 +941,7 @@ La accesibilidad forma parte integral de la Arquitectura Responsive de GeoMotion
 
 La adaptación de la interfaz deberá preservar la inclusión, la claridad y la operabilidad de la plataforma, garantizando una experiencia de usuario consistente en cualquier contexto de utilización.
 
-
+---
 # CAPÍTULO 11 · Evolución de la Arquitectura Responsive
 
 ## 11.1 Objetivo
@@ -1016,7 +1016,7 @@ La Arquitectura Responsive ha sido diseñada para evolucionar junto con GeoMotio
 
 La aplicación de principios como la adaptabilidad, la escalabilidad y la independencia tecnológica garantiza una experiencia consistente y preparada para responder a las necesidades futuras de la plataforma.
 
-
+---
 # CAPÍTULO 12 · Relación con la Arquitectura General
 
 ## 12.1 Objetivo
@@ -1081,7 +1081,7 @@ La Arquitectura Responsive constituye una disciplina transversal que complementa
 
 Su integración con la Arquitectura de Layouts, la Arquitectura de Componentes, el Sistema de Diseño y el Estado Global permite ofrecer una experiencia adaptable sin comprometer la coherencia del sistema.
 
-
+---
 # CAPÍTULO 13 · Cierre
 
 ## 13.1 Síntesis

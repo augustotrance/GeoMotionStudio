@@ -116,7 +116,7 @@ Este documento mantiene una relación directa con:
 
 Las tecnologías aquí definidas deberán implementarse respetando los principios establecidos en dichos documentos.
 
-
+---
 # CAPÍTULO 1 · Filosofía Tecnológica
 
 ## 1.1 Objetivo
@@ -261,7 +261,7 @@ La Filosofía Tecnológica define los principios que orientan todas las decision
 
 Estos principios priorizan la estabilidad, la simplicidad, la mantenibilidad y la evolución controlada, proporcionando un marco sólido para seleccionar y gestionar las tecnologías que sustentan la plataforma.
 
-
+---
 # CAPÍTULO 2 · Criterios de Selección
 
 ## 2.1 Objetivo
@@ -446,7 +446,7 @@ Los criterios de selección proporcionan un marco objetivo para evaluar las tecn
 
 Su aplicación permitirá construir una Pila Tecnológica coherente, sostenible y preparada para evolucionar, garantizando que cada incorporación aporte un valor real al proyecto y contribuya a su estabilidad a largo plazo.
 
-
+---
 # CAPÍTULO 3 · Lenguajes de Programación
 
 ## 3.1 Objetivo
@@ -547,7 +547,7 @@ La selección de los lenguajes de programación proporciona una base homogénea 
 
 La utilización predominante de TypeScript favorece la calidad, la mantenibilidad y la evolución sostenible del proyecto.
 
-
+---
 # CAPÍTULO 4 · Plataforma de Desarrollo
 
 ## 4.1 Objetivo
@@ -673,7 +673,7 @@ La Plataforma de Desarrollo proporciona el entorno común sobre el que se constr
 
 La utilización de herramientas homogéneas, configuraciones reproducibles y procesos estandarizados facilita el mantenimiento del proyecto y reduce la complejidad del desarrollo.
 
-
+---
 # CAPÍTULO 5 · Frameworks Principales
 
 ## 5.1 Objetivo
@@ -782,7 +782,7 @@ Los frameworks principales proporcionan la estructura sobre la que se desarrolla
 
 Su selección responde a criterios de estabilidad, integración y mantenibilidad, garantizando una plataforma preparada para evolucionar sin comprometer la arquitectura del proyecto.
 
-
+---
 # CAPÍTULO 6 · Librerías Base
 
 ## 6.1 Objetivo
@@ -914,7 +914,7 @@ Las librerías base amplían las capacidades de GeoMotion Studio proporcionando 
 
 Su incorporación deberá responder siempre a criterios de simplicidad, compatibilidad y mantenibilidad, evitando dependencias innecesarias y favoreciendo una arquitectura flexible y preparada para evolucionar.
 
-
+---
 # CAPÍTULO 7 · Herramientas de Desarrollo
 
 ## 7.1 Objetivo
@@ -1037,7 +1037,7 @@ Las herramientas de desarrollo proporcionan el entorno necesario para construir 
 
 Su correcta integración favorece la productividad del equipo y contribuye a mejorar la calidad general del software.
 
-
+---
 # CAPÍTULO 8 · Calidad del Código
 
 ## 8.1 Objetivo
@@ -1175,7 +1175,7 @@ La calidad del código constituye uno de los pilares fundamentales de GeoMotion 
 
 La aplicación sistemática de estos principios permitirá construir una base de código consistente, mantenible y preparada para evolucionar de forma sostenible durante toda la vida del proyecto.
 
-
+---
 # CAPÍTULO 9 · Testing
 
 ## 9.1 Objetivo
@@ -1320,7 +1320,7 @@ La estrategia de testing proporciona los mecanismos necesarios para garantizar l
 
 La aplicación sistemática de pruebas automatizadas permitirá reducir errores, facilitar la evolución del proyecto y aumentar la confianza en cada nueva versión del software.
 
-
+---
 # CAPÍTULO 10 · Documentación
 
 ## 10.1 Objetivo
@@ -1477,7 +1477,7 @@ La documentación constituye uno de los pilares fundamentales de GeoMotion Studi
 
 Su mantenimiento continuo garantiza la preservación del conocimiento del proyecto, facilita la colaboración entre desarrolladores y proporciona una base sólida para la evolución sostenible de la plataforma.
 
-
+---
 # CAPÍTULO 11 · Automatización e Integración Continua
 
 ## 11.1 Objetivo
@@ -1583,7 +1583,7 @@ La automatización y la integración continua permiten mantener un proceso de de
 
 Su correcta implantación contribuye a reducir errores, mejorar la calidad del software y facilitar la evolución de GeoMotion Studio.
 
-
+---
 # CAPÍTULO 12 · Distribución y Despliegue
 
 ## 12.1 Objetivo
@@ -1689,7 +1689,7 @@ La distribución y el despliegue constituyen la etapa final del ciclo de desarro
 
 La automatización, la trazabilidad y la estabilidad de estos procesos garantizan que cada nueva versión pueda publicarse con un elevado nivel de confianza y calidad.
 
-
+---
 # CAPÍTULO 13 · Gestión de Dependencias
 
 ## 13.1 Objetivo
@@ -1830,7 +1830,7 @@ La gestión de dependencias constituye un proceso continuo orientado a preservar
 
 La incorporación, actualización y retirada controlada de software externo permite mantener una plataforma preparada para evolucionar de forma segura y sostenible.
 
-
+---
 # CAPÍTULO 14 · Versionado y Compatibilidad
 
 ## 14.1 Objetivo
@@ -1940,7 +1940,7 @@ El versionado y la compatibilidad proporcionan un marco estable para la evoluci�
 
 La aplicación consistente de estos principios facilita el mantenimiento del proyecto, mejora la coordinación entre sus componentes y reduce los riesgos asociados a la incorporación de nuevas funcionalidades.
 
-
+---
 # CAPÍTULO 15 · Evolución de la Pila Tecnológica
 
 ## 15.1 Objetivo
@@ -2071,7 +2071,7 @@ La evolución de la Pila Tecnológica constituye un proceso continuo orientado a
 
 Toda incorporación, actualización o sustitución tecnológica deberá responder a criterios objetivos y contribuir a la evolución ordenada de la plataforma.
 
-
+---
 # CAPÍTULO 16 · Conclusiones
 
 ## 16.1 Síntesis
