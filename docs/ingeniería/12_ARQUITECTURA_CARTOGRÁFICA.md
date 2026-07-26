@@ -2,9 +2,9 @@
 
 **Código:** DOC-012
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -18,7 +18,7 @@
 
 # Introducción
 
-## Propósito
+## Propósito del documento
 
 Este documento define la Arquitectura Cartográfica de GeoMotion Studio, estableciendo los principios que gobiernan la representación, organización e interacción con el territorio digital dentro de la plataforma.
 

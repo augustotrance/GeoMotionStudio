@@ -2,9 +2,9 @@
 
 **Código:** DOC-008
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 

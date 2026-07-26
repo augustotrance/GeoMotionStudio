@@ -2,9 +2,9 @@
 
 **Código:** DOC-000
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -1283,44 +1283,6 @@ Los fundamentos no describen cómo se implementará el software.
 Describen por qué existe.
 
 Y ese propósito deberá permanecer inalterable durante toda la evolución del proyecto.
-
----
-
-# Próximo documento
-
-El siguiente documento oficial del proyecto es:
-
-**01_VISION_DEL_PRODUCTO.md**
-
-En él se definirá con precisión qué será GeoMotion Studio, cuáles serán sus objetivos funcionales, qué problemas resolverá, quiénes serán sus usuarios y cómo imaginamos la plataforma una vez alcanzada su madurez.
-
----
-
-# Historial del documento
-
-| Versión | Fecha | Descripción |
-|----------|------------|--------------------------------|
-| 1.0 | 24/07/2026 | Creación del documento fundacional del proyecto. |
-
----
-
-# Información del documento
-
-**Proyecto:** GeoMotion Studio
-
-**Documento:** 00_FUNDAMENTOS.md
-
-**Código:** DOC-000
-
-**Versión:** 1.0
-
-**Estado:** Aprobado
-
-**Idioma original:** Español
-
-**Licencia:** MIT (Documentación incluida en el repositorio oficial)
-
-**Última actualización:** 24 de julio de 2026
 
 ---
 

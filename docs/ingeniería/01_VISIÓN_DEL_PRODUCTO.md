@@ -2,9 +2,9 @@
 
 **Código:** DOC-001
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -1686,46 +1686,118 @@ Cada nueva versión deberá representar una mejora del producto y no una redefin
 
 ---
 
-## 8.3 Ediciones del producto
+## 8.3 Ediciones y servicios del ecosistema
 
-GeoMotion Studio podrá distribuirse en diferentes ediciones orientadas a distintos contextos de uso.
+GeoMotion Studio se concibe como un ecosistema compuesto por distintas ediciones y servicios complementarios, diseñados para responder a las necesidades de diferentes perfiles de usuarios y organizaciones.
 
-Todas compartirán una misma base tecnológica y una arquitectura común.
+Todos los componentes del ecosistema compartirán una misma visión de producto, una arquitectura coherente y principios comunes de diseño.
 
-Las diferencias entre ellas estarán determinadas por las funcionalidades disponibles, los servicios asociados y el público al que se dirigen.
-
----
-
-### Community Edition
-
-La edición Community constituye la versión abierta del proyecto.
-
-Su objetivo consiste en ofrecer una plataforma completa para el aprendizaje, la experimentación y el desarrollo de proyectos personales o académicos.
-
-Esta edición favorecerá la colaboración de la comunidad y servirá como base para la evolución del ecosistema.
+La evolución de cada uno de ellos deberá preservar la identidad de GeoMotion Studio y mantener la compatibilidad con el resto de la plataforma siempre que resulte técnicamente posible.
 
 ---
 
-### Professional Edition
+### Community
 
-La edición Professional estará orientada a profesionales y organizaciones que requieran capacidades avanzadas para la producción de contenido geoespacial.
+La edición Community constituye el núcleo abierto del proyecto.
 
-Podrá incorporar herramientas especializadas, funcionalidades de productividad y opciones destinadas a flujos de trabajo profesionales.
+Será una plataforma completa, profesional y de código abierto, orientada al aprendizaje, la experimentación y el desarrollo de proyectos reales.
+
+Su objetivo es democratizar la creación de contenido geoespacial, facilitar la colaboración de la comunidad y servir como base para la evolución de todo el ecosistema.
 
 ---
 
-### Enterprise Edition
+### Pro
 
-La edición Enterprise estará dirigida a organizaciones con necesidades de integración, administración y escalabilidad a gran escala.
+La edición Pro estará orientada a profesionales, estudios creativos y organizaciones que requieran capacidades avanzadas para la producción geoespacial.
 
-Podrá incluir capacidades orientadas a:
+Podrá incorporar funcionalidades como:
+
+- herramientas avanzadas de productividad;
+- exportaciones profesionales;
+- automatización de procesos;
+- integraciones especializadas;
+- funciones orientadas a flujos de trabajo profesionales.
+
+---
+
+### Cloud
+
+GeoMotion Cloud proporcionará servicios en la nube que complementarán la experiencia de la plataforma.
+
+Entre sus capacidades podrán encontrarse:
+
+- sincronización de proyectos;
+- almacenamiento en la nube;
+- colaboración entre usuarios;
+- publicación de proyectos;
+- servicios compartidos del ecosistema.
+
+---
+
+### AI
+
+GeoMotion AI reunirá las capacidades de Inteligencia Artificial (IA) integradas en la plataforma.
+
+Su objetivo será asistir al usuario durante el proceso creativo mediante funcionalidades como:
+
+- automatización de tareas;
+- asistencia contextual;
+- generación de contenido;
+- optimización de flujos de trabajo;
+- herramientas inteligentes de producción.
+
+---
+
+### Marketplace
+
+GeoMotion Marketplace constituirá el espacio oficial para distribuir y descubrir recursos desarrollados por la comunidad y por terceros.
+
+Podrá incluir:
+
+- plugins;
+- recursos gráficos;
+- modelos tridimensionales;
+- plantillas;
+- estilos;
+- materiales;
+- contenido adicional para la plataforma.
+
+---
+
+### Academy
+
+GeoMotion Academy concentrará los recursos educativos oficiales del proyecto.
+
+Su objetivo será facilitar el aprendizaje mediante:
+
+- documentación;
+- tutoriales;
+- cursos;
+- ejemplos;
+- proyectos de referencia;
+- material formativo.
+
+---
+
+### Enterprise
+
+La edición Enterprise estará dirigida a organizaciones que requieran capacidades avanzadas de administración, integración y despliegue corporativo.
+
+Podrá incorporar funcionalidades como:
 
 - administración centralizada;
-- gestión de usuarios;
-- seguridad avanzada;
+- gestión de usuarios y permisos;
+- autenticación empresarial;
 - despliegues corporativos;
-- integración con infraestructuras empresariales;
-- soporte especializado.
+- integraciones con infraestructuras empresariales;
+- soporte especializado;
+- herramientas orientadas a grandes organizaciones.
+
+---
+
+Cada una de estas ediciones y servicios responde a un propósito específico dentro del ecosistema GeoMotion Studio.
+
+Su incorporación se realizará de forma progresiva conforme evolucione el proyecto, manteniendo siempre una arquitectura común, una experiencia de usuario coherente y una identidad compartida.
 
 ---
 

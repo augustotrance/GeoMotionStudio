@@ -2,9 +2,9 @@
 
 **Código:** DOC-010
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -101,7 +101,7 @@ Este documento mantiene una relación directa con:
 
 - **02_ARQUITECTURA.md**
 - **07_ARQUITECTURA_DE_LAYOUTS.md**
-- **08_COMPONENTES.md**
+- **08_ARQUITECTURA_DE_COMPONENTES.md**
 - **09_RESPONSIVE.md**
 - **11_RENDERIZADO.md**
 
@@ -1070,7 +1070,7 @@ Su contenido complementa especialmente a:
 
 - **02_ARQUITECTURA.md**, que establece la arquitectura general del sistema.
 - **07_ARQUITECTURA_DE_LAYOUTS.md**, que define la organización de la experiencia de usuario.
-- **08_COMPONENTES.md**, que describe la arquitectura de los componentes de la interfaz.
+- **08_ARQUITECTURA_DE_COMPONENTES.md**, que describe la arquitectura de los componentes de la interfaz.
 - **09_RESPONSIVE.md**, que regula la adaptación de la experiencia a distintos contextos de utilización.
 - **11_RENDERIZADO.md**, que definirá las estrategias arquitectónicas para la representación de la información.
 

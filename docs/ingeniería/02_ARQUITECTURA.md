@@ -2,9 +2,9 @@
 
 **Código:** DOC-002
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -18,7 +18,7 @@
 
 # Introducción
 
-## Objetivo del documento
+## Propósito del documento
 
 Este documento define la arquitectura de software de GeoMotion Studio.
 
@@ -107,125 +107,64 @@ Toda modificación importante deberá respetar estos objetivos.
 
 ---
 
-# Arquitectura de Identidad y Autenticación
+# Arquitectura de Identidad y Control de Acceso
 
-GeoMotion Studio requerirá que los usuarios se autentiquen para acceder a la plataforma y utilizar sus funcionalidades, independientemente de la modalidad de distribución disponible.
+La identidad, la autenticación, la autorización y la gestión de sesiones constituyen capacidades transversales de GeoMotion Studio.
 
-La autenticación constituirá el punto de entrada al entorno de trabajo y permitirá asociar de forma segura proyectos, preferencias, configuraciones y servicios a una identidad de usuario.
+GeoMotion Studio adoptará un modelo de acceso progresivo. La plataforma podrá permitir el acceso inicial mediante una identidad temporal y requerirá una identidad autenticada únicamente para aquellas operaciones, recursos o servicios que necesiten persistencia, sincronización, colaboración, publicación o control de acceso.
 
-La arquitectura deberá admitir, inicialmente, los siguientes métodos de acceso:
-
-- Registro e inicio de sesión mediante correo electrónico.
-- Inicio de sesión mediante una cuenta de Google.
-
-El sistema deberá diseñarse de forma extensible para permitir la incorporación futura de otros proveedores de identidad sin modificar el núcleo de la aplicación.
+La arquitectura deberá permitir incorporar diferentes mecanismos y proveedores de identidad sin modificar el núcleo de la aplicación ni los módulos funcionales.
 
 ---
 
-## Principios de autenticación
+## Principios arquitectónicos de identidad y control de acceso
 
-La arquitectura de autenticación deberá respetar los siguientes principios:
+La arquitectura deberá respetar los siguientes principios:
 
 - Seguridad desde el diseño.
 - Separación entre identidad, autenticación y autorización.
-- Persistencia segura de la sesión.
-- Protección de las credenciales del usuario.
+- Administración centralizada de las identidades y sesiones.
+- Protección de las credenciales y de la información sensible.
 - Independencia respecto de proveedores concretos.
 - Extensibilidad.
+- Mínimo privilegio.
+- Denegación por defecto para las operaciones protegidas.
 - Trazabilidad de las operaciones relevantes.
 - Experiencia de acceso clara y consistente.
 
-Las credenciales sensibles no deberán almacenarse ni procesarse directamente en componentes que no tengan esa responsabilidad.
+Las credenciales y demás datos sensibles no deberán almacenarse ni procesarse directamente en componentes que no tengan esa responsabilidad.
 
 ---
 
-## Identidad del usuario
+## Modelo de identidad
 
-Cada cuenta deberá representar una identidad única dentro del ecosistema de GeoMotion Studio.
+La arquitectura deberá distinguir entre identidades temporales e identidades persistentes.
 
-La identidad podrá asociarse, entre otros elementos, con:
+Una identidad temporal permitirá mantener el contexto necesario para el funcionamiento local de la aplicación sin representar una cuenta registrada.
 
-- Datos básicos del perfil.
-- Preferencias personales.
-- Configuración de la interfaz.
-- Proyectos pertenecientes al usuario.
-- Modalidad de acceso a la plataforma.
-- Roles y permisos.
-- Sesiones activas.
-- Servicios vinculados.
-- Historial relevante de seguridad.
+Una identidad persistente permitirá asociar de forma segura recursos, configuraciones, preferencias, permisos y servicios que requieran continuidad más allá de una sesión local.
 
-La información asociada a la identidad deberá gestionarse respetando los principios de privacidad, seguridad y minimización de datos.
+El modelo detallado de identidades, sus tipos, atributos, estados y ciclo de vida se define en `17_AUTENTICACIÓN_Y_SEGURIDAD.md`.
 
 ---
 
-## Gestión de sesiones
+## Gestión centralizada de sesiones
 
-La plataforma deberá proporcionar un sistema centralizado para la creación, validación, renovación y finalización de sesiones.
+La gestión de sesiones constituirá una responsabilidad centralizada de la plataforma.
 
-La gestión de sesiones deberá contemplar:
+Los módulos funcionales podrán consultar el contexto de identidad y solicitar evaluaciones de autorización, pero no deberán crear mecanismos independientes de autenticación ni asumir la administración interna de las sesiones.
 
-- Inicio de sesión.
-- Persistencia de la sesión.
-- Renovación segura.
-- Cierre de sesión.
-- Caducidad.
-- Revocación.
-- Detección de sesiones inválidas.
-- Recuperación controlada del estado de autenticación.
-
-Los componentes de la aplicación no deberán implementar mecanismos de autenticación independientes.
-
----
-
-## Autenticación mediante correo electrónico
-
-El sistema deberá permitir la creación y utilización de cuentas vinculadas a una dirección de correo electrónico.
-
-Este mecanismo podrá incluir:
-
-- Registro de una cuenta.
-- Verificación de la dirección de correo.
-- Inicio de sesión.
-- Recuperación del acceso.
-- Modificación segura de las credenciales.
-- Cierre de sesiones activas.
-- Eliminación de la cuenta.
-
-Los mecanismos concretos utilizados para autenticar al usuario deberán definirse en la documentación funcional y técnica correspondiente.
-
----
-
-## Autenticación mediante Google
-
-GeoMotion Studio deberá permitir el inicio de sesión mediante una cuenta de Google utilizando protocolos de autenticación y autorización reconocidos por la industria.
-
-La integración deberá:
-
-- delegar la validación de la identidad en el proveedor;
-- solicitar únicamente los datos necesarios;
-- evitar la exposición innecesaria de credenciales;
-- asociar correctamente la identidad externa con la cuenta interna;
-- gestionar de forma segura la creación y recuperación de sesiones.
-
-La utilización de Google como proveedor inicial no deberá generar una dependencia arquitectónica que impida incorporar otros proveedores en el futuro.
+Los mecanismos concretos de creación, renovación, expiración, invalidación y recuperación de sesiones se definen en `17_AUTENTICACIÓN_Y_SEGURIDAD.md`.
 
 ---
 
 ## Autorización
 
-La autenticación determinará la identidad del usuario.
+La autenticación determinará la identidad del actor.
 
 La autorización determinará qué recursos y operaciones puede utilizar dicha identidad.
 
-La arquitectura deberá permitir definir permisos en función de factores como:
-
-- Propiedad de los recursos.
-- Rol del usuario.
-- Modalidad de acceso.
-- Capacidades habilitadas.
-- Contexto de la organización.
-- Políticas de seguridad aplicables.
+La arquitectura deberá permitir evaluar el acceso en función del contexto completo de cada operación, incluyendo la identidad, los permisos, el recurso solicitado y las políticas aplicables.
 
 La interfaz no deberá considerarse una barrera de seguridad.
 
@@ -235,42 +174,25 @@ Toda operación protegida deberá validarse en el componente responsable antes d
 
 ## Separación de responsabilidades
 
-El sistema de identidad y autenticación deberá mantenerse desacoplado de las funcionalidades específicas del producto.
+El sistema de identidad y control de acceso deberá mantenerse desacoplado de las funcionalidades específicas del producto.
 
-Los módulos funcionales podrán consultar el estado de autenticación y los permisos del usuario, pero no deberán asumir responsabilidades relacionadas con:
+Los módulos funcionales podrán consultar el contexto de identidad y los permisos aplicables, pero no deberán asumir responsabilidades relacionadas con:
 
 - validación de credenciales;
-- emisión de sesiones;
-- renovación de credenciales;
+- emisión o renovación de sesiones;
 - comunicación directa con proveedores de identidad;
-- recuperación de cuentas.
+- recuperación de cuentas;
+- definición autónoma de políticas generales de acceso.
 
-Esta separación permitirá reemplazar o ampliar la infraestructura de autenticación sin afectar al resto de la plataforma.
-
----
-
-## Evolución
-
-La arquitectura deberá estar preparada para incorporar progresivamente capacidades como:
-
-- nuevos proveedores de identidad;
-- autenticación multifactor;
-- administración de dispositivos y sesiones;
-- cuentas pertenecientes a organizaciones;
-- inicio de sesión único;
-- políticas empresariales de acceso;
-- auditoría de seguridad;
-- mecanismos adicionales de recuperación.
-
-La incorporación de estas capacidades dependerá de las necesidades del producto y deberá documentarse mediante las decisiones de arquitectura correspondientes.
+Esta separación permitirá reemplazar o ampliar la infraestructura de identidad y autenticación sin afectar al resto de la plataforma.
 
 ---
 
 ## Relación con otros documentos
 
-La arquitectura general de identidad, autenticación y autorización se define en este documento.
+Este documento define la posición de identidad, autenticación, autorización y seguridad dentro de la arquitectura general de GeoMotion Studio, así como sus límites de responsabilidad e integración con los demás sistemas.
 
-Los flujos funcionales, requisitos de seguridad, procesos de registro, recuperación de acceso, gestión de cuentas y políticas aplicables se desarrollarán en:
+El modelo especializado, los principios de seguridad, las identidades admitidas, los mecanismos de autenticación, la gestión de sesiones, las políticas de autorización, los controles de acceso y los procesos operativos se definen en:
 
 - **17_AUTENTICACIÓN_Y_SEGURIDAD.md**
 - **10_ESTADO_GLOBAL.md**
@@ -350,7 +272,7 @@ Define los principios generales del proyecto.
 
 ↓
 
-01_VISION_DEL_PRODUCTO.md
+01_VISIÓN_DEL_PRODUCTO.md
 
 Describe qué es GeoMotion Studio.
 
@@ -379,6 +301,19 @@ Describe las tecnologías utilizadas.
 Planifica la evolución del proyecto.
 
 Todos estos documentos deberán evolucionar de forma coordinada.
+
+La documentación del Manual de Ingeniería mantiene una relación jerárquica de refinamiento.
+
+Cada documento desarrolla el nivel de abstracción definido por el documento inmediatamente anterior, sin redefinir sus principios ni invadir las responsabilidades asignadas a otros documentos.
+
+En consecuencia:
+
+- `00_FUNDAMENTOS.md` establece los principios permanentes del proyecto.
+- `01_VISIÓN_DEL_PRODUCTO.md` proyecta dichos principios sobre el producto.
+- `02_ARQUITECTURA.md` define la organización técnica necesaria para materializar esa visión.
+- Los documentos especializados desarrollan los distintos dominios arquitectónicos derivados de esta arquitectura.
+
+Toda evolución del Manual deberá preservar esta cadena de autoridad documental.
 
 ---
 # CAPÍTULO 1 · Visión General de la Arquitectura
@@ -514,15 +449,7 @@ Los servicios compartidos no implementan lógica de negocio.
 
 Representa la capa más cercana a las tecnologías utilizadas.
 
-Incluye:
-
-- React.
-- Vite.
-- CesiumJS.
-- Tailwind CSS.
-- Zustand.
-- TypeScript.
-- APIs del navegador.
+Incluye las adaptaciones necesarias para interactuar con los frameworks de interfaz, herramientas de construcción, motores de representación, mecanismos de estado, lenguajes, APIs de la plataforma y demás tecnologías oficiales definidas en `04_PILA_TECNOLÓGICA.md`.
 
 La lógica del producto deberá depender lo menos posible de esta capa.
 
@@ -631,7 +558,7 @@ En este enfoque, el software se organiza en módulos que representan capacidades
 
 Cada módulo encapsula su propia lógica, componentes, estado, servicios y recursos.
 
-De esta forma, el proyecto refleja la estructura funcional del producto descrita en `01_VISION_DEL_PRODUCTO.md`.
+De esta forma, el proyecto refleja la estructura funcional del producto descrita en `01_VISIÓN_DEL_PRODUCTO.md`.
 
 ---
 
@@ -855,10 +782,10 @@ GeoMotionStudio/
 ├── tests/
 ├── .github/
 
-├── package.json
-├── pnpm-workspace.yaml
-├── turbo.json
-├── tsconfig.json
+├── configuración del proyecto
+├── configuración del workspace
+├── configuración de construcción
+├── configuración del lenguaje
 ├── README.md
 └── LICENSE
 ```
@@ -951,7 +878,7 @@ Ejemplo:
 docs/
 
 00_FUNDAMENTOS.md
-01_VISION_DEL_PRODUCTO.md
+01_VISIÓN_DEL_PRODUCTO.md
 02_ARQUITECTURA.md
 03_SISTEMA_DE_DISEÑO.md
 04_PILA_TECNOLOGICA.md
@@ -992,12 +919,14 @@ Agrupará todas las configuraciones compartidas.
 
 Ejemplos:
 
-- ESLint
-- Prettier
-- TypeScript
-- Tailwind CSS
-- Vitest
-- Playwright
+- calidad del código
+- formato del código
+- lenguaje de programación
+- sistema de diseño
+- pruebas unitarias
+- pruebas de integración
+
+Las herramientas concretas asociadas a estas configuraciones se definen en `04_PILA_TECNOLÓGICA.md`.
 
 Centralizar estas configuraciones evita duplicaciones y facilita el mantenimiento.
 
@@ -1063,15 +992,17 @@ Toda la organización del repositorio deberá respetar las siguientes reglas:
 
 # 3.13 Segunda decisión arquitectónica
 
-## ADR-002 · Monorepo con PNPM Workspaces
+## ADR-002 · Organización del repositorio como Monorepo
 
 **Estado:** Aprobada
 
-GeoMotion Studio utilizará un Monorepo basado en PNPM Workspaces.
+GeoMotion Studio se organizará como un Monorepo compuesto por aplicaciones, paquetes compartidos, documentación, configuraciones y herramientas coordinadas.
 
-Esta organización permitirá compartir paquetes, mantener una única gestión de dependencias y simplificar la evolución del proyecto.
+Esta organización permitirá compartir paquetes, mantener una gestión centralizada del proyecto y simplificar su evolución.
 
-Esta decisión será documentada posteriormente mediante el ADR-002.
+La herramienta concreta utilizada para administrar el workspace se define en `04_PILA_TECNOLÓGICA.md` y deberá formalizarse mediante la decisión de arquitectura correspondiente.
+
+La decisión de organizar el repositorio como Monorepo será documentada posteriormente mediante el ADR-002.
 
 ---
 
@@ -1331,7 +1262,7 @@ Para mantener la coherencia del proyecto se establecen las siguientes reglas:
 - Las features no accederán directamente a la implementación interna de otras features.
 - Los componentes reutilizables no dependerán de módulos funcionales.
 - Los hooks deberán ser reutilizables.
-- Las utilidades deberán ser independientes de React siempre que sea posible.
+- Las utilidades deberán ser independientes de los frameworks de interfaz siempre que sea posible.
 
 ---
 
@@ -4021,13 +3952,15 @@ Las APIs Internas constituyen el contrato de comunicación entre los distintos s
 Su correcta definición garantiza una arquitectura modular, mantenible y preparada para evolucionar durante todo el ciclo de vida del proyecto.
 
 ---
-# CAPÍTULO 18 · Seguridad y Robustez
+# CAPÍTULO 18 · Robustez, Resiliencia y Recuperación
 
 ## 18.1 Objetivo
 
-El Sistema de Seguridad y Robustez establece los principios y mecanismos destinados a proteger la integridad, estabilidad y confiabilidad de GeoMotion Studio.
+El Sistema de Robustez, Resiliencia y Recuperación establece los principios y mecanismos destinados a proteger la integridad operativa, estabilidad y confiabilidad de GeoMotion Studio.
 
-Su finalidad no se limita a la seguridad informática tradicional, sino que también comprende la prevención de errores, la recuperación ante fallos y la protección de la información del usuario.
+Su finalidad comprende la prevención de errores, el aislamiento de fallos, la recuperación controlada y la protección del trabajo del usuario.
+
+Los requisitos de seguridad informática, autenticación, autorización, auditoría y protección de la información se definen en `17_AUTENTICACIÓN_Y_SEGURIDAD.md`.
 
 La estabilidad constituye un requisito arquitectónico de primer nivel.
 
@@ -4158,11 +4091,11 @@ La protección del trabajo del usuario tendrá prioridad sobre la velocidad de e
 
 # 18.9 Integración
 
-La política de seguridad será transversal a toda la plataforma.
+La robustez y la resiliencia serán transversales a toda la plataforma.
 
-Todos los sistemas deberán aplicar estas reglas de manera consistente.
+Todos los sistemas deberán aplicar estas reglas de manera consistente y serán responsables de contener y gestionar los fallos que se originen dentro de sus límites.
 
-No existirá un único módulo responsable de la seguridad; será una responsabilidad compartida.
+La integración con las políticas transversales de seguridad se realizará conforme a `17_AUTENTICACIÓN_Y_SEGURIDAD.md`.
 
 ---
 
@@ -4182,9 +4115,9 @@ Esta decisión será documentada posteriormente mediante el ADR-017.
 
 # 18.11 Resumen del capítulo
 
-La Seguridad y Robustez representan un conjunto de principios transversales destinados a garantizar la estabilidad, confiabilidad e integridad de GeoMotion Studio.
+La Robustez, Resiliencia y Recuperación representan un conjunto de principios transversales destinados a garantizar la estabilidad, confiabilidad e integridad operativa de GeoMotion Studio.
 
-Su aplicación sistemática permitirá construir una plataforma preparada para proyectos profesionales y para evolucionar de forma segura a lo largo del tiempo.
+Su aplicación sistemática permitirá construir una plataforma preparada para proyectos profesionales y capaz de recuperarse de fallos de forma controlada a lo largo del tiempo.
 
 ---
 # CAPÍTULO 19 · Testing y Calidad del Software

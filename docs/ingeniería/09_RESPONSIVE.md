@@ -2,9 +2,9 @@
 
 **Código:** DOC-009
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -103,7 +103,7 @@ Este documento mantiene una relación directa con:
 - **02_ARQUITECTURA.md**
 - **03_SISTEMA_DE_DISEÑO.md**
 - **07_ARQUITECTURA_DE_LAYOUTS.md**
-- **08_COMPONENTES.md**
+- **08_ARQUITECTURA_DE_COMPONENTES.md**
 - **10_ESTADO_GLOBAL.md**
 
 Cada uno desarrolla aspectos complementarios relacionados con la construcción del Frontend de GeoMotion Studio.
@@ -1123,7 +1123,7 @@ Su contenido complementa especialmente a:
 - **02_ARQUITECTURA.md**, que define la arquitectura general del sistema.
 - **03_SISTEMA_DE_DISEÑO.md**, que establece la identidad visual de la plataforma.
 - **07_ARQUITECTURA_DE_LAYOUTS.md**, que organiza la experiencia de usuario.
-- **08_COMPONENTES.md**, que define la arquitectura del sistema de componentes.
+- **08_ARQUITECTURA_DE_COMPONENTES.md**, que define la arquitectura del sistema de componentes.
 - **10_ESTADO_GLOBAL.md**, que desarrolla la gestión del estado compartido.
 - **11_RENDERIZADO.md**, que describe las estrategias de representación de la interfaz.
 

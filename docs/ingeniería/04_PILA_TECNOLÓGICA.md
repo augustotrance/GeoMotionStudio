@@ -2,9 +2,9 @@
 
 **Código:** DOC-004
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -16,9 +16,9 @@
 
 ---
 
-## Introducción
+# Introducción
 
-### Objetivo
+## Propósito del documento
 
 Este documento define la Pila Tecnológica oficial de GeoMotion Studio, estableciendo las tecnologías, herramientas y criterios que servirán de base para el desarrollo, mantenimiento y evolución de la plataforma.
 
@@ -28,7 +28,7 @@ La Pila Tecnológica constituye un elemento estratégico de la arquitectura del 
 
 ---
 
-### Alcance
+## Alcance
 
 Este documento comprende la definición de las tecnologías y herramientas utilizadas durante el desarrollo de GeoMotion Studio, incluyendo, entre otras:
 
@@ -49,7 +49,7 @@ No forma parte del alcance de este documento la descripción detallada de la imp
 
 ---
 
-### Público objetivo
+## Público objetivo
 
 Este documento está dirigido a todas las personas involucradas en el desarrollo y mantenimiento de GeoMotion Studio, incluyendo:
 
@@ -65,7 +65,7 @@ Asimismo, constituye una referencia para cualquier persona interesada en compren
 
 ---
 
-### Objetivos
+## Objetivos
 
 La definición de una Pila Tecnológica oficial persigue los siguientes objetivos:
 
@@ -80,7 +80,7 @@ La definición de una Pila Tecnológica oficial persigue los siguientes objetivo
 
 ---
 
-### Principios
+## Principios
 
 La selección de tecnologías deberá responder a criterios objetivos y alineados con la visión del proyecto.
 
@@ -103,7 +103,7 @@ La adopción de nuevas tecnologías no responderá a tendencias del mercado, sin
 
 ---
 
-### Relación con otros documentos
+## Relación con otros documentos
 
 La Pila Tecnológica constituye un complemento de la arquitectura general definida para GeoMotion Studio.
 
@@ -115,6 +115,21 @@ Este documento mantiene una relación directa con:
 - **06_CONSTITUCIÓN_DEL_PROYECTO.md**, que recoge las normas generales de desarrollo y colaboración.
 
 Las tecnologías aquí definidas deberán implementarse respetando los principios establecidos en dichos documentos.
+
+Arquitectura
+      │
+      ▼
+Pila Tecnológica
+      │
+ ┌────┼─────────────────────────────┐
+ │    │    │     │      │          │
+ ▼    ▼    ▼     ▼      ▼          ▼
+Lenguajes
+Frameworks
+Librerías
+Herramientas
+Automatización
+Infraestructura
 
 ---
 # CAPÍTULO 1 · Filosofía Tecnológica

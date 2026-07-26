@@ -2,9 +2,9 @@
 
 **Código:** DOC-005
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -16,9 +16,9 @@
 
 ---
 
-## Introducción
+# Introducción
 
-## Objetivo
+## Propósito del documento
 
 Este documento define la estrategia de evolución de GeoMotion Studio, estableciendo los principios, criterios y procesos que guiarán el desarrollo del proyecto a lo largo de su ciclo de vida.
 
@@ -83,7 +83,7 @@ La Hoja de Ruta complementa el resto de la documentación principal del proyecto
 
 Su contenido se relaciona especialmente con:
 
-- **01_VISION_DEL_PRODUCTO.md**, que define los objetivos generales del sistema.
+- **01_VISIÓN_DEL_PRODUCTO.md**, que define los objetivos generales del sistema.
 - **02_ARQUITECTURA.md**, que establece la estructura técnica que soportará la evolución del producto.
 - **04_PILA_TECNOLÓGICA.md**, que determina las tecnologías utilizadas durante el desarrollo.
 - **06_CONSTITUCIÓN_DEL_PROYECTO.md**, donde se formalizan las normas que regulan el funcionamiento del proyecto.
@@ -764,7 +764,7 @@ La evaluación de una funcionalidad podrá considerar, entre otros, los siguient
 
 ### Impacto estratégico
 
-Se priorizarán aquellas iniciativas que acerquen el producto a la visión definida en **01_VISION_DEL_PRODUCTO.md**.
+Se priorizarán aquellas iniciativas que acerquen el producto a la visión definida en **01_VISIÓN_DEL_PRODUCTO.md**.
 
 Las funcionalidades que representen avances estructurales tendrán preferencia sobre aquellas cuyo impacto resulte únicamente incremental.
 
@@ -1803,156 +1803,9 @@ El mantenimiento constituye uno de los principales mecanismos para preservar la 
 Su finalidad no consiste únicamente en corregir problemas existentes, sino en garantizar que el producto continúe evolucionando sobre una base técnica sólida, estable y preparada para afrontar nuevos desafíos.
 
 ---
-# CAPÍTULO 13 · Mantenimiento
+# CAPÍTULO 13 · Conclusiones
 
-## 13.1 Objetivo
-
-El mantenimiento constituye una actividad permanente dentro del ciclo de vida de GeoMotion Studio.
-
-Lejos de representar una fase posterior al desarrollo, forma parte del propio proceso evolutivo del producto y resulta indispensable para preservar la calidad alcanzada en cada nivel de madurez.
-
-Este capítulo establece los principios que regulan las actividades destinadas a conservar, mejorar y adaptar el sistema a lo largo del tiempo.
-
-Su finalidad consiste en garantizar que el crecimiento del proyecto no se produzca a costa de la estabilidad, la mantenibilidad o la calidad general del software.
-
----
-
-## 13.2 Principios
-
-### El mantenimiento forma parte del desarrollo
-
-Toda actividad de desarrollo genera responsabilidades futuras.
-
-Cada nueva funcionalidad deberá considerarse también un compromiso de mantenimiento.
-
-Por este motivo, el mantenimiento no constituye una tarea secundaria sino una responsabilidad inherente a la construcción del producto.
-
----
-
-### Prevención
-
-Siempre que resulte posible, los problemas deberán resolverse antes de producir consecuencias significativas.
-
-La inversión en mantenimiento preventivo reduce considerablemente el coste de futuras correcciones.
-
----
-
-### Conservación de la calidad
-
-Toda actividad de mantenimiento deberá perseguir alguno de los siguientes objetivos:
-
-- preservar la estabilidad;
-- reducir deuda técnica;
-- mejorar la arquitectura;
-- optimizar el rendimiento;
-- actualizar la documentación;
-- incrementar la cobertura de pruebas;
-- facilitar futuras evoluciones.
-
----
-
-### Mejora continua
-
-El mantenimiento no deberá limitarse a conservar el estado actual del proyecto.
-
-También deberá contribuir a incrementar progresivamente la calidad del producto.
-
----
-
-## 13.3 Tipos de mantenimiento
-
-Las actividades de mantenimiento podrán clasificarse en diferentes categorías.
-
-### Mantenimiento correctivo
-
-Destinado a resolver errores detectados durante el desarrollo o la utilización del sistema.
-
-Su prioridad dependerá del impacto producido sobre el funcionamiento del producto.
-
----
-
-### Mantenimiento preventivo
-
-Comprende todas aquellas actuaciones destinadas a reducir la probabilidad de aparición de problemas futuros.
-
-Incluye actividades como:
-
-- refactorización;
-- revisión arquitectónica;
-- actualización de dependencias;
-- mejora documental;
-- optimización del código.
-
----
-
-### Mantenimiento adaptativo
-
-Tiene como finalidad adecuar el producto a cambios producidos en su entorno tecnológico.
-
-Entre ellos:
-
-- nuevas versiones del navegador;
-- cambios en librerías;
-- evolución del ecosistema JavaScript;
-- incorporación de nuevos estándares.
-
----
-
-### Mantenimiento evolutivo
-
-Comprende aquellas modificaciones destinadas a ampliar las capacidades del producto preservando su coherencia arquitectónica.
-
-Este tipo de mantenimiento conecta directamente con la evolución estratégica definida en el capítulo anterior.
-
----
-
-## 13.4 Deuda técnica
-
-Toda decisión de desarrollo genera consecuencias futuras.
-
-Cuando determinadas soluciones se adoptan con carácter provisional o priorizando la velocidad de implementación, aparece deuda técnica.
-
-GeoMotion Studio reconoce que la deuda técnica puede resultar inevitable en determinadas circunstancias.
-
-No obstante, deberá:
-
-- documentarse;
-- justificarse;
-- revisarse periódicamente;
-- eliminarse tan pronto como resulte razonablemente posible.
-
-La deuda técnica nunca deberá convertirse en un estado permanente del proyecto.
-
----
-
-## 13.5 Relación con la madurez del producto
-
-Cada nivel de madurez requiere actividades de mantenimiento diferentes.
-
-Durante las primeras etapas predominará la consolidación de la arquitectura.
-
-Posteriormente adquirirán mayor importancia:
-
-- optimización;
-- escalabilidad;
-- extensibilidad;
-- rendimiento;
-- mantenimiento del ecosistema.
-
-El mantenimiento evoluciona junto con el propio producto.
-
----
-
-## 13.6 Resumen del capítulo
-
-El mantenimiento constituye uno de los principales mecanismos para preservar la calidad de GeoMotion Studio.
-
-Su finalidad no consiste únicamente en corregir problemas existentes, sino en garantizar que el producto continúe evolucionando sobre una base técnica sólida, estable y preparada para afrontar nuevos desafíos.
-
----
-# CAPÍTULO 14 · Conclusiones
-
-## 14.1 La Hoja de Ruta como instrumento estratégico
+## 13.1 La Hoja de Ruta como instrumento estratégico
 
 La Hoja de Ruta de GeoMotion Studio no constituye un calendario de tareas ni una lista de funcionalidades pendientes.
 
@@ -1964,7 +1817,7 @@ Cada iniciativa deberá interpretarse a la luz de este documento.
 
 ---
 
-## 14.2 Crecer no significa acumular funcionalidades
+## 13.2 Crecer no significa acumular funcionalidades
 
 Uno de los errores más frecuentes durante el desarrollo de software consiste en identificar el progreso exclusivamente con el aumento del número de capacidades disponibles.
 
@@ -1985,7 +1838,7 @@ Las funcionalidades representan únicamente una parte de ese crecimiento.
 
 ---
 
-## 14.3 La calidad como responsabilidad permanente
+## 13.3 La calidad como responsabilidad permanente
 
 La calidad no constituye una etapa posterior al desarrollo.
 
@@ -2009,7 +1862,7 @@ Todos estos elementos contribuyen conjuntamente a la calidad final del producto.
 
 ---
 
-## 14.4 La evolución como compromiso
+## 13.4 La evolución como compromiso
 
 GeoMotion Studio nace con la vocación de evolucionar durante muchos años.
 
@@ -2028,7 +1881,7 @@ También requiere aceptar que, en determinadas circunstancias, consolidar lo exi
 
 ---
 
-## 14.5 El conocimiento como patrimonio del proyecto
+## 13.5 El conocimiento como patrimonio del proyecto
 
 El principal activo de GeoMotion Studio no será únicamente el software desarrollado.
 
@@ -2046,7 +1899,7 @@ Preservar ese conocimiento constituye una responsabilidad equivalente a preserva
 
 ---
 
-## 14.6 Un compromiso con el futuro
+## 13.6 Un compromiso con el futuro
 
 GeoMotion Studio se desarrollará aceptando que el contexto tecnológico cambiará continuamente.
 
@@ -2060,7 +1913,7 @@ La identidad del proyecto deberá permanecer.
 
 ---
 
-## 14.7 Declaración final
+## 13.7 Declaración final
 
 GeoMotion Studio aspira a demostrar que un proyecto de software puede crecer durante muchos años sin renunciar a la claridad de su arquitectura, a la calidad de su implementación ni a la excelencia de su documentación.
 
@@ -2084,7 +1937,7 @@ Y una forma de garantizar que pueda seguir evolucionando sin perder nunca aquell
 
 ---
 
-## 14.8 Cierre del documento
+## 13.8 Cierre del documento
 
 La evolución sostenible de un proyecto no depende exclusivamente de las tecnologías que emplea, sino de la solidez de los principios que orientan cada una de sus decisiones.
 

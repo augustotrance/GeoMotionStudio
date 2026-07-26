@@ -2,9 +2,9 @@
 
 **Código:** DOC-011
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -98,10 +98,10 @@ La Arquitectura de Renderizado se fundamenta en los siguientes principios:
 Este documento mantiene una relación directa con:
 
 - **02_ARQUITECTURA.md**
-- **08_COMPONENTES.md**
+- **08_ARQUITECTURA_DE_COMPONENTES.md**
 - **09_RESPONSIVE.md**
 - **10_ESTADO_GLOBAL.md**
-- **12_MAPAS.md**
+- **12_ARQUITECTURA_CARTOGRÁFICA.md**
 
 Cada uno desarrolla aspectos complementarios relacionados con la arquitectura del Frontend de GeoMotion Studio.
 
@@ -1185,10 +1185,10 @@ Este documento complementa la arquitectura general del Frontend y mantiene una r
 
 - **02_ARQUITECTURA.md**
 - **07_ARQUITECTURA_DE_LAYOUTS.md**
-- **08_COMPONENTES.md**
+- **08_ARQUITECTURA_DE_COMPONENTES.md**
 - **09_RESPONSIVE.md**
 - **10_ESTADO_GLOBAL.md**
-- **12_MAPAS.md**
+- **12_ARQUITECTURA_CARTOGRÁFICA.md**
 
 Cada uno de estos documentos describe una disciplina específica. En conjunto conforman el modelo arquitectónico que guía el desarrollo y la evolución de GeoMotion Studio.
 

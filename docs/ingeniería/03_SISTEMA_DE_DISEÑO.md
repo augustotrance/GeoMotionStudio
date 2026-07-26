@@ -2,9 +2,9 @@
 
 **Código:** DOC-003
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -16,9 +16,9 @@
 
 ---
 
-## Introducción
+# Introducción
 
-### Objetivo
+## Propósito del documento
 
 El Sistema de Diseño de GeoMotion Studio define los principios, normas y elementos que guían el diseño de la interfaz de usuario de la plataforma.
 
@@ -28,7 +28,7 @@ El Sistema de Diseño constituye un marco de referencia para el diseño, desarro
 
 ---
 
-### Alcance
+## Alcance
 
 Este documento establece los criterios generales que deberán aplicarse al diseño de la interfaz de GeoMotion Studio.
 
@@ -49,7 +49,7 @@ No forma parte de este documento la implementación técnica de los componentes 
 
 ---
 
-### Público objetivo
+## Público objetivo
 
 Este documento está dirigido a:
 
@@ -61,7 +61,7 @@ Este documento está dirigido a:
 
 ---
 
-### Objetivos
+## Objetivos
 
 El Sistema de Diseño persigue los siguientes objetivos:
 
@@ -74,7 +74,7 @@ El Sistema de Diseño persigue los siguientes objetivos:
 
 ---
 
-### Principios generales
+## Principios generales
 
 El Sistema de Diseño se fundamenta en los siguientes principios:
 
@@ -90,7 +90,7 @@ Estos principios deberán orientar toda decisión relacionada con el diseño de 
 
 ---
 
-### Relación con otros documentos
+## Relación con otros documentos
 
 El Sistema de Diseño complementa la documentación principal del proyecto.
 
@@ -1932,7 +1932,31 @@ Su contenido se complementa especialmente con:
 - **08_COMPONENTES.md**, que documenta el catálogo de componentes reutilizables.
 - **09_RESPONSIVE.md**, que especifica el comportamiento adaptativo de la interfaz.
 
-Cada uno de estos documentos desarrolla aspectos específicos del Sistema de Diseño desde una perspectiva más técnica o especializada.
+Cada uno de estos documentos desarrolla un dominio específico del Sistema de Diseño desde una perspectiva especializada, manteniendo responsabilidades claramente diferenciadas y complementarias.
+
+El Sistema de Diseño constituye la autoridad arquitectónica de la experiencia de usuario de GeoMotion Studio. En él se definen el lenguaje visual, los principios de diseño, los criterios de interacción y las reglas generales que deberán respetar todas las interfaces de la plataforma.
+
+A partir de esta base se desarrollan arquitecturas especializadas que refinan distintos aspectos de la experiencia de usuario sin redefinir los principios establecidos en este documento:
+
+- **07_ARQUITECTURA_DE_LAYOUTS.md** desarrolla la organización espacial de la interfaz y la distribución de las áreas funcionales.
+- **08_ARQUITECTURA_DE_COMPONENTES.md** desarrolla la arquitectura, composición y reutilización de los componentes de interfaz.
+- **09_RESPONSIVE.md** desarrolla las reglas de adaptación de la interfaz a diferentes dispositivos, resoluciones y contextos de uso.
+
+Estas arquitecturas mantienen una relación de refinamiento y no de sustitución. El Sistema de Diseño proporciona los principios comunes sobre los que se apoyan, mientras que cada documento especializado desarrolla su propio dominio sin invadir las responsabilidades de los demás.
+
+Conceptualmente, esta relación puede representarse de la siguiente manera:
+
+```text
+                   03_SISTEMA_DE_DISEÑO.md
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+07_ARQUITECTURA_DE_LAYOUTS.md   08_ARQUITECTURA_DE_COMPONENTES.md
+              │                             │
+              └──────────────┬──────────────┘
+                             ▼
+                  09_RESPONSIVE.md
 
 ---
 

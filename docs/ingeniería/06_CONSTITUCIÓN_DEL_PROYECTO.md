@@ -2,9 +2,9 @@
 
 **Código:** DOC-006
 
-**Versión:** 0.1
+**Versión:** 1.0
 
-**Estado:** En desarrollo
+**Estado:** Publicado
 
 **Proyecto:** GeoMotion Studio
 
@@ -18,7 +18,7 @@
 
 # Introducción
 
-## Objetivo
+## Propósito del documento
 
 La presente Constitución establece los principios fundamentales que regulan el desarrollo, la evolución y el mantenimiento de GeoMotion Studio.
 
@@ -75,17 +75,345 @@ Modificar esta Constitución deberá considerarse una decisión excepcional y ú
 
 ---
 
-## Jerarquía documental
+# Gobernanza Documental
 
-La documentación del proyecto se organiza siguiendo una estructura jerárquica en la que cada documento desarrolla aspectos específicos de la ingeniería del sistema.
+## Objetivo
 
-La presente Constitución ocupa el nivel superior de dicha jerarquía.
+Con el objetivo de garantizar la coherencia, la trazabilidad y la evolución controlada de la documentación oficial de GeoMotion Studio, el proyecto establece un modelo de gobernanza documental basado en una jerarquía explícita de autoridad técnica y en un conjunto de reglas para la resolución de conflictos y la sincronización entre la documentación y la implementación.
 
-Todos los documentos posteriores deberán interpretarse de forma compatible con los principios aquí establecidos.
+Este modelo garantiza que cada documento posea un ámbito de responsabilidad claramente definido, evitando contradicciones, duplicidades e interpretaciones inconsistentes a lo largo del ciclo de vida del proyecto.
 
-En caso de conflicto entre las disposiciones de esta Constitución y cualquier otro documento del proyecto, prevalecerán las normas definidas en la presente Constitución.
+---
 
-Esta organización garantiza que las decisiones particulares nunca contradigan los principios fundamentales sobre los que se construye GeoMotion Studio.
+## Alcance
+
+La **Guía Editorial** constituye el documento rector del proceso de documentación.
+
+Su finalidad es establecer las normas de:
+
+- Estructura.
+- Redacción.
+- Organización.
+- Nomenclatura.
+- Versionado.
+- Mantenimiento.
+
+Estas normas se aplican a toda la documentación oficial del proyecto.
+
+En consecuencia, la Guía Editorial regula **cómo debe documentarse GeoMotion Studio**, pero no establece decisiones funcionales, arquitectónicas ni tecnológicas.
+
+Las decisiones técnicas se regirán exclusivamente por la jerarquía de autoridad definida en esta sección.
+
+---
+
+## Jerarquía de Autoridad Técnica
+
+En caso de conflicto entre documentos, prevalecerá siempre el documento situado en el nivel superior de la siguiente jerarquía:
+
+1. **Visión del Producto.**
+2. **Constitución del Proyecto.**
+3. **Arquitectura General del Sistema.**
+4. **Arquitecturas Especializadas.**
+5. **Architecture Decision Records (ADR).**
+6. **Especificaciones Técnicas.**
+7. **Implementación del Software.**
+
+```text
+Visión del Producto
+
+↓
+
+Constitución del Proyecto
+
+↓
+
+Arquitectura General del Sistema
+
+↓
+
+Arquitecturas Especializadas
+
+↓
+
+Architecture Decision Records
+
+↓
+
+Especificaciones Técnicas
+
+↓
+
+Implementación del Software
+```
+
+Cada nivel únicamente podrá desarrollar, especializar o implementar las decisiones establecidas por los niveles superiores.
+
+Ningún documento podrá modificar, reinterpretar o invalidar el contenido de un documento con mayor autoridad.
+
+---
+
+## Reglas de Resolución de Conflictos
+
+Cuando se detecte una discrepancia entre documentos, deberán aplicarse las siguientes reglas.
+
+### Visión del Producto
+
+La **Visión del Producto** define el propósito, el alcance y la dirección estratégica del sistema.
+
+Sus definiciones prevalecerán sobre cualquier documento técnico.
+
+---
+
+### Constitución del Proyecto
+
+La **Constitución del Proyecto** establece los principios, normas y restricciones fundamentales que rigen el desarrollo del proyecto.
+
+Ningún documento podrá contradecirla.
+
+---
+
+### Arquitectura General del Sistema
+
+La **Arquitectura General del Sistema** constituye la referencia oficial para la organización global de la plataforma.
+
+Las Arquitecturas Especializadas deberán desarrollar dicha arquitectura sin alterar sus principios fundamentales.
+
+---
+
+### Arquitecturas Especializadas
+
+Las **Arquitecturas Especializadas** desarrollan ámbitos concretos de la Arquitectura General.
+
+Deberán mantenerse siempre alineadas con ella y no podrán introducir modificaciones que alteren la organización global del sistema.
+
+---
+
+### Architecture Decision Records
+
+Los **Architecture Decision Records (ADR)** documentan decisiones arquitectónicas específicas y conservan la justificación, las alternativas consideradas y las consecuencias de cada decisión.
+
+Los ADR no podrán contradecir:
+
+- La Visión del Producto.
+- La Constitución del Proyecto.
+- La Arquitectura General del Sistema.
+- Las Arquitecturas Especializadas vigentes.
+
+Cuando un ADR aceptado implique una modificación permanente de la arquitectura, los documentos afectados del Manual de Ingeniería deberán actualizarse antes de considerar consolidada dicha decisión.
+
+---
+
+### Especificaciones Técnicas
+
+Las **Especificaciones Técnicas** deberán ajustarse al Manual de Ingeniería y a los ADR vigentes.
+
+No podrán introducir decisiones arquitectónicas nuevas ni modificar decisiones previamente aprobadas.
+
+Cuando una especificación identifique la necesidad de una nueva decisión arquitectónica, deberá iniciarse el proceso correspondiente mediante un ADR.
+
+---
+
+### Implementación del Software
+
+La **Implementación del Software** deberá respetar toda la documentación vigente.
+
+Cuando el código contradiga un documento de autoridad superior, se considerará una desviación de implementación.
+
+La desviación deberá:
+
+- Corregirse para restablecer la conformidad con la documentación vigente; o
+- Justificarse mediante el proceso formal de gobernanza cuando revele la necesidad de modificar una decisión existente.
+
+La implementación no podrá convertirse por sí misma en fuente de autoridad arquitectónica.
+
+---
+
+## Principio de Sincronización Documental
+
+Toda decisión arquitectónica aprobada deberá reflejarse en la documentación correspondiente antes de considerarse incorporada oficialmente al proyecto.
+
+En consecuencia:
+
+- Ninguna decisión arquitectónica podrá existir únicamente en el código fuente.
+- Ningún ADR aceptado podrá dejar obsoleta la documentación sin su correspondiente actualización.
+- Toda modificación permanente aprobada mediante un ADR deberá incorporarse al Manual de Ingeniería.
+- Las Especificaciones Técnicas deberán mantenerse alineadas con el Manual de Ingeniería y con los ADR vigentes.
+- La implementación deberá reflejar en todo momento el estado oficial de la arquitectura documentada.
+
+El proceso de consolidación de una decisión seguirá el siguiente flujo:
+
+```text
+Necesidad de Cambio
+
+↓
+
+Análisis
+
+↓
+
+ADR
+
+↓
+
+Decisión Aceptada
+
+↓
+
+Actualización del Manual de Ingeniería
+
+↓
+
+Actualización de las Especificaciones Técnicas
+
+↓
+
+Implementación
+
+↓
+
+Validación de Consistencia
+```
+
+Una decisión no se considerará completamente consolidada mientras alguno de los activos afectados permanezca desactualizado.
+
+---
+
+## Responsabilidad de Actualización
+
+Cada documento oficial es responsable de mantener actualizado el conocimiento correspondiente a su ámbito de competencia.
+
+Cuando una decisión implique modificaciones que afecten a varios documentos, todos ellos deberán actualizarse de forma coordinada para preservar la consistencia del Manual de Ingeniería.
+
+La responsabilidad de actualización incluye:
+
+- Identificar los documentos afectados.
+- Actualizar las definiciones correspondientes.
+- Revisar las referencias cruzadas.
+- Verificar la terminología utilizada.
+- Mantener la trazabilidad con los ADR relacionados.
+- Actualizar la versión y el estado de los activos modificados.
+- Incorporar los cambios a la Línea Base correspondiente.
+
+La existencia de información duplicada entre documentos deberá evitarse siempre que sea posible.
+
+Cuando una referencia a otro documento resulte necesaria, deberá utilizarse una referencia cruzada en lugar de reproducir íntegramente su contenido.
+
+---
+
+## Principio de Fuente Única de Verdad
+
+Cada concepto, decisión funcional, decisión arquitectónica o definición técnica deberá poseer un único documento considerado como fuente oficial de autoridad.
+
+Los restantes documentos podrán:
+
+- Referenciar la información.
+- Resumirla para proporcionar contexto.
+- Especializarla dentro de su ámbito de responsabilidad.
+- Aplicarla a un subsistema concreto.
+
+Sin embargo, no deberán:
+
+- Redefinirla.
+- Modificar su significado.
+- Establecer una autoridad paralela.
+- Introducir reglas incompatibles.
+- Reproducirla de forma que pueda evolucionar independientemente de la fuente original.
+
+Cuando un concepto sea utilizado por varios documentos, su definición principal deberá permanecer en el documento autoridad.
+
+```text
+Documento Autoridad
+
+↓
+
+Definición Oficial
+
+↓
+
+Referencias Cruzadas
+
+↓
+
+Especializaciones Permitidas
+```
+
+Este principio elimina duplicidades, facilita el mantenimiento de la documentación y evita la aparición de inconsistencias durante la evolución del proyecto.
+
+---
+
+## Detección y Resolución de Inconsistencias
+
+Cuando se detecte una inconsistencia documental, deberá determinarse:
+
+1. Qué documentos se encuentran afectados.
+2. Qué concepto o decisión presenta la discrepancia.
+3. Cuál es el documento autoridad.
+4. Qué contenido debe conservarse.
+5. Qué documentos deben actualizarse.
+6. Si la corrección modifica o únicamente restablece una decisión existente.
+7. Si resulta necesario crear o actualizar un ADR.
+8. Qué versiones y Líneas Base se ven afectadas.
+
+Las inconsistencias deberán resolverse preservando siempre la trazabilidad de los cambios realizados.
+
+---
+
+## Relación con la Gestión de Versiones
+
+Toda actualización documental se regirá por la **Política de Gestión de Versiones** definida en DOC-018.
+
+Las modificaciones deberán:
+
+- Generar una nueva versión del activo afectado.
+- Registrar el cambio realizado.
+- Mantener el historial de evolución.
+- Identificar las relaciones con otros documentos.
+- Incorporarse a una Línea Base aprobada antes de su publicación oficial.
+
+La gobernanza documental determina cómo se mantiene la autoridad y la coherencia entre documentos.
+
+La Gestión de Versiones determina cómo se identifican, controlan y publican sus cambios.
+
+---
+
+## Consideraciones Finales
+
+La gobernanza documental constituye el mecanismo mediante el cual GeoMotion Studio garantiza la coherencia entre las decisiones estratégicas, la arquitectura, las especificaciones técnicas y la implementación del software.
+
+La combinación de:
+
+- Una jerarquía explícita de autoridad.
+- Un proceso formal de resolución de conflictos.
+- El principio de fuente única de verdad.
+- La sincronización entre documentación e implementación.
+- La actualización coordinada de los activos afectados.
+- La trazabilidad de todas las modificaciones.
+
+permite preservar la integridad del conocimiento técnico durante toda la evolución del proyecto.
+
+```text
+Autoridad
+
+↓
+
+Coherencia
+
+↓
+
+Trazabilidad
+
+↓
+
+Sincronización
+
+↓
+
+Evolución Controlada
+```
+
+La documentación oficial no constituye únicamente una descripción del sistema.
+
+Constituye el marco de autoridad mediante el cual GeoMotion Studio puede evolucionar sin perder su identidad, su arquitectura ni la consistencia de sus decisiones de ingeniería.
 
 ---
 
