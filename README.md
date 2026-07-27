@@ -157,13 +157,19 @@ Entre ellas:
 
 # Misión
 
-Democratizar la creación de contenido geoespacial cinematográfico mediante una plataforma abierta, profesional y accesible para cualquier persona.
+GeoMotion Studio democratiza la creación de contenido geoespacial profesional mediante una plataforma abierta, modular y extensible que permite diseñar, visualizar, animar y comunicar información geoespacial con una experiencia creativa de nivel profesional, accesible para personas, organizaciones y comunidades de todo el mundo.
+
+La misión expresa el propósito permanente del proyecto: eliminar las barreras técnicas y económicas para la creación de contenido geoespacial de alta calidad, promoviendo una plataforma abierta, profesional y preparada para evolucionar durante décadas.
 
 ---
 
 # Visión
 
-Convertirnos en la plataforma creativa geoespacial de referencia para creadores, empresas, instituciones educativas y desarrolladores, desarrollada con tecnologías web y accesible directamente desde el navegador.
+GeoMotion Studio es la plataforma abierta de referencia para la creación, edición y comunicación de contenido geoespacial.
+
+Integra en un único entorno las capacidades de un estudio creativo profesional para que cualquier persona pueda transformar información geográfica en experiencias visuales, narrativas y analíticas capaces de informar, explicar, inspirar y comunicar.
+
+La visión representa el horizonte estratégico del proyecto y guía todas sus decisiones de largo plazo.
 
 ---
 

@@ -1,76 +1,154 @@
 # Informe de Integración Técnica
 
 **Código:** INT-003  
-**Estado:** Activo  
+**Estado:** Histórico  
 **Responsable:** Dirección Técnica
+
+---
+
+# Objetivo
+
+Este documento conserva el registro histórico de los procesos de integración
+documental realizados sobre el Manual de Ingeniería y la documentación
+institucional de GeoMotion Studio.
+
+Su finalidad es preservar la trazabilidad de las integraciones ejecutadas,
+facilitar auditorías futuras y documentar las decisiones adoptadas durante
+cada proceso de consolidación.
+
+No constituye un documento normativo y no modifica el contenido aprobado del
+Manual de Ingeniería.
+
+---
+
+# Alcance
+
+Cada informe de integración deberá registrar, como mínimo:
+
+- el contexto institucional de la integración;
+- el alcance del trabajo realizado;
+- los documentos afectados;
+- las verificaciones efectuadas;
+- las incidencias detectadas;
+- el resultado final de la integración.
+
+Los informes representan una fotografía del estado del proyecto en el
+momento de su emisión y no deben interpretarse como una descripción
+permanente de la situación actual.
+
+---
+
+# Integración IT-001
+
+## Identificación
+
+**Código:** IT-001
+
+**Tipo:** Integración documental institucional
+
+**Estado:** Finalizada
+
+---
 
 ## Objetivo
 
-Evaluar de forma conjunta los entregables producidos por los especialistas de la primera ronda de revisión del Manual de Ingeniería de GeoMotion Studio.
-
-Este informe no modifica la arquitectura vigente.
-
-Su propósito es identificar el estado de integración de los documentos, registrar los principales hallazgos y definir las acciones para la siguiente iteración.
+Consolidar la primera versión institucional del Manual de Ingeniería tras la
+finalización del Ciclo 1 de arquitectura.
 
 ---
 
 ## Alcance
 
-Especialistas evaluados:
-
-- v.1
-- v.2
-- v.3
-- v.4
-- v.5
-
-Documentos considerados:
-
-- Arquitectura Física del Repositorio
-- Arquitectura Modular
-- ADR
-- Minimum Viable Architecture
-- demás documentos asignados durante la primera ronda.
+La integración comprendió la revisión y consolidación de la documentación
+arquitectónica disponible durante el cierre del ciclo correspondiente.
 
 ---
 
-## Estado general
+## Documentación considerada
 
-| Área | Estado |
-|------|---------|
-| Coherencia arquitectónica | 🟢 |
-| Especialización de agentes | 🟢 |
-| Dependencias entre documentos | 🟡 |
-| Solapamientos | 🟡 |
-| Gobernanza | 🟢 |
+- Manual de Ingeniería vigente en el momento de la integración.
+- Arquitecturas aprobadas durante el Ciclo 1.
+- Documentación de apoyo utilizada durante el proceso de consolidación.
 
 ---
 
-## Hallazgos
+## Actividades realizadas
 
-1. Los especialistas mantuvieron adecuadamente el alcance de sus responsabilidades.
-2. Se identificaron dependencias explícitas entre varios documentos, especialmente respecto de la Arquitectura Modular.
-3. Algunos conceptos de gobernanza aparecen referenciados por más de un documento y deberán consolidarse para evitar duplicaciones.
-4. Los documentos muestran un nivel de coherencia compatible con una estrategia Architecture First.
-5. La Dirección Técnica dispone de información suficiente para iniciar la integración de la primera iteración.
+Durante la integración se verificó:
 
----
-
-## Acciones
-
-- Consolidar el Mapa de Integración Documental.
-- Revisar las dependencias entre documentos.
-- Consolidar los puntos de gobernanza repetidos.
-- Preparar la segunda iteración de revisión especializada.
+- la coherencia general entre los documentos aprobados;
+- la consistencia de la estructura documental;
+- la ausencia de contradicciones arquitectónicas conocidas;
+- la correcta subordinación entre documentos normativos;
+- la preservación del enfoque *Architecture First*.
 
 ---
 
-## Conclusión
+## Resultado
 
-La primera ronda de especialistas produjo resultados consistentes y alineados con la estrategia Architecture First adoptada por GeoMotion Studio.
+La integración permitió consolidar la línea base documental correspondiente
+al cierre del Ciclo 1.
 
-No se identifican contradicciones arquitectónicas críticas.
+Las observaciones surgidas con posterioridad forman parte de la evolución
+normal del proyecto y no invalidan el resultado histórico de esta
+integración.
 
-La siguiente etapa consistirá en integrar formalmente las relaciones entre documentos antes de iniciar una nueva iteración de mejora.
+---
 
-Como resultado de esta integración se establece el Mapa de Integración Documental como referencia para comprender las relaciones entre los principales artefactos documentales del proyecto.
+## Observaciones
+
+Este informe refleja exclusivamente el estado institucional existente en el
+momento de su elaboración.
+
+Las modificaciones posteriores del Manual de Ingeniería, de la estructura
+documental o del repositorio deberán registrarse mediante nuevos informes de
+integración y no mediante la modificación retrospectiva de este registro.
+
+---
+
+# Registro de integraciones
+
+| Código | Fecha | Alcance | Estado |
+|---------|-------|---------|--------|
+| IT-001 | Ciclo 1 | Consolidación inicial del Manual de Ingeniería | Finalizada |
+
+---
+
+# Procedimiento para futuras integraciones
+
+Cada nueva integración deberá generar un nuevo registro independiente.
+
+Los informes anteriores permanecerán inalterados como evidencia histórica.
+
+Cada informe deberá:
+
+- identificar el alcance de la integración;
+- indicar la documentación considerada;
+- registrar las verificaciones realizadas;
+- documentar incidencias relevantes;
+- dejar constancia del resultado obtenido.
+
+No deberán sobrescribirse informes anteriores para reflejar el estado
+actual del proyecto.
+
+---
+
+# Conservación
+
+Los informes de integración forman parte del historial institucional del
+proyecto.
+
+Su conservación permite reconstruir la evolución documental de GeoMotion
+Studio y proporciona evidencia objetiva de los procesos de consolidación
+realizados por la Dirección Técnica.
+
+---
+
+# Estado del documento
+
+Este documento pertenece a la documentación interna de Dirección Técnica.
+
+No modifica la arquitectura vigente ni sustituye al Manual de Ingeniería.
+
+Su propósito es preservar la trazabilidad histórica de las integraciones
+documentales realizadas durante la evolución del proyecto.
