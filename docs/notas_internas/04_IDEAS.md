@@ -74,9 +74,13 @@ documento.
 
 Descripción breve del contexto en el que surge la propuesta.
 
+---
+
 ### Descripción
 
 Explicación resumida de la idea.
+
+---
 
 ### Beneficios potenciales
 
@@ -84,14 +88,20 @@ Explicación resumida de la idea.
 - Beneficio 2
 - Beneficio 3
 
+---
+
 ### Impacto estimado
 
 Bajo / Medio / Alto
+
+---
 
 ### Dependencias
 
 Documentos, arquitecturas o decisiones cuya existencia condiciona la
 evaluación de la propuesta.
+
+---
 
 ### Estado
 

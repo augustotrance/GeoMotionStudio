@@ -73,17 +73,25 @@ documento.
 
 Contexto en el que se identificó la observación.
 
+---
+
 ### Descripción
 
 Explicación objetiva de la observación.
+
+---
 
 ### Alcance
 
 Documentos, arquitecturas o procesos potencialmente relacionados.
 
+---
+
 ### Recomendación
 
 En caso de resultar conveniente, indicar la revisión futura sugerida.
+
+---
 
 ### Estado
 

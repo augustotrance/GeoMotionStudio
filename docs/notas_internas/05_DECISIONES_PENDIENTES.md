@@ -72,9 +72,13 @@ este documento.
 
 Descripción del contexto en el que surge la necesidad de decidir.
 
+---
+
 ### Situación actual
 
 Estado vigente de la cuestión.
+
+---
 
 ### Alternativas identificadas
 
@@ -82,14 +86,20 @@ Estado vigente de la cuestión.
 - Alternativa B
 - Alternativa C
 
+---
+
 ### Información pendiente
 
 Elementos necesarios para poder adoptar una decisión fundamentada.
+
+---
 
 ### Impacto esperado
 
 Descripción del posible impacto sobre la arquitectura, el Manual de
 Ingeniería o la implementación.
+
+---
 
 ### Estado
 

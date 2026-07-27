@@ -67,6 +67,8 @@ reevaluada en el futuro sin necesidad de reconstruir su contexto.
 
 **Origen:** Auditoría de `04_PILA_TECNOLÓGICA.md`
 
+---
+
 ## Situación actual
 
 Actualmente el documento **04_PILA_TECNOLÓGICA** incluye capítulos
@@ -82,6 +84,8 @@ relacionados con:
 Esta organización es adecuada para la versión actual del Manual y no
 requiere modificaciones.
 
+---
+
 ## Recomendación
 
 Cuando el Manual crezca de forma significativa, evaluar la creación de
@@ -92,6 +96,8 @@ un documento específico denominado, de forma provisional:
 Dicho documento podría centralizar los procesos transversales
 relacionados con la construcción, validación y mantenimiento del
 software.
+
+---
 
 ### Posibles contenidos
 
@@ -104,6 +110,8 @@ software.
 - Documentación técnica
 - Procedimientos de revisión
 
+---
+
 ## Motivo
 
 La separación solo será recomendable cuando reduzca la complejidad
@@ -112,6 +120,8 @@ documental.
 Mientras tanto, mantener estos capítulos dentro de
 `04_PILA_TECNOLÓGICA` favorece una consulta unificada y evita fragmentar
 innecesariamente el Manual.
+
+---
 
 ## Estado
 

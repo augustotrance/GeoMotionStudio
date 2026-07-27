@@ -9,9 +9,9 @@
 **Propietario documental:** Dirección Técnica  
 **Idioma oficial:** Español  
 **Metodología rectora:** Architecture First  
-**Versión del documento:** 1.1.0  
+**Versión del documento:** 1.0.0  
 **Fecha de creación:** 2026-07-26  
-**Última actualización:** 2026-07-27  
+**Última actualización:** 2026-07-26  
 **Próxima revisión:** Al finalizar el siguiente hito arquitectónico relevante  
 **Ubicación recomendada:** `docs/notas_internas/00_ESTADO_DEL_PROYECTO.md`
 
@@ -38,25 +38,24 @@
 | Versión | Fecha | Autor | Descripción |
 |---|---|---|---|
 | 1.0.0 | 2026-07-26 | Dirección Técnica | Creación inicial del registro institucional del proyecto |
-| 1.1.0 | 2026-07-27 | Dirección Técnica | Integración documental posterior a la consolidación de las arquitecturas del Ciclo 1 |
 
 ## Reglas de versionado
 
 El documento utilizará versionado semántico adaptado a documentación institucional:
 
 - **Versión mayor:** cambia la estructura del documento, su autoridad, su propósito o el modelo de gobierno del registro.
-- **Versión menor:** incorpora un nuevo hito arquitectónico, una misión consolidada, una línea base aprobada o una reorganización significativa del estado institucional.
-- **Versión de corrección:** corrige errores editoriales, referencias o inconsistencias sin modificar el estado institucional.
+- **Versión menor:** se incorpora un hito, una misión, una línea base, una decisión consolidada o una nueva sección relevante.
+- **Versión de corrección:** se corrigen errores editoriales, referencias, fechas o inconsistencias sin alterar el estado institucional registrado.
 
 ## Regla de integridad
 
 Toda modificación deberá preservar:
 
 - la trazabilidad del cambio;
-- el estado previo cuando resulte relevante;
-- la separación entre hechos aprobados, hechos pendientes y propuestas;
-- la precedencia de los documentos normativos;
-- la correspondencia con el estado real del repositorio y del Manual de Ingeniería.
+- el estado previo cuando sea relevante;
+- la distinción entre hechos aprobados, propuestas y cuestiones pendientes;
+- la separación entre arquitectura vigente y posibles evoluciones;
+- la autoridad de los documentos normativos originales.
 
 ---
 
@@ -73,17 +72,18 @@ Su finalidad es preservar, organizar y hacer consultable el conocimiento acumula
 - las misiones en curso;
 - las decisiones consolidadas;
 - las decisiones pendientes;
-- los principios arquitectónicos;
+- los principios arquitectónicos emergentes;
 - los riesgos estratégicos;
 - las dependencias documentales;
 - los hitos alcanzados;
 - las líneas de evolución identificadas;
-- los próximos pasos;
-- la historia institucional del proyecto.
+- los próximos pasos posibles;
+- la justificación del orden seguido;
+- la historia de consolidación arquitectónica.
 
-Este documento responde permanentemente a la pregunta:
+Este documento responde a la pregunta:
 
-> **¿Cuál es el estado institucional oficial de GeoMotion Studio en este momento?**
+> **¿Cuál es el estado oficial del conocimiento del proyecto en este momento?**
 
 ---
 
@@ -94,11 +94,11 @@ Este documento es:
 - un registro institucional;
 - una memoria arquitectónica;
 - una herramienta de continuidad;
-- un índice del conocimiento consolidado;
-- una referencia para Dirección Técnica;
-- una fotografía oficial del proyecto;
-- un registro histórico de hitos;
-- una herramienta de gobierno documental.
+- un índice razonado del conocimiento vigente;
+- un punto de entrada para la Dirección Técnica;
+- una fotografía consolidada del proyecto;
+- un registro histórico de hitos y transiciones;
+- un instrumento para evitar pérdida de contexto.
 
 Este documento no es:
 
@@ -106,49 +106,73 @@ Este documento no es:
 - un sustituto de la Arquitectura Modular;
 - un sustituto de la Arquitectura de Contratos;
 - un sustituto de los ADR;
+- una especificación funcional;
 - una especificación técnica;
-- una hoja de ruta de implementación;
-- un inventario del código;
-- un mecanismo de aprobación arquitectónica.
+- una hoja de ruta detallada;
+- un registro diario de actividad;
+- un inventario exhaustivo del código;
+- un mecanismo para aprobar decisiones arquitectónicas;
+- una autorización implícita para modificar arquitectura vigente.
 
 ---
 
 # 3. Autoridad y precedencia documental
 
-## 3.1 Manual de Ingeniería
+## 3.1 Autoridad del Manual de Ingeniería
 
 El Manual de Ingeniería mantiene la autoridad normativa sobre:
 
 - arquitectura;
-- principios;
+- principios de ingeniería;
+- responsabilidades;
+- fronteras;
 - reglas;
 - restricciones;
-- responsabilidades;
-- modelos oficiales.
+- modelos oficiales;
+- criterios estructurales.
 
-Este documento no podrá modificar ni reinterpretar el Manual.
+Este documento no podrá contradecir el Manual de Ingeniería.
 
-## 3.2 Architecture Decision Records
+## 3.2 Autoridad de los ADR
 
-Los ADR mantienen autoridad sobre las decisiones arquitectónicas oficialmente registradas.
+Cuando el sistema oficial de Architecture Decision Records se encuentre vigente, los ADR mantendrán la autoridad sobre:
 
-Este documento únicamente podrá registrar su estado, existencia y trazabilidad.
+- decisiones arquitectónicas relevantes;
+- contexto de las decisiones;
+- alternativas evaluadas;
+- justificación;
+- consecuencias;
+- sustitución de decisiones anteriores;
+- estado de cada decisión.
 
-## 3.3 Especificaciones técnicas
+Este documento podrá resumir o indexar ADR, pero no sustituirlos.
 
-Las especificaciones técnicas mantienen autoridad sobre la implementación concreta.
+## 3.3 Autoridad de las especificaciones técnicas
 
-Este documento podrá reflejar únicamente su estado institucional.
+Las especificaciones técnicas mantendrán autoridad sobre:
 
-## 3.4 Estado del Proyecto
+- implementación;
+- materialización concreta;
+- tecnologías;
+- protocolos;
+- formatos;
+- automatización;
+- infraestructura;
+- mecanismos de validación técnica.
 
-La autoridad de este documento se limita a:
+Este documento registrará su estado, pero no definirá su contenido.
 
-- registrar el estado consolidado;
-- mantener la cronología oficial;
-- preservar la continuidad institucional;
-- relacionar los distintos documentos del proyecto;
-- servir como punto único de consulta sobre el estado global.
+## 3.4 Autoridad del presente documento
+
+El presente documento mantiene autoridad únicamente sobre:
+
+- el estado institucional consolidado;
+- el estado reconocido de cada misión;
+- el estado reconocido de cada línea base;
+- la cronología oficial;
+- el inventario de cuestiones abiertas;
+- el registro de evoluciones candidatas;
+- la situación general del proyecto.
 
 ---
 
@@ -156,48 +180,74 @@ La autoridad de este documento se limita a:
 
 ## 4.1 Exactitud
 
-Solo se registrarán hechos respaldados por documentación aprobada o resoluciones formales.
+Solo se registrarán hechos respaldados por documentos, resoluciones o revisiones formales.
 
 ## 4.2 No invención
 
-Cuando una información no pueda verificarse se indicará:
+Cuando una fecha, versión, decisión o referencia no esté disponible, se utilizará:
 
 > **Pendiente de confirmación**
 
-Nunca se completará información mediante inferencias.
+Nunca se completará información por inferencia no verificada.
 
 ## 4.3 Separación de estados
 
-Toda información deberá diferenciar claramente entre:
+Toda entrada deberá distinguir claramente entre:
 
 - vigente;
 - aprobada;
-- en revisión;
-- pendiente;
 - propuesta;
+- candidata;
+- pendiente;
+- en revisión;
+- descartada;
 - sustituida;
 - obsoleta;
 - retirada.
 
 ## 4.4 Cambios justificados
 
-Las modificaciones deberán responder exclusivamente a:
+No se modificarán documentos, estructuras o decisiones por preferencia estilística.
 
-- inconsistencias;
-- necesidades arquitectónicas;
-- necesidades de gobierno;
-- mejoras de trazabilidad;
-- decisiones formalmente aprobadas.
+Toda modificación deberá estar justificada por:
+
+- una inconsistencia;
+- una necesidad arquitectónica;
+- un riesgo;
+- una dependencia;
+- una mejora de trazabilidad;
+- una necesidad de gobierno;
+- un cambio aprobado de alcance.
 
 ## 4.5 Actualización por hitos
 
-Este documento se actualizará únicamente cuando exista un cambio institucional significativo.
+Este documento no se actualizará por cada conversación o actividad menor.
 
-No se modificará por conversaciones, revisiones parciales o avances menores.
+Se actualizará cuando ocurra alguno de los siguientes hechos:
 
-## 4.6 Correspondencia con el repositorio
+- cierre de una misión;
+- aprobación de una línea base;
+- inicio de un nuevo ciclo;
+- aprobación de un ADR relevante;
+- modificación de la arquitectura vigente;
+- resolución de una decisión pendiente;
+- aparición de un riesgo estratégico;
+- cambio en el orden de construcción;
+- incorporación o retiro de un documento estructural;
+- comienzo de una fase de implementación.
 
-El contenido de este documento deberá mantenerse alineado con el estado oficial del repositorio, del Manual de Ingeniería y de las resoluciones emitidas por Dirección Técnica.
+## 4.6 Trazabilidad
+
+Toda entrada importante deberá indicar, cuando sea posible:
+
+- origen;
+- responsable;
+- fecha;
+- estado;
+- documentos relacionados;
+- impacto;
+- decisión asociada;
+- próxima acción.
 
 ---
 
@@ -205,63 +255,53 @@ El contenido de este documento deberá mantenerse alineado con el estado oficial
 
 ## 5.1 Estado general
 
-GeoMotion Studio atraviesa la fase de consolidación arquitectónica del
-Ciclo 1 bajo una metodología **Architecture First**.
+GeoMotion Studio se encuentra en una fase de consolidación arquitectónica bajo un enfoque **Architecture First**.
 
-La prioridad institucional continúa siendo completar la arquitectura,
-consolidar la documentación y preservar la coherencia técnica antes de
-iniciar una implementación significativa.
-
-La arquitectura continúa siendo la fuente primaria de verdad del proyecto.
-
-La implementación permanece subordinada a la arquitectura aprobada.
+El proyecto todavía no ha iniciado una implementación significativa. La prioridad continúa siendo establecer una arquitectura coherente, documentada, verificable y preparada para evolucionar durante muchos años.
 
 A la fecha de esta versión:
 
-- la Arquitectura Modular del Ciclo 1 se encuentra aprobada como línea base normativa;
-- la Arquitectura de Contratos del Ciclo 1 se encuentra aprobada como línea base normativa;
-- la Arquitectura Física del Repositorio ha concluido su desarrollo técnico y se encuentra en proceso de integración institucional;
-- el sistema oficial de Architecture Decision Records constituye la siguiente misión arquitectónica prevista;
+- la Arquitectura Modular del Ciclo 1 ha sido desarrollada y aprobada como línea base de trabajo;
+- la Arquitectura de Contratos del Ciclo 1 ha sido desarrollada y aprobada;
+- la Arquitectura Física del Repositorio permanece pendiente de consolidación final;
+- el sistema oficial de ADR permanece pendiente;
 - la Minimum Viable Architecture permanece pendiente;
-- la implementación continúa diferida hasta completar las dependencias arquitectónicas establecidas.
+- la implementación permanece subordinada al cierre de las dependencias arquitectónicas necesarias.
 
 ## 5.2 Estado ejecutivo por área
 
 | Área | Estado | Comentario |
 |---|---|---|
-| Identidad del proyecto | Consolidada | La visión y los principios rectores permanecen estables |
-| Metodología Architecture First | Vigente | Continúa siendo el criterio rector |
-| Manual de Ingeniería | En consolidación | Base documental aprobada y en integración progresiva |
-| Arquitectura Modular | Aprobada | Línea base normativa del Ciclo 1 |
-| Arquitectura de Contratos | Aprobada | Línea base normativa del Ciclo 1 |
-| Arquitectura Física del Repositorio | En integración | Desarrollo técnico concluido; integración documental pendiente |
-| Sistema ADR | Pendiente | Próxima misión prevista |
-| Minimum Viable Architecture | Pendiente | Dependiente de las arquitecturas anteriores |
-| Implementación | No iniciada | Correctamente subordinada a la arquitectura |
-| Automatización arquitectónica | Pendiente | Fuera del alcance actual |
-| Validación sistémica | Candidata futura | Evolución identificada |
+| Identidad del proyecto | Consolidada | La visión, naturaleza y filosofía general del proyecto se consideran establecidas |
+| Metodología Architecture First | Vigente | Constituye el criterio rector del proyecto |
+| Manual de Ingeniería | En evolución | Existe una base documental amplia y se encuentra en proceso de consolidación |
+| Arquitectura Modular | Aprobada | Ciclo 1 concluido |
+| Arquitectura de Contratos | Aprobada | Ciclo 1 concluido |
+| Arquitectura Física | Pendiente de consolidación | Misión V0.1 aún no cerrada en este registro |
+| Sistema ADR | Pendiente | Misión V0.4 no iniciada o no consolidada |
+| MVA | Pendiente | Misión V0.5 no iniciada o no consolidada |
+| Implementación | No iniciada | No corresponde iniciar sin cerrar las dependencias mínimas |
+| Automatización arquitectónica | Pendiente | Se definirá en fases posteriores |
+| Validación sistémica | Candidata futura | Fuera del alcance del Ciclo 1 |
 
 ## 5.3 Último hito consolidado
 
-**Hito:** Arquitectura Física del Repositorio.
-
-**Resultado:** Desarrollo técnico finalizado y validado por Dirección
-Técnica. Pendiente únicamente de su integración institucional dentro del
-Manual de Ingeniería.
-
-**Misión:** V0.1.
-
-**Estado:** Finalizada técnicamente.
+**Hito:** Finalización de la Arquitectura de Contratos del Ciclo 1.  
+**Resultado:** Aprobada como línea base normativa.  
+**Misión:** V0.3.  
+**Estado:** Concluida.
 
 ## 5.4 Próxima decisión estratégica
 
-La siguiente misión arquitectónica prevista es:
+Determinar el siguiente paso entre:
 
-**V0.4 — Sistema Oficial de Architecture Decision Records.**
+- consolidar la Arquitectura Física del Repositorio;
+- formalizar el sistema ADR;
+- preparar la MVA;
+- realizar primero una integración documental de V0.2 y V0.3;
+- ejecutar una revisión de dependencias antes de continuar.
 
-Su ejecución permitirá formalizar el gobierno permanente de las decisiones
-arquitectónicas del proyecto y completar la infraestructura documental
-necesaria antes del inicio de la Minimum Viable Architecture.
+La decisión deberá respetar el orden de dependencias aprobado por Dirección Técnica.
 
 ---
 
@@ -269,56 +309,43 @@ necesaria antes del inicio de la Minimum Viable Architecture.
 
 ## 6.1 Nombre
 
-GeoMotion Studio.
+GeoMotion Studio
 
 ## 6.2 Naturaleza
 
-GeoMotion Studio es una plataforma profesional para la creación,
-edición y gestión de contenido geoespacial.
+GeoMotion Studio es una plataforma profesional para la creación, edición y gestión de contenido geoespacial.
 
 ## 6.3 Enfoque de desarrollo
 
-El proyecto se desarrolla bajo una metodología **Architecture First**.
+El proyecto se desarrolla bajo un enfoque **Architecture First**.
 
-El orden institucional del proyecto es:
+El orden rector es:
 
 ```text
 Visión
-
-↓
-
+  ↓
 Arquitectura
-
-↓
-
+  ↓
 Documentación
-
-↓
-
+  ↓
 Implementación
-
-↓
-
+  ↓
 Código
 ```
 
-Este orden constituye uno de los principios permanentes del proyecto y no
-deberá invertirse.
+Nunca deberá invertirse este orden.
 
-## 6.4 Principios institucionales
+## 6.4 Fórmulas institucionales
 
 - El código implementa la arquitectura.
 - La arquitectura implementa la visión.
 - La documentación preserva el conocimiento.
 - La implementación no redefine la arquitectura.
-- La validación aporta evidencia; no modifica por sí misma la arquitectura aprobada.
+- La validación aporta evidencia, pero no modifica por sí misma la arquitectura aprobada.
 
 ## 6.5 Objetivo institucional
 
-Construir una plataforma profesional capaz de evolucionar durante muchos
-años mediante una arquitectura estable, documentada, verificable y
-mantenible, evitando la dependencia de decisiones circunstanciales de
-implementación.
+Construir un sistema profesional, mantenible, escalable, verificable y evolutivo, capaz de sostener una vida útil prolongada sin depender de decisiones circunstanciales de implementación.
 
 ---
 
@@ -328,26 +355,16 @@ implementación.
 
 ```text
 Founder / Chief Architect
-
-↓
-
+        ↓
 Dirección Técnica
-
-↓
-
+        ↓
 Especialistas
-
-↓
-
-Documentación especializada
-
-↓
-
+        ↓
+Documentos especializados
+        ↓
 Integración
-
-↓
-
-Implementación
+        ↓
+Implementación futura
 ```
 
 ## 7.2 Founder / Chief Architect
@@ -355,8 +372,9 @@ Implementación
 Responsabilidades:
 
 - preservar la visión;
-- establecer las prioridades estratégicas;
-- aprobar cambios estructurales;
+- definir prioridades estratégicas;
+- actuar como autoridad final;
+- aprobar cambios mayores;
 - resolver conflictos de alto nivel;
 - custodiar el propósito general del proyecto.
 
@@ -364,41 +382,51 @@ Responsabilidades:
 
 Responsabilidades:
 
-- preservar la coherencia arquitectónica;
+- preservar coherencia arquitectónica;
 - coordinar especialistas;
 - revisar entregables;
 - aprobar líneas base;
-- mantener la trazabilidad;
-- integrar documentación;
+- rechazar desviaciones;
 - registrar riesgos;
+- mantener trazabilidad;
+- integrar documentos;
+- evitar cambios innecesarios;
 - decidir el orden de las misiones;
-- mantener actualizado este documento.
+- mantener el presente documento.
 
 ## 7.4 Especialistas
 
 Los especialistas:
 
-- trabajan dentro del alcance de una misión concreta;
-- no constituyen autoridad final;
-- no modifican arquitecturas ajenas;
+- trabajan dentro de una misión acotada;
+- no son autoridad final;
+- no rediseñan áreas fuera de alcance;
 - elevan inconsistencias;
-- producen documentación especializada;
-- respetan siempre la línea base vigente;
-- entregan resultados para revisión institucional.
+- proponen alternativas;
+- producen entregables para revisión;
+- respetan la línea base vigente;
+- no aprueban sus propias decisiones.
 
-## 7.5 Principio de intervención
+## 7.5 Regla de intervención de Dirección Técnica
 
-Dirección Técnica solicitará modificaciones únicamente cuando exista:
+Dirección Técnica no solicitará cambios por:
+
+- preferencias de estilo;
+- deseo de perfección abstracta;
+- inclinación personal;
+- adopción de patrones externos;
+- redacción alternativa sin impacto.
+
+Dirección Técnica solicitará cambios únicamente cuando exista:
 
 - contradicción;
-- ambigüedad relevante;
-- incumplimiento del alcance;
+- ambigüedad peligrosa;
+- violación de alcance;
 - pérdida de trazabilidad;
 - riesgo arquitectónico;
 - inconsistencia normativa;
-- dependencia sin resolver.
-
-No se solicitarán modificaciones por preferencias editoriales o de estilo.
+- dependencia no resuelta;
+- incumplimiento de la misión.
 
 ---
 
@@ -406,72 +434,63 @@ No se solicitarán modificaciones por preferencias editoriales o de estilo.
 
 ## 8.1 Context Packages
 
-Cada misión especializada se desarrolla utilizando un **Context Package**
-preparado por Dirección Técnica.
-
-Cada paquete de contexto establece, como mínimo:
+Cada especialista recibe un paquete de contexto que define:
 
 - identidad del proyecto;
-- objetivo de la misión;
-- alcance autorizado;
-- responsabilidades;
-- restricciones;
+- rol;
+- estado;
+- autoridad;
 - información disponible;
-- documentación vigente;
-- dependencias conocidas;
+- objetivo;
+- alcance;
+- restricciones;
+- entregables;
+- dependencias;
 - criterios de aceptación;
-- mecanismo de revisión;
-- procedimiento de escalado.
-
-Ningún especialista deberá redefinir el contenido del paquete recibido.
+- mecanismo de escalado.
 
 ## 8.2 Revisión progresiva
 
-Las misiones se desarrollan mediante iteraciones sucesivas.
+Los documentos se revisan por partes.
 
-Cada parte puede recibir alguno de los siguientes estados:
+Cada parte puede ser:
 
 - aprobada;
 - aprobada con observaciones;
-- retenida por dependencia;
 - devuelta para corrección;
-- elevada para decisión de Dirección Técnica.
-
-La revisión progresiva permite detectar desviaciones antes de completar una
-misión completa.
+- retenida por dependencia;
+- elevada para decisión.
 
 ## 8.3 Cierre de misión
 
-Una misión se considera institucionalmente cerrada cuando:
+Una misión se considera cerrada cuando:
 
 - todas sus partes han sido revisadas;
-- el alcance ha sido satisfecho;
 - no existen contradicciones críticas;
-- los riesgos han sido identificados;
-- las cuestiones futuras han quedado separadas de la línea base vigente;
-- Dirección Técnica emite la resolución correspondiente.
+- el alcance se ha cumplido;
+- los riesgos han sido registrados;
+- las evoluciones futuras han sido separadas del modelo vigente;
+- Dirección Técnica emite resolución de cierre.
 
 ## 8.4 Integración posterior
 
-La finalización de una misión no implica automáticamente:
+La aprobación de una misión no implica automáticamente:
 
-- la modificación inmediata del Manual de Ingeniería;
-- la creación automática de ADR;
-- la actualización de todos los documentos relacionados;
-- el inicio de la implementación;
-- el cierre del ciclo arquitectónico.
+- modificación de todos los documentos relacionados;
+- creación de ADR;
+- inicio de implementación;
+- cierre del ciclo general;
+- incorporación inmediata al Manual sin revisión editorial.
 
-La integración documental constituye una actividad independiente y
-controlada.
+La integración se realiza de forma controlada.
 
 ---
 
 # 9. Restricción metodológica fundamental
 
-La arquitectura de GeoMotion Studio no deberá derivarse automáticamente de
-metodologías, marcos de trabajo o patrones externos.
+La arquitectura de GeoMotion Studio no deberá derivarse de forma automática de metodologías o patrones externos.
 
-El proyecto no parte de:
+No deberá comenzarse desde:
 
 - Domain-Driven Design;
 - Clean Architecture;
@@ -479,154 +498,131 @@ El proyecto no parte de:
 - CQRS;
 - Event-Driven Architecture;
 - microservicios;
+- patrones de moda;
 - frameworks;
-- herramientas;
-- plataformas comerciales.
+- productos de terceros.
 
-La arquitectura debe emerger de las necesidades propias del proyecto.
+La arquitectura debe emerger de GeoMotion Studio.
 
-Los patrones externos podrán utilizarse posteriormente únicamente como:
+Los patrones externos podrán utilizarse posteriormente como:
 
 - referencia;
 - comparación;
+- lenguaje auxiliar;
 - validación;
-- lenguaje común;
-- fuente secundaria de ideas.
+- fuente de ideas.
 
-Nunca constituirán autoridad arquitectónica.
+Nunca como autoridad primaria.
 
 ---
 
 # 10. Ecosistema documental
 
-## 10.1 Jerarquía documental
-
-La documentación institucional de GeoMotion Studio mantiene el siguiente
-orden de precedencia:
+## 10.1 Niveles principales
 
 ```text
-Visión del Proyecto
+Identidad del Proyecto
         ↓
 Manual de Ingeniería
         ↓
-Architecture Decision Records
-        ↓
-Especificaciones Técnicas
+Especificaciones
         ↓
 Implementación
         ↓
 Validación
 ```
 
-La documentación interna de Dirección Técnica complementa este ecosistema,
-pero no modifica la autoridad de los documentos anteriores.
-
 ## 10.2 Documentación interna
 
-La documentación interna sirve para preservar:
+La documentación interna de Dirección Técnica sirve para:
 
-- continuidad institucional;
-- integración documental;
-- evolución del Manual;
-- estado del proyecto;
+- integración;
+- continuidad;
 - decisiones pendientes;
 - ideas;
 - observaciones;
-- evidencias históricas.
+- evolución del Manual;
+- estado institucional;
+- trazabilidad.
 
-Ninguno de estos documentos constituye normativa arquitectónica salvo
-resolución expresa de Dirección Técnica.
+No constituye normativa arquitectónica salvo resolución expresa.
 
-## 10.3 Organización recomendada
+## 10.3 Ubicación actual
+
+Ruta recomendada:
 
 ```text
 docs/
 └── notas_internas/
     ├── 00_ESTADO_DEL_PROYECTO.md
-    ├── 01_EVOLUCIÓN_DEL_MANUAL.md
-    ├── 02_MAPA_DE_INTEGRACIÓN_DOCUMENTAL.md
-    ├── 03_INFORME_DE_INTEGRACIÓN_TÉCNICA.md
-    ├── 04_IDEAS.md
-    ├── 05_DECISIONES_PENDIENTES.md
-    ├── 06_OBSERVACIONES.md
-    └── 07_ACTA_DE_APROBACIÓN_ARQUITECTÓNICA_V0_1.md
+    ├── 01_MAPA_DE_INTEGRACIÓN_DOCUMENTAL.md
+    ├── 02_INFORME_DE_INTEGRACIÓN_TÉCNICA_v1.md
+    ├── 03_EVOLUCIÓN_DEL_MANUAL.md
+    ├── 04_DECISIONES_PENDIENTES.md
+    ├── 05_IDEAS.md
+    └── 06_OBSERVACIONES.md
 ```
 
-La numeración refleja el orden lógico de consulta y deberá mantenerse
-estable.
-
-## 10.4 Relación entre documentos internos
-
-Cada documento posee una responsabilidad exclusiva:
-
-| Documento | Responsabilidad principal |
-|---|---|
-| INT-000 | Estado institucional consolidado |
-| INT-001 | Evolución futura del Manual |
-| INT-002 | Organización e integración documental |
-| INT-003 | Registro histórico de integraciones |
-| INT-004 | Ideas sin decisión institucional |
-| INT-005 | Decisiones pendientes |
-| INT-006 | Observaciones de Dirección Técnica |
-| INT-007 | Evidencia formal de aprobación arquitectónica |
-
-La información no deberá duplicarse entre documentos.
+La numeración podrá ajustarse, pero deberá preservar un orden estable y comprensible.
 
 ---
 
-# 11. Estado de la documentación interna
+# 11. Estado de los documentos internos existentes
 
 ## 11.1 INT-000 — Estado del Proyecto
 
-**Estado:** Activo.
+**Estado:** Activo.  
+**Función:** Fuente institucional sobre el estado consolidado del proyecto.  
+**Acción:** Mantener y actualizar por hitos.
 
-**Responsabilidad:** Mantener la fotografía institucional oficial del
-proyecto.
+## 11.2 INT-001 — Nota Interna Evolución Manual
 
-**Actualización:** Exclusivamente por hitos arquitectónicos relevantes.
+**Estado actual:** Activo.  
+**Contenido conocido:** Registra recomendaciones estructurales futuras del Manual que no requieren acción inmediata.  
+**Valor:** Alto.  
+**Recomendación:** Conservar.
 
----
+Nombre recomendado:
 
-## 11.2 INT-001 — Evolución del Manual
+```text
+03_EVOLUCIÓN_DEL_MANUAL.md
+```
 
-**Estado:** Activo.
-
-**Responsabilidad:** Registrar posibles evoluciones futuras del Manual que
-no formen parte todavía de la línea base vigente.
-
----
+El nombre puede simplificarse porque la ubicación ya indica que se trata de una nota interna.
 
 ## 11.3 INT-002 — Mapa de Integración Documental
 
-**Estado:** Activo.
+**Estado:** Activo.  
+**Valor:** Alto.  
+**Función:** Define organización documental y relaciones entre niveles.  
+**Recomendación:** Conservar y actualizar cuando cambie la estructura documental.
 
-**Responsabilidad:** Mantener la organización oficial del ecosistema
-documental y las relaciones entre documentos.
+## 11.4 INT-003 — Informe de Integración Técnica v1
 
----
+**Estado:** Activo.  
+**Valor:** Medio o alto según vigencia.  
+**Función:** Registrar una ronda específica de integración.  
+**Recomendación:** Conservar como evidencia histórica.
 
-## 11.4 INT-003 — Informe de Integración Técnica
+Cuando existan múltiples informes:
 
-**Estado:** Activo.
+```text
+informes_integración/
+├── INFORME_DE_INTEGRACIÓN_TÉCNICA_v1.md
+├── INFORME_DE_INTEGRACIÓN_TÉCNICA_v2.md
+└── ...
+```
 
-**Responsabilidad:** Conservar evidencia histórica de cada proceso formal
-de integración documental.
-
-Cada informe constituye un registro independiente y no deberá
-sobrescribirse.
-
----
+No deberá sobrescribirse un informe histórico.
 
 ## 11.5 INT-004 — Ideas
 
-**Estado:** Activo.
+**Estado:** Activo, pero actualmente vacío o casi vacío.  
+**Valor potencial:** Medio.  
+**Riesgo:** Convertirse en depósito informal sin gobierno.  
+**Recomendación:** Conservar únicamente si se define una estructura mínima.
 
-**Responsabilidad:** Registrar ideas, propuestas y oportunidades de mejora
-que todavía no constituyen decisiones institucionales.
-
-Su contenido no posee carácter normativo.
-
-Toda entrada deberá incluir, como mínimo:
+Toda idea deberá incluir:
 
 - identificador;
 - título;
@@ -634,119 +630,70 @@ Toda entrada deberá incluir, como mínimo:
 - descripción;
 - justificación;
 - estado;
-- fecha;
-- relación con otros documentos.
+- relación con el proyecto;
+- decisión futura;
+- fecha.
 
-Las ideas deberán evolucionar posteriormente hacia:
-
-- una decisión pendiente;
-- una misión futura;
-- una evolución del Manual;
-- o su descarte formal.
-
----
+Si permanece vacío durante varios ciclos y no se utiliza, podrá retirarse.
 
 ## 11.6 INT-005 — Decisiones Pendientes
 
-**Estado:** Activo.
+**Estado:** Activo, pero actualmente vacío o casi vacío.  
+**Valor potencial:** Alto.  
+**Recomendación:** Conservar.
 
-**Responsabilidad:** Mantener el registro oficial de las decisiones
-arquitectónicas aún no resueltas.
+Debe funcionar como cola temporal anterior a los ADR o como registro de decisiones aún no resueltas.
 
-Este documento constituye la cola institucional previa a los
-Architecture Decision Records.
-
-No deberá contener:
-
-- decisiones ya aprobadas;
-- decisiones descartadas;
-- decisiones implementadas;
-- cuestiones puramente editoriales.
-
-Cada decisión deberá identificar:
-
-- origen;
-- impacto;
-- documentos afectados;
-- responsable de resolución;
-- prioridad;
-- estado.
-
----
+No debe contener decisiones ya aprobadas.
 
 ## 11.7 INT-006 — Observaciones
 
-**Estado:** Activo.
+**Estado:** Activo, pero actualmente vacío o casi vacío.  
+**Valor potencial:** Bajo si no se define su alcance.  
+**Riesgo:** Duplicar Ideas, Evolución del Manual o Decisiones Pendientes.  
+**Recomendación:** Mantener provisionalmente.
 
-**Responsabilidad:** Registrar observaciones realizadas por Dirección
-Técnica durante revisiones institucionales.
+Definición recomendada:
 
-Las observaciones representan hallazgos que todavía no constituyen:
+> Observaciones registra hallazgos de Dirección Técnica que requieren seguimiento, pero que todavía no constituyen una idea, una decisión pendiente, un riesgo ni una propuesta de evolución.
 
-- una decisión pendiente;
-- un riesgo estratégico;
-- una propuesta de evolución;
-- una modificación aprobada.
-
-Cada observación deberá permanecer abierta únicamente mientras conserve
-valor institucional.
+Si no puede sostener una responsabilidad única, deberá fusionarse o retirarse.
 
 ---
 
-## 11.8 INT-007 — Acta de Aprobación Arquitectónica
+# 12. Criterio para conservar documentos internos
 
-**Estado:** Activo.
+Un documento interno deberá existir únicamente si:
 
-**Responsabilidad:** Preservar la resolución institucional mediante la cual
-Dirección Técnica aprueba formalmente una arquitectura como línea base.
+- posee una responsabilidad única;
+- contiene información activa o histórica valiosa;
+- evita pérdida de conocimiento;
+- no duplica otro documento;
+- tiene propietario;
+- tiene reglas de actualización;
+- tiene un criterio de cierre o archivo.
 
-Cada arquitectura aprobada dispondrá de su propia acta independiente.
+Un documento deberá eliminarse, archivarse o fusionarse cuando:
 
-Las actas no sustituyen:
-
-- el documento arquitectónico;
-- los ADR;
-- el Manual de Ingeniería.
-
-Su finalidad consiste exclusivamente en proporcionar evidencia formal de
-la aprobación institucional.
-
----
-
-# 12. Criterios para conservar documentos internos
-
-Un documento interno únicamente deberá mantenerse cuando:
-
-- posea una responsabilidad única;
-- preserve conocimiento relevante;
-- evite pérdida de contexto;
-- no duplique información;
-- disponga de un propietario claramente definido;
-- tenga reglas explícitas de mantenimiento;
-- aporte valor institucional.
-
-Un documento deberá fusionarse, archivarse o eliminarse cuando:
-
-- permanezca vacío durante un periodo prolongado;
-- duplique responsabilidades;
+- permanezca vacío sin propósito real;
+- duplique información;
 - carezca de propietario;
-- no posea reglas de actualización;
-- genere fragmentación documental;
-- deje de aportar conocimiento relevante.
+- no pueda distinguirse de otro;
+- no tenga reglas de uso;
+- genere fragmentación;
+- se convierta en un depósito indefinido.
 
 ---
 
-# 13. Estado del Manual de Ingeniería
+# 13. Manual de Ingeniería
 
 ## 13.1 Estado general
 
-El Manual de Ingeniería constituye la referencia normativa vigente de
-GeoMotion Studio.
+El Manual de Ingeniería constituye la referencia arquitectónica vigente del proyecto.
 
-Su evolución continúa realizándose mediante un proceso controlado de
-misiones especializadas e integración posterior.
+Dispone de una base amplia de documentos oficiales.
 
-El Manual mantiene la autoridad sobre toda la arquitectura aprobada.
+El número exacto, estado y versión de cada documento deberá mantenerse en un inventario específico.
 
 ## 13.2 Estado institucional
 
@@ -754,161 +701,119 @@ El Manual mantiene la autoridad sobre toda la arquitectura aprobada.
 |---|---|
 | Existencia del Manual | Confirmada |
 | Autoridad arquitectónica | Vigente |
-| Arquitectura Modular | Integrada como línea base |
-| Arquitectura de Contratos | Integrada como línea base |
-| Arquitectura Física | Pendiente de integración editorial |
-| Sistema ADR | Pendiente |
+| Consolidación completa | Pendiente |
 | Integración documental | En progreso |
 | Revisión editorial global | Pendiente |
-| Inventario oficial | Pendiente de consolidación |
+| Trazabilidad con ADR | Pendiente |
+| Alineación con V0.2 | Parcialmente consolidada |
+| Alineación con V0.3 | Pendiente de integración editorial |
 
-## 13.3 Principio rector
+## 13.3 Principio documental rector
 
-El conocimiento arquitectónico constituye el activo principal del Manual.
+> El modelo arquitectónico constituye el conocimiento principal; inventarios y catálogos son evidencia de su aplicación, no su propósito.
 
-Los inventarios, catálogos y registros representan evidencia de dicho
-conocimiento, pero no lo sustituyen.
+## 13.4 Próxima necesidad
 
-## 13.4 Próximas necesidades
+Preparar un inventario de todos los documentos oficiales con:
 
-El Manual deberá incorporar progresivamente:
-
-- inventario oficial de documentos;
-- integración editorial de V0.1;
-- sistema oficial de ADR;
-- trazabilidad entre ADR y Manual;
-- control de versiones institucional.
+- código;
+- nombre;
+- versión;
+- estado;
+- propietario;
+- autoridad;
+- dependencias;
+- fecha de última revisión;
+- especialista relacionado;
+- línea base;
+- observaciones.
 
 ---
 
-# 14. Estado general de las misiones
+# 14. Estado de las misiones
 
-## 14.1 Resumen institucional
+## 14.1 Resumen
 
 | Misión | Área | Estado | Resultado |
 |---|---|---|---|
-| V0.1 | Arquitectura Física del Repositorio | Finalizada técnicamente | Pendiente de integración |
+| V0.1 | Arquitectura Física del Repositorio | Pendiente de consolidación | No cerrado |
 | V0.2 | Arquitectura Modular | Concluida | Aprobada |
 | V0.3 | Arquitectura de Contratos | Concluida | Aprobada |
-| V0.4 | Sistema ADR | Pendiente | No iniciada |
-| V0.5 | Minimum Viable Architecture | Pendiente | No iniciada |
-
-## 14.2 Estado del Ciclo 1
-
-El Ciclo 1 ha permitido consolidar las dos arquitecturas fundamentales del
-proyecto:
-
-- Arquitectura Modular.
-- Arquitectura de Contratos.
-
-Asimismo, la Arquitectura Física ha alcanzado su resolución técnica,
-quedando pendiente únicamente su incorporación institucional.
-
-Las siguientes fases del proyecto se centrarán en:
-
-- gobierno de decisiones;
-- integración documental;
-- preparación de la Minimum Viable Architecture;
-- inicio controlado de la implementación.
+| V0.4 | Sistema ADR | Pendiente | No iniciado o no consolidado |
+| V0.5 | Minimum Viable Architecture | Pendiente | No iniciado o no consolidado |
 
 ---
 
 # 15. Misión V0.1 — Arquitectura Física del Repositorio
 
-## 15.1 Estado
+## 15.1 Propósito
 
-**Estado institucional:** Finalizada técnicamente.
+Diseñar la organización física del repositorio de GeoMotion Studio para sostener un proyecto profesional durante muchos años.
 
-**Estado documental:** Pendiente de integración editorial.
+## 15.2 Alcance conocido
 
-## 15.2 Propósito
+La misión incluye:
 
-Diseñar la arquitectura física del repositorio de GeoMotion Studio de forma
-que materialice la arquitectura lógica previamente aprobada sin alterar sus
-principios, responsabilidades o fronteras.
-
-La misión establece el modelo físico de organización del proyecto y define
-las reglas necesarias para permitir su evolución sostenible durante toda la
-vida útil del sistema.
-
-## 15.3 Alcance
-
-La misión comprende:
-
-- organización física del repositorio;
-- estructura del monorepositorio;
-- organización de aplicaciones;
-- organización de paquetes;
-- organización de bibliotecas;
-- ubicación de la documentación;
+- estructura general del monorepo;
+- organización de directorios;
+- separación entre aplicaciones, paquetes y librerías;
+- ubicación de documentación;
 - herramientas internas;
 - convenciones de nombres;
-- límites físicos entre componentes;
+- límites físicos;
 - reglas de crecimiento;
-- correspondencia entre arquitectura lógica y representación física.
+- correspondencia con la arquitectura lógica aprobada.
 
-## 15.4 Restricciones
+## 15.3 Restricciones
 
-La misión no define:
+No debe diseñar:
 
-- arquitectura modular;
+- arquitectura lógica;
 - responsabilidades funcionales;
 - contratos;
 - APIs;
-- protocolos;
-- mecanismos de comunicación;
+- eventos;
+- servicios;
+- funcionalidades;
 - implementación;
-- tecnologías concretas;
-- código fuente.
+- código.
 
-La organización física permanece completamente subordinada a la
-arquitectura aprobada.
+## 15.4 Dependencias
 
-## 15.5 Dependencias
+La Arquitectura Física debe reflejar la arquitectura aprobada.
 
-La Arquitectura Física depende de:
+Por tanto, depende de:
 
 - Arquitectura Modular;
-- Arquitectura de Contratos;
-- principios de encapsulamiento;
 - reglas de frontera;
 - criterios de propiedad;
-- organización documental.
+- decisiones de organización documental;
+- posibles decisiones ADR relevantes.
 
-## 15.6 Resultado institucional
+## 15.5 Estado actual
 
-La misión produjo una arquitectura física coherente con las líneas base
-existentes.
+**Estado:** Pendiente de consolidación.
 
-Durante su revisión se verificó, entre otros aspectos:
+## 15.6 Próxima acción
 
-- alineación con la Guía Editorial;
-- alineación con la Arquitectura Modular;
-- alineación con la Arquitectura de Contratos;
-- separación entre arquitectura lógica y estructura física;
-- eliminación de taxonomías paralelas;
-- preservación de la trazabilidad documental.
+Reactivar o iniciar formalmente V0.1 utilizando como insumos:
 
-Asimismo, la misión documentó expresamente aquellas decisiones cuya
-confirmación depende del estado real del repositorio institucional.
+- Arquitectura Modular aprobada;
+- Arquitectura de Contratos aprobada;
+- estructura actual del repositorio;
+- Manual de Ingeniería;
+- Mapa de Integración Documental;
+- reglas de crecimiento.
 
-## 15.7 Estado actual
+## 15.7 Riesgo principal
 
-La misión se considera técnicamente concluida.
+Definir una estructura física antes de consolidar dependencias podría:
 
-Permanece pendiente únicamente:
-
-- integración editorial en el Manual de Ingeniería;
-- actualización del inventario documental;
-- emisión del acta institucional correspondiente.
-
-## 15.8 Próxima acción
-
-Registrar formalmente la aprobación institucional mediante el documento:
-
-> **INT-007 — Acta de Aprobación Arquitectónica V0.1**
-
-Posteriormente deberá iniciarse la misión V0.4.
+- cristalizar decisiones prematuras;
+- crear límites físicos incorrectos;
+- inducir una arquitectura por carpetas;
+- dificultar la evolución;
+- mezclar responsabilidades.
 
 ---
 
@@ -916,59 +821,59 @@ Posteriormente deberá iniciarse la misión V0.4.
 
 ## 16.1 Estado
 
-**Estado:** Concluida.
-
-**Resultado:** Aprobada como línea base arquitectónica del proyecto.
+**Estado:** Concluida.  
+**Resultado:** Aprobada como línea base arquitectónica de trabajo.  
+**Ciclo:** Ciclo 1 — Consolidación de Arquitectura Modular.
 
 ## 16.2 Propósito
 
-Materializar la arquitectura modular necesaria para sostener la evolución
-del sistema durante toda su vida útil.
+Materializar, precisar y preparar la arquitectura modular inicial para guiar la construcción progresiva del sistema.
 
-La misión no tuvo como objetivo rediseñar la arquitectura existente, sino
-consolidarla y prepararla para las etapas posteriores.
+La misión no tenía como objetivo rediseñar la arquitectura modular desde cero.
 
 ## 16.3 Resultado general
 
-La misión produjo una arquitectura modular suficientemente estable para
-servir como base de:
+V0.2 entregó una arquitectura modular consolidada capaz de servir como base para:
 
-- Arquitectura de Contratos;
-- Arquitectura Física;
-- futuras especificaciones;
-- validaciones arquitectónicas;
-- implementación posterior.
+- contratos;
+- arquitectura física;
+- validación de dependencias;
+- asignación de propiedad;
+- evolución del sistema;
+- futura implementación.
 
-## 16.4 Capacidades obtenidas
+## 16.4 Capacidades entregadas
 
-La misión consolidó:
+La misión produjo:
 
 - mapa modular;
 - responsabilidades;
-- límites;
+- propiedad;
+- fronteras;
 - reglas de dependencia;
-- criterios de encapsulamiento;
+- encapsulamiento;
 - mecanismos de validación;
 - análisis de riesgos;
-- cuestiones candidatas a futuras decisiones.
+- candidatos a ADR;
+- orientación para transferencia a otras misiones.
 
-## 16.5 Evaluación institucional
+## 16.5 Evaluación de Dirección Técnica
 
-Dirección Técnica concluyó que la misión:
+La misión fue evaluada de forma integral.
 
-- respetó la metodología Architecture First;
-- evitó derivar la arquitectura desde tecnologías;
-- preservó la separación de responsabilidades;
-- proporcionó una base suficiente para el desarrollo contractual;
-- mantuvo una adecuada estabilidad conceptual;
-- no presentó contradicciones críticas.
+Conclusiones:
 
-Como consecuencia, fue aprobada como línea base normativa del Ciclo 1.
+- mantuvo el enfoque Architecture First;
+- evitó convertir carpetas o tecnologías en arquitectura;
+- mantuvo responsabilidades separadas;
+- proporcionó una base suficiente para V0.3;
+- identificó decisiones aún no maduras;
+- no presentó contradicciones críticas;
+- fue aceptada como línea base.
 
-## 16.6 Cuestiones registradas
+## 16.6 Cuestiones elevadas o pendientes
 
-Durante la revisión se identificaron varias cuestiones que quedaron
-expresamente separadas de la línea base:
+Se registraron como cuestiones de Dirección Técnica:
 
 - propiedad documental;
 - propiedad de recursos;
@@ -977,64 +882,39 @@ expresamente separadas de la línea base:
 - temporalidad;
 - animación.
 
-Estas cuestiones permanecen registradas como decisiones pendientes y no
-afectan a la validez de la arquitectura aprobada.
+Estas cuestiones no invalidaron la línea base modular.
 
 ## 16.7 Relación con otras misiones
 
-La Arquitectura Modular constituye el principal insumo para:
+V0.2 es insumo directo para:
 
-- V0.1 — Arquitectura Física;
 - V0.3 — Arquitectura de Contratos;
-- V0.4 — Sistema ADR;
-- V0.5 — Minimum Viable Architecture.
-
----
-
-# 16. Misión V0.2 — Arquitectura Modular (continuación)
+- V0.1 — Arquitectura Física;
+- V0.4 — ADR;
+- V0.5 — MVA.
 
 ## 16.8 Estado de integración
 
-La Arquitectura Modular presenta el siguiente estado de integración:
+- Aprobada conceptualmente.
+- Utilizada como Anexo A para V0.3.
+- Pendiente de integración editorial total dentro del Manual de Ingeniería.
+- Pendiente de formalización de decisiones mediante ADR cuando corresponda.
 
-| Elemento | Estado |
-|---|---|
-| Línea base arquitectónica | Aprobada |
-| Validación técnica | Completada |
-| Revisión de Dirección Técnica | Completada |
-| Integración parcial con V0.3 | Completada |
-| Integración con V0.1 | Completada |
-| Integración editorial completa | Pendiente |
-| Formalización mediante ADR | Pendiente |
+## 16.9 Documento derivado
 
-La misión constituye actualmente la referencia arquitectónica oficial para
-la organización lógica del sistema.
-
-## 16.9 Documentación derivada
-
-Como resultado de la misión se elaboró el documento:
+Se preparó:
 
 > **Anexo A — Arquitectura Modular Consolidada**
 
-Este documento se utilizó posteriormente como referencia oficial durante
-el desarrollo de la Arquitectura de Contratos y de la Arquitectura Física
-del Repositorio.
+El Anexo A sirvió como referencia contractual para V0.3.
 
 ## 16.10 Lecciones aprendidas
 
-Durante el desarrollo de V0.2 se consolidaron diversos principios de
-trabajo que posteriormente pasaron a formar parte del modo de operación de
-Dirección Técnica.
-
-Entre ellos destacan:
-
-- los especialistas no deben inferir arquitectura inexistente;
-- cada misión debe recibir todos los insumos necesarios;
-- la revisión debe centrarse en inconsistencias reales;
-- las evoluciones futuras deben separarse claramente de la línea base
-  vigente;
-- la integración documental constituye una actividad independiente del
-  desarrollo de cada misión.
+- Una misión especializada debe recibir todos los insumos necesarios.
+- No debe exigirse a un especialista inferir arquitectura ausente.
+- La integración se realiza después del cierre, no durante la elaboración.
+- Las cuestiones futuras deben registrarse sin contaminar la línea base vigente.
+- La revisión debe distinguir entre problemas reales y preferencias editoriales.
 
 ---
 
@@ -1042,54 +922,44 @@ Entre ellos destacan:
 
 ## 17.1 Estado
 
-**Estado:** Concluida.
-
+**Estado:** Concluida.  
 **Resultado:** Aprobada como línea base normativa del Ciclo 1.
 
 ## 17.2 Propósito
 
-Definir el modelo arquitectónico mediante el cual los módulos de
-GeoMotion Studio publican, gobiernan y evolucionan sus colaboraciones
-autorizadas.
-
-La misión establece el lenguaje contractual oficial del proyecto.
+Definir el sistema arquitectónico mediante el cual los módulos de GeoMotion Studio declaran, gobiernan, validan y evolucionan sus colaboraciones autorizadas.
 
 ## 17.3 Dependencia principal
 
-La misión se desarrolló utilizando como fundamento la Arquitectura
-Modular consolidada.
+V0.3 dependía de la Arquitectura Modular consolidada.
 
-La disponibilidad del Anexo A permitió evitar inferencias arquitectónicas
-y mantener una correspondencia completa entre módulos y contratos.
+Inicialmente el especialista indicó correctamente que no podía derivar contratos concretos sin disponer de dicha arquitectura.
+
+Dirección Técnica resolvió la dependencia mediante la entrega del Anexo A.
 
 ## 17.4 Ajuste metodológico
 
-Durante la misión Dirección Técnica estableció el siguiente criterio:
+Dirección Técnica estableció:
 
-> El modelo contractual constituye el entregable principal.
->
-> El catálogo inicial únicamente demuestra que dicho modelo resulta
-> aplicable.
+> El modelo contractual constituye el entregable principal. El catálogo inicial es evidencia de que el modelo es aplicable.
 
-Este criterio evitó convertir la misión en un inventario de contratos.
+Esto evitó convertir la misión en un inventario exhaustivo de contratos.
 
-## 17.5 Restricciones metodológicas
+## 17.5 Restricción metodológica
 
-La arquitectura contractual no debía derivarse automáticamente de:
+La arquitectura contractual no debía partir de:
 
 - DDD;
 - Clean Architecture;
 - Arquitectura Hexagonal;
 - CQRS;
-- Event-Driven Architecture;
-- tecnologías concretas.
+- Event-Driven Architecture.
 
-El modelo debía surgir exclusivamente de las necesidades propias de
-GeoMotion Studio.
+El modelo debía emerger de GeoMotion Studio.
 
-## 17.6 Organización del documento
+## 17.6 Estructura final
 
-La misión quedó estructurada en ocho bloques principales:
+La misión se organizó en ocho partes:
 
 1. Fundamentos.
 2. Modelo Contractual.
@@ -1097,1759 +967,1899 @@ La misión quedó estructurada en ocho bloques principales:
 4. Reglas Arquitectónicas.
 5. Catálogo Inicial.
 6. Validaciones Arquitectónicas.
-7. Riesgos Arquitectónicos.
+7. Riesgos Arquitectónicos y Mitigación.
 8. Consolidación y Conclusiones.
 
-Esta organización permanece vigente como referencia oficial.
+---
 
-## 17.7 Resultado institucional
+# 18. V0.3 — Parte I: Fundamentos
 
-La Arquitectura de Contratos proporciona actualmente:
+## 18.1 Estado
 
-- un modelo contractual estable;
-- una taxonomía oficial;
-- reglas arquitectónicas de colaboración;
-- criterios de validación;
-- mecanismos de evolución;
-- un marco de gobierno contractual.
+Aprobada sin modificaciones.
 
-Con ello GeoMotion Studio dispone de una definición formal sobre cómo los
-módulos colaboran entre sí sin comprometer el encapsulamiento ni la
-coherencia arquitectónica.
+## 18.2 Función
+
+Establecer:
+
+- propósito;
+- objetivos;
+- alcance;
+- posición arquitectónica;
+- principios rectores;
+- criterio rector del ciclo.
+
+## 18.3 Principios destacados
+
+- derivación arquitectónica;
+- encapsulamiento;
+- propiedad única;
+- estabilidad;
+- mínima exposición;
+- independencia tecnológica;
+- evolución controlada.
+
+## 18.4 Resolución
+
+La Parte I pasó a ser línea base normativa.
+
+Las partes posteriores debían derivarse de ella.
+
+## 18.5 Criterio de revisión
+
+Dirección Técnica decidió no solicitar modificaciones estilísticas.
+
+La sección cumplía su objetivo y no presentaba inconsistencias.
 
 ---
 
-# 18. Evaluación integral de la misión V0.3
-
-## 18.1 Resultado institucional
-
-La misión V0.3 fue revisada íntegramente por Dirección Técnica.
-
-Tras completar la revisión de las ocho partes del documento no se
-identificaron inconsistencias arquitectónicas que impidieran su
-incorporación como referencia normativa.
-
-En consecuencia, la Arquitectura de Contratos quedó aprobada como línea
-base del Ciclo 1.
-
-## 18.2 Fortalezas identificadas
-
-Durante la revisión institucional se destacaron especialmente los
-siguientes aspectos:
-
-- disciplina arquitectónica;
-- estabilidad conceptual;
-- correcta separación de responsabilidades;
-- preservación del enfoque Architecture First;
-- independencia respecto de tecnologías concretas;
-- adecuada trazabilidad entre decisiones;
-- crecimiento progresivo del modelo;
-- diferenciación explícita entre línea base vigente y evoluciones futuras.
-
-## 18.3 Criterio de revisión
-
-Dirección Técnica mantuvo el criterio de no introducir modificaciones
-cuando un documento:
-
-- cumple su misión;
-- resulta coherente con la arquitectura vigente;
-- mantiene el alcance establecido;
-- no introduce contradicciones;
-- preserva la trazabilidad.
-
-La revisión evitó expresamente modificaciones motivadas únicamente por
-preferencias editoriales.
-
-## 18.4 Impacto institucional
-
-La finalización de V0.3 permitió completar la segunda gran línea base
-arquitectónica del proyecto.
-
-GeoMotion Studio dispone desde ese momento de:
-
-- una arquitectura que define los módulos;
-- una arquitectura que regula su colaboración;
-- un marco para validar contratos;
-- un mecanismo para gobernar su evolución;
-- una base sólida para las siguientes misiones.
-
----
-
-# 19. Misión V0.4 — Sistema Oficial de Architecture Decision Records
+# 19. V0.3 — Parte II: Modelo Contractual
 
 ## 19.1 Estado
 
-**Estado:** Pendiente.
+Aprobada sin modificaciones.
 
-## 19.2 Propósito
+## 19.2 Definición central
 
-Diseñar el sistema oficial mediante el cual GeoMotion Studio registrará,
-evaluará, aprobará, sustituirá y preservará las decisiones
-arquitectónicas relevantes.
+Un contrato arquitectónico es la especificación normativa mediante la cual un módulo declara una capacidad que puede ser utilizada por consumidores autorizados sin exponer su organización interna.
 
-El sistema ADR constituirá el mecanismo permanente de gobierno de las
-decisiones arquitectónicas.
+## 19.3 Distinciones fundamentales
 
-## 19.3 Alcance previsto
+Un contrato:
 
-La misión deberá definir, entre otros aspectos:
+- no es una implementación;
+- no es un mecanismo de transporte;
+- no es una API;
+- no depende de tecnología;
+- representa una colaboración permitida.
 
-- propósito de los ADR;
-- criterios para su utilización;
-- estructura oficial;
+## 19.4 Propiedades
+
+Todo contrato debe ser:
+
+- público para consumidores autorizados;
+- estable;
+- mínimo;
+- declarativo;
+- independiente.
+
+## 19.5 Elementos conceptuales
+
+El modelo define, entre otros:
+
+- identificador;
+- nombre;
+- propietario;
+- tipo;
+- capacidad;
+- consumidores;
+- frontera;
+- entrada permitida;
+- salida garantizada;
+- precondiciones;
+- poscondiciones;
+- garantías;
+- restricciones;
+- evolución;
+- estado.
+
+## 19.6 Propiedad contractual
+
+Cada contrato pertenece exclusivamente al módulo que expone la capacidad.
+
+El propietario:
+
+- define;
+- garantiza;
+- gobierna;
+- mantiene compatibilidad.
+
+## 19.7 Consumidor
+
+El consumidor depende del contrato publicado, no de la organización interna del módulo.
+
+## 19.8 Ciclo de vida conceptual
+
+Estados definidos:
+
+- propuesto;
+- aprobado;
+- vigente;
+- en evolución;
+- obsoleto;
+- retirado.
+
+## 19.9 Principio de Invariancia Contractual
+
+La implementación interna puede evolucionar libremente mientras continúe satisfaciendo las obligaciones de sus contratos públicos.
+
+Una modificación interna no constituye por sí misma razón suficiente para modificar un contrato.
+
+## 19.10 Evaluación
+
+Dirección Técnica registró este principio como candidato consolidado.
+
+---
+
+# 20. V0.3 — Parte III: Taxonomía Oficial
+
+## 20.1 Estado
+
+Aprobada sin modificaciones.
+
+## 20.2 Propósito
+
+Proporcionar una clasificación arquitectónica uniforme para las colaboraciones entre módulos.
+
+## 20.3 Principios de clasificación
+
+- exclusividad;
+- coherencia arquitectónica;
+- estabilidad;
+- independencia tecnológica.
+
+## 20.4 Categorías oficiales
+
+- Contrato de Capacidad;
+- Contrato de Servicio;
+- Contrato de Consulta;
+- Contrato de Comando;
+- Contrato de Evento;
+- Contrato de Integración.
+
+## 20.5 Categoría raíz
+
+Contrato de Capacidad se define como categoría raíz.
+
+La capacidad responde:
+
+> ¿Qué expone el módulo?
+
+Las demás categorías responden:
+
+> ¿Cómo se manifiesta arquitectónicamente esa capacidad?
+
+## 20.6 Categorías descartadas
+
+No se consideran categorías arquitectónicas independientes:
+
+- repositorio;
+- adaptador;
+- infraestructura;
+- mensajería;
+- síncrono;
+- asíncrono;
+- remoto;
+- local.
+
+Estas expresan implementación o infraestructura.
+
+## 20.7 Evaluación
+
+Dirección Técnica aceptó la taxonomía y registró la categoría raíz como principio candidato.
+
+---
+
+# 21. V0.3 — Parte IV: Reglas Arquitectónicas
+
+## 21.1 Estado
+
+Aprobada sin modificaciones.
+
+## 21.2 Regla de encapsulamiento
+
+Los contratos son el único mecanismo autorizado para atravesar una frontera arquitectónica.
+
+## 21.3 Regla de fronteras
+
+Un contrato no puede:
+
+- crear dependencias nuevas;
+- alterar dirección de dependencias;
+- eludir restricciones modulares.
+
+## 21.4 Regla de propiedad
+
+Cada contrato posee un único propietario arquitectónico.
+
+## 21.5 Regla de mínima exposición
+
+Solo se publica la información imprescindible.
+
+## 21.6 Regla de independencia tecnológica
+
+Un contrato no contiene referencias normativas a:
+
+- protocolos;
+- transporte;
+- serialización;
+- frameworks;
+- librerías;
+- persistencia;
+- plataformas.
+
+## 21.7 Regla de consistencia contractual
+
+Un módulo solo puede publicar capacidades correspondientes a su responsabilidad.
+
+## 21.8 Regla de compatibilidad evolutiva
+
+La ruptura de compatibilidad es una excepción arquitectónica.
+
+## 21.9 Regla de idempotencia arquitectónica
+
+La idempotencia se exige únicamente cuando deriva de la semántica de la capacidad.
+
+No es una obligación universal.
+
+## 21.10 Regla de gestión de errores
+
+El contrato define condiciones arquitectónicas de incumplimiento, no mecanismos técnicos de recuperación.
+
+## 21.11 Regla de observabilidad contractual
+
+Las garantías deben ser verificables objetivamente.
+
+## 21.12 Regla de trazabilidad
+
+Cada contrato mantiene relación con:
+
+- propietario;
+- responsabilidad;
+- categoría;
+- dependencia autorizada;
+- especificaciones futuras.
+
+## 21.13 Regla de gobernanza
+
+Los cambios relevantes requieren revisión.
+
+## 21.14 Familias normativas candidatas
+
+Se identificó una posible clasificación:
+
+- reglas estructurales;
+- reglas evolutivas.
+
+Dirección Técnica decidió no incorporarla todavía, pero la registró para consolidación futura.
+
+---
+
+# 22. V0.3 — Parte V: Catálogo Inicial
+
+## 22.1 Estado
+
+Aprobada sin modificaciones.
+
+## 22.2 Propósito
+
+Demostrar la aplicabilidad del modelo.
+
+No inventariar todos los contratos.
+
+## 22.3 Naturaleza
+
+El catálogo es:
+
+- representativo;
+- demostrativo;
+- normativo como ejemplo;
+- no exhaustivo;
+- no funcional;
+- no una prioridad de implementación.
+
+## 22.4 Estructura oficial de un contrato
+
+Se definieron secciones para:
+
+- identificación;
+- contexto;
+- descripción;
+- condiciones;
+- evolución;
+- trazabilidad.
+
+## 22.5 Criterio de suficiencia
+
+La calidad de la demostración prevalece sobre la cantidad de contratos.
+
+## 22.6 Evolución candidata
+
+Se propuso distinguir:
+
+- Catálogo Arquitectónico;
+- Registro Operativo de Contratos.
+
+Dirección Técnica registró la propuesta como cuestión futura de gobernanza documental.
+
+---
+
+# 23. V0.3 — Parte VI: Validaciones Arquitectónicas
+
+## 23.1 Estado
+
+Aprobada sin modificaciones.
+
+## 23.2 Propósito
+
+Definir cómo verificar objetivamente la conformidad arquitectónica de los contratos.
+
+## 23.3 Principios de validación
+
+- objetividad;
+- trazabilidad;
+- independencia tecnológica;
+- repetibilidad.
+
+## 23.4 Validaciones obligatorias
+
+- propiedad;
+- responsabilidad;
+- fronteras;
+- clasificación;
+- encapsulamiento;
+- trazabilidad;
+- evolución.
+
+## 23.5 Estados de no conformidad
+
+- observación;
+- no conformidad;
+- incidencia arquitectónica crítica.
+
+## 23.6 Evidencias
+
+Toda validación debe conservar:
+
+- contrato;
+- reglas verificadas;
+- resultado;
+- no conformidades;
+- decisiones de resolución.
+
+## 23.7 Evolución candidata
+
+Se identificó la posible futura:
+
+> Validación Arquitectónica Sistémica
+
+Esta permitiría analizar:
+
+- ciclos;
+- concentración de consumidores;
+- redundancia;
+- pérdida de cohesión;
+- propiedades emergentes del ecosistema contractual.
+
+---
+
+# 24. V0.3 — Parte VII: Riesgos Arquitectónicos
+
+## 24.1 Estado
+
+Aprobada sin modificaciones.
+
+## 24.2 Principios de gestión
+
+- prevención;
+- detección temprana;
+- mitigación proporcional;
+- evolución controlada.
+
+## 24.3 Riesgos identificados
+
+- erosión del encapsulamiento;
+- expansión indebida de responsabilidades;
+- acoplamiento contractual excesivo;
+- proliferación de contratos;
+- fragmentación del modelo;
+- evolución incompatible;
+- pérdida de trazabilidad.
+
+## 24.4 Conclusión relevante
+
+La mayoría de los riesgos no provienen de debilidades del modelo, sino de desviaciones en su aplicación.
+
+## 24.5 Principio orientador
+
+La sostenibilidad depende más de la disciplina de gobernanza que del crecimiento continuo de la normativa.
+
+---
+
+# 25. V0.3 — Parte VIII: Consolidación y Conclusiones
+
+## 25.1 Estado
+
+Aprobada sin modificaciones.
+
+## 25.2 Función
+
+Cerrar institucionalmente el documento sin introducir nuevas reglas.
+
+## 25.3 Resultado
+
+La Arquitectura de Contratos quedó consolidada como un cuerpo normativo compuesto por:
+
+- fundamentos;
+- modelo;
+- taxonomía;
+- reglas;
+- catálogo;
+- validaciones;
+- riesgos.
+
+## 25.4 Relación con Arquitectura Modular
+
+La Arquitectura de Contratos:
+
+- deriva de la Arquitectura Modular;
+- no redefine responsabilidades;
+- no modifica fronteras;
+- no altera dependencias;
+- regula colaboraciones autorizadas.
+
+## 25.5 Cierre
+
+Dirección Técnica declaró:
+
+- Parte VIII aprobada;
+- misión V0.3 concluida;
+- documento preparado para integración editorial;
+- evoluciones futuras registradas sin alterar la línea base.
+
+---
+
+# 26. Evaluación integral de V0.3
+
+## 26.1 Resultado
+
+**Aprobada.**
+
+## 26.2 Fortalezas
+
+- disciplina arquitectónica;
+- separación de niveles;
+- estabilidad conceptual;
+- control de alcance;
+- correcta relación con Dirección Técnica;
+- ausencia de deriva tecnológica;
+- buena trazabilidad;
+- crecimiento progresivo del modelo;
+- capacidad de distinguir vigente de futuro.
+
+## 26.3 Ausencia de correcciones innecesarias
+
+Ninguna parte fue modificada por preferencia editorial.
+
+La aprobación sin cambios se debió a que:
+
+- cumplía la misión;
+- no presentaba inconsistencias;
+- respetaba la Arquitectura Modular;
+- mantenía el nivel arquitectónico;
+- separaba evoluciones futuras.
+
+## 26.4 Impacto
+
+GeoMotion Studio dispone ahora de:
+
+- una arquitectura que define los módulos;
+- una arquitectura que define cómo colaboran;
+- un marco para validar contratos;
+- un marco para gobernar evolución contractual;
+- una base para futuras especificaciones.
+
+---
+
+# 27. Misión V0.4 — Sistema ADR
+
+## 27.1 Propósito
+
+Diseñar el sistema oficial de Architecture Decision Records.
+
+## 27.2 Alcance esperado
+
+- propósito;
+- criterios de creación;
 - formato;
+- estructura;
 - nomenclatura;
 - numeración;
 - estados;
 - ciclo de vida;
-- procedimientos de propuesta;
-- procedimientos de revisión;
-- procedimientos de aprobación;
-- procedimientos de rechazo;
-- sustitución de decisiones;
+- propuesta;
+- revisión;
+- aprobación;
+- rechazo;
+- sustitución;
+- relación con Manual;
 - trazabilidad;
 - propiedad;
+- decisiones urgentes;
+- decisiones experimentales;
 - mantenimiento;
-- mecanismos para evitar contradicciones documentales.
+- prevención de contradicciones.
 
-## 19.4 Restricciones
+## 27.3 Restricciones
 
-Los ADR no deberán utilizarse para:
+No utilizar ADR para:
 
 - decisiones triviales;
-- decisiones fácilmente reversibles;
-- sustituir el Manual de Ingeniería;
-- reabrir automáticamente decisiones aprobadas;
-- documentar aspectos puramente técnicos de implementación.
+- decisiones reversibles de bajo impacto;
+- reemplazar el Manual;
+- reabrir automáticamente decisiones aprobadas.
 
-## 19.5 Dependencias
+## 27.4 Estado actual
 
-La misión utilizará como principales insumos:
+**Pendiente.**
 
-- Arquitectura Modular;
-- Arquitectura de Contratos;
-- Arquitectura Física del Repositorio;
-- estructura de gobierno del proyecto;
-- mapa de integración documental.
+## 27.5 Dependencias
 
-## 19.6 Riesgo identificado
+V0.4 deberá tomar como insumo:
 
-La formalización prematura del sistema ADR podría consolidar categorías
-todavía inmaduras.
+- decisiones surgidas de V0.2;
+- decisiones surgidas de V0.3;
+- estructura de gobierno;
+- Mapa de Integración Documental;
+- reglas de autoridad;
+- futuro orden del repositorio.
 
-Por el contrario, retrasar excesivamente su desarrollo incrementaría el
-riesgo de pérdida de conocimiento arquitectónico.
+## 27.6 Riesgo
 
-Dirección Técnica considera que, tras la finalización técnica de V0.1, el
-proyecto dispone ya del contexto suficiente para iniciar esta misión.
+Crear el sistema ADR demasiado pronto podría formalizar categorías aún inmaduras.
+
+Crearlo demasiado tarde podría provocar pérdida de decisiones.
+
+El momento actual es adecuado para evaluar su inicio.
 
 ---
 
-# 20. Misión V0.5 — Minimum Viable Architecture
+# 28. Misión V0.5 — Minimum Viable Architecture
 
-## 20.1 Estado
+## 28.1 Propósito
 
-**Estado:** Pendiente.
+Definir el conjunto mínimo de capacidades, estructuras y mecanismos necesarios para demostrar que la arquitectura puede implementarse, integrarse, ejecutarse y evolucionar correctamente.
 
-## 20.2 Propósito
+## 28.2 No es
 
-Definir el conjunto mínimo de estructuras arquitectónicas necesarias para
-demostrar que GeoMotion Studio puede implementarse respetando las líneas
-base aprobadas.
+- un MVP comercial;
+- un producto mínimo;
+- una selección de funcionalidades de usuario.
 
-La MVA representa una validación arquitectónica, no un producto mínimo
-comercial.
+## 28.3 Alcance esperado
 
-## 20.3 Alcance previsto
-
-La misión deberá establecer:
-
+- alcance MVA;
 - capacidades mínimas;
-- componentes imprescindibles;
-- dependencias mínimas;
+- subsistemas;
+- dependencias;
 - orden de construcción;
-- criterios de aceptación;
-- validaciones arquitectónicas;
-- riesgos;
+- hitos;
+- pruebas arquitectónicas;
+- riesgos de incertidumbre;
+- validación;
+- criterios de entrada y salida;
+- aceptación global;
 - observabilidad;
-- automatización mínima;
-- criterios de entrada y salida.
+- automatización;
+- integración;
+- validación de fronteras;
+- validación de contratos;
+- elementos simulables;
+- separación entre imprescindible y postergable.
 
-## 20.4 Dependencias
+## 28.4 Estado actual
 
-La MVA depende de:
+**Pendiente.**
+
+## 28.5 Dependencias
+
+La MVA deberá apoyarse en:
 
 - Arquitectura Modular;
 - Arquitectura de Contratos;
-- Arquitectura Física suficientemente consolidada;
-- sistema ADR;
+- Arquitectura Física suficiente;
+- decisiones ADR mínimas;
 - criterios de validación.
 
-## 20.5 Riesgo principal
+## 28.6 Riesgo
 
-Iniciar la MVA sin disponer previamente del gobierno documental y de la
-arquitectura física consolidada podría convertirla en un plan de
-implementación prematuro, incumpliendo la metodología Architecture First.
+Iniciar V0.5 sin arquitectura física y sin gobierno de decisiones podría convertir la MVA en un plan de implementación prematuro.
 
 ---
 
-# 21. Orden de dependencias arquitectónicas
+# 29. Orden de dependencias propuesto
 
-## 21.1 Secuencia institucional
+El orden de trabajo consolidado fue:
 
-El orden de construcción arquitectónica del proyecto se establece mediante
-la resolución de las dependencias entre misiones.
+1. Cerrar V0.2.
+2. Aprobar Arquitectura Modular como línea base.
+3. Ejecutar V0.3.
+4. Ejecutar V0.1.
+5. Ejecutar V0.4.
+6. Ejecutar V0.5.
 
-Durante el Ciclo 1 la secuencia consolidada fue la siguiente:
+## 29.1 Estado respecto al plan
 
-1. Arquitectura Modular.
-2. Arquitectura de Contratos.
-3. Arquitectura Física del Repositorio.
-4. Sistema Oficial de ADR.
-5. Minimum Viable Architecture.
-6. Implementación.
+- Paso 1: completado.
+- Paso 2: completado.
+- Paso 3: completado.
+- Paso 4: pendiente.
+- Paso 5: pendiente.
+- Paso 6: pendiente.
 
-Este orden refleja la precedencia lógica del conocimiento arquitectónico y
-deberá respetarse salvo resolución expresa de Dirección Técnica.
+## 29.2 Próxima acción recomendada
 
-## 21.2 Estado respecto al plan
+La siguiente misión natural es V0.1 — Arquitectura Física del Repositorio.
 
-| Etapa | Estado |
-|---|---|
-| Arquitectura Modular | Completada |
-| Arquitectura de Contratos | Completada |
-| Arquitectura Física | Completada técnicamente |
-| Sistema ADR | Pendiente |
-| Minimum Viable Architecture | Pendiente |
-| Implementación | No iniciada |
+Antes de iniciarla, Dirección Técnica deberá:
 
-## 21.3 Próxima acción institucional
-
-La siguiente misión prevista es:
-
-> **V0.4 — Sistema Oficial de Architecture Decision Records.**
-
-Su finalización permitirá completar el modelo de gobernanza arquitectónica
-antes del inicio de la Minimum Viable Architecture.
+- consolidar los insumos;
+- verificar el árbol actual;
+- entregar Arquitectura Modular;
+- entregar reglas contractuales relevantes;
+- definir claramente qué no debe diseñar;
+- mantener la estructura física subordinada a la lógica.
 
 ---
 
-# 22. Líneas base vigentes
+# 30. Líneas base vigentes
 
-## 22.1 Arquitectura Modular
+## 30.1 Arquitectura Modular
 
-| Campo | Estado |
-|---|---|
-| Estado | Aprobada |
-| Ciclo | Ciclo 1 |
-| Autoridad | Dirección Técnica |
-| Naturaleza | Línea base arquitectónica |
+**Estado:** Aprobada.  
+**Ciclo:** Ciclo 1.  
+**Autoridad:** Dirección Técnica.  
+**Uso:** Base para contratos, repositorio, ADR y MVA.
 
-La Arquitectura Modular constituye la referencia oficial para la
-organización lógica del sistema.
+## 30.2 Arquitectura de Contratos
 
----
+**Estado:** Aprobada.  
+**Ciclo:** Ciclo 1.  
+**Autoridad:** Dirección Técnica.  
+**Uso:** Base normativa para colaboración entre módulos.
 
-## 22.2 Arquitectura de Contratos
+## 30.3 Estado del Proyecto
 
-| Campo | Estado |
-|---|---|
-| Estado | Aprobada |
-| Ciclo | Ciclo 1 |
-| Autoridad | Dirección Técnica |
-| Naturaleza | Línea base normativa |
-
-La Arquitectura de Contratos constituye la referencia oficial para las
-colaboraciones entre módulos.
+**Estado:** Activo.  
+**Naturaleza:** Registro institucional.  
+**Uso:** Continuidad, integración y seguimiento.
 
 ---
 
-## 22.3 Arquitectura Física del Repositorio
-
-| Campo | Estado |
-|---|---|
-| Estado | Finalizada técnicamente |
-| Integración documental | Pendiente |
-| Autoridad técnica | Dirección Técnica |
-
-La Arquitectura Física materializa la organización del repositorio
-respetando la arquitectura lógica previamente aprobada.
-
----
-
-## 22.4 Estado del Proyecto
-
-| Campo | Estado |
-|---|---|
-| Naturaleza | Registro institucional |
-| Estado | Activo |
-| Responsable | Dirección Técnica |
-
-Este documento constituye la referencia oficial sobre el estado
-institucional consolidado del proyecto.
-
----
-
-# 23. Registro de principios arquitectónicos
-
-Los principios registrados en esta sección resumen las decisiones
-arquitectónicas consolidadas durante el Ciclo 1.
+# 31. Registro de principios arquitectónicos
 
 ## PA-001 — La arquitectura precede a la implementación
 
-**Estado:** Vigente.
-
-Toda implementación deberá derivarse de una arquitectura previamente
-definida.
-
----
+**Estado:** Vigente.  
+**Origen:** Metodología Architecture First.  
+**Descripción:** La implementación debe materializar decisiones arquitectónicas previamente definidas.  
+**Impacto:** Todo el proyecto.  
+**Autoridad:** Manual de Ingeniería.
 
 ## PA-002 — El código implementa la arquitectura
 
-**Estado:** Vigente.
-
-El código constituye una materialización de la arquitectura y no su origen.
-
----
+**Estado:** Vigente.  
+**Origen:** Identidad de ingeniería.  
+**Descripción:** El código no constituye la fuente primaria de la arquitectura.  
+**Impacto:** Desarrollo futuro.
 
 ## PA-003 — La arquitectura implementa la visión
 
-**Estado:** Vigente.
-
-La arquitectura permanece subordinada al propósito estratégico del
-proyecto.
-
----
+**Estado:** Vigente.  
+**Origen:** Identidad del proyecto.  
+**Descripción:** La arquitectura debe permanecer subordinada al propósito del producto.  
+**Impacto:** Todas las decisiones.
 
 ## PA-004 — La documentación preserva el conocimiento
 
-**Estado:** Vigente.
-
-La documentación constituye un activo estratégico del producto y forma
-parte de la arquitectura del proyecto.
-
----
+**Estado:** Vigente.  
+**Origen:** Filosofía de ingeniería.  
+**Descripción:** La documentación es un activo estratégico y forma parte del producto.  
+**Impacto:** Manual, ADR, notas internas y especificaciones.
 
 ## PA-005 — Los modelos prevalecen sobre los inventarios
 
-**Estado:** Vigente.
-
-Los modelos arquitectónicos representan el conocimiento principal.
-
-Los inventarios únicamente documentan su aplicación.
-
----
+**Estado:** Vigente.  
+**Origen:** Revisión de V0.3.  
+**Descripción:** El modelo arquitectónico es el conocimiento principal; catálogos e inventarios demuestran su aplicación.  
+**Impacto:** Contratos, módulos, repositorio y MVA.
 
 ## PA-006 — Un contrato no es una API
 
-**Estado:** Vigente.
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** La API es una posible materialización técnica; el contrato es una especificación arquitectónica.  
+**Impacto:** Contratos y especificaciones.
 
-La API constituye una posible implementación técnica.
+## PA-007 — Un contrato no es un mecanismo de transporte
 
-El contrato representa una especificación arquitectónica.
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** Protocolos y transportes no definen la naturaleza del contrato.  
+**Impacto:** Integración futura.
 
----
+## PA-008 — Propiedad contractual única
 
-## PA-007 — Propiedad contractual única
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** Todo contrato pertenece al módulo propietario de la capacidad.  
+**Impacto:** Gobierno y evolución.
 
-**Estado:** Vigente.
+## PA-009 — Dependencia sobre contrato
 
-Cada contrato pertenece exclusivamente al módulo propietario de la
-capacidad publicada.
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** El consumidor depende de las garantías públicas, no de la organización interna del proveedor.  
+**Impacto:** Encapsulamiento.
 
----
+## PA-010 — Invariancia contractual
 
-## PA-008 — Dependencia sobre contratos
+**Estado:** Vigente como principio consolidado.  
+**Origen:** V0.3 Parte II.  
+**Descripción:** La evolución interna no implica automáticamente evolución contractual.  
+**Impacto:** Compatibilidad y autonomía modular.
 
-**Estado:** Vigente.
+## PA-011 — Contrato de Capacidad como raíz
 
-Los consumidores dependen de los contratos publicados y nunca de la
-organización interna de otro módulo.
+**Estado:** Vigente.  
+**Origen:** V0.3 Parte III.  
+**Descripción:** Toda colaboración contractual representa una capacidad expuesta.  
+**Impacto:** Taxonomía.
 
----
+## PA-012 — El contrato no modifica la Arquitectura Modular
 
-## PA-009 — Invariancia contractual
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** El contrato materializa colaboraciones autorizadas, no crea nuevas dependencias.  
+**Impacto:** Fronteras.
 
-**Estado:** Vigente.
+## PA-013 — Mínima exposición
 
-La evolución interna de un módulo no implica necesariamente una evolución
-de sus contratos públicos.
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** Solo se publica la información imprescindible.  
+**Impacto:** Acoplamiento.
 
----
+## PA-014 — Independencia tecnológica contractual
 
-## PA-010 — La estructura física refleja la arquitectura
+**Estado:** Vigente.  
+**Origen:** V0.3.  
+**Descripción:** La definición arquitectónica no depende de tecnologías.  
+**Impacto:** Longevidad del modelo.
 
-**Estado:** Vigente.
+## PA-015 — Validación arquitectónica previa
 
-La organización del repositorio representa la arquitectura aprobada.
+**Estado:** Vigente.  
+**Origen:** V0.3 Parte VI.  
+**Descripción:** La conformidad arquitectónica precede a la implementación.  
+**Impacto:** Flujo de aprobación.
 
-Nunca constituye la arquitectura por sí misma.
+## PA-016 — Gobernanza sobre expansión normativa
 
----
+**Estado:** Principio orientador.  
+**Origen:** V0.3 Parte VII.  
+**Descripción:** La sostenibilidad depende más del cumplimiento consistente que de añadir reglas.  
+**Impacto:** Gobierno.
 
-# 24. Riesgos arquitectónicos estratégicos
+## PA-017 — Cambios solo con justificación
 
-Los riesgos identificados en esta sección representan amenazas
-arquitectónicas relevantes para la evolución del proyecto.
+**Estado:** Vigente.  
+**Origen:** Dirección Técnica.  
+**Descripción:** No se modifican documentos o arquitectura por preferencia.  
+**Impacto:** Revisión técnica.
 
-Su presencia no implica necesariamente una incidencia activa, sino una
-condición que requiere seguimiento institucional.
+## PA-018 — La estructura física refleja la arquitectura
 
----
-
-## RA-001 — Deriva arquitectónica
-
-### Descripción
-
-La implementación podría evolucionar de forma independiente respecto de la
-arquitectura aprobada.
-
-### Consecuencias
-
-- pérdida de coherencia;
-- incremento del acoplamiento;
-- documentación obsoleta;
-- dificultad para incorporar nuevas capacidades.
-
-### Mitigación
-
-- revisiones arquitectónicas periódicas;
-- utilización de ADR;
-- validación previa de cambios relevantes;
-- mantenimiento del Manual de Ingeniería.
-
----
-
-## RA-002 — Deuda documental
-
-### Descripción
-
-La documentación podría dejar de reflejar el estado real del proyecto.
-
-### Consecuencias
-
-- pérdida de trazabilidad;
-- incremento del coste de mantenimiento;
-- duplicación de conocimiento;
-- aparición de contradicciones.
-
-### Mitigación
-
-- integración documental controlada;
-- revisiones editoriales;
-- actualización tras hitos arquitectónicos;
-- eliminación de documentación obsoleta.
+**Estado:** Vigente.  
+**Origen:** Misión V0.1.  
+**Descripción:** Las carpetas no definen por sí mismas la arquitectura.  
+**Impacto:** Monorepo.
 
 ---
 
-## RA-003 — Decisiones no registradas
+# 32. Decisiones consolidadas
 
-### Descripción
+## DC-001 — Architecture First como metodología rectora
 
-Las decisiones relevantes podrían adoptarse sin quedar registradas
-institucionalmente.
+**Estado:** Aprobada.  
+**Impacto:** Global.
 
-### Consecuencias
+## DC-002 — Dirección Técnica como integrador
 
-- pérdida de conocimiento;
-- decisiones contradictorias;
-- dificultad para justificar cambios;
-- reducción de la gobernanza arquitectónica.
+**Estado:** Aprobada.  
+**Impacto:** Gobierno.
 
-### Mitigación
+## DC-003 — Especialistas subordinados a línea base
 
-- implantación del sistema ADR;
-- revisión técnica;
-- trazabilidad documental.
+**Estado:** Aprobada.  
+**Impacto:** Misiones.
 
----
+## DC-004 — Arquitectura Modular como dependencia de Contratos
 
-## RA-004 — Dependencias implícitas
+**Estado:** Aprobada.  
+**Impacto:** V0.2 y V0.3.
 
-### Descripción
+## DC-005 — Modelo contractual como entregable principal
 
-La evolución del sistema podría introducir dependencias no documentadas
-entre módulos.
+**Estado:** Aprobada.  
+**Impacto:** V0.3.
 
-### Consecuencias
+## DC-006 — Catálogo no exhaustivo
 
-- incremento del acoplamiento;
-- pérdida de encapsulamiento;
-- dificultad para evolucionar la arquitectura.
+**Estado:** Aprobada.  
+**Impacto:** V0.3 Parte V.
 
-### Mitigación
+## DC-007 — No iniciar implementación significativa
 
-- validación contractual;
-- revisiones arquitectónicas;
-- análisis de dependencias.
+**Estado:** Vigente.  
+**Impacto:** Proyecto.
 
----
+## DC-008 — Estado del Proyecto como documento interno
 
-## RA-005 — Expansión descontrolada del repositorio
-
-### Descripción
-
-El crecimiento físico del repositorio podría producir estructuras
-inconsistentes con la arquitectura aprobada.
-
-### Consecuencias
-
-- pérdida de organización;
-- incremento de la complejidad;
-- dificultad para localizar activos;
-- fragmentación documental.
-
-### Mitigación
-
-- aplicación de la Arquitectura Física;
-- control de convenciones;
-- revisiones institucionales.
+**Estado:** Aprobada.  
+**Impacto:** Gobierno documental.
 
 ---
 
-# 25. Estado de preparación para la implementación
+# 33. Decisiones pendientes
 
-## 25.1 Situación actual
+Las decisiones pendientes deberán registrarse también en `DECISIONES_PENDIENTES.md`.
 
-El proyecto todavía no se encuentra en fase de implementación.
+## DP-001 — Propiedad documental
 
-Las actividades realizadas hasta el momento han estado orientadas a la
-construcción de la arquitectura y de la documentación que deberá gobernar
-el desarrollo posterior.
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Cómo se asignará propiedad a documentos oficiales y derivados?  
+**Impacto:** Manual, contratos, ADR y mantenimiento.
 
-## 25.2 Capacidades disponibles
+## DP-002 — Propiedad de recursos
 
-Actualmente el proyecto dispone de:
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Cómo se gobiernan recursos compartidos y especializados?  
+**Impacto:** Arquitectura Modular y Física.
 
-- visión del proyecto;
-- principios arquitectónicos;
-- arquitectura modular;
-- arquitectura de contratos;
-- arquitectura física técnicamente completada;
-- metodología de revisión;
-- estructura documental;
-- gobierno técnico.
+## DP-003 — Capacidades opcionales
 
-## 25.3 Capacidades pendientes
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Cómo se representan capacidades no siempre presentes?  
+**Impacto:** Extensibilidad y MVA.
 
-Antes del inicio de la implementación deberán completarse, como mínimo:
+## DP-004 — Extensibilidad
 
-- sistema oficial de ADR;
-- integración editorial pendiente;
-- consolidación del inventario institucional;
-- definición de la Minimum Viable Architecture;
-- criterios de validación inicial.
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Qué modelo oficial gobernará extensiones futuras?  
+**Impacto:** Módulos, contratos y plugins.
 
-## 25.4 Condición de entrada
+## DP-005 — Temporalidad
 
-La implementación únicamente podrá iniciarse cuando Dirección Técnica
-considere que las líneas base arquitectónicas ofrecen estabilidad
-suficiente para soportar el desarrollo del sistema.
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Dónde reside la responsabilidad temporal?  
+**Impacto:** Dominio, animación y reproducción.
 
----
+## DP-006 — Animación
 
-# 26. Hoja de ruta institucional
+**Origen:** V0.2.  
+**Estado:** Pendiente.  
+**Pregunta:** ¿Cómo se modelará sin contaminar responsabilidades?  
+**Impacto:** Capacidades especializadas.
 
-La siguiente hoja de ruta refleja el orden previsto para la evolución del
-proyecto.
+## DP-007 — Familias de reglas contractuales
 
-| Fase | Estado |
-|---|---|
-| Consolidación arquitectónica | En progreso |
-| Gobierno de decisiones (ADR) | Pendiente |
-| Integración documental | En progreso |
-| Minimum Viable Architecture | Pendiente |
-| Preparación de implementación | Pendiente |
-| Implementación | No iniciada |
-| Validación integral | No iniciada |
+**Origen:** V0.3.  
+**Estado:** Candidata, no urgente.  
+**Pregunta:** ¿Conviene explicitar reglas estructurales y evolutivas?  
+**Impacto:** Claridad documental.
 
-La planificación podrá ajustarse mediante resolución de Dirección Técnica
-cuando aparezcan nuevas dependencias o riesgos arquitectónicos.
+## DP-008 — Catálogo y Registro Operativo
 
----
+**Origen:** V0.3.  
+**Estado:** Candidata futura.  
+**Pregunta:** ¿Debe separarse el catálogo normativo del inventario de contratos implementados?  
+**Impacto:** Gobierno documental y desarrollo.
 
-# 27. Indicadores institucionales
+## DP-009 — Validación sistémica
 
-## Estado general del proyecto
+**Origen:** V0.3.  
+**Estado:** Candidata futura.  
+**Pregunta:** ¿Cuándo incorporar validaciones del ecosistema completo?  
+**Impacto:** Escalabilidad de gobierno.
 
-| Indicador | Valor |
-|---|---:|
-| Arquitecturas aprobadas | 2 |
-| Arquitecturas finalizadas técnicamente | 1 |
-| Misiones pendientes | 2 |
-| Documentos internos activos | 8 |
-| Actas arquitectónicas previstas | 1 por arquitectura |
-| ADR emitidos | 0 |
-| Implementación iniciada | No |
+## DP-010 — Orden inmediato de la siguiente misión
 
-## Evaluación cualitativa
-
-| Área | Estado |
-|---|---|
-| Coherencia arquitectónica | Alta |
-| Madurez documental | Alta |
-| Gobierno técnico | Alto |
-| Preparación para implementación | Media |
-| Riesgo institucional | Controlado |
+**Origen:** Dirección Técnica.  
+**Estado:** Pendiente de resolución.  
+**Pregunta:** ¿Se inicia V0.1 directamente o se realiza una integración editorial previa?  
+**Impacto:** Plan próximo.
 
 ---
 
-# 28. Estado de integración documental
+# 34. Evoluciones candidatas
 
-## 28.1 Objetivo
+## EC-001 — Reglas estructurales y evolutivas
 
-La integración documental garantiza que las arquitecturas aprobadas pasen a
-formar parte del Manual de Ingeniería sin alterar su contenido técnico,
-manteniendo la coherencia del ecosistema documental.
+No altera el modelo.
 
-## 28.2 Estado actual
+Puede mejorar:
 
-| Actividad | Estado |
-|---|---|
-| Arquitectura Modular | Integrada |
-| Arquitectura de Contratos | Integrada |
-| Arquitectura Física | Pendiente |
-| Actualización del índice general | Pendiente |
-| Revisión editorial global | Pendiente |
-| Verificación de referencias cruzadas | Pendiente |
+- navegación;
+- auditoría;
+- comprensión;
+- formación.
 
-## 28.3 Criterios de integración
+Debe incorporarse solo si aporta claridad real.
 
-Toda integración deberá verificar:
+## EC-002 — Catálogo Arquitectónico
 
-- coherencia con la línea base vigente;
-- ausencia de contradicciones;
-- consistencia terminológica;
-- actualización de referencias;
-- preservación de la trazabilidad;
-- compatibilidad con la estructura oficial del Manual.
+Contendría ejemplos normativos representativos.
 
-## 28.4 Actividades posteriores
+## EC-003 — Registro Operativo de Contratos
 
-Una vez integrada una arquitectura deberán realizarse, cuando proceda:
+Contendría:
 
-- actualización del inventario documental;
-- incorporación de referencias cruzadas;
-- revisión de enlaces internos;
-- actualización del estado del proyecto;
-- archivo de la evidencia de integración.
+- todos los contratos implementados;
+- versión;
+- estado;
+- código;
+- especificación;
+- trazabilidad;
+- consumidores.
 
----
+## EC-004 — Validación Arquitectónica Sistémica
 
-# 29. Estado del gobierno arquitectónico
+Analizaría:
 
-## 29.1 Situación actual
+- ciclos;
+- redundancias;
+- concentración;
+- cohesión;
+- propagación de cambios;
+- dependencias emergentes.
 
-El proyecto dispone actualmente de un modelo de gobierno arquitectónico
-basado en:
+## EC-005 — Documento Procesos de Ingeniería
 
-- Dirección Técnica;
-- Manual de Ingeniería;
-- revisión especializada;
-- líneas base aprobadas;
-- documentación institucional.
+Propuesta registrada para una etapa posterior a la versión 1.0 del Manual.
 
-El sistema ADR representa la principal capacidad pendiente para completar
-este modelo.
+Podría centralizar:
 
-## 29.2 Principios de gobierno
+- calidad;
+- pruebas;
+- CI;
+- CD;
+- releases;
+- automatización;
+- documentación técnica;
+- revisión.
 
-El gobierno arquitectónico se fundamenta en los siguientes principios:
+No debe implementarse antes de que reduzca complejidad real.
 
-- autoridad documental única;
-- responsabilidad claramente definida;
-- trazabilidad de decisiones;
-- revisión técnica;
-- estabilidad de las líneas base;
-- evolución controlada.
+## EC-006 — Inventario documental automatizado
 
-## 29.3 Estado de madurez
+En el futuro podrá extraer:
 
-| Capacidad | Estado |
-|---|---|
-| Gobierno documental | Consolidado |
-| Gobierno arquitectónico | Consolidado |
-| Gobierno de decisiones | Parcial |
-| Gobierno de implementación | Pendiente |
+- estados;
+- versiones;
+- propietarios;
+- dependencias;
+- enlaces;
+- fechas.
+
+No pertenece al Ciclo 1.
 
 ---
 
-# 30. Estado del conocimiento institucional
+# 35. Riesgos estratégicos
 
-## 30.1 Principio general
+## RE-001 — Pérdida de conocimiento
 
-El conocimiento constituye el principal activo estratégico del proyecto.
+**Probabilidad:** Alta sin registro institucional.  
+**Impacto:** Alto.  
+**Mitigación:** Mantener este documento y trazabilidad.
 
-Su preservación resulta prioritaria frente a cualquier decisión de
-implementación.
+## RE-002 — Fragmentación documental
 
-## 30.2 Mecanismos de preservación
+**Probabilidad:** Media.  
+**Impacto:** Alto.  
+**Mitigación:** Responsabilidad única, mapa documental y revisión.
 
-GeoMotion Studio mantiene el conocimiento mediante:
+## RE-003 — Duplicación de autoridad
 
-- Manual de Ingeniería;
-- Architecture Decision Records;
-- documentación interna;
-- revisiones institucionales;
-- actas de aprobación;
-- trazabilidad documental.
+**Probabilidad:** Media.  
+**Impacto:** Alto.  
+**Mitigación:** Definir precedencia documental.
 
-## 30.3 Riesgos asociados
+## RE-004 — Implementación prematura
 
-La pérdida de conocimiento puede producirse por:
+**Probabilidad:** Media.  
+**Impacto:** Crítico.  
+**Mitigación:** Cerrar arquitectura mínima antes de código significativo.
 
-- decisiones no registradas;
-- documentación obsoleta;
-- duplicación documental;
-- ausencia de revisiones;
-- integración incompleta.
+## RE-005 — Arquitectura por carpetas
 
-## 30.4 Objetivo permanente
+**Probabilidad:** Media durante V0.1.  
+**Impacto:** Alto.  
+**Mitigación:** Subordinar estructura física a arquitectura lógica.
 
-Toda evolución del proyecto deberá incrementar el conocimiento
-institucional disponible o, como mínimo, preservar el ya existente.
+## RE-006 — Uso excesivo de patrones externos
 
----
+**Probabilidad:** Media.  
+**Impacto:** Alto.  
+**Mitigación:** Restricción metodológica explícita.
 
-# 31. Estado del repositorio
+## RE-007 — Proliferación de documentos vacíos
 
-## 31.1 Situación institucional
+**Probabilidad:** Media.  
+**Impacto:** Medio.  
+**Mitigación:** Revisar responsabilidad y uso de notas internas.
 
-La organización física del repositorio dispone de una definición técnica
-consolidada.
+## RE-008 — Formalización prematura de ADR
 
-No obstante, hasta completar su integración institucional, el repositorio
-real continúa siendo la referencia operativa para la organización física
-existente.
+**Probabilidad:** Baja o media.  
+**Impacto:** Medio.  
+**Mitigación:** Diseñar primero el sistema oficial.
 
-## 31.2 Restricciones conocidas
+## RE-009 — Retraso del sistema ADR
 
-Dirección Técnica reconoce expresamente que determinadas decisiones sobre la
-estructura física dependen del inventario real del repositorio.
+**Probabilidad:** Media.  
+**Impacto:** Alto.  
+**Mitigación:** Iniciar V0.4 después de V0.1 o cuando DT lo determine.
 
-En consecuencia:
+## RE-010 — Catálogo contractual exhaustivo
 
-- no deberán realizarse inferencias no verificadas;
-- toda discrepancia deberá validarse contra el repositorio oficial;
-- la documentación deberá actualizarse cuando existan evidencias
-  institucionales suficientes.
-
-## 31.3 Estado esperado
-
-Tras la integración de V0.1 se espera disponer de:
-
-- una estructura física oficial;
-- correspondencia completa entre arquitectura lógica y repositorio;
-- criterios homogéneos de organización;
-- reglas estables de evolución.
+**Probabilidad:** Baja tras V0.3.  
+**Impacto:** Medio.  
+**Mitigación:** Mantener catálogo demostrativo.
 
 ---
 
-# 32. Preparación del siguiente ciclo
+# 36. Deuda arquitectónica reconocida
 
-## 32.1 Objetivo
+## DA-001 — Integración editorial de V0.2
 
-El cierre del Ciclo 1 permitirá iniciar un nuevo ciclo centrado en la
-gobernanza de decisiones y en la preparación de la implementación.
+**Estado:** Abierta.  
+**Naturaleza:** Documental.  
+**Impacto:** Medio.
 
-## 32.2 Prioridades
+## DA-002 — Integración editorial de V0.3
 
-Las prioridades institucionales para el siguiente ciclo son:
+**Estado:** Abierta.  
+**Naturaleza:** Documental.  
+**Impacto:** Medio.
 
-1. Finalizar V0.4 — Sistema ADR.
-2. Integrar editorialmente V0.1.
-3. Completar la documentación asociada.
-4. Definir la Minimum Viable Architecture.
-5. Establecer el marco inicial de implementación.
+## DA-003 — Formalización de decisiones
 
-## 32.3 Criterio de avance
+**Estado:** Abierta.  
+**Naturaleza:** Gobernanza.  
+**Impacto:** Alto.
 
-No deberá iniciarse una nueva etapa mientras permanezcan abiertas
-dependencias arquitectónicas que comprometan la estabilidad del proyecto.
+## DA-004 — Inventario completo del Manual
 
----
+**Estado:** Abierta.  
+**Naturaleza:** Documental.  
+**Impacto:** Medio.
 
-# 33. Criterios para la evolución del proyecto
+## DA-005 — Revisión de notas internas vacías
 
-## 33.1 Evolución controlada
-
-Toda evolución de GeoMotion Studio deberá realizarse mediante un proceso
-controlado, verificable y documentado.
-
-Las modificaciones arquitectónicas no deberán introducirse directamente en
-la implementación ni incorporarse al Manual sin la correspondiente revisión
-institucional.
-
-## 33.2 Requisitos para incorporar una evolución
-
-Antes de incorporar una modificación relevante deberán verificarse, como
-mínimo, los siguientes aspectos:
-
-- necesidad claramente identificada;
-- impacto arquitectónico conocido;
-- compatibilidad con las líneas base vigentes;
-- ausencia de contradicciones;
-- documentación asociada actualizada;
-- trazabilidad preservada.
-
-## 33.3 Evolución incremental
-
-Las capacidades del proyecto deberán incorporarse mediante incrementos
-pequeños y verificables.
-
-Cada incremento deberá:
-
-- aportar valor institucional;
-- mantener la estabilidad del sistema;
-- evitar rediseños innecesarios;
-- preservar la compatibilidad con la arquitectura vigente.
-
-## 33.4 Evolución excepcional
-
-Cuando una modificación requiera alterar una línea base aprobada,
-Dirección Técnica determinará el procedimiento aplicable, que podrá incluir:
-
-- emisión de un ADR;
-- revisión extraordinaria;
-- creación de una nueva misión;
-- actualización controlada del Manual.
+**Estado:** Abierta.  
+**Naturaleza:** Gobierno documental.  
+**Impacto:** Bajo.
 
 ---
 
-# 34. Criterios de revisión institucional
+# 37. Hitos del proyecto
 
-## 34.1 Objetivo
+## HITO-001 — Adopción de Architecture First
 
-La revisión institucional verifica que la documentación continúa siendo
-coherente con la arquitectura aprobada y con el estado real del proyecto.
+**Estado:** Completado.  
+**Impacto:** Fundacional.  
+**Resultado:** Se establece el orden visión → arquitectura → documentación → implementación → código.
 
-## 34.2 Alcance
+## HITO-002 — Creación del Manual de Ingeniería
 
-La revisión podrá incluir:
+**Estado:** Completado en su base inicial.  
+**Impacto:** Fundacional.  
+**Resultado:** Se establece la referencia arquitectónica del proyecto.
 
-- consistencia arquitectónica;
-- coherencia documental;
-- terminología;
-- referencias cruzadas;
-- estructura editorial;
+## HITO-003 — Organización del trabajo por especialistas
+
+**Estado:** Completado.  
+**Impacto:** Alto.  
+**Resultado:** Se definen misiones especializadas y revisión por Dirección Técnica.
+
+## HITO-004 — Consolidación de Arquitectura Modular
+
+**Estado:** Completado.  
+**Misión:** V0.2.  
+**Resultado:** Línea base aprobada.
+
+## HITO-005 — Creación del Anexo A
+
+**Estado:** Completado.  
+**Resultado:** V0.3 recibe la Arquitectura Modular consolidada como insumo.
+
+## HITO-006 — Consolidación de Arquitectura de Contratos
+
+**Estado:** Completado.  
+**Misión:** V0.3.  
+**Resultado:** Línea base normativa aprobada.
+
+## HITO-007 — Creación del Estado del Proyecto
+
+**Estado:** Completado.  
+**Resultado:** Se establece memoria institucional centralizada.
+
+## HITO-008 — Arquitectura Física
+
+**Estado:** Pendiente.
+
+## HITO-009 — Sistema ADR
+
+**Estado:** Pendiente.
+
+## HITO-010 — MVA
+
+**Estado:** Pendiente.
+
+## HITO-011 — Inicio de implementación
+
+**Estado:** No autorizado todavía.
+
+---
+
+# 38. Cronología consolidada
+
+## Etapa 1 — Identidad y Manual
+
+- Se define GeoMotion Studio.
+- Se adopta Architecture First.
+- Se crea el Manual de Ingeniería.
+- Se reconoce la documentación como activo estratégico.
+
+## Etapa 2 — Especialización
+
+- Se crean misiones V0.1 a V0.5.
+- Se asignan responsabilidades.
+- Dirección Técnica actúa como integrador.
+- Se evita que especialistas sean autoridad final.
+
+## Etapa 3 — Arquitectura Modular
+
+- Se desarrolla V0.2.
+- Se revisan entregas progresivas.
+- Se consolidan módulos, fronteras y dependencias.
+- Se aprueba la línea base modular.
+- Se registran cuestiones pendientes.
+
+## Etapa 4 — Arquitectura de Contratos
+
+- V0.3 identifica dependencia de la Arquitectura Modular.
+- Dirección Técnica entrega Anexo A.
+- Se ajusta el foco hacia el modelo contractual.
+- Se aprueban ocho partes.
+- Se cierra la misión.
+- Se registran principios y evoluciones futuras.
+
+## Etapa 5 — Gobierno del conocimiento
+
+- Se reconoce la necesidad de preservar el estado institucional.
+- Se revisa la carpeta de notas internas.
+- Se decide crear `00_ESTADO_DEL_PROYECTO.md`.
+- Se establece un registro vivo por hitos.
+
+## Etapa 6 — Próxima fase
+
+Pendiente de decisión:
+
+- V0.1;
+- integración editorial;
+- V0.4;
+- V0.5.
+
+---
+
+# 39. Próximos objetivos
+
+## Objetivo inmediato 1
+
+Aprobar y guardar este documento como fuente institucional.
+
+## Objetivo inmediato 2
+
+Revisar la numeración de `docs/notas_internas`.
+
+## Objetivo inmediato 3
+
+Evaluar documentos internos vacíos:
+
+- Ideas;
+- Decisiones Pendientes;
+- Observaciones.
+
+## Objetivo inmediato 4
+
+Preparar el Context Package definitivo para V0.1.
+
+## Objetivo inmediato 5
+
+Cerrar la Arquitectura Física.
+
+## Objetivo posterior 1
+
+Diseñar el sistema ADR.
+
+## Objetivo posterior 2
+
+Formalizar decisiones surgidas de V0.2 y V0.3.
+
+## Objetivo posterior 3
+
+Definir la MVA.
+
+## Objetivo posterior 4
+
+Preparar el inicio controlado de implementación.
+
+---
+
+# 40. Criterios para elegir el siguiente paso
+
+La siguiente misión deberá elegirse evaluando:
+
+- dependencias;
+- riesgo de pérdida de decisiones;
+- necesidad de estructura física;
+- preparación para MVA;
+- carga documental;
+- capacidad de validación;
+- coste de retraso;
+- reversibilidad.
+
+## 40.1 Iniciar V0.1 cuando
+
+- Arquitectura Modular esté disponible;
+- Arquitectura de Contratos esté disponible;
+- el árbol real del repositorio haya sido observado;
+- las restricciones estén claras;
+- no se pretenda diseñar lógica mediante carpetas.
+
+## 40.2 Iniciar V0.4 cuando
+
+- exista suficiente material decisional;
+- se necesite formalizar decisiones;
+- la estructura de gobierno esté preparada;
+- el Manual pueda enlazar ADR.
+
+## 40.3 Iniciar V0.5 cuando
+
+- módulos, contratos y repositorio mínimo estén claros;
+- existan decisiones esenciales;
+- puedan definirse pruebas arquitectónicas;
+- se pueda distinguir imprescindible de postergable.
+
+---
+
+# 41. Estado del repositorio
+
+## 41.1 Estructura observada
+
+La raíz contiene, entre otros:
+
+```text
+.github/
+apps/
+assets/
+docs/
+ejemplos/
+packages/
+scripts/
+CHANGELOG.md
+LICENSE
+README.md
+VALORES.md
+```
+
+Dentro de `docs/` se observan:
+
+```text
+adr/
+ejemplos/
+imágenes/
+ingeniería/
+notas_internas/
+referencias/
+GUÍA_EDITORIAL.md
+README.md
+```
+
+## 41.2 Estado
+
+La estructura actual constituye un punto de partida.
+
+No debe considerarse todavía una arquitectura física consolidada.
+
+## 41.3 Restricción
+
+La presencia de carpetas no prueba:
+
+- separación real;
+- propiedad;
+- límites;
+- dependencias;
+- encapsulamiento;
+- arquitectura.
+
+## 41.4 Próxima evaluación
+
+V0.1 deberá determinar:
+
+- qué conservar;
+- qué renombrar;
+- qué mover;
+- qué crear;
+- qué prohibir;
+- cómo crecer;
+- cómo reflejar módulos;
+- cómo preservar documentación.
+
+---
+
+# 42. Estado de implementación
+
+## 42.1 Situación
+
+No se registra una implementación arquitectónicamente autorizada como fase activa.
+
+## 42.2 Criterio de inicio
+
+La implementación podrá comenzar cuando Dirección Técnica determine que existe:
+
+- arquitectura modular suficiente;
+- contratos suficientes;
+- arquitectura física mínima;
+- decisiones críticas resueltas;
+- MVA definida;
+- validación básica;
 - trazabilidad.
 
-## 34.3 Resultado posible
+## 42.3 Regla
 
-Una revisión podrá concluir con alguno de los siguientes resultados:
-
-- aprobada;
-- aprobada con observaciones;
-- pendiente por dependencias;
-- devuelta para corrección;
-- sustituida por una nueva revisión.
-
-## 34.4 Principio de mínima intervención
-
-Dirección Técnica no modificará una arquitectura aprobada cuando:
-
-- el contenido resulte técnicamente correcto;
-- no existan contradicciones;
-- la modificación únicamente responda a preferencias editoriales.
-
-Este principio preserva la estabilidad de las líneas base.
+La existencia de código experimental no implica el inicio oficial de implementación.
 
 ---
 
-# 35. Estado de la gobernanza documental
+# 43. Estado de validación
 
-## 35.1 Situación actual
+## 43.1 Validación arquitectónica contractual
 
-GeoMotion Studio dispone de un modelo documental estructurado que separa
-claramente:
+Definida conceptualmente en V0.3.
 
-- arquitectura;
-- decisiones;
-- documentación interna;
-- evidencias institucionales;
-- implementación.
+## 43.2 Automatización
 
-Esta separación constituye uno de los principales mecanismos para preservar
-la coherencia del proyecto.
+Pendiente.
 
-## 35.2 Objetivos alcanzados
+## 43.3 Validación sistémica
 
-Hasta la fecha se consideran alcanzados los siguientes objetivos:
+Candidata futura.
 
-- consolidación del Manual de Ingeniería;
-- definición de la Arquitectura Modular;
-- definición de la Arquitectura de Contratos;
-- definición técnica de la Arquitectura Física;
-- establecimiento del proceso de revisión especializada;
-- creación del ecosistema documental interno.
-
-## 35.3 Objetivos pendientes
-
-Permanecen pendientes:
-
-- implantación del sistema ADR;
-- integración editorial completa;
-- consolidación del inventario documental;
-- preparación de la Minimum Viable Architecture;
-- inicio de la implementación.
-
----
-
-# 36. Estado de la trazabilidad
-
-## 36.1 Objetivo
-
-La trazabilidad garantiza que cada decisión relevante pueda relacionarse con
-su origen, su justificación y los documentos afectados.
-
-## 36.2 Estado actual
-
-Actualmente la trazabilidad se mantiene mediante:
-
-- referencias documentales;
-- revisión institucional;
-- control de versiones;
-- documentación interna.
-
-La implantación del sistema ADR ampliará significativamente esta capacidad.
-
-## 36.3 Principios
-
-La trazabilidad deberá ser:
-
-- suficiente;
-- verificable;
-- mantenible;
-- proporcional a la importancia de la decisión.
-
-No deberá convertirse en una carga administrativa innecesaria.
-
----
-
-# 37. Estado de la estabilidad arquitectónica
-
-## 37.1 Evaluación general
-
-Dirección Técnica considera que la arquitectura del proyecto presenta un
-nivel adecuado de estabilidad para continuar con la siguiente fase de
-gobernanza.
-
-## 37.2 Factores que respaldan esta evaluación
-
-- Arquitectura Modular consolidada.
-- Arquitectura de Contratos consolidada.
-- Arquitectura Física resuelta técnicamente.
-- Metodología estable.
-- Ecosistema documental definido.
-- Proceso de revisión institucional consolidado.
-
-## 37.3 Factores pendientes
-
-La estabilidad podrá incrementarse tras completar:
-
-- el sistema ADR;
-- la integración documental restante;
-- la definición de la Minimum Viable Architecture.
-
----
-
-# 38. Estado de preparación institucional
-
-## 38.1 Evaluación general
-
-El proyecto se encuentra en una etapa de consolidación arquitectónica
-avanzada.
-
-Las principales líneas base necesarias para sostener la evolución del
-sistema han sido definidas y aprobadas, quedando pendientes únicamente los
-mecanismos de gobierno de decisiones y la preparación formal de la
-implementación.
-
-## 38.2 Capacidades consolidadas
-
-Se consideran institucionalmente consolidadas las siguientes capacidades:
-
-- metodología Architecture First;
-- Manual de Ingeniería como autoridad normativa;
-- Arquitectura Modular;
-- Arquitectura de Contratos;
-- Arquitectura Física del Repositorio (pendiente de integración editorial);
-- proceso de revisión técnica;
-- estructura documental institucional.
-
-## 38.3 Capacidades en desarrollo
-
-Permanecen en desarrollo:
-
-- sistema oficial de ADR;
-- integración editorial completa;
-- trazabilidad ampliada;
-- preparación de la Minimum Viable Architecture.
-
----
-
-# 39. Recomendaciones institucionales
-
-## 39.1 Prioridad inmediata
-
-La prioridad institucional consiste en completar el sistema oficial de
-Architecture Decision Records.
-
-Esta capacidad permitirá registrar formalmente la evolución de la
-arquitectura sin alterar la estabilidad de las líneas base existentes.
-
-## 39.2 Prioridad posterior
-
-Tras la finalización del sistema ADR deberán abordarse:
-
-- integración editorial definitiva de V0.1;
-- consolidación del inventario documental;
-- preparación de la Minimum Viable Architecture;
-- planificación del inicio de la implementación.
-
-## 39.3 Criterio de actuación
-
-Las prioridades deberán ejecutarse respetando las dependencias definidas en
-este documento.
-
-No deberán adelantarse actividades cuya ejecución dependa de capacidades
-todavía no consolidadas.
-
----
-
-# 40. Estado de cumplimiento metodológico
-
-## 40.1 Evaluación
-
-Dirección Técnica considera que el proyecto mantiene un elevado nivel de
-cumplimiento respecto de la metodología institucional.
-
-## 40.2 Aspectos consolidados
-
-Se verifican como consolidados:
-
-- separación entre arquitectura e implementación;
-- precedencia documental;
-- revisión especializada;
-- gobierno técnico;
-- organización documental;
-- evolución incremental.
-
-## 40.3 Aspectos pendientes
-
-El cumplimiento metodológico aumentará tras incorporar:
-
-- gobierno formal de decisiones;
-- trazabilidad completa mediante ADR;
-- integración documental final del Ciclo 1.
-
----
-
-# 41. Estado de los activos estratégicos
-
-## 41.1 Activos disponibles
-
-Los principales activos estratégicos del proyecto son:
-
-- visión institucional;
-- Manual de Ingeniería;
-- Arquitectura Modular;
-- Arquitectura de Contratos;
-- Arquitectura Física;
-- documentación interna;
-- metodología de revisión.
-
-## 41.2 Activos pendientes
-
-Deberán incorporarse como activos permanentes:
-
-- repositorio oficial de ADR;
-- actas arquitectónicas completas;
-- inventario documental consolidado;
-- documentación de la Minimum Viable Architecture.
-
-## 41.3 Principio de preservación
-
-Todo activo estratégico deberá mantenerse bajo control institucional,
-preservando su integridad, trazabilidad y disponibilidad.
-
----
-
-# 42. Estado de la capacidad organizativa
-
-## 42.1 Organización del proyecto
-
-GeoMotion Studio dispone actualmente de una organización técnica basada en
-responsabilidades claramente diferenciadas.
-
-La coordinación corresponde a Dirección Técnica, mientras que las misiones
-especializadas permiten desarrollar áreas concretas sin comprometer la
-coherencia global del proyecto.
-
-## 42.2 Especialización
-
-La especialización constituye un mecanismo permanente para:
-
-- reducir el riesgo de inconsistencias;
-- incrementar la calidad técnica;
-- facilitar las revisiones;
-- preservar el conocimiento.
-
-## 42.3 Integración
-
-Los resultados obtenidos por cada especialista únicamente adquieren carácter
-institucional tras su revisión e integración por Dirección Técnica.
-
----
-
-# 43. Estado de preparación para el Ciclo 2
-
-## 43.1 Condiciones de entrada
-
-El inicio del siguiente ciclo requiere:
-
-- finalización de V0.4;
-- integración editorial pendiente;
-- actualización del estado institucional;
-- consolidación documental.
-
-## 43.2 Objetivo principal
-
-El Ciclo 2 deberá orientarse progresivamente hacia la preparación de la
-implementación, manteniendo la arquitectura como autoridad principal del
-proyecto.
-
-## 43.3 Criterio de continuidad
-
-Cada nuevo ciclo deberá construirse sobre las líneas base previamente
-aprobadas.
-
-Las arquitecturas consolidadas no deberán rediseñarse salvo que exista una
-justificación arquitectónica suficiente respaldada por el procedimiento
-institucional correspondiente.
-
----
-
-# 44. Estado consolidado del proyecto
-
-## 44.1 Evaluación institucional
-
-Considerando las misiones desarrolladas hasta la fecha, Dirección Técnica
-estima que GeoMotion Studio dispone de una base arquitectónica suficientemente
-madura para continuar con la siguiente etapa de consolidación.
-
-La arquitectura del proyecto presenta un grado elevado de coherencia
-interna, una adecuada separación de responsabilidades y una organización
-documental alineada con la metodología institucional.
-
-## 44.2 Resumen ejecutivo del estado actual
-
-| Área | Estado |
-|---|---|
-| Visión del Proyecto | Vigente |
-| Manual de Ingeniería | Vigente |
-| Arquitectura Modular | Aprobada |
-| Arquitectura de Contratos | Aprobada |
-| Arquitectura Física | Finalizada técnicamente |
-| Sistema ADR | Pendiente |
-| Minimum Viable Architecture | Pendiente |
-| Implementación | No iniciada |
-
-## 44.3 Valoración
-
-La mayor fortaleza del proyecto reside actualmente en la estabilidad de su
-base arquitectónica.
-
-Las principales actividades pendientes corresponden al fortalecimiento del
-gobierno técnico y a la preparación formal del inicio de la implementación.
-
----
-
-# 45. Registro institucional de hitos
-
-## Hito H-001
-
-**Descripción**
-
-Consolidación del enfoque **Architecture First** como principio rector del
-proyecto.
-
-**Estado**
-
-Completado.
-
----
-
-## Hito H-002
-
-**Descripción**
-
-Aprobación de la Arquitectura Modular como primera línea base
-arquitectónica.
-
-**Estado**
-
-Completado.
-
----
-
-## Hito H-003
-
-**Descripción**
-
-Aprobación de la Arquitectura de Contratos como segunda línea base
-arquitectónica.
-
-**Estado**
-
-Completado.
-
----
-
-## Hito H-004
-
-**Descripción**
-
-Finalización técnica de la Arquitectura Física del Repositorio.
-
-**Estado**
-
-Completado técnicamente.
-
-Pendiente de integración editorial.
-
----
-
-## Hito H-005
-
-**Descripción**
-
-Implantación del Sistema Oficial de Architecture Decision Records.
-
-**Estado**
+## 43.4 MVA
 
 Pendiente.
 
 ---
 
-## Hito H-006
+# 44. Registro de preguntas abiertas
 
-**Descripción**
+## PREG-001
 
-Definición de la Minimum Viable Architecture.
+¿Cuál es el siguiente paso óptimo después de V0.3?
 
-**Estado**
+## PREG-002
 
-Pendiente.
+¿Debe V0.1 ejecutarse antes de V0.4?
 
----
+## PREG-003
 
-## Hito H-007
+¿Qué decisiones de V0.2 y V0.3 requieren ADR?
 
-**Descripción**
+## PREG-004
 
-Inicio controlado de la implementación.
+¿Cómo se integrarán editorialmente las líneas base en el Manual?
 
-**Estado**
+## PREG-005
 
-No iniciado.
+¿Qué documentos internos vacíos deben conservarse?
 
----
+## PREG-006
 
-# 46. Dependencias pendientes
+¿Cuándo debe crearse el Registro Operativo de Contratos?
 
-Las siguientes dependencias deberán resolverse antes del inicio de la fase
-de implementación:
+## PREG-007
 
-| Dependencia | Estado |
-|---|---|
-| Sistema ADR | Pendiente |
-| Integración editorial de V0.1 | Pendiente |
-| Inventario documental | Pendiente |
-| MVA | Pendiente |
-| Validación inicial | Pendiente |
+¿Cuándo será necesaria la validación sistémica?
 
-Estas dependencias constituyen el conjunto mínimo previsto para declarar al
-proyecto preparado para la siguiente etapa.
+## PREG-008
+
+¿Cómo se gobernará la propiedad documental?
 
 ---
 
-# 47. Resumen de activos documentales
+# 45. Registro de lecciones aprendidas
 
-## Documentación normativa
+## LA-001 — No exigir arquitectura ausente
 
-- Visión del Proyecto.
-- Manual de Ingeniería.
-- Arquitectura Modular.
-- Arquitectura de Contratos.
-- Arquitectura Física del Repositorio.
-- Architecture Decision Records (pendiente).
+Un especialista no debe derivar contratos, repositorio o validación sin recibir las líneas base necesarias.
 
-## Documentación institucional
+## LA-002 — Separar vigente de futuro
 
-- INT-000 — Estado del Proyecto.
-- INT-001 — Evolución del Manual.
-- INT-002 — Mapa de Integración Documental.
-- INT-003 — Informe de Integración Técnica.
-- INT-004 — Ideas.
-- INT-005 — Decisiones Pendientes.
-- INT-006 — Observaciones.
-- INT-007 — Actas de Aprobación Arquitectónica.
+Las buenas ideas no deben incorporarse automáticamente.
 
-## Documentación futura
+## LA-003 — No corregir por corregir
 
-Se prevé incorporar progresivamente:
+La revisión debe justificar cambios.
 
-- documentación de la MVA;
-- especificaciones técnicas;
-- documentación de implementación;
-- documentación de validación;
-- documentación operativa.
+## LA-004 — El catálogo no es el modelo
 
----
+Los inventarios no deben desplazar al conocimiento arquitectónico.
 
-# 48. Estado del conocimiento arquitectónico
+## LA-005 — La documentación necesita gobierno
 
-## 48.1 Evaluación
+A medida que crece el proyecto, la continuidad requiere registros institucionales.
 
-El conocimiento arquitectónico disponible permite describir de forma
-consistente:
+## LA-006 — La aprobación es gradual
 
-- la estructura lógica del sistema;
-- las reglas de colaboración;
-- la organización física del repositorio;
-- el modelo documental;
-- el proceso de evolución.
+Cada parte puede consolidarse sin esperar al documento completo, pero el cierre requiere evaluación integral.
 
-## 48.2 Capacidades futuras
+## LA-007 — La arquitectura modular precede a contratos
 
-La implantación del sistema ADR permitirá ampliar este conocimiento mediante
-el registro explícito de las decisiones arquitectónicas relevantes.
+Las colaboraciones dependen de fronteras y responsabilidades conocidas.
+
+## LA-008 — El repositorio no define la arquitectura
+
+La estructura física debe reflejar decisiones previas.
 
 ---
 
-# 49. Perspectiva institucional
-
-## 49.1 Situación del proyecto
-
-GeoMotion Studio ha completado la fase principal de definición de su
-arquitectura fundamental.
-
-Las arquitecturas aprobadas proporcionan una base suficientemente estable
-para continuar con la consolidación del gobierno técnico antes del inicio
-de la implementación.
-
-## 49.2 Objetivos inmediatos
-
-Las prioridades institucionales quedan establecidas en el siguiente orden:
-
-1. Finalizar el Sistema Oficial de Architecture Decision Records.
-2. Integrar editorialmente la Arquitectura Física del Repositorio.
-3. Consolidar el inventario documental institucional.
-4. Definir la Minimum Viable Architecture.
-5. Preparar el inicio controlado de la implementación.
-
-## 49.3 Objetivos posteriores
-
-Una vez completadas las actividades anteriores, el proyecto podrá avanzar
-hacia:
-
-- especificaciones técnicas;
-- construcción incremental;
-- validaciones arquitectónicas;
-- automatización;
-- aseguramiento de calidad;
-- documentación operativa.
-
----
-
-# 50. Criterios para declarar la preparación del proyecto
-
-La preparación institucional para iniciar la implementación requerirá la
-verificación conjunta de las siguientes condiciones:
-
-- arquitectura modular vigente;
-- arquitectura de contratos vigente;
-- arquitectura física integrada;
-- sistema ADR operativo;
-- Manual de Ingeniería actualizado;
-- documentación interna sincronizada;
-- dependencias arquitectónicas resueltas;
-- criterios iniciales de validación establecidos.
-
-La ausencia de cualquiera de estos elementos deberá ser evaluada por
-Dirección Técnica antes de autorizar el cambio de fase.
-
----
-
-# 51. Síntesis del estado institucional
+# 46. Índice de artefactos relevantes
 
 ## Arquitectura
 
-La arquitectura fundamental del proyecto presenta un elevado grado de
-coherencia y estabilidad.
-
-Las principales decisiones estructurales necesarias para sostener el
-crecimiento del sistema ya han sido definidas.
-
-## Documentación
-
-La documentación institucional constituye actualmente el principal activo
-operativo del proyecto.
-
-Su evolución continúa realizándose mediante procesos controlados de revisión
-e integración.
-
-## Gobierno
-
-El modelo de gobierno técnico se encuentra ampliamente consolidado.
-
-La incorporación del sistema ADR completará el mecanismo formal para la
-gestión de decisiones arquitectónicas.
-
-## Implementación
-
-La implementación permanece deliberadamente diferida hasta completar las
-capacidades de gobierno previstas por la metodología Architecture First.
-
----
-
-# 52. Conclusiones
-
-## 52.1 Evaluación general
-
-Dirección Técnica considera que GeoMotion Studio dispone actualmente de una
-base arquitectónica sólida, coherente y preparada para continuar con la
-siguiente etapa de evolución institucional.
-
-Las misiones completadas durante el Ciclo 1 han permitido transformar una
-visión conceptual en un conjunto consistente de arquitecturas aprobadas y
-documentación de referencia.
-
-## 52.2 Estado del Ciclo 1
-
-El Ciclo 1 puede resumirse mediante los siguientes resultados:
-
-- Arquitectura Modular consolidada.
-- Arquitectura de Contratos consolidada.
-- Arquitectura Física finalizada técnicamente.
-- Ecosistema documental institucional definido.
-- Proceso de revisión técnica consolidado.
-- Gobierno arquitectónico parcialmente completado.
-
-## 52.3 Próxima etapa
-
-La siguiente etapa del proyecto deberá centrarse en completar el gobierno
-formal de decisiones mediante el Sistema Oficial de Architecture Decision
-Records.
-
-Una vez finalizada dicha misión podrán abordarse la Minimum Viable
-Architecture y la preparación del inicio controlado de la implementación.
-
----
-
-# 53. Declaración institucional
-
-El presente documento constituye el registro oficial del estado
-institucional consolidado de GeoMotion Studio.
-
-Su finalidad es proporcionar una visión unificada sobre:
-
-- el estado de la arquitectura;
-- el estado de las misiones;
-- el estado de la documentación;
-- el estado del gobierno técnico;
-- las prioridades institucionales;
-- las dependencias pendientes.
-
-Este documento deberá actualizarse exclusivamente cuando se produzcan hitos
-arquitectónicos relevantes o resoluciones institucionales que modifiquen el
-estado general del proyecto.
-
----
-
-# 54. Mantenimiento del documento
-
-## 54.1 Propósito
-
-El presente documento deberá mantenerse como la referencia institucional
-sobre el estado consolidado del proyecto.
-
-Su objetivo consiste en proporcionar una visión ejecutiva y verificable del
-estado general de GeoMotion Studio sin sustituir a los documentos
-arquitectónicos que constituyen la línea base vigente.
-
-## 54.2 Frecuencia de actualización
-
-INT-000 no deberá modificarse de forma continua.
-
-Su actualización únicamente procederá cuando ocurra alguno de los
-siguientes eventos:
-
-- aprobación de una nueva arquitectura;
-- integración oficial de una misión;
-- emisión de una resolución institucional relevante;
-- modificación del estado general del proyecto;
-- incorporación de una nueva línea base;
-- cierre de un ciclo arquitectónico.
-
-Las modificaciones menores de carácter editorial no justificarán una nueva
-versión del documento.
-
-## 54.3 Responsabilidad
-
-La responsabilidad de mantener este documento corresponde a Dirección
-Técnica.
-
-Los especialistas podrán proponer modificaciones, pero ninguna actualización
-adquirirá validez institucional hasta ser revisada e integrada
-formalmente.
-
-## 54.4 Criterios de calidad
-
-Toda actualización deberá preservar:
-
-- coherencia con el Manual de Ingeniería;
-- consistencia terminológica;
-- ausencia de contradicciones;
-- trazabilidad institucional;
-- estabilidad editorial;
-- claridad del estado reflejado.
-
----
-
-# 55. Control de cambios futuros
-
-## 55.1 Principio general
-
-Las futuras modificaciones de INT-000 deberán reflejar exclusivamente
-cambios institucionales ya consolidados.
-
-Este documento no constituye un espacio para registrar propuestas,
-hipótesis o trabajos en curso.
-
-## 55.2 Cambios que requieren actualización
-
-Deberá generarse una nueva versión cuando ocurra alguno de los siguientes
-casos:
-
-- aprobación de una nueva misión;
-- sustitución de una línea base;
-- incorporación de nuevos mecanismos de gobierno;
-- modificación de la hoja de ruta institucional;
-- reorganización del ecosistema documental.
-
-## 55.3 Cambios que no requieren actualización
-
-No será necesaria una nueva versión cuando se produzcan únicamente:
-
-- correcciones tipográficas;
-- mejoras de formato;
-- reorganización visual sin cambios de contenido;
-- aclaraciones editoriales sin impacto institucional.
-
----
-
-# 56. Relación con otros documentos
-
-INT-000 mantiene relaciones directas con los siguientes documentos
-institucionales:
-
-| Documento | Relación |
-|---|---|
-| Manual de Ingeniería | Autoridad normativa |
-| Arquitectura Modular | Línea base lógica |
-| Arquitectura de Contratos | Línea base contractual |
-| Arquitectura Física | Línea base física |
-| INT-001 | Evolución futura del Manual |
-| INT-002 | Integración documental |
-| INT-003 | Evidencia histórica de integración |
-| INT-004 | Ideas |
-| INT-005 | Decisiones pendientes |
-| INT-006 | Observaciones |
-| INT-007 | Actas de aprobación |
-
-INT-000 actúa como documento de consolidación y no sustituye el contenido
-propio de ninguno de los documentos anteriores.
-
----
-
-# 57. Glosario institucional mínimo
-
-| Término | Definición |
-|---|---|
-| Arquitectura | Modelo estructural aprobado del sistema. |
-| Línea base | Estado arquitectónico aprobado como referencia vigente. |
-| Dirección Técnica | Autoridad responsable de la coherencia institucional del proyecto. |
-| Misión | Trabajo especializado con alcance definido y criterios de aceptación. |
-| Integración documental | Incorporación formal de una arquitectura o documento al ecosistema institucional. |
-| ADR | Registro oficial de una decisión arquitectónica relevante. |
-| Manual de Ingeniería | Autoridad documental principal del proyecto. |
-| Ciclo | Conjunto de misiones relacionadas que persiguen un objetivo arquitectónico común. |
-
----
-
-# 58. Referencias institucionales
-
-La información consolidada en este documento deriva de las siguientes
-fuentes institucionales:
-
-- Visión del Proyecto.
 - Manual de Ingeniería.
 - Arquitectura Modular.
 - Arquitectura de Contratos.
-- Arquitectura Física del Repositorio.
-- Resoluciones de Dirección Técnica.
-- Documentación interna vigente.
+- Anexo A — Arquitectura Modular Consolidada.
 
-Ninguna fuente externa constituye autoridad sobre el contenido de este
-documento.
+## Gobierno
 
----
+- Estado del Proyecto.
+- Mapa de Integración Documental.
+- Informe de Integración Técnica.
+- Decisiones Pendientes.
+- Evolución del Manual.
+- Ideas.
+- Observaciones.
 
-# 59. Estado del documento
+## Futuro
 
-| Campo | Valor |
-|---|---|
-| Documento | INT-000 — Estado del Proyecto |
-| Estado | Vigente |
-| Versión | 1.1.0 |
-| Propietario | Dirección Técnica |
-| Naturaleza | Documento institucional |
-| Próxima revisión | Tras el siguiente hito arquitectónico |
-| Sustituye a | Versión anterior del documento |
-
----
-
-# 60. Cierre institucional
-
-## 60.1 Estado final
-
-A la fecha de emisión de esta versión, GeoMotion Studio dispone de una
-base arquitectónica suficientemente consolidada para continuar con la
-siguiente etapa prevista por la metodología institucional.
-
-Las arquitecturas fundamentales del proyecto han alcanzado un nivel de
-madurez adecuado y proporcionan un marco estable para la evolución futura
-del sistema.
-
-## 60.2 Situación global
-
-El estado institucional del proyecto puede resumirse del siguiente modo:
-
-| Área | Estado |
-|---|---|
-| Visión | Consolidada |
-| Arquitectura | Consolidada |
-| Documentación | Consolidada |
-| Gobierno técnico | Consolidado |
-| Gobierno de decisiones | En desarrollo |
-| Implementación | Pendiente |
-
-Esta evaluación refleja el estado conocido en la fecha de actualización del
-presente documento.
+- ADR.
+- MVA.
+- Especificaciones técnicas.
+- Registro Operativo de Contratos.
+- Evidencias de validación.
 
 ---
 
-# 61. Próximos hitos institucionales
+# 47. Plantilla para registrar una misión
 
-La evolución prevista del proyecto contempla, en el corto plazo, los
-siguientes hitos:
+```markdown
+## Misión V0.X — Nombre
 
-1. Finalización de la misión **V0.4 — Sistema Oficial de Architecture Decision Records**.
-2. Integración editorial de la Arquitectura Física del Repositorio.
-3. Emisión de las correspondientes actas de aprobación arquitectónica.
-4. Consolidación del inventario documental institucional.
-5. Inicio de la misión **V0.5 — Minimum Viable Architecture**.
+### Identificación
 
-La ejecución de estos hitos deberá respetar las dependencias arquitectónicas
-establecidas por Dirección Técnica.
+- Código:
+- Nombre:
+- Especialista:
+- Autoridad:
+- Fecha de inicio:
+- Fecha de cierre:
+- Estado:
+- Resultado:
+
+### Propósito
+
+### Alcance
+
+### Restricciones
+
+### Dependencias
+
+### Entregables
+
+### Partes aprobadas
+
+### Decisiones
+
+### Principios emergentes
+
+### Riesgos
+
+### Cuestiones abiertas
+
+### Evoluciones futuras
+
+### Evaluación de Dirección Técnica
+
+### Impacto sobre el Manual
+
+### Impacto sobre otras misiones
+
+### Lecciones aprendidas
+
+### Próxima acción
+```
 
 ---
 
-# 62. Declaración de vigencia
+# 48. Plantilla para registrar un principio
 
-La presente versión de **INT-000 — Estado del Proyecto** permanece vigente
-hasta que una resolución institucional posterior disponga su sustitución.
+```markdown
+## PA-XXX — Nombre
 
-Toda versión posterior deberá:
-
-- conservar la trazabilidad histórica;
-- indicar claramente la versión sustituida;
-- documentar los cambios relevantes;
-- mantener la coherencia con el Manual de Ingeniería vigente.
-
-La sustitución de este documento no invalida las resoluciones
-arquitectónicas previamente aprobadas, salvo que exista una decisión
-institucional expresa que así lo establezca.
-
----
-
-# 63. Aprobación institucional
-
-Este documento queda preparado para su incorporación al ecosistema
-documental institucional de GeoMotion Studio.
-
-Su contenido refleja el estado consolidado del proyecto en el momento de su
-emisión y constituye la referencia ejecutiva para el seguimiento de la
-evolución arquitectónica del sistema.
-
-La aprobación definitiva, integración en el Manual de Ingeniería y control
-de versiones corresponden a Dirección Técnica.
+**Estado:**  
+**Origen:**  
+**Fecha:**  
+**Autoridad:**  
+**Descripción:**  
+**Justificación:**  
+**Impacto:**  
+**Documentos relacionados:**  
+**Decisiones relacionadas:**  
+**Excepciones:**  
+**Próxima revisión:**  
+```
 
 ---
 
-# Anexo A. Resumen ejecutivo
+# 49. Plantilla para registrar una decisión pendiente
 
-## Estado general
+```markdown
+## DP-XXX — Nombre
 
-| Elemento | Situación |
-|---|---|
-| Manual de Ingeniería | Vigente |
-| Arquitectura Modular | Aprobada |
-| Arquitectura de Contratos | Aprobada |
-| Arquitectura Física | Finalizada técnicamente |
-| Sistema ADR | Pendiente |
-| Minimum Viable Architecture | Pendiente |
-| Implementación | No iniciada |
+**Estado:** Pendiente  
+**Origen:**  
+**Fecha:**  
+**Responsable:**  
+**Pregunta:**  
+**Contexto:**  
+**Alternativas conocidas:**  
+**Impacto:**  
+**Dependencias:**  
+**Riesgo de no decidir:**  
+**Momento recomendado:**  
+**ADR futuro:** Sí / No / Por determinar  
+```
 
-## Prioridades institucionales
+---
 
-1. Completar el Sistema Oficial de ADR.
-2. Integrar editorialmente la Arquitectura Física.
-3. Consolidar el inventario documental.
-4. Desarrollar la Minimum Viable Architecture.
-5. Preparar el inicio de la implementación.
+# 50. Plantilla para registrar un hito
 
-## Riesgos prioritarios
+```markdown
+## HITO-XXX — Nombre
 
-- Deriva arquitectónica.
-- Deuda documental.
-- Decisiones sin trazabilidad.
-- Dependencias implícitas.
-- Crecimiento descontrolado del repositorio.
+**Estado:**  
+**Fecha:**  
+**Responsable:**  
+**Misión relacionada:**  
+**Descripción:**  
+**Resultado:**  
+**Líneas base afectadas:**  
+**Documentos afectados:**  
+**Decisiones derivadas:**  
+**Riesgos cerrados:**  
+**Riesgos abiertos:**  
+**Próximo hito:**  
+```
 
-## Fortalezas consolidadas
+---
 
-- Enfoque **Architecture First** institucionalizado.
-- Arquitectura Modular aprobada.
-- Arquitectura de Contratos aprobada.
-- Arquitectura Física resuelta técnicamente.
-- Gobierno documental consolidado.
-- Proceso de revisión técnica institucionalizado.
+# 51. Plantilla para registrar un riesgo
+
+```markdown
+## RE-XXX — Nombre
+
+**Estado:**  
+**Probabilidad:**  
+**Impacto:**  
+**Origen:**  
+**Descripción:**  
+**Consecuencias:**  
+**Mitigación:**  
+**Responsable:**  
+**Indicadores:**  
+**Fecha de revisión:**  
+```
+
+---
+
+# 52. Plantilla para registrar una evolución candidata
+
+```markdown
+## EC-XXX — Nombre
+
+**Estado:** Candidata  
+**Origen:**  
+**Descripción:**  
+**Justificación:**  
+**Beneficio esperado:**  
+**Coste esperado:**  
+**Riesgo:**  
+**Dependencias:**  
+**Momento recomendado:**  
+**Documento futuro:**  
+**Decisión requerida:**  
+```
+
+---
+
+# 53. Procedimiento de actualización
+
+## Paso 1 — Identificar el evento
+
+Confirmar que ocurrió un hito relevante.
+
+## Paso 2 — Localizar fuentes
+
+Reunir:
+
+- resolución;
+- documento;
+- ADR;
+- informe;
+- misión;
+- evidencia.
+
+## Paso 3 — Actualizar estado ejecutivo
+
+Modificar únicamente los campos afectados.
+
+## Paso 4 — Actualizar la misión
+
+Registrar resultado, decisiones y riesgos.
+
+## Paso 5 — Actualizar cronología
+
+Añadir el hito.
+
+## Paso 6 — Actualizar principios
+
+Solo si existe aprobación.
+
+## Paso 7 — Actualizar pendientes
+
+Cerrar, añadir o reclasificar.
+
+## Paso 8 — Actualizar versión
+
+Aplicar reglas de versionado.
+
+## Paso 9 — Revisar coherencia
+
+Verificar que no contradice el Manual ni ADR.
+
+## Paso 10 — Confirmar autoridad
+
+Dirección Técnica aprueba la actualización.
+
+---
+
+# 54. Procedimiento de revisión periódica
+
+La revisión deberá comprobar:
+
+- estados obsoletos;
+- enlaces rotos;
+- decisiones ya resueltas;
+- riesgos cerrados;
+- documentos vacíos;
+- duplicidades;
+- misiones pendientes;
+- fechas;
+- versiones;
+- autoridad;
+- coherencia con el Manual.
+
+---
+
+# 55. Criterios de calidad
+
+El documento será considerado saludable cuando:
+
+- permita comprender el proyecto en menos de quince minutos;
+- permita localizar decisiones en menos de cinco minutos;
+- distinga claramente vigente, pendiente y futuro;
+- no duplique documentos normativos;
+- mantenga una cronología coherente;
+- no contenga afirmaciones sin fuente;
+- registre los hitos relevantes;
+- sea actualizado después de cada cierre importante.
+
+---
+
+# 56. Política de archivo
+
+Las entradas históricas no deberán eliminarse salvo error.
+
+Cuando algo deje de estar vigente:
+
+- se marcará como sustituido;
+- se indicará la nueva referencia;
+- se conservará la fecha;
+- se preservará la razón.
+
+Los informes históricos deberán archivarse, no sobrescribirse.
+
+---
+
+# 57. Política de referencias
+
+Las referencias deberán utilizar rutas estables.
+
+Ejemplo:
+
+```text
+docs/ingeniería/...
+docs/notas_internas/...
+docs/adr/...
+```
+
+Cuando la Arquitectura Física sea aprobada, deberán actualizarse todas las rutas de forma controlada.
+
+---
+
+# 58. Glosario
+
+## Architecture First
+
+Metodología donde arquitectura y documentación preceden a la implementación.
+
+## Línea base
+
+Estado aprobado que sirve como referencia para trabajos posteriores.
+
+## Dirección Técnica
+
+Autoridad integradora responsable de coherencia y aprobación.
+
+## Especialista
+
+Rol subordinado encargado de una misión acotada.
+
+## Contrato arquitectónico
+
+Especificación normativa de una capacidad pública entre módulos autorizados.
+
+## Arquitectura Modular
+
+Modelo de módulos, responsabilidades, propiedad, fronteras y dependencias.
+
+## Arquitectura Física
+
+Representación del sistema en la organización concreta del repositorio.
+
+## ADR
+
+Registro formal de una decisión arquitectónica relevante.
+
+## MVA
+
+Conjunto mínimo de capacidades y mecanismos para demostrar la viabilidad de la arquitectura.
+
+## Catálogo Arquitectónico
+
+Conjunto representativo de contratos usado para demostrar el modelo.
+
+## Registro Operativo
+
+Inventario evolutivo de contratos implementados.
+
+## Riesgo arquitectónico
+
+Condición que puede degradar la integridad de la arquitectura.
+
+## Deuda arquitectónica
+
+Obligación reconocida de corregir o completar una carencia arquitectónica.
+
+---
+
+# 59. Estado de cierre de esta versión
+
+## Contenido incorporado
+
+Esta versión registra:
+
+- estado general;
+- gobierno;
+- metodología;
+- ecosistema documental;
+- notas internas;
+- misiones V0.1 a V0.5;
+- cierre de V0.2;
+- cierre completo de V0.3;
+- principios;
+- decisiones;
+- pendientes;
+- evoluciones;
+- riesgos;
+- hitos;
+- cronología;
+- próximos pasos;
+- plantillas de mantenimiento.
+
+## Información pendiente de confirmación
+
+- fechas exactas de inicio y cierre de todas las misiones;
+- versiones oficiales de documentos de V0.2 y V0.3;
+- nombres definitivos dentro del Manual;
+- inventario completo de los diecisiete documentos;
+- estado real de V0.1;
+- responsable nominal de cada documento;
+- orden final de V0.1, V0.4 y V0.5;
+- rutas definitivas tras la Arquitectura Física.
+
+## Próxima actualización requerida
+
+Después de que Dirección Técnica determine el siguiente paso y emita la resolución correspondiente.
+
+---
+
+# 60. Resolución institucional
+
+Con la creación de este documento, GeoMotion Studio establece un mecanismo permanente para preservar el estado consolidado del proyecto.
+
+El presente registro deberá convertirse en el primer punto de consulta antes de:
+
+- iniciar una misión;
+- revisar una arquitectura;
+- aprobar un ADR;
+- modificar el Manual;
+- comenzar una implementación;
+- alterar el repositorio;
+- planificar una MVA;
+- evaluar una evolución relevante.
+
+La continuidad del proyecto no deberá depender de la memoria individual, de conversaciones aisladas ni de documentos dispersos.
+
+La arquitectura seguirá definiéndose en el Manual.
+
+Las decisiones seguirán registrándose mediante ADR.
+
+La implementación seguirá documentándose en sus especificaciones.
+
+Este documento preservará la visión integrada de todo ello.
 
 ---
 
 # Fin del documento
-
-**Documento:** INT-000 — Estado del Proyecto
-
-**Versión:** 1.1.0
-
-**Estado:** Vigente
-
-**Propietario:** Dirección Técnica
-
-**Naturaleza:** Documento institucional
-
-**Fin del documento**
