@@ -102,6 +102,7 @@ La Arquitectura de IA de GeoMotion Studio se fundamenta en los siguientes princi
 El presente documento describe los fundamentos de la Arquitectura de IA de GeoMotion Studio, los principios que la sustentan, sus componentes, el ciclo de vida de los modelos y capacidades inteligentes, los mecanismos de integración con el resto de la plataforma, los aspectos de gobernanza, observabilidad, seguridad y ética, así como su relación con el Marco de Ingeniería y el conjunto de documentos técnicos del proyecto.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Arquitectura de IA
 
 ## 1.1 Objetivo
@@ -265,6 +266,7 @@ La Arquitectura de IA de GeoMotion Studio constituye una capacidad transversal d
 Su diseño independiente de proveedores, modular y extensible permite incorporar nuevas tecnologías de Inteligencia Artificial conforme evolucionen, garantizando la estabilidad del sistema y preservando la capacidad del usuario para supervisar, modificar y controlar los resultados generados.
 
 ---
+
 # CAPÍTULO 2 · Principios de Diseño de la Arquitectura de IA
 
 ## 2.1 Objetivo
@@ -484,6 +486,7 @@ La plataforma no se diseña alrededor de modelos concretos, sino alrededor de ca
 Este enfoque proporciona una arquitectura robusta, flexible y preparada para integrar las tecnologías de Inteligencia Artificial presentes y futuras, preservando al mismo tiempo la estabilidad, la gobernanza y el control por parte del usuario.
 
 ---
+
 # CAPÍTULO 3 · Arquitectura de Componentes de IA
 
 ## 3.1 Objetivo
@@ -811,6 +814,7 @@ La separación entre interacción, comprensión, planificación, orquestación, 
 Este modelo convierte a la IA en una capacidad integrada de la plataforma, capaz de coordinar los distintos componentes de GeoMotion Studio y transformar las intenciones del usuario en proyectos editables y controlables.
 
 ---
+
 # CAPÍTULO 4 · Capacidades Inteligentes de la Arquitectura de IA
 
 ## 4.1 Objetivo
@@ -823,7 +827,7 @@ Las capacidades definidas representan servicios inteligentes que pueden ser impl
 
 ---
 
-# 4.2 Concepto de Capacidad Inteligente
+## 4.2 Concepto de Capacidad Inteligente
 
 Una capacidad inteligente representa una función específica que permite a GeoMotion Studio incorporar comportamiento asistido por Inteligencia Artificial.
 
@@ -851,7 +855,7 @@ La arquitectura se centra en qué capacidad necesita la plataforma y no en cómo
 
 ---
 
-# 4.3 Comprensión de Intenciones
+## 4.3 Comprensión de Intenciones
 
 La comprensión de intenciones permite interpretar solicitudes realizadas por el usuario y transformarlas en objetivos estructurados.
 
@@ -885,7 +889,7 @@ Esta capacidad permite que el usuario interactúe mediante objetivos en lugar de
 
 ---
 
-# 4.4 Planificación Inteligente
+## 4.4 Planificación Inteligente
 
 La planificación inteligente permite determinar las acciones necesarias para alcanzar un objetivo determinado.
 
@@ -917,7 +921,7 @@ La planificación permite transformar objetivos abstractos en secuencias operati
 
 ---
 
-# 4.5 Generación de Escenas y Proyectos
+## 4.5 Generación de Escenas y Proyectos
 
 Una de las capacidades diferenciales de GeoMotion Studio será la generación automática de estructuras propias del dominio.
 
@@ -934,7 +938,7 @@ El objetivo no es generar una respuesta descriptiva, sino construir un estado in
 
 ---
 
-# 4.6 Generación de Recorridos y Trayectorias
+## 4.6 Generación de Recorridos y Trayectorias
 
 La generación inteligente de recorridos permitirá crear automáticamente movimientos espaciales a partir de una intención del usuario.
 
@@ -960,7 +964,7 @@ El resultado será una trayectoria editable dentro del sistema.
 
 ---
 
-# 4.7 Control Inteligente de Cámara
+## 4.7 Control Inteligente de Cámara
 
 La cámara constituye uno de los elementos fundamentales para la creación de experiencias visuales.
 
@@ -984,7 +988,7 @@ podrá transformarse en una configuración automática de cámara.
 
 ---
 
-# 4.8 Generación de Animaciones y Keyframes
+## 4.8 Generación de Animaciones y Keyframes
 
 La Arquitectura de IA permitirá generar automáticamente estructuras temporales necesarias para las animaciones.
 
@@ -1000,7 +1004,7 @@ Esto permitirá que un usuario pueda definir una intención visual sin necesidad
 
 ---
 
-# 4.9 Generación de Contenido Visual
+## 4.9 Generación de Contenido Visual
 
 La IA podrá asistir en la creación y configuración de elementos visuales.
 
@@ -1017,7 +1021,7 @@ La generación visual deberá integrarse con los sistemas existentes de GeoMotio
 
 ---
 
-# 4.10 Asistencia Narrativa y Creativa
+## 4.10 Asistencia Narrativa y Creativa
 
 GeoMotion Studio no solo representa información geográfica, sino que permite crear experiencias visuales.
 
@@ -1034,7 +1038,7 @@ Esta capacidad permitirá transformar una idea inicial del usuario en una experi
 
 ---
 
-# 4.11 Análisis Geoespacial Inteligente
+## 4.11 Análisis Geoespacial Inteligente
 
 La IA podrá complementar las capacidades geoespaciales tradicionales mediante análisis avanzados.
 
@@ -1050,7 +1054,7 @@ Esta capacidad permitirá una interacción más natural con la información espa
 
 ---
 
-# 4.12 Optimización Inteligente
+## 4.12 Optimización Inteligente
 
 La optimización inteligente permitirá mejorar automáticamente determinados aspectos del proyecto.
 
@@ -1066,7 +1070,7 @@ Las recomendaciones generadas deberán poder ser revisadas por el usuario antes 
 
 ---
 
-# 4.13 Memoria y Contexto del Proyecto
+## 4.13 Memoria y Contexto del Proyecto
 
 La Arquitectura de IA deberá considerar el contexto del proyecto actual.
 
@@ -1083,7 +1087,7 @@ El conocimiento contextual permitirá generar resultados coherentes con el estad
 
 ---
 
-# 4.14 Combinación de Capacidades
+## 4.14 Combinación de Capacidades
 
 Las capacidades inteligentes podrán combinarse para resolver objetivos complejos.
 
@@ -1135,13 +1139,14 @@ La combinación de capacidades permite construir experiencias complejas a partir
 
 ---
 
-# 4.15 Resumen
+## 4.15 Resumen
 
 La Arquitectura de IA de GeoMotion Studio se basa en un conjunto de capacidades inteligentes especializadas que pueden combinarse para transformar las intenciones del usuario en proyectos editables.
 
 Este enfoque permite que la plataforma evolucione independientemente de tecnologías concretas, incorporando nuevas capacidades conforme avance la Inteligencia Artificial y manteniendo una arquitectura modular, extensible y preparada para el futuro.
 
 ---
+
 # CAPÍTULO 5 · Ciclo de Vida de los Modelos y Capacidades de IA
 
 ## 5.1 Objetivo
@@ -1152,7 +1157,7 @@ Este capítulo establece los principios para la creación, evaluación, incorpor
 
 ---
 
-# 5.2 Concepto de Ciclo de Vida de IA
+## 5.2 Concepto de Ciclo de Vida de IA
 
 Los componentes de Inteligencia Artificial forman parte del ecosistema técnico de GeoMotion Studio y, por lo tanto, deben gestionarse mediante un ciclo de vida controlado.
 
@@ -1169,7 +1174,7 @@ La evolución de la IA debe realizarse de manera planificada, evitando incorpora
 
 ---
 
-# 5.3 Separación entre Capacidad y Modelo
+## 5.3 Separación entre Capacidad y Modelo
 
 Dentro de GeoMotion Studio debe distinguirse claramente entre:
 
@@ -1228,7 +1233,7 @@ La capacidad permanece estable mientras su implementación evoluciona.
 
 ---
 
-# 5.4 Estados del Ciclo de Vida
+## 5.4 Estados del Ciclo de Vida
 
 Los componentes de IA podrán recorrer los siguientes estados:
 
@@ -1272,7 +1277,7 @@ Cada estado representa un nivel diferente de madurez y aceptación dentro de la 
 
 ---
 
-# 5.5 Propuesta
+## 5.5 Propuesta
 
 Una nueva capacidad o tecnología de IA comienza como una propuesta.
 
@@ -1290,7 +1295,7 @@ Toda nueva capacidad debe justificar su existencia dentro del ecosistema de GeoM
 
 ---
 
-# 5.6 Evaluación
+## 5.6 Evaluación
 
 Durante la evaluación se analiza la viabilidad técnica de la incorporación.
 
@@ -1309,7 +1314,7 @@ La evaluación determina si la tecnología es adecuada para continuar hacia una 
 
 ---
 
-# 5.7 Experimentación
+## 5.7 Experimentación
 
 La etapa de experimentación permite probar una capacidad en un entorno controlado.
 
@@ -1325,7 +1330,7 @@ Los resultados obtenidos deberán documentarse como parte del conocimiento técn
 
 ---
 
-# 5.8 Validación
+## 5.8 Validación
 
 Una capacidad de IA deberá ser validada antes de integrarse oficialmente en GeoMotion Studio.
 
@@ -1341,7 +1346,7 @@ Una capacidad validada puede pasar a la etapa de integración.
 
 ---
 
-# 5.9 Integración
+## 5.9 Integración
 
 La integración incorpora oficialmente la capacidad dentro de la arquitectura de GeoMotion Studio.
 
@@ -1358,7 +1363,7 @@ La incorporación deberá respetar los principios de modularidad e independencia
 
 ---
 
-# 5.10 Operación
+## 5.10 Operación
 
 Una capacidad en operación forma parte activa de la plataforma.
 
@@ -1375,7 +1380,7 @@ La operación proporciona información necesaria para futuras mejoras.
 
 ---
 
-# 5.11 Optimización
+## 5.11 Optimización
 
 Las capacidades inteligentes deberán evolucionar continuamente.
 
@@ -1392,7 +1397,7 @@ Toda optimización deberá conservar la trazabilidad del cambio realizado.
 
 ---
 
-# 5.12 Sustitución
+## 5.12 Sustitución
 
 Una capacidad puede requerir la sustitución de su implementación cuando:
 
@@ -1421,7 +1426,7 @@ El resto de GeoMotion Studio no debería verse afectado.
 
 ---
 
-# 5.13 Retiro
+## 5.13 Retiro
 
 Un componente de IA podrá retirarse cuando:
 
@@ -1441,7 +1446,7 @@ La información histórica forma parte del conocimiento técnico del proyecto.
 
 ---
 
-# 5.14 Versionado de Capacidades de IA
+## 5.14 Versionado de Capacidades de IA
 
 Las capacidades inteligentes deberán gestionarse como activos de ingeniería.
 
@@ -1479,7 +1484,7 @@ Versión:
 
 ---
 
-# 5.15 Relación con DOC-018 Gestión de Versiones
+## 5.15 Relación con DOC-018 Gestión de Versiones
 
 La evolución de los componentes de IA deberá integrarse con el modelo general de gestión de versiones definido para GeoMotion Studio.
 
@@ -1495,7 +1500,7 @@ La IA forma parte del mismo ecosistema de ingeniería que el resto de activos de
 
 ---
 
-# 5.16 Mejora Continua
+## 5.16 Mejora Continua
 
 La evolución de la Inteligencia Artificial requiere un proceso permanente de aprendizaje.
 
@@ -1510,13 +1515,14 @@ La plataforma deberá aprender no solamente mediante modelos de IA, sino tambié
 
 ---
 
-# 5.17 Resumen
+## 5.17 Resumen
 
 El ciclo de vida de los modelos y capacidades de IA proporciona un marco controlado para incorporar, evolucionar y retirar tecnologías inteligentes dentro de GeoMotion Studio.
 
 La separación entre capacidades e implementaciones permite que la plataforma evolucione independientemente de proveedores concretos, garantizando una arquitectura flexible, sostenible y preparada para integrar futuras generaciones de Inteligencia Artificial.
 
 ---
+
 # CAPÍTULO 6 · Integración con la Arquitectura General de GeoMotion Studio
 
 ## 6.1 Objetivo
@@ -1529,7 +1535,7 @@ La integración de IA deberá ampliar las capacidades de la plataforma sin alter
 
 ---
 
-# 6.2 Principio de Integración No Intrusiva
+## 6.2 Principio de Integración No Intrusiva
 
 La incorporación de Inteligencia Artificial deberá realizarse sin modificar innecesariamente la responsabilidad de los componentes existentes.
 
@@ -1548,7 +1554,7 @@ La arquitectura resultante debe permitir que GeoMotion Studio continúe funciona
 
 ---
 
-# 6.3 Arquitectura de Integración General
+## 6.3 Arquitectura de Integración General
 
 El modelo conceptual de integración es:
 
@@ -1584,7 +1590,7 @@ La IA actúa como una capa superior de coordinación, pero las operaciones final
 
 ---
 
-# 6.4 Integración con el Frontend
+## 6.4 Integración con el Frontend
 
 La Inteligencia Artificial deberá integrarse con el Frontend proporcionando nuevas formas de interacción con la plataforma.
 
@@ -1606,7 +1612,7 @@ La IA deberá utilizar los mismos principios de diseño definidos para la arquit
 
 ---
 
-# 6.5 Integración con la Arquitectura de Componentes
+## 6.5 Integración con la Arquitectura de Componentes
 
 Los componentes de GeoMotion Studio deberán exponer capacidades que puedan ser utilizadas por la IA mediante interfaces controladas.
 
@@ -1654,7 +1660,7 @@ Deberá utilizar contratos definidos por la arquitectura.
 
 ---
 
-# 6.6 Integración con el Estado Global
+## 6.6 Integración con el Estado Global
 
 La IA necesita comprender el contexto actual del proyecto para generar resultados coherentes.
 
@@ -1673,7 +1679,7 @@ El acceso al estado deberá realizarse mediante mecanismos controlados para evit
 
 ---
 
-# 6.7 Integración con la Arquitectura de Renderizado
+## 6.7 Integración con la Arquitectura de Renderizado
 
 La IA podrá asistir en la creación y configuración de elementos visuales.
 
@@ -1700,7 +1706,7 @@ El motor ejecuta.
 
 ---
 
-# 6.8 Integración con el Motor GIS
+## 6.8 Integración con el Motor GIS
 
 La naturaleza geoespacial de GeoMotion Studio convierte al GIS en uno de los sistemas principales de integración.
 
@@ -1729,7 +1735,7 @@ La IA podrá:
 
 ---
 
-# 6.9 Integración con el Motor 3D
+## 6.9 Integración con el Motor 3D
 
 La IA podrá interactuar con los elementos tridimensionales de la plataforma.
 
@@ -1748,7 +1754,7 @@ Actúa como una capa inteligente de creación y configuración.
 
 ---
 
-# 6.10 Integración con el Sistema de Plugins
+## 6.10 Integración con el Sistema de Plugins
 
 El sistema de plugins constituye un elemento clave para la evolución de la Arquitectura de IA.
 
@@ -1801,7 +1807,7 @@ La arquitectura deberá permitir incorporar nuevas extensiones sin modificar el 
 
 ---
 
-# 6.11 Integración con Servicios Externos
+## 6.11 Integración con Servicios Externos
 
 La IA podrá utilizar servicios externos cuando aporten valor al proyecto.
 
@@ -1819,7 +1825,7 @@ La plataforma deberá preservar la independencia tecnológica mediante adaptador
 
 ---
 
-# 6.12 Flujo de Ejemplo
+## 6.12 Flujo de Ejemplo
 
 Solicitud:
 
@@ -1871,7 +1877,7 @@ El usuario recibe un proyecto construido, no una respuesta textual.
 
 ---
 
-# 6.13 Principios de Integración
+## 6.13 Principios de Integración
 
 Toda integración con IA deberá respetar:
 
@@ -1886,7 +1892,7 @@ Toda integración con IA deberá respetar:
 
 ---
 
-# 6.14 Resumen
+## 6.14 Resumen
 
 La integración de Inteligencia Artificial dentro de GeoMotion Studio se basa en una arquitectura donde la IA actúa como una capa inteligente de coordinación sobre los componentes existentes.
 
@@ -1895,6 +1901,7 @@ La plataforma mantiene sus responsabilidades originales mientras incorpora nueva
 Este modelo permite que GeoMotion Studio evolucione hacia una plataforma inteligente sin comprometer la estabilidad, modularidad y mantenibilidad de su arquitectura general.
 
 ---
+
 # CAPÍTULO 7 · Arquitectura de Plugins e IA Extensible
 
 ## 7.1 Objetivo
@@ -1907,7 +1914,7 @@ La arquitectura de plugins constituye uno de los mecanismos fundamentales para g
 
 ---
 
-# 7.2 Concepto de Arquitectura Extensible
+## 7.2 Concepto de Arquitectura Extensible
 
 Una arquitectura extensible permite ampliar las capacidades de una plataforma mediante componentes independientes que pueden incorporarse, actualizarse o retirarse sin alterar el funcionamiento general del sistema.
 
@@ -1927,7 +1934,7 @@ La plataforma deberá evolucionar mediante extensiones y no mediante modificacio
 
 ---
 
-# 7.3 Principio de Núcleo Estable
+## 7.3 Principio de Núcleo Estable
 
 El núcleo de GeoMotion Studio deberá permanecer estable independientemente de la cantidad de extensiones incorporadas.
 
@@ -1943,7 +1950,7 @@ Este principio reduce el riesgo tecnológico y facilita el crecimiento del ecosi
 
 ---
 
-# 7.4 Plugins como Capacidades Especializadas
+## 7.4 Plugins como Capacidades Especializadas
 
 Un plugin representa una capacidad adicional que puede ser incorporada a GeoMotion Studio.
 
@@ -1989,7 +1996,7 @@ Reconstrucción tridimensional
 
 ---
 
-# 7.5 Plugins de Inteligencia Artificial
+## 7.5 Plugins de Inteligencia Artificial
 
 La arquitectura deberá permitir la incorporación de plugins especializados en Inteligencia Artificial.
 
@@ -2026,11 +2033,11 @@ La arquitectura no deberá asumir la existencia de un único motor inteligente.
 
 ---
 
-# 7.6 Ejemplos de Integraciones Previstas
+## 7.6 Ejemplos de Integraciones Previstas
 
 La arquitectura deberá permitir integrar extensiones como:
 
-## OpenStreetMap
+### OpenStreetMap
 
 Capacidad:
 
@@ -2041,7 +2048,7 @@ Capacidad:
 
 ---
 
-## Cesium
+### Cesium
 
 Capacidad:
 
@@ -2052,7 +2059,7 @@ Capacidad:
 
 ---
 
-## Sketchfab
+### Sketchfab
 
 Capacidad:
 
@@ -2062,7 +2069,7 @@ Capacidad:
 
 ---
 
-## Blender
+### Blender
 
 Capacidad:
 
@@ -2072,7 +2079,7 @@ Capacidad:
 
 ---
 
-## Weather
+### Weather
 
 Capacidad:
 
@@ -2082,7 +2089,7 @@ Capacidad:
 
 ---
 
-## Photogrammetry
+### Photogrammetry
 
 Capacidad:
 
@@ -2092,7 +2099,7 @@ Capacidad:
 
 ---
 
-# 7.7 Integración mediante Interfaces
+## 7.7 Integración mediante Interfaces
 
 Los plugins deberán integrarse mediante interfaces claramente definidas.
 
@@ -2109,7 +2116,7 @@ La plataforma no deberá depender del funcionamiento interno del plugin.
 
 ---
 
-# 7.8 Descubrimiento de Capacidades
+## 7.8 Descubrimiento de Capacidades
 
 La arquitectura deberá permitir que GeoMotion Studio pueda identificar las capacidades disponibles dentro del ecosistema de plugins.
 
@@ -2131,7 +2138,7 @@ A partir de esta información, la Arquitectura de IA podrá seleccionar los recu
 
 ---
 
-# 7.9 Plugins y Orquestación Inteligente
+## 7.9 Plugins y Orquestación Inteligente
 
 La relación entre plugins y la Arquitectura de IA constituye un elemento diferencial de GeoMotion Studio.
 
@@ -2183,7 +2190,7 @@ La IA coordina capacidades proporcionadas por diferentes extensiones.
 
 ---
 
-# 7.10 Desarrollo por Terceros
+## 7.10 Desarrollo por Terceros
 
 La arquitectura deberá permitir que desarrolladores externos puedan crear extensiones para GeoMotion Studio.
 
@@ -2200,7 +2207,7 @@ Esta capacidad permitirá la creación de un ecosistema alrededor de la platafor
 
 ---
 
-# 7.11 Seguridad de Plugins
+## 7.11 Seguridad de Plugins
 
 Todo plugin deberá ejecutarse bajo mecanismos de control adecuados.
 
@@ -2217,7 +2224,7 @@ La extensibilidad nunca deberá comprometer la seguridad de la plataforma.
 
 ---
 
-# 7.12 Evolución del Ecosistema
+## 7.12 Evolución del Ecosistema
 
 La arquitectura de plugins deberá permitir la incorporación de tecnologías futuras.
 
@@ -2233,7 +2240,7 @@ La arquitectura deberá estar preparada para integrar capacidades aún desconoci
 
 ---
 
-# 7.13 Relación con la Arquitectura de IA
+## 7.13 Relación con la Arquitectura de IA
 
 Los plugins amplían las capacidades disponibles para la Inteligencia Artificial.
 
@@ -2267,7 +2274,7 @@ La IA utiliza el ecosistema de extensiones como un conjunto de herramientas disp
 
 ---
 
-# 7.14 Beneficios
+## 7.14 Beneficios
 
 Una arquitectura basada en plugins proporciona:
 
@@ -2281,7 +2288,7 @@ Una arquitectura basada en plugins proporciona:
 
 ---
 
-# 7.15 Resumen
+## 7.15 Resumen
 
 La Arquitectura de Plugins constituye uno de los pilares de la evolución futura de GeoMotion Studio.
 
@@ -2290,6 +2297,7 @@ Mediante un modelo extensible, desacoplado y basado en interfaces, la plataforma
 La combinación entre plugins e Inteligencia Artificial permitirá que GeoMotion Studio evolucione como un ecosistema abierto preparado para integrar tecnologías actuales y futuras.
 
 ---
+
 # CAPÍTULO 8 · Gobernanza de la Inteligencia Artificial
 
 ## 8.1 Objetivo
@@ -2300,7 +2308,7 @@ La Gobernanza de IA establece las reglas que permiten utilizar, evolucionar y su
 
 ---
 
-# 8.2 Concepto de Gobernanza de IA
+## 8.2 Concepto de Gobernanza de IA
 
 La Gobernanza de Inteligencia Artificial comprende el conjunto de principios, procesos y controles destinados a administrar el uso responsable de capacidades inteligentes dentro de GeoMotion Studio.
 
@@ -2316,11 +2324,11 @@ La gobernanza garantiza que la Inteligencia Artificial sea una capacidad confiab
 
 ---
 
-# 8.3 Principios Fundamentales de Gobernanza
+## 8.3 Principios Fundamentales de Gobernanza
 
 La Gobernanza de IA de GeoMotion Studio se basa en los siguientes principios:
 
-## Transparencia
+### Transparencia
 
 Las operaciones realizadas mediante IA deberán ser comprensibles y trazables.
 
@@ -2333,7 +2341,7 @@ El sistema deberá permitir conocer:
 
 ---
 
-## Supervisión Humana
+### Supervisión Humana
 
 La Inteligencia Artificial deberá actuar como asistente y facilitador.
 
@@ -2348,7 +2356,7 @@ El usuario conservará siempre la capacidad de:
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Toda evolución relacionada con IA deberá mantener un historial verificable.
 
@@ -2362,7 +2370,7 @@ Esto incluye:
 
 ---
 
-## Independencia Tecnológica
+### Independencia Tecnológica
 
 La gobernanza deberá evitar dependencias innecesarias con proveedores específicos.
 
@@ -2375,7 +2383,7 @@ Toda incorporación tecnológica deberá respetar:
 
 ---
 
-# 8.4 Gestión de Capacidades de IA
+## 8.4 Gestión de Capacidades de IA
 
 Toda nueva capacidad inteligente incorporada a GeoMotion Studio deberá ser evaluada antes de formar parte oficialmente de la plataforma.
 
@@ -2393,7 +2401,7 @@ Una capacidad de IA deberá justificar su incorporación como cualquier otro act
 
 ---
 
-# 8.5 Registro de Componentes Inteligentes
+## 8.5 Registro de Componentes Inteligentes
 
 Los componentes de IA deberán formar parte del inventario técnico del proyecto.
 
@@ -2414,7 +2422,7 @@ Este registro permite mantener visibilidad sobre el ecosistema inteligente de Ge
 
 ---
 
-# 8.6 Evaluación de Calidad
+## 8.6 Evaluación de Calidad
 
 Las capacidades de IA deberán evaluarse mediante criterios definidos.
 
@@ -2432,7 +2440,7 @@ Los resultados deberán registrarse para facilitar futuras decisiones de evoluci
 
 ---
 
-# 8.7 Control de Cambios en IA
+## 8.7 Control de Cambios en IA
 
 Los cambios relacionados con Inteligencia Artificial deberán gestionarse mediante el mismo modelo general de cambios definido para el proyecto.
 
@@ -2456,7 +2464,7 @@ Todo cambio relevante deberá mantener:
 
 ---
 
-# 8.8 Gestión de Versiones de IA
+## 8.8 Gestión de Versiones de IA
 
 Las capacidades inteligentes deberán integrarse con el modelo definido en DOC-018 · Gestión de Versiones.
 
@@ -2492,7 +2500,7 @@ Versión 2.0
 
 ---
 
-# 8.9 Gestión del Conocimiento
+## 8.9 Gestión del Conocimiento
 
 La evolución de la IA deberá alimentar el conocimiento técnico del proyecto.
 
@@ -2507,7 +2515,7 @@ La mejora continua de la plataforma dependerá tanto de la evolución tecnológi
 
 ---
 
-# 8.10 Control de Prompts y Configuraciones
+## 8.10 Control de Prompts y Configuraciones
 
 Los elementos que influyen en el comportamiento de una capacidad inteligente deberán gestionarse como activos técnicos.
 
@@ -2531,7 +2539,7 @@ Un cambio en un prompt puede modificar significativamente el comportamiento de u
 
 ---
 
-# 8.11 Uso Responsable de la IA
+## 8.11 Uso Responsable de la IA
 
 La incorporación de Inteligencia Artificial deberá respetar principios de uso responsable.
 
@@ -2547,7 +2555,7 @@ La IA debe aumentar las capacidades del usuario, no eliminar su capacidad de dec
 
 ---
 
-# 8.12 Seguridad de la Inteligencia Artificial
+## 8.12 Seguridad de la Inteligencia Artificial
 
 La seguridad deberá contemplar:
 
@@ -2562,7 +2570,7 @@ Los componentes inteligentes deberán integrarse siguiendo las mismas políticas
 
 ---
 
-# 8.13 Auditoría
+## 8.13 Auditoría
 
 Las operaciones relevantes realizadas mediante IA deberán poder ser auditadas.
 
@@ -2579,13 +2587,13 @@ Esto permitirá reconstruir cómo fue generado un resultado determinado.
 
 ---
 
-# 8.14 Responsabilidades
+## 8.14 Responsabilidades
 
 La gobernanza de IA requiere responsabilidades claramente definidas.
 
 Ejemplos:
 
-## Arquitectura
+### Arquitectura
 
 Responsable de:
 
@@ -2595,7 +2603,7 @@ Responsable de:
 
 ---
 
-## Desarrollo
+### Desarrollo
 
 Responsable de:
 
@@ -2605,7 +2613,7 @@ Responsable de:
 
 ---
 
-## Usuarios
+### Usuarios
 
 Responsables de:
 
@@ -2615,7 +2623,7 @@ Responsables de:
 
 ---
 
-# 8.15 Beneficios
+## 8.15 Beneficios
 
 Una gobernanza adecuada proporciona:
 
@@ -2629,13 +2637,14 @@ Una gobernanza adecuada proporciona:
 
 ---
 
-# 8.16 Resumen
+## 8.16 Resumen
 
 La Gobernanza de Inteligencia Artificial permite que GeoMotion Studio incorpore capacidades inteligentes de manera controlada, segura y sostenible.
 
 Mediante principios de transparencia, trazabilidad, supervisión humana e independencia tecnológica, la plataforma puede aprovechar la evolución de la IA manteniendo la calidad y estabilidad necesarias para un sistema de ingeniería profesional.
 
 ---
+
 # CAPÍTULO 9 · Observabilidad, Monitoreo y Evaluación de la IA
 
 ## 9.1 Objetivo
@@ -2648,7 +2657,7 @@ La observabilidad constituye un elemento fundamental para mantener la confiabili
 
 ---
 
-# 9.2 Concepto de Observabilidad de IA
+## 9.2 Concepto de Observabilidad de IA
 
 La observabilidad de Inteligencia Artificial representa la capacidad de comprender qué ocurre dentro de un sistema inteligente durante su funcionamiento.
 
@@ -2668,17 +2677,17 @@ La observabilidad permite transformar el funcionamiento de la IA en información
 
 ---
 
-# 9.3 Principios de Observabilidad
+## 9.3 Principios de Observabilidad
 
 La observabilidad de IA deberá basarse en los siguientes principios:
 
-## Transparencia
+### Transparencia
 
 El sistema deberá permitir conocer qué ocurrió durante una operación inteligente.
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Toda operación relevante deberá poder relacionarse con:
 
@@ -2691,25 +2700,25 @@ Toda operación relevante deberá poder relacionarse con:
 
 ---
 
-## Medición Continua
+### Medición Continua
 
 La calidad de una capacidad inteligente deberá evaluarse de manera permanente.
 
 ---
 
-## Mejora Continua
+### Mejora Continua
 
 Los datos obtenidos deberán utilizarse para mejorar la arquitectura.
 
 ---
 
-# 9.4 Elementos Observables
+## 9.4 Elementos Observables
 
 La arquitectura deberá permitir observar distintos aspectos del funcionamiento de la IA.
 
 Entre ellos:
 
-## Solicitud del Usuario
+### Solicitud del Usuario
 
 Información proporcionada inicialmente.
 
@@ -2723,7 +2732,7 @@ Ejemplos:
 
 ---
 
-## Interpretación
+### Interpretación
 
 Información relacionada con la comprensión de la intención.
 
@@ -2736,7 +2745,7 @@ Ejemplos:
 
 ---
 
-## Planificación
+### Planificación
 
 Información relacionada con la estrategia generada.
 
@@ -2749,7 +2758,7 @@ Ejemplos:
 
 ---
 
-## Ejecución
+### Ejecución
 
 Información sobre las operaciones realizadas.
 
@@ -2762,7 +2771,7 @@ Ejemplos:
 
 ---
 
-## Resultado
+### Resultado
 
 Información sobre el producto generado.
 
@@ -2775,7 +2784,7 @@ Ejemplos:
 
 ---
 
-# 9.5 Registro de Operaciones Inteligentes
+## 9.5 Registro de Operaciones Inteligentes
 
 Toda operación significativa realizada mediante IA debería generar un registro técnico.
 
@@ -2807,37 +2816,37 @@ Estos registros permitirán reconstruir la evolución de una operación intelige
 
 ---
 
-# 9.6 Métricas de Evaluación
+## 9.6 Métricas de Evaluación
 
 Las capacidades de IA deberán evaluarse mediante métricas adecuadas a su finalidad.
 
 Ejemplos:
 
-## Calidad del Resultado
+### Calidad del Resultado
 
 Evalúa si el resultado generado cumple con la intención inicial.
 
 ---
 
-## Precisión
+### Precisión
 
 Evalúa la corrección de la interpretación realizada.
 
 ---
 
-## Consistencia
+### Consistencia
 
 Evalúa si resultados similares producen comportamientos equivalentes.
 
 ---
 
-## Tiempo de Respuesta
+### Tiempo de Respuesta
 
 Evalúa la eficiencia operacional.
 
 ---
 
-## Uso de Recursos
+### Uso de Recursos
 
 Evalúa consumo de:
 
@@ -2848,13 +2857,13 @@ Evalúa consumo de:
 
 ---
 
-## Satisfacción del Usuario
+### Satisfacción del Usuario
 
 Evalúa la percepción de utilidad de la capacidad.
 
 ---
 
-# 9.7 Evaluación de Resultados Generados
+## 9.7 Evaluación de Resultados Generados
 
 La evaluación no deberá limitarse al modelo utilizado.
 
@@ -2890,7 +2899,7 @@ La calidad de la IA se mide por el valor aportado al usuario.
 
 ---
 
-# 9.8 Comparación de Modelos y Tecnologías
+## 9.8 Comparación de Modelos y Tecnologías
 
 La arquitectura deberá permitir comparar diferentes implementaciones de una misma capacidad.
 
@@ -2926,7 +2935,7 @@ Esto permitirá seleccionar las mejores tecnologías disponibles en cada momento
 
 ---
 
-# 9.9 Detección de Problemas
+## 9.9 Detección de Problemas
 
 La observabilidad deberá permitir identificar problemas como:
 
@@ -2941,7 +2950,7 @@ La detección temprana facilita la corrección y mejora continua.
 
 ---
 
-# 9.10 Retroalimentación del Usuario
+## 9.10 Retroalimentación del Usuario
 
 La interacción del usuario constituye una fuente fundamental de información.
 
@@ -2957,7 +2966,7 @@ Esta información podrá utilizarse para mejorar futuras experiencias.
 
 ---
 
-# 9.11 Evaluación Antes de Publicación
+## 9.11 Evaluación Antes de Publicación
 
 Toda nueva capacidad de IA deberá evaluarse antes de incorporarse oficialmente a una Publicación de GeoMotion Studio.
 
@@ -2974,7 +2983,7 @@ Una capacidad no deberá incorporarse únicamente por disponibilidad tecnológic
 
 ---
 
-# 9.12 Relación con Gestión de Versiones
+## 9.12 Relación con Gestión de Versiones
 
 Los resultados de evaluación deberán formar parte del historial de evolución de las capacidades inteligentes.
 
@@ -2989,7 +2998,7 @@ Esto mantiene la coherencia con DOC-018 · Gestión de Versiones.
 
 ---
 
-# 9.13 Observabilidad y Plugins
+## 9.13 Observabilidad y Plugins
 
 Los plugins que incorporen capacidades inteligentes deberán proporcionar mecanismos mínimos de observabilidad.
 
@@ -3005,7 +3014,7 @@ Un ecosistema extensible requiere que cada componente pueda ser supervisado.
 
 ---
 
-# 9.14 Mejora Continua Basada en Datos
+## 9.14 Mejora Continua Basada en Datos
 
 La información obtenida mediante observabilidad deberá utilizarse para:
 
@@ -3019,7 +3028,7 @@ La evolución de la IA deberá estar basada en evidencia y no únicamente en ten
 
 ---
 
-# 9.15 Beneficios
+## 9.15 Beneficios
 
 Una arquitectura observable proporciona:
 
@@ -3033,13 +3042,14 @@ Una arquitectura observable proporciona:
 
 ---
 
-# 9.16 Resumen
+## 9.16 Resumen
 
 La observabilidad constituye un componente esencial de la Arquitectura de IA de GeoMotion Studio.
 
 Mediante mecanismos de monitoreo, evaluación y trazabilidad, la plataforma podrá comprender el comportamiento de sus capacidades inteligentes, mejorar continuamente su funcionamiento e incorporar nuevas tecnologías manteniendo los estándares de calidad y control definidos por el Marco de Ingeniería.
 
 ---
+
 # CAPÍTULO 10 · Seguridad, Ética y Control Responsable de la Inteligencia Artificial
 
 ## 10.1 Objetivo
@@ -3052,7 +3062,7 @@ La seguridad y responsabilidad forman parte integral de la arquitectura y no con
 
 ---
 
-# 10.2 Principio de Uso Responsable
+## 10.2 Principio de Uso Responsable
 
 La Inteligencia Artificial dentro de GeoMotion Studio deberá utilizarse como una herramienta de asistencia y aumento de capacidades humanas.
 
@@ -3075,7 +3085,7 @@ La arquitectura no contempla la sustitución completa del criterio humano en dec
 
 ---
 
-# 10.3 Control Humano como Principio Arquitectónico
+## 10.3 Control Humano como Principio Arquitectónico
 
 El control humano constituye uno de los principios fundamentales de la Arquitectura de IA.
 
@@ -3111,7 +3121,7 @@ La IA acelera la creación, pero el usuario mantiene el control creativo.
 
 ---
 
-# 10.4 Seguridad de Datos
+## 10.4 Seguridad de Datos
 
 La integración de capacidades inteligentes deberá respetar los principios generales de seguridad de GeoMotion Studio.
 
@@ -3128,7 +3138,7 @@ Los datos utilizados por capacidades de IA deberán gestionarse de acuerdo con l
 
 ---
 
-# 10.5 Privacidad de la Información
+## 10.5 Privacidad de la Información
 
 La información utilizada por los sistemas inteligentes deberá gestionarse bajo principios de privacidad.
 
@@ -3144,7 +3154,7 @@ La arquitectura deberá permitir definir qué información puede utilizar una ca
 
 ---
 
-# 10.6 Gestión de Accesos
+## 10.6 Gestión de Accesos
 
 Las capacidades inteligentes deberán utilizar mecanismos de autorización adecuados.
 
@@ -3164,7 +3174,7 @@ Una IA encargada de generar textos no debería tener acceso directo a modificar 
 
 ---
 
-# 10.7 Seguridad de Plugins de IA
+## 10.7 Seguridad de Plugins de IA
 
 Los plugins que incorporen capacidades inteligentes deberán cumplir requisitos mínimos de seguridad.
 
@@ -3181,7 +3191,7 @@ La extensibilidad del ecosistema nunca deberá comprometer la seguridad del núc
 
 ---
 
-# 10.8 Validación de Resultados Generados
+## 10.8 Validación de Resultados Generados
 
 Los resultados generados mediante IA deberán considerarse propuestas técnicas o creativas hasta su validación.
 
@@ -3202,7 +3212,7 @@ Una IA puede generar una trayectoria visualmente atractiva, pero el usuario o un
 
 ---
 
-# 10.9 Gestión de Errores de IA
+## 10.9 Gestión de Errores de IA
 
 Los sistemas inteligentes pueden producir resultados incorrectos debido a la naturaleza probabilística de algunos modelos.
 
@@ -3218,7 +3228,7 @@ Un resultado incorrecto no deberá comprometer la estabilidad del proyecto.
 
 ---
 
-# 10.10 Transparencia del Funcionamiento
+## 10.10 Transparencia del Funcionamiento
 
 Cuando una acción importante sea generada mediante IA, la plataforma debería proporcionar información suficiente para comprender el proceso.
 
@@ -3234,7 +3244,7 @@ La transparencia mejora la confianza y facilita la auditoría.
 
 ---
 
-# 10.11 Dependencias Externas
+## 10.11 Dependencias Externas
 
 Los servicios externos de IA deberán integrarse mediante mecanismos controlados.
 
@@ -3250,7 +3260,7 @@ La plataforma deberá evitar que una dependencia externa comprometa completament
 
 ---
 
-# 10.12 Independencia Frente a Proveedores
+## 10.12 Independencia Frente a Proveedores
 
 La seguridad arquitectónica también implica evitar dependencia excesiva de un único proveedor.
 
@@ -3265,7 +3275,7 @@ La arquitectura deberá preservar la capacidad de evolución tecnológica.
 
 ---
 
-# 10.13 Ética y Calidad del Contenido
+## 10.13 Ética y Calidad del Contenido
 
 Las capacidades generativas deberán utilizarse considerando:
 
@@ -3279,7 +3289,7 @@ La tecnología debe utilizarse como herramienta de creación responsable.
 
 ---
 
-# 10.14 IA Generativa y Autoría
+## 10.14 IA Generativa y Autoría
 
 Cuando la Inteligencia Artificial participe en la generación de contenido, GeoMotion Studio deberá conservar información suficiente para diferenciar:
 
@@ -3291,7 +3301,7 @@ Esta información facilita la trazabilidad del proceso creativo.
 
 ---
 
-# 10.15 Auditoría y Registro Histórico
+## 10.15 Auditoría y Registro Histórico
 
 Las operaciones relevantes realizadas mediante IA deberán conservar información histórica.
 
@@ -3309,7 +3319,7 @@ Esto permite reconstruir la evolución de un proyecto generado con asistencia in
 
 ---
 
-# 10.16 Relación con el Marco de Ingeniería
+## 10.16 Relación con el Marco de Ingeniería
 
 La seguridad y responsabilidad de la IA deberán integrarse con los procesos generales definidos en el Manual de Ingeniería.
 
@@ -3325,7 +3335,7 @@ La IA forma parte del mismo ecosistema de ingeniería.
 
 ---
 
-# 10.17 Beneficios
+## 10.17 Beneficios
 
 Una arquitectura responsable de IA proporciona:
 
@@ -3339,7 +3349,7 @@ Una arquitectura responsable de IA proporciona:
 
 ---
 
-# 10.18 Resumen
+## 10.18 Resumen
 
 La seguridad, ética y responsabilidad constituyen elementos esenciales de la Arquitectura de IA de GeoMotion Studio.
 
@@ -3348,6 +3358,7 @@ La plataforma debe aprovechar las capacidades inteligentes manteniendo siempre p
 De esta manera, GeoMotion Studio puede incorporar las tecnologías de Inteligencia Artificial presentes y futuras sin comprometer la confianza, estabilidad y gobernanza del sistema.
 
 ---
+
 # ANEXO A · Arquitectura de Referencia de Inteligencia Artificial
 
 ## A.1 Objetivo
@@ -3371,7 +3382,7 @@ Su diseño está orientado a permitir que GeoMotion Studio pueda evolucionar jun
 
 ---
 
-# A.2 Visión General
+## A.2 Visión General
 
 La Arquitectura de IA de GeoMotion Studio se basa en un modelo donde la Inteligencia Artificial funciona como una capa inteligente de interpretación, planificación y coordinación.
 
@@ -3440,13 +3451,13 @@ Resultado Editable
 
 ---
 
-# A.3 Principios Arquitectónicos Fundamentales
+## A.3 Principios Arquitectónicos Fundamentales
 
 La Arquitectura de IA se basa en los siguientes principios:
 
 ---
 
-## A.3.1 Independencia Tecnológica
+### A.3.1 Independencia Tecnológica
 
 GeoMotion Studio no deberá depender de un proveedor, modelo o tecnología específica de Inteligencia Artificial.
 
@@ -3464,11 +3475,11 @@ El resto de la plataforma deberá continuar funcionando sin modificaciones.
 
 ---
 
-## A.3.2 Separación entre Capacidad e Implementación
+### A.3.2 Separación entre Capacidad e Implementación
 
 La arquitectura diferencia claramente entre:
 
-### Capacidad Inteligente
+#### Capacidad Inteligente
 
 Define qué función proporciona la IA.
 
@@ -3481,7 +3492,7 @@ Ejemplos:
 
 ---
 
-### Implementación
+#### Implementación
 
 Define cómo se obtiene dicha capacidad.
 
@@ -3514,13 +3525,13 @@ La capacidad permanece estable mientras la tecnología evoluciona.
 
 ---
 
-## A.3.3 Separación entre Capacidades, Herramientas y Plugins
+### A.3.3 Separación entre Capacidades, Herramientas y Plugins
 
 Dentro de la arquitectura existen tres conceptos diferentes.
 
 ---
 
-### Capacidades Inteligentes
+#### Capacidades Inteligentes
 
 Representan habilidades que la IA puede utilizar.
 
@@ -3533,7 +3544,7 @@ Ejemplos:
 
 ---
 
-### Herramientas Inteligentes
+#### Herramientas Inteligentes
 
 Representan acciones concretas que la IA puede ejecutar sobre la plataforma.
 
@@ -3561,7 +3572,7 @@ Generar animación temporal.
 
 ---
 
-### Plugins
+#### Plugins
 
 Representan extensiones que incorporan nuevas capacidades o integraciones.
 
@@ -3595,7 +3606,7 @@ Plugins amplían capacidades disponibles
 
 ---
 
-# A.4 Capas Arquitectónicas
+## A.4 Capas Arquitectónicas
 
 La arquitectura está organizada mediante capas especializadas.
 
@@ -3603,7 +3614,7 @@ Cada capa posee una responsabilidad específica.
 
 ---
 
-# A.5 Capa de Interacción Humana
+## A.5 Capa de Interacción Humana
 
 Representa la comunicación entre el usuario y GeoMotion Studio.
 
@@ -3630,7 +3641,7 @@ No recibe una lista de instrucciones técnicas.
 
 ---
 
-# A.6 Capa de Comprensión de Intención
+## A.6 Capa de Comprensión de Intención
 
 Esta capa transforma la solicitud humana en una estructura comprensible para el sistema.
 
@@ -3684,7 +3695,7 @@ Elementos:
 
 ---
 
-# A.7 Capa de Contexto y Memoria de IA
+## A.7 Capa de Contexto y Memoria de IA
 
 Esta capa permite que la Inteligencia Artificial comprenda la situación actual del usuario y del proyecto.
 
@@ -3704,7 +3715,7 @@ La memoria puede dividirse en:
 
 ---
 
-## A.7.1 Memoria de Sesión
+### A.7.1 Memoria de Sesión
 
 Información temporal correspondiente a la interacción actual.
 
@@ -3720,7 +3731,7 @@ La IA entiende que "hacerlo" se refiere al proyecto actual.
 
 ---
 
-## A.7.2 Memoria del Proyecto
+### A.7.2 Memoria del Proyecto
 
 Información asociada al proyecto creado.
 
@@ -3734,7 +3745,7 @@ Ejemplo:
 
 ---
 
-## A.7.3 Preferencias del Usuario
+### A.7.3 Preferencias del Usuario
 
 Información destinada a mejorar futuras interacciones.
 
@@ -3749,7 +3760,7 @@ Usuario prefiere:
 
 ---
 
-# A.8 Capa de Planificación Inteligente
+## A.8 Capa de Planificación Inteligente
 
 Transforma una intención en una estrategia de ejecución.
 
@@ -3793,7 +3804,7 @@ La planificación permite resolver objetivos complejos mediante múltiples opera
 
 ---
 
-# A.9 Orquestador de IA
+## A.9 Orquestador de IA
 
 El Orquestador constituye el núcleo de coordinación.
 
@@ -3813,7 +3824,7 @@ Decide qué componente debe actuar.
 
 ---
 
-# A.10 Agentes Inteligentes
+## A.10 Agentes Inteligentes
 
 La arquitectura permite incorporar agentes especializados.
 
@@ -3823,7 +3834,7 @@ Ejemplos:
 
 ---
 
-## Agente Director Cinematográfico
+### Agente Director Cinematográfico
 
 Responsabilidades:
 
@@ -3834,7 +3845,7 @@ Responsabilidades:
 
 ---
 
-## Agente GIS
+### Agente GIS
 
 Responsabilidades:
 
@@ -3844,7 +3855,7 @@ Responsabilidades:
 
 ---
 
-## Agente Animación
+### Agente Animación
 
 Responsabilidades:
 
@@ -3854,7 +3865,7 @@ Responsabilidades:
 
 ---
 
-## Agente Render
+### Agente Render
 
 Responsabilidades:
 
@@ -3868,7 +3879,7 @@ Los agentes pueden colaborar mediante el Orquestador de IA.
 
 ---
 
-# A.11 Capa de Herramientas Inteligentes
+## A.11 Capa de Herramientas Inteligentes
 
 Las herramientas representan acciones disponibles para la IA.
 
@@ -3934,7 +3945,7 @@ Las herramientas proporcionan una forma controlada para que la IA interactúe co
 
 ---
 
-# A.12 Capa de Capacidades Inteligentes
+## A.12 Capa de Capacidades Inteligentes
 
 Esta capa contiene las habilidades generales disponibles.
 
@@ -3952,7 +3963,7 @@ Las capacidades pueden ser utilizadas por diferentes agentes y herramientas.
 
 ---
 
-# A.13 Capa de Adaptadores de IA
+## A.13 Capa de Adaptadores de IA
 
 Los adaptadores conectan las capacidades internas con tecnologías externas.
 
@@ -3980,49 +3991,49 @@ Los adaptadores aíslan las diferencias entre tecnologías.
 
 ---
 
-# A.14 Capa de Plugins y Servicios Externos
+## A.14 Capa de Plugins y Servicios Externos
 
 Los plugins permiten ampliar las capacidades de GeoMotion Studio.
 
 Ejemplos:
 
-## OpenStreetMap
+### OpenStreetMap
 
 Información geográfica.
 
 ---
 
-## Cesium
+### Cesium
 
 Visualización global.
 
 ---
 
-## Weather
+### Weather
 
 Información atmosférica.
 
 ---
 
-## Blender
+### Blender
 
 Procesamiento 3D.
 
 ---
 
-## Photogrammetry
+### Photogrammetry
 
 Reconstrucción tridimensional.
 
 ---
 
-## Nuevas IA futuras
+### Nuevas IA futuras
 
 Nuevas capacidades inteligentes.
 
 ---
 
-# A.15 Integración con Componentes GeoMotion Studio
+## A.15 Integración con Componentes GeoMotion Studio
 
 La IA interactúa con los componentes internos mediante interfaces definidas.
 
@@ -4080,7 +4091,7 @@ Cada componente mantiene su responsabilidad original.
 
 ---
 
-# A.16 Arquitectura Preparada para el Futuro
+## A.16 Arquitectura Preparada para el Futuro
 
 El diseño permite incorporar futuras generaciones de Inteligencia Artificial.
 
@@ -4098,7 +4109,7 @@ Depende únicamente de las capacidades que dicha IA pueda aportar.
 
 ---
 
-# A.17 Flujo Arquitectónico Completo
+## A.17 Flujo Arquitectónico Completo
 
 Ejemplo:
 
@@ -4150,7 +4161,7 @@ Proyecto editable
 
 ---
 
-# A.18 Resumen
+## A.18 Resumen
 
 La Arquitectura de Referencia de Inteligencia Artificial define el modelo estructural mediante el cual GeoMotion Studio integra capacidades inteligentes.
 
@@ -4161,6 +4172,7 @@ La arquitectura no está diseñada para una IA específica.
 Está diseñada para convivir con la evolución permanente de la inteligencia artificial, permitiendo transformar ideas humanas en proyectos digitales complejos mediante una interacción natural, flexible y controlada.
 
 ---
+
 # ANEXO B · Flujo de Creación Inteligente mediante Lenguaje Natural
 
 ## B.1 Objetivo
@@ -4173,7 +4185,7 @@ Además, establece el modelo de interacción continua donde la IA no solamente g
 
 ---
 
-# B.2 Concepto General
+## B.2 Concepto General
 
 GeoMotion Studio permite que un usuario exprese una idea, objetivo o necesidad utilizando lenguaje natural.
 
@@ -4225,7 +4237,7 @@ Mejora Continua
 
 ---
 
-# B.3 Principio Fundamental
+## B.3 Principio Fundamental
 
 El usuario no debe verse obligado a conocer la complejidad técnica necesaria para alcanzar un resultado.
 
@@ -4249,7 +4261,7 @@ La Arquitectura de IA transforma esa intención en una estructura técnica ejecu
 
 ---
 
-# B.4 Solicitud Inicial del Usuario
+## B.4 Solicitud Inicial del Usuario
 
 La interacción comienza con una solicitud de alto nivel.
 
@@ -4271,7 +4283,7 @@ Esta solicitud contiene una intención creativa, pero no define cómo debe reali
 
 ---
 
-# B.5 Etapa 1 · Comprensión de Intención
+## B.5 Etapa 1 · Comprensión de Intención
 
 La primera etapa consiste en interpretar la solicitud.
 
@@ -4325,7 +4337,7 @@ La intención humana queda convertida en información estructurada.
 
 ---
 
-# B.6 Etapa 2 · Análisis de Contexto
+## B.6 Etapa 2 · Análisis de Contexto
 
 Antes de ejecutar cualquier acción, la IA analiza el contexto disponible.
 
@@ -4352,7 +4364,7 @@ Comprende dónde está trabajando.
 
 ---
 
-# B.7 Etapa 3 · Construcción del Plan Inteligente
+## B.7 Etapa 3 · Construcción del Plan Inteligente
 
 La IA genera un plan interno de trabajo.
 
@@ -4401,7 +4413,7 @@ El plan puede modificarse dinámicamente según los resultados obtenidos.
 
 ---
 
-# B.8 Etapa 4 · Orquestación de Capacidades
+## B.8 Etapa 4 · Orquestación de Capacidades
 
 El Orquestador de IA selecciona los componentes necesarios.
 
@@ -4434,7 +4446,7 @@ No reemplaza los sistemas especializados.
 
 ---
 
-# B.9 Etapa 5 · Obtención de Información Geográfica
+## B.9 Etapa 5 · Obtención de Información Geográfica
 
 La plataforma utiliza sus capacidades geoespaciales.
 
@@ -4474,7 +4486,7 @@ Puede incluir:
 
 ---
 
-# B.10 Etapa 6 · Generación de Trayectoria
+## B.10 Etapa 6 · Generación de Trayectoria
 
 La IA utiliza herramientas de navegación para construir el recorrido.
 
@@ -4511,7 +4523,7 @@ La trayectoria permanece editable.
 
 ---
 
-# B.11 Etapa 7 · Generación Cinematográfica
+## B.11 Etapa 7 · Generación Cinematográfica
 
 La IA configura la experiencia visual.
 
@@ -4545,7 +4557,7 @@ a la Bombonera.
 
 ---
 
-# B.12 Etapa 8 · Generación Temporal
+## B.12 Etapa 8 · Generación Temporal
 
 El sistema crea automáticamente la estructura temporal.
 
@@ -4586,7 +4598,7 @@ Se generan:
 
 ---
 
-# B.13 Etapa 9 · Incorporación de Elementos Multimedia
+## B.13 Etapa 9 · Incorporación de Elementos Multimedia
 
 La IA incorpora elementos adicionales.
 
@@ -4634,7 +4646,7 @@ Movimiento y cierre.
 
 ---
 
-# B.14 Etapa 10 · Construcción del Proyecto Editable
+## B.14 Etapa 10 · Construcción del Proyecto Editable
 
 La IA genera una estructura completa.
 
@@ -4661,7 +4673,7 @@ No recibe solamente una respuesta.
 
 ---
 
-# B.15 Etapa 11 · Revisión Humana
+## B.15 Etapa 11 · Revisión Humana
 
 Una vez generado el proyecto, el usuario puede intervenir.
 
@@ -4677,7 +4689,7 @@ La IA interpreta estas modificaciones dentro del contexto existente.
 
 ---
 
-# B.16 Etapa 12 · Iteración Inteligente
+## B.16 Etapa 12 · Iteración Inteligente
 
 La creación no termina con la primera versión.
 
@@ -4707,7 +4719,7 @@ Cada interacción mejora el resultado final.
 
 ---
 
-# B.17 Memoria del Proyecto
+## B.17 Memoria del Proyecto
 
 Durante el proceso, la IA mantiene información relevante.
 
@@ -4739,7 +4751,7 @@ Esto permite realizar modificaciones coherentes.
 
 ---
 
-# B.18 Aprendizaje de Preferencias
+## B.18 Aprendizaje de Preferencias
 
 La plataforma puede identificar patrones de trabajo del usuario.
 
@@ -4758,7 +4770,7 @@ La finalidad no es reemplazar decisiones humanas, sino mejorar la asistencia.
 
 ---
 
-# B.19 Flujo Completo de Arquitectura
+## B.19 Flujo Completo de Arquitectura
 
 El proceso completo puede representarse:
 
@@ -4816,7 +4828,7 @@ Nueva Iteración
 
 ---
 
-# B.20 Beneficios del Modelo
+## B.20 Beneficios del Modelo
 
 Este enfoque proporciona:
 
@@ -4830,7 +4842,7 @@ Este enfoque proporciona:
 
 ---
 
-# B.21 Resumen
+## B.21 Resumen
 
 El flujo de creación inteligente mediante lenguaje natural representa una de las capacidades diferenciales de GeoMotion Studio.
 
@@ -4839,6 +4851,7 @@ La plataforma permite transformar una intención expresada de manera natural en 
 La IA actúa como un colaborador creativo y técnico que acompaña al usuario durante todo el proceso, manteniendo siempre la capacidad humana de supervisar, modificar y decidir sobre el resultado final.
 
 ---
+
 # ANEXO C · Modelo de Arquitectura de Plugins Inteligentes
 
 ## C.1 Objetivo
@@ -4851,7 +4864,7 @@ El objetivo principal es permitir que GeoMotion Studio evolucione como una plata
 
 ---
 
-# C.2 Concepto de Plugin Inteligente
+## C.2 Concepto de Plugin Inteligente
 
 Un Plugin Inteligente representa una extensión capaz de ampliar las funcionalidades de GeoMotion Studio proporcionando recursos que pueden ser utilizados tanto por usuarios como por la Arquitectura de IA.
 
@@ -4870,7 +4883,7 @@ La arquitectura permite que la Inteligencia Artificial descubra y utilice estos 
 
 ---
 
-# C.3 Evolución del Concepto de Plugin
+## C.3 Evolución del Concepto de Plugin
 
 En una arquitectura tradicional:
 
@@ -4924,13 +4937,13 @@ La IA puede seleccionar automáticamente las extensiones necesarias para alcanza
 
 ---
 
-# C.4 Principios de Arquitectura de Plugins
+## C.4 Principios de Arquitectura de Plugins
 
 La arquitectura de plugins se basa en los siguientes principios:
 
 ---
 
-## C.4.1 Modularidad
+### C.4.1 Modularidad
 
 Cada plugin debe representar una unidad independiente de funcionalidad.
 
@@ -4945,7 +4958,7 @@ Sin afectar al núcleo de GeoMotion Studio.
 
 ---
 
-## C.4.2 Bajo Acoplamiento
+### C.4.2 Bajo Acoplamiento
 
 Los plugins no deben depender directamente de implementaciones internas del sistema.
 
@@ -4953,7 +4966,7 @@ La comunicación debe realizarse mediante interfaces definidas.
 
 ---
 
-## C.4.3 Descubrimiento Dinámico
+### C.4.3 Descubrimiento Dinámico
 
 La plataforma debe poder identificar:
 
@@ -4967,7 +4980,7 @@ Esto permite que la IA pueda seleccionar recursos adecuados.
 
 ---
 
-## C.4.4 Independencia Tecnológica
+### C.4.4 Independencia Tecnológica
 
 Un plugin puede utilizar:
 
@@ -4980,7 +4993,7 @@ La arquitectura superior no debe depender de cómo funciona internamente.
 
 ---
 
-# C.5 Estructura Conceptual de un Plugin Inteligente
+## C.5 Estructura Conceptual de un Plugin Inteligente
 
 Un plugin puede representarse mediante:
 
@@ -5008,7 +5021,7 @@ Plugin
 
 ---
 
-# C.6 Identidad del Plugin
+## C.6 Identidad del Plugin
 
 Cada plugin debe poseer una identificación única.
 
@@ -5041,7 +5054,7 @@ Servicio meteorológico
 
 ---
 
-# C.7 Metadatos del Plugin
+## C.7 Metadatos del Plugin
 
 Los metadatos permiten que GeoMotion Studio y la IA comprendan qué ofrece un plugin.
 
@@ -5064,13 +5077,13 @@ Los metadatos permiten el descubrimiento automático.
 
 ---
 
-# C.8 Capacidades Expuestas
+## C.8 Capacidades Expuestas
 
 Un plugin puede ofrecer capacidades que serán utilizadas por la arquitectura.
 
 Ejemplos:
 
-## Plugin OpenStreetMap
+### Plugin OpenStreetMap
 
 Capacidades:
 
@@ -5080,7 +5093,7 @@ Capacidades:
 
 ---
 
-## Plugin Cesium
+### Plugin Cesium
 
 Capacidades:
 
@@ -5090,7 +5103,7 @@ Capacidades:
 
 ---
 
-## Plugin Weather
+### Plugin Weather
 
 Capacidades:
 
@@ -5099,7 +5112,7 @@ Capacidades:
 
 ---
 
-## Plugin Photogrammetry
+### Plugin Photogrammetry
 
 Capacidades:
 
@@ -5108,7 +5121,7 @@ Capacidades:
 
 ---
 
-# C.9 Herramientas Expuestas a la IA
+## C.9 Herramientas Expuestas a la IA
 
 Además de capacidades generales, un plugin puede proporcionar herramientas ejecutables.
 
@@ -5147,7 +5160,7 @@ Precipitación
 
 ---
 
-# C.10 Integración con el Orquestador de IA
+## C.10 Integración con el Orquestador de IA
 
 El Orquestador utiliza los plugins como fuentes de herramientas disponibles.
 
@@ -5185,7 +5198,7 @@ Genera escena adaptada
 
 ---
 
-# C.11 Catálogo de Plugins
+## C.11 Catálogo de Plugins
 
 GeoMotion Studio podrá mantener un catálogo de extensiones disponibles.
 
@@ -5206,9 +5219,9 @@ Cada entrada deberá registrar:
 
 ---
 
-# C.12 Ejemplos de Plugins Estratégicos
+## C.12 Ejemplos de Plugins Estratégicos
 
-## C.12.1 OpenStreetMap
+### C.12.1 OpenStreetMap
 
 Función:
 
@@ -5224,7 +5237,7 @@ Permite:
 
 ---
 
-## C.12.2 Cesium
+### C.12.2 Cesium
 
 Función:
 
@@ -5240,7 +5253,7 @@ Permite:
 
 ---
 
-## C.12.3 Sketchfab
+### C.12.3 Sketchfab
 
 Función:
 
@@ -5256,7 +5269,7 @@ Permite:
 
 ---
 
-## C.12.4 Blender
+### C.12.4 Blender
 
 Función:
 
@@ -5272,7 +5285,7 @@ Permite:
 
 ---
 
-## C.12.5 Weather
+### C.12.5 Weather
 
 Función:
 
@@ -5288,7 +5301,7 @@ Permite:
 
 ---
 
-## C.12.6 Photogrammetry
+### C.12.6 Photogrammetry
 
 Función:
 
@@ -5304,7 +5317,7 @@ Permite:
 
 ---
 
-# C.13 Plugins de Inteligencia Artificial
+## C.13 Plugins de Inteligencia Artificial
 
 La arquitectura permitirá incorporar plugins cuyo objetivo principal sea proporcionar nuevas capacidades de IA.
 
@@ -5329,7 +5342,7 @@ Generar movimientos de cámara avanzados
 
 ---
 
-# C.14 Seguridad de Plugins
+## C.14 Seguridad de Plugins
 
 Todo plugin deberá cumplir requisitos mínimos:
 
@@ -5344,7 +5357,7 @@ Los plugins no deberán comprometer la seguridad del núcleo.
 
 ---
 
-# C.15 Versionado de Plugins
+## C.15 Versionado de Plugins
 
 Los plugins deberán gestionarse como activos de ingeniería.
 
@@ -5360,7 +5373,7 @@ La evolución deberá integrarse con DOC-018 · Gestión de Versiones.
 
 ---
 
-# C.16 Desarrollo por Terceros
+## C.16 Desarrollo por Terceros
 
 La arquitectura podrá permitir que desarrolladores externos creen extensiones.
 
@@ -5377,7 +5390,7 @@ Esto permitirá construir un ecosistema alrededor de GeoMotion Studio.
 
 ---
 
-# C.17 Futuro del Ecosistema
+## C.17 Futuro del Ecosistema
 
 La arquitectura debe estar preparada para integrar tecnologías aún desconocidas.
 
@@ -5395,7 +5408,7 @@ El objetivo es garantizar que cualquier tecnología futura pueda encontrar un pu
 
 ---
 
-# C.18 Flujo Completo de Plugin Inteligente
+## C.18 Flujo Completo de Plugin Inteligente
 
 Ejemplo:
 
@@ -5443,7 +5456,7 @@ Proyecto generado
 
 ---
 
-# C.19 Resumen
+## C.19 Resumen
 
 La Arquitectura de Plugins Inteligentes permite que GeoMotion Studio evolucione como un ecosistema abierto y extensible.
 
@@ -5452,6 +5465,7 @@ Los plugins dejan de ser simples extensiones funcionales y se convierten en prov
 Este modelo permite integrar nuevas tecnologías, proveedores y servicios sin modificar el núcleo de la plataforma, garantizando una arquitectura preparada para la evolución continua de GeoMotion Studio y de la Inteligencia Artificial.
 
 ---
+
 # ANEXO D · Ciclo de Vida de una Capacidad Inteligente
 
 ## D.1 Objetivo
@@ -5464,7 +5478,7 @@ El modelo definido permite garantizar que toda capacidad inteligente sea incorpo
 
 ---
 
-# D.2 Concepto de Capacidad Inteligente como Activo de Ingeniería
+## D.2 Concepto de Capacidad Inteligente como Activo de Ingeniería
 
 Dentro de GeoMotion Studio, una capacidad inteligente no debe considerarse únicamente una funcionalidad técnica.
 
@@ -5506,7 +5520,7 @@ Modelo IA + Herramientas internas
 
 ---
 
-# D.3 Visión General del Ciclo de Vida
+## D.3 Visión General del Ciclo de Vida
 
 El ciclo de vida de una capacidad inteligente puede representarse como:
 
@@ -5566,7 +5580,7 @@ Cada etapa representa un nivel diferente de madurez.
 
 ---
 
-# D.4 Etapa 1 · Identificación de Necesidad
+## D.4 Etapa 1 · Identificación de Necesidad
 
 Toda nueva capacidad comienza con una necesidad detectada.
 
@@ -5590,7 +5604,7 @@ Propuesta de nueva capacidad.
 
 ---
 
-# D.5 Etapa 2 · Propuesta de Capacidad
+## D.5 Etapa 2 · Propuesta de Capacidad
 
 La propuesta define qué problema resolverá la nueva capacidad.
 
@@ -5619,7 +5633,7 @@ a partir de una intención del usuario.
 
 ---
 
-# D.6 Etapa 3 · Análisis Arquitectónico
+## D.6 Etapa 3 · Análisis Arquitectónico
 
 Antes de desarrollar una capacidad, debe evaluarse su impacto sobre la arquitectura.
 
@@ -5641,13 +5655,13 @@ También debe determinar:
 
 ---
 
-# D.7 Etapa 4 · Diseño de la Capacidad
+## D.7 Etapa 4 · Diseño de la Capacidad
 
 Durante esta etapa se define la arquitectura interna.
 
 Debe establecerse:
 
-## Capacidad
+### Capacidad
 
 Qué función proporcionará.
 
@@ -5659,7 +5673,7 @@ Generación automática de recorridos.
 
 ---
 
-## Herramientas
+### Herramientas
 
 Qué acciones podrá ejecutar.
 
@@ -5671,25 +5685,25 @@ Crear trayectoria.
 
 ---
 
-## Interfaces
+### Interfaces
 
 Cómo se comunicará.
 
 ---
 
-## Datos necesarios
+### Datos necesarios
 
 Qué información utilizará.
 
 ---
 
-## Resultados esperados
+### Resultados esperados
 
 Qué producirá.
 
 ---
 
-# D.8 Etapa 5 · Experimentación
+## D.8 Etapa 5 · Experimentación
 
 La capacidad se prueba en un entorno controlado.
 
@@ -5711,43 +5725,43 @@ Los resultados deben registrarse.
 
 ---
 
-# D.9 Etapa 6 · Evaluación
+## D.9 Etapa 6 · Evaluación
 
 La evaluación determina si la capacidad cumple los objetivos definidos.
 
 Puede analizar:
 
-## Calidad
+### Calidad
 
 ¿El resultado generado es adecuado?
 
 ---
 
-## Precisión
+### Precisión
 
 ¿Interpreta correctamente la intención?
 
 ---
 
-## Rendimiento
+### Rendimiento
 
 ¿Puede utilizarse en condiciones reales?
 
 ---
 
-## Experiencia del usuario
+### Experiencia del usuario
 
 ¿Aporta valor?
 
 ---
 
-## Compatibilidad
+### Compatibilidad
 
 ¿Respeta la arquitectura existente?
 
 ---
 
-# D.10 Etapa 7 · Validación Técnica
+## D.10 Etapa 7 · Validación Técnica
 
 Antes de integrarse oficialmente, la capacidad debe ser validada.
 
@@ -5763,7 +5777,7 @@ Una capacidad validada puede avanzar hacia integración.
 
 ---
 
-# D.11 Etapa 8 · Integración en GeoMotion Studio
+## D.11 Etapa 8 · Integración en GeoMotion Studio
 
 La integración incorpora oficialmente la capacidad dentro del ecosistema.
 
@@ -5784,7 +5798,7 @@ La capacidad debe respetar:
 
 ---
 
-# D.12 Etapa 9 · Versionado
+## D.12 Etapa 9 · Versionado
 
 Toda capacidad inteligente debe poseer un sistema de versiones.
 
@@ -5820,7 +5834,7 @@ Cada versión debe registrar:
 
 ---
 
-# D.13 Relación con DOC-018 Gestión de Versiones
+## D.13 Relación con DOC-018 Gestión de Versiones
 
 Las capacidades inteligentes forman parte del modelo general de versionado de GeoMotion Studio.
 
@@ -5835,7 +5849,7 @@ La IA se administra bajo los mismos principios que otros activos de ingeniería.
 
 ---
 
-# D.14 Etapa 10 · Publicación
+## D.14 Etapa 10 · Publicación
 
 Una capacidad validada puede incorporarse oficialmente mediante una Publicación.
 
@@ -5866,7 +5880,7 @@ Incluye:
 
 ---
 
-# D.15 Etapa 11 · Operación
+## D.15 Etapa 11 · Operación
 
 Durante la operación se recopila información sobre el comportamiento real.
 
@@ -5882,7 +5896,7 @@ Esta información alimenta futuras mejoras.
 
 ---
 
-# D.16 Etapa 12 · Optimización
+## D.16 Etapa 12 · Optimización
 
 Las capacidades inteligentes deben evolucionar continuamente.
 
@@ -5898,7 +5912,7 @@ La optimización debe mantener la trazabilidad del cambio.
 
 ---
 
-# D.17 Etapa 13 · Sustitución
+## D.17 Etapa 13 · Sustitución
 
 Una implementación puede reemplazarse sin eliminar la capacidad.
 
@@ -5924,7 +5938,7 @@ La arquitectura permite evolucionar sin afectar a los usuarios.
 
 ---
 
-# D.18 Etapa 14 · Retiro Controlado
+## D.18 Etapa 14 · Retiro Controlado
 
 Una capacidad puede retirarse cuando:
 
@@ -5944,7 +5958,7 @@ Nada debe perderse del conocimiento técnico generado.
 
 ---
 
-# D.19 Registro de Conocimiento
+## D.19 Registro de Conocimiento
 
 Todo el ciclo de vida debe generar conocimiento reutilizable.
 
@@ -5959,7 +5973,7 @@ La evolución de la IA debe convertirse en aprendizaje organizacional.
 
 ---
 
-# D.20 Flujo Completo de Ejemplo
+## D.20 Flujo Completo de Ejemplo
 
 Nueva capacidad:
 
@@ -6015,7 +6029,7 @@ Versión futura
 
 ---
 
-# D.21 Beneficios del Modelo
+## D.21 Beneficios del Modelo
 
 Este ciclo de vida proporciona:
 
@@ -6028,7 +6042,7 @@ Este ciclo de vida proporciona:
 
 ---
 
-# D.22 Resumen
+## D.22 Resumen
 
 El ciclo de vida de una capacidad inteligente establece un proceso formal para incorporar Inteligencia Artificial dentro de GeoMotion Studio.
 
@@ -6037,6 +6051,7 @@ Al considerar cada capacidad como un activo de ingeniería, la plataforma puede 
 La Inteligencia Artificial deja de ser una incorporación aislada y pasa a formar parte del proceso general de ingeniería del proyecto.
 
 ---
+
 # ANEXO E · Modelo de Integración con Proveedores y Modelos de Inteligencia Artificial
 
 ## E.1 Objetivo
@@ -6047,7 +6062,7 @@ Este anexo establece los principios y mecanismos necesarios para incorporar solu
 
 ---
 
-# E.2 Principio Fundamental
+## E.2 Principio Fundamental
 
 La Arquitectura de IA de GeoMotion Studio no se diseña alrededor de modelos concretos.
 
@@ -6095,7 +6110,7 @@ La capacidad permanece estable aunque cambie la tecnología.
 
 ---
 
-# E.3 Modelo de Integración General
+## E.3 Modelo de Integración General
 
 La integración entre GeoMotion Studio y una tecnología de IA se realiza mediante capas de abstracción.
 
@@ -6125,7 +6140,7 @@ Cada nivel posee una responsabilidad específica.
 
 ---
 
-# E.4 Capa de Capacidades Inteligentes
+## E.4 Capa de Capacidades Inteligentes
 
 Esta capa representa las funciones que la plataforma necesita.
 
@@ -6144,7 +6159,7 @@ La plataforma trabaja con estas capacidades y no con modelos específicos.
 
 ---
 
-# E.5 Capa de Adaptadores de IA
+## E.5 Capa de Adaptadores de IA
 
 Los adaptadores representan el mecanismo de conexión entre GeoMotion Studio y las tecnologías externas.
 
@@ -6179,7 +6194,7 @@ La arquitectura superior desconoce la implementación utilizada.
 
 ---
 
-# E.6 Proveedores de Inteligencia Artificial
+## E.6 Proveedores de Inteligencia Artificial
 
 Los proveedores representan organizaciones o sistemas que ofrecen capacidades inteligentes.
 
@@ -6208,13 +6223,13 @@ La arquitectura permite incorporar cualquiera de ellos.
 
 ---
 
-# E.7 Tipos de Modelos Integrables
+## E.7 Tipos de Modelos Integrables
 
 GeoMotion Studio deberá poder integrar diferentes tipos de modelos.
 
 ---
 
-## E.7.1 Modelos de Lenguaje
+### E.7.1 Modelos de Lenguaje
 
 Utilizados para:
 
@@ -6225,7 +6240,7 @@ Utilizados para:
 
 ---
 
-## E.7.2 Modelos Multimodales
+### E.7.2 Modelos Multimodales
 
 Permiten trabajar con múltiples tipos de información:
 
@@ -6240,7 +6255,7 @@ Analizar una imagen aérea y generar una escena correspondiente.
 
 ---
 
-## E.7.3 Modelos de Visión Artificial
+### E.7.3 Modelos de Visión Artificial
 
 Permiten:
 
@@ -6251,7 +6266,7 @@ Permiten:
 
 ---
 
-## E.7.4 Modelos Generativos
+### E.7.4 Modelos Generativos
 
 Permiten:
 
@@ -6262,7 +6277,7 @@ Permiten:
 
 ---
 
-## E.7.5 Modelos Especializados
+### E.7.5 Modelos Especializados
 
 Modelos entrenados para tareas concretas.
 
@@ -6275,7 +6290,7 @@ Ejemplos:
 
 ---
 
-## E.7.6 Modelos Locales
+### E.7.6 Modelos Locales
 
 Modelos ejecutados dentro de la infraestructura propia.
 
@@ -6287,7 +6302,7 @@ Ventajas:
 
 ---
 
-# E.8 Arquitectura Multi-Modelo
+## E.8 Arquitectura Multi-Modelo
 
 GeoMotion Studio podrá utilizar múltiples tecnologías simultáneamente.
 
@@ -6321,7 +6336,7 @@ Cada modelo puede utilizarse para la tarea donde aporta mayor valor.
 
 ---
 
-# E.9 Selección Inteligente de Modelos
+## E.9 Selección Inteligente de Modelos
 
 La arquitectura podrá incorporar mecanismos para seleccionar la tecnología adecuada según el contexto.
 
@@ -6355,7 +6370,7 @@ Puede requerir múltiples capacidades coordinadas.
 
 ---
 
-# E.10 Sustitución de Proveedores
+## E.10 Sustitución de Proveedores
 
 Uno de los objetivos principales de la arquitectura es permitir reemplazar tecnologías sin afectar el sistema.
 
@@ -6391,7 +6406,7 @@ El resto de GeoMotion Studio continúa funcionando igual.
 
 ---
 
-# E.11 Integración de Nuevas Inteligencias Artificiales Futuras
+## E.11 Integración de Nuevas Inteligencias Artificiales Futuras
 
 La arquitectura debe estar preparada para tecnologías que actualmente no existen.
 
@@ -6406,7 +6421,7 @@ La incorporación futura deberá limitarse a crear nuevos adaptadores o integrac
 
 ---
 
-# E.12 Configuración de Proveedores
+## E.12 Configuración de Proveedores
 
 Cada integración deberá mantener información técnica.
 
@@ -6434,7 +6449,7 @@ Esta información forma parte del control técnico de la plataforma.
 
 ---
 
-# E.13 Gestión de Costos y Recursos
+## E.13 Gestión de Costos y Recursos
 
 Las integraciones externas pueden implicar consumo de recursos.
 
@@ -6450,7 +6465,7 @@ La selección tecnológica debe considerar tanto aspectos técnicos como operati
 
 ---
 
-# E.14 Seguridad de Integraciones Externas
+## E.14 Seguridad de Integraciones Externas
 
 Toda integración con proveedores externos deberá considerar:
 
@@ -6464,7 +6479,7 @@ Los proveedores externos deben integrarse como componentes controlados.
 
 ---
 
-# E.15 Evaluación Comparativa
+## E.15 Evaluación Comparativa
 
 La arquitectura permite evaluar diferentes tecnologías para una misma capacidad.
 
@@ -6501,7 +6516,7 @@ La decisión se basa en evidencia técnica.
 
 ---
 
-# E.16 Relación con el Ciclo de Vida
+## E.16 Relación con el Ciclo de Vida
 
 Toda integración de un proveedor o modelo debe seguir el ciclo de vida definido:
 
@@ -6537,7 +6552,7 @@ Esto evita incorporar tecnologías sin control.
 
 ---
 
-# E.17 Ejemplo Completo
+## E.17 Ejemplo Completo
 
 Solicitud:
 
@@ -6587,7 +6602,7 @@ Cada tecnología participa según su especialidad.
 
 ---
 
-# E.18 Beneficios del Modelo
+## E.18 Beneficios del Modelo
 
 Este modelo proporciona:
 
@@ -6600,7 +6615,7 @@ Este modelo proporciona:
 
 ---
 
-# E.19 Resumen
+## E.19 Resumen
 
 El Modelo de Integración con Proveedores y Modelos de Inteligencia Artificial establece una arquitectura flexible donde GeoMotion Studio puede incorporar cualquier tecnología inteligente que aporte valor.
 
@@ -6609,6 +6624,7 @@ La plataforma no queda limitada por un proveedor específico.
 Su arquitectura está preparada para evolucionar junto con la Inteligencia Artificial, permitiendo integrar nuevas generaciones de modelos mediante mecanismos controlados, versionados y desacoplados.
 
 ---
+
 # ANEXO F · Modelo de Seguridad, Control y Auditoría de Inteligencia Artificial
 
 ## F.1 Objetivo
@@ -6627,7 +6643,7 @@ El objetivo es permitir la incorporación de capacidades inteligentes manteniend
 
 ---
 
-# F.2 Principio General de Seguridad
+## F.2 Principio General de Seguridad
 
 La Inteligencia Artificial debe integrarse dentro de GeoMotion Studio siguiendo los principios generales de seguridad del sistema.
 
@@ -6647,7 +6663,7 @@ Por lo tanto, deberá cumplir:
 
 ---
 
-# F.3 Modelo de Seguridad por Capas
+## F.3 Modelo de Seguridad por Capas
 
 La seguridad de la IA se estructura mediante diferentes capas.
 
@@ -6689,7 +6705,7 @@ Cada capa posee mecanismos de protección específicos.
 
 ---
 
-# F.4 Identidad y Autenticación
+## F.4 Identidad y Autenticación
 
 Toda interacción con capacidades inteligentes deberá estar asociada a una identidad válida.
 
@@ -6725,7 +6741,7 @@ Registro automático
 
 ---
 
-# F.5 Control de Accesos
+## F.5 Control de Accesos
 
 No todas las capacidades inteligentes deben estar disponibles para todos los usuarios.
 
@@ -6757,7 +6773,7 @@ Puede además:
 
 ---
 
-# F.6 Gestión de Permisos de IA
+## F.6 Gestión de Permisos de IA
 
 Cada capacidad inteligente deberá definir qué acciones puede realizar.
 
@@ -6783,7 +6799,7 @@ No puede:
 
 ---
 
-# F.7 Seguridad de Herramientas Inteligentes
+## F.7 Seguridad de Herramientas Inteligentes
 
 Las herramientas utilizadas por la IA deberán contar con controles propios.
 
@@ -6808,7 +6824,7 @@ Debe validar:
 
 ---
 
-# F.8 Seguridad de Plugins
+## F.8 Seguridad de Plugins
 
 Los plugins representan una extensión importante del ecosistema.
 
@@ -6824,7 +6840,7 @@ Un plugin no deberá acceder a recursos que no sean necesarios para su función.
 
 ---
 
-# F.9 Protección de Datos
+## F.9 Protección de Datos
 
 La arquitectura deberá proteger la información utilizada por las capacidades inteligentes.
 
@@ -6841,7 +6857,7 @@ Los datos deberán gestionarse según las políticas generales de seguridad de G
 
 ---
 
-# F.10 Control de Información Enviada a Servicios Externos
+## F.10 Control de Información Enviada a Servicios Externos
 
 Cuando una capacidad utilice servicios externos de IA, deberá existir control sobre la información compartida.
 
@@ -6854,7 +6870,7 @@ La arquitectura deberá permitir:
 
 ---
 
-# F.11 Registro de Operaciones Inteligentes
+## F.11 Registro de Operaciones Inteligentes
 
 Toda operación relevante realizada mediante IA deberá generar un registro.
 
@@ -6893,7 +6909,7 @@ Proyecto actualizado
 
 ---
 
-# F.12 Trazabilidad de Resultados
+## F.12 Trazabilidad de Resultados
 
 La plataforma deberá poder responder:
 
@@ -6935,7 +6951,7 @@ Registro automático
 
 ---
 
-# F.13 Historial de Cambios
+## F.13 Historial de Cambios
 
 Los cambios realizados mediante IA deberán formar parte del historial del proyecto.
 
@@ -6962,7 +6978,7 @@ Cámara cinematográfica generada por IA
 
 ---
 
-# F.14 Auditoría de IA
+## F.14 Auditoría de IA
 
 La auditoría permite reconstruir el funcionamiento de una operación inteligente.
 
@@ -6982,7 +6998,7 @@ La auditoría es especialmente importante para:
 
 ---
 
-# F.15 Reversibilidad
+## F.15 Reversibilidad
 
 Cuando sea posible, las acciones generadas mediante IA deberán poder revertirse.
 
@@ -7004,7 +7020,7 @@ La IA no debe generar cambios irreversibles sin mecanismos adecuados.
 
 ---
 
-# F.16 Validación Humana
+## F.16 Validación Humana
 
 La supervisión humana constituye un principio fundamental.
 
@@ -7030,31 +7046,31 @@ Confirmar acción
 
 ---
 
-# F.17 Gestión de Riesgos
+## F.17 Gestión de Riesgos
 
 Las capacidades inteligentes deberán evaluarse considerando posibles riesgos.
 
 Ejemplos:
 
-## Riesgo técnico
+### Riesgo técnico
 
 Resultados incorrectos.
 
 ---
 
-## Riesgo operativo
+### Riesgo operativo
 
 Dependencia excesiva de servicios externos.
 
 ---
 
-## Riesgo de seguridad
+### Riesgo de seguridad
 
 Acceso indebido a información.
 
 ---
 
-## Riesgo funcional
+### Riesgo funcional
 
 Resultados incompatibles con el objetivo.
 
@@ -7064,7 +7080,7 @@ Cada riesgo deberá tener mecanismos de mitigación.
 
 ---
 
-# F.18 Protección contra Uso Incorrecto
+## F.18 Protección contra Uso Incorrecto
 
 La arquitectura deberá contemplar mecanismos para evitar:
 
@@ -7077,7 +7093,7 @@ La IA debe ampliar capacidades, no introducir vulnerabilidades.
 
 ---
 
-# F.19 Relación con Gestión de Versiones
+## F.19 Relación con Gestión de Versiones
 
 La seguridad y auditoría deben integrarse con el control de versiones.
 
@@ -7092,7 +7108,7 @@ Esto permite reproducibilidad.
 
 ---
 
-# F.20 Relación con Registros de Conocimiento
+## F.20 Relación con Registros de Conocimiento
 
 Los incidentes, mejoras y decisiones relacionadas con IA deberán incorporarse al conocimiento técnico del proyecto.
 
@@ -7107,7 +7123,7 @@ La experiencia acumulada mejora la arquitectura futura.
 
 ---
 
-# F.21 Ejemplo Completo de Auditoría
+## F.21 Ejemplo Completo de Auditoría
 
 Solicitud:
 
@@ -7157,7 +7173,7 @@ Validado por usuario
 
 ---
 
-# F.22 Beneficios del Modelo
+## F.22 Beneficios del Modelo
 
 Este modelo proporciona:
 
@@ -7171,7 +7187,7 @@ Este modelo proporciona:
 
 ---
 
-# F.23 Resumen
+## F.23 Resumen
 
 El Modelo de Seguridad, Control y Auditoría establece los mecanismos necesarios para que GeoMotion Studio pueda incorporar Inteligencia Artificial de manera profesional y responsable.
 
@@ -7180,6 +7196,7 @@ La IA debe ser poderosa, pero también controlable.
 Mediante identidad, permisos, trazabilidad, auditoría y supervisión humana, GeoMotion Studio puede aprovechar la evolución de la Inteligencia Artificial manteniendo la seguridad y confianza necesarias para una plataforma de ingeniería avanzada.
 
 ---
+
 # ANEXO G · Glosario de Inteligencia Artificial y Conceptos Arquitectónicos
 
 ## G.1 Objetivo
@@ -7192,9 +7209,9 @@ Los términos definidos en este documento deben interpretarse dentro del context
 
 ---
 
-# G.2 Inteligencia Artificial (IA)
+## G.2 Inteligencia Artificial (IA)
 
-## Definición
+### Definición
 
 Conjunto de tecnologías capaces de realizar tareas que normalmente requieren capacidades asociadas al razonamiento humano.
 
@@ -7213,9 +7230,9 @@ Actúa como una capa inteligente de coordinación.
 
 ---
 
-# G.3 Capacidad Inteligente
+## G.3 Capacidad Inteligente
 
-## Definición
+### Definición
 
 Función que una arquitectura de Inteligencia Artificial puede proporcionar independientemente de la tecnología utilizada para implementarla.
 
@@ -7236,9 +7253,9 @@ No define:
 
 ---
 
-# G.4 Modelo de Inteligencia Artificial
+## G.4 Modelo de Inteligencia Artificial
 
-## Definición
+### Definición
 
 Sistema entrenado mediante técnicas de aprendizaje automático capaz de procesar información y producir resultados.
 
@@ -7256,9 +7273,9 @@ Una capacidad de comprensión de lenguaje puede utilizar diferentes modelos sin 
 
 ---
 
-# G.5 Proveedor de Inteligencia Artificial
+## G.5 Proveedor de Inteligencia Artificial
 
-## Definición
+### Definición
 
 Organización, plataforma o sistema que proporciona acceso a modelos o servicios de Inteligencia Artificial.
 
@@ -7273,9 +7290,9 @@ GeoMotion Studio debe mantener independencia respecto de proveedores concretos.
 
 ---
 
-# G.6 Adaptador de IA
+## G.6 Adaptador de IA
 
-## Definición
+### Definición
 
 Componente encargado de conectar GeoMotion Studio con una tecnología específica de Inteligencia Artificial.
 
@@ -7291,9 +7308,9 @@ El adaptador permite reemplazar tecnologías sin modificar el núcleo de la plat
 
 ---
 
-# G.7 Orquestador de IA
+## G.7 Orquestador de IA
 
-## Definición
+### Definición
 
 Componente encargado de coordinar las diferentes capacidades, herramientas y agentes necesarios para resolver una intención del usuario.
 
@@ -7319,15 +7336,15 @@ El Orquestador puede coordinar:
 
 ---
 
-# G.8 Agente Inteligente
+## G.8 Agente Inteligente
 
-## Definición
+### Definición
 
 Entidad inteligente especializada en un dominio específico capaz de tomar decisiones dentro de un contexto determinado.
 
 Ejemplos:
 
-### Agente Cinematográfico
+#### Agente Cinematográfico
 
 Responsable de:
 
@@ -7335,7 +7352,7 @@ Responsable de:
 - Composición.
 - Narrativa visual.
 
-### Agente GIS
+#### Agente GIS
 
 Responsable de:
 
@@ -7343,7 +7360,7 @@ Responsable de:
 - Ubicaciones.
 - Análisis territorial.
 
-### Agente Render
+#### Agente Render
 
 Responsable de:
 
@@ -7355,9 +7372,9 @@ Los agentes colaboran mediante el Orquestador.
 
 ---
 
-# G.9 Herramienta Inteligente
+## G.9 Herramienta Inteligente
 
-## Definición
+### Definición
 
 Acción específica que la Inteligencia Artificial puede ejecutar dentro del sistema.
 
@@ -7381,9 +7398,9 @@ La IA utiliza herramientas para interactuar con GeoMotion Studio.
 
 ---
 
-# G.10 Plugin Inteligente
+## G.10 Plugin Inteligente
 
-## Definición
+### Definición
 
 Extensión de la plataforma capaz de incorporar nuevas capacidades, herramientas o integraciones.
 
@@ -7404,9 +7421,9 @@ Ejemplos:
 
 ---
 
-# G.11 Memoria de IA
+## G.11 Memoria de IA
 
-## Definición
+### Definición
 
 Mecanismo mediante el cual una capacidad inteligente conserva información relevante para mejorar la interacción.
 
@@ -7414,27 +7431,27 @@ Puede dividirse en:
 
 ---
 
-## Memoria de Sesión
+### Memoria de Sesión
 
 Información temporal de la interacción actual.
 
 ---
 
-## Memoria del Proyecto
+### Memoria del Proyecto
 
 Información relacionada con un proyecto específico.
 
 ---
 
-## Preferencias del Usuario
+### Preferencias del Usuario
 
 Patrones o configuraciones habituales del usuario.
 
 ---
 
-# G.12 Contexto
+## G.12 Contexto
 
-## Definición
+### Definición
 
 Información disponible que permite a la IA comprender una situación determinada.
 
@@ -7450,9 +7467,9 @@ El contexto permite respuestas coherentes.
 
 ---
 
-# G.13 Inteligencia Artificial Multimodal
+## G.13 Inteligencia Artificial Multimodal
 
-## Definición
+### Definición
 
 Tipo de Inteligencia Artificial capaz de trabajar con diferentes tipos de información.
 
@@ -7471,9 +7488,9 @@ En GeoMotion Studio puede permitir:
 
 ---
 
-# G.14 IA Generativa
+## G.14 IA Generativa
 
-## Definición
+### Definición
 
 Capacidad de generar nuevos contenidos mediante modelos inteligentes.
 
@@ -7489,9 +7506,9 @@ Dentro de GeoMotion Studio puede utilizarse para asistir procesos creativos.
 
 ---
 
-# G.15 Modelo Local
+## G.15 Modelo Local
 
-## Definición
+### Definición
 
 Modelo de Inteligencia Artificial ejecutado dentro de una infraestructura propia.
 
@@ -7503,9 +7520,9 @@ Ventajas:
 
 ---
 
-# G.16 Sistema Multi-Modelo
+## G.16 Sistema Multi-Modelo
 
-## Definición
+### Definición
 
 Arquitectura donde diferentes modelos trabajan conjuntamente según sus fortalezas.
 
@@ -7529,9 +7546,9 @@ GeoMotion Studio
 
 ---
 
-# G.17 Sistema Multi-Agente
+## G.17 Sistema Multi-Agente
 
-## Definición
+### Definición
 
 Arquitectura donde diferentes agentes especializados colaboran para alcanzar un objetivo común.
 
@@ -7555,9 +7572,9 @@ Resultado Final
 
 ---
 
-# G.18 Prompt
+## G.18 Prompt
 
-## Definición
+### Definición
 
 Instrucción proporcionada a un sistema de Inteligencia Artificial para orientar su comportamiento.
 
@@ -7571,9 +7588,9 @@ Ejemplos:
 
 ---
 
-# G.19 Context Window
+## G.19 Context Window
 
-## Definición
+### Definición
 
 Cantidad de información que una capacidad de IA puede considerar simultáneamente durante una interacción.
 
@@ -7586,9 +7603,9 @@ Puede incluir:
 
 ---
 
-# G.20 Trazabilidad de IA
+## G.20 Trazabilidad de IA
 
-## Definición
+### Definición
 
 Capacidad de conocer cómo se generó un resultado mediante Inteligencia Artificial.
 
@@ -7603,9 +7620,9 @@ Incluye:
 
 ---
 
-# G.21 Auditoría de IA
+## G.21 Auditoría de IA
 
-## Definición
+### Definición
 
 Proceso de revisión del comportamiento de una capacidad inteligente.
 
@@ -7617,9 +7634,9 @@ Permite analizar:
 
 ---
 
-# G.22 Gobernanza de IA
+## G.22 Gobernanza de IA
 
-## Definición
+### Definición
 
 Conjunto de principios, reglas y procesos destinados a administrar el uso responsable de Inteligencia Artificial.
 
@@ -7633,9 +7650,9 @@ Incluye:
 
 ---
 
-# G.23 Versionado de IA
+## G.23 Versionado de IA
 
-## Definición
+### Definición
 
 Proceso mediante el cual se gestionan las diferentes evoluciones de capacidades, modelos, configuraciones y componentes inteligentes.
 
@@ -7648,9 +7665,9 @@ Incluye:
 
 ---
 
-# G.24 Línea Base de IA
+## G.24 Línea Base de IA
 
-## Definición
+### Definición
 
 Estado aprobado y controlado de una capacidad inteligente dentro de un momento determinado.
 
@@ -7664,9 +7681,9 @@ Puede incluir:
 
 ---
 
-# G.25 Evaluación de IA
+## G.25 Evaluación de IA
 
-## Definición
+### Definición
 
 Proceso destinado a determinar la calidad y comportamiento de una capacidad inteligente.
 
@@ -7680,9 +7697,9 @@ Puede medir:
 
 ---
 
-# G.26 Observabilidad de IA
+## G.26 Observabilidad de IA
 
-## Definición
+### Definición
 
 Capacidad de analizar el funcionamiento interno de una operación inteligente.
 
@@ -7694,9 +7711,9 @@ Permite conocer:
 
 ---
 
-# G.27 IA-Ready
+## G.27 IA-Ready
 
-## Definición
+### Definición
 
 Característica de una arquitectura diseñada para integrar Inteligencia Artificial de manera natural.
 
@@ -7709,9 +7726,9 @@ Una plataforma IA-Ready posee:
 
 ---
 
-# G.28 Ecosistema Inteligente
+## G.28 Ecosistema Inteligente
 
-## Definición
+### Definición
 
 Conjunto formado por:
 
@@ -7726,7 +7743,7 @@ Su objetivo es permitir la evolución continua de la plataforma.
 
 ---
 
-# G.29 Resumen
+## G.29 Resumen
 
 El presente glosario establece un lenguaje común para comprender la Arquitectura de Inteligencia Artificial de GeoMotion Studio.
 

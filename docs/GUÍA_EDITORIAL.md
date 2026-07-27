@@ -388,6 +388,64 @@ Ejemplos:
 
 La utilización de nuevos prefijos deberá documentarse en esta guía cuando se incorporen nuevas familias documentales al proyecto.
 
+### Gobernanza de las familias documentales
+
+La presente Guía Editorial constituye la autoridad institucional para la nomenclatura y clasificación de las familias documentales de GeoMotion Studio.
+
+Toda nueva familia documental que se incorpore al proyecto deberá registrarse en esta guía antes de su utilización generalizada.
+
+Para cada familia deberán definirse, como mínimo:
+
+- Prefijo oficial.
+- Propósito.
+- Ámbito de aplicación.
+- Responsable de mantenimiento.
+- Convención de numeración.
+- Relación con el resto del ecosistema documental.
+
+Ejemplos de familias documentales presentes o potenciales:
+
+| Prefijo | Familia documental | Estado |
+|----------|--------------------|--------|
+| DOC | Manual de Ingeniería | Vigente |
+| ADR | Architecture Decision Records | Vigente |
+| INT | Documentación interna de Dirección Técnica | Vigente |
+| SPEC | Especificaciones técnicas | Reservado para evolución futura |
+| RFC | Propuestas de cambio arquitectónico o técnico | Reservado para evolución futura |
+| MVA | Documentación de Minimum Viable Architecture | Reservado para evolución futura |
+
+La incorporación de una familia documental no implica necesariamente su adopción inmediata. Las familias marcadas como "Reservado para evolución futura" constituyen nomenclaturas disponibles para futuras necesidades del proyecto y deberán formalizarse mediante la documentación correspondiente antes de entrar en uso.
+
+
+## Documentos oficiales del Manual de Ingeniería
+
+El **Manual de Ingeniería** constituye una familia documental propia y utiliza una numeración oficial independiente.
+
+La nomenclatura oficial es:
+
+| Formato | Descripción |
+|----------|-------------|
+| `DOC-000` | Documento oficial del Manual de Ingeniería. |
+| `DOC-001` | Documento oficial del Manual de Ingeniería. |
+| `DOC-002` | Documento oficial del Manual de Ingeniería. |
+| `...` | Numeración secuencial. |
+
+Reglas:
+
+- Todos los documentos oficiales del Manual deberán identificarse mediante el prefijo `DOC`.
+- La numeración será secuencial, comenzando en `DOC-000`.
+- El identificador forma parte del documento y deberá mantenerse estable durante toda su vida útil.
+- El cambio de versión de un documento no modifica su identificador.
+- La reutilización de identificadores está prohibida.
+- La referencia cruzada entre documentos deberá utilizar siempre el identificador oficial (`DOC-000`, `DOC-001`, etc.) además del nombre cuando resulte conveniente.
+
+Ejemplos:
+
+- DOC-000 — Manual de Ingeniería
+- DOC-001 — Documento oficial
+- DOC-018 — Documento oficial
+
+
 ---
 
 # Versionado de la Documentación

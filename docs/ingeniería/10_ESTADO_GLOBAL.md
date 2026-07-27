@@ -120,6 +120,7 @@ Posteriormente se describe la clasificación del estado, su organización, los p
 Finalmente se establecen los principios que regulan la evolución de esta arquitectura y su integración con el resto de la documentación del proyecto.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Arquitectura del Estado Global
 
 ## 1.1 Objetivo
@@ -200,6 +201,7 @@ La Arquitectura del Estado Global proporciona el marco conceptual que regula la 
 Sus principios garantizan una gestión consistente, escalable y mantenible del estado de la aplicación, proporcionando una base sólida para el desarrollo presente y futuro del Frontend.
 
 ---
+
 # CAPÍTULO 2 · El Estado como Recurso Arquitectónico
 
 ## 2.1 Objetivo
@@ -291,6 +293,7 @@ El estado representa la información que describe el funcionamiento de GeoMotion
 Su correcta organización constituye uno de los pilares de la arquitectura del Frontend, permitiendo construir una plataforma consistente, escalable y preparada para evolucionar junto con el proyecto.
 
 ---
+
 # CAPÍTULO 3 · Clasificación del Estado
 
 ## 3.1 Objetivo
@@ -370,6 +373,7 @@ La clasificación arquitectónica del estado permite organizar la información d
 Esta organización favorece la claridad del sistema, reduce el acoplamiento entre módulos y proporciona una base sólida para la evolución del Frontend.
 
 ---
+
 # CAPÍTULO 4 · Organización del Estado
 
 ## 4.1 Objetivo
@@ -445,6 +449,7 @@ La organización del estado proporciona la estructura sobre la cual se administr
 La utilización de dominios, áreas funcionales y principios de modularidad garantiza una arquitectura preparada para evolucionar de forma ordenada, manteniendo la coherencia y reduciendo el acoplamiento entre los distintos módulos de la plataforma.
 
 ---
+
 # CAPÍTULO 5 · Flujo del Estado
 
 ## 5.1 Objetivo
@@ -528,6 +533,7 @@ El flujo del estado define la forma en que la información circula, evoluciona y
 La aplicación de principios como claridad, predictibilidad, coordinación y sincronización permite construir una arquitectura robusta, preparada para soportar el crecimiento continuo de la plataforma sin comprometer la calidad de la información.
 
 ---
+
 # CAPÍTULO 6 · Gestión del Estado
 
 ## 6.1 Objetivo
@@ -625,6 +631,7 @@ La gestión del estado establece las normas generales para administrar la inform
 La definición clara de responsabilidades, mecanismos de acceso, criterios de modificación y principios de gobernanza garantiza una arquitectura consistente, mantenible y preparada para evolucionar junto con la plataforma.
 
 ---
+
 # CAPÍTULO 7 · Persistencia del Estado
 
 ## 7.1 Objetivo
@@ -734,6 +741,7 @@ La persistencia del estado permite conservar aquella información necesaria para
 Su utilización responde a criterios arquitectónicos relacionados con la utilidad, la coherencia y el ciclo de vida de los datos, asegurando una gestión eficiente y sostenible de la información compartida por la plataforma.
 
 ---
+
 # CAPÍTULO 8 · Estado y Componentes
 
 ## 8.1 Objetivo
@@ -815,6 +823,7 @@ La relación entre la Arquitectura del Estado Global y la Arquitectura de Compon
 El estado administra la información compartida por la plataforma, mientras que los componentes la representan dentro de la interfaz de usuario, permitiendo construir un Frontend desacoplado, reutilizable y consistente.
 
 ---
+
 # CAPÍTULO 9 · Estado y Experiencia de Usuario
 
 ## 9.1 Objetivo
@@ -884,6 +893,7 @@ La Arquitectura del Estado Global desempeña un papel esencial en la construcci�
 La correcta administración del estado permite preservar el contexto de trabajo, garantizar la coherencia de la información y proporcionar una interacción continua, estable y predecible en toda la plataforma.
 
 ---
+
 # CAPÍTULO 10 · Evolución de la Arquitectura del Estado
 
 ## 10.1 Objetivo
@@ -957,6 +967,7 @@ La evolución de la Arquitectura del Estado Global constituye un proceso continu
 La aplicación de principios como escalabilidad, modularidad, extensibilidad, compatibilidad y gobernanza permite que la arquitectura pueda crecer de forma controlada, manteniendo la coherencia y la calidad del sistema.
 
 ---
+
 # CAPÍTULO 11 · Relación con la Arquitectura General
 
 ## 11.1 Objetivo
@@ -1032,6 +1043,7 @@ La Arquitectura del Estado Global mantiene una relación directa con el resto de
 La definición clara de responsabilidades y la colaboración entre disciplinas permiten construir una plataforma modular, consistente y preparada para evolucionar sin perder coherencia arquitectónica.
 
 ---
+
 # CAPÍTULO 12 · Cierre
 
 ## 12.1 Síntesis

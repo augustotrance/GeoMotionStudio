@@ -72,6 +72,7 @@ El Manual de Ingeniería se fundamenta en los siguientes principios:
 - Documentación como parte del software.
 - Evolución continua.
 - Simplicidad cuando sea posible.
+- El modelo arquitectónico constituye el conocimiento principal; los inventarios y catálogos son evidencia de su aplicación, no su finalidad.
 
 Estos principios orientan tanto el diseño de la plataforma como la elaboración y mantenimiento de este Manual.
 

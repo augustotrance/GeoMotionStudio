@@ -102,13 +102,14 @@ Posteriormente se describen los plugins internos y externos, los contratos públ
 Finalmente se analizan los mecanismos de gobernanza que garantizan la estabilidad de la arquitectura y permiten su evolución a largo plazo.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Arquitectura de Extensibilidad
 
 ## 1.1 Objetivo
 
-Establecer los principios conceptuales que sustentan la Arquitectura de Extensibilidad de GeoMotion Studio, definiendo su propósito, sus responsabilidades y el papel que desempeña dentro de la arquitectura general de la plataforma.
+Establecer los principios conceptuales que sustentan la Arquitectura de Extensibilidad de GeoMotion Studio, definiendo su propósito, sus responsabilidades y su relación con la arquitectura general de la plataforma.
 
-Este capítulo proporciona el marco de referencia necesario para comprender cómo GeoMotion Studio puede incorporar nuevas capacidades funcionales de manera controlada, preservando la estabilidad del núcleo y favoreciendo la evolución sostenible del sistema.
+Este capítulo proporciona el marco de referencia necesario para comprender cómo GeoMotion Studio incorpora nuevas capacidades de manera controlada, preservando la estabilidad de la arquitectura, la independencia entre módulos y la evolución sostenible del sistema.
 
 ---
 
@@ -116,11 +117,13 @@ Este capítulo proporciona el marco de referencia necesario para comprender cóm
 
 La Arquitectura de Extensibilidad define el conjunto de principios que regulan la incorporación, integración y evolución de nuevas capacidades dentro de GeoMotion Studio.
 
-Su propósito consiste en permitir que la plataforma evolucione de forma continua mediante componentes independientes, evitando que el crecimiento funcional implique un incremento permanente de las responsabilidades del núcleo del sistema.
+Su propósito consiste en permitir que la plataforma evolucione de forma continua mediante componentes extensibles que colaboran con la arquitectura existente sin alterar las responsabilidades del núcleo ni de los módulos arquitectónicos consolidados.
 
-Desde una perspectiva arquitectónica, la extensibilidad constituye el mecanismo que separa la infraestructura común de la plataforma de las capacidades que pueden evolucionar de forma autónoma.
+Desde una perspectiva arquitectónica, la extensibilidad constituye un mecanismo de evolución de la plataforma y no una alternativa a su organización modular.
 
-Por ello, esta arquitectura no se limita a definir un modelo para el desarrollo de plugins, sino que establece los criterios que permiten construir una plataforma preparada para crecer de forma sostenible, manteniendo una separación clara entre el núcleo, las extensiones y los contratos que regulan su interacción.
+Las extensiones incorporan capacidades adicionales utilizando exclusivamente los contratos arquitectónicos públicos definidos por la plataforma, preservando la separación entre la arquitectura estable y las funcionalidades que evolucionan de forma independiente.
+
+La Arquitectura de Extensibilidad no modifica la Arquitectura Modular de GeoMotion Studio. La complementa, proporcionando un modelo controlado para incorporar nuevas capacidades sin comprometer la coherencia del sistema.
 
 ---
 
@@ -128,25 +131,41 @@ Por ello, esta arquitectura no se limita a definir un modelo para el desarrollo 
 
 La Arquitectura de Extensibilidad se desarrolla conforme a un conjunto de principios que orientan todas las decisiones relacionadas con la evolución funcional de la plataforma.
 
-### Núcleo Estable
+### Arquitectura estable
 
-El núcleo deberá concentrar únicamente las responsabilidades fundamentales de la plataforma, proporcionando una infraestructura sólida y predecible para el resto del sistema.
+La organización modular de GeoMotion Studio constituye la base permanente sobre la cual evolucionan las capacidades extensibles.
 
-### Evolución Independiente
+La incorporación de extensiones no modifica la estructura arquitectónica aprobada.
 
-Las nuevas capacidades deberán incorporarse preferentemente mediante componentes independientes, permitiendo que su evolución no dependa de modificaciones continuas del núcleo.
+### Evolución independiente
 
-### Contratos Públicos
+Las nuevas capacidades deberán incorporarse preferentemente mediante componentes independientes cuya evolución no requiera modificar los módulos existentes.
 
-Toda interacción entre el núcleo y las extensiones deberá realizarse mediante contratos públicos claramente definidos, evitando dependencias sobre mecanismos internos de la plataforma.
+### Integración mediante contratos
 
-### Bajo Acoplamiento
+Toda interacción entre las extensiones y la plataforma deberá realizarse exclusivamente mediante contratos arquitectónicos públicos.
 
-La arquitectura deberá minimizar las dependencias entre el núcleo y las extensiones, favoreciendo una evolución independiente de ambos.
+No se permitirán dependencias sobre implementaciones internas.
 
-### Evolución Sostenible
+### Bajo acoplamiento
 
-El crecimiento funcional de GeoMotion Studio deberá preservar la estabilidad de la arquitectura y facilitar el mantenimiento del sistema durante todo su ciclo de vida.
+La arquitectura minimizará las dependencias entre módulos, núcleo y extensiones, favoreciendo su evolución independiente.
+
+### Alta cohesión
+
+Cada extensión deberá concentrarse en un conjunto claramente definido de responsabilidades.
+
+La incorporación de capacidades heterogéneas dentro de una misma extensión deberá evitarse.
+
+### Encapsulación
+
+Las decisiones internas de implementación permanecerán encapsuladas dentro de cada extensión.
+
+Únicamente los contratos arquitectónicos formarán parte de la superficie pública de integración.
+
+### Evolución sostenible
+
+El crecimiento funcional de GeoMotion Studio deberá preservar la estabilidad de la arquitectura, la mantenibilidad del sistema y la compatibilidad con los mecanismos oficiales de evolución.
 
 ---
 
@@ -155,92 +174,159 @@ El crecimiento funcional de GeoMotion Studio deberá preservar la estabilidad de
 La Arquitectura de Extensibilidad es responsable de definir:
 
 - Los principios generales que regulan la evolución funcional de la plataforma.
-- La organización conceptual del modelo de extensiones.
-- La relación entre el núcleo y los componentes extensibles.
-- Los contratos arquitectónicos que permiten la integración de nuevas capacidades.
-- Los criterios de aislamiento y compatibilidad entre extensiones y plataforma.
-- Los principios que regulan la evolución del ecosistema de extensiones.
+- El modelo conceptual de extensiones.
+- La relación entre la arquitectura estable y las capacidades extensibles.
+- Los principios de integración mediante contratos arquitectónicos.
+- Los criterios de aislamiento entre extensiones y plataforma.
+- Los principios de compatibilidad y evolución del ecosistema de extensiones.
 
-No forma parte del alcance de este documento definir APIs específicas, SDKs, mecanismos de carga dinámica, formatos de empaquetado o detalles particulares de implementación.
+No forma parte del alcance de este documento definir:
+
+- APIs específicas.
+- SDKs.
+- Protocolos de comunicación.
+- Mecanismos de carga dinámica.
+- Formatos de empaquetado.
+- Tecnologías concretas de implementación.
 
 ---
 
 ## 1.5 Relación con la Arquitectura General
 
-La Arquitectura de Extensibilidad constituye una disciplina transversal dentro de la arquitectura de GeoMotion Studio.
+La Arquitectura de Extensibilidad constituye una arquitectura transversal que complementa la Arquitectura General de GeoMotion Studio.
 
-Mientras la Arquitectura General define la organización global del sistema, la Arquitectura del Estado Global administra la información, la Arquitectura de Componentes organiza la interfaz, la Arquitectura de Renderizado establece los principios de representación visual y la Arquitectura Cartográfica define la organización del territorio digital, la Arquitectura de Extensibilidad proporciona el modelo que permite incorporar nuevas capacidades sobre todas estas disciplinas sin alterar sus principios fundamentales.
+La Arquitectura Modular define la organización del sistema mediante módulos independientes.
 
-La coordinación entre estas arquitecturas garantiza una plataforma modular, coherente y preparada para evolucionar de forma sostenible.
+La Arquitectura de Contratos establece las reglas de comunicación entre dichos módulos.
+
+La Arquitectura de Extensibilidad define cómo pueden incorporarse nuevas capacidades respetando ambas arquitecturas.
+
+En consecuencia:
+
+- Los módulos arquitectónicos continúan siendo los propietarios de sus respectivos dominios funcionales.
+- Las extensiones colaboran con dichos módulos mediante contratos arquitectónicos públicos.
+- Ninguna extensión modifica las responsabilidades arquitectónicas de un módulo existente.
+
+La coordinación entre estas arquitecturas garantiza una plataforma preparada para evolucionar sin perder coherencia estructural.
 
 ---
 
-## 1.6 Resumen
+## 1.6 Primera decisión arquitectónica
+
+### ADR-001 · La extensibilidad complementa la arquitectura, no la sustituye
+
+**Estado:** Aprobada.
+
+La Arquitectura de Extensibilidad constituye un mecanismo para incorporar nuevas capacidades respetando la Arquitectura Modular y la Arquitectura de Contratos de GeoMotion Studio.
+
+Las extensiones no redefinen la organización arquitectónica del sistema ni establecen mecanismos alternativos de integración.
+
+Toda capacidad extensible deberá incorporarse utilizando exclusivamente los contratos arquitectónicos oficialmente publicados y preservando la independencia entre módulos.
+
+---
+
+## 1.7 Resumen
 
 La Arquitectura de Extensibilidad proporciona el marco conceptual que regula la evolución funcional de GeoMotion Studio.
 
-Sus principios permiten separar las responsabilidades permanentes del núcleo de aquellas capacidades que pueden desarrollarse de forma independiente, estableciendo una arquitectura preparada para crecer sin comprometer la estabilidad, la coherencia y la sostenibilidad de la plataforma.
+Su finalidad consiste en permitir la incorporación de nuevas capacidades mediante componentes independientes que colaboran con la plataforma exclusivamente a través de contratos arquitectónicos públicos.
+
+Este enfoque preserva la estabilidad de la Arquitectura Modular, mantiene el bajo acoplamiento entre componentes y garantiza una evolución sostenible de la plataforma durante todo su ciclo de vida.
 
 ---
+
 # CAPÍTULO 2 · El Núcleo de la Plataforma
 
 ## 2.1 Objetivo
 
 Establecer el papel del núcleo dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, definiendo sus responsabilidades, sus límites y los principios que regulan su relación con las extensiones.
 
-Este capítulo proporciona el marco conceptual necesario para comprender por qué el núcleo constituye el elemento más estable de la plataforma y cómo esta estabilidad condiciona la evolución del resto del ecosistema.
+Este capítulo proporciona el marco conceptual necesario para comprender por qué el núcleo constituye el elemento más estable de la plataforma y cómo dicha estabilidad permite la evolución controlada del resto del ecosistema.
 
 ---
 
 ## 2.2 El Núcleo de la Plataforma
 
-El núcleo constituye el conjunto de capacidades fundamentales sobre las cuales se construye GeoMotion Studio.
+El núcleo constituye el conjunto de capacidades arquitectónicas fundamentales sobre las cuales se construye GeoMotion Studio.
 
-Su propósito consiste en proporcionar la infraestructura común necesaria para que el resto de la plataforma pueda operar de forma consistente, independientemente de las funcionalidades específicas que incorporen las distintas extensiones.
+Su propósito consiste en proporcionar la infraestructura común, los servicios compartidos y los contratos arquitectónicos públicos necesarios para que los módulos y las extensiones puedan colaborar de forma consistente.
 
-Desde una perspectiva arquitectónica, el núcleo representa el punto de mayor estabilidad del sistema. Mientras las capacidades funcionales evolucionan continuamente para responder a nuevas necesidades, el núcleo permanece orientado a garantizar la continuidad de los servicios fundamentales que hacen posible el funcionamiento de toda la plataforma.
+Desde una perspectiva arquitectónica, el núcleo representa la parte más estable de la plataforma.
 
-Por ello, el núcleo no debe entenderse como el lugar donde reside toda la funcionalidad de GeoMotion Studio. Su responsabilidad consiste en ofrecer una base arquitectónica sólida sobre la cual puedan desarrollarse capacidades adicionales sin comprometer la coherencia del sistema.
+Mientras las capacidades funcionales evolucionan mediante módulos y extensiones, el núcleo preserva los mecanismos fundamentales que garantizan el funcionamiento del sistema.
+
+En consecuencia, el núcleo no debe convertirse en el lugar donde se incorporan nuevas funcionalidades por defecto.
+
+Su responsabilidad consiste en ofrecer una base arquitectónica sólida, estable y preparada para sostener la evolución de la plataforma.
 
 ---
 
 ## 2.3 Principios Fundamentales
 
-La organización del núcleo se desarrolla conforme a un conjunto de principios que orientan su evolución y delimitan sus responsabilidades.
+La organización del núcleo se desarrolla conforme a un conjunto de principios que delimitan su evolución.
 
 ### Estabilidad
 
-El núcleo deberá evolucionar de forma controlada, preservando la compatibilidad y la continuidad de los servicios que ofrece al resto de la plataforma.
+El núcleo deberá evolucionar de forma controlada, preservando la continuidad de los contratos arquitectónicos que ofrece al resto del sistema.
 
-### Responsabilidad Limitada
+---
 
-El núcleo incorporará únicamente aquellas capacidades que resulten esenciales para el funcionamiento general del sistema.
+### Responsabilidad limitada
 
-### Servicios Compartidos
+El núcleo únicamente incorporará aquellas capacidades que resulten esenciales para el funcionamiento general de la plataforma.
 
-Las funcionalidades comunes deberán ofrecerse como servicios reutilizables para todas las extensiones, evitando duplicación de responsabilidades.
+Las capacidades especializadas deberán desarrollarse mediante módulos o extensiones cuando resulte arquitectónicamente adecuado.
+
+---
+
+### Servicios compartidos
+
+Las capacidades comunes deberán ofrecerse como servicios reutilizables mediante contratos arquitectónicos públicos.
+
+---
 
 ### Independencia
 
 El núcleo no dependerá de ninguna extensión para garantizar su funcionamiento.
 
-### Evolución Controlada
+Las extensiones podrán depender del núcleo, pero nunca a la inversa.
 
-Toda modificación del núcleo deberá evaluarse considerando su impacto sobre el conjunto del ecosistema de extensiones.
+---
+
+### Encapsulación
+
+Las implementaciones internas del núcleo permanecerán ocultas.
+
+Únicamente los contratos arquitectónicos formarán parte de su superficie pública.
+
+---
+
+### Evolución controlada
+
+Toda modificación del núcleo deberá evaluarse considerando su impacto sobre:
+
+- Los módulos arquitectónicos.
+- Los contratos públicos.
+- Las extensiones existentes.
+- La sostenibilidad de la plataforma.
 
 ---
 
 ## 2.4 Responsabilidades
 
-El núcleo de la plataforma es responsable de definir y proporcionar:
+El núcleo es responsable de proporcionar:
 
-- Los servicios fundamentales utilizados por el resto del sistema.
-- Los contratos públicos que permiten la integración de extensiones.
-- La infraestructura necesaria para la ejecución de componentes extensibles.
-- Los mecanismos generales de configuración, seguridad y administración compartidos por la plataforma.
-- Las capacidades comunes que forman parte de la identidad permanente de GeoMotion Studio.
+- Los servicios fundamentales de la plataforma.
+- Los contratos arquitectónicos públicos.
+- La infraestructura común utilizada por módulos y extensiones.
+- Los mecanismos compartidos de configuración, seguridad y administración.
+- Las capacidades permanentes que forman parte de la identidad arquitectónica de GeoMotion Studio.
 
-No forma parte de las responsabilidades del núcleo incorporar funcionalidades específicas que puedan desarrollarse como extensiones independientes.
+No forma parte de las responsabilidades del núcleo:
+
+- Incorporar funcionalidades especializadas.
+- Resolver necesidades particulares de un dominio funcional.
+- Implementar capacidades que puedan evolucionar independientemente como extensiones.
 
 ---
 
@@ -248,40 +334,63 @@ No forma parte de las responsabilidades del núcleo incorporar funcionalidades e
 
 La relación entre el núcleo y las extensiones constituye uno de los principios fundamentales de la Arquitectura de Extensibilidad.
 
-El núcleo proporciona la infraestructura, los contratos y los servicios sobre los cuales operan las extensiones.
+El núcleo proporciona:
 
-Las extensiones amplían las capacidades funcionales de la plataforma utilizando exclusivamente dichos contratos, sin acceder directamente a mecanismos internos del núcleo.
+- Infraestructura.
+- Servicios comunes.
+- Contratos arquitectónicos públicos.
 
-Esta separación garantiza que ambos elementos puedan evolucionar de manera independiente, preservando la estabilidad de la plataforma y favoreciendo la sostenibilidad del ecosistema.
+Las extensiones amplían las capacidades de la plataforma utilizando exclusivamente dichos contratos.
+
+En ningún caso podrán acceder directamente a implementaciones internas ni modificar las responsabilidades arquitectónicas del núcleo.
+
+Esta separación garantiza que ambos puedan evolucionar de manera independiente preservando la estabilidad de la plataforma.
+
+---
+
+## 2.6 Segunda decisión arquitectónica
+
+### ADR-002 · El núcleo permanece estable y las capacidades evolucionan mediante extensiones
+
+**Estado:** Aprobada.
+
+El núcleo de GeoMotion Studio constituye la infraestructura permanente de la plataforma.
+
+Las nuevas capacidades deberán incorporarse preferentemente mediante extensiones que colaboren utilizando contratos arquitectónicos públicos, evitando incrementar innecesariamente las responsabilidades del núcleo.
 
 ---
 
-## 2.6 Resumen
+## 2.7 Resumen
 
-El núcleo constituye la base estable sobre la cual se desarrolla toda la Arquitectura de Extensibilidad de GeoMotion Studio.
+El núcleo constituye la base arquitectónica estable sobre la que evoluciona GeoMotion Studio.
 
-Su función no consiste en concentrar toda la funcionalidad del sistema, sino en proporcionar la infraestructura común que permite incorporar nuevas capacidades mediante componentes independientes. Esta separación entre infraestructura y evolución funcional constituye uno de los principios fundamentales de la arquitectura de la plataforma.
+Su función consiste en proporcionar infraestructura común, servicios compartidos y contratos arquitectónicos públicos, manteniendo una clara separación entre las capacidades permanentes de la plataforma y aquellas que pueden evolucionar mediante extensiones independientes.
+
+Esta organización preserva el bajo acoplamiento, facilita la mantenibilidad y permite el crecimiento sostenible del sistema.
 
 ---
+
 # CAPÍTULO 3 · Modelo de Extensiones
 
 ## 3.1 Objetivo
 
 Definir el modelo conceptual de extensiones utilizado por GeoMotion Studio, estableciendo los principios que regulan la incorporación de nuevas capacidades funcionales dentro de la plataforma.
 
-Este capítulo proporciona el marco arquitectónico necesario para comprender cómo las extensiones permiten ampliar las funcionalidades del sistema preservando la estabilidad, la modularidad y la independencia del núcleo.
+Este capítulo proporciona el marco arquitectónico necesario para comprender cómo las extensiones permiten ampliar las capacidades del sistema preservando la estabilidad de la arquitectura, la independencia de los módulos y la evolución sostenible de la plataforma.
 
 ---
 
 ## 3.2 El Modelo de Extensiones
 
-Una extensión constituye un componente arquitectónico diseñado para incorporar nuevas capacidades a GeoMotion Studio sin modificar directamente el núcleo de la plataforma.
+Una extensión constituye un componente arquitectónico diseñado para incorporar nuevas capacidades a GeoMotion Studio sin modificar la arquitectura estable de la plataforma.
 
-Cada extensión representa una unidad funcional independiente que interactúa con el sistema exclusivamente mediante los contratos públicos definidos por la Arquitectura de Extensibilidad.
+Cada extensión representa una unidad funcional independiente que interactúa con el sistema exclusivamente mediante los contratos arquitectónicos públicos definidos para los puntos de extensión correspondientes.
 
-Este modelo permite que nuevas funcionalidades puedan desarrollarse, instalarse, evolucionar o retirarse de forma controlada, reduciendo el impacto sobre el resto de la plataforma y favoreciendo un crecimiento modular del sistema.
+Las extensiones constituyen el mecanismo previsto para la evolución funcional de la plataforma.
 
-Desde esta perspectiva, las extensiones no representan excepciones dentro de la arquitectura, sino el mecanismo previsto para su evolución.
+Su incorporación permite añadir, ampliar o especializar capacidades sin alterar las responsabilidades de los módulos arquitectónicos existentes ni del núcleo de la plataforma.
+
+Desde esta perspectiva, una extensión no representa una excepción dentro de la arquitectura, sino una consecuencia natural de una arquitectura diseñada para evolucionar.
 
 ---
 
@@ -289,25 +398,47 @@ Desde esta perspectiva, las extensiones no representan excepciones dentro de la 
 
 El modelo de extensiones se desarrolla conforme a un conjunto de principios que regulan la incorporación de nuevos componentes a la plataforma.
 
-### Independencia Funcional
+### Independencia funcional
 
-Cada extensión deberá constituir una unidad funcional autónoma, con responsabilidades claramente definidas y un alcance específico.
+Cada extensión deberá representar una unidad funcional claramente delimitada, con responsabilidades específicas y un alcance bien definido.
 
-### Integración Mediante Contratos
+---
 
-Toda interacción con el núcleo deberá realizarse exclusivamente utilizando los contratos públicos definidos por la plataforma.
+### Integración mediante contratos
+
+Toda interacción con la plataforma deberá realizarse exclusivamente mediante contratos arquitectónicos públicos.
+
+Las extensiones no podrán depender de implementaciones internas ni establecer mecanismos alternativos de integración.
+
+---
 
 ### Aislamiento
 
-Las extensiones deberán minimizar las dependencias entre sí, evitando acoplamientos que comprometan la evolución independiente de los distintos componentes.
+Las extensiones deberán minimizar las dependencias entre sí.
+
+La incorporación, actualización o eliminación de una extensión no deberá afectar innecesariamente al resto del ecosistema.
+
+---
 
 ### Modularidad
 
-Las nuevas capacidades deberán incorporarse como módulos independientes siempre que resulte compatible con la arquitectura general del sistema.
+Las nuevas capacidades deberán incorporarse como componentes independientes, respetando los límites definidos por la Arquitectura Modular.
 
-### Evolución Autónoma
+Una extensión no sustituye a un módulo arquitectónico ni modifica sus responsabilidades.
 
-Cada extensión podrá evolucionar de manera independiente mientras mantenga la compatibilidad con los contratos establecidos por la plataforma.
+---
+
+### Evolución autónoma
+
+Cada extensión podrá evolucionar de forma independiente siempre que mantenga la compatibilidad con los contratos arquitectónicos oficialmente publicados.
+
+---
+
+### Encapsulación
+
+Las decisiones internas de implementación permanecerán encapsuladas dentro de cada extensión.
+
+Únicamente sus puntos de integración formarán parte de la superficie pública de colaboración con la plataforma.
 
 ---
 
@@ -315,55 +446,76 @@ Cada extensión podrá evolucionar de manera independiente mientras mantenga la 
 
 El modelo de extensiones establece los criterios generales para:
 
-- Incorporar nuevas funcionalidades a la plataforma.
-- Organizar capacidades funcionales independientes.
-- Favorecer la reutilización de componentes.
-- Reducir el acoplamiento entre funcionalidades.
-- Facilitar la evolución modular del sistema.
-- Preservar la estabilidad del núcleo durante el crecimiento de la plataforma.
+- Incorporar nuevas capacidades funcionales.
+- Organizar componentes independientes.
+- Especializar funcionalidades existentes.
+- Favorecer la reutilización de servicios comunes.
+- Reducir el acoplamiento entre capacidades.
+- Preservar la estabilidad de la arquitectura durante la evolución del sistema.
 
-No forma parte del alcance de este capítulo definir tipos específicos de extensiones ni sus mecanismos particulares de implementación.
+No forma parte del alcance de este capítulo definir:
 
----
-
-## 3.5 Relación con el Núcleo de la Plataforma
-
-El modelo de extensiones complementa las responsabilidades definidas para el núcleo de GeoMotion Studio.
-
-Mientras el núcleo proporciona la infraestructura común y los servicios fundamentales, las extensiones representan el mecanismo mediante el cual la plataforma incorpora nuevas capacidades funcionales.
-
-Ambos elementos mantienen responsabilidades claramente diferenciadas y cooperan mediante contratos públicos que garantizan una integración estable, predecible y desacoplada.
-
-Esta separación permite que el crecimiento funcional de la plataforma no implique una expansión continua del núcleo, preservando la sostenibilidad de la arquitectura a largo plazo.
+- Tipos concretos de extensiones.
+- APIs específicas.
+- SDKs.
+- Protocolos de integración.
+- Mecanismos particulares de implementación.
 
 ---
 
-## 3.6 Resumen
+## 3.5 Relación con el Núcleo y los Módulos Arquitectónicos
 
-El modelo de extensiones define la forma en que GeoMotion Studio incorpora nuevas capacidades sin comprometer la estabilidad de su arquitectura.
+El modelo de extensiones complementa la organización arquitectónica de GeoMotion Studio.
 
-Mediante componentes independientes, integrados a través de contratos públicos y organizados conforme a principios de modularidad y bajo acoplamiento, la plataforma establece un mecanismo de evolución preparado para crecer de forma sostenible.
+El núcleo proporciona la infraestructura común y los contratos arquitectónicos públicos.
+
+Los módulos arquitectónicos continúan siendo responsables de sus respectivos dominios funcionales.
+
+Las extensiones incorporan nuevas capacidades colaborando con dichos módulos mediante contratos públicos, sin modificar su organización interna ni asumir responsabilidades que pertenezcan a la arquitectura estable.
+
+Esta separación garantiza que la evolución funcional de la plataforma no implique una expansión continua del núcleo ni una alteración permanente de la Arquitectura Modular.
 
 ---
+
+## 3.6 Tercera decisión arquitectónica
+
+### ADR-003 · Las extensiones constituyen el mecanismo oficial de evolución funcional
+
+**Estado:** Aprobada.
+
+GeoMotion Studio incorpora nuevas capacidades mediante extensiones independientes que colaboran con la plataforma exclusivamente a través de contratos arquitectónicos públicos.
+
+Las extensiones complementan la Arquitectura Modular sin sustituirla y no modifican las responsabilidades del núcleo ni de los módulos arquitectónicos existentes.
+
+---
+
+## 3.7 Resumen
+
+El modelo de extensiones define la forma en que GeoMotion Studio evoluciona funcionalmente sin comprometer la estabilidad de su arquitectura.
+
+Mediante componentes independientes, integrados exclusivamente a través de contratos arquitectónicos públicos y organizados conforme a principios de modularidad, encapsulación y bajo acoplamiento, la plataforma dispone de un mecanismo de evolución sostenible preparado para acompañar su crecimiento a largo plazo.
+
+---
+
 # CAPÍTULO 4 · Plugins Internos
 
 ## 4.1 Objetivo
 
-Definir el papel de los Plugins Internos dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo sus responsabilidades, sus características y los principios que regulan su integración con el núcleo de la plataforma.
+Definir el papel de los Plugins Internos dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo sus responsabilidades, sus límites y los principios que regulan su integración con la plataforma.
 
-Este capítulo proporciona el marco conceptual necesario para comprender cómo la propia plataforma puede evolucionar mediante componentes desacoplados, manteniendo una arquitectura modular y preparada para crecer.
+Este capítulo proporciona el marco conceptual necesario para comprender cómo la propia plataforma puede evolucionar mediante componentes desacoplados, preservando la estabilidad del núcleo, la independencia de los módulos arquitectónicos y la coherencia de la arquitectura.
 
 ---
 
 ## 4.2 Los Plugins Internos
 
-Los Plugins Internos son componentes desarrollados como parte de GeoMotion Studio que amplían las capacidades de la plataforma utilizando el mismo modelo de extensibilidad disponible para el resto del ecosistema.
+Los Plugins Internos son extensiones desarrolladas como parte de GeoMotion Studio que incorporan capacidades funcionales utilizando la misma Arquitectura de Extensibilidad disponible para cualquier otro componente del ecosistema.
 
-Aunque forman parte de la distribución oficial del producto, estos componentes no constituyen el núcleo de la plataforma. Su organización responde a los mismos principios de modularidad, desacoplamiento y evolución independiente que regulan cualquier otra extensión.
+Aunque forman parte de la distribución oficial de la plataforma, no constituyen el núcleo ni modifican la organización de los módulos arquitectónicos.
 
-Esta decisión arquitectónica permite que funcionalidades especializadas permanezcan separadas de la infraestructura fundamental, favoreciendo un crecimiento más ordenado del sistema y reduciendo el impacto de las modificaciones sobre el núcleo.
+Su desarrollo responde a los mismos principios de modularidad, desacoplamiento, encapsulación y evolución independiente que regulan cualquier otra extensión.
 
-Desde esta perspectiva, los Plugins Internos representan la primera aplicación práctica de la propia Arquitectura de Extensibilidad.
+Esta decisión arquitectónica evita que las funcionalidades oficiales incrementen innecesariamente las responsabilidades del núcleo y demuestra que la Arquitectura de Extensibilidad constituye un mecanismo general de evolución de la plataforma.
 
 ---
 
@@ -371,25 +523,45 @@ Desde esta perspectiva, los Plugins Internos representan la primera aplicación 
 
 Los Plugins Internos se desarrollan conforme a un conjunto de principios que orientan su diseño y evolución.
 
-### Mismo Modelo Arquitectónico
+### Mismo modelo arquitectónico
 
-Los Plugins Internos deberán utilizar los mismos mecanismos de integración que cualquier otra extensión de la plataforma.
+Los Plugins Internos deberán utilizar exactamente los mismos mecanismos de integración disponibles para cualquier otra extensión.
 
-### Separación del Núcleo
+La arquitectura no establecerá mecanismos privilegiados para las funcionalidades oficiales.
 
-Las funcionalidades que no formen parte de las responsabilidades esenciales del núcleo deberán implementarse preferentemente como Plugins Internos.
+---
+
+### Separación del núcleo
+
+Las capacidades que no formen parte de las responsabilidades permanentes del núcleo deberán implementarse preferentemente como Plugins Internos cuando su naturaleza arquitectónica lo permita.
+
+---
+
+### Respeto por la Arquitectura Modular
+
+Los Plugins Internos no modifican las responsabilidades de los módulos arquitectónicos existentes.
+
+Su colaboración con la plataforma se realizará mediante contratos arquitectónicos públicos.
+
+---
 
 ### Reutilización
 
-Los servicios proporcionados por el núcleo deberán reutilizarse antes de incorporar nuevas capacidades equivalentes dentro de un plugin.
+Los Plugins Internos deberán reutilizar los servicios y contratos proporcionados por la plataforma antes de incorporar capacidades equivalentes.
 
-### Independencia Evolutiva
+---
 
-Los Plugins Internos podrán evolucionar de manera independiente siempre que mantengan la compatibilidad con los contratos públicos establecidos por la plataforma.
+### Independencia evolutiva
 
-### Modularidad
+Cada Plugin Interno podrá evolucionar de manera independiente mientras preserve la compatibilidad con los contratos arquitectónicos oficialmente publicados.
 
-Cada plugin deberá representar una unidad funcional claramente definida, evitando concentrar responsabilidades heterogéneas dentro de un mismo componente.
+---
+
+### Alta cohesión
+
+Cada Plugin Interno deberá representar una capacidad claramente definida.
+
+La concentración de responsabilidades heterogéneas dentro de un mismo plugin deberá evitarse.
 
 ---
 
@@ -399,50 +571,74 @@ Los Plugins Internos son responsables de:
 
 - Incorporar funcionalidades oficiales de la plataforma.
 - Implementar capacidades especializadas que no pertenecen al núcleo.
-- Reutilizar la infraestructura común proporcionada por el sistema.
+- Reutilizar la infraestructura común proporcionada por GeoMotion Studio.
+- Integrarse mediante contratos arquitectónicos públicos.
 - Mantener una separación clara entre infraestructura y funcionalidad.
 - Favorecer la evolución modular del producto.
 
-No forma parte de sus responsabilidades proporcionar servicios fundamentales para el funcionamiento general de la plataforma, función que corresponde exclusivamente al núcleo.
+No forma parte de sus responsabilidades:
+
+- Proporcionar servicios fundamentales de la plataforma.
+- Alterar la organización de los módulos arquitectónicos.
+- Acceder directamente a implementaciones internas del núcleo.
 
 ---
 
-## 4.5 Relación con el Núcleo y las Extensiones
+## 4.5 Relación con el Núcleo y los Módulos Arquitectónicos
 
-Los Plugins Internos ocupan una posición intermedia entre el núcleo y el resto del ecosistema de extensiones.
+Los Plugins Internos colaboran con la plataforma utilizando exclusivamente los contratos arquitectónicos públicos definidos para cada punto de extensión.
 
-Por una parte, utilizan los servicios proporcionados por el núcleo mediante los contratos públicos definidos por la Arquitectura de Extensibilidad. Por otra, constituyen un ejemplo de cómo las capacidades funcionales pueden desarrollarse como componentes desacoplados, siguiendo exactamente las mismas reglas que utilizarán futuras extensiones externas.
+El núcleo continúa proporcionando la infraestructura común y los servicios compartidos.
 
-Este enfoque evita la existencia de mecanismos privilegiados para las funcionalidades oficiales de la plataforma y garantiza una arquitectura uniforme para todos los componentes.
+Los módulos arquitectónicos permanecen como propietarios de sus respectivos dominios funcionales.
+
+Los Plugins Internos amplían capacidades sobre dichos dominios sin asumir sus responsabilidades ni modificar su organización arquitectónica.
+
+Este enfoque garantiza una arquitectura uniforme donde todas las capacidades extensibles, independientemente de su origen, utilizan exactamente el mismo modelo de integración.
 
 ---
 
-## 4.6 Resumen
+## 4.6 Cuarta decisión arquitectónica
+
+### ADR-004 · Las capacidades oficiales también utilizan la Arquitectura de Extensibilidad
+
+**Estado:** Aprobada.
+
+Las funcionalidades oficiales de GeoMotion Studio que no formen parte de las responsabilidades permanentes del núcleo podrán implementarse como Plugins Internos.
+
+Estos componentes utilizarán exactamente los mismos contratos arquitectónicos, puntos de extensión y mecanismos de integración disponibles para el resto del ecosistema, preservando una arquitectura uniforme, desacoplada y preparada para evolucionar.
+
+---
+
+## 4.7 Resumen
 
 Los Plugins Internos representan la aplicación directa de la Arquitectura de Extensibilidad dentro de GeoMotion Studio.
 
-Al desarrollar las funcionalidades oficiales como componentes independientes, la plataforma preserva la estabilidad del núcleo, favorece la modularidad y demuestra que el modelo de extensibilidad constituye un principio arquitectónico general y no únicamente un mecanismo destinado a terceros.
+Al desarrollar capacidades oficiales mediante componentes independientes integrados exclusivamente a través de contratos arquitectónicos públicos, la plataforma preserva la estabilidad del núcleo, mantiene intacta la Arquitectura Modular y demuestra que la extensibilidad constituye un principio arquitectónico general para toda la evolución del sistema.
 
 ---
+
 # CAPÍTULO 5 · Plugins Externos
 
 ## 5.1 Objetivo
 
 Definir el papel de los Plugins Externos dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los principios que regulan su desarrollo, integración y evolución como parte del ecosistema de la plataforma.
 
-Este capítulo proporciona el marco conceptual necesario para comprender cómo terceros pueden incorporar nuevas capacidades funcionales utilizando los mismos mecanismos arquitectónicos empleados por la propia plataforma.
+Este capítulo proporciona el marco conceptual necesario para comprender cómo terceros pueden incorporar nuevas capacidades funcionales utilizando el mismo modelo arquitectónico empleado por la propia plataforma.
 
 ---
 
 ## 5.2 Los Plugins Externos
 
-Los Plugins Externos son componentes desarrollados fuera del núcleo de GeoMotion Studio que amplían las capacidades de la plataforma mediante los mecanismos definidos por la Arquitectura de Extensibilidad.
+Los Plugins Externos son extensiones desarrolladas fuera del núcleo de GeoMotion Studio que amplían las capacidades de la plataforma mediante los mecanismos definidos por la Arquitectura de Extensibilidad.
 
-Su propósito consiste en permitir que organizaciones, desarrolladores o equipos especializados incorporen nuevas funcionalidades sin necesidad de modificar el código fuente del núcleo ni alterar la arquitectura general del sistema.
+Su propósito consiste en permitir que organizaciones, equipos o desarrolladores incorporen nuevas capacidades sin modificar la arquitectura estable de la plataforma.
 
-Desde una perspectiva arquitectónica, los Plugins Externos representan una extensión natural de la plataforma. Su integración se produce utilizando los mismos contratos públicos, los mismos principios de desacoplamiento y las mismas reglas de compatibilidad que regulan el funcionamiento de los Plugins Internos.
+Desde una perspectiva arquitectónica, los Plugins Externos representan una evolución natural del sistema.
 
-Esta uniformidad garantiza que la arquitectura permanezca consistente independientemente del origen de cada componente.
+Su integración se realiza utilizando los mismos contratos arquitectónicos públicos, los mismos puntos de extensión y los mismos principios de desacoplamiento utilizados por los Plugins Internos.
+
+Esta uniformidad garantiza que la arquitectura permanezca consistente independientemente del origen de cada extensión.
 
 ---
 
@@ -450,25 +646,49 @@ Esta uniformidad garantiza que la arquitectura permanezca consistente independie
 
 Los Plugins Externos se desarrollan conforme a un conjunto de principios que garantizan una integración segura y sostenible dentro del ecosistema.
 
-### Igualdad Arquitectónica
+### Igualdad arquitectónica
 
-Los Plugins Externos deberán integrarse utilizando los mismos mecanismos arquitectónicos disponibles para los componentes oficiales de la plataforma.
+Los Plugins Externos deberán integrarse utilizando exactamente los mismos mecanismos arquitectónicos disponibles para las extensiones oficiales de la plataforma.
 
-### Independencia Tecnológica
+La arquitectura no establecerá mecanismos privilegiados según el origen de una extensión.
 
-Cada extensión podrá evolucionar de forma independiente mientras respete los contratos públicos definidos por el núcleo.
+---
+
+### Independencia tecnológica
+
+Cada Plugin Externo podrá evolucionar de forma independiente mientras respete los contratos arquitectónicos públicos definidos por la plataforma.
+
+---
+
+### Integración mediante contratos
+
+Toda interacción con GeoMotion Studio deberá realizarse exclusivamente mediante contratos arquitectónicos públicos.
+
+No se permitirá el acceso directo a implementaciones internas del núcleo ni de los módulos arquitectónicos.
+
+---
 
 ### Compatibilidad
 
-Las extensiones deberán mantener la compatibilidad con las versiones de la plataforma para las cuales hayan sido desarrolladas.
+Los Plugins Externos deberán mantener la compatibilidad con los contratos publicados para las versiones de la plataforma que declaren soportar.
+
+---
 
 ### Aislamiento
 
-El funcionamiento de un plugin no deberá comprometer la estabilidad ni el comportamiento del resto del sistema.
+El comportamiento de un Plugin Externo no deberá comprometer la estabilidad del núcleo, de los módulos arquitectónicos ni del resto de las extensiones.
 
-### Evolución del Ecosistema
+---
 
-La arquitectura deberá favorecer la incorporación continua de nuevas extensiones sin incrementar innecesariamente la complejidad del núcleo.
+### Alta cohesión
+
+Cada Plugin Externo deberá representar una capacidad funcional claramente delimitada, evitando concentrar responsabilidades heterogéneas dentro de un mismo componente.
+
+---
+
+### Evolución del ecosistema
+
+La arquitectura deberá favorecer la incorporación continua de nuevas extensiones sin incrementar innecesariamente la complejidad del núcleo ni alterar la Arquitectura Modular.
 
 ---
 
@@ -478,11 +698,17 @@ Los Plugins Externos son responsables de:
 
 - Incorporar nuevas capacidades funcionales a la plataforma.
 - Reutilizar los servicios proporcionados por el núcleo.
-- Integrarse mediante los contratos públicos definidos por la arquitectura.
-- Mantener su compatibilidad con las interfaces disponibles.
+- Integrarse mediante contratos arquitectónicos públicos.
+- Respetar los puntos de extensión definidos por la plataforma.
+- Mantener la compatibilidad con las interfaces oficiales.
 - Evolucionar de forma independiente sin afectar al resto del ecosistema.
 
-No forma parte de sus responsabilidades modificar componentes internos del núcleo ni depender de mecanismos privados de la plataforma.
+No forma parte de sus responsabilidades:
+
+- Modificar componentes internos del núcleo.
+- Alterar las responsabilidades de los módulos arquitectónicos.
+- Depender de mecanismos privados de la plataforma.
+- Establecer canales de integración distintos de los contratos arquitectónicos publicados.
 
 ---
 
@@ -490,76 +716,97 @@ No forma parte de sus responsabilidades modificar componentes internos del núcl
 
 Los Plugins Externos constituyen el principal mecanismo mediante el cual GeoMotion Studio puede evolucionar más allá de las capacidades incluidas en su distribución oficial.
 
-Su existencia permite que distintos dominios de conocimiento desarrollen soluciones especializadas sobre una infraestructura común, favoreciendo la reutilización, la colaboración y la construcción de un ecosistema sostenible.
+Su existencia permite desarrollar soluciones especializadas sobre una infraestructura arquitectónica común, favoreciendo la reutilización, la interoperabilidad y la colaboración entre distintos actores del ecosistema.
 
-Esta capacidad convierte a GeoMotion Studio en una plataforma preparada para adaptarse a contextos de utilización muy diversos sin comprometer la estabilidad de su arquitectura principal.
+Los módulos arquitectónicos continúan siendo responsables de sus respectivos dominios funcionales.
+
+Los Plugins Externos colaboran con dichos módulos exclusivamente mediante contratos arquitectónicos públicos, preservando la independencia entre la arquitectura estable y las capacidades que evolucionan de forma independiente.
+
+---
+
+## 5.6 Quinta decisión arquitectónica
+
+### ADR-005 · Los Plugins Externos utilizan el mismo modelo arquitectónico que las extensiones oficiales
+
+**Estado:** Aprobada.
+
+Los Plugins Externos forman parte del ecosistema oficial de extensibilidad de GeoMotion Studio.
+
+Su integración deberá realizarse exclusivamente mediante los contratos arquitectónicos públicos y los puntos de extensión definidos por la plataforma, utilizando exactamente el mismo modelo arquitectónico aplicado a las extensiones oficiales.
+
+Este principio garantiza una arquitectura uniforme, desacoplada y preparada para evolucionar de forma sostenible.
 
 ---
 
-## 5.6 Resumen
+## 5.7 Resumen
 
-Los Plugins Externos permiten ampliar las capacidades de GeoMotion Studio mediante componentes desarrollados de forma independiente que utilizan los mismos principios arquitectónicos aplicados por la propia plataforma.
+Los Plugins Externos permiten ampliar las capacidades de GeoMotion Studio mediante componentes desarrollados de forma independiente que colaboran con la plataforma utilizando exclusivamente contratos arquitectónicos públicos.
 
-La utilización de contratos públicos, el bajo acoplamiento y la igualdad de mecanismos de integración garantizan un ecosistema coherente, modular y preparado para evolucionar de manera sostenible.
+La igualdad de mecanismos de integración, el bajo acoplamiento, la encapsulación y el respeto por la Arquitectura Modular garantizan un ecosistema coherente, mantenible y preparado para evolucionar durante todo el ciclo de vida del proyecto.
 
 ---
+
 # CAPÍTULO 6 · Puntos de Extensión
 
 ## 6.1 Objetivo
 
-Definir el concepto de Punto de Extensión dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los principios que regulan la incorporación de nuevas capacidades funcionales sin modificar la estructura interna de la plataforma.
+Definir el concepto de Punto de Extensión dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los principios que regulan la incorporación de nuevas capacidades funcionales sin modificar la arquitectura estable de la plataforma.
 
-Este capítulo proporciona el marco conceptual necesario para comprender cómo la arquitectura identifica, organiza y administra las áreas del sistema destinadas a ser ampliadas mediante componentes independientes.
+Este capítulo proporciona el marco conceptual necesario para comprender cómo la arquitectura identifica, organiza y gobierna los lugares destinados a recibir extensiones mediante contratos arquitectónicos públicos.
 
 ---
 
 ## 6.2 Los Puntos de Extensión
 
-Un Punto de Extensión constituye un lugar explícitamente definido dentro de la arquitectura donde la plataforma permite incorporar nuevas capacidades de forma controlada.
+Un Punto de Extensión constituye un mecanismo arquitectónico explícitamente definido mediante el cual la plataforma permite incorporar nuevas capacidades de forma controlada.
 
-A diferencia de una modificación directa del código fuente, un Punto de Extensión representa una interfaz arquitectónica prevista desde el diseño del sistema para aceptar nuevas implementaciones sin alterar el comportamiento del núcleo.
+Cada Punto de Extensión representa un límite arquitectónico estable preparado para recibir nuevas implementaciones sin modificar las responsabilidades del núcleo ni de los módulos arquitectónicos existentes.
 
-La existencia de estos puntos permite que la evolución funcional de GeoMotion Studio ocurra sobre mecanismos estables y documentados, evitando que las extensiones dependan de detalles internos o de implementaciones privadas.
+Su existencia evita que las extensiones dependan de implementaciones internas o de mecanismos privados de la plataforma.
 
-Desde esta perspectiva, los Puntos de Extensión representan el contrato conceptual entre la infraestructura permanente de la plataforma y las capacidades que evolucionan de manera independiente.
+Desde esta perspectiva, un Punto de Extensión constituye el lugar donde la Arquitectura Modular y la Arquitectura de Contratos convergen para permitir la evolución controlada del sistema.
 
-La calidad de una arquitectura extensible no depende únicamente del número de extensiones disponibles, sino principalmente de la calidad, estabilidad y coherencia de los Puntos de Extensión que pone a disposición de los desarrolladores.
+La calidad de la Arquitectura de Extensibilidad depende de la estabilidad, claridad y coherencia de los Puntos de Extensión puestos a disposición del ecosistema.
 
 ---
 
 ## 6.3 Principios Fundamentales
 
-Los Puntos de Extensión deberán diseñarse conforme a un conjunto de principios que garanticen la estabilidad de la arquitectura y la evolución sostenible de la plataforma.
+Los Puntos de Extensión deberán diseñarse conforme a un conjunto de principios que garanticen la estabilidad de la plataforma.
 
-### Diseño Intencional
+### Diseño intencional
 
 Todo Punto de Extensión deberá existir como consecuencia de una decisión arquitectónica explícita.
 
-La plataforma no considerará como puntos de extensión aquellos mecanismos descubiertos accidentalmente mediante acceso al código interno.
+La plataforma no reconocerá mecanismos accidentales como puntos oficiales de integración.
 
 ---
 
-### Contratos Públicos
+### Contratos arquitectónicos públicos
 
-Cada Punto de Extensión deberá exponerse mediante contratos públicos completamente documentados.
+Cada Punto de Extensión deberá exponerse mediante uno o más contratos arquitectónicos públicos.
 
-Las extensiones nunca deberán depender de clases internas, implementaciones privadas o detalles particulares del núcleo.
-
----
-
-### Bajo Acoplamiento
-
-Los Puntos de Extensión deberán minimizar las dependencias entre el núcleo y las extensiones.
-
-La incorporación o eliminación de un componente no deberá producir modificaciones sobre otros componentes independientes.
+Las extensiones nunca dependerán de implementaciones privadas ni de detalles internos del sistema.
 
 ---
 
-### Responsabilidad Específica
+### Bajo acoplamiento
 
-Cada Punto de Extensión deberá resolver un problema claramente definido.
+Los Puntos de Extensión deberán minimizar las dependencias entre:
 
-Un mismo mecanismo no deberá asumir responsabilidades heterogéneas que dificulten su evolución futura.
+- Núcleo.
+- Módulos arquitectónicos.
+- Extensiones.
+
+La incorporación o eliminación de una extensión no deberá requerir modificaciones sobre otros componentes independientes.
+
+---
+
+### Responsabilidad específica
+
+Cada Punto de Extensión deberá resolver un único propósito arquitectónico claramente definido.
+
+No deberán concentrarse responsabilidades heterogéneas dentro de un mismo mecanismo de integración.
 
 ---
 
@@ -567,54 +814,58 @@ Un mismo mecanismo no deberá asumir responsabilidades heterogéneas que dificul
 
 Una vez publicado, un Punto de Extensión deberá evolucionar de forma controlada.
 
-Las modificaciones incompatibles deberán evitarse salvo que existan razones arquitectónicas suficientemente justificadas.
+Las modificaciones incompatibles únicamente podrán realizarse siguiendo los mecanismos oficiales de gobernanza y evolución de contratos.
 
 ---
 
 ### Descubrimiento
 
-La arquitectura deberá facilitar la identificación de los Puntos de Extensión disponibles.
+Los Puntos de Extensión deberán encontrarse claramente identificados y documentados.
 
-Los desarrolladores deberán comprender fácilmente dónde pueden integrar nuevas capacidades y bajo qué condiciones.
+Su utilización deberá resultar predecible para cualquier desarrollador del ecosistema.
 
 ---
 
 ### Consistencia
 
-Todos los Puntos de Extensión deberán seguir criterios homogéneos de organización, nomenclatura, documentación y utilización.
+Todos los Puntos de Extensión deberán seguir criterios homogéneos de:
 
-La experiencia de desarrollo deberá mantenerse uniforme en toda la plataforma.
+- Organización.
+- Nomenclatura.
+- Documentación.
+- Versionado.
+- Evolución.
 
 ---
 
-### Evolución Controlada
+### Evolución controlada
 
-La incorporación de nuevos Puntos de Extensión deberá responder a necesidades reales de evolución arquitectónica.
+La incorporación de nuevos Puntos de Extensión deberá responder a necesidades arquitectónicas justificadas.
 
-La proliferación innecesaria de mecanismos de extensión incrementa la complejidad del sistema y dificulta su mantenimiento.
+La proliferación innecesaria de mecanismos de integración incrementa la complejidad de la plataforma y dificulta su mantenimiento.
 
 ---
 
 ## 6.4 Clasificación de los Puntos de Extensión
 
-La Arquitectura de Extensibilidad podrá incorporar distintos tipos de Puntos de Extensión según la naturaleza de las capacidades que deban ampliarse.
+GeoMotion Studio podrá incorporar distintos tipos de Puntos de Extensión según las capacidades que la arquitectura permita ampliar.
 
-Entre ellos pueden encontrarse:
+Entre ellos podrán existir puntos destinados a extender:
 
-- Servicios de infraestructura.
-- Procesos de negocio.
-- Herramientas de usuario.
-- Componentes de interfaz.
+- Capacidades de infraestructura.
+- Servicios de plataforma.
+- Funcionalidades de usuario.
+- Herramientas especializadas.
+- Procesos de trabajo.
 - Capacidades cartográficas.
 - Sistemas de importación y exportación.
-- Integraciones con plataformas externas.
-- Procesadores de información.
-- Mecanismos de automatización.
-- Funcionalidades especializadas de dominio.
+- Automatizaciones.
+- Integraciones externas.
+- Nuevos dominios funcionales compatibles con la arquitectura.
 
 Esta clasificación no constituye una lista cerrada.
 
-La incorporación de nuevas categorías dependerá de la evolución funcional de la plataforma y de las necesidades identificadas durante su desarrollo.
+La incorporación de nuevas categorías dependerá de la evolución de la plataforma y deberá respetar los principios establecidos por la Arquitectura Modular y la Arquitectura de Contratos.
 
 ---
 
@@ -622,16 +873,19 @@ La incorporación de nuevas categorías dependerá de la evolución funcional de
 
 Los Puntos de Extensión son responsables de:
 
-- Definir los lugares autorizados para ampliar la plataforma.
-- Desacoplar las extensiones del núcleo.
-- Proporcionar contratos estables para la integración.
-- Reducir la necesidad de modificar la infraestructura principal.
+- Definir los lugares autorizados para extender la plataforma.
+- Desacoplar las extensiones del núcleo y de los módulos arquitectónicos.
+- Proporcionar contratos arquitectónicos estables.
+- Reducir la necesidad de modificar la arquitectura estable.
 - Favorecer la evolución modular del sistema.
 - Facilitar el desarrollo independiente de nuevas capacidades.
-- Preservar la coherencia arquitectónica.
-- Mantener la estabilidad del ecosistema de extensiones.
+- Preservar la coherencia arquitectónica de la plataforma.
 
-No forma parte de sus responsabilidades implementar funcionalidades específicas, administrar el ciclo de vida de las extensiones ni resolver aspectos particulares de cada componente.
+No forma parte de sus responsabilidades:
+
+- Implementar funcionalidades concretas.
+- Administrar el ciclo de vida de las extensiones.
+- Definir tecnologías específicas de integración.
 
 ---
 
@@ -641,81 +895,97 @@ El Modelo de Extensiones define qué constituye una extensión dentro de GeoMoti
 
 Los Puntos de Extensión determinan dónde dichas extensiones pueden integrarse.
 
-Ambos conceptos forman parte de una misma arquitectura, pero cumplen responsabilidades diferentes.
+Los Contratos Arquitectónicos establecen cómo debe producirse dicha integración.
 
-Mientras las extensiones representan las capacidades incorporadas al sistema, los Puntos de Extensión representan la infraestructura preparada para recibirlas.
+Estos tres elementos forman conjuntamente el modelo oficial de extensibilidad de la plataforma.
 
-Esta separación permite que la plataforma evolucione mediante contratos estables en lugar de modificaciones continuas sobre el núcleo.
+La separación entre responsabilidades permite que la arquitectura evolucione mediante contratos estables sin alterar continuamente el núcleo ni los módulos arquitectónicos.
 
 ---
 
 ## 6.7 Consideraciones de Diseño
 
-La creación de un nuevo Punto de Extensión deberá responder a criterios arquitectónicos claramente definidos.
+La incorporación de un nuevo Punto de Extensión deberá evaluarse considerando, entre otros aspectos:
 
-Antes de incorporar un nuevo mecanismo de extensión deberá evaluarse:
-
-- La necesidad real de extensibilidad.
-- El impacto sobre la estabilidad del núcleo.
-- La reutilización de mecanismos existentes.
-- La coherencia con el resto de la arquitectura.
-- La facilidad de utilización por parte de los desarrolladores.
+- La necesidad arquitectónica real.
+- La existencia de mecanismos equivalentes.
+- El impacto sobre la estabilidad de la plataforma.
+- La reutilización de contratos existentes.
+- La coherencia con la Arquitectura Modular.
+- La compatibilidad con la Arquitectura de Contratos.
+- La facilidad de utilización por parte del ecosistema.
+- El coste de mantenimiento.
 - La sostenibilidad del contrato a largo plazo.
-- La compatibilidad con futuras versiones.
-- El coste de mantenimiento asociado.
 
-La extensibilidad constituye una capacidad estratégica de la plataforma y no debe confundirse con la simple incorporación de nuevos puntos de personalización.
+La extensibilidad constituye una capacidad estratégica del sistema y no un mecanismo de personalización indiscriminada.
 
 ---
 
-## 6.8 Resumen
+## 6.8 Sexta decisión arquitectónica
 
-Los Puntos de Extensión constituyen la infraestructura arquitectónica que permite a GeoMotion Studio evolucionar mediante componentes independientes.
+### ADR-006 · Toda capacidad extensible se incorpora mediante Puntos de Extensión explícitos
 
-Su diseño determina dónde y cómo pueden incorporarse nuevas capacidades, proporcionando contratos estables que preservan la independencia entre el núcleo y las extensiones.
+**Estado:** Aprobada.
 
-La correcta definición de estos puntos representa uno de los factores más importantes para garantizar una arquitectura preparada para crecer de forma ordenada, mantenible y sostenible durante toda la vida de la plataforma.
+GeoMotion Studio únicamente permitirá la incorporación de extensiones mediante Puntos de Extensión oficialmente definidos y respaldados por contratos arquitectónicos públicos.
+
+No se admitirán mecanismos implícitos de integración ni dependencias sobre implementaciones internas de la plataforma.
+
+Este principio preserva la estabilidad de la Arquitectura Modular y garantiza la evolución sostenible del ecosistema.
 
 ---
+
+## 6.9 Resumen
+
+Los Puntos de Extensión constituyen la infraestructura arquitectónica que permite incorporar nuevas capacidades sin modificar la arquitectura estable de GeoMotion Studio.
+
+Su definición explícita, su integración mediante contratos arquitectónicos públicos y su evolución controlada permiten mantener el bajo acoplamiento entre el núcleo, los módulos arquitectónicos y las extensiones, proporcionando una plataforma preparada para evolucionar de forma ordenada y sostenible.
+
+---
+
 # CAPÍTULO 7 · Contratos Arquitectónicos
 
 ## 7.1 Objetivo
 
-Definir el modelo de Contratos Arquitectónicos utilizado por la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los principios que regulan la comunicación entre el núcleo de la plataforma y las extensiones.
+Definir el modelo de Contratos Arquitectónicos utilizado por la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los principios que regulan la integración entre la plataforma y las extensiones.
 
-Este capítulo proporciona el marco conceptual necesario para comprender cómo la arquitectura mantiene el desacoplamiento entre componentes mediante interfaces públicas, estables y preparadas para evolucionar a largo plazo.
+Este capítulo proporciona el marco conceptual necesario para comprender cómo la arquitectura mantiene el desacoplamiento entre componentes mediante contratos públicos, estables y preparados para evolucionar durante todo el ciclo de vida del sistema.
 
 ---
 
 ## 7.2 Los Contratos Arquitectónicos
 
-Un Contrato Arquitectónico constituye un acuerdo formal entre la plataforma y las extensiones que define las capacidades que pueden utilizarse, las responsabilidades de cada participante y las condiciones bajo las cuales se produce la integración.
+Los Contratos Arquitectónicos constituyen el único mecanismo autorizado mediante el cual una extensión puede integrarse con GeoMotion Studio.
 
-Desde una perspectiva arquitectónica, un contrato representa el único mecanismo autorizado mediante el cual una extensión puede interactuar con el núcleo o con otros servicios proporcionados por la plataforma.
+Un contrato define las capacidades que la plataforma pone a disposición del ecosistema, las responsabilidades de cada participante y las condiciones bajo las cuales puede producirse la colaboración entre componentes.
 
-La utilización de contratos elimina la necesidad de conocer implementaciones internas, permitiendo que tanto el núcleo como las extensiones evolucionen de manera independiente.
+Desde una perspectiva arquitectónica, los contratos representan la frontera estable entre la plataforma y las extensiones.
 
-En consecuencia, la arquitectura no establece dependencias entre implementaciones concretas, sino entre abstracciones estables cuya evolución puede administrarse de forma controlada.
+Las extensiones dependen de contratos, nunca de implementaciones.
+
+Del mismo modo, la plataforma no depende de implementaciones concretas de las extensiones, sino únicamente de las capacidades definidas por los contratos correspondientes.
+
+Este modelo preserva el desacoplamiento entre el núcleo, los módulos arquitectónicos y las extensiones, permitiendo que todos ellos evolucionen de forma independiente.
 
 ---
 
 ## 7.3 Principios Fundamentales
 
-Los Contratos Arquitectónicos deberán desarrollarse conforme a un conjunto de principios que garanticen la estabilidad de toda la plataforma.
+Los Contratos Arquitectónicos deberán diseñarse conforme a un conjunto de principios que garanticen la estabilidad de toda la plataforma.
 
 ### Abstracción
 
-Todo contrato deberá describir capacidades y no implementaciones.
+Todo contrato deberá describir capacidades arquitectónicas y no detalles de implementación.
 
-Las extensiones nunca deberán depender de clases concretas del núcleo.
+Las extensiones nunca dependerán de clases concretas, estructuras internas ni tecnologías específicas de la plataforma.
 
 ---
 
-### Interfaces Públicas
+### Contratos públicos
 
-Los contratos deberán publicarse como parte de la API oficial de GeoMotion Studio.
+Los contratos formarán parte de la superficie pública de integración de GeoMotion Studio.
 
-Cualquier elemento no documentado deberá considerarse privado y no podrá utilizarse como mecanismo de integración.
+Todo mecanismo no publicado oficialmente deberá considerarse privado y no podrá utilizarse como punto de integración.
 
 ---
 
@@ -723,31 +993,31 @@ Cualquier elemento no documentado deberá considerarse privado y no podrá utili
 
 Los contratos publicados deberán mantenerse estables durante su ciclo de vida.
 
-Toda modificación incompatible deberá considerarse una excepción arquitectónica.
+Su evolución seguirá los mecanismos oficiales de gobernanza definidos para la Arquitectura de Contratos.
 
 ---
 
-### Compatibilidad Evolutiva
+### Compatibilidad evolutiva
 
 Siempre que resulte posible, la evolución de un contrato deberá preservar la compatibilidad con versiones anteriores.
 
-La incorporación de nuevas capacidades deberá realizarse sin invalidar implementaciones existentes.
+Las nuevas capacidades deberán incorporarse mediante evolución incremental antes que mediante sustituciones incompatibles.
 
 ---
 
-### Independencia de Implementación
+### Independencia de implementación
 
-Una extensión no deberá asumir detalles relacionados con la implementación interna del núcleo.
+Las extensiones no asumirán detalles relacionados con la implementación interna del núcleo ni de los módulos arquitectónicos.
 
-Del mismo modo, el núcleo no deberá realizar suposiciones sobre la implementación concreta de una extensión.
+La plataforma tampoco realizará suposiciones acerca de la implementación interna de una extensión.
 
 ---
 
-### Responsabilidad Única
+### Responsabilidad única
 
 Cada contrato deberá representar una única responsabilidad claramente identificable.
 
-La concentración de múltiples responsabilidades dentro de un mismo contrato incrementa el acoplamiento y dificulta su evolución.
+La concentración de múltiples capacidades heterogéneas dentro de un mismo contrato incrementa el acoplamiento y dificulta su evolución.
 
 ---
 
@@ -755,37 +1025,31 @@ La concentración de múltiples responsabilidades dentro de un mismo contrato in
 
 Los contratos deberán ser fácilmente identificables y encontrarse adecuadamente documentados.
 
-La arquitectura deberá facilitar que los desarrolladores comprendan qué servicios existen y bajo qué condiciones pueden utilizarse.
+Su propósito, alcance y responsabilidades deberán resultar claros para cualquier desarrollador del ecosistema.
 
 ---
 
-### Coherencia
+### Consistencia
 
-Todos los contratos deberán mantener una organización uniforme.
+Todos los contratos deberán mantener criterios homogéneos de:
 
-La nomenclatura, estructura, documentación y criterios de diseño deberán seguir patrones consistentes en toda la plataforma.
-
----
-
-### Versionado
-
-Los contratos deberán poder evolucionar de forma controlada.
-
-Cuando resulte necesario introducir cambios incompatibles, la arquitectura deberá proporcionar mecanismos que permitan administrar distintas versiones de un mismo contrato.
+- Organización.
+- Nomenclatura.
+- Versionado.
+- Documentación.
+- Evolución.
 
 ---
 
-### Desacoplamiento
+### Evolución gobernada
 
-El contrato constituye el único vínculo permanente entre el núcleo y las extensiones.
-
-Las implementaciones podrán cambiar libremente mientras respeten las obligaciones definidas por dicho contrato.
+Toda modificación relevante de un contrato deberá seguir los mecanismos oficiales de gobernanza definidos por el Manual de Ingeniería y el sistema de ADR cuando corresponda.
 
 ---
 
 ## 7.4 Componentes de un Contrato Arquitectónico
 
-Todo Contrato Arquitectónico debería definir explícitamente:
+Todo Contrato Arquitectónico deberá definir explícitamente, como mínimo:
 
 - Su propósito.
 - Las responsabilidades que expone.
@@ -798,7 +1062,7 @@ Todo Contrato Arquitectónico debería definir explícitamente:
 - Las políticas de evolución.
 - Su estado dentro del ciclo de vida de la plataforma.
 
-La existencia de esta información permite que los contratos permanezcan comprensibles y sostenibles durante largos períodos de evolución.
+La definición explícita de estos elementos permite preservar contratos comprensibles, mantenibles y preparados para evolucionar.
 
 ---
 
@@ -806,7 +1070,7 @@ La existencia de esta información permite que los contratos permanezcan compren
 
 Los Contratos Arquitectónicos son responsables de:
 
-- Regular la comunicación entre el núcleo y las extensiones.
+- Regular la integración entre la plataforma y las extensiones.
 - Reducir el acoplamiento entre componentes.
 - Proporcionar puntos de integración estables.
 - Facilitar la evolución independiente de las implementaciones.
@@ -815,7 +1079,11 @@ Los Contratos Arquitectónicos son responsables de:
 - Definir claramente las responsabilidades de cada participante.
 - Constituir la base formal de la Arquitectura de Extensibilidad.
 
-No forma parte de sus responsabilidades definir mecanismos internos de implementación ni imponer tecnologías concretas para el desarrollo de las extensiones.
+No forma parte de sus responsabilidades:
+
+- Definir implementaciones concretas.
+- Imponer tecnologías específicas.
+- Resolver decisiones propias de implementación.
 
 ---
 
@@ -825,11 +1093,11 @@ Los Puntos de Extensión determinan dónde puede ampliarse la plataforma.
 
 Los Contratos Arquitectónicos determinan cómo debe producirse dicha ampliación.
 
-Ambos conceptos resultan inseparables dentro de la Arquitectura de Extensibilidad.
+Cada Punto de Extensión deberá estar respaldado por uno o más contratos arquitectónicos públicos.
 
-Un Punto de Extensión sin un contrato claramente definido genera dependencias implícitas y compromete la estabilidad del sistema.
+No existirán Puntos de Extensión oficiales sin contratos claramente definidos.
 
-Por el contrario, un contrato bien definido convierte cada Punto de Extensión en un mecanismo estable, documentado y preparado para evolucionar durante toda la vida de la plataforma.
+Esta relación garantiza una integración explícita, estable y preparada para evolucionar sin comprometer la Arquitectura Modular.
 
 ---
 
@@ -838,722 +1106,594 @@ Por el contrario, un contrato bien definido convierte cada Punto de Extensión e
 Durante el diseño de un nuevo contrato deberán evaluarse, entre otros aspectos:
 
 - La estabilidad prevista de la capacidad expuesta.
-- El nivel de abstracción adecuado.
-- La posibilidad de reutilización.
+- El nivel adecuado de abstracción.
+- La reutilización de contratos existentes.
 - El impacto sobre la compatibilidad futura.
-- La facilidad de implementación por parte de terceros.
+- La facilidad de implementación por parte del ecosistema.
 - La independencia respecto de tecnologías específicas.
 - La claridad de su documentación.
-- El coste de mantenimiento asociado.
-- La posibilidad de incorporar nuevas capacidades sin romper implementaciones existentes.
-- La coherencia con el resto del ecosistema de contratos.
+- El coste de mantenimiento.
+- La posibilidad de evolucionar sin romper implementaciones existentes.
+- La coherencia con el resto de la Arquitectura de Contratos.
 
-El diseño de contratos constituye una de las actividades arquitectónicas de mayor impacto sobre la evolución futura de la plataforma.
+El diseño de contratos constituye una de las responsabilidades arquitectónicas más importantes para preservar la sostenibilidad de la plataforma.
 
 ---
 
 ## 7.8 Evolución de los Contratos
 
-La evolución de un contrato deberá realizarse preservando la estabilidad del ecosistema.
+La evolución de un contrato deberá respetar las políticas establecidas por la Arquitectura de Contratos de GeoMotion Studio.
 
-Siempre que resulte posible, las nuevas versiones deberán ampliar las capacidades existentes antes que sustituirlas.
+Siempre que resulte posible:
 
-La eliminación de funcionalidades previamente publicadas deberá planificarse mediante procesos de deprecación claramente documentados, proporcionando tiempo suficiente para que las extensiones puedan adaptarse.
+- Las nuevas capacidades ampliarán los contratos existentes.
+- Las incompatibilidades se gestionarán mediante evolución controlada.
+- Las capacidades obsoletas seguirán procesos formales de deprecación.
+- La retirada de contratos deberá encontrarse adecuadamente documentada y gobernada.
 
-Este enfoque permite que la plataforma evolucione sin introducir cambios disruptivos que afecten innecesariamente al ecosistema de desarrolladores.
+Este enfoque permite que la plataforma evolucione preservando la estabilidad del ecosistema de extensiones.
+
+---
+
+## 7.9 Séptima decisión arquitectónica
+
+### ADR-007 · Los contratos constituyen el único mecanismo oficial de integración
+
+**Estado:** Aprobada.
+
+Toda integración entre GeoMotion Studio y sus extensiones deberá realizarse exclusivamente mediante contratos arquitectónicos públicos.
+
+No se permitirán dependencias sobre implementaciones internas, mecanismos privados ni canales alternativos de integración.
+
+Este principio preserva el bajo acoplamiento entre el núcleo, los módulos arquitectónicos y el ecosistema de extensiones, garantizando una evolución sostenible de la plataforma.
 
 ---
 
-## 7.9 Resumen
+## 7.10 Resumen
 
-Los Contratos Arquitectónicos constituyen el mecanismo fundamental mediante el cual GeoMotion Studio mantiene el desacoplamiento entre el núcleo y las extensiones.
+Los Contratos Arquitectónicos constituyen la base formal de la Arquitectura de Extensibilidad de GeoMotion Studio.
 
-Al establecer acuerdos públicos, estables y preparados para evolucionar, la plataforma puede incorporar nuevas capacidades preservando la independencia entre implementaciones y garantizando una evolución sostenible del ecosistema.
+Al establecer acuerdos públicos, estables y gobernados entre la plataforma y las extensiones, permiten incorporar nuevas capacidades preservando la independencia entre implementaciones, la estabilidad de la Arquitectura Modular y la evolución controlada del ecosistema.
 
 ---
+
 # CAPÍTULO 8 · Ciclo de Vida de las Extensiones
 
 ## 8.1 Objetivo
 
-Definir el Ciclo de Vida de las Extensiones dentro de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo las fases que atraviesa un componente desde su incorporación hasta su retirada del sistema.
+Definir el ciclo de vida arquitectónico de las extensiones dentro de GeoMotion Studio, estableciendo las etapas que atraviesa una extensión desde su incorporación hasta su retirada, así como los principios que garantizan una evolución ordenada del ecosistema.
 
-Este capítulo proporciona el marco conceptual necesario para comprender cómo la plataforma administra las extensiones durante toda su existencia, garantizando un funcionamiento estable, predecible y consistente con el resto de la arquitectura.
+Este capítulo describe el modelo conceptual de evolución de las extensiones, sin establecer procedimientos de implementación ni mecanismos tecnológicos específicos.
 
 ---
 
-## 8.2 El Ciclo de Vida
+## 8.2 El Ciclo de Vida de una Extensión
 
-Toda extensión incorporada a GeoMotion Studio atraviesa una secuencia ordenada de estados que regulan su incorporación, inicialización, funcionamiento, actualización y retirada.
+Toda extensión forma parte del ecosistema arquitectónico de GeoMotion Studio y, como tal, atraviesa un conjunto de estados que permiten gestionar su evolución de manera consistente.
 
-La existencia de un Ciclo de Vida formal permite que la plataforma mantenga un comportamiento homogéneo independientemente del tipo de extensión o de la organización que la haya desarrollado.
+El ciclo de vida proporciona un marco común para la incorporación, evolución, mantenimiento y retirada de extensiones, preservando la estabilidad de la plataforma y la compatibilidad con los contratos arquitectónicos públicos.
 
-Desde una perspectiva arquitectónica, el Ciclo de Vida constituye un contrato operativo entre la plataforma y cada extensión.
-
-La plataforma asume la responsabilidad de administrar cada transición entre estados, mientras que las extensiones deberán respetar las condiciones definidas para cada una de las fases establecidas por la arquitectura.
-
-La administración explícita del Ciclo de Vida reduce la complejidad del sistema, mejora la capacidad de diagnóstico y proporciona un comportamiento uniforme para todo el ecosistema.
+Cada transición entre estados deberá respetar las políticas de gobernanza establecidas por el Manual de Ingeniería y, cuando corresponda, las decisiones arquitectónicas registradas mediante ADR.
 
 ---
 
 ## 8.3 Principios Fundamentales
 
-La administración del Ciclo de Vida deberá desarrollarse conforme a un conjunto de principios arquitectónicos que garanticen la estabilidad del sistema.
+El ciclo de vida de las extensiones se rige por los siguientes principios.
 
-### Determinismo
+### Evolución controlada
 
-Toda extensión deberá atravesar las mismas fases del Ciclo de Vida.
+Toda extensión deberá evolucionar siguiendo un proceso definido y gobernado.
 
-La plataforma no permitirá transiciones arbitrarias entre estados.
-
----
-
-### Gestión Centralizada
-
-La administración del Ciclo de Vida corresponde exclusivamente a la plataforma.
-
-Las extensiones no podrán modificar directamente su propio estado operativo.
+No se admitirán modificaciones que alteren de forma arbitraria su comportamiento o su integración con la plataforma.
 
 ---
 
-### Inicialización Controlada
+### Compatibilidad
 
-Toda extensión deberá inicializarse únicamente cuando la plataforma haya verificado que se cumplen las condiciones necesarias para su ejecución.
+La evolución de una extensión deberá preservar, siempre que resulte posible, la compatibilidad con los contratos arquitectónicos publicados.
 
----
-
-### Validación Previa
-
-Antes de activarse, toda extensión deberá superar los procesos de validación definidos por la arquitectura.
+Cuando existan cambios incompatibles, deberán gestionarse mediante los mecanismos oficiales de evolución de contratos.
 
 ---
 
-### Aislamiento
+### Independencia
 
-El fallo producido durante cualquier fase del Ciclo de Vida de una extensión no deberá comprometer la estabilidad del resto del sistema.
-
----
-
-### Recuperación
-
-Siempre que resulte técnicamente posible, la plataforma deberá permitir la recuperación controlada de una extensión cuya ejecución haya finalizado de forma inesperada.
-
----
-
-### Finalización Ordenada
-
-Toda extensión deberá liberar correctamente los recursos utilizados antes de abandonar el sistema.
-
----
-
-### Observabilidad
-
-Cada transición del Ciclo de Vida deberá poder registrarse, monitorearse y diagnosticarse mediante los mecanismos de observabilidad de la plataforma.
-
----
-
-### Evolución
-
-El Ciclo de Vida podrá ampliarse con nuevas fases siempre que se preserve la compatibilidad con el modelo general definido por la arquitectura.
-
----
-
-## 8.4 Fases del Ciclo de Vida
-
-Aunque la implementación podrá evolucionar con el tiempo, conceptualmente toda extensión atraviesa las siguientes etapas.
-
-### Descubrimiento
-
-La plataforma identifica la existencia de una nueva extensión susceptible de incorporarse al sistema.
-
----
-
-### Identificación
-
-Se verifica la identidad de la extensión y la información necesaria para su administración.
-
----
-
-### Validación
-
-Se comprueba que la extensión cumple las condiciones necesarias para poder integrarse en la plataforma.
-
-Entre otras verificaciones podrán evaluarse:
-
-- Compatibilidad.
-- Dependencias.
-- Integridad.
-- Configuración.
-- Restricciones de ejecución.
-
----
-
-### Registro
-
-La extensión pasa a formar parte del conjunto de componentes administrados por la plataforma.
-
----
-
-### Resolución de Dependencias
-
-La plataforma identifica los servicios y contratos necesarios para la ejecución del componente.
-
----
-
-### Inicialización
-
-La extensión prepara sus recursos internos y establece el estado necesario para comenzar a operar.
-
-Durante esta fase todavía no participa activamente en el funcionamiento de la plataforma.
-
----
-
-### Activación
-
-La extensión comienza a prestar las capacidades para las cuales fue desarrollada.
-
-A partir de este momento puede interactuar con el resto del sistema utilizando exclusivamente los contratos públicos definidos por la arquitectura.
-
----
-
-### Operación
-
-Corresponde al período normal de funcionamiento de la extensión.
-
-La plataforma administra su ejecución, supervisa su estado y coordina su interacción con el resto del ecosistema.
-
----
-
-### Suspensión
-
-Cuando resulte necesario, la plataforma podrá detener temporalmente una extensión sin eliminarla del sistema.
-
-Esta capacidad facilita tareas de mantenimiento, actualización o administración.
-
----
-
-### Reactivación
-
-Una extensión suspendida podrá volver al estado operativo sin necesidad de repetir completamente su proceso de incorporación.
-
----
-
-### Desactivación
-
-La plataforma finaliza la participación activa de la extensión dentro del sistema.
-
----
-
-### Liberación
-
-La extensión libera los recursos que hubieran sido asignados durante su ejecución.
-
----
-
-### Retiro
-
-Finalmente la extensión deja de formar parte del conjunto de componentes administrados por la plataforma.
-
----
-
-## 8.5 Responsabilidades
-
-La administración del Ciclo de Vida es responsable de:
-
-- Incorporar nuevas extensiones.
-- Coordinar las transiciones entre estados.
-- Validar las condiciones de ejecución.
-- Administrar dependencias.
-- Garantizar la estabilidad operativa.
-- Supervisar el estado de cada componente.
-- Gestionar la incorporación y retirada de capacidades.
-- Coordinar la liberación de recursos.
-- Favorecer la recuperación ante fallos.
-- Mantener un comportamiento homogéneo para todo el ecosistema.
-
-No forma parte de sus responsabilidades definir la lógica funcional implementada por cada extensión.
-
----
-
-## 8.6 Relación con los Contratos Arquitectónicos
-
-El Ciclo de Vida administra cuándo una extensión puede utilizar los Contratos Arquitectónicos definidos por la plataforma.
-
-Los contratos establecen las reglas de comunicación.
-
-El Ciclo de Vida determina en qué momento dichas comunicaciones pueden producirse.
-
-Ambos mecanismos trabajan conjuntamente para garantizar que ninguna extensión interactúe con el sistema antes de encontrarse completamente preparada para hacerlo.
-
----
-
-## 8.7 Consideraciones de Diseño
-
-Durante el diseño del Ciclo de Vida deberán priorizarse los siguientes objetivos:
-
-- Simplicidad del modelo operativo.
-- Transiciones claramente definidas.
-- Independencia entre fases.
-- Capacidad de recuperación.
-- Escalabilidad.
-- Diagnóstico.
-- Observabilidad.
-- Compatibilidad futura.
-- Bajo acoplamiento.
-- Automatización de la administración.
-
-El Ciclo de Vida constituye uno de los mecanismos fundamentales mediante los cuales la Arquitectura de Extensibilidad garantiza un comportamiento uniforme para todas las extensiones.
-
----
-
-## 8.8 Resumen
-
-El Ciclo de Vida de las Extensiones establece el conjunto de estados y transiciones que regulan la existencia de cada componente dentro de GeoMotion Studio.
-
-Al administrar de forma centralizada la incorporación, ejecución y retirada de las extensiones, la plataforma preserva la estabilidad del sistema, facilita la evolución del ecosistema y proporciona un comportamiento consistente para todos los componentes que participan en la Arquitectura de Extensibilidad.
-
----
-# CAPÍTULO 9 · Compatibilidad y Evolución
-
-## 9.1 Objetivo
-
-Definir los principios que regulan la evolución de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo los criterios necesarios para preservar la compatibilidad entre el núcleo de la plataforma y el ecosistema de extensiones a lo largo del tiempo.
-
-Este capítulo proporciona el marco conceptual que permite incorporar nuevas capacidades, modificar la arquitectura y evolucionar la plataforma sin comprometer la estabilidad de los componentes existentes.
-
----
-
-## 9.2 La Evolución como Principio Arquitectónico
-
-Toda plataforma destinada a permanecer vigente durante largos períodos de tiempo debe evolucionar de manera continua.
-
-Nuevas necesidades funcionales, avances tecnológicos, cambios en los estándares y mejoras arquitectónicas obligarán a incorporar capacidades que no pudieron preverse durante el diseño inicial del sistema.
-
-La Arquitectura de Extensibilidad asume esta realidad como un principio fundamental.
-
-La evolución no constituye una excepción ni una situación extraordinaria. Forma parte del comportamiento esperado de la plataforma y, por tanto, debe administrarse mediante reglas explícitas que permitan introducir cambios preservando la estabilidad del ecosistema.
-
-Desde esta perspectiva, el objetivo de la arquitectura no consiste en impedir el cambio, sino en garantizar que dicho cambio pueda producirse de forma controlada, predecible y sostenible.
-
----
-
-## 9.3 Principios Fundamentales
-
-La evolución de la plataforma deberá desarrollarse conforme a un conjunto de principios que preserven la continuidad del ecosistema.
-
-### Compatibilidad como Objetivo
-
-Siempre que resulte técnicamente posible, la evolución de la plataforma deberá preservar la compatibilidad con las extensiones existentes.
-
-La ruptura de compatibilidad deberá considerarse una decisión arquitectónica excepcional.
-
----
-
-### Evolución Incremental
-
-Las nuevas capacidades deberán incorporarse mediante cambios progresivos que faciliten la adaptación de los componentes existentes.
-
-Las transformaciones disruptivas deberán evitarse cuando existan alternativas compatibles.
-
----
-
-### Versionado
-
-Toda evolución significativa de contratos, servicios o mecanismos de integración deberá encontrarse adecuadamente versionada.
-
-El versionado constituye el mecanismo que permite administrar distintas generaciones de capacidades sin producir conflictos dentro del ecosistema.
-
----
-
-### Deprecación Controlada
-
-Las capacidades que dejen de formar parte de la arquitectura no deberán eliminarse de forma inmediata.
-
-Antes de su retirada deberán declararse obsoletas, documentar su sustitución y mantenerse durante un período razonable que permita la adaptación de las extensiones afectadas.
-
----
-
-### Continuidad Operativa
-
-La evolución de la plataforma deberá minimizar el impacto sobre los sistemas que ya se encuentren en producción.
-
-La incorporación de nuevas versiones no deberá comprometer innecesariamente la continuidad del servicio.
-
----
-
-### Adaptabilidad
-
-La arquitectura deberá facilitar la incorporación de nuevos mecanismos de extensión sin alterar los principios fundamentales definidos por este documento.
+Cada extensión podrá evolucionar de forma independiente respecto de otras extensiones, siempre que mantenga la compatibilidad con la plataforma.
 
 ---
 
 ### Trazabilidad
 
-Toda modificación significativa de la arquitectura deberá encontrarse documentada y justificar las razones técnicas que motivaron su incorporación.
-
-La evolución arquitectónica constituye parte del conocimiento permanente de la plataforma.
+Las decisiones relevantes relacionadas con la evolución de una extensión deberán poder rastrearse mediante la documentación arquitectónica correspondiente.
 
 ---
 
-### Previsibilidad
+### Gobernanza
 
-Los desarrolladores deberán poder anticipar las consecuencias de una actualización mediante políticas de evolución claras y estables.
+Las distintas etapas del ciclo de vida deberán respetar las políticas de revisión, aprobación y mantenimiento definidas para la plataforma.
+
+---
+
+### Retirada ordenada
+
+La eliminación de una extensión deberá producirse de forma planificada, evitando afectar innecesariamente al resto del ecosistema.
+
+---
+
+## 8.4 Estados del Ciclo de Vida
+
+Conceptualmente, una extensión podrá atravesar los siguientes estados:
+
+- Definición.
+- Desarrollo.
+- Integración.
+- Disponibilidad.
+- Evolución.
+- Deprecación.
+- Retirada.
+
+Estos estados representan fases arquitectónicas del ciclo de vida y no implican un flujo rígido de implementación.
+
+Los procedimientos concretos asociados a cada etapa serán definidos por la documentación de ingeniería correspondiente.
+
+---
+
+## 8.5 Responsabilidades
+
+El ciclo de vida de las extensiones es responsable de:
+
+- Proporcionar un modelo uniforme de evolución.
+- Favorecer la estabilidad del ecosistema.
+- Facilitar la incorporación de nuevas capacidades.
+- Preservar la compatibilidad arquitectónica.
+- Permitir la retirada ordenada de capacidades obsoletas.
+- Favorecer la mantenibilidad a largo plazo.
+- Mejorar la trazabilidad de la evolución de la plataforma.
+
+No forma parte de sus responsabilidades:
+
+- Definir procedimientos operativos de despliegue.
+- Establecer herramientas de distribución.
+- Regular mecanismos tecnológicos específicos de instalación o actualización.
+
+---
+
+## 8.6 Relación con la Gobernanza Arquitectónica
+
+El ciclo de vida de las extensiones forma parte de la gobernanza general de GeoMotion Studio.
+
+Su evolución deberá mantenerse alineada con:
+
+- La Arquitectura Modular.
+- La Arquitectura de Contratos.
+- El sistema oficial de ADR.
+- El Manual de Ingeniería.
+- Las políticas de versionado y compatibilidad de la plataforma.
+
+Esta integración garantiza que la evolución funcional del ecosistema permanezca alineada con la evolución de la arquitectura.
+
+---
+
+## 8.7 Consideraciones de Evolución
+
+Durante la evolución de una extensión deberán evaluarse, entre otros aspectos:
+
+- El impacto sobre los contratos arquitectónicos utilizados.
+- La compatibilidad con versiones soportadas de la plataforma.
+- La existencia de dependencias arquitectónicas relevantes.
+- La reutilización de capacidades existentes.
+- La necesidad de procesos de deprecación.
+- La coherencia con el resto del ecosistema.
+- La sostenibilidad del mantenimiento a largo plazo.
+
+La incorporación de nuevas capacidades no deberá comprometer la estabilidad global de la plataforma.
+
+---
+
+## 8.8 Octava decisión arquitectónica
+
+### ADR-008 · Las extensiones siguen un ciclo de vida arquitectónico gobernado
+
+**Estado:** Aprobada.
+
+Toda extensión de GeoMotion Studio deberá evolucionar conforme a un ciclo de vida arquitectónico definido, respetando las políticas de gobernanza, compatibilidad y trazabilidad establecidas por la plataforma.
+
+Este enfoque garantiza una evolución ordenada del ecosistema y preserva la estabilidad de la arquitectura durante todo el ciclo de vida del producto.
+
+---
+
+## 8.9 Resumen
+
+El ciclo de vida de las extensiones proporciona el marco arquitectónico que regula la incorporación, evolución y retirada de capacidades dentro de GeoMotion Studio.
+
+Al establecer un modelo gobernado, compatible y alineado con la Arquitectura Modular, la Arquitectura de Contratos y el Manual de Ingeniería, la plataforma garantiza que su ecosistema pueda crecer de forma sostenida sin comprometer la estabilidad ni la coherencia de la arquitectura.
+
+---
+
+# CAPÍTULO 9 · Gobernanza de la Extensibilidad
+
+## 9.1 Objetivo
+
+Definir los principios de gobernanza que regulan la evolución de la Arquitectura de Extensibilidad de GeoMotion Studio, estableciendo el marco mediante el cual se preserva la coherencia arquitectónica del ecosistema de extensiones a largo plazo.
+
+Este capítulo establece las responsabilidades de la gobernanza sobre la arquitectura de extensibilidad, sin definir procesos operativos específicos de revisión o aprobación.
+
+---
+
+## 9.2 La Gobernanza de la Extensibilidad
+
+La Arquitectura de Extensibilidad constituye una capacidad estratégica de GeoMotion Studio y, como tal, requiere un modelo de gobernanza que preserve la estabilidad del núcleo, la coherencia de la Arquitectura Modular y la evolución controlada del ecosistema.
+
+La gobernanza tiene como finalidad garantizar que las decisiones relacionadas con la incorporación, evolución y retirada de capacidades respeten los principios arquitectónicos establecidos por la plataforma.
+
+La existencia de un mecanismo de extensibilidad no implica que cualquier ampliación resulte arquitectónicamente adecuada.
+
+Toda evolución deberá mantenerse alineada con la visión del proyecto, la arquitectura aprobada y los contratos arquitectónicos públicos.
+
+---
+
+## 9.3 Principios Fundamentales
+
+La gobernanza de la extensibilidad se desarrolla conforme a los siguientes principios.
+
+### Coherencia arquitectónica
+
+Toda decisión relacionada con la extensibilidad deberá preservar la coherencia entre el núcleo, los módulos arquitectónicos, los contratos y las extensiones.
+
+---
+
+### Evolución gobernada
+
+La incorporación de nuevas capacidades deberá responder a decisiones arquitectónicas justificadas y compatibles con la evolución prevista de la plataforma.
+
+---
+
+### Preservación de responsabilidades
+
+La gobernanza deberá evitar que las extensiones alteren las responsabilidades definidas para el núcleo o los módulos arquitectónicos.
+
+---
+
+### Estabilidad de los contratos
+
+Los contratos arquitectónicos públicos constituyen activos estratégicos de la plataforma.
+
+Su evolución deberá gestionarse conforme a las políticas oficiales de versionado y compatibilidad.
+
+---
+
+### Trazabilidad
+
+Las decisiones arquitectónicas relevantes deberán poder relacionarse con la documentación oficial y, cuando corresponda, con los Architecture Decision Records (ADR).
 
 ---
 
 ### Sostenibilidad
 
-La evolución deberá preservar la mantenibilidad del sistema y evitar la acumulación de mecanismos incompatibles que incrementen la complejidad de la plataforma.
+La evolución del ecosistema deberá favorecer soluciones mantenibles, reutilizables y compatibles con el crecimiento previsto de la plataforma.
 
 ---
 
-## 9.4 Compatibilidad Arquitectónica
+## 9.4 Ámbito de la Gobernanza
 
-La compatibilidad dentro de GeoMotion Studio trasciende la simple compatibilidad técnica entre versiones.
+La gobernanza de la extensibilidad comprende, entre otros aspectos:
 
-Desde una perspectiva arquitectónica deberán preservarse distintos niveles de compatibilidad.
+- La definición de nuevos Puntos de Extensión.
+- La evolución de los contratos arquitectónicos públicos.
+- La incorporación de nuevas capacidades extensibles.
+- La preservación de la Arquitectura Modular.
+- La gestión de compatibilidad entre versiones.
+- La coordinación con el sistema oficial de ADR.
+- La alineación con el Manual de Ingeniería.
 
-### Compatibilidad de Contratos
+No forma parte de este ámbito:
 
-Las interfaces públicas deberán mantenerse estables siempre que resulte posible.
-
----
-
-### Compatibilidad Funcional
-
-Las capacidades previamente disponibles deberán conservar un comportamiento consistente para las extensiones existentes.
-
----
-
-### Compatibilidad Operativa
-
-Las extensiones deberán poder incorporarse al Ciclo de Vida de la plataforma sin requerir adaptaciones innecesarias.
+- La implementación técnica de las extensiones.
+- La administración operativa del ecosistema.
+- La distribución de componentes.
+- La definición de tecnologías concretas.
 
 ---
 
-### Compatibilidad Conceptual
+## 9.5 Responsabilidades
 
-Los principios arquitectónicos definidos por la plataforma deberán permanecer estables aun cuando evolucionen sus implementaciones.
+La gobernanza de la extensibilidad es responsable de:
 
----
+- Preservar la coherencia arquitectónica del ecosistema.
+- Garantizar la estabilidad de los contratos públicos.
+- Favorecer la evolución ordenada de la plataforma.
+- Evitar el incremento innecesario del acoplamiento.
+- Mantener la consistencia entre la documentación arquitectónica y la evolución del sistema.
+- Promover decisiones alineadas con la visión de largo plazo del proyecto.
 
-## 9.5 Estrategias de Evolución
+No forma parte de sus responsabilidades:
 
-La Arquitectura de Extensibilidad podrá incorporar distintas estrategias para administrar su evolución.
-
-Entre ellas:
-
-- Ampliación de contratos existentes.
-- Incorporación de nuevos Puntos de Extensión.
-- Versionado de interfaces.
-- Sustitución gradual de capacidades.
-- Mecanismos de compatibilidad temporal.
-- Adaptadores entre versiones.
-- Procesos de migración documentados.
-- Eliminación progresiva de funcionalidades obsoletas.
-
-La selección de una estrategia dependerá del impacto arquitectónico asociado a cada modificación.
+- Sustituir la Arquitectura Modular.
+- Reemplazar el sistema de ADR.
+- Definir procesos de desarrollo o implementación.
 
 ---
 
-## 9.6 Responsabilidades
+## 9.6 Relación con la Gobernanza General del Proyecto
 
-La arquitectura es responsable de:
+La gobernanza de la extensibilidad forma parte de la gobernanza arquitectónica general de GeoMotion Studio.
 
-- Preservar la estabilidad del ecosistema.
-- Administrar la evolución de contratos públicos.
-- Coordinar la incorporación de nuevas capacidades.
-- Minimizar las rupturas de compatibilidad.
-- Facilitar procesos de migración.
-- Definir políticas de versionado.
-- Documentar los cambios arquitectónicos.
-- Favorecer la sostenibilidad del sistema a largo plazo.
-- Mantener la coherencia entre distintas generaciones de componentes.
+Sus decisiones deberán mantenerse alineadas con:
 
-No forma parte de sus responsabilidades impedir la evolución de la plataforma, sino administrarla de manera controlada.
+- La Arquitectura Modular.
+- La Arquitectura de Contratos.
+- El Manual de Ingeniería.
+- El sistema oficial de ADR.
+- La estrategia de evolución de la plataforma.
+
+La Arquitectura de Extensibilidad no constituye un sistema de gobierno independiente, sino una especialización dentro del marco general de gobernanza del proyecto.
 
 ---
 
-## 9.7 Relación con el Ciclo de Vida de las Extensiones
+## 9.7 Consideraciones Arquitectónicas
 
-El Ciclo de Vida regula la existencia operativa de cada extensión.
+Antes de incorporar nuevas capacidades extensibles deberán evaluarse, entre otros aspectos:
 
-La Compatibilidad y Evolución regulan la permanencia del ecosistema a lo largo del tiempo.
+- Su alineación con la arquitectura vigente.
+- La existencia de mecanismos equivalentes.
+- El impacto sobre los contratos públicos.
+- La necesidad real de nuevos Puntos de Extensión.
+- La compatibilidad con el ecosistema existente.
+- El coste de mantenimiento a largo plazo.
+- La sostenibilidad de la evolución propuesta.
 
-Mientras el Ciclo de Vida administra el comportamiento de un componente durante su ejecución, este capítulo establece los principios que permiten que dicho componente continúe siendo válido conforme la plataforma evoluciona.
-
-Ambos mecanismos resultan complementarios para garantizar la estabilidad del sistema.
+Estas evaluaciones permiten preservar una arquitectura estable y evitar el crecimiento desordenado del ecosistema.
 
 ---
 
-## 9.8 Consideraciones de Diseño
+## 9.8 Novena decisión arquitectónica
 
-Toda decisión relacionada con la evolución de la Arquitectura de Extensibilidad deberá evaluar, entre otros aspectos:
+### ADR-009 · La evolución de la extensibilidad está sujeta a gobernanza arquitectónica
 
-- El impacto sobre el núcleo.
-- La compatibilidad con contratos existentes.
-- El efecto sobre las extensiones oficiales.
-- El efecto sobre las extensiones desarrolladas por terceros.
-- La complejidad de migración.
-- La sostenibilidad de la solución propuesta.
-- La coherencia con los principios arquitectónicos.
-- El coste de mantenimiento futuro.
-- La necesidad real del cambio.
+**Estado:** Aprobada.
 
-La evolución arquitectónica deberá responder siempre a objetivos claramente identificables y nunca a cambios arbitrarios de diseño.
+Toda evolución de la Arquitectura de Extensibilidad deberá realizarse dentro del marco de gobernanza arquitectónica de GeoMotion Studio, respetando la Arquitectura Modular, la Arquitectura de Contratos, el Manual de Ingeniería y el sistema oficial de ADR.
+
+Este principio garantiza que la incorporación de nuevas capacidades preserve la coherencia técnica y la sostenibilidad del sistema.
 
 ---
 
 ## 9.9 Resumen
 
-La Compatibilidad y Evolución constituyen los mecanismos que permiten a GeoMotion Studio crecer sin comprometer la estabilidad de su ecosistema.
+La gobernanza de la extensibilidad proporciona el marco arquitectónico que regula la evolución del ecosistema de extensiones de GeoMotion Studio.
 
-Mediante políticas de versionado, deprecación, compatibilidad y evolución controlada, la plataforma puede incorporar nuevas capacidades preservando la continuidad operativa y la independencia entre el núcleo y las extensiones.
+Al mantener alineadas las decisiones de evolución con la Arquitectura Modular, la Arquitectura de Contratos, el Manual de Ingeniería y el sistema de ADR, la plataforma preserva una arquitectura coherente, mantenible y preparada para evolucionar de forma sostenible.
 
 ---
-# CAPÍTULO 10 · Ecosistema y Gobernanza
+
+# CAPÍTULO 10 · Evolución de la Arquitectura de Extensibilidad
 
 ## 10.1 Objetivo
 
-Definir los principios que regulan la administración del ecosistema de extensiones de GeoMotion Studio, estableciendo los criterios necesarios para garantizar su crecimiento ordenado, su sostenibilidad y la preservación de la calidad arquitectónica de la plataforma.
+Definir los principios que regulan la evolución de la Arquitectura de Extensibilidad de GeoMotion Studio, garantizando que el crecimiento de la plataforma preserve la estabilidad de su arquitectura, la compatibilidad del ecosistema y la sostenibilidad del proyecto a largo plazo.
 
-Este capítulo proporciona el marco conceptual que orienta la evolución del ecosistema de componentes, promoviendo una comunidad de desarrollo coherente con los principios establecidos por la Arquitectura de Extensibilidad.
+Este capítulo establece los criterios arquitectónicos para evolucionar la capacidad de extensibilidad sin comprometer los principios fundamentales del sistema.
 
 ---
 
-## 10.2 El Ecosistema de Extensiones
+## 10.2 Evolución Arquitectónica
 
-La Arquitectura de Extensibilidad no finaliza con la definición de mecanismos técnicos para incorporar nuevas capacidades.
+La Arquitectura de Extensibilidad deberá evolucionar de forma gradual, gobernada y compatible con la arquitectura aprobada de GeoMotion Studio.
 
-Su propósito último consiste en posibilitar la construcción de un ecosistema de componentes capaz de evolucionar de forma continua sin comprometer la estabilidad de la plataforma.
+La incorporación de nuevas capacidades de extensibilidad no constituye un objetivo en sí mismo.
 
-Un ecosistema está formado por el conjunto de extensiones, contratos, herramientas, desarrolladores, organizaciones y procesos que participan en la evolución funcional de GeoMotion Studio.
+Toda evolución deberá responder a necesidades arquitectónicas justificadas, manteniendo la coherencia con la Arquitectura Modular, la Arquitectura de Contratos y el modelo general de gobernanza del proyecto.
 
-Desde una perspectiva arquitectónica, el valor de la plataforma no depende únicamente de las capacidades desarrolladas por su equipo principal, sino también de la posibilidad de que terceros puedan construir soluciones especializadas sobre una infraestructura común.
-
-La calidad de dicho ecosistema dependerá tanto de la solidez de la arquitectura como de las reglas que regulen su crecimiento.
+La estabilidad de la plataforma dependerá de la capacidad para evolucionar sin introducir acoplamientos innecesarios, mecanismos redundantes o contratos inconsistentes.
 
 ---
 
 ## 10.3 Principios Fundamentales
 
-La evolución del ecosistema deberá desarrollarse conforme a un conjunto de principios que preserven la coherencia de la plataforma.
+La evolución de la Arquitectura de Extensibilidad se rige por los siguientes principios.
 
-### Apertura
+### Compatibilidad progresiva
 
-La arquitectura deberá facilitar la incorporación de nuevas extensiones desarrolladas por distintos equipos, siempre que respeten los contratos públicos establecidos por la plataforma.
-
----
-
-### Igualdad Arquitectónica
-
-Toda extensión deberá integrarse utilizando los mismos mecanismos definidos por la Arquitectura de Extensibilidad.
-
-No existirán mecanismos privilegiados para componentes oficiales frente a componentes desarrollados por terceros.
+Siempre que resulte posible, las nuevas capacidades deberán incorporarse preservando la compatibilidad con las extensiones existentes.
 
 ---
 
-### Calidad
+### Evolución incremental
 
-La incorporación de nuevas extensiones deberá promover buenas prácticas de diseño, documentación y mantenimiento.
-
-El crecimiento del ecosistema no deberá producir una disminución de la calidad arquitectónica.
+La arquitectura deberá evolucionar mediante cambios progresivos y controlados, evitando transformaciones disruptivas que comprometan la estabilidad del ecosistema.
 
 ---
 
-### Transparencia
+### Reutilización
 
-Las reglas que regulan el funcionamiento del ecosistema deberán encontrarse claramente documentadas.
-
-Los desarrolladores deberán conocer las condiciones de integración, evolución y compatibilidad de sus componentes.
+Las nuevas capacidades deberán reutilizar mecanismos, contratos y Puntos de Extensión existentes antes de introducir nuevas estructuras arquitectónicas.
 
 ---
 
-### Colaboración
+### Simplificación
 
-La arquitectura deberá favorecer la cooperación entre desarrolladores, equipos y organizaciones mediante contratos públicos, estándares comunes y mecanismos de integración consistentes.
-
----
-
-### Evolución Compartida
-
-La mejora continua del ecosistema constituye una responsabilidad compartida entre la plataforma y los desarrolladores de extensiones.
-
-Las decisiones arquitectónicas deberán considerar el impacto sobre ambos.
+Toda evolución deberá contribuir a mantener una arquitectura comprensible, evitando incrementar innecesariamente la complejidad del sistema.
 
 ---
 
-### Sostenibilidad
+### Coherencia
 
-El crecimiento del ecosistema deberá preservar la estabilidad técnica, organizativa y documental del proyecto.
-
-La incorporación de nuevas capacidades no deberá comprometer la mantenibilidad futura de la plataforma.
+Los nuevos mecanismos de extensibilidad deberán integrarse respetando los principios definidos por la Arquitectura Modular y la Arquitectura de Contratos.
 
 ---
 
-### Innovación Responsable
+### Gobernanza
 
-La arquitectura deberá facilitar la experimentación y el desarrollo de nuevas capacidades sin poner en riesgo la estabilidad del sistema.
-
-La innovación deberá producirse dentro del marco definido por los principios arquitectónicos.
+Las decisiones relevantes sobre la evolución de la Arquitectura de Extensibilidad deberán seguir los mecanismos oficiales de gobernanza del proyecto.
 
 ---
 
-## 10.4 Gobernanza Arquitectónica
+## 10.4 Criterios para la Evolución
 
-La Gobernanza Arquitectónica establece el conjunto de políticas mediante las cuales se administra la evolución del ecosistema.
+La incorporación de nuevas capacidades arquitectónicas deberá considerar, entre otros aspectos:
 
-Entre sus responsabilidades se encuentran:
+- La necesidad arquitectónica real.
+- La existencia de mecanismos equivalentes.
+- El impacto sobre los contratos públicos.
+- La compatibilidad con el ecosistema existente.
+- La reutilización de capacidades disponibles.
+- El coste de mantenimiento.
+- La sostenibilidad a largo plazo.
+- La alineación con la visión arquitectónica del proyecto.
 
-- Definir los principios generales de extensibilidad.
-- Administrar la evolución de los contratos públicos.
-- Aprobar la incorporación de nuevos Puntos de Extensión.
-- Supervisar la compatibilidad entre versiones.
-- Promover la calidad arquitectónica.
-- Coordinar la evolución del ecosistema.
-- Mantener la coherencia documental.
-- Preservar la visión arquitectónica de largo plazo.
-
-La gobernanza no pretende limitar la evolución de la plataforma, sino garantizar que dicha evolución permanezca alineada con los principios establecidos por este documento.
+La evolución deberá favorecer soluciones generales antes que mecanismos específicos para casos particulares.
 
 ---
 
-## 10.5 Responsabilidades de los Participantes
+## 10.5 Responsabilidades
 
-La sostenibilidad del ecosistema depende de la colaboración entre todos sus participantes.
+La evolución de la Arquitectura de Extensibilidad es responsable de:
 
-### La Plataforma
+- Preservar la estabilidad de la plataforma.
+- Favorecer el crecimiento ordenado del ecosistema.
+- Mantener la compatibilidad arquitectónica.
+- Reducir el acoplamiento entre componentes.
+- Facilitar la incorporación de nuevas capacidades.
+- Garantizar la coherencia con el resto de la arquitectura.
+- Promover una evolución sostenible del sistema.
 
-Es responsable de proporcionar una infraestructura estable, contratos públicos consistentes, documentación suficiente y políticas claras de evolución.
+No forma parte de sus responsabilidades:
 
----
-
-### Los Desarrolladores de Extensiones
-
-Son responsables de respetar los contratos publicados, mantener la compatibilidad de sus componentes y desarrollar soluciones acordes con los principios arquitectónicos definidos por GeoMotion Studio.
-
----
-
-### La Comunidad
-
-Contribuye a identificar necesidades, proponer mejoras, compartir conocimiento y favorecer la evolución continua del ecosistema mediante la colaboración abierta y el intercambio de experiencias.
+- Definir implementaciones concretas.
+- Sustituir la gobernanza general del proyecto.
+- Introducir tecnologías específicas de integración.
 
 ---
 
-## 10.6 Evolución del Ecosistema
+## 10.6 Relación con la Evolución General del Sistema
 
-El ecosistema deberá evolucionar conforme a procesos controlados que preserven la estabilidad de la plataforma.
+La evolución de la Arquitectura de Extensibilidad forma parte de la evolución global de GeoMotion Studio.
 
-Entre los principales objetivos de esta evolución se encuentran:
+Toda modificación deberá mantenerse alineada con:
 
-- Incrementar las capacidades disponibles.
-- Favorecer la reutilización de componentes.
-- Reducir duplicaciones funcionales.
-- Promover estándares comunes.
-- Facilitar la interoperabilidad entre extensiones.
-- Consolidar una base documental compartida.
-- Incorporar nuevas áreas de especialización.
-- Mantener una arquitectura preparada para el crecimiento.
+- La visión del proyecto.
+- La Arquitectura Modular.
+- La Arquitectura de Contratos.
+- El Manual de Ingeniería.
+- El sistema oficial de ADR.
+- La estrategia general de evolución de la plataforma.
 
-La evolución del ecosistema constituye un proceso continuo que deberá acompañar la evolución general de GeoMotion Studio.
+Esta relación garantiza que la extensibilidad evolucione como parte de una arquitectura unificada y no como un subsistema independiente.
 
 ---
 
-## 10.7 Visión a Largo Plazo
+## 10.7 Consideraciones Arquitectónicas
 
-La Arquitectura de Extensibilidad ha sido concebida para sostener la evolución de GeoMotion Studio durante todo su ciclo de vida.
+Durante la evolución de la Arquitectura de Extensibilidad deberán evaluarse, entre otros aspectos:
 
-Las decisiones adoptadas en materia de extensibilidad deberán evaluarse considerando no solo las necesidades actuales del proyecto, sino también su impacto sobre futuras generaciones de desarrolladores, extensiones y capacidades.
+- El impacto sobre los Puntos de Extensión existentes.
+- La estabilidad de los contratos arquitectónicos públicos.
+- La compatibilidad con las extensiones existentes.
+- La reutilización de capacidades disponibles.
+- La claridad del modelo de integración.
+- La mantenibilidad de la arquitectura.
+- La sostenibilidad del ecosistema.
+- La consistencia documental.
 
-Una arquitectura estable permite que el conocimiento acumulado permanezca vigente durante años, reduciendo el coste de incorporación de nuevas funcionalidades y favoreciendo una evolución tecnológica sostenible.
-
-La construcción de un ecosistema sólido representa una inversión estratégica cuyo valor aumenta conforme crece la plataforma y se amplía la comunidad que participa en su desarrollo.
-
----
-
-## 10.8 Conclusiones
-
-La Arquitectura de Extensibilidad constituye uno de los pilares fundamentales de GeoMotion Studio.
-
-Mediante la definición de un núcleo estable, un modelo de extensiones desacoplado, contratos públicos, puntos de extensión, políticas de compatibilidad y un marco de gobernanza, la plataforma establece las bases necesarias para evolucionar de forma continua sin comprometer su estabilidad arquitectónica.
-
-La extensibilidad deja de ser un mecanismo técnico destinado únicamente a incorporar nuevas funcionalidades y pasa a convertirse en una estrategia de evolución que permite a GeoMotion Studio adaptarse a nuevos escenarios, tecnologías y necesidades durante toda su vida útil.
-
-En este contexto, el éxito de la plataforma no dependerá únicamente de las capacidades desarrolladas inicialmente, sino de la solidez de la arquitectura que haga posible todas las capacidades que aún están por construirse.
-
----
-# ANEXOS
-
-## Anexo A · Glosario
-
-Define de manera precisa la terminología utilizada en el documento.
-
-Ejemplos:
-
-- Arquitectura de Extensibilidad
-- Extensión
-- Plugin
-- Núcleo
-- Punto de Extensión
-- Contrato Arquitectónico
-- API Pública
-- SDK
-- Ciclo de Vida
-- Compatibilidad
-- Gobernanza
-- Ecosistema
-- Versionado
-- Deprecación
+Toda evolución deberá preservar el principio de que las extensiones amplían la plataforma sin alterar las responsabilidades fundamentales del núcleo ni de los módulos arquitectónicos.
 
 ---
 
-## Anexo B · Principios Arquitectónicos Consolidados
+## 10.8 Décima decisión arquitectónica
 
-Recopila todos los principios definidos a lo largo del documento en una única referencia.
+### ADR-010 · La Arquitectura de Extensibilidad evoluciona preservando la estabilidad de la plataforma
 
-Por ejemplo:
+**Estado:** Aprobada.
 
-- Núcleo estable.
-- Evolución independiente.
-- Bajo acoplamiento.
-- Contratos públicos.
-- Compatibilidad.
-- Modularidad.
-- Versionado.
-- Evolución incremental.
-- Observabilidad.
-- Sostenibilidad.
-- Gobernanza.
-- Igualdad arquitectónica.
+La evolución de la Arquitectura de Extensibilidad deberá realizarse de forma incremental, gobernada y compatible con la Arquitectura Modular y la Arquitectura de Contratos.
 
-Este anexo sirve como una guía rápida para arquitectos y desarrolladores.
+Las nuevas capacidades deberán integrarse reutilizando los mecanismos existentes siempre que resulte posible, preservando la estabilidad del núcleo, la coherencia del ecosistema y la sostenibilidad de la plataforma.
 
 ---
 
-## Anexo C · Relación con otros documentos
+## 10.9 Resumen
 
-Este documento mantiene relación directa con:
+La evolución de la Arquitectura de Extensibilidad constituye un proceso continuo orientado a preservar la capacidad de crecimiento de GeoMotion Studio sin comprometer la estabilidad de su arquitectura.
 
-- DOC-001 — Visión del Producto
-- DOC-002 — Arquitectura General
-- DOC-004 — Pila Tecnológica
-- DOC-010 — Arquitectura del Estado Global.
-- DOC-011 — Arquitectura de Renderizado.
-- DOC-012 — Arquitectura Cartográfica.
-
-Cada uno desarrolla una disciplina específica de la plataforma que complementa la Arquitectura de Extensibilidad.
+Mediante principios de compatibilidad, reutilización, simplicidad y gobernanza, la plataforma mantiene un modelo de extensibilidad preparado para evolucionar de forma sostenible durante todo su ciclo de vida.
 
 ---
 
-## Anexo D · Consideraciones para futuras evoluciones
+# CAPÍTULO 11 · Conclusiones
 
-Este documento define principios arquitectónicos generales y evita describir tecnologías concretas.
+## 11.1 Arquitectura preparada para evolucionar
 
-Como consecuencia, futuras implementaciones podrán incorporar nuevos mecanismos de extensibilidad sin modificar los fundamentos aquí establecidos, siempre que respeten:
+La Arquitectura de Extensibilidad de GeoMotion Studio establece el marco arquitectónico que permite incorporar nuevas capacidades preservando la estabilidad de la plataforma.
 
-- El modelo de contratos.
-- Los puntos de extensión.
-- El desacoplamiento del núcleo.
-- La compatibilidad evolutiva.
-- Las políticas de gobernanza.
+La separación entre núcleo, módulos arquitectónicos, contratos públicos y extensiones proporciona un modelo de evolución basado en responsabilidades claramente definidas, bajo acoplamiento y alta cohesión.
 
-La incorporación de nuevas capacidades deberá ampliar la arquitectura existente antes que sustituir sus principios fundamentales.
+La extensibilidad deja de ser un mecanismo accesorio para convertirse en una capacidad estructural de la arquitectura.
+
+---
+
+## 11.2 Integración coherente con la Arquitectura General
+
+La Arquitectura de Extensibilidad forma parte de la arquitectura global de GeoMotion Studio y complementa las decisiones establecidas por:
+
+- La Arquitectura Modular.
+- La Arquitectura de Contratos.
+- La Arquitectura Física del Repositorio.
+- El Manual de Ingeniería.
+- El sistema oficial de Architecture Decision Records (ADR).
+
+Su finalidad no consiste en introducir una arquitectura paralela, sino en proporcionar un mecanismo controlado para la evolución funcional de la plataforma dentro del marco arquitectónico existente.
+
+---
+
+## 11.3 Principios consolidados
+
+La Arquitectura de Extensibilidad se fundamenta en los siguientes principios permanentes:
+
+- Estabilidad del núcleo.
+- Evolución mediante extensiones.
+- Integración exclusivamente mediante contratos arquitectónicos públicos.
+- Bajo acoplamiento entre componentes.
+- Alta cohesión funcional.
+- Encapsulación de las implementaciones.
+- Compatibilidad evolutiva.
+- Gobernanza arquitectónica.
+- Trazabilidad de las decisiones relevantes.
+- Sostenibilidad a largo plazo.
+
+Estos principios deberán preservarse durante toda la evolución de la plataforma.
+
+---
+
+## 11.4 Beneficios arquitectónicos
+
+La adopción de este modelo proporciona, entre otros, los siguientes beneficios:
+
+- Reducción del acoplamiento entre componentes.
+- Evolución independiente de capacidades funcionales.
+- Mayor reutilización de servicios comunes.
+- Incorporación controlada de nuevas funcionalidades.
+- Protección de la estabilidad del núcleo.
+- Simplificación del mantenimiento evolutivo.
+- Mayor previsibilidad en la evolución del ecosistema.
+- Escalabilidad arquitectónica a largo plazo.
+
+Estos beneficios fortalecen la capacidad de GeoMotion Studio para evolucionar sin comprometer la coherencia de su arquitectura.
+
+---
+
+## 11.5 Relación con la evolución futura
+
+La Arquitectura de Extensibilidad deberá evolucionar conjuntamente con el resto de la arquitectura del proyecto.
+
+Toda incorporación de nuevos Puntos de Extensión, contratos arquitectónicos o capacidades extensibles deberá mantenerse alineada con la visión del proyecto y con las políticas de gobernanza establecidas por el Manual de Ingeniería.
+
+Las decisiones que modifiquen significativamente este modelo deberán documentarse y gestionarse mediante el sistema oficial de ADR cuando corresponda.
+
+---
+
+## 11.6 Conclusión final
+
+GeoMotion Studio adopta una Arquitectura de Extensibilidad concebida como una capacidad permanente de la plataforma y no como un mecanismo aislado de personalización.
+
+Al fundamentar toda integración en contratos arquitectónicos públicos, preservar la independencia entre el núcleo, los módulos y las extensiones, y gobernar su evolución mediante principios arquitectónicos explícitos, la plataforma dispone de un modelo preparado para crecer de forma ordenada, mantenible y sostenible durante todo su ciclo de vida.

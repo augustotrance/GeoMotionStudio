@@ -38,11 +38,11 @@ Este bloque establece los principios fundamentales que definen la identidad téc
 |-----------|-------------|
 | **00_FUNDAMENTOS.md** | Principios fundamentales, objetivos, alcance y filosofía de ingeniería del proyecto. |
 | **01_VISIÓN_DEL_PRODUCTO.md** | Visión estratégica, misión, objetivos y posicionamiento de GeoMotion Studio. |
-| **02_ARQUITECTURA_GENERAL.md** | Arquitectura global de la plataforma y organización de sus principales subsistemas. |
+| **02_ARQUITECTURA.md** | Arquitectura global de la plataforma y organización de sus principales subsistemas. |
 | **03_SISTEMA_DE_DISEÑO.md** | Sistema de diseño, identidad visual y principios de experiencia de usuario. |
 | **04_PILA_TECNOLÓGICA.md** | Organización de la pila tecnológica y criterios para la selección de tecnologías. |
 | **05_HOJA_DE_RUTA.md** | Estrategia de evolución y planificación del proyecto a medio y largo plazo. |
-| **06_CONSTITUCIÓN.md** | Principios arquitectónicos y normas que gobiernan la evolución del proyecto. |
+| **06_CONSTITUCIÓN_DEL_PROYECTO.md** | Principios arquitectónicos y normas que gobiernan la evolución del proyecto. |
 
 ---
 

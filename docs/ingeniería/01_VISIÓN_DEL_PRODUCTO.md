@@ -172,6 +172,7 @@ Cada capítulo desarrolla un aspecto específico de GeoMotion Studio y, en conju
 **— Documentación Oficial de GeoMotion Studio**
 
 ---
+
 # CAPÍTULO 1 · Definición del Producto
 
 ## 1.1 Objetivo del capítulo
@@ -331,6 +332,7 @@ Se han definido su naturaleza, el problema que busca resolver, su propósito, su
 Los capítulos siguientes desarrollarán los objetivos estratégicos del producto, su alcance funcional y la organización general de la plataforma.
 
 ---
+
 # CAPÍTULO 2 · Objetivos del Producto
 
 ## 2.1 Objetivo del capítulo
@@ -512,6 +514,7 @@ Se han definido los objetivos estratégicos, funcionales y de calidad que deber�
 Los capítulos siguientes desarrollarán el alcance funcional de la plataforma, identificando qué capacidades forman parte del producto y cuáles quedan fuera de sus objetivos.
 
 ---
+
 # CAPÍTULO 3 · Alcance del Producto
 
 ## 3.1 Objetivo del capítulo
@@ -749,6 +752,7 @@ Se han identificado las capacidades que forman parte del producto, aquellas prev
 Estas definiciones constituyen la referencia oficial para orientar la evolución del proyecto, priorizar el desarrollo y preservar la identidad de la plataforma durante todo su ciclo de vida.
 
 ---
+
 # CAPÍTULO 4 · Usuarios Objetivo
 
 ## 4.1 Objetivo del capítulo
@@ -1056,6 +1060,7 @@ En este capítulo se han identificado los principales perfiles de usuarios de Ge
 La información aquí definida constituye la referencia para el diseño de la experiencia de usuario, la priorización de funcionalidades y la evolución del producto, garantizando que todas las decisiones mantengan un enfoque centrado en quienes utilizarán la plataforma.
 
 ---
+
 # CAPÍTULO 5 · Casos de Uso
 
 ## 5.1 Objetivo del capítulo
@@ -1216,6 +1221,7 @@ Los escenarios descritos representan las actividades que la plataforma deberá p
 Los capítulos siguientes profundizarán en la organización interna de estas capacidades y en la forma en que se estructuran dentro de la plataforma.
 
 ---
+
 # CAPÍTULO 6 · Arquitectura Funcional
 
 ## 6.1 Objetivo del capítulo
@@ -1447,6 +1453,7 @@ Se han identificado las principales áreas funcionales, los principios que regul
 Esta estructura servirá como referencia para el diseño de la interfaz, la planificación del desarrollo y la definición de la arquitectura técnica descrita en la documentación correspondiente.
 
 ---
+
 # CAPÍTULO 7 · Flujo General de Trabajo
 
 ## 7.1 Objetivo del capítulo
@@ -1659,6 +1666,7 @@ Se han identificado las principales etapas del proceso de producción, los princ
 Este flujo constituye la referencia para el diseño de la experiencia de usuario, la navegación de la aplicación y la organización funcional de la plataforma.
 
 ---
+
 # CAPÍTULO 8 · Versiones del Producto
 
 ## 8.1 Objetivo del capítulo
@@ -1894,6 +1902,7 @@ Asimismo, se han establecido los principios que deberán guiar la incorporación
 Esta estrategia garantiza que la evolución de GeoMotion Studio se produzca de forma ordenada, sostenible y alineada con la visión definida en este documento.
 
 ---
+
 # CAPÍTULO 9 · Requisitos Funcionales
 
 ## 9.1 Objetivo del capítulo
@@ -2093,6 +2102,7 @@ En este capítulo se han definido los requisitos funcionales generales que deber
 Estos requisitos constituyen la base funcional del producto y servirán como referencia para el desarrollo de especificaciones más detalladas, garantizando la coherencia entre la visión estratégica, la arquitectura funcional y la implementación técnica.
 
 ---
+
 # CAPÍTULO 10 · Requisitos No Funcionales
 
 ## 10.1 Objetivo del capítulo
@@ -2330,6 +2340,7 @@ En este capítulo se han definido los principales atributos de calidad que deber
 Estos requisitos establecen el estándar de calidad esperado para la plataforma y constituyen un marco permanente para orientar las decisiones de diseño, desarrollo y evolución del producto.
 
 ---
+
 # CAPÍTULO 11 · Principios de Diseño del Producto
 
 ## 11.1 Objetivo del capítulo
@@ -2497,6 +2508,7 @@ Estos principios orientan la construcción de la experiencia de usuario y consti
 Su aplicación garantizará que la evolución del producto preserve una experiencia coherente, eficiente y centrada en las necesidades de sus usuarios.
 
 ---
+
 # CAPÍTULO 12 · Visión a Largo Plazo
 
 ## 12.1 Objetivo del capítulo

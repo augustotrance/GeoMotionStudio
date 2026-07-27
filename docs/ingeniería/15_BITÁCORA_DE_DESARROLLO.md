@@ -94,6 +94,7 @@ De esta manera, los tres elementos conforman un sistema integrado de gestión de
 El documento se organiza en diez capítulos que desarrollan el propósito de la Bitácora, los tipos de conocimiento que deberán registrarse, las buenas prácticas para su mantenimiento y su integración con el resto de la documentación técnica del proyecto.
 
 ---
+
 # CAPÍTULO 1 · Propósito de la Bitácora de Desarrollo
 
 ## 1.1 Objetivo
@@ -245,6 +246,7 @@ La Bitácora de Desarrollo constituye el mecanismo mediante el cual GeoMotion St
 Al registrar experiencias, descubrimientos y lecciones aprendidas, complementa el Manual de Ingeniería y los Registros de Decisiones de Arquitectura, contribuyendo a la continuidad del conocimiento técnico y favoreciendo una evolución más eficiente, consistente y sostenible del proyecto.
 
 ---
+
 # CAPÍTULO 2 · Conocimiento Técnico
 
 ## 2.1 Objetivo
@@ -426,6 +428,7 @@ El conocimiento técnico registrado en la Bitácora constituye una fuente perman
 Al documentar descubrimientos, investigaciones, observaciones y lecciones aprendidas, el proyecto preserva información que trasciende el desarrollo cotidiano y fortalece su capacidad para evolucionar de manera consistente, eficiente y basada en la experiencia acumulada.
 
 ---
+
 # CAPÍTULO 3 · Registro de Experiencias
 
 ## 3.1 Objetivo
@@ -636,6 +639,7 @@ El Registro de Conocimiento constituye la unidad fundamental de la Bitácora de 
 Su utilización permite documentar experiencias de forma homogénea, preservar el aprendizaje obtenido durante el desarrollo y facilitar la reutilización del conocimiento en futuras etapas del proyecto.
 
 ---
+
 # CAPÍTULO 4 · Lecciones Aprendidas
 
 ## 4.1 Objetivo
@@ -811,6 +815,7 @@ Las lecciones aprendidas representan el mecanismo mediante el cual GeoMotion Stu
 Su documentación sistemática fortalece la memoria técnica del proyecto, favorece la mejora continua y contribuye a que las futuras decisiones se fundamenten no solo en principios arquitectónicos, sino también en la experiencia acumulada a lo largo de la evolución de la plataforma.
 
 ---
+
 # CAPÍTULO 5 · Problemas Recurrentes
 
 ## 5.1 Objetivo
@@ -1012,6 +1017,7 @@ La identificación y análisis sistemático de los problemas recurrentes permite
 Al comprender las causas que originan estos problemas y documentar las soluciones aplicadas, GeoMotion Studio fortalece su capacidad para evolucionar de manera más estable, eficiente y basada en la experiencia acumulada.
 
 ---
+
 # CAPÍTULO 6 · Buenas Prácticas
 
 ## 6.1 Objetivo
@@ -1231,6 +1237,7 @@ Al transformar experiencias exitosas en recomendaciones técnicas fundamentadas,
 Constituyen, además, un puente entre el conocimiento empírico preservado en la Bitácora de Desarrollo y la evolución formal de la arquitectura y de la documentación técnica del proyecto.
 
 ---
+
 # CAPÍTULO 7 · Experimentación
 
 ## 7.1 Objetivo
@@ -1441,6 +1448,7 @@ La experimentación constituye una herramienta esencial para reducir la incertid
 Al documentar de manera sistemática las hipótesis, metodologías, resultados y conclusiones de cada experimento, la Bitácora de Desarrollo transforma la investigación técnica en conocimiento reutilizable, fortaleciendo la capacidad del proyecto para evolucionar sobre bases objetivas y sustentadas en evidencia.
 
 ---
+
 # CAPÍTULO 8 · Evolución del Proyecto
 
 ## 8.1 Objetivo
@@ -1631,6 +1639,7 @@ La evolución de GeoMotion Studio constituye un proceso continuo de generación 
 Al preservar la historia técnica del proyecto, la Bitácora de Desarrollo facilita el análisis retrospectivo, fortalece la memoria institucional y proporciona una base sólida para orientar futuras decisiones de ingeniería.
 
 ---
+
 # CAPÍTULO 9 · Gestión del Conocimiento
 
 ## 9.1 Objetivo
@@ -1820,6 +1829,7 @@ La gestión sistemática del conocimiento garantiza que la experiencia adquirida
 Al preservar, organizar y reutilizar este conocimiento, GeoMotion Studio fortalece su capacidad de evolución, reduce la pérdida de experiencia institucional y favorece una ingeniería basada en evidencia, aprendizaje continuo y mejora permanente.
 
 ---
+
 # CAPÍTULO 10 · Relación con el Manual de Ingeniería y los ADR
 
 ## 10.1 Objetivo
@@ -2008,6 +2018,7 @@ Su integración con el Manual de Ingeniería y los Registros de Decisiones de Ar
 De este modo, GeoMotion Studio dispone de un sistema documental capaz de conservar la memoria técnica de la plataforma, favorecer la mejora continua y respaldar la evolución de la arquitectura mediante conocimiento verificable, estructurado y reutilizable.
 
 ---
+
 # ANEXOS
 
 Los presentes anexos complementan el contenido desarrollado en este documento proporcionando modelos, plantillas, diagramas y herramientas destinadas a facilitar el registro, organización, preservación y reutilización del conocimiento técnico generado durante el desarrollo de GeoMotion Studio.
@@ -2046,7 +2057,7 @@ Estado:
 Componentes Relacionados:
 
 Versión:
-
+```
 ---
 
 ## Contexto
@@ -2098,7 +2109,6 @@ Componentes
 Versiones
 
 Documentación adicional
-```
 
 ---
 

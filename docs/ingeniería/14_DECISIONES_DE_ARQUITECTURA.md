@@ -94,6 +94,7 @@ Asimismo, proporciona el marco metodológico para la elaboración y mantenimient
 El documento se organiza en diez capítulos que desarrollan los fundamentos, el proceso de evaluación, la documentación, la trazabilidad y la gobernanza de las Decisiones de Arquitectura, proporcionando un modelo uniforme para administrar la evolución técnica de la plataforma.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de las Decisiones de Arquitectura
 
 ## 1.1 Objetivo
@@ -222,6 +223,7 @@ Las Decisiones de Arquitectura representan el mecanismo formal mediante el cual 
 Al documentar el contexto, las alternativas evaluadas, la decisión adoptada y sus consecuencias, la plataforma preserva el conocimiento arquitectónico, facilita la comprensión de su evolución y proporciona una base sólida para futuras decisiones técnicas.
 
 ---
+
 # CAPÍTULO 2 · Clasificación de las Decisiones de Arquitectura
 
 ## 2.1 Objetivo
@@ -395,6 +397,7 @@ La clasificación de las Decisiones de Arquitectura permite administrar de forma
 Al distinguir entre decisiones estratégicas, estructurales, tecnológicas y operativas, así como entre distintos niveles de impacto, la plataforma establece un modelo uniforme que facilita la evaluación, documentación y gobernanza de su arquitectura.
 
 ---
+
 # CAPÍTULO 3 · Proceso de Toma de Decisiones
 
 ## 3.1 Objetivo
@@ -591,6 +594,7 @@ El Proceso de Toma de Decisiones establece una metodología uniforme para analiz
 Mediante un proceso estructurado, fundamentado y trazable, la plataforma garantiza que la evolución de su arquitectura responda a criterios técnicos objetivos y permanezca comprensible a lo largo del tiempo.
 
 ---
+
 # CAPÍTULO 4 · Registro de Decisiones de Arquitectura (ADR)
 
 ## 4.1 Objetivo
@@ -865,6 +869,7 @@ Los Registros de Decisiones de Arquitectura constituyen el mecanismo oficial med
 La utilización de una estructura uniforme, principios comunes y criterios de documentación consistentes garantiza que cada decisión permanezca comprensible, trazable y útil durante toda la evolución de la plataforma.
 
 ---
+
 # CAPÍTULO 5 · Evaluación de Alternativas
 
 ## 5.1 Objetivo
@@ -1064,6 +1069,7 @@ La evaluación de alternativas constituye una etapa esencial del proceso de toma
 Al analizar de manera objetiva las distintas soluciones posibles y documentar los criterios utilizados para compararlas, GeoMotion Studio garantiza que la evolución de su arquitectura responda a decisiones fundamentadas, coherentes y sostenibles en el tiempo.
 
 ---
+
 # CAPÍTULO 6 · Impacto Arquitectónico
 
 ## 6.1 Objetivo
@@ -1284,6 +1290,7 @@ El análisis del impacto arquitectónico permite comprender las consecuencias re
 Mediante una evaluación sistemática de sus efectos sobre la arquitectura, la documentación, el código y los procesos de desarrollo, GeoMotion Studio garantiza que la evolución de la plataforma se produzca de forma controlada, coherente y alineada con los principios establecidos por el Manual de Ingeniería.
 
 ---
+
 # CAPÍTULO 7 · Revisión y Evolución
 
 ## 7.1 Objetivo
@@ -1521,6 +1528,7 @@ La revisión y evolución de las Decisiones de Arquitectura permite que GeoMotio
 Al preservar el historial de decisiones, documentar las razones de cada cambio y mantener sincronizados los ADR con el Manual de Ingeniería, la plataforma garantiza una evolución arquitectónica ordenada, transparente y sostenible.
 
 ---
+
 # CAPÍTULO 8 · Trazabilidad
 
 ## 8.1 Objetivo
@@ -1710,6 +1718,7 @@ La trazabilidad constituye uno de los pilares de la gestión del conocimiento ar
 Al mantener relaciones explícitas entre decisiones, documentos, componentes e implementaciones, la plataforma preserva la continuidad de su arquitectura, facilita su evolución y garantiza que el razonamiento técnico permanezca accesible durante todo el ciclo de vida del proyecto.
 
 ---
+
 # CAPÍTULO 9 · Gobernanza
 
 ## 9.1 Objetivo
@@ -1887,6 +1896,7 @@ La gobernanza arquitectónica proporciona el marco organizativo que permite admi
 Mediante principios claros, responsabilidades definidas y procesos documentados, garantiza que las Decisiones de Arquitectura se adopten, implementen y revisen de forma transparente, preservando la calidad técnica y el conocimiento arquitectónico del proyecto.
 
 ---
+
 # CAPÍTULO 10 · Relación con el Manual de Ingeniería
 
 ## 10.1 Objetivo
@@ -2061,6 +2071,7 @@ Al integrarse con el Manual de Ingeniería, los Registros de Decisiones de Arqui
 Más allá de documentar decisiones individuales, este modelo establece una disciplina de ingeniería orientada a garantizar que la arquitectura pueda evolucionar sin perder su identidad, su consistencia ni el conocimiento acumulado a lo largo de la vida del proyecto.
 
 ---
+
 # ANEXOS
 
 Los presentes anexos complementan el contenido desarrollado en este documento proporcionando modelos, plantillas, diagramas y herramientas de apoyo para la gestión de las Decisiones de Arquitectura dentro de GeoMotion Studio.
@@ -2099,7 +2110,7 @@ Categoría:
 Nivel de Impacto:
 
 Documentos Relacionados:
-
+```
 ---
 
 ## 1. Contexto
@@ -2185,7 +2196,6 @@ Estado actual
 Reemplazos
 
 Evolución
-```
 
 ---
 

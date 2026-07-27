@@ -31,6 +31,7 @@ Asimismo, la arquitectura ha sido concebida para facilitar la incorporación de 
 En conjunto, este documento proporciona el marco de referencia para diseñar, implementar y operar un ecosistema seguro, confiable y escalable, alineado con la arquitectura general de GeoMotion Studio y con el resto de los documentos que conforman el Manual de Ingeniería.
 
 ---
+
 # Capítulo 1 · Fundamentos de la Arquitectura de Seguridad
 
 ## 1.1 Objetivo
@@ -208,6 +209,7 @@ La seguridad se concibe como una capacidad transversal integrada en toda la arqu
 Los principios definidos en este capítulo servirán como base para los capítulos siguientes, en los que se desarrollarán el modelo de autenticación, la gestión de identidades, los mecanismos de autorización, la protección de datos, la auditoría y el resto de los componentes que conforman la arquitectura de seguridad de GeoMotion Studio.
 
 ---
+
 # Capítulo 2 · Arquitectura de Autenticación
 
 ## 2.1 Objetivo
@@ -353,6 +355,7 @@ La incorporación del Modo Invitado permite reducir la fricción inicial sin com
 A partir de la autenticación, la plataforma podrá aplicar las políticas de autorización, gestión de permisos y control de acceso que se desarrollan en los capítulos siguientes.
 
 ---
+
 # Capítulo 3 · Gestión de Identidades
 
 ## 3.1 Objetivo
@@ -504,6 +507,7 @@ La gestión de identidades proporciona el modelo sobre el cual GeoMotion Studio 
 Este modelo garantiza que todas las operaciones realizadas dentro de la plataforma puedan asociarse a una identidad claramente definida, constituyendo la base para los mecanismos de autorización, auditoría y seguridad desarrollados en los capítulos siguientes.
 
 ---
+
 # Capítulo 4 · Autorización y Control de Acceso
 
 ## 4.1 Objetivo
@@ -733,6 +737,7 @@ La autorización constituye el mecanismo responsable de controlar el acceso a lo
 El modelo basado en políticas, roles y permisos proporciona una arquitectura flexible, escalable y preparada para evolucionar junto con la plataforma, garantizando que cada operación sea evaluada de forma consistente antes de su ejecución.
 
 ---
+
 # Capítulo 5 · Protección de Datos y Gestión de Secretos
 
 ## 5.1 Objetivo
@@ -745,11 +750,11 @@ La protección de la información no depende de un único mecanismo de seguridad
 
 ---
 
-# 5.2 Principios de Protección de Datos
+## 5.2 Principios de Protección de Datos
 
 Toda información administrada por GeoMotion Studio deberá protegerse conforme a los siguientes principios.
 
-## Confidencialidad
+### Confidencialidad
 
 La información únicamente podrá ser accesible por identidades autorizadas.
 
@@ -757,7 +762,7 @@ La plataforma deberá impedir el acceso no autorizado tanto por usuarios como po
 
 ---
 
-## Integridad
+### Integridad
 
 Los datos deberán mantenerse completos, consistentes y libres de modificaciones no autorizadas durante todo su ciclo de vida.
 
@@ -765,7 +770,7 @@ Toda modificación deberá poder atribuirse a una identidad determinada.
 
 ---
 
-## Disponibilidad
+### Disponibilidad
 
 La información deberá permanecer accesible para los usuarios autorizados cuando resulte necesaria para el funcionamiento normal de la plataforma.
 
@@ -773,7 +778,7 @@ La arquitectura deberá minimizar los riesgos derivados de pérdidas, corrupció
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Toda operación relevante sobre la información deberá quedar registrada para permitir auditorías posteriores.
 
@@ -788,7 +793,7 @@ La trazabilidad incluye:
 
 ---
 
-# 5.3 Clasificación de la Información
+## 5.3 Clasificación de la Información
 
 No toda la información requiere el mismo nivel de protección.
 
@@ -796,7 +801,7 @@ GeoMotion Studio podrá clasificar la información según su nivel de sensibilid
 
 Ejemplos:
 
-## Información Pública
+### Información Pública
 
 Información que puede distribuirse libremente.
 
@@ -808,7 +813,7 @@ Ejemplos:
 
 ---
 
-## Información Interna
+### Información Interna
 
 Información destinada al funcionamiento normal de la plataforma.
 
@@ -820,7 +825,7 @@ Ejemplos:
 
 ---
 
-## Información Confidencial
+### Información Confidencial
 
 Información cuyo acceso debe restringirse.
 
@@ -833,7 +838,7 @@ Ejemplos:
 
 ---
 
-## Información Sensible
+### Información Sensible
 
 Información cuyo compromiso puede afectar la seguridad del sistema.
 
@@ -850,7 +855,7 @@ Este tipo de información deberá recibir el máximo nivel de protección dispon
 
 ---
 
-# 5.4 Ciclo de Vida de la Información
+## 5.4 Ciclo de Vida de la Información
 
 La arquitectura contempla la protección de los datos durante todas las etapas de su existencia.
 
@@ -886,7 +891,7 @@ Cada una de estas etapas puede requerir mecanismos de seguridad diferentes.
 
 ---
 
-# 5.5 Protección de Datos en Reposo
+## 5.5 Protección de Datos en Reposo
 
 Se consideran datos en reposo aquellos almacenados de forma persistente.
 
@@ -910,7 +915,7 @@ Entre ellos:
 
 ---
 
-# 5.6 Protección de Datos en Tránsito
+## 5.6 Protección de Datos en Tránsito
 
 Toda comunicación entre componentes deberá realizarse mediante canales protegidos.
 
@@ -933,7 +938,7 @@ La protección deberá impedir:
 
 ---
 
-# 5.7 Protección Durante el Procesamiento
+## 5.7 Protección Durante el Procesamiento
 
 La información también debe protegerse mientras está siendo utilizada por la plataforma.
 
@@ -948,7 +953,7 @@ Siempre que resulte posible se aplicarán mecanismos de:
 
 ---
 
-# 5.8 Gestión de Secretos
+## 5.8 Gestión de Secretos
 
 Los secretos representan uno de los activos más críticos de cualquier plataforma.
 
@@ -964,7 +969,7 @@ GeoMotion Studio considera secretos, entre otros:
 
 ---
 
-## Principios
+### Principios
 
 Los secretos nunca deberán:
 
@@ -976,7 +981,7 @@ Los secretos nunca deberán:
 
 ---
 
-## Administración
+### Administración
 
 La arquitectura deberá permitir una gestión centralizada de secretos que facilite:
 
@@ -989,7 +994,7 @@ La arquitectura deberá permitir una gestión centralizada de secretos que facil
 
 ---
 
-# 5.9 Protección de Credenciales
+## 5.9 Protección de Credenciales
 
 Las credenciales representan la evidencia utilizada para autenticar identidades.
 
@@ -1004,7 +1009,7 @@ Las credenciales deberán:
 
 ---
 
-# 5.10 Gestión de Claves Criptográficas
+## 5.10 Gestión de Claves Criptográficas
 
 La arquitectura deberá contemplar la administración segura de las claves utilizadas por los diferentes mecanismos criptográficos.
 
@@ -1022,7 +1027,7 @@ Las claves deberán mantenerse separadas de los datos que protegen siempre que r
 
 ---
 
-# 5.11 Minimización de Datos
+## 5.11 Minimización de Datos
 
 GeoMotion Studio únicamente recopilará y procesará la información necesaria para prestar los servicios requeridos por el usuario.
 
@@ -1035,7 +1040,7 @@ Este principio reduce:
 
 ---
 
-# 5.12 Protección de Información en Componentes Inteligentes
+## 5.12 Protección de Información en Componentes Inteligentes
 
 Los componentes de Inteligencia Artificial deberán respetar las mismas políticas de protección definidas para el resto de la plataforma.
 
@@ -1051,7 +1056,7 @@ La incorporación de capacidades inteligentes no deberá disminuir el nivel de p
 
 ---
 
-# 5.13 Copias de Seguridad y Recuperación
+## 5.13 Copias de Seguridad y Recuperación
 
 La arquitectura deberá contemplar mecanismos para preservar la disponibilidad de la información.
 
@@ -1067,7 +1072,7 @@ Los mecanismos de respaldo deberán respetar las mismas políticas de seguridad 
 
 ---
 
-# 5.14 Beneficios
+## 5.14 Beneficios
 
 La arquitectura de protección de datos proporciona:
 
@@ -1081,7 +1086,7 @@ La arquitectura de protección de datos proporciona:
 
 ---
 
-# 5.15 Resumen
+## 5.15 Resumen
 
 La protección de la información constituye una responsabilidad transversal de toda la arquitectura de GeoMotion Studio.
 
@@ -1090,6 +1095,7 @@ La aplicación coordinada de mecanismos de clasificación, protección durante e
 Este enfoque garantiza que cada componente, independientemente de su tecnología o función, participe de un modelo homogéneo de protección alineado con los principios establecidos por la arquitectura general de seguridad.
 
 ---
+
 # Capítulo 6 · Seguridad de Componentes y Servicios
 
 ## 6.1 Objetivo
@@ -1104,7 +1110,7 @@ Este enfoque permite construir una plataforma distribuida, modular y resiliente 
 
 ---
 
-# 6.2 Seguridad como Arquitectura Transversal
+## 6.2 Seguridad como Arquitectura Transversal
 
 La seguridad constituye una capacidad transversal presente en todas las capas de GeoMotion Studio.
 
@@ -1125,7 +1131,7 @@ Ningún componente queda excluido del modelo de seguridad.
 
 ---
 
-# 6.3 Seguridad del Cliente
+## 6.3 Seguridad del Cliente
 
 Las aplicaciones cliente representan el punto de interacción entre el usuario y la plataforma.
 
@@ -1144,7 +1150,7 @@ Las aplicaciones cliente no deberán almacenar información sensible de forma pe
 
 ---
 
-# 6.4 Seguridad del Backend
+## 6.4 Seguridad del Backend
 
 El backend constituye la autoridad principal de seguridad de la plataforma.
 
@@ -1164,7 +1170,7 @@ El backend nunca deberá confiar en decisiones tomadas exclusivamente por el cli
 
 ---
 
-# 6.5 Seguridad de APIs
+## 6.5 Seguridad de APIs
 
 Las APIs representan uno de los principales puntos de integración de GeoMotion Studio.
 
@@ -1181,7 +1187,7 @@ Las APIs públicas y privadas podrán aplicar políticas diferentes según su na
 
 ---
 
-# 6.6 Seguridad del Motor GIS
+## 6.6 Seguridad del Motor GIS
 
 El motor geoespacial administra información de alto valor para la plataforma.
 
@@ -1197,7 +1203,7 @@ La autorización sobre recursos geográficos deberá integrarse con el modelo ge
 
 ---
 
-# 6.7 Seguridad del Motor de Renderizado
+## 6.7 Seguridad del Motor de Renderizado
 
 El motor de renderizado participa directamente en la generación de contenido visual.
 
@@ -1213,7 +1219,7 @@ El motor no deberá acceder a recursos para los cuales el usuario no posea autor
 
 ---
 
-# 6.8 Seguridad de los Componentes de Inteligencia Artificial
+## 6.8 Seguridad de los Componentes de Inteligencia Artificial
 
 Los componentes de IA forman parte de la arquitectura general de GeoMotion Studio y, por lo tanto, deberán respetar las mismas políticas de seguridad que el resto de la plataforma.
 
@@ -1230,7 +1236,7 @@ La utilización de IA no modifica ni reemplaza las políticas generales de auten
 
 ---
 
-# 6.9 Seguridad del Sistema de Plugins
+## 6.9 Seguridad del Sistema de Plugins
 
 Los plugins constituyen componentes extensibles que amplían las capacidades de GeoMotion Studio.
 
@@ -1251,7 +1257,7 @@ La instalación de un plugin no implicará automáticamente acceso irrestricto a
 
 ---
 
-# 6.10 Integración con Servicios Externos
+## 6.10 Integración con Servicios Externos
 
 GeoMotion Studio podrá integrarse con servicios proporcionados por terceros.
 
@@ -1278,7 +1284,7 @@ La plataforma no deberá asumir que un servicio externo es confiable únicamente
 
 ---
 
-# 6.11 Comunicaciones entre Componentes
+## 6.11 Comunicaciones entre Componentes
 
 Todos los componentes internos deberán comunicarse utilizando mecanismos definidos por la arquitectura.
 
@@ -1293,7 +1299,7 @@ Los componentes no deberán intercambiar información sensible mediante mecanism
 
 ---
 
-# 6.12 Aislamiento de Componentes
+## 6.12 Aislamiento de Componentes
 
 La arquitectura favorece el desacoplamiento entre módulos como mecanismo adicional de protección.
 
@@ -1308,7 +1314,7 @@ El aislamiento contribuye a:
 
 ---
 
-# 6.13 Evolución de la Arquitectura
+## 6.13 Evolución de la Arquitectura
 
 La seguridad deberá acompañar la incorporación de nuevos componentes.
 
@@ -1324,7 +1330,7 @@ Este principio garantiza la consistencia de la arquitectura a lo largo del tiemp
 
 ---
 
-# 6.14 Beneficios
+## 6.14 Beneficios
 
 La aplicación uniforme de las políticas de seguridad sobre todos los componentes proporciona:
 
@@ -1338,7 +1344,7 @@ La aplicación uniforme de las políticas de seguridad sobre todos los component
 
 ---
 
-# 6.15 Resumen
+## 6.15 Resumen
 
 La arquitectura de GeoMotion Studio distribuye las responsabilidades de seguridad entre todos los componentes que conforman la plataforma.
 
@@ -1347,6 +1353,7 @@ Cada módulo participa activamente en la protección del sistema mediante la apl
 Este enfoque permite construir una plataforma modular, escalable y preparada para incorporar nuevas capacidades sin comprometer la seguridad del conjunto.
 
 ---
+
 # Capítulo 7 · Auditoría y Trazabilidad
 
 ## 7.1 Objetivo
@@ -1359,11 +1366,11 @@ La arquitectura de auditoría forma parte integral del modelo de seguridad y com
 
 ---
 
-# 7.2 Principios de Auditoría
+## 7.2 Principios de Auditoría
 
 La arquitectura de auditoría se basa en los siguientes principios.
 
-## Integridad
+### Integridad
 
 Los registros deberán mantenerse íntegros durante todo su ciclo de vida.
 
@@ -1371,7 +1378,7 @@ No deberán poder modificarse sin dejar evidencia.
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Toda operación relevante deberá poder asociarse a:
 
@@ -1383,7 +1390,7 @@ Toda operación relevante deberá poder asociarse a:
 
 ---
 
-## Proporcionalidad
+### Proporcionalidad
 
 No todas las operaciones requieren el mismo nivel de auditoría.
 
@@ -1391,7 +1398,7 @@ La plataforma registrará únicamente la información necesaria para garantizar 
 
 ---
 
-## Consistencia
+### Consistencia
 
 Todos los componentes deberán registrar eventos utilizando criterios homogéneos.
 
@@ -1399,7 +1406,7 @@ Esto facilita la correlación de eventos provenientes de diferentes partes de la
 
 ---
 
-## Protección
+### Protección
 
 Los registros de auditoría constituyen información sensible.
 
@@ -1412,11 +1419,11 @@ Por lo tanto deberán protegerse frente a:
 
 ---
 
-# 7.3 Eventos Auditables
+## 7.3 Eventos Auditables
 
 GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
-## Gestión de Identidades
+### Gestión de Identidades
 
 - creación de usuarios;
 - modificación de perfiles;
@@ -1426,7 +1433,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Autenticación
+### Autenticación
 
 - inicio de sesión;
 - cierre de sesión;
@@ -1436,7 +1443,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Autorización
+### Autorización
 
 - accesos concedidos;
 - accesos denegados;
@@ -1445,7 +1452,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Proyectos
+### Proyectos
 
 - creación;
 - apertura;
@@ -1456,7 +1463,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Recursos
+### Recursos
 
 - importación;
 - exportación;
@@ -1466,7 +1473,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Plugins
+### Plugins
 
 - instalación;
 - actualización;
@@ -1477,7 +1484,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Inteligencia Artificial
+### Inteligencia Artificial
 
 - utilización de capacidades;
 - ejecución de herramientas;
@@ -1487,7 +1494,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-## Administración
+### Administración
 
 - cambios de configuración;
 - creación de organizaciones;
@@ -1496,7 +1503,7 @@ GeoMotion Studio podrá registrar, entre otros, los siguientes eventos.
 
 ---
 
-# 7.4 Información Registrada
+## 7.4 Información Registrada
 
 Cada evento podrá incluir, según corresponda:
 
@@ -1515,7 +1522,7 @@ La cantidad de información registrada dependerá del tipo de operación y de la
 
 ---
 
-# 7.5 Correlación de Eventos
+## 7.5 Correlación de Eventos
 
 Las operaciones complejas suelen involucrar múltiples componentes.
 
@@ -1553,7 +1560,7 @@ La arquitectura deberá permitir relacionar todos estos eventos mediante identif
 
 ---
 
-# 7.6 Auditoría Distribuida
+## 7.6 Auditoría Distribuida
 
 GeoMotion Studio está compuesto por múltiples componentes que pueden ejecutarse de forma distribuida.
 
@@ -1563,7 +1570,7 @@ La arquitectura de auditoría deberá permitir consolidar posteriormente esta in
 
 ---
 
-# 7.7 Retención de Registros
+## 7.7 Retención de Registros
 
 Los registros de auditoría deberán conservarse durante el período definido por las políticas de la plataforma.
 
@@ -1579,7 +1586,7 @@ Una vez finalizado el período de conservación, los registros podrán archivars
 
 ---
 
-# 7.8 Protección de los Registros
+## 7.8 Protección de los Registros
 
 Los registros de auditoría deberán protegerse mediante mecanismos que garanticen:
 
@@ -1594,7 +1601,7 @@ Los propios registros deberán formar parte de los activos protegidos por la arq
 
 ---
 
-# 7.9 Relación con la Gestión de Versiones
+## 7.9 Relación con la Gestión de Versiones
 
 La auditoría complementa el modelo de gestión de versiones definido en el Manual de Ingeniería.
 
@@ -1604,7 +1611,7 @@ Ambos mecanismos proporcionan información complementaria para comprender la evo
 
 ---
 
-# 7.10 Auditoría de Componentes Inteligentes
+## 7.10 Auditoría de Componentes Inteligentes
 
 Las capacidades de Inteligencia Artificial deberán integrarse con el modelo general de auditoría.
 
@@ -1621,7 +1628,7 @@ Este registro favorece la transparencia y facilita la investigación de comporta
 
 ---
 
-# 7.11 Beneficios
+## 7.11 Beneficios
 
 La arquitectura de auditoría proporciona:
 
@@ -1635,13 +1642,14 @@ La arquitectura de auditoría proporciona:
 
 ---
 
-# 7.12 Resumen
+## 7.12 Resumen
 
 La auditoría y la trazabilidad permiten comprender qué ocurrió, cuándo ocurrió, quién realizó una operación y qué componentes participaron durante su ejecución.
 
 La aplicación uniforme de estos mecanismos en todos los componentes de GeoMotion Studio proporciona una visión integral del comportamiento de la plataforma y constituye un elemento esencial para garantizar la seguridad, la operación y la evolución controlada del sistema.
 
 ---
+
 # Capítulo 8 · Monitoreo y Respuesta ante Incidentes
 
 ## 8.1 Objetivo
@@ -1654,7 +1662,7 @@ La capacidad de respuesta constituye un complemento esencial de los mecanismos p
 
 ---
 
-# 8.2 Monitoreo Continuo
+## 8.2 Monitoreo Continuo
 
 La seguridad de la plataforma requiere un proceso permanente de observación de los componentes que la integran.
 
@@ -1675,13 +1683,13 @@ El objetivo consiste en detectar tempranamente situaciones que puedan representa
 
 ---
 
-# 8.3 Eventos de Seguridad
+## 8.3 Eventos de Seguridad
 
 La arquitectura deberá identificar eventos que, individualmente o en conjunto, puedan indicar la existencia de un incidente.
 
 Entre ellos:
 
-## Eventos de Autenticación
+### Eventos de Autenticación
 
 - múltiples intentos fallidos;
 - accesos desde ubicaciones inusuales;
@@ -1690,7 +1698,7 @@ Entre ellos:
 
 ---
 
-## Eventos de Autorización
+### Eventos de Autorización
 
 - accesos denegados repetitivos;
 - intentos de elevación de privilegios;
@@ -1698,7 +1706,7 @@ Entre ellos:
 
 ---
 
-## Eventos de Componentes
+### Eventos de Componentes
 
 - errores inesperados;
 - interrupción de servicios;
@@ -1708,7 +1716,7 @@ Entre ellos:
 
 ---
 
-## Eventos de Inteligencia Artificial
+### Eventos de Inteligencia Artificial
 
 - utilización anómala de herramientas;
 - solicitudes fuera de las políticas definidas;
@@ -1717,7 +1725,7 @@ Entre ellos:
 
 ---
 
-## Eventos de Infraestructura
+### Eventos de Infraestructura
 
 - indisponibilidad de servicios;
 - consumo anómalo de recursos;
@@ -1726,7 +1734,7 @@ Entre ellos:
 
 ---
 
-# 8.4 Clasificación de Incidentes
+## 8.4 Clasificación de Incidentes
 
 No todos los incidentes poseen la misma criticidad.
 
@@ -1734,7 +1742,7 @@ GeoMotion Studio podrá clasificarlos según su impacto.
 
 Ejemplo:
 
-## Informativo
+### Informativo
 
 No requiere intervención inmediata.
 
@@ -1746,7 +1754,7 @@ Ejemplos:
 
 ---
 
-## Bajo
+### Bajo
 
 Incidentes de escaso impacto operativo.
 
@@ -1757,7 +1765,7 @@ Ejemplos:
 
 ---
 
-## Medio
+### Medio
 
 Situaciones que requieren seguimiento.
 
@@ -1768,7 +1776,7 @@ Ejemplos:
 
 ---
 
-## Alto
+### Alto
 
 Incidentes que afectan componentes importantes.
 
@@ -1780,7 +1788,7 @@ Ejemplos:
 
 ---
 
-## Crítico
+### Crítico
 
 Incidentes que comprometen la seguridad general o la continuidad operativa.
 
@@ -1793,7 +1801,7 @@ Ejemplos:
 
 ---
 
-# 8.5 Ciclo de Gestión de Incidentes
+## 8.5 Ciclo de Gestión de Incidentes
 
 La arquitectura contempla un proceso continuo de gestión compuesto por las siguientes etapas.
 
@@ -1837,7 +1845,7 @@ Cada etapa deberá quedar documentada cuando la naturaleza del incidente así lo
 
 ---
 
-# 8.6 Contención
+## 8.6 Contención
 
 Una vez identificado un incidente, la plataforma podrá aplicar mecanismos destinados a limitar su propagación.
 
@@ -1854,7 +1862,7 @@ Las acciones aplicadas deberán minimizar el impacto sobre el resto del sistema.
 
 ---
 
-# 8.7 Recuperación
+## 8.7 Recuperación
 
 Superado el incidente, GeoMotion Studio deberá restaurar progresivamente el funcionamiento normal de la plataforma.
 
@@ -1871,7 +1879,7 @@ La recuperación deberá realizarse preservando la consistencia del sistema.
 
 ---
 
-# 8.8 Notificación
+## 8.8 Notificación
 
 Dependiendo de la criticidad del incidente, la arquitectura podrá generar notificaciones dirigidas a:
 
@@ -1885,7 +1893,7 @@ La información comunicada deberá ser suficiente para comprender la situación 
 
 ---
 
-# 8.9 Investigación y Análisis
+## 8.9 Investigación y Análisis
 
 Todo incidente significativo deberá poder investigarse utilizando la información proporcionada por:
 
@@ -1901,7 +1909,7 @@ La arquitectura deberá facilitar la correlación de toda esta información.
 
 ---
 
-# 8.10 Aprendizaje Continuo
+## 8.10 Aprendizaje Continuo
 
 Cada incidente representa una oportunidad para mejorar la arquitectura.
 
@@ -1918,7 +1926,7 @@ La mejora continua constituye un principio permanente de la arquitectura de segu
 
 ---
 
-# 8.11 Integración con el Ecosistema
+## 8.11 Integración con el Ecosistema
 
 La respuesta ante incidentes involucra a todos los componentes de GeoMotion Studio.
 
@@ -1937,7 +1945,7 @@ Cada componente deberá colaborar proporcionando la información y capacidades n
 
 ---
 
-# 8.12 Beneficios
+## 8.12 Beneficios
 
 La incorporación de mecanismos de monitoreo y respuesta proporciona:
 
@@ -1951,13 +1959,14 @@ La incorporación de mecanismos de monitoreo y respuesta proporciona:
 
 ---
 
-# 8.13 Resumen
+## 8.13 Resumen
 
 La arquitectura de monitoreo y respuesta ante incidentes permite que GeoMotion Studio evolucione desde un modelo de seguridad exclusivamente preventivo hacia un modelo resiliente.
 
 La capacidad para detectar, contener, recuperar y aprender de los incidentes fortalece continuamente la plataforma y contribuye a mantener un ecosistema seguro, estable y preparado para enfrentar amenazas presentes y futuras.
 
 ---
+
 # Capítulo 9 · Gobernanza y Cumplimiento de la Seguridad
 
 ## 9.1 Objetivo
@@ -1970,11 +1979,11 @@ La gobernanza garantiza que la seguridad no dependa exclusivamente de decisiones
 
 ---
 
-# 9.2 Principios de Gobernanza
+## 9.2 Principios de Gobernanza
 
 La gobernanza de seguridad se fundamenta en los siguientes principios.
 
-## Responsabilidad Compartida
+### Responsabilidad Compartida
 
 La seguridad constituye una responsabilidad de toda la organización.
 
@@ -1984,7 +1993,7 @@ La arquitectura distribuye responsabilidades sin perder una visión unificada de
 
 ---
 
-## Coherencia
+### Coherencia
 
 Las políticas de seguridad deberán aplicarse de forma uniforme sobre todos los componentes de GeoMotion Studio.
 
@@ -1992,25 +2001,25 @@ No deberán existir mecanismos incompatibles que generen comportamientos inconsi
 
 ---
 
-## Mejora Continua
+### Mejora Continua
 
 La arquitectura deberá evolucionar permanentemente incorporando nuevas tecnologías, corrigiendo debilidades e integrando las lecciones aprendidas durante la operación de la plataforma.
 
 ---
 
-## Adaptabilidad
+### Adaptabilidad
 
 La gobernanza deberá facilitar la incorporación de nuevos componentes, servicios, tecnologías y modelos de trabajo sin comprometer la seguridad existente.
 
 ---
 
-## Transparencia
+### Transparencia
 
 Las decisiones relacionadas con la seguridad deberán encontrarse adecuadamente documentadas y ser comprensibles para los responsables de su administración.
 
 ---
 
-# 9.3 Políticas de Seguridad
+## 9.3 Políticas de Seguridad
 
 Las políticas constituyen el conjunto de reglas que orientan el comportamiento de toda la plataforma.
 
@@ -2032,7 +2041,7 @@ Las políticas deberán mantenerse centralizadas para evitar inconsistencias ent
 
 ---
 
-# 9.4 Gestión del Riesgo
+## 9.4 Gestión del Riesgo
 
 La gobernanza de seguridad deberá contemplar un proceso permanente de identificación y tratamiento de riesgos.
 
@@ -2049,7 +2058,7 @@ La evaluación del riesgo deberá revisarse periódicamente conforme evolucione 
 
 ---
 
-# 9.5 Gestión de Cambios
+## 9.5 Gestión de Cambios
 
 Toda modificación que pueda afectar la seguridad deberá evaluarse antes de su incorporación.
 
@@ -2068,7 +2077,7 @@ La evaluación deberá considerar los posibles impactos sobre la arquitectura ex
 
 ---
 
-# 9.6 Revisión Periódica
+## 9.6 Revisión Periódica
 
 La arquitectura de seguridad deberá revisarse regularmente con el propósito de:
 
@@ -2082,7 +2091,7 @@ Las revisiones periódicas constituyen un elemento esencial de la mejora continu
 
 ---
 
-# 9.7 Cumplimiento
+## 9.7 Cumplimiento
 
 GeoMotion Studio podrá adoptar estándares, normativas o buenas prácticas reconocidas internacionalmente cuando resulten aplicables a su contexto.
 
@@ -2099,7 +2108,7 @@ La adopción de un estándar no deberá requerir modificaciones estructurales de
 
 ---
 
-# 9.8 Seguridad de la Evolución Tecnológica
+## 9.8 Seguridad de la Evolución Tecnológica
 
 La evolución tecnológica representa uno de los principales desafíos para la arquitectura de seguridad.
 
@@ -2117,7 +2126,7 @@ Este principio aplica tanto a tecnologías desarrolladas internamente como a com
 
 ---
 
-# 9.9 Gobernanza de Componentes Inteligentes
+## 9.9 Gobernanza de Componentes Inteligentes
 
 Las capacidades de Inteligencia Artificial deberán integrarse plenamente al modelo de gobernanza definido para el resto de la plataforma.
 
@@ -2135,7 +2144,7 @@ La Inteligencia Artificial no constituye una excepción al modelo de gobernanza,
 
 ---
 
-# 9.10 Relación con el Manual de Ingeniería
+## 9.10 Relación con el Manual de Ingeniería
 
 La gobernanza de seguridad mantiene una relación directa con los demás documentos que conforman el Manual de Ingeniería.
 
@@ -2152,7 +2161,7 @@ Las decisiones de seguridad deberán mantenerse alineadas con la evolución del 
 
 ---
 
-# 9.11 Beneficios
+## 9.11 Beneficios
 
 La gobernanza proporciona:
 
@@ -2166,7 +2175,7 @@ La gobernanza proporciona:
 
 ---
 
-# 9.12 Resumen
+## 9.12 Resumen
 
 La gobernanza constituye el mecanismo mediante el cual GeoMotion Studio administra la evolución de su arquitectura de seguridad.
 
@@ -2175,6 +2184,7 @@ La definición de principios, políticas, procesos de revisión y gestión del r
 La seguridad deja así de ser un conjunto de mecanismos técnicos aislados para convertirse en una capacidad organizacional integrada en todo el ciclo de vida de la plataforma.
 
 ---
+
 # Capítulo 10 · Arquitectura de Referencia de Seguridad
 
 ## 10.1 Objetivo
@@ -2187,7 +2197,7 @@ Esta arquitectura constituye el modelo de referencia para el diseño, implementa
 
 ---
 
-# 10.2 Visión Arquitectónica
+## 10.2 Visión Arquitectónica
 
 La seguridad de GeoMotion Studio no se implementa mediante un único componente especializado.
 
@@ -2211,7 +2221,7 @@ Como resultado, la seguridad acompaña cada operación realizada dentro de GeoMo
 
 ---
 
-# 10.3 Arquitectura General
+## 10.3 Arquitectura General
 
 El modelo de referencia puede representarse conceptualmente de la siguiente manera.
 
@@ -2261,7 +2271,7 @@ La fortaleza de la arquitectura surge precisamente de la colaboración entre tod
 
 ---
 
-# 10.4 Flujo de una Operación Segura
+## 10.4 Flujo de una Operación Segura
 
 Cuando una identidad interactúa con GeoMotion Studio, la plataforma ejecuta una secuencia coordinada de controles.
 
@@ -2282,7 +2292,7 @@ Este flujo constituye la base del comportamiento seguro de GeoMotion Studio.
 
 ---
 
-# 10.5 Integración con la Arquitectura General
+## 10.5 Integración con la Arquitectura General
 
 La seguridad se encuentra integrada con todos los componentes de GeoMotion Studio.
 
@@ -2303,7 +2313,7 @@ Cada uno implementa las políticas de seguridad que le corresponden, manteniendo
 
 ---
 
-# 10.6 Integración con Componentes Inteligentes
+## 10.6 Integración con Componentes Inteligentes
 
 Los componentes de Inteligencia Artificial forman parte del mismo modelo de seguridad que el resto de la plataforma.
 
@@ -2320,7 +2330,7 @@ La Inteligencia Artificial no constituye una excepción dentro de la arquitectur
 
 ---
 
-# 10.7 Integración con el Ecosistema de Plugins
+## 10.7 Integración con el Ecosistema de Plugins
 
 Los plugins amplían las capacidades funcionales de GeoMotion Studio sin modificar la arquitectura de seguridad.
 
@@ -2336,7 +2346,7 @@ La incorporación de un plugin no modifica las políticas generales de seguridad
 
 ---
 
-# 10.8 Evolución de la Arquitectura
+## 10.8 Evolución de la Arquitectura
 
 La arquitectura de referencia ha sido diseñada para evolucionar junto con GeoMotion Studio.
 
@@ -2346,7 +2356,7 @@ La evolución tecnológica nunca deberá comprometer la coherencia del modelo de
 
 ---
 
-# 10.9 Principios Permanentes
+## 10.9 Principios Permanentes
 
 Independientemente de la evolución futura de la plataforma, la arquitectura deberá preservar los siguientes principios:
 
@@ -2362,7 +2372,7 @@ Estos principios constituyen la base permanente sobre la que se desarrollará la
 
 ---
 
-# 10.10 Arquitectura Preparada para el Futuro
+## 10.10 Arquitectura Preparada para el Futuro
 
 GeoMotion Studio ha sido diseñado para evolucionar durante muchos años.
 
@@ -2374,7 +2384,7 @@ Esta independencia tecnológica constituye uno de los pilares de la arquitectura
 
 ---
 
-# 10.11 Beneficios
+## 10.11 Beneficios
 
 La arquitectura de referencia proporciona:
 
@@ -2389,7 +2399,7 @@ La arquitectura de referencia proporciona:
 
 ---
 
-# 10.12 Resumen
+## 10.12 Resumen
 
 La arquitectura de referencia presentada en este capítulo integra todos los mecanismos desarrollados a lo largo del documento en un modelo coherente y transversal de protección.
 
@@ -2400,6 +2410,7 @@ Este enfoque garantiza que la plataforma pueda evolucionar incorporando nuevas c
 Con ello queda definida la Arquitectura de Autenticación y Seguridad que servirá como referencia para el diseño, implementación y evolución de todos los componentes de GeoMotion Studio.
 
 ---
+
 # ANEXO A · Arquitectura de Referencia de Autenticación
 
 ## A.1 Objetivo
@@ -2412,7 +2423,7 @@ La arquitectura ha sido diseñada para evolucionar junto con la plataforma, perm
 
 ---
 
-# A.2 Principios
+## A.2 Principios
 
 La arquitectura de autenticación se basa en los siguientes principios.
 
@@ -2427,11 +2438,11 @@ La autenticación constituye el punto de ingreso al ecosistema de seguridad, per
 
 ---
 
-# A.3 Componentes de la Arquitectura
+## A.3 Componentes de la Arquitectura
 
 La arquitectura está compuesta por los siguientes elementos principales.
 
-## Usuario
+### Usuario
 
 Representa la persona que interactúa con GeoMotion Studio.
 
@@ -2442,7 +2453,7 @@ Puede acceder como:
 
 ---
 
-## Cliente
+### Cliente
 
 Corresponde a la aplicación utilizada por el usuario.
 
@@ -2457,7 +2468,7 @@ Su responsabilidad consiste en iniciar el proceso de autenticación y administra
 
 ---
 
-## Servicio de Autenticación
+### Servicio de Autenticación
 
 Es el componente encargado de verificar la identidad del usuario.
 
@@ -2471,7 +2482,7 @@ Entre sus responsabilidades se encuentran:
 
 ---
 
-## Proveedor de Identidad
+### Proveedor de Identidad
 
 Representa el sistema encargado de autenticar usuarios.
 
@@ -2488,7 +2499,7 @@ Ejemplos:
 
 ---
 
-## Gestor de Identidades
+### Gestor de Identidades
 
 Administra las identidades persistentes utilizadas por GeoMotion Studio.
 
@@ -2503,7 +2514,7 @@ Entre sus responsabilidades:
 
 ---
 
-## Gestor de Sesiones
+### Gestor de Sesiones
 
 Administra el estado de autenticación durante la interacción con la plataforma.
 
@@ -2517,13 +2528,13 @@ Entre sus funciones:
 
 ---
 
-## Servicios de la Plataforma
+### Servicios de la Plataforma
 
 Una vez autenticado el usuario, los distintos componentes utilizan el contexto de seguridad para aplicar las políticas de autorización correspondientes.
 
 ---
 
-# A.4 Arquitectura Conceptual
+## A.4 Arquitectura Conceptual
 
 La autenticación puede representarse mediante el siguiente modelo.
 
@@ -2561,7 +2572,7 @@ Esta separación facilita la evolución independiente de cada uno de ellos.
 
 ---
 
-# A.5 Flujo General de Autenticación
+## A.5 Flujo General de Autenticación
 
 El proceso general comprende las siguientes etapas.
 
@@ -2581,7 +2592,7 @@ La autorización comienza a partir de ese momento.
 
 ---
 
-# A.6 Modo Invitado
+## A.6 Modo Invitado
 
 Cuando un usuario decide continuar como Invitado, la plataforma genera una identidad temporal administrada internamente.
 
@@ -2596,7 +2607,7 @@ El modo Invitado no sustituye una cuenta permanente ni proporciona acceso a recu
 
 ---
 
-# A.7 Independencia Tecnológica
+## A.7 Independencia Tecnológica
 
 Uno de los principios fundamentales de esta arquitectura consiste en desacoplar GeoMotion Studio de cualquier tecnología específica.
 
@@ -2610,7 +2621,7 @@ La incorporación de nuevas alternativas deberá realizarse mediante componentes
 
 ---
 
-# A.8 Integración con la Arquitectura de Seguridad
+## A.8 Integración con la Arquitectura de Seguridad
 
 La autenticación constituye únicamente la primera etapa del modelo general de seguridad.
 
@@ -2648,7 +2659,7 @@ Esta separación favorece una arquitectura modular y facilita la evolución inde
 
 ---
 
-# A.9 Beneficios
+## A.9 Beneficios
 
 La arquitectura propuesta proporciona:
 
@@ -2662,13 +2673,14 @@ La arquitectura propuesta proporciona:
 
 ---
 
-# A.10 Resumen
+## A.10 Resumen
 
 La arquitectura de referencia de autenticación establece un modelo modular, desacoplado y preparado para evolucionar junto con GeoMotion Studio.
 
 La separación entre autenticación, gestión de identidades, sesiones y autorización constituye uno de los principios fundamentales de esta arquitectura y permite incorporar nuevas tecnologías sin comprometer el funcionamiento del resto de la plataforma.
 
 ---
+
 # ANEXO B · Modelo de Roles, Permisos y Políticas
 
 ## B.1 Objetivo
@@ -2679,7 +2691,7 @@ Su finalidad es proporcionar una arquitectura flexible que permita controlar el 
 
 ---
 
-# B.2 Principios
+## B.2 Principios
 
 El modelo de autorización se basa en los siguientes principios.
 
@@ -2695,7 +2707,7 @@ Toda decisión de autorización deberá fundamentarse en políticas explícitas 
 
 ---
 
-# B.3 Modelo Conceptual
+## B.3 Modelo Conceptual
 
 La autorización puede representarse mediante la siguiente relación conceptual.
 
@@ -2727,7 +2739,7 @@ Cada nivel posee una responsabilidad específica y puede evolucionar independien
 
 ---
 
-# B.4 Identidades
+## B.4 Identidades
 
 Las identidades representan las entidades que interactúan con la plataforma.
 
@@ -2745,7 +2757,7 @@ Su comportamiento se determina mediante los roles asignados.
 
 ---
 
-# B.5 Roles
+## B.5 Roles
 
 Un rol representa un conjunto coherente de responsabilidades dentro de la plataforma.
 
@@ -2766,7 +2778,7 @@ Nuevos roles podrán incorporarse conforme evolucione la plataforma.
 
 ---
 
-# B.6 Permisos
+## B.6 Permisos
 
 Los permisos constituyen la unidad mínima de autorización.
 
@@ -2798,7 +2810,7 @@ Cada implementación podrá adoptar la convención que considere adecuada.
 
 ---
 
-# B.7 Recursos
+## B.7 Recursos
 
 Los permisos siempre se aplican sobre recursos.
 
@@ -2819,7 +2831,7 @@ Todo recurso protegido deberá declarar explícitamente las operaciones que admi
 
 ---
 
-# B.8 Operaciones
+## B.8 Operaciones
 
 Las operaciones representan las acciones que pueden realizarse sobre un recurso.
 
@@ -2840,7 +2852,7 @@ Cada recurso podrá soportar únicamente aquellas operaciones compatibles con su
 
 ---
 
-# B.9 Políticas
+## B.9 Políticas
 
 Las políticas constituyen el mecanismo mediante el cual la plataforma decide si una operación puede ejecutarse.
 
@@ -2863,7 +2875,7 @@ Las políticas representan el nivel de decisión de mayor jerarquía dentro del 
 
 ---
 
-# B.10 Flujo de Evaluación
+## B.10 Flujo de Evaluación
 
 El proceso general de autorización puede representarse de la siguiente manera.
 
@@ -2899,7 +2911,7 @@ Si alguna validación falla, la operación deberá rechazarse.
 
 ---
 
-# B.11 Herencia y Composición
+## B.11 Herencia y Composición
 
 La arquitectura permite que los roles compartan responsabilidades mediante mecanismos de composición.
 
@@ -2913,7 +2925,7 @@ La forma concreta de implementar esta composición dependerá de la tecnología 
 
 ---
 
-# B.12 Principio de Denegación por Defecto
+## B.12 Principio de Denegación por Defecto
 
 Toda operación deberá considerarse denegada hasta que una política determine explícitamente que puede ejecutarse.
 
@@ -2921,7 +2933,7 @@ Este principio reduce significativamente la posibilidad de accesos accidentales 
 
 ---
 
-# B.13 Integración con Componentes
+## B.13 Integración con Componentes
 
 El modelo de autorización deberá aplicarse de forma uniforme sobre todos los componentes de GeoMotion Studio.
 
@@ -2942,7 +2954,7 @@ Ningún componente deberá implementar mecanismos incompatibles con este modelo.
 
 ---
 
-# B.14 Evolución del Modelo
+## B.14 Evolución del Modelo
 
 La arquitectura ha sido diseñada para evolucionar.
 
@@ -2958,7 +2970,7 @@ Estas incorporaciones no deberán requerir modificaciones estructurales del mode
 
 ---
 
-# B.15 Beneficios
+## B.15 Beneficios
 
 El modelo propuesto proporciona:
 
@@ -2972,13 +2984,14 @@ El modelo propuesto proporciona:
 
 ---
 
-# B.16 Resumen
+## B.16 Resumen
 
 El modelo de roles, permisos y políticas establece la base sobre la cual GeoMotion Studio controla el acceso a todos sus recursos.
 
 La separación entre identidades, roles, permisos y políticas proporciona una arquitectura flexible, extensible y preparada para evolucionar junto con la plataforma, garantizando que toda decisión de autorización sea consistente, trazable y alineada con los principios generales de seguridad.
 
 ---
+
 # ANEXO C · Ciclo de Vida de Identidades y Sesiones
 
 ## C.1 Objetivo
@@ -2991,7 +3004,7 @@ Este modelo complementa los mecanismos de autenticación, autorización y gesti�
 
 ---
 
-# C.2 Principios
+## C.2 Principios
 
 La administración de identidades y sesiones se basa en los siguientes principios.
 
@@ -3005,7 +3018,7 @@ La administración de identidades y sesiones se basa en los siguientes principio
 
 ---
 
-# C.3 Ciclo de Vida de una Identidad
+## C.3 Ciclo de Vida de una Identidad
 
 Toda identidad puede atravesar diferentes estados durante su existencia.
 
@@ -3047,7 +3060,7 @@ La arquitectura permite que cada implementación adapte este ciclo según sus ne
 
 ---
 
-# C.4 Identidad de Invitado
+## C.4 Identidad de Invitado
 
 El modo Invitado constituye el punto de ingreso más simple a la plataforma.
 
@@ -3064,7 +3077,7 @@ La identidad de Invitado no dispone de acceso a recursos protegidos ni a servici
 
 ---
 
-# C.5 Transición hacia una Cuenta Registrada
+## C.5 Transición hacia una Cuenta Registrada
 
 Uno de los principios fundamentales de GeoMotion Studio consiste en permitir que el trabajo realizado como Invitado pueda asociarse posteriormente a una cuenta autenticada cuando resulte posible.
 
@@ -3080,7 +3093,7 @@ El objetivo es garantizar la continuidad de la experiencia del usuario.
 
 ---
 
-# C.6 Estados de una Identidad
+## C.6 Estados de una Identidad
 
 Dependiendo de las políticas de la plataforma, una identidad podrá encontrarse en alguno de los siguientes estados.
 
@@ -3095,7 +3108,7 @@ Cada estado determina las operaciones que la identidad puede realizar dentro del
 
 ---
 
-# C.7 Ciclo de Vida de una Sesión
+## C.7 Ciclo de Vida de una Sesión
 
 La sesión representa el contexto temporal mediante el cual una identidad interactúa con la plataforma.
 
@@ -3133,7 +3146,7 @@ Las sesiones poseen una duración limitada y no constituyen identidades persiste
 
 ---
 
-# C.8 Administración de Sesiones
+## C.8 Administración de Sesiones
 
 La arquitectura contempla mecanismos para administrar el estado de las sesiones.
 
@@ -3150,7 +3163,7 @@ La implementación concreta dependerá de la tecnología utilizada.
 
 ---
 
-# C.9 Finalización de Sesiones
+## C.9 Finalización de Sesiones
 
 Una sesión podrá finalizar por diferentes motivos.
 
@@ -3167,7 +3180,7 @@ Una vez finalizada la sesión, será necesario iniciar nuevamente el proceso de 
 
 ---
 
-# C.10 Relación entre Identidad y Sesión
+## C.10 Relación entre Identidad y Sesión
 
 Aunque frecuentemente se utilizan como sinónimos, identidad y sesión representan conceptos diferentes.
 
@@ -3179,7 +3192,7 @@ Una misma identidad puede generar múltiples sesiones independientes a lo largo 
 
 ---
 
-# C.11 Integración con la Arquitectura General
+## C.11 Integración con la Arquitectura General
 
 El ciclo de vida de identidades y sesiones interactúa con múltiples componentes de GeoMotion Studio.
 
@@ -3198,7 +3211,7 @@ Todos estos componentes utilizan el contexto proporcionado por la identidad y la
 
 ---
 
-# C.12 Beneficios
+## C.12 Beneficios
 
 El modelo de ciclo de vida proporciona:
 
@@ -3211,7 +3224,7 @@ El modelo de ciclo de vida proporciona:
 
 ---
 
-# C.13 Resumen
+## C.13 Resumen
 
 La separación entre identidad y sesión constituye uno de los principios fundamentales de la arquitectura de GeoMotion Studio.
 
@@ -3220,6 +3233,7 @@ Mientras la identidad representa al usuario dentro de la plataforma, la sesión 
 Esta diferenciación proporciona una arquitectura más flexible, segura y preparada para evolucionar junto con el resto del ecosistema.
 
 ---
+
 # ANEXO D · Glosario de Autenticación y Seguridad
 
 ## D.1 Objetivo
@@ -3232,165 +3246,165 @@ Las definiciones aquí presentadas describen el significado de cada concepto den
 
 ---
 
-# D.2 Términos
+## D.2 Términos
 
-## Activo
+### Activo
 
 Elemento de la plataforma que posee valor para la organización y requiere protección.
 
 ---
 
-## Auditoría
+### Auditoría
 
 Proceso mediante el cual se registran y analizan las operaciones relevantes realizadas dentro de la plataforma.
 
 ---
 
-## Autenticación
+### Autenticación
 
 Proceso destinado a verificar la identidad de un usuario, servicio o componente.
 
 ---
 
-## Autorización
+### Autorización
 
 Proceso mediante el cual la plataforma determina si una identidad posee permisos para ejecutar una operación determinada.
 
 ---
 
-## Componente
+### Componente
 
 Unidad funcional que forma parte de la arquitectura de GeoMotion Studio.
 
 ---
 
-## Confidencialidad
+### Confidencialidad
 
 Propiedad que garantiza que la información solo sea accesible para identidades autorizadas.
 
 ---
 
-## Contexto de Seguridad
+### Contexto de Seguridad
 
 Conjunto de atributos asociados a una identidad autenticada utilizados para evaluar las políticas de acceso.
 
 ---
 
-## Credencial
+### Credencial
 
 Información utilizada para demostrar una identidad durante el proceso de autenticación.
 
 ---
 
-## Disponibilidad
+### Disponibilidad
 
 Capacidad de la plataforma para permanecer operativa cuando sus servicios son requeridos.
 
 ---
 
-## Gobernanza
+### Gobernanza
 
 Conjunto de principios y procesos mediante los cuales se administra la evolución de la arquitectura de seguridad.
 
 ---
 
-## Identidad
+### Identidad
 
 Representación persistente de un usuario, organización o servicio dentro de GeoMotion Studio.
 
 ---
 
-## Integridad
+### Integridad
 
 Propiedad que garantiza que la información no ha sido modificada de forma no autorizada.
 
 ---
 
-## Invitado
+### Invitado
 
 Identidad temporal que permite utilizar determinadas capacidades de la plataforma sin requerir autenticación previa.
 
 ---
 
-## MFA (Autenticación Multifactor)
+### MFA (Autenticación Multifactor)
 
 Mecanismo mediante el cual una identidad se verifica utilizando múltiples factores de autenticación.
 
 ---
 
-## Monitoreo
+### Monitoreo
 
 Proceso continuo de observación del comportamiento de la plataforma para detectar eventos relevantes para la seguridad.
 
 ---
 
-## Permiso
+### Permiso
 
 Autorización específica para realizar una operación sobre un recurso.
 
 ---
 
-## Política
+### Política
 
 Conjunto de reglas mediante las cuales la plataforma decide si una operación puede ejecutarse.
 
 ---
 
-## Principio de Mínimo Privilegio
+### Principio de Mínimo Privilegio
 
 Principio según el cual toda identidad debe disponer únicamente de los permisos estrictamente necesarios para realizar sus funciones.
 
 ---
 
-## Recurso
+### Recurso
 
 Elemento protegido sobre el cual pueden ejecutarse operaciones.
 
 ---
 
-## Respuesta ante Incidentes
+### Respuesta ante Incidentes
 
 Conjunto de actividades destinadas a detectar, contener, mitigar y recuperar la plataforma frente a un incidente de seguridad.
 
 ---
 
-## Rol
+### Rol
 
 Conjunto de responsabilidades y permisos asignados a una identidad.
 
 ---
 
-## Secreto
+### Secreto
 
 Información sensible utilizada por la plataforma para proteger procesos de autenticación, autorización o comunicación, como contraseñas, claves criptográficas, certificados o tokens.
 
 ---
 
-## Sesión
+### Sesión
 
 Contexto temporal que representa la interacción activa entre una identidad y la plataforma.
 
 ---
 
-## Token
+### Token
 
 Elemento emitido durante el proceso de autenticación que permite representar temporalmente el contexto de seguridad de una identidad.
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Capacidad para reconstruir la secuencia de eventos ocurridos dentro de la plataforma.
 
 ---
 
-## Zero Trust
+### Zero Trust
 
 Modelo de seguridad basado en el principio de que ninguna identidad, dispositivo o componente debe considerarse confiable por defecto, independientemente de su ubicación dentro de la infraestructura.
 
 ---
 
-# D.3 Relación con el Manual de Ingeniería
+## D.3 Relación con el Manual de Ingeniería
 
 Los términos definidos en este glosario complementan la terminología utilizada en los demás documentos del Manual de Ingeniería.
 
@@ -3398,7 +3412,7 @@ Cuando un concepto sea compartido entre distintos documentos, deberá conservar 
 
 ---
 
-# D.4 Resumen
+## D.4 Resumen
 
 El presente glosario establece un lenguaje común para la Arquitectura de Autenticación y Seguridad.
 

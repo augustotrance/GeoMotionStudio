@@ -134,6 +134,7 @@ Posteriormente se desarrollan las características particulares de cada experien
 Esta organización permite comprender la arquitectura desde una perspectiva conceptual antes de abordar sus distintos elementos funcionales.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Arquitectura de Layouts
 
 ## 1.1 Objetivo
@@ -214,6 +215,7 @@ La Arquitectura de Layouts proporciona el marco conceptual que organiza la exper
 Sus principios garantizan una interfaz coherente, adaptable y escalable, estableciendo las bases sobre las que se desarrollan los distintos layouts, la navegación, los espacios de trabajo y la evolución futura de la plataforma.
 
 ---
+
 # CAPÍTULO 2 · Arquitectura General de los Layouts
 
 ## 2.1 Objetivo
@@ -292,6 +294,7 @@ La arquitectura general de layouts establece una organización unificada para la
 Mediante la combinación de un layout principal y diversos layouts especializados, la plataforma puede adaptarse a distintos contextos de utilización sin perder coherencia, continuidad ni capacidad de evolución.
 
 ---
+
 # CAPÍTULO 3 · MainLayout
 
 ## 3.1 Objetivo
@@ -377,6 +380,7 @@ El MainLayout constituye el núcleo organizativo de la experiencia de usuario de
 Su función es coordinar los elementos compartidos de la plataforma, garantizar la coherencia entre los distintos layouts y proporcionar una base estable sobre la que evolucionará la interfaz del producto.
 
 ---
+
 # CAPÍTULO 4 · DesktopLayout
 
 ## 4.1 Objetivo
@@ -463,6 +467,7 @@ El DesktopLayout constituye la experiencia de usuario orientada a la productivid
 Su arquitectura permite gestionar escenarios de trabajo complejos mediante una organización flexible de la interfaz, manteniendo una experiencia coherente con el resto de los layouts de la plataforma.
 
 ---
+
 # CAPÍTULO 5 · TabletLayout
 
 ## 5.1 Objetivo
@@ -542,6 +547,7 @@ Las futuras ampliaciones deberán respetar los principios establecidos en este d
 El TabletLayout proporciona una experiencia de usuario equilibrada entre productividad y simplicidad, adaptándose a las características de los dispositivos táctiles sin perder coherencia con la arquitectura general de GeoMotion Studio.
 
 ---
+
 # CAPÍTULO 6 · MobileLayout
 
 ## 6.1 Objetivo
@@ -619,6 +625,7 @@ Las futuras mejoras deberán mantener la coherencia con la arquitectura general 
 El MobileLayout proporciona una experiencia de usuario optimizada para escenarios de movilidad, ofreciendo una interfaz clara, eficiente y adaptada a dispositivos de pequeño formato, sin perder coherencia con el resto de la arquitectura de GeoMotion Studio.
 
 ---
+
 # CAPÍTULO 7 · Elementos Compartidos de la Interfaz
 
 ## 7.1 Objetivo
@@ -703,6 +710,7 @@ Los elementos compartidos constituyen la base común sobre la que se desarrolla 
 Su organización uniforme favorece la coherencia entre layouts, simplifica la evolución de la plataforma y garantiza una interacción consistente en cualquier contexto de utilización.
 
 ---
+
 # CAPÍTULO 8 · Navegación y Flujo de la Experiencia
 
 ## 8.1 Objetivo
@@ -789,6 +797,7 @@ La navegación de GeoMotion Studio constituye un elemento esencial de la experie
 Su arquitectura se basa en la coherencia, la continuidad y la eficiencia, proporcionando recorridos claros y previsibles que permiten al usuario concentrarse en sus tareas sin distracciones ni interrupciones innecesarias.
 
 ---
+
 # CAPÍTULO 9 · Espacios de Trabajo
 
 ## 9.1 Objetivo
@@ -865,6 +874,7 @@ Los espacios de trabajo constituyen uno de los pilares de la experiencia de usua
 Su arquitectura proporciona un entorno flexible, personalizable y persistente que favorece la productividad y garantiza la continuidad del trabajo entre distintas sesiones y dispositivos.
 
 ---
+
 # CAPÍTULO 10 · Ciclo de Vida de la Aplicación
 
 ## 10.1 Objetivo
@@ -947,6 +957,7 @@ El ciclo de vida de la aplicación establece una secuencia ordenada para la cons
 Su definición garantiza una inicialización coherente de la plataforma, favorece la estabilidad de la interfaz y proporciona un marco común para la integración del resto de los elementos arquitectónicos del sistema.
 
 ---
+
 # CAPÍTULO 11 · Estados de la Experiencia de Usuario
 
 ## 11.1 Objetivo
@@ -1064,6 +1075,7 @@ Los estados de la experiencia de usuario constituyen un elemento esencial para g
 Su definición arquitectónica permite mantener un comportamiento uniforme en toda la plataforma, independientemente del layout utilizado o de la implementación técnica de cada funcionalidad.
 
 ---
+
 # CAPÍTULO 12 · Adaptabilidad de la Experiencia
 
 ## 12.1 Objetivo
@@ -1144,6 +1156,7 @@ La adaptabilidad constituye uno de los principios fundamentales de la Arquitectu
 Su propósito es garantizar una experiencia coherente y consistente en cualquier contexto de utilización, permitiendo que la plataforma evolucione hacia nuevos dispositivos y formas de interacción sin perder su identidad funcional.
 
 ---
+
 # CAPÍTULO 13 · Evolución de la Arquitectura de Layouts
 
 ## 13.1 Objetivo
@@ -1221,6 +1234,7 @@ La evolución de la Arquitectura de Layouts deberá realizarse de forma controla
 Los principios establecidos en este capítulo proporcionan un marco de referencia que permitirá adaptar GeoMotion Studio a futuras necesidades sin comprometer la calidad de la experiencia de usuario.
 
 ---
+
 # CAPÍTULO 14 · Relación con el Sistema de Diseño
 
 ## 14.1 Objetivo
@@ -1294,6 +1308,7 @@ La Arquitectura de Layouts y el Sistema de Diseño constituyen dos pilares funda
 Mientras la primera organiza la estructura funcional de la interfaz, el segundo define su representación visual, garantizando conjuntamente una plataforma coherente, consistente y preparada para evolucionar de manera sostenible.
 
 ---
+
 # CAPÍTULO 15 · Cierre del Documento
 
 ## 15.1 Objetivo

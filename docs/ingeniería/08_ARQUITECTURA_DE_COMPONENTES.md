@@ -120,6 +120,7 @@ En primer lugar se define el concepto de componente y su papel dentro de la plat
 Posteriormente se presentan las distintas categorías de componentes, sus responsabilidades, su organización, la comunicación entre ellos y los principios que regulan su evolución dentro de la arquitectura de GeoMotion Studio.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Arquitectura de Componentes
 
 ## 1.1 Objetivo
@@ -209,6 +210,7 @@ La Arquitectura de Componentes establece el marco conceptual que organiza la con
 Sus principios garantizan una arquitectura modular, reutilizable, escalable y mantenible, proporcionando una base sólida para el desarrollo presente y futuro del Frontend mediante un sistema de componentes coherente y organizado.
 
 ---
+
 # CAPÍTULO 2 · El Componente como Unidad Arquitectónica
 
 ## 2.1 Objetivo
@@ -315,6 +317,7 @@ El componente constituye la unidad fundamental de construcción de la interfaz d
 Su correcta definición arquitectónica garantiza una plataforma modular, reutilizable y mantenible, proporcionando la base sobre la que se desarrollarán todas las funcionalidades del Frontend.
 
 ---
+
 # CAPÍTULO 3 · Clasificación de los Componentes
 
 ## 3.1 Objetivo
@@ -388,6 +391,7 @@ La clasificación arquitectónica de los componentes proporciona una organizaci�
 Esta estructura facilita la comprensión del sistema, mejora la reutilización de sus elementos y establece una base sólida para la evolución futura de la plataforma.
 
 ---
+
 # CAPÍTULO 4 · Jerarquía de los Componentes
 
 ## 4.1 Objetivo
@@ -464,6 +468,7 @@ La jerarquía de componentes proporciona una estructura organizada para la const
 Su definición permite distribuir responsabilidades de forma clara, favoreciendo la reutilización, la mantenibilidad y la evolución sostenible del Frontend.
 
 ---
+
 # CAPÍTULO 5 · Composición de Componentes
 
 ## 5.1 Objetivo
@@ -519,6 +524,7 @@ La composición constituye el mecanismo fundamental para la construcción de la 
 Mediante la integración de componentes especializados, la plataforma consigue una arquitectura modular, reutilizable y preparada para evolucionar de forma sostenible.
 
 ---
+
 # CAPÍTULO 6 · Responsabilidades por Nivel
 
 ## 6.1 Objetivo
@@ -612,6 +618,7 @@ La definición de responsabilidades por nivel constituye uno de los pilares de l
 La separación clara de funciones entre aplicación, layouts, áreas funcionales, contenedores, componentes y elementos proporciona una estructura organizada, mantenible y preparada para evolucionar junto con la plataforma.
 
 ---
+
 # CAPÍTULO 7 · Comunicación entre Componentes
 
 ## 7.1 Objetivo
@@ -717,6 +724,7 @@ La comunicación entre componentes constituye un elemento esencial para el funci
 La aplicación de principios como el desacoplamiento, la claridad, la cohesión y la separación de responsabilidades garantiza una arquitectura organizada, flexible y preparada para evolucionar de forma sostenible.
 
 ---
+
 # CAPÍTULO 8 · Estado y Flujo de Datos
 
 ## 8.1 Objetivo
@@ -852,6 +860,7 @@ La correcta organización del estado constituye uno de los pilares de la Arquite
 La separación entre estado local, compartido, global, persistente y temporal permite distribuir las responsabilidades de forma coherente, mejorar la reutilización de los componentes y garantizar un flujo de datos claro, mantenible y preparado para evolucionar junto con la plataforma.
 
 ---
+
 # CAPÍTULO 9 · Reutilización y Extensibilidad
 
 ## 9.1 Objetivo
@@ -945,6 +954,7 @@ La reutilización y la extensibilidad permiten que la Arquitectura de Componente
 La aplicación de estos principios favorece una plataforma coherente, reduce la duplicación de soluciones y facilita la incorporación de nuevas funcionalidades sin comprometer la estabilidad del Frontend.
 
 ---
+
 # CAPÍTULO 10 · Integración con la Arquitectura de Layouts
 
 ## 10.1 Objetivo
@@ -1026,6 +1036,7 @@ La Arquitectura de Layouts y la Arquitectura de Componentes constituyen dos disc
 La primera organiza la experiencia de usuario; la segunda proporciona los elementos necesarios para construirla, manteniendo una separación clara de responsabilidades que favorece la mantenibilidad y la evolución de la plataforma.
 
 ---
+
 # CAPÍTULO 11 · Relación con el Sistema de Diseño
 
 ## 11.1 Objetivo
@@ -1107,6 +1118,7 @@ La Arquitectura de Componentes y el Sistema de Diseño desempeñan funciones com
 La primera organiza la estructura funcional del Frontend, mientras que el segundo define la experiencia visual e interactiva de la plataforma, permitiendo que ambas disciplinas evolucionen de manera coordinada y manteniendo una interfaz coherente, consistente y sostenible.
 
 ---
+
 # CAPÍTULO 12 · Evolución de la Arquitectura de Componentes
 
 ## 12.1 Objetivo
@@ -1194,6 +1206,7 @@ La evolución constituye una característica inherente a la Arquitectura de Comp
 La aplicación de principios como la estabilidad, la compatibilidad, la modularidad y la escalabilidad garantiza que la plataforma pueda crecer de forma sostenible, preservando la coherencia y la calidad del Frontend.
 
 ---
+
 # CAPÍTULO 13 · Cierre
 
 ## 13.1 Síntesis

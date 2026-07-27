@@ -90,6 +90,7 @@ Su contenido se relaciona especialmente con:
 - **15_BITÁCORA_DE_DESARROLLO.md**, que registra la evolución real del desarrollo y las decisiones adoptadas.
 
 ---
+
 # CAPÍTULO 1 · Visión Estratégica
 
 ## 1.1 Objetivo
@@ -102,11 +103,11 @@ La visión estratégica constituye el punto de partida de la Hoja de Ruta y debe
 
 ---
 
-# 1.2 Principios
+## 1.2 Principios
 
 La estrategia de evolución del proyecto se fundamenta en los siguientes principios.
 
-## Dirección a largo plazo
+### Dirección a largo plazo
 
 GeoMotion Studio se desarrolla con una perspectiva de largo recorrido.
 
@@ -114,7 +115,7 @@ Las decisiones adoptadas deberán favorecer la continuidad del proyecto y evitar
 
 ---
 
-## Desarrollo orientado al producto
+### Desarrollo orientado al producto
 
 El desarrollo deberá responder a las necesidades del producto y de sus usuarios.
 
@@ -122,7 +123,7 @@ La incorporación de nuevas funcionalidades tendrá como objetivo incrementar el
 
 ---
 
-## Coherencia
+### Coherencia
 
 Toda evolución deberá respetar los principios definidos en la documentación del proyecto.
 
@@ -130,7 +131,7 @@ Las nuevas funcionalidades deberán integrarse de forma natural con la arquitect
 
 ---
 
-## Sostenibilidad
+### Sostenibilidad
 
 El crecimiento del proyecto deberá producirse de forma equilibrada.
 
@@ -138,7 +139,7 @@ La incorporación de nuevas capacidades nunca deberá comprometer la estabilidad
 
 ---
 
-# 1.3 Objetivos estratégicos
+## 1.3 Objetivos estratégicos
 
 La evolución de GeoMotion Studio perseguirá, entre otros, los siguientes objetivos:
 
@@ -154,7 +155,7 @@ Estos objetivos servirán como referencia para la planificación de futuras inic
 
 ---
 
-# 1.4 Horizonte de planificación
+## 1.4 Horizonte de planificación
 
 La Hoja de Ruta deberá contemplar diferentes horizontes temporales.
 
@@ -168,7 +169,7 @@ Cada horizonte responderá a objetivos distintos y permitirá adaptar la planifi
 
 ---
 
-# 1.5 Adaptabilidad
+## 1.5 Adaptabilidad
 
 La planificación deberá mantener un equilibrio entre estabilidad y flexibilidad.
 
@@ -183,13 +184,14 @@ Las modificaciones deberán realizarse de forma controlada y documentada.
 
 ---
 
-# 1.6 Resumen del capítulo
+## 1.6 Resumen del capítulo
 
 La visión estratégica establece la dirección que guiará la evolución de GeoMotion Studio.
 
 Su propósito es asegurar que todas las decisiones de planificación contribuyan al crecimiento ordenado, sostenible y coherente del proyecto.
 
 ---
+
 # CAPÍTULO 2 · Principios de Planificación
 
 ## 2.1 Objetivo
@@ -202,11 +204,11 @@ La planificación constituye un proceso continuo que deberá adaptarse a las nec
 
 ---
 
-# 2.2 Principios
+## 2.2 Principios
 
 La planificación deberá respetar los siguientes principios.
 
-## Incrementalidad
+### Incrementalidad
 
 El desarrollo avanzará mediante incrementos sucesivos.
 
@@ -214,7 +216,7 @@ Cada iteración deberá aportar valor al proyecto y acercarlo a los objetivos de
 
 ---
 
-## Priorización
+### Priorización
 
 Las tareas deberán organizarse según el valor que aporten al producto.
 
@@ -222,7 +224,7 @@ La prioridad no dependerá únicamente de la complejidad técnica, sino también
 
 ---
 
-## Realismo
+### Realismo
 
 La planificación deberá ajustarse a la capacidad real de desarrollo.
 
@@ -230,7 +232,7 @@ Se evitarán compromisos que no puedan asumirse de forma razonable.
 
 ---
 
-## Transparencia
+### Transparencia
 
 La planificación deberá mantenerse visible y comprensible para todos los colaboradores.
 
@@ -238,7 +240,7 @@ Los cambios realizados deberán documentarse adecuadamente.
 
 ---
 
-# 2.3 Planificación por objetivos
+## 2.3 Planificación por objetivos
 
 La Hoja de Ruta organizará el desarrollo en torno a objetivos y resultados esperados.
 
@@ -248,7 +250,7 @@ Este enfoque permitirá mantener la flexibilidad sin perder la dirección estrat
 
 ---
 
-# 2.4 Gestión de prioridades
+## 2.4 Gestión de prioridades
 
 Las prioridades podrán modificarse cuando existan razones objetivas que lo justifiquen.
 
@@ -264,7 +266,7 @@ Toda modificación deberá quedar documentada.
 
 ---
 
-# 2.5 Equilibrio del desarrollo
+## 2.5 Equilibrio del desarrollo
 
 La planificación deberá mantener un equilibrio entre diferentes tipos de trabajo.
 
@@ -281,7 +283,7 @@ El crecimiento sostenible del proyecto requiere atender todos estos ámbitos de 
 
 ---
 
-# 2.6 Revisión periódica
+## 2.6 Revisión periódica
 
 La planificación será revisada regularmente para evaluar:
 
@@ -294,13 +296,14 @@ Estas revisiones permitirán mantener la Hoja de Ruta alineada con la realidad d
 
 ---
 
-# 2.7 Resumen del capítulo
+## 2.7 Resumen del capítulo
 
 Los principios de planificación proporcionan el marco necesario para organizar el desarrollo de GeoMotion Studio de forma ordenada, flexible y sostenible.
 
 Su aplicación permitirá adaptar la evolución del proyecto sin perder coherencia con su visión estratégica.
 
 ---
+
 # CAPÍTULO 3 · Ciclo de Vida del Proyecto
 
 ## 3.1 Objetivo
@@ -311,11 +314,11 @@ Su finalidad es proporcionar una visión global del proceso de evolución del so
 
 ---
 
-# 3.2 Principios
+## 3.2 Principios
 
 El ciclo de vida del proyecto deberá respetar los siguientes principios.
 
-## Continuidad
+### Continuidad
 
 El desarrollo de GeoMotion Studio deberá entenderse como un proceso continuo de mejora y evolución.
 
@@ -323,7 +326,7 @@ No existirá una fase final de desarrollo, sino un proceso permanente de adaptac
 
 ---
 
-## Evolución incremental
+### Evolución incremental
 
 Cada etapa deberá construir sobre los resultados obtenidos en la anterior.
 
@@ -331,7 +334,7 @@ La evolución progresiva permitirá reducir riesgos y facilitar la incorporació
 
 ---
 
-## Calidad permanente
+### Calidad permanente
 
 La calidad deberá mantenerse durante todo el ciclo de vida del proyecto.
 
@@ -339,13 +342,13 @@ Las actividades de validación, documentación y mantenimiento no constituirán 
 
 ---
 
-## Retroalimentación
+### Retroalimentación
 
 El ciclo de vida deberá incorporar mecanismos que permitan utilizar la experiencia obtenida durante el desarrollo para mejorar la planificación futura.
 
 ---
 
-# 3.3 Etapas del ciclo de vida
+## 3.3 Etapas del ciclo de vida
 
 El ciclo de vida de GeoMotion Studio comprende, de forma general, las siguientes etapas:
 
@@ -362,7 +365,7 @@ Estas etapas podrán solaparse parcialmente conforme avance el proyecto.
 
 ---
 
-# 3.4 Iteración continua
+## 3.4 Iteración continua
 
 El desarrollo se organizará mediante iteraciones sucesivas.
 
@@ -370,7 +373,7 @@ Cada iteración deberá aportar mejoras verificables al proyecto y contribuir al
 
 ---
 
-# 3.5 Aprendizaje continuo
+## 3.5 Aprendizaje continuo
 
 Las decisiones adoptadas durante cada etapa deberán analizarse para identificar oportunidades de mejora.
 
@@ -378,11 +381,12 @@ La experiencia acumulada permitirá optimizar progresivamente los procesos de de
 
 ---
 
-# 3.6 Resumen del capítulo
+## 3.6 Resumen del capítulo
 
 El ciclo de vida define el marco general que guía la evolución de GeoMotion Studio, promoviendo un desarrollo continuo, incremental y orientado a la mejora permanente.
 
 ---
+
 # CAPÍTULO 4 · Fases de Desarrollo
 
 ## 4.1 Objetivo
@@ -393,11 +397,11 @@ Su finalidad es facilitar la planificación del trabajo, ordenar la incorporaci�
 
 ---
 
-# 4.2 Principios
+## 4.2 Principios
 
 Las fases de desarrollo deberán respetar los siguientes principios.
 
-## Progresión
+### Progresión
 
 Cada fase deberá apoyarse sobre una base previamente consolidada.
 
@@ -405,7 +409,7 @@ No deberán incorporarse funcionalidades complejas mientras permanezcan sin reso
 
 ---
 
-## Consolidación
+### Consolidación
 
 Antes de avanzar hacia una nueva fase deberá verificarse la estabilidad de la fase anterior.
 
@@ -413,7 +417,7 @@ La consolidación reducirá el riesgo de acumulación de deuda técnica.
 
 ---
 
-## Flexibilidad
+### Flexibilidad
 
 Las fases podrán adaptarse conforme evolucionen las necesidades del proyecto.
 
@@ -421,7 +425,7 @@ La planificación deberá mantener capacidad de respuesta sin perder coherencia.
 
 ---
 
-# 4.3 Fase de Fundación
+## 4.3 Fase de Fundación
 
 Durante esta fase se establecerán los elementos esenciales del proyecto.
 
@@ -436,7 +440,7 @@ Entre otros:
 
 ---
 
-# 4.4 Fase de Construcción
+## 4.4 Fase de Construcción
 
 Esta fase estará orientada al desarrollo de las funcionalidades principales del producto.
 
@@ -444,7 +448,7 @@ El objetivo será construir una plataforma funcional respetando los principios a
 
 ---
 
-# 4.5 Fase de Consolidación
+## 4.5 Fase de Consolidación
 
 En esta etapa se priorizarán actividades destinadas a mejorar:
 
@@ -457,23 +461,24 @@ En esta etapa se priorizarán actividades destinadas a mejorar:
 
 ---
 
-# 4.6 Fase de Expansión
+## 4.6 Fase de Expansión
 
 Una vez consolidada la plataforma podrán incorporarse nuevas capacidades, integraciones y extensiones que incrementen el valor del producto.
 
 ---
 
-# 4.7 Transición entre fases
+## 4.7 Transición entre fases
 
 La transición entre fases deberá realizarse únicamente cuando los objetivos definidos para la etapa anterior se consideren suficientemente alcanzados.
 
 ---
 
-# 4.8 Resumen del capítulo
+## 4.8 Resumen del capítulo
 
 Las fases de desarrollo proporcionan una estructura ordenada para organizar el crecimiento de GeoMotion Studio, permitiendo evolucionar el producto de forma controlada y sostenible.
 
 ---
+
 # CAPÍTULO 5 · Niveles de Madurez del Producto
 
 ## 5.1 Objetivo
@@ -687,6 +692,7 @@ El crecimiento sostenible no depende de desarrollar más funcionalidades, sino d
 Cada nuevo nivel representa una ampliación responsable de las capacidades del sistema y un compromiso permanente con la estabilidad, la mantenibilidad y la evolución a largo plazo.
 
 ---
+
 # CAPÍTULO 6 · Priorización de Funcionalidades
 
 ## 6.1 Objetivo
@@ -862,6 +868,7 @@ La priorización de funcionalidades constituye un proceso estratégico orientado
 Las decisiones deberán favorecer la consolidación progresiva de GeoMotion Studio, garantizando que el crecimiento funcional se produzca sobre una base técnica suficientemente estable y preparada para evolucionar durante muchos años.
 
 ---
+
 # CAPÍTULO 7 · Gestión de Entregas
 
 ## 7.1 Objetivo
@@ -1003,6 +1010,7 @@ Las entregas representan mucho más que la publicación de nuevas versiones.
 Constituyen el mecanismo mediante el cual GeoMotion Studio consolida su evolución, incrementa su nivel de madurez y garantiza que cada avance quede respaldado por una arquitectura estable, una documentación consistente y un producto preparado para afrontar los desafíos de las siguientes etapas de desarrollo.
 
 ---
+
 # CAPÍTULO 8 · Gestión de Riesgos
 
 ## 8.1 Objetivo
@@ -1194,6 +1202,7 @@ La gestión de riesgos constituye un mecanismo esencial para preservar la estabi
 Su propósito no consiste únicamente en evitar problemas, sino en garantizar que cada decisión contribuya a fortalecer progresivamente la calidad, la arquitectura y la madurez del producto.
 
 ---
+
 # CAPÍTULO 9 · Gestión del Cambio
 
 ## 9.1 Objetivo
@@ -1325,6 +1334,7 @@ La gestión del cambio permite que GeoMotion Studio evolucione sin perder cohere
 Cada modificación deberá fortalecer la arquitectura, preservar la identidad del producto y contribuir al incremento progresivo de su nivel de madurez.
 
 ---
+
 # CAPÍTULO 10 · Métricas de Progreso
 
 ## 10.1 Objetivo
@@ -1491,6 +1501,7 @@ Las métricas constituyen una herramienta para comprender la evolución de GeoMo
 Su propósito no consiste en medir cuánto trabajo se realiza, sino en verificar que el producto continúa avanzando hacia mayores niveles de calidad, estabilidad y madurez.
 
 ---
+
 # CAPÍTULO 11 · Evolución del Producto
 
 ## 11.1 Objetivo
@@ -1656,6 +1667,7 @@ Cada modificación deberá contribuir a reforzar la estabilidad del sistema, inc
 El éxito de GeoMotion Studio dependerá tanto de su capacidad para incorporar nuevas capacidades como de su habilidad para evolucionar sin perder coherencia.
 
 ---
+
 # CAPÍTULO 12 · Mantenimiento
 
 ## 12.1 Objetivo
@@ -1803,6 +1815,7 @@ El mantenimiento constituye uno de los principales mecanismos para preservar la 
 Su finalidad no consiste únicamente en corregir problemas existentes, sino en garantizar que el producto continúe evolucionando sobre una base técnica sólida, estable y preparada para afrontar nuevos desafíos.
 
 ---
+
 # CAPÍTULO 13 · Conclusiones
 
 ## 13.1 La Hoja de Ruta como instrumento estratégico

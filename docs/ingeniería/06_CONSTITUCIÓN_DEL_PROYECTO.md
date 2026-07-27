@@ -506,6 +506,7 @@ La estabilidad de los principios constituye el mecanismo que permite la evoluci�
 Sobre estos principios se construirá toda decisión futura relacionada con GeoMotion Studio.
 
 ---
+
 # Capítulo 1 · Principios Fundamentales
 
 Los principios establecidos en este capítulo constituyen la base sobre la que se desarrolla GeoMotion Studio.
@@ -667,6 +668,7 @@ Los principios fundamentales definidos en este capítulo constituyen la base sob
 Su finalidad consiste en garantizar que todas las decisiones futuras respondan a una misma filosofía de ingeniería, preservando la identidad, la calidad y la sostenibilidad del proyecto con independencia de la evolución de sus tecnologías, procesos o funcionalidades.
 
 ---
+
 # Capítulo 2 · Principios Arquitectónicos
 
 La arquitectura constituye el elemento que garantiza la estabilidad, la escalabilidad y la capacidad de evolución de GeoMotion Studio.
@@ -814,6 +816,7 @@ La arquitectura constituye el soporte estructural sobre el que se desarrolla Geo
 Los principios definidos en este capítulo garantizan que el proyecto pueda evolucionar de forma sostenible, manteniendo una organización coherente, escalable y preparada para afrontar nuevas necesidades sin comprometer la calidad del sistema.
 
 ---
+
 # Capítulo 3 · Principios de Desarrollo
 
 El desarrollo de GeoMotion Studio deberá realizarse siguiendo un proceso disciplinado, incremental y orientado a la calidad.
@@ -939,6 +942,7 @@ Los principios de desarrollo establecen la forma en que GeoMotion Studio deberá
 Su aplicación garantiza que el crecimiento del proyecto se produzca de manera gradual, coherente y sostenible, preservando la calidad del sistema y asegurando que cada modificación contribuya positivamente a la evolución del producto.
 
 ---
+
 # Capítulo 4 · Principios de Documentación
 
 La documentación constituye uno de los activos estratégicos de GeoMotion Studio.
@@ -1074,6 +1078,7 @@ Los principios definidos en este capítulo establecen que el software y la docum
 En consecuencia, toda evolución del producto deberá producirse simultáneamente en ambos ámbitos, asegurando que el conocimiento permanezca siempre actualizado, accesible y disponible para las generaciones futuras de colaboradores.
 
 ---
+
 # Capítulo 5 · Principios de Calidad
 
 La calidad constituye un principio transversal de GeoMotion Studio.
@@ -1226,6 +1231,7 @@ Los principios definidos en este capítulo establecen que toda evolución del pr
 La excelencia del producto será consecuencia directa del cumplimiento continuado de estos principios.
 
 ---
+
 # Capítulo 6 · Criterios de Finalización
 
 La finalización de una tarea no estará determinada únicamente por la existencia de una implementación funcional.
@@ -1356,6 +1362,7 @@ Su finalidad consiste en garantizar que el crecimiento del proyecto no se limite
 En GeoMotion Studio, finalizar una tarea significa entregar una mejora completa, integrada y sostenible.
 
 ---
+
 # Capítulo 7 · Gestión del Cambio
 
 El cambio constituye una condición inherente a todo proyecto de software.
@@ -1489,6 +1496,7 @@ Los cambios no constituyen actuaciones aisladas, sino decisiones de ingeniería 
 Su correcta planificación, documentación y evaluación garantizan que cada evolución contribuya a construir un producto más sólido, más comprensible y mejor preparado para afrontar las necesidades futuras.
 
 ---
+
 # Capítulo 8 · Responsabilidades de los Colaboradores
 
 GeoMotion Studio se desarrolla como un proyecto colaborativo basado en principios compartidos.
@@ -1616,6 +1624,7 @@ Contribuir al proyecto implica asumir la responsabilidad de preservar su calidad
 El crecimiento sostenible del proyecto dependerá siempre del compromiso compartido de quienes participen en su desarrollo.
 
 ---
+
 # Capítulo 9 · Cumplimiento de la Constitución
 
 La presente Constitución constituye el marco normativo que regula el desarrollo de GeoMotion Studio.
@@ -1723,6 +1732,7 @@ El cumplimiento de la Constitución garantiza que GeoMotion Studio evolucione pr
 Su aplicación constituye una responsabilidad compartida y representa el principal mecanismo para asegurar que el crecimiento del proyecto mantenga los estándares de calidad, arquitectura y sostenibilidad definidos desde su origen.
 
 ---
+
 # Capítulo 10 · Evolución de la Constitución
 
 La presente Constitución reconoce que todo proyecto de software evoluciona de manera continua.

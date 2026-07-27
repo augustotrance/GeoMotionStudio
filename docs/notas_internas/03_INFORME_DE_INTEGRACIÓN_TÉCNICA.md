@@ -1,4 +1,4 @@
-# Informe de Integración Técnica v1
+# Informe de Integración Técnica
 
 **Código:** INT-003  
 **Estado:** Activo  

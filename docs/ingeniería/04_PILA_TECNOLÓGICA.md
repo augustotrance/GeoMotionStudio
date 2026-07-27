@@ -132,6 +132,7 @@ Automatización
 Infraestructura
 
 ---
+
 # CAPÍTULO 1 · Filosofía Tecnológica
 
 ## 1.1 Objetivo
@@ -144,7 +145,7 @@ Las tecnologías utilizadas por el proyecto constituyen un medio para alcanzar s
 
 ---
 
-# 1.2 La tecnología al servicio del producto
+## 1.2 La tecnología al servicio del producto
 
 La selección tecnológica deberá responder siempre a las necesidades del producto.
 
@@ -156,7 +157,7 @@ La tecnología deberá facilitar el desarrollo del producto y nunca condicionar 
 
 ---
 
-# 1.3 Simplicidad
+## 1.3 Simplicidad
 
 La pila tecnológica deberá mantenerse tan reducida como resulte razonablemente posible.
 
@@ -168,7 +169,7 @@ La simplicidad reduce la complejidad del mantenimiento y mejora la estabilidad d
 
 ---
 
-# 1.4 Estabilidad
+## 1.4 Estabilidad
 
 GeoMotion Studio priorizará tecnologías consolidadas y ampliamente utilizadas.
 
@@ -184,7 +185,7 @@ La estabilidad tendrá prioridad sobre la incorporación temprana de tecnología
 
 ---
 
-# 1.5 Mantenibilidad
+## 1.5 Mantenibilidad
 
 Toda decisión tecnológica deberá facilitar el mantenimiento del proyecto.
 
@@ -194,7 +195,7 @@ La mantenibilidad constituye un criterio prioritario durante toda la vida del pr
 
 ---
 
-# 1.6 Escalabilidad
+## 1.6 Escalabilidad
 
 La pila tecnológica deberá permitir el crecimiento progresivo de GeoMotion Studio.
 
@@ -210,7 +211,7 @@ El crecimiento del proyecto no deberá requerir cambios estructurales innecesari
 
 ---
 
-# 1.7 Rendimiento
+## 1.7 Rendimiento
 
 El rendimiento deberá considerarse desde la selección inicial de las tecnologías.
 
@@ -225,7 +226,7 @@ La productividad del equipo constituye también un aspecto del rendimiento globa
 
 ---
 
-# 1.8 Estandarización
+## 1.8 Estandarización
 
 Siempre que resulte posible, GeoMotion Studio utilizará estándares ampliamente aceptados por la comunidad de desarrollo.
 
@@ -235,7 +236,7 @@ La estandarización favorece la interoperabilidad y reduce el riesgo tecnológic
 
 ---
 
-# 1.9 Evolución controlada
+## 1.9 Evolución controlada
 
 La Pila Tecnológica deberá evolucionar de forma planificada.
 
@@ -250,7 +251,7 @@ Las decisiones tecnológicas deberán minimizar el impacto sobre el resto de la 
 
 ---
 
-# 1.10 Independencia tecnológica
+## 1.10 Independencia tecnológica
 
 La arquitectura de GeoMotion Studio deberá minimizar el acoplamiento con tecnologías concretas.
 
@@ -260,7 +261,7 @@ Este principio facilitará la sustitución de herramientas cuando resulte necesa
 
 ---
 
-# 1.11 Visión a largo plazo
+## 1.11 Visión a largo plazo
 
 Las decisiones tecnológicas deberán considerar el horizonte temporal del proyecto.
 
@@ -270,13 +271,14 @@ La estabilidad futura tendrá prioridad frente a los beneficios inmediatos de co
 
 ---
 
-# 1.12 Resumen del capítulo
+## 1.12 Resumen del capítulo
 
 La Filosofía Tecnológica define los principios que orientan todas las decisiones relacionadas con la Pila Tecnológica de GeoMotion Studio.
 
 Estos principios priorizan la estabilidad, la simplicidad, la mantenibilidad y la evolución controlada, proporcionando un marco sólido para seleccionar y gestionar las tecnologías que sustentan la plataforma.
 
 ---
+
 # CAPÍTULO 2 · Criterios de Selección
 
 ## 2.1 Objetivo
@@ -289,7 +291,7 @@ Toda tecnología adoptada deberá superar los criterios definidos en este capít
 
 ---
 
-# 2.2 Principios generales
+## 2.2 Principios generales
 
 La incorporación de una nueva tecnología deberá responder a una necesidad claramente identificada.
 
@@ -299,7 +301,7 @@ Cada decisión deberá estar respaldada por un análisis técnico y funcional.
 
 ---
 
-# 2.3 Necesidad
+## 2.3 Necesidad
 
 Toda incorporación deberá resolver un problema real del proyecto.
 
@@ -312,7 +314,7 @@ Antes de añadir una nueva tecnología deberá verificarse que:
 
 ---
 
-# 2.4 Compatibilidad
+## 2.4 Compatibilidad
 
 Las tecnologías seleccionadas deberán integrarse correctamente con el resto de la plataforma.
 
@@ -328,7 +330,7 @@ La compatibilidad reducirá el coste de integración y mantenimiento.
 
 ---
 
-# 2.5 Madurez
+## 2.5 Madurez
 
 GeoMotion Studio priorizará tecnologías que hayan demostrado estabilidad en entornos reales.
 
@@ -344,7 +346,7 @@ Las tecnologías experimentales solo se incorporarán cuando exista una justific
 
 ---
 
-# 2.6 Comunidad
+## 2.6 Comunidad
 
 La existencia de una comunidad activa constituye un factor importante durante la evaluación.
 
@@ -360,7 +362,7 @@ Una comunidad sólida reduce el riesgo tecnológico.
 
 ---
 
-# 2.7 Rendimiento
+## 2.7 Rendimiento
 
 La tecnología deberá ofrecer un nivel de rendimiento acorde con las necesidades de GeoMotion Studio.
 
@@ -376,7 +378,7 @@ El rendimiento deberá analizarse tanto durante el desarrollo como en la ejecuci
 
 ---
 
-# 2.8 Mantenibilidad
+## 2.8 Mantenibilidad
 
 Toda incorporación deberá facilitar el mantenimiento del proyecto.
 
@@ -392,7 +394,7 @@ Las soluciones difíciles de mantener deberán evitarse.
 
 ---
 
-# 2.9 Seguridad
+## 2.9 Seguridad
 
 Las tecnologías incorporadas deberán cumplir unos estándares adecuados de seguridad.
 
@@ -407,7 +409,7 @@ La seguridad deberá formar parte del proceso de selección desde el inicio.
 
 ---
 
-# 2.10 Licenciamiento
+## 2.10 Licenciamiento
 
 Toda tecnología utilizada deberá disponer de una licencia compatible con los objetivos del proyecto.
 
@@ -422,7 +424,7 @@ Las implicaciones legales deberán conocerse antes de adoptar cualquier dependen
 
 ---
 
-# 2.11 Coste de adopción
+## 2.11 Coste de adopción
 
 La incorporación de una nueva tecnología implica un coste que deberá evaluarse previamente.
 
@@ -439,7 +441,7 @@ Solo deberán adoptarse tecnologías cuyo beneficio justifique dicho coste.
 
 ---
 
-# 2.12 Revisión periódica
+## 2.12 Revisión periódica
 
 La Pila Tecnológica deberá revisarse de forma periódica para identificar oportunidades de mejora.
 
@@ -455,13 +457,14 @@ Toda revisión deberá realizarse de forma planificada y documentada.
 
 ---
 
-# 2.13 Resumen del capítulo
+## 2.13 Resumen del capítulo
 
 Los criterios de selección proporcionan un marco objetivo para evaluar las tecnologías que forman parte de GeoMotion Studio.
 
 Su aplicación permitirá construir una Pila Tecnológica coherente, sostenible y preparada para evolucionar, garantizando que cada incorporación aporte un valor real al proyecto y contribuya a su estabilidad a largo plazo.
 
 ---
+
 # CAPÍTULO 3 · Lenguajes de Programación
 
 ## 3.1 Objetivo
@@ -474,11 +477,11 @@ La elección de los lenguajes constituye una decisión estratégica que deberá 
 
 ---
 
-# 3.2 Principios
+## 3.2 Principios
 
 La utilización de los lenguajes de programación deberá respetar los siguientes principios.
 
-## Coherencia
+### Coherencia
 
 Cada lenguaje deberá utilizarse únicamente en aquellos ámbitos para los que ha sido seleccionado.
 
@@ -486,7 +489,7 @@ Se evitará introducir múltiples lenguajes que resuelvan el mismo tipo de probl
 
 ---
 
-## Legibilidad
+### Legibilidad
 
 El código deberá priorizar la claridad frente a soluciones excesivamente complejas.
 
@@ -494,7 +497,7 @@ La facilidad de comprensión constituye un requisito esencial para el mantenimie
 
 ---
 
-## Tipado
+### Tipado
 
 Siempre que resulte posible, el proyecto favorecerá el uso de lenguajes con tipado estático o herramientas que permitan incrementar la seguridad durante el desarrollo.
 
@@ -502,7 +505,7 @@ El objetivo es detectar errores de forma temprana y facilitar la evolución del 
 
 ---
 
-## Estandarización
+### Estandarización
 
 Todo el código deberá seguir convenciones homogéneas de estilo, nomenclatura y organización.
 
@@ -510,7 +513,7 @@ Las diferencias de estilo entre módulos deberán minimizarse.
 
 ---
 
-# 3.3 Lenguaje principal
+## 3.3 Lenguaje principal
 
 TypeScript constituye el lenguaje principal de desarrollo de GeoMotion Studio.
 
@@ -526,7 +529,7 @@ Todo el código de la aplicación deberá desarrollarse prioritariamente utiliza
 
 ---
 
-# 3.4 JavaScript
+## 3.4 JavaScript
 
 JavaScript podrá emplearse únicamente cuando resulte necesario por motivos de interoperabilidad con herramientas externas o dependencias del ecosistema.
 
@@ -534,7 +537,7 @@ No se utilizará para el desarrollo de nuevos módulos cuando exista una alterna
 
 ---
 
-# 3.5 Otros lenguajes
+## 3.5 Otros lenguajes
 
 La incorporación de nuevos lenguajes de programación deberá justificarse adecuadamente.
 
@@ -548,7 +551,7 @@ Antes de adoptar un nuevo lenguaje deberá evaluarse:
 
 ---
 
-# 3.6 Evolución
+## 3.6 Evolución
 
 La selección de lenguajes podrá revisarse conforme evolucione la plataforma.
 
@@ -556,13 +559,14 @@ Toda modificación deberá realizarse de forma gradual, documentada y compatible
 
 ---
 
-# 3.7 Resumen del capítulo
+## 3.7 Resumen del capítulo
 
 La selección de los lenguajes de programación proporciona una base homogénea para el desarrollo de GeoMotion Studio.
 
 La utilización predominante de TypeScript favorece la calidad, la mantenibilidad y la evolución sostenible del proyecto.
 
 ---
+
 # CAPÍTULO 4 · Plataforma de Desarrollo
 
 ## 4.1 Objetivo
@@ -575,35 +579,35 @@ La plataforma de desarrollo constituye la base sobre la que se ejecutan todas la
 
 ---
 
-# 4.2 Principios
+## 4.2 Principios
 
 La plataforma de desarrollo deberá cumplir los siguientes principios.
 
-## Estabilidad
+### Estabilidad
 
 Las herramientas principales deberán mantenerse en versiones estables y ampliamente soportadas.
 
 ---
 
-## Compatibilidad
+### Compatibilidad
 
 La plataforma deberá garantizar un comportamiento consistente entre los distintos entornos de desarrollo.
 
 ---
 
-## Reproducibilidad
+### Reproducibilidad
 
 Todos los colaboradores deberán poder reproducir el entorno de desarrollo utilizando la misma configuración y versiones de las herramientas principales.
 
 ---
 
-## Automatización
+### Automatización
 
 Las tareas repetitivas deberán automatizarse siempre que resulte posible.
 
 ---
 
-# 4.3 Entorno de ejecución
+## 4.3 Entorno de ejecución
 
 Node.js constituye el entorno de ejecución oficial del proyecto.
 
@@ -613,7 +617,7 @@ La actualización de la versión de Node.js deberá planificarse de forma contro
 
 ---
 
-# 4.4 Gestión de dependencias
+## 4.4 Gestión de dependencias
 
 El proyecto utilizará un único gestor de dependencias oficial.
 
@@ -628,7 +632,7 @@ La coexistencia de múltiples gestores de paquetes deberá evitarse.
 
 ---
 
-# 4.5 Monorepo
+## 4.5 Monorepo
 
 GeoMotion Studio se organiza mediante una arquitectura de monorepo.
 
@@ -644,7 +648,7 @@ La estructura del monorepo se define en la documentación de arquitectura.
 
 ---
 
-# 4.6 Herramientas de construcción
+## 4.6 Herramientas de construcción
 
 La plataforma utilizará herramientas de construcción modernas orientadas al desarrollo incremental, la rapidez de compilación y la optimización del proceso de desarrollo.
 
@@ -652,7 +656,7 @@ La selección concreta de dichas herramientas deberá respetar los principios es
 
 ---
 
-# 4.7 Gestión de versiones
+## 4.7 Gestión de versiones
 
 Las versiones de las herramientas principales deberán mantenerse controladas mediante mecanismos que garanticen la reproducibilidad del entorno de desarrollo.
 
@@ -660,7 +664,7 @@ Las actualizaciones se realizarán de forma planificada y documentada.
 
 ---
 
-# 4.8 Entornos
+## 4.8 Entornos
 
 La plataforma distinguirá claramente los diferentes entornos utilizados durante el desarrollo.
 
@@ -674,7 +678,7 @@ Cada entorno dispondrá de una configuración específica, manteniendo un compor
 
 ---
 
-# 4.9 Evolución
+## 4.9 Evolución
 
 La plataforma de desarrollo podrá evolucionar conforme aparezcan mejoras que aporten beneficios objetivos para el proyecto.
 
@@ -682,13 +686,14 @@ Toda modificación deberá preservar la estabilidad, la compatibilidad y la repr
 
 ---
 
-# 4.10 Resumen del capítulo
+## 4.10 Resumen del capítulo
 
 La Plataforma de Desarrollo proporciona el entorno común sobre el que se construye GeoMotion Studio.
 
 La utilización de herramientas homogéneas, configuraciones reproducibles y procesos estandarizados facilita el mantenimiento del proyecto y reduce la complejidad del desarrollo.
 
 ---
+
 # CAPÍTULO 5 · Frameworks Principales
 
 ## 5.1 Objetivo
@@ -699,11 +704,11 @@ Su finalidad es garantizar que cada framework cumpla una función claramente def
 
 ---
 
-# 5.2 Principios
+## 5.2 Principios
 
 La incorporación de un framework deberá respetar los siguientes principios.
 
-## Responsabilidad única
+### Responsabilidad única
 
 Cada framework deberá resolver un problema específico.
 
@@ -711,7 +716,7 @@ No se incorporarán múltiples frameworks destinados a cubrir la misma necesidad
 
 ---
 
-## Integración
+### Integración
 
 Los frameworks deberán integrarse de forma natural con la arquitectura general del proyecto.
 
@@ -719,7 +724,7 @@ Su utilización no deberá introducir dependencias innecesarias ni dificultar la
 
 ---
 
-## Mantenibilidad
+### Mantenibilidad
 
 La selección deberá favorecer frameworks con una evolución estable, una comunidad activa y una documentación de calidad.
 
@@ -727,7 +732,7 @@ La continuidad del proyecto tendrá prioridad sobre la adopción de tecnologías
 
 ---
 
-## Sustituibilidad
+### Sustituibilidad
 
 Siempre que resulte posible, la arquitectura deberá minimizar el acoplamiento directo con un framework concreto.
 
@@ -735,7 +740,7 @@ La lógica de negocio deberá permanecer independiente de la tecnología utiliza
 
 ---
 
-# 5.3 Framework principal de interfaz
+## 5.3 Framework principal de interfaz
 
 React constituye el framework oficial para el desarrollo de la interfaz de usuario de GeoMotion Studio.
 
@@ -751,7 +756,7 @@ Todo el desarrollo de la interfaz deberá realizarse utilizando React como tecno
 
 ---
 
-# 5.4 Framework de construcción
+## 5.4 Framework de construcción
 
 Vite constituye la herramienta oficial para la construcción y ejecución del entorno de desarrollo.
 
@@ -767,7 +772,7 @@ Las tareas de desarrollo y construcción deberán apoyarse en esta herramienta m
 
 ---
 
-# 5.5 Frameworks complementarios
+## 5.5 Frameworks complementarios
 
 GeoMotion Studio podrá incorporar frameworks adicionales cuando resuelvan necesidades claramente diferenciadas.
 
@@ -777,7 +782,7 @@ Todo framework complementario deberá tener una responsabilidad claramente delim
 
 ---
 
-# 5.6 Evolución
+## 5.6 Evolución
 
 La selección de frameworks podrá revisarse cuando existan mejoras objetivas relacionadas con:
 
@@ -791,13 +796,14 @@ Toda sustitución deberá realizarse de forma planificada y documentada.
 
 ---
 
-# 5.7 Resumen del capítulo
+## 5.7 Resumen del capítulo
 
 Los frameworks principales proporcionan la estructura sobre la que se desarrolla GeoMotion Studio.
 
 Su selección responde a criterios de estabilidad, integración y mantenibilidad, garantizando una plataforma preparada para evolucionar sin comprometer la arquitectura del proyecto.
 
 ---
+
 # CAPÍTULO 6 · Librerías Base
 
 ## 6.1 Objetivo
@@ -810,11 +816,11 @@ Su selección deberá contribuir a simplificar el desarrollo y mejorar la calida
 
 ---
 
-# 6.2 Principios
+## 6.2 Principios
 
 Las librerías incorporadas al proyecto deberán respetar los siguientes principios.
 
-## Especialización
+### Especialización
 
 Cada librería deberá resolver una necesidad concreta.
 
@@ -822,7 +828,7 @@ Se evitarán librerías excesivamente generales cuando una solución más espec�
 
 ---
 
-## Compatibilidad
+### Compatibilidad
 
 Las librerías deberán integrarse correctamente con:
 
@@ -835,7 +841,7 @@ Su incorporación no deberá generar conflictos con el resto del ecosistema.
 
 ---
 
-## Bajo acoplamiento
+### Bajo acoplamiento
 
 Siempre que resulte posible, las librerías deberán utilizarse mediante capas de abstracción que reduzcan la dependencia directa de sus APIs.
 
@@ -843,13 +849,13 @@ Este enfoque facilitará futuras sustituciones.
 
 ---
 
-## Mantenimiento
+### Mantenimiento
 
 Solo se incorporarán librerías con mantenimiento activo y una evolución compatible con los objetivos del proyecto.
 
 ---
 
-# 6.3 Gestión del estado
+## 6.3 Gestión del estado
 
 GeoMotion Studio utilizará una librería especializada para la gestión del estado global de la aplicación.
 
@@ -865,7 +871,7 @@ La arquitectura de estado se documenta de forma específica en la documentación
 
 ---
 
-# 6.4 Enrutamiento
+## 6.4 Enrutamiento
 
 La navegación interna de la aplicación utilizará una librería especializada para la gestión de rutas.
 
@@ -878,7 +884,7 @@ Esta deberá proporcionar:
 
 ---
 
-# 6.5 Visualización cartográfica
+## 6.5 Visualización cartográfica
 
 La representación de información geográfica utilizará una librería especializada en renderizado cartográfico.
 
@@ -893,7 +899,7 @@ La selección concreta de esta librería deberá alinearse con la arquitectura c
 
 ---
 
-# 6.6 Utilidades
+## 6.6 Utilidades
 
 Las librerías auxiliares destinadas a tareas específicas deberán mantenerse reducidas y responder únicamente a necesidades justificadas.
 
@@ -909,7 +915,7 @@ Se evitará incorporar dependencias que puedan sustituirse razonablemente median
 
 ---
 
-# 6.7 Sustitución
+## 6.7 Sustitución
 
 Las librerías podrán sustituirse cuando:
 
@@ -923,13 +929,14 @@ Toda sustitución deberá planificarse cuidadosamente para minimizar el impacto 
 
 ---
 
-# 6.8 Resumen del capítulo
+## 6.8 Resumen del capítulo
 
 Las librerías base amplían las capacidades de GeoMotion Studio proporcionando soluciones especializadas para necesidades concretas.
 
 Su incorporación deberá responder siempre a criterios de simplicidad, compatibilidad y mantenibilidad, evitando dependencias innecesarias y favoreciendo una arquitectura flexible y preparada para evolucionar.
 
 ---
+
 # CAPÍTULO 7 · Herramientas de Desarrollo
 
 ## 7.1 Objetivo
@@ -942,11 +949,11 @@ Las herramientas de desarrollo deberán integrarse de forma coherente con la arq
 
 ---
 
-# 7.2 Principios
+## 7.2 Principios
 
 Las herramientas de desarrollo deberán cumplir los siguientes principios.
 
-## Automatización
+### Automatización
 
 Toda tarea repetitiva deberá automatizarse siempre que resulte técnica y económicamente viable.
 
@@ -954,7 +961,7 @@ La automatización reduce errores humanos y mejora la consistencia del proyecto.
 
 ---
 
-## Integración
+### Integración
 
 Las herramientas deberán integrarse entre sí formando un flujo de trabajo continuo.
 
@@ -962,7 +969,7 @@ La utilización de herramientas aisladas deberá evitarse cuando dificulte el ma
 
 ---
 
-## Productividad
+### Productividad
 
 Las herramientas deberán facilitar el trabajo diario del desarrollador.
 
@@ -970,7 +977,7 @@ Su incorporación deberá reducir el tiempo dedicado a tareas auxiliares y permi
 
 ---
 
-## Uniformidad
+### Uniformidad
 
 Todos los colaboradores deberán utilizar el mismo conjunto de herramientas y configuraciones oficiales.
 
@@ -978,7 +985,7 @@ Esto garantizará un comportamiento homogéneo entre los distintos entornos de d
 
 ---
 
-# 7.3 Editor de código
+## 7.3 Editor de código
 
 El proyecto recomendará un entorno de desarrollo moderno con soporte para:
 
@@ -993,7 +1000,7 @@ La elección del editor no deberá afectar al funcionamiento del proyecto siempr
 
 ---
 
-# 7.4 Formateo
+## 7.4 Formateo
 
 Todo el código deberá seguir un formato uniforme.
 
@@ -1003,7 +1010,7 @@ Las reglas de formato deberán mantenerse centralizadas y versionadas junto con 
 
 ---
 
-# 7.5 Análisis estático
+## 7.5 Análisis estático
 
 El código será analizado automáticamente para detectar:
 
@@ -1017,7 +1024,7 @@ El análisis estático formará parte del proceso habitual de desarrollo.
 
 ---
 
-# 7.6 Gestión de versiones
+## 7.6 Gestión de versiones
 
 Las herramientas de desarrollo deberán integrarse con el sistema oficial de control de versiones.
 
@@ -1025,7 +1032,7 @@ Las operaciones habituales, como validaciones o comprobaciones automáticas, pod
 
 ---
 
-# 7.7 Depuración
+## 7.7 Depuración
 
 La plataforma deberá facilitar mecanismos de depuración durante el desarrollo.
 
@@ -1038,7 +1045,7 @@ Las herramientas utilizadas deberán permitir:
 
 ---
 
-# 7.8 Evolución
+## 7.8 Evolución
 
 Las herramientas de desarrollo podrán actualizarse conforme evolucione el proyecto.
 
@@ -1046,13 +1053,14 @@ Toda incorporación deberá mejorar objetivamente el flujo de trabajo y respetar
 
 ---
 
-# 7.9 Resumen del capítulo
+## 7.9 Resumen del capítulo
 
 Las herramientas de desarrollo proporcionan el entorno necesario para construir GeoMotion Studio de forma eficiente, consistente y mantenible.
 
 Su correcta integración favorece la productividad del equipo y contribuye a mejorar la calidad general del software.
 
 ---
+
 # CAPÍTULO 8 · Calidad del Código
 
 ## 8.1 Objetivo
@@ -1065,11 +1073,11 @@ La calidad del código constituye un requisito permanente y deberá considerarse
 
 ---
 
-# 8.2 Principios
+## 8.2 Principios
 
 La calidad del código se fundamentará en los siguientes principios.
 
-## Legibilidad
+### Legibilidad
 
 El código deberá escribirse pensando en las personas que deberán mantenerlo en el futuro.
 
@@ -1077,7 +1085,7 @@ La claridad tendrá prioridad sobre soluciones innecesariamente complejas.
 
 ---
 
-## Consistencia
+### Consistencia
 
 Todo el proyecto deberá seguir convenciones comunes de:
 
@@ -1090,7 +1098,7 @@ La consistencia facilita el mantenimiento y reduce la carga cognitiva.
 
 ---
 
-## Simplicidad
+### Simplicidad
 
 Cada solución deberá ser tan sencilla como resulte posible sin comprometer la funcionalidad.
 
@@ -1098,7 +1106,7 @@ La complejidad deberá introducirse únicamente cuando exista una necesidad just
 
 ---
 
-## Modularidad
+### Modularidad
 
 El código deberá organizarse en módulos con responsabilidades claramente definidas.
 
@@ -1106,7 +1114,7 @@ La reutilización tendrá prioridad sobre la duplicación.
 
 ---
 
-# 8.3 Convenciones
+## 8.3 Convenciones
 
 El proyecto mantendrá un conjunto oficial de convenciones de desarrollo.
 
@@ -1123,7 +1131,7 @@ Todas las convenciones deberán mantenerse documentadas y actualizadas.
 
 ---
 
-# 8.4 Revisión de código
+## 8.4 Revisión de código
 
 Los cambios significativos deberán someterse a un proceso de revisión antes de incorporarse al proyecto.
 
@@ -1140,7 +1148,7 @@ La revisión constituye un mecanismo de mejora continua y transferencia de conoc
 
 ---
 
-# 8.5 Deuda técnica
+## 8.5 Deuda técnica
 
 La deuda técnica deberá mantenerse bajo control.
 
@@ -1154,7 +1162,7 @@ La incorporación consciente de deuda técnica deberá justificarse adecuadament
 
 ---
 
-# 8.6 Refactorización
+## 8.6 Refactorización
 
 La mejora continua del código forma parte del desarrollo habitual del proyecto.
 
@@ -1168,7 +1176,7 @@ Las refactorizaciones deberán preservar el comportamiento funcional de la aplic
 
 ---
 
-# 8.7 Calidad continua
+## 8.7 Calidad continua
 
 La calidad del código deberá evaluarse de forma continua mediante herramientas automáticas y procesos de revisión.
 
@@ -1176,7 +1184,7 @@ La detección temprana de problemas permitirá reducir costes de mantenimiento y
 
 ---
 
-# 8.8 Evolución
+## 8.8 Evolución
 
 Los criterios de calidad podrán ampliarse conforme evolucione GeoMotion Studio.
 
@@ -1184,13 +1192,14 @@ Toda modificación deberá reforzar los principios establecidos en este document
 
 ---
 
-# 8.9 Resumen del capítulo
+## 8.9 Resumen del capítulo
 
 La calidad del código constituye uno de los pilares fundamentales de GeoMotion Studio.
 
 La aplicación sistemática de estos principios permitirá construir una base de código consistente, mantenible y preparada para evolucionar de forma sostenible durante toda la vida del proyecto.
 
 ---
+
 # CAPÍTULO 9 · Testing
 
 ## 9.1 Objetivo
@@ -1203,17 +1212,17 @@ Las pruebas constituyen una parte integral del desarrollo y deberán formar part
 
 ---
 
-# 9.2 Principios
+## 9.2 Principios
 
 La estrategia de testing se fundamentará en los siguientes principios.
 
-## Calidad continua
+### Calidad continua
 
 La calidad deberá verificarse durante todo el proceso de desarrollo y no únicamente antes de una publicación.
 
 ---
 
-## Automatización
+### Automatización
 
 Siempre que resulte posible, las pruebas deberán ejecutarse de forma automática.
 
@@ -1221,7 +1230,7 @@ La automatización reducirá errores humanos y permitirá validar el comportamie
 
 ---
 
-## Cobertura equilibrada
+### Cobertura equilibrada
 
 El objetivo de las pruebas no será alcanzar un porcentaje arbitrario de cobertura, sino proteger las funcionalidades críticas del proyecto.
 
@@ -1229,7 +1238,7 @@ La calidad de las pruebas tendrá prioridad sobre su cantidad.
 
 ---
 
-## Independencia
+### Independencia
 
 Cada prueba deberá ser independiente del resto.
 
@@ -1237,7 +1246,7 @@ Su ejecución no deberá depender del orden ni del resultado de otras pruebas.
 
 ---
 
-# 9.3 Niveles de prueba
+## 9.3 Niveles de prueba
 
 La estrategia de calidad contemplará distintos niveles de validación.
 
@@ -1254,7 +1263,7 @@ Cada nivel cubrirá un conjunto específico de responsabilidades.
 
 ---
 
-# 9.4 Pruebas unitarias
+## 9.4 Pruebas unitarias
 
 Las pruebas unitarias verificarán el comportamiento de funciones, clases y módulos individuales.
 
@@ -1264,7 +1273,7 @@ Las pruebas deberán ser rápidas, deterministas y fáciles de mantener.
 
 ---
 
-# 9.5 Pruebas de integración
+## 9.5 Pruebas de integración
 
 Las pruebas de integración verificarán la colaboración entre distintos módulos del sistema.
 
@@ -1272,7 +1281,7 @@ Su finalidad será asegurar que los componentes interactúan correctamente respe
 
 ---
 
-# 9.6 Pruebas funcionales
+## 9.6 Pruebas funcionales
 
 Las pruebas funcionales validarán el comportamiento observable por el usuario.
 
@@ -1282,7 +1291,7 @@ Estas pruebas verificarán que la aplicación responde correctamente desde una p
 
 ---
 
-# 9.7 Pruebas de interfaz
+## 9.7 Pruebas de interfaz
 
 La interfaz de usuario deberá validarse mediante pruebas que permitan comprobar:
 
@@ -1297,7 +1306,7 @@ La estrategia concreta de estas pruebas se documentará en la documentación té
 
 ---
 
-# 9.8 Pruebas de rendimiento
+## 9.8 Pruebas de rendimiento
 
 Las funcionalidades críticas deberán evaluarse desde el punto de vista del rendimiento.
 
@@ -1313,7 +1322,7 @@ El rendimiento deberá considerarse un requisito de calidad.
 
 ---
 
-# 9.9 Integración continua
+## 9.9 Integración continua
 
 Las pruebas automatizadas formarán parte del proceso de integración continua.
 
@@ -1321,7 +1330,7 @@ Toda modificación significativa del código deberá superar las validaciones de
 
 ---
 
-# 9.10 Evolución
+## 9.10 Evolución
 
 La estrategia de testing evolucionará junto con la plataforma.
 
@@ -1329,13 +1338,14 @@ La incorporación de nuevas funcionalidades deberá ir acompañada de las prueba
 
 ---
 
-# 9.11 Resumen del capítulo
+## 9.11 Resumen del capítulo
 
 La estrategia de testing proporciona los mecanismos necesarios para garantizar la calidad y confiabilidad de GeoMotion Studio.
 
 La aplicación sistemática de pruebas automatizadas permitirá reducir errores, facilitar la evolución del proyecto y aumentar la confianza en cada nueva versión del software.
 
 ---
+
 # CAPÍTULO 10 · Documentación
 
 ## 10.1 Objetivo
@@ -1348,11 +1358,11 @@ La documentación constituye un activo estratégico del proyecto y forma parte d
 
 ---
 
-# 10.2 Principios
+## 10.2 Principios
 
 La documentación deberá respetar los siguientes principios.
 
-## Actualización continua
+### Actualización continua
 
 La documentación deberá evolucionar al mismo ritmo que el software.
 
@@ -1360,7 +1370,7 @@ Toda modificación relevante del proyecto deberá reflejarse en la documentació
 
 ---
 
-## Claridad
+### Claridad
 
 La información deberá redactarse de forma clara, precisa y comprensible.
 
@@ -1368,7 +1378,7 @@ Se evitarán ambigüedades y descripciones innecesariamente complejas.
 
 ---
 
-## Organización
+### Organización
 
 La documentación deberá mantenerse estructurada de forma lógica y coherente.
 
@@ -1376,7 +1386,7 @@ Cada documento deberá abordar un ámbito de responsabilidad claramente definido
 
 ---
 
-## Accesibilidad
+### Accesibilidad
 
 La información deberá ser fácilmente localizable.
 
@@ -1408,7 +1418,7 @@ El incumplimiento de este principio implicará que la funcionalidad deberá cons
 
 ---
 
-# 10.3 Tipos de documentación
+## 10.3 Tipos de documentación
 
 GeoMotion Studio mantendrá diferentes niveles de documentación.
 
@@ -1425,7 +1435,7 @@ Cada categoría responderá a necesidades específicas.
 
 ---
 
-# 10.4 Documentación del código
+## 10.4 Documentación del código
 
 El código fuente deberá ser autoexplicativo siempre que resulte posible.
 
@@ -1435,7 +1445,7 @@ La documentación del código complementará, pero no sustituirá, la documentac
 
 ---
 
-# 10.5 Sincronización
+## 10.5 Sincronización
 
 La documentación y el software deberán evolucionar conjuntamente.
 
@@ -1445,7 +1455,7 @@ La sincronización entre código y documentación constituye un requisito de cal
 
 ---
 
-# 10.6 Versionado
+## 10.6 Versionado
 
 La documentación formará parte del repositorio oficial del proyecto.
 
@@ -1455,7 +1465,7 @@ Toda modificación relevante deberá quedar registrada mediante el sistema de co
 
 ---
 
-# 10.7 Revisión
+## 10.7 Revisión
 
 La documentación deberá revisarse periódicamente para detectar:
 
@@ -1468,7 +1478,7 @@ La revisión continua permitirá mantener la documentación útil y fiable.
 
 ---
 
-# 10.8 Relación con el desarrollo
+## 10.8 Relación con el desarrollo
 
 La documentación deberá integrarse de forma natural en el proceso de desarrollo.
 
@@ -1478,7 +1488,7 @@ La calidad documental contribuirá directamente a la calidad global del proyecto
 
 ---
 
-# 10.9 Evolución
+## 10.9 Evolución
 
 El sistema documental podrá ampliarse conforme evolucionen las necesidades de GeoMotion Studio.
 
@@ -1486,13 +1496,14 @@ Toda incorporación deberá respetar la organización general y los principios e
 
 ---
 
-# 10.10 Resumen del capítulo
+## 10.10 Resumen del capítulo
 
 La documentación constituye uno de los pilares fundamentales de GeoMotion Studio.
 
 Su mantenimiento continuo garantiza la preservación del conocimiento del proyecto, facilita la colaboración entre desarrolladores y proporciona una base sólida para la evolución sostenible de la plataforma.
 
 ---
+
 # CAPÍTULO 11 · Automatización e Integración Continua
 
 ## 11.1 Objetivo
@@ -1505,17 +1516,17 @@ La automatización constituye un elemento esencial para mantener la calidad y la
 
 ---
 
-# 11.2 Principios
+## 11.2 Principios
 
 La automatización deberá respetar los siguientes principios.
 
-## Reproducibilidad
+### Reproducibilidad
 
 Todo proceso automatizado deberá producir resultados consistentes cuando se ejecute bajo las mismas condiciones.
 
 ---
 
-## Confiabilidad
+### Confiabilidad
 
 Las tareas automatizadas deberán ejecutarse de forma predecible y ofrecer resultados verificables.
 
@@ -1523,7 +1534,7 @@ Los fallos deberán detectarse y comunicarse de manera clara.
 
 ---
 
-## Simplicidad
+### Simplicidad
 
 Los flujos automatizados deberán mantenerse tan simples como resulte posible.
 
@@ -1531,13 +1542,13 @@ La automatización innecesariamente compleja incrementa el coste de mantenimient
 
 ---
 
-## Escalabilidad
+### Escalabilidad
 
 La infraestructura de automatización deberá poder evolucionar junto con el crecimiento del proyecto.
 
 ---
 
-# 11.3 Automatización del desarrollo
+## 11.3 Automatización del desarrollo
 
 Las tareas habituales del desarrollo podrán automatizarse siempre que aporten beneficios objetivos.
 
@@ -1552,7 +1563,7 @@ Entre otras:
 
 ---
 
-# 11.4 Integración continua
+## 11.4 Integración continua
 
 GeoMotion Studio adoptará un modelo de Integración Continua (Continuous Integration - CI).
 
@@ -1560,7 +1571,7 @@ Todo cambio incorporado al repositorio deberá superar automáticamente las vali
 
 ---
 
-# 11.5 Validaciones automáticas
+## 11.5 Validaciones automáticas
 
 La integración continua podrá ejecutar automáticamente tareas como:
 
@@ -1576,7 +1587,7 @@ La incorporación de nuevas validaciones deberá responder a necesidades reales 
 
 ---
 
-# 11.6 Gestión de errores
+## 11.6 Gestión de errores
 
 Los procesos automatizados deberán proporcionar información suficiente para identificar rápidamente el origen de un fallo.
 
@@ -1584,7 +1595,7 @@ Los mensajes de error deberán facilitar el diagnóstico y la resolución de inc
 
 ---
 
-# 11.7 Evolución
+## 11.7 Evolución
 
 Los procesos de automatización evolucionarán conforme lo hagan las necesidades del proyecto.
 
@@ -1592,13 +1603,14 @@ Toda modificación deberá perseguir mejoras objetivas en calidad, productividad
 
 ---
 
-# 11.8 Resumen del capítulo
+## 11.8 Resumen del capítulo
 
 La automatización y la integración continua permiten mantener un proceso de desarrollo estable, repetible y confiable.
 
 Su correcta implantación contribuye a reducir errores, mejorar la calidad del software y facilitar la evolución de GeoMotion Studio.
 
 ---
+
 # CAPÍTULO 12 · Distribución y Despliegue
 
 ## 12.1 Objetivo
@@ -1611,35 +1623,35 @@ El proceso de despliegue deberá minimizar los riesgos asociados a la distribuci
 
 ---
 
-# 12.2 Principios
+## 12.2 Principios
 
 La distribución del software deberá respetar los siguientes principios.
 
-## Repetibilidad
+### Repetibilidad
 
 Todo proceso de despliegue deberá poder ejecutarse múltiples veces obteniendo resultados consistentes.
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Cada versión publicada deberá poder asociarse con precisión al estado del repositorio desde el que fue generada.
 
 ---
 
-## Estabilidad
+### Estabilidad
 
 Solo podrán distribuirse versiones que hayan superado satisfactoriamente las validaciones definidas por el proyecto.
 
 ---
 
-## Seguridad
+### Seguridad
 
 Los procesos de publicación deberán proteger la integridad del software distribuido y de los recursos utilizados durante el despliegue.
 
 ---
 
-# 12.3 Construcción de versiones
+## 12.3 Construcción de versiones
 
 Toda versión distribuible deberá generarse mediante procesos automatizados.
 
@@ -1647,7 +1659,7 @@ No deberán realizarse modificaciones manuales sobre los artefactos generados.
 
 ---
 
-# 12.4 Entornos de despliegue
+## 12.4 Entornos de despliegue
 
 El proyecto podrá disponer de distintos entornos destinados a diferentes fases del ciclo de vida del software.
 
@@ -1661,7 +1673,7 @@ Cada entorno deberá mantener configuraciones claramente diferenciadas.
 
 ---
 
-# 12.5 Configuración
+## 12.5 Configuración
 
 La configuración específica de cada entorno deberá mantenerse separada del código fuente.
 
@@ -1669,7 +1681,7 @@ La gestión de parámetros sensibles deberá realizarse mediante mecanismos adec
 
 ---
 
-# 12.6 Publicación
+## 12.6 Publicación
 
 La publicación de nuevas versiones deberá seguir un procedimiento controlado que garantice:
 
@@ -1682,7 +1694,7 @@ Toda publicación deberá quedar adecuadamente registrada.
 
 ---
 
-# 12.7 Recuperación
+## 12.7 Recuperación
 
 El proceso de despliegue deberá contemplar mecanismos que permitan recuperar una versión estable cuando una publicación presente problemas críticos.
 
@@ -1690,7 +1702,7 @@ La estrategia de recuperación deberá minimizar el tiempo de indisponibilidad d
 
 ---
 
-# 12.8 Evolución
+## 12.8 Evolución
 
 La estrategia de distribución y despliegue podrá evolucionar conforme aumenten las necesidades operativas del proyecto.
 
@@ -1698,13 +1710,14 @@ Las modificaciones deberán mantener los principios definidos en este documento.
 
 ---
 
-# 12.9 Resumen del capítulo
+## 12.9 Resumen del capítulo
 
 La distribución y el despliegue constituyen la etapa final del ciclo de desarrollo de GeoMotion Studio.
 
 La automatización, la trazabilidad y la estabilidad de estos procesos garantizan que cada nueva versión pueda publicarse con un elevado nivel de confianza y calidad.
 
 ---
+
 # CAPÍTULO 13 · Gestión de Dependencias
 
 ## 13.1 Objetivo
@@ -1717,11 +1730,11 @@ Las dependencias constituyen un elemento estratégico de la plataforma y deberá
 
 ---
 
-# 13.2 Principios
+## 13.2 Principios
 
 La gestión de dependencias deberá respetar los siguientes principios.
 
-## Necesidad
+### Necesidad
 
 Toda dependencia incorporada al proyecto deberá resolver una necesidad concreta.
 
@@ -1729,7 +1742,7 @@ No se añadirán dependencias cuya funcionalidad pueda implementarse razonableme
 
 ---
 
-## Simplicidad
+### Simplicidad
 
 Se minimizará el número de dependencias utilizadas.
 
@@ -1737,7 +1750,7 @@ Reducir la cantidad de software externo disminuye la complejidad del proyecto y 
 
 ---
 
-## Calidad
+### Calidad
 
 Únicamente se incorporarán dependencias que presenten un nivel adecuado de calidad técnica.
 
@@ -1751,7 +1764,7 @@ Entre otros aspectos se valorarán:
 
 ---
 
-## Seguridad
+### Seguridad
 
 Las dependencias deberán mantenerse actualizadas para reducir la exposición a vulnerabilidades conocidas.
 
@@ -1759,7 +1772,7 @@ Las actualizaciones deberán planificarse y validarse antes de incorporarse al p
 
 ---
 
-# 13.3 Evaluación
+## 13.3 Evaluación
 
 Antes de incorporar una nueva dependencia deberán analizarse, como mínimo, los siguientes aspectos:
 
@@ -1775,7 +1788,7 @@ La incorporación deberá responder a una decisión técnica justificada.
 
 ---
 
-# 13.4 Actualización
+## 13.4 Actualización
 
 Las dependencias deberán revisarse periódicamente.
 
@@ -1791,7 +1804,7 @@ Toda actualización deberá validarse mediante los mecanismos de calidad definid
 
 ---
 
-# 13.5 Retirada
+## 13.5 Retirada
 
 Una dependencia podrá retirarse cuando:
 
@@ -1805,7 +1818,7 @@ La retirada deberá planificarse para minimizar el impacto sobre el sistema.
 
 ---
 
-# 13.6 Dependencias transitivas
+## 13.6 Dependencias transitivas
 
 Las dependencias incorporadas indirectamente también forman parte del ecosistema tecnológico del proyecto.
 
@@ -1818,7 +1831,7 @@ Siempre que resulte posible, deberán supervisarse para detectar:
 
 ---
 
-# 13.7 Auditoría
+## 13.7 Auditoría
 
 La gestión de dependencias incluirá revisiones periódicas destinadas a evaluar:
 
@@ -1831,7 +1844,7 @@ Estas revisiones facilitarán la evolución sostenible de la plataforma.
 
 ---
 
-# 13.8 Evolución
+## 13.8 Evolución
 
 La estrategia de gestión de dependencias podrá adaptarse conforme evolucione GeoMotion Studio.
 
@@ -1839,13 +1852,14 @@ Toda modificación deberá reforzar la estabilidad, la seguridad y la mantenibil
 
 ---
 
-# 13.9 Resumen del capítulo
+## 13.9 Resumen del capítulo
 
 La gestión de dependencias constituye un proceso continuo orientado a preservar la calidad y estabilidad de GeoMotion Studio.
 
 La incorporación, actualización y retirada controlada de software externo permite mantener una plataforma preparada para evolucionar de forma segura y sostenible.
 
 ---
+
 # CAPÍTULO 14 · Versionado y Compatibilidad
 
 ## 14.1 Objetivo
@@ -1856,11 +1870,11 @@ Su finalidad es facilitar la evolución controlada del proyecto, garantizando qu
 
 ---
 
-# 14.2 Principios
+## 14.2 Principios
 
 La estrategia de versionado deberá respetar los siguientes principios.
 
-## Claridad
+### Claridad
 
 Las versiones deberán comunicar de forma comprensible el alcance de los cambios realizados.
 
@@ -1868,13 +1882,13 @@ Todo colaborador deberá poder interpretar el nivel de impacto de una nueva vers
 
 ---
 
-## Trazabilidad
+### Trazabilidad
 
 Cada versión deberá poder asociarse con precisión al estado del repositorio, la documentación y los procesos de construcción que la generaron.
 
 ---
 
-## Compatibilidad
+### Compatibilidad
 
 Siempre que resulte posible, las nuevas versiones deberán preservar la compatibilidad con versiones anteriores.
 
@@ -1882,13 +1896,13 @@ Cuando ello no sea posible, la ruptura de compatibilidad deberá documentarse ad
 
 ---
 
-## Evolución controlada
+### Evolución controlada
 
 La evolución del proyecto deberá realizarse mediante cambios planificados que minimicen el impacto sobre el resto del sistema.
 
 ---
 
-# 14.3 Estrategia de versionado
+## 14.3 Estrategia de versionado
 
 GeoMotion Studio adoptará una estrategia de versionado consistente durante todo el ciclo de vida del proyecto.
 
@@ -1898,7 +1912,7 @@ La política concreta de numeración se documentará en los procedimientos de de
 
 ---
 
-# 14.4 Compatibilidad interna
+## 14.4 Compatibilidad interna
 
 Los distintos módulos del proyecto deberán evolucionar de forma coordinada.
 
@@ -1906,7 +1920,7 @@ Las modificaciones realizadas en un componente no deberán introducir incompatib
 
 ---
 
-# 14.5 Compatibilidad externa
+## 14.5 Compatibilidad externa
 
 La evolución del proyecto deberá considerar la compatibilidad con:
 
@@ -1920,7 +1934,7 @@ Toda modificación significativa deberá evaluar su impacto sobre estos elemento
 
 ---
 
-# 14.6 Cambios incompatibles
+## 14.6 Cambios incompatibles
 
 Cuando resulte necesario introducir cambios incompatibles con versiones anteriores, estos deberán:
 
@@ -1933,7 +1947,7 @@ Siempre que resulte posible, se facilitarán mecanismos que permitan una transic
 
 ---
 
-# 14.7 Historial
+## 14.7 Historial
 
 El proyecto mantendrá un historial de versiones que permita comprender la evolución funcional y técnica de GeoMotion Studio.
 
@@ -1941,7 +1955,7 @@ Este historial facilitará el mantenimiento, la resolución de incidencias y la 
 
 ---
 
-# 14.8 Evolución
+## 14.8 Evolución
 
 La estrategia de versionado podrá revisarse conforme evolucionen las necesidades del proyecto.
 
@@ -1949,13 +1963,14 @@ Toda modificación deberá preservar la claridad, la trazabilidad y la estabilid
 
 ---
 
-# 14.9 Resumen del capítulo
+## 14.9 Resumen del capítulo
 
 El versionado y la compatibilidad proporcionan un marco estable para la evolución de GeoMotion Studio.
 
 La aplicación consistente de estos principios facilita el mantenimiento del proyecto, mejora la coordinación entre sus componentes y reduce los riesgos asociados a la incorporación de nuevas funcionalidades.
 
 ---
+
 # CAPÍTULO 15 · Evolución de la Pila Tecnológica
 
 ## 15.1 Objetivo
@@ -1968,11 +1983,11 @@ La evolución tecnológica deberá contribuir a mejorar la plataforma sin compro
 
 ---
 
-# 15.2 Principios
+## 15.2 Principios
 
 La evolución de la Pila Tecnológica deberá respetar los siguientes principios.
 
-## Evolución controlada
+### Evolución controlada
 
 Toda modificación tecnológica deberá responder a una planificación previa.
 
@@ -1980,7 +1995,7 @@ Se evitarán cambios impulsivos o motivados exclusivamente por tendencias del ec
 
 ---
 
-## Justificación técnica
+### Justificación técnica
 
 La adopción de una nueva tecnología deberá fundamentarse en beneficios objetivos y medibles.
 
@@ -1995,7 +2010,7 @@ Entre otros aspectos podrán considerarse:
 
 ---
 
-## Compatibilidad
+### Compatibilidad
 
 Siempre que resulte posible, las modificaciones deberán preservar la compatibilidad con la arquitectura existente.
 
@@ -2003,7 +2018,7 @@ Los cambios incompatibles deberán minimizarse y documentarse adecuadamente.
 
 ---
 
-## Continuidad
+### Continuidad
 
 La evolución tecnológica deberá favorecer la continuidad del proyecto.
 
@@ -2011,7 +2026,7 @@ Las decisiones adoptadas deberán facilitar el mantenimiento a largo plazo y evi
 
 ---
 
-# 15.3 Evaluación de nuevas tecnologías
+## 15.3 Evaluación de nuevas tecnologías
 
 Antes de incorporar una nueva tecnología deberán analizarse, al menos, los siguientes aspectos:
 
@@ -2028,7 +2043,7 @@ Toda evaluación deberá priorizar el beneficio global para el proyecto.
 
 ---
 
-# 15.4 Sustitución de tecnologías
+## 15.4 Sustitución de tecnologías
 
 Una tecnología podrá sustituirse cuando existan razones objetivas que lo justifiquen.
 
@@ -2044,7 +2059,7 @@ Toda sustitución deberá planificarse cuidadosamente para minimizar el impacto 
 
 ---
 
-# 15.5 Gestión de la obsolescencia
+## 15.5 Gestión de la obsolescencia
 
 La evolución tecnológica deberá contemplar la detección temprana de tecnologías obsoletas.
 
@@ -2054,7 +2069,7 @@ La obsolescencia deberá gestionarse de forma preventiva y no únicamente como r
 
 ---
 
-# 15.6 Innovación responsable
+## 15.6 Innovación responsable
 
 GeoMotion Studio promoverá la incorporación de mejoras tecnológicas cuando aporten beneficios claros al proyecto.
 
@@ -2064,7 +2079,7 @@ El objetivo será construir una plataforma moderna y sostenible, capaz de evoluc
 
 ---
 
-# 15.7 Revisión periódica
+## 15.7 Revisión periódica
 
 La Pila Tecnológica será objeto de revisiones periódicas.
 
@@ -2080,13 +2095,14 @@ Las decisiones derivadas de estas revisiones deberán documentarse adecuadamente
 
 ---
 
-# 15.8 Resumen del capítulo
+## 15.8 Resumen del capítulo
 
 La evolución de la Pila Tecnológica constituye un proceso continuo orientado a preservar la calidad, estabilidad y sostenibilidad de GeoMotion Studio.
 
 Toda incorporación, actualización o sustitución tecnológica deberá responder a criterios objetivos y contribuir a la evolución ordenada de la plataforma.
 
 ---
+
 # CAPÍTULO 16 · Conclusiones
 
 ## 16.1 Síntesis

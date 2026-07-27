@@ -126,6 +126,7 @@ Se presentan los fundamentos conceptuales del versionado, el ciclo de vida de lo
 Finalmente, los anexos proporcionan plantillas, ejemplos y herramientas de referencia para facilitar la aplicación uniforme de las políticas aquí establecidas.
 
 ---
+
 # CAPÍTULO 1 · Fundamentos de la Evolución de los Activos de Ingeniería
 
 ## 1.1 Objetivo
@@ -298,6 +299,7 @@ Gestionarla de manera controlada requiere identificar los activos que forman par
 Sobre estos fundamentos se construye el modelo de Gestión de Versiones desarrollado en los capítulos siguientes.
 
 ---
+
 # CAPÍTULO 2 · Ciclo de Vida de los Activos de Ingeniería
 
 ## 2.1 Objetivo
@@ -491,6 +493,7 @@ Todo activo de ingeniería transita por un ciclo de vida que comienza con su cre
 La comprensión de este ciclo permite gestionar la evolución del proyecto de forma ordenada, preservar el conocimiento generado durante cada etapa y proporcionar el contexto necesario para la correcta aplicación del modelo de versionado desarrollado en los capítulos siguientes.
 
 ---
+
 # CAPÍTULO 3 · Modelo de Versionado
 
 ## 3.1 Objetivo
@@ -666,6 +669,7 @@ GeoMotion Studio adopta una política de versionado uniforme basada en principio
 No obstante, reconoce que la naturaleza de dichos activos puede requerir diferentes esquemas de numeración, permitiendo utilizar modelos de dos o tres niveles según corresponda, sin comprometer la consistencia, la trazabilidad ni la gobernanza del proceso de evolución del proyecto.
 
 ---
+
 # CAPÍTULO 4 · Estados de Madurez de las Versiones
 
 ## 4.1 Objetivo
@@ -885,6 +889,7 @@ Los estados de madurez complementan el modelo de versionado al proporcionar info
 La combinación del número de versión y del estado de madurez permite representar de manera más precisa la evolución del proyecto, facilitando la gestión de cambios y la publicación controlada de versiones oficiales.
 
 ---
+
 # CAPÍTULO 5 · Líneas Base
 
 ## 5.1 Objetivo
@@ -1048,6 +1053,7 @@ Las Líneas Base permiten identificar configuraciones estables del proyecto medi
 Su utilización garantiza la integridad, la reproducibilidad y la trazabilidad del proyecto, proporcionando el fundamento sobre el que se apoyan las publicaciones oficiales y la gestión de cambios.
 
 ---
+
 # CAPÍTULO 6 · Gestión de Cambios
 
 ## 6.1 Objetivo
@@ -1274,6 +1280,7 @@ La gestión de cambios constituye el mecanismo mediante el cual evolucionan los 
 Su aplicación garantiza que cada modificación quede debidamente evaluada, documentada y relacionada con el resto de los activos del proyecto, preservando la integridad, la trazabilidad y la gobernanza de la evolución de GeoMotion Studio.
 
 ---
+
 # CAPÍTULO 7 · Publicaciones
 
 ## 7.1 Objetivo
@@ -1449,6 +1456,7 @@ Las Publicaciones representan la distribución oficial de configuraciones establ
 Construidas a partir de Líneas Base aprobadas, constituyen el mecanismo mediante el cual GeoMotion Studio pone a disposición de sus destinatarios un conjunto coherente de activos de ingeniería, preservando la integridad, la trazabilidad y la consistencia de cada entrega realizada.
 
 ---
+
 # CAPÍTULO 8 · Gobernanza de las Versiones
 
 ## 8.1 Objetivo
@@ -1578,6 +1586,7 @@ La gobernanza de las versiones proporciona el conjunto de principios, responsabi
 Su aplicación asegura que las versiones, las Líneas Base y las Publicaciones constituyan referencias fiables sobre las cuales pueda sustentarse el desarrollo continuo del proyecto.
 
 ---
+
 # CAPÍTULO 9 · Trazabilidad
 
 ## 9.1 Objetivo
@@ -1736,6 +1745,7 @@ La trazabilidad constituye el mecanismo que relaciona los distintos activos de i
 Su adecuada aplicación permite reconstruir la evolución de GeoMotion Studio, comprender el origen de los cambios realizados y mantener la coherencia entre decisiones, implementaciones, documentación y publicaciones oficiales.
 
 ---
+
 # CAPÍTULO 10 · Integración con el Marco de Ingeniería
 
 ## 10.1 Objetivo
@@ -1876,6 +1886,7 @@ La Gestión de Versiones constituye un proceso transversal dentro del Marco de I
 Su integración con el Manual de Ingeniería, las Decisiones de Arquitectura, los Registros de Conocimiento, la Gestión de Cambios, las Líneas Base y las Publicaciones garantiza que la evolución del proyecto se desarrolle de manera consistente, trazable y gobernada, preservando tanto los activos de ingeniería como el conocimiento generado durante su desarrollo.
 
 ---
+
 # ANEXOS
 
 Los anexos del presente documento complementan la **Política de Gestión de Versiones** proporcionando modelos, tablas de referencia y plantillas destinadas a facilitar la aplicación uniforme del proceso de versionado en GeoMotion Studio.
@@ -1926,6 +1937,7 @@ Los anexos no introducen políticas independientes.
 Su función consiste en facilitar la aplicación consistente de las políticas de versionado, madurez, gestión de cambios, Líneas Base y Publicaciones establecidas en este documento.
 
 ---
+
 # ANEXO A · Modelo de Versionado de los Activos de Ingeniería
 
 ## A.1 Objetivo
@@ -2168,6 +2180,7 @@ La utilización de esquemas específicos para documentación y software permite 
 La correcta aplicación de estos esquemas facilita la trazabilidad, la gestión de cambios, la construcción de Líneas Base y la realización de Publicaciones, contribuyendo a una evolución ordenada y controlada del proyecto.
 
 ---
+
 # ANEXO B · Estados de Madurez
 
 ## B.1 Objetivo
@@ -2369,6 +2382,7 @@ Se recomienda:
 Los estados de madurez permiten interpretar el significado de una versión más allá de su numeración, facilitando la planificación, la revisión y la publicación de los activos de ingeniería del proyecto.
 
 ---
+
 # ANEXO C · Modelo de Líneas Base
 
 ## C.1 Objetivo
@@ -2519,6 +2533,7 @@ Toda Línea Base debería registrar como mínimo:
 Las Líneas Base constituyen el mecanismo que permite preservar configuraciones estables del proyecto, facilitando la reproducción de estados históricos, la gestión de cambios y la realización de Publicaciones de manera controlada.
 
 ---
+
 # ANEXO D · Modelo de Gestión de Cambios
 
 ## D.1 Objetivo
@@ -2659,6 +2674,7 @@ Se recomienda:
 El modelo de gestión de cambios proporciona un proceso uniforme para controlar la evolución de los activos de ingeniería, garantizando que toda modificación quede correctamente evaluada, documentada y trazable.
 
 ---
+
 # ANEXO E · Modelo de Publicaciones
 
 ## E.1 Objetivo
@@ -2788,6 +2804,7 @@ Se recomienda:
 El modelo de Publicaciones proporciona un mecanismo uniforme para distribuir configuraciones estables del proyecto, asegurando que cada entrega oficial sea consistente, trazable y reproducible.
 
 ---
+
 # ANEXO F · Modelo de Trazabilidad
 
 ## F.1 Objetivo
@@ -2923,6 +2940,7 @@ Se recomienda:
 La trazabilidad constituye el mecanismo que conecta todos los activos de ingeniería, permitiendo comprender la evolución completa del proyecto y garantizando la preservación de su historia técnica.
 
 ---
+
 # ANEXO G · Lista de Verificación para Publicaciones
 
 ## G.1 Objetivo
@@ -3021,6 +3039,7 @@ Ejemplo:
 La utilización sistemática de esta lista de verificación contribuye a mejorar la calidad de las Publicaciones, reduciendo errores y asegurando que cada distribución oficial del proyecto sea consistente, reproducible y correctamente documentada.
 
 ---
+
 # ANEXO H · Flujo General de la Gestión de Versiones
 
 ## H.1 Objetivo
@@ -3175,6 +3194,7 @@ El flujo general sintetiza el funcionamiento del modelo de Gestión de Versiones
 Su aplicación proporciona un marco coherente para controlar la evolución de los activos de ingeniería, garantizando que cada cambio quede correctamente identificado, documentado y trazable desde su origen hasta su incorporación en una Publicación.
 
 ---
+
 # ANEXO I · Glosario de Términos
 
 ## I.1 Objetivo
