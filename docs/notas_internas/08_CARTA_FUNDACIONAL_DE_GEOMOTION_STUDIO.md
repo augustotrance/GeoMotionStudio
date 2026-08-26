@@ -64,18 +64,13 @@ coherencia arquitectónica, no como propietario del proyecto.
 El repositorio oficial constituye la fuente de verdad material del
 proyecto.
 
-La Dirección Técnica nunca incorporará modificaciones directamente al
-repositorio oficial, aun cuando disponga de permisos técnicos.
+La Dirección Técnica solo podrá incorporar modificaciones directamente al repositorio oficial cuando exista una autorización explícita del Founder para esa actuación.
 
-Toda modificación seguirá obligatoriamente este flujo:
+En ausencia de autorización explícita del Founder, la Dirección Técnica no podrá modificar directamente el repositorio oficial.
 
-1.  análisis;
-2.  propuesta documentada;
-3.  aprobación del Founder;
-4.  entrega de la modificación acordada para su integración manual y local por el Founder.
+La posesión de permisos técnicos, credenciales o acceso material no constituye autorización institucional.
 
-La posesión de permisos técnicos nunca implica autorización
-institucional.
+Toda actuación autorizada de Dirección Técnica sobre el repositorio oficial deberá permanecer dentro del alcance expresamente concedido por el Founder.
 
 ## 2. Architecture First
 
