@@ -2,9 +2,9 @@
 
 **Código:** DOC-018
 
-**Versión:** 1.0
+**Versión:** 1.1
 
-**Estado:** Publicado
+**Estado:** Candidato
 
 **Proyecto:** GeoMotion Studio
 
@@ -12,7 +12,16 @@
 
 **Idioma original:** Español
 
-**Última actualización:** 24 de julio de 2026
+**Última actualización:** 25 de agosto de 2026
+
+---
+
+# Historial de versiones
+
+| Versión | Fecha | Estado | Modificación | Trazabilidad |
+|---|---|---|---|---|
+| 1.0 | 24 de julio de 2026 | Publicado | Versión publicada anterior a la incorporación del régimen específico de versionado PDME | Fuente canónica de DOC-018 fijada por Fase A |
+| 1.1 | 25 de agosto de 2026 | Candidato | Incorporación del régimen específico de versionado de los Paquetes de Delegación a Modelo Externo, sin alterar los regímenes de otros activos | Regularización PDME; `GUÍA_EDITORIAL.md`; `INT-011` |
 
 ---
 
@@ -541,6 +550,7 @@ Entre los esquemas recomendados se encuentran:
 | Manual de Ingeniería | Mayor.Menor |
 | ADR | Mayor.Menor |
 | Registros de Conocimiento (RC) | Mayor.Menor |
+| Paquetes de Delegación a Modelo Externo (PDME) | Mayor.Menor.Revisión |
 | Componentes de software | Mayor.Menor.Revisión |
 | Bibliotecas | Mayor.Menor.Revisión |
 | APIs | Mayor.Menor.Revisión |
@@ -573,6 +583,41 @@ Este modelo resulta suficiente para representar la evolución de documentos cuya
 La versión mayor identifica una nueva edición o una modificación significativa del documento.
 
 La versión menor identifica ampliaciones, revisiones o mejoras compatibles con la edición vigente.
+
+---
+
+### Régimen específico de los Paquetes de Delegación a Modelo Externo (PDME)
+
+Los Paquetes de Delegación a Modelo Externo son activos documentales versionables cuya naturaleza operativa y necesidad de trazabilidad justifican un esquema específico de tres niveles:
+
+```text
+MAYOR.MENOR.REVISIÓN
+```
+
+El identificador `PDME-<ID_DE_MISIÓN_O_SUBMISIÓN>` identifica la delegación. La versión identifica un estado concreto de su contenido canónico y deberá mantenerse separada del identificador.
+
+Los niveles se interpretan de la siguiente forma:
+
+- **MAYOR:** cambio incompatible que altera materialmente el propósito, la naturaleza, la autoridad aplicable, las restricciones fundamentales o la estructura de delegación.
+- **MENOR:** cambio sustantivo pero compatible que modifica el alcance, los entregables, las fuentes, la interpretación requerida o condiciones relevantes sin romper la compatibilidad del instrumento.
+- **REVISIÓN:** corrección compatible del contenido canónico que no altera sustantivamente su propósito ni la autoridad aplicable.
+
+Cada versión publicada o establecida como canónica será inmutable. Toda modificación material del Markdown canónico deberá originar una nueva versión conforme a la semántica anterior.
+
+No generan por sí solos una nueva versión PDME:
+
+- cambio de sesión, conversación o instancia;
+- agotamiento de contexto;
+- cambio de canal, plataforma o proveedor tecnológico;
+- continuidad mediante un bloque de estado;
+- regeneración de una representación PDF u otro formato de transporte;
+- sustitución del modelo, agente o sistema externo cuando el contenido canónico aplicable permanezca materialmente sin cambios.
+
+Si la sustitución obliga a modificar destinatario, alcance, fuentes, restricciones, entregables o instrucciones, deberá aplicarse el régimen normal de cambio del contenido canónico.
+
+La versión del PDME corresponde a su contenido canónico en Markdown. La identidad material de una representación de transporte corresponde al archivo binario concreto. Una nueva representación binaria no constituye automáticamente una nueva versión PDME, y una representación defectuosa no adquiere por ello condición de nueva versión.
+
+Este régimen se aplica prospectivamente. No deberán renumerarse, reinterpretarse ni reescribirse retrospectivamente PDME o antecedentes históricos, incluidos `EXT-GMS-0001` a `EXT-GMS-0004`.
 
 ---
 
@@ -1975,6 +2020,7 @@ La siguiente tabla resume los esquemas recomendados para los principales tipos d
 | Documentación Técnica | Mayor.Menor |
 | Decisiones de Arquitectura (ADR) | Mayor.Menor |
 | Registros de Conocimiento (RC) | Mayor.Menor |
+| Paquetes de Delegación a Modelo Externo (PDME) | Mayor.Menor.Revisión |
 | Diagramas | Mayor.Menor |
 | Modelos | Mayor.Menor |
 | Especificaciones | Mayor.Menor |
@@ -2014,6 +2060,8 @@ Interpretación:
 - La versión menor representa revisiones, ampliaciones o mejoras compatibles.
 
 Este esquema resulta suficiente para representar la evolución documental sin introducir una complejidad innecesaria.
+
+Los Paquetes de Delegación a Modelo Externo constituyen una excepción documental justificada y utilizan el esquema específico `MAYOR.MENOR.REVISIÓN` definido en el Capítulo 3.
 
 ---
 
@@ -3219,6 +3267,7 @@ Reunir las definiciones de los principales conceptos utilizados en el presente d
 | Ingeniería | Disciplina aplicada al diseño, desarrollo y mantenimiento del proyecto. |
 | Línea Base | Configuración aprobada formada por un conjunto coherente de versiones. |
 | Publicación | Distribución oficial de una Línea Base aprobada. |
+| Paquete de Delegación a Modelo Externo | Activo documental que delimita una delegación a modelos, agentes o sistemas computacionales externos. |
 | Revisión | Corrección o mejora de bajo impacto aplicada a una versión. |
 | Trazabilidad | Capacidad de reconstruir la evolución de un activo y sus relaciones. |
 | Versión | Estado identificado de un activo de ingeniería. |
@@ -3233,6 +3282,7 @@ Reunir las definiciones de los principales conceptos utilizados en el presente d
 | API | Application Programming Interface |
 | BL | Línea Base (Baseline) |
 | DOC | Documento del Manual de Ingeniería |
+| PDME | Paquete de Delegación a Modelo Externo |
 | RC | Registro de Conocimiento |
 | PUB | Publicación |
 
