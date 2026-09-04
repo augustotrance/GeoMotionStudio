@@ -4,14 +4,14 @@
 **Nombre oficial:** Estado del Proyecto  
 **Proyecto:** GeoMotion Studio  
 **Tipo de documento:** Documento interno de gobierno y continuidad institucional  
-**Estado:** Activo  
+**Estado:** Aprobado y vigente  
 **Autoridad responsable:** Dirección Técnica  
 **Propietario documental:** Founder  
 **Idioma oficial:** Español  
 **Metodología rectora:** Architecture First  
-**Versión del documento:** 1.1.0  
+**Versión del documento:** 1.2.0  
 **Fecha de creación:** 2026-07-26  
-**Última actualización:** 2026-07-28  
+**Última actualización:** 2026-09-04  
 **Próxima revisión:** Al finalizar el siguiente hito arquitectónico relevante  
 **Ubicación recomendada:** `docs/notas_internas/00_ESTADO_DEL_PROYECTO.md`
 
@@ -39,6 +39,13 @@
 |---|---|---|---|
 | 1.0.0 | 2026-07-26 | Dirección Técnica | Creación inicial del registro institucional del proyecto |
 | 1.1.0 | 2026-07-28 | Dirección Técnica | Actualización del estado institucional tras la consolidación del sistema ADR, la normalización de DOC-002, DOC-013 y DOC-015 y la evaluación integral previa a la incorporación al repositorio oficial |
+| 1.2.0 | 2026-09-04 | Founder | Normalización semántica mínima de Línea base y Dirección Técnica; aclaración del alcance histórico de conteos y estados anteriores conforme a G1 y D-12 a D-18 |
+
+## Alcance temporal de la información preservada
+
+Salvo las correcciones identificadas en la versión 1.2.0, los conteos, estados y pendientes narrados en las secciones históricas de este documento describen el corte observado el 28 de julio de 2026. No deben interpretarse como inventario material actual.
+
+La composición aprobada posterior se determina mediante `LB-G1-GMS-20260904-01`, sus manifiestos y el acto `ACTO-G1-GMS-20260904-04`. Esta aclaración resuelve `OBS-G1-01` sin reescribir retrospectivamente el estado histórico.
 
 ## Reglas de versionado
 
@@ -2745,17 +2752,19 @@ Cuando la Arquitectura Física sea aprobada, deberán actualizarse todas las rut
 
 # 58. Glosario
 
+Este glosario es local al registro operativo. Se interpreta conforme a la terminología transversal de la Guía Editorial y no la sustituye.
+
 ## Architecture First
 
 Metodología donde arquitectura y documentación preceden a la implementación.
 
 ## Línea base
 
-Estado aprobado que sirve como referencia para trabajos posteriores.
+Composición identificada, formalmente aprobada e inmutable de versiones específicas de activos de ingeniería. Se utiliza como referencia para trabajos posteriores conforme a DOC-018.
 
 ## Dirección Técnica
 
-Autoridad integradora responsable de coherencia y aprobación.
+Función integradora y autoridad técnica dentro de las competencias asignadas por la documentación institucional vigente. Prepara, coordina y verifica actuaciones técnicas; no sustituye la decisión institucional final del Founder.
 
 ## Especialista
 

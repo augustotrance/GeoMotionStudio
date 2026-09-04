@@ -2,11 +2,11 @@
 
 **Proyecto:** GeoMotion Studio
 
-**Versión:** 1.1
+**Versión:** 2.0
 
-**Estado:** Vigente
+**Estado:** Aprobado y vigente
 
-**Última actualización:** 28 de julio de 2026
+**Última actualización:** 4 de septiembre de 2026
 
 ---
 
@@ -16,6 +16,7 @@
 |---|---|---|---|---|
 | 1.0 | No consta en la documentación vigente | Vigente | Versión anterior a la corrección de nombres materiales en el árbol de documentación | Referencias `GUIA_EDITORIAL.md` e `Ingeniería/` |
 | 1.1 | 28 de julio de 2026 | Vigente | Corrección de dos nombres materiales en el árbol de documentación, sin alterar la organización prevista | `GUÍA_EDITORIAL.md`; `ingeniería/`; sección `Organización de la Documentación` |
+| 2.0 | 4 de septiembre de 2026 | Aprobado y vigente | Integración del vocabulario transversal de SDD; distinción de identidades, estados, participantes, invariantes, variantes y excepciones; corrección de Publicación y Revisión | `ACTO-G2-GMS-20260904-05`; D-12 a D-18 |
 
 ---
 
@@ -196,25 +197,125 @@ En lugar de mezclarlos con otros equivalentes.
 
 La Guía Editorial constituye la **autoridad terminológica oficial** de GeoMotion Studio.
 
-| Término | Definición oficial |
+### Regla de integración terminológica
+
+Los glosarios especializados:
+
+- pueden añadir precisión dentro de su dominio;
+- deben enlazar el término transversal correspondiente;
+- deben utilizar un nombre calificado cuando el concepto especializado no sea idéntico;
+- no pueden reducir, contradecir ni sustituir el significado transversal;
+- no confieren autoridad fuera de su ámbito.
+
+Ante una contradicción material no resuelta, el término queda bloqueado para uso normativo hasta que exista una decisión institucional y una versión sucesora.
+
+### Convenciones terminológicas
+
+1. Los términos comunes se escriben en minúscula salvo inicio de oración o denominación formal.
+2. Los identificadores, nombres de documentos y nombres de módulos conservan su forma oficial.
+3. La primera aparición de Desarrollo Guiado por Especificaciones se escribe `Desarrollo Guiado por Especificaciones (SDD)`; luego se utiliza `SDD`.
+4. No se utiliza una sigla alternativa para SDD.
+5. `IA` significa Inteligencia Artificial; `AI` solo puede aparecer como literal externo, nombre técnico o dato heredado.
+6. Un término calificado prevalece sobre el término genérico dentro de su dominio, siempre que no contradiga la definición transversal.
+
+### Términos transversales
+
+| Término | Definición oficial | Delimitación obligatoria |
+|---|---|---|
+| Producto | Solución ofrecida por GeoMotion Studio desde la perspectiva funcional y de valor. | No equivale a plataforma ni a una implementación concreta. |
+| Plataforma | Ecosistema completo de GeoMotion Studio, sus capacidades, productos, componentes, extensiones y servicios relacionados. | No debe usarse como sinónimo automático de aplicación. |
+| Sistema | Conjunto organizado de elementos de software o subsistema concreto delimitado por un contexto. | Debe indicarse el alcance cuando pueda confundirse con la plataforma completa. |
+| Módulo | División arquitectónica de alto nivel con responsabilidades, información propia y fronteras definidas. | No es una carpeta ni un componente por el solo hecho de estar separado físicamente. |
+| Componente | Unidad arquitectónica o de software delimitada, reutilizable cuando corresponda y con responsabilidad definida. | Su significado de dominio debe calificarse si es más específico. |
+| Servicio | Proveedor de capacidades accesibles mediante contratos definidos. | No implica proceso remoto, red ni despliegue independiente. |
+| Capacidad | Resultado o función que la plataforma puede ofrecer independientemente de la implementación concreta que la materialice. | No es un componente, proveedor, rol ni permiso. |
+| Núcleo | Conjunto estable de capacidades fundamentales y mecanismos comunes de la plataforma. | Sus límites se determinan por la arquitectura vigente. |
+| Extensión | Concepto arquitectónico general para una capacidad incorporada mediante los mecanismos oficiales de extensibilidad. | No es sinónimo de Plugin. |
+| Plugin | Implementación concreta y empaquetada de una Extensión conforme al modelo oficial. | Puede ser interno o externo según la arquitectura especializada. |
+| Punto de extensión | Superficie arquitectónica intencional que habilita extensiones mediante contratos públicos definidos. | No es cualquier API ni un acceso a implementaciones internas. |
+| Configuración | Conjunto identificado de valores o de versiones de activos, según el dominio expresamente indicado. | Debe calificarse como configuración de aplicación o configuración de activos cuando exista ambigüedad. |
+| Activo de ingeniería | Elemento documental, técnico o material cuya evolución resulta relevante para el desarrollo, mantenimiento o gobierno y debe controlarse. | La mera existencia de un archivo no le concede autoridad institucional. |
+| Versión | Estado identificado de un activo en un momento determinado de su evolución. | Una versión publicada es inmutable; todo cambio origina otra versión. |
+| Revisión | Proceso de evaluación de un activo. También puede designar el tercer componente de un esquema de versión si se escribe `revisión de versión`. | Nunca significa alterar silenciosamente una versión publicada. |
+| Estado de aplicación | Información viva administrada durante la operación de la aplicación. | No equivale a estado documental ni de dominio. |
+| Estado de dominio | Situación identificable de una entidad del dominio, gobernada por transiciones y reglas. | Se define en la arquitectura de dominio o en la SPEC aplicable. |
+| Estado del ciclo de vida | Etapa por la que transita un activo desde su creación hasta su retiro. | No determina por sí solo su número de versión. |
+| Estado de madurez | Nivel de desarrollo, revisión o consolidación atribuido a una versión. | Versión y madurez son conceptos distintos. |
+| Línea base | Composición identificada, formalmente aprobada e inmutable de versiones específicas de activos de ingeniería. | No es un archivo único, una carpeta, un commit ni una Publicación, aunque pueda representarse materialmente mediante ellos. |
+| Publicación | Distribución o incorporación oficial de uno o más activos basada en una Línea base previamente aprobada. | Una Línea base puede existir antes de su Publicación. |
+| Release | Publicación de una Línea base destinada a usuarios o destinatarios definidos. | Utilizar Publicación en español salvo nombre técnico o literal externo. |
+| Trazabilidad | Capacidad de reconstruir relaciones, decisiones, cambios, versiones y evidencias que explican el estado de un activo o resultado. | Una conversación no incorporada a un acto no sustituye la trazabilidad institucional. |
+
+### Términos de SDD
+
+| Término | Definición oficial | Regla de uso |
+|---|---|---|
+| Desarrollo Guiado por Especificaciones (SDD) | Método institucional mediante el cual una necesidad se transforma en comportamiento especificado, contratos verificables, pruebas, implementación y evidencia trazable, respetando la arquitectura y las autoridades documentales vigentes. | Ordena, relaciona y hace verificables los documentos; no los sustituye ni crea autoridad paralela. |
+| Necesidad | Problema, objetivo o resultado requerido por un interesado que justifica evaluar un cambio. | No autoriza por sí sola solución ni implementación. |
+| Requisito | Condición necesaria, atómica, identificable y verificable que debe satisfacer un producto, sistema, proceso o incremento. | Debe indicar fuente, alcance y método de verificación. |
+| Requisito funcional | Requisito que describe un comportamiento o resultado observable. | No debe prescribir una implementación salvo que la restricción sea parte autorizada del requisito. |
+| Requisito no funcional | Requisito que fija una cualidad o restricción medible aplicable a un comportamiento o sistema. | Debe contener entorno, métrica, método y umbral cuando corresponda. |
+| SPEC | Documento aprobado que define de forma suficiente y verificable el comportamiento de un incremento, sus límites, contratos, invariantes, variantes, errores y criterios de aceptación. | No introduce arquitectura nueva ni concede permiso de implementación antes de G9. |
+| Incremento | Unidad acotada de resultado cuya especificación, implementación y aceptación pueden trazarse de extremo a extremo. | Debe preservar valor observable y posibilidad de verificación. |
+| Criterio de aceptación | Condición binaria y observable que determina si un resultado satisface una parte identificada de la SPEC. | Debe enlazar un método de verificación y evidencia esperada. |
+| Contrato | Acuerdo explícito, identificable y verificable que define datos, operaciones, estados, eventos, errores o restricciones entre participantes. | Deriva de arquitectura y SPEC; no es una alternativa a ellas. |
+| Evidencia | Registro material verificable que demuestra la ejecución de un control, el cumplimiento de un criterio o la identidad de un activo. | Un hash demuestra identidad material, no autoridad institucional. |
+| Prueba | Procedimiento reproducible que contrasta un resultado con una condición esperada. | La prueba genera evidencia; no decide por sí sola autoridad ni alcance. |
+| Puerta | Punto de control institucional con criterios explícitos cuyo cierre habilita una etapa determinada. | Cerrar una puerta solo autoriza lo que su definición indica. |
+| Deuda no bloqueante | Incumplimiento o carencia aceptada expresamente que no invalida la puerta actual y conserva responsable y disparador de revisión. | No puede ocultar una contradicción crítica ni una ausencia de autoridad. |
+
+### Identidad lógica y material
+
+| Término | Definición oficial | Regla de control |
+|---|---|---|
+| Identidad lógica | Conjunto de atributos institucionales que permite reconocer un activo como el mismo objeto conceptual a través de sus estados: identificador estable, título, familia, versión, estado, autoridad, propietario y relaciones cuando correspondan. | Puede preservarse aunque cambien ruta, contenedor o bytes, siempre que el cambio esté gobernado y produzca la versión que corresponda. |
+| Identidad material | Conjunto de propiedades verificables de una representación concreta: bytes, tamaño, huella criptográfica, formato, ruta o nombre de transporte y composición cuando corresponda. | Dos materiales son idénticos solo si el método de comparación definido lo demuestra. |
+| Identidad de transporte | Nombre y propiedades utilizadas para trasladar un material entre sistemas o personas. | Un sufijo impuesto por la interfaz no crea una nueva versión si los bytes y la huella esperada coinciden. |
+| Manifiesto | Registro de composición e integridad que relaciona rutas con identidades materiales. | Demuestra composición; no confiere vigencia. |
+| Contenedor | Archivo o estructura que agrupa materiales para transporte, archivo o verificación. | Su identidad no sustituye la identidad de los activos internos. |
+
+### Participantes, seguridad e IA
+
+| Término | Definición oficial | Delimitación obligatoria |
+|---|---|---|
+| Interesado | Persona, grupo u organización afectada por el producto o capaz de influir en sus resultados o decisiones. | No implica uso directo ni autoridad. |
+| Actor | Participante externo o interno que interactúa con un comportamiento especificado para alcanzar un resultado. | Puede ser humano o técnico; debe identificarse su naturaleza. |
+| Usuario | Persona que utiliza o recibe valor del producto. | No equivale a rol de autorización ni a identidad técnica. |
+| Identidad de seguridad | Entidad capaz de autenticarse o ejecutar acciones sobre recursos protegidos. | Definida por DOC-017; no equivale a identidad lógica o material de un activo. |
+| Identidad de servicio | Identidad de seguridad no humana asignada a un proceso o servicio para actuar con permisos delimitados. | Debe respetar mínimo privilegio y trazabilidad. |
+| Rol | Agrupación de responsabilidades y, en el dominio de autorización, de permisos asignables a una identidad. | Su nombre no concede permisos fuera de una política aprobada. |
+| Permiso | Autorización específica para ejecutar una acción sobre un recurso. | Es la unidad mínima del control de acceso definido por DOC-017. |
+| Agente | Entidad humana o técnica que ejecuta una misión o comportamiento dentro de un alcance y autoridad delimitados. | Debe calificarse como agente humano, de software o de IA cuando pueda existir ambigüedad. |
+| Agente de IA | Sistema de IA capaz de seleccionar o ejecutar acciones dentro de un contexto y límites definidos. | No es un rol humano ni posee autoridad institucional por sí mismo. |
+| Capacidad de IA | Capacidad cuyo resultado se obtiene total o parcialmente mediante un sistema de IA. | No es un actor, una identidad, un proveedor ni un permiso. |
+| Modelo de IA | Implementación entrenada capaz de proporcionar una o más capacidades de IA. | Puede variar sin redefinir la capacidad si conserva el contrato aplicable. |
+| Proveedor de IA | Organización o sistema que ofrece modelos o servicios de IA. | No constituye una autoridad del proyecto. |
+
+`Admin`, `AI` y `Usuario` permanecen como hipótesis de incorporación futura. No son roles vigentes y no habilitan permisos.
+
+### Invariantes, variantes y excepciones
+
+| Término | Definición oficial | Regla de uso |
+|---|---|---|
+| Invariante | Condición que debe permanecer verdadera dentro de un alcance y horizonte declarados. | Debe poseer identificador, fuente, alcance y criterio de aplicabilidad. |
+| Invariante permanente | Invariante sin fecha de expiración prevista cuya modificación exige una decisión y una versión sucesora de su fuente. | No significa inmodificable; significa que no cambia de manera implícita. |
+| Invariante transitoria | Invariante vigente hasta una fecha, evento o puerta explícita. | Deja de aplicar solo cuando el disparador se verifica materialmente. |
+| Variante | Punto de variación autorizado cuyo valor puede cambiar dentro de opciones y restricciones explícitas sin vulnerar invariantes. | Una decisión abierta no es una variante autorizada hasta definir su rango. |
+| Excepción | Apartamiento extraordinario, explícito, aprobado y trazable respecto de una regla o invariante aplicable. | No crea precedente automático y debe tener revisión o condición de cierre. |
+| Control compensatorio | Medida adicional que reduce el riesgo introducido por una excepción. | No convierte una excepción en conformidad ordinaria. |
+
+### Formas prohibidas o restringidas
+
+| Forma | Tratamiento |
 |---|---|
-| Producto | Solución ofrecida por GeoMotion Studio desde la perspectiva funcional. |
-| Plataforma | Ecosistema completo de GeoMotion Studio. |
-| Sistema | Conjunto organizado de elementos software o un subsistema concreto. |
-| Módulo | División arquitectónica de alto nivel. |
-| Componente | Unidad arquitectónica reutilizable con responsabilidades definidas. |
-| Servicio | Proveedor de funcionalidades accesible por otros componentes. |
-| Capacidad | Funcionalidad ofrecida por la plataforma, independiente de su implementación. |
-| Núcleo | Conjunto estable de capacidades fundamentales de la plataforma. |
-| Extensión | Concepto arquitectónico general para ampliar el núcleo. |
-| Plugin | Implementación concreta de una extensión. |
-| Punto de extensión | Contrato arquitectónico que habilita la incorporación de extensiones. |
-| Estado | Información viva administrada por la aplicación. |
-| Configuración | Conjunto de parámetros persistentes del sistema. |
-| Versión | Identificador de un estado evolutivo de un activo. |
-| Revisión | Modificación de una versión existente. |
-| Línea Base | Conjunto de activos congelados y aprobados. |
-| Publicación | Línea Base oficialmente liberada. |
+| Sigla alternativa para SDD | No utilizar. |
+| `AI` como término institucional en español | Sustituir por `IA`, salvo literal externo o identificador técnico. |
+| `Admin` como rol vigente | Prohibido hasta que una SPEC y una política de autorización lo definan y aprueben. |
+| `Usuario` como rol de autorización | Prohibido; Usuario designa persona o perfil de uso. |
+| `Agente` sin calificador cuando exista ambigüedad | Debe precisarse su naturaleza. |
+| `Estado` sin calificador en texto normativo ambiguo | Debe calificarse por dominio. |
+| `Revisión` como mutación de versión publicada | Prohibido. |
+| `Publicación` como sinónimo de Línea base | Prohibido. |
 
 Siempre que sea posible deberán utilizarse estos términos de forma uniforme en toda la documentación.
 
@@ -338,8 +439,10 @@ Los enlaces internos deberán ser relativos.
 Ejemplo:
 
 ```markdown
-[Arquitectura](02_ARQUITECTURA.md)
+[Arquitectura](ingeniería/02_ARQUITECTURA.md)
 ```
+
+El ejemplo anterior se resuelve desde la ubicación material de esta Guía Editorial.
 
 Evitar enlaces absolutos hacia el mismo repositorio.
 

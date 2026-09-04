@@ -4,7 +4,7 @@ Bienvenido a la documentación oficial de **GeoMotion Studio**.
 
 Este directorio reúne la documentación técnica, arquitectónica y de referencia utilizada durante el diseño, desarrollo y evolución del proyecto.
 
-Su objetivo es proporcionar una fuente única de información para desarrolladores, colaboradores y cualquier persona interesada en comprender la arquitectura y el funcionamiento interno de la plataforma.
+Su objetivo es proporcionar un punto de acceso organizado para desarrolladores, colaboradores y cualquier persona interesada en comprender la arquitectura y el funcionamiento interno de la plataforma. La autoridad de cada contenido depende de su documento institucional, versión, estado y acto aplicable.
 
 ---
 
@@ -50,9 +50,15 @@ Estos ejemplos complementan la documentación técnica y sirven como referencia 
 
 ## Referencias
 
-La carpeta `referencias/` contiene documentación externa, especificaciones, investigaciones y material de consulta utilizado durante el diseño y desarrollo de GeoMotion Studio.
+La carpeta `referencias/` contiene índices, registros transversales, documentación externa, especificaciones, investigaciones y material de consulta utilizado durante el diseño y desarrollo de GeoMotion Studio.
 
-Estos documentos constituyen una base de conocimiento complementaria al Manual de Ingeniería.
+Estos documentos constituyen una base de conocimiento complementaria al Manual de Ingeniería. Una ruta o un índice no concede autoridad institucional por sí mismo.
+
+Referencias transversales de G2:
+
+- [Índice de glosarios de dominio](referencias/INDICE_DE_GLOSARIOS_DE_DOMINIO_v1.0.0.md).
+- [Registro de invariantes, variantes y excepciones](referencias/REGISTRO_DE_INVARIANTES_VARIANTES_Y_EXCEPCIONES_v1.0.0.md).
+- [Guía Editorial y terminología transversal](GUÍA_EDITORIAL.md).
 
 ---
 
@@ -87,6 +93,8 @@ docs/
 │   └── Ejemplos y demostraciones
 │
 └── referencias/
+    ├── Índice de glosarios de dominio
+    ├── Registro de invariantes, variantes y excepciones
     └── Material de consulta
 ```
 

@@ -2,9 +2,9 @@
 
 **Código:** DOC-016
 
-**Versión:** 1.0
+**Versión:** 1.1
 
-**Estado:** Publicado
+**Estado:** Aprobado y vigente
 
 **Proyecto:** GeoMotion Studio
 
@@ -12,7 +12,16 @@
 
 **Idioma original:** Español
 
-**Última actualización:** 24 de julio de 2026
+**Última actualización:** 4 de septiembre de 2026
+
+---
+
+# Historial de versiones
+
+| Versión | Fecha | Estado | Modificación | Trazabilidad |
+|---|---|---|---|---|
+| 1.0 | 24 de julio de 2026 | Publicado | Versión publicada original | Antecedente preservado en Git |
+| 1.1 | 4 de septiembre de 2026 | Aprobado y vigente | Normalización semántica mínima de `Línea Base de IA` conforme al modelo transversal de DOC-018; delimitación de agente de IA | `ACTO-G2-GMS-20260904-05`; D-14 |
 
 ---
 
@@ -7342,6 +7351,8 @@ El Orquestador puede coordinar:
 
 Entidad inteligente especializada en un dominio específico capaz de tomar decisiones dentro de un contexto determinado.
 
+En la terminología transversal de GeoMotion Studio corresponde a un **agente de IA**. No constituye un rol humano, una identidad de seguridad ni una autoridad institucional por sí mismo.
+
 Ejemplos:
 
 #### Agente Cinematográfico
@@ -7669,7 +7680,7 @@ Incluye:
 
 ### Definición
 
-Estado aprobado y controlado de una capacidad inteligente dentro de un momento determinado.
+Línea base conforme al modelo de DOC-018 cuyo ámbito contiene una composición identificada, formalmente aprobada e inmutable de versiones específicas de activos de Inteligencia Artificial.
 
 Puede incluir:
 
@@ -7678,6 +7689,8 @@ Puede incluir:
 - Plugins.
 - Herramientas.
 - Resultados de evaluación.
+
+No constituye un mero estado de una capacidad. Toda modificación de su composición requiere versiones sucesoras de los activos afectados y, cuando corresponda, una nueva Línea base.
 
 ---
 
