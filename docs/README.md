@@ -60,6 +60,12 @@ Referencias transversales de G2:
 - [Registro de invariantes, variantes y excepciones](referencias/REGISTRO_DE_INVARIANTES_VARIANTES_Y_EXCEPCIONES_v1.0.0.md).
 - [Guía Editorial y terminología transversal](GUÍA_EDITORIAL.md).
 
+## Gobierno operativo de SDD
+
+La carpeta [`sdd/`](sdd/README.md) contiene el modelo operativo, las plantillas y la política aprobados para incorporar el Desarrollo Guiado por Especificaciones.
+
+Su vigencia permanece diferida hasta la aprobación y publicación material de `LB-G3-GMS-20260904-01`. Esta incorporación documental no crea una SPEC concreta, no abre G4 ni autoriza código funcional antes de G9.
+
 ---
 
 # Filosofía de la Documentación
@@ -91,6 +97,9 @@ docs/
 │
 ├── ejemplos/
 │   └── Ejemplos y demostraciones
+│
+├── sdd/
+│   └── Gobierno operativo, plantillas y política SDD
 │
 └── referencias/
     ├── Índice de glosarios de dominio

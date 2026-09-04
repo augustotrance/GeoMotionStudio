@@ -2,9 +2,9 @@
 
 **Proyecto:** GeoMotion Studio
 
-**Versión:** 2.0
+**Versión:** 2.1
 
-**Estado:** Aprobado y vigente
+**Estado:** Aprobado — vigencia diferida hasta la publicación de `LB-G3-GMS-20260904-01`
 
 **Última actualización:** 4 de septiembre de 2026
 
@@ -17,6 +17,7 @@
 | 1.0 | No consta en la documentación vigente | Vigente | Versión anterior a la corrección de nombres materiales en el árbol de documentación | Referencias `GUIA_EDITORIAL.md` e `Ingeniería/` |
 | 1.1 | 28 de julio de 2026 | Vigente | Corrección de dos nombres materiales en el árbol de documentación, sin alterar la organización prevista | `GUÍA_EDITORIAL.md`; `ingeniería/`; sección `Organización de la Documentación` |
 | 2.0 | 4 de septiembre de 2026 | Aprobado y vigente | Integración del vocabulario transversal de SDD; distinción de identidades, estados, participantes, invariantes, variantes y excepciones; corrección de Publicación y Revisión | `ACTO-G2-GMS-20260904-05`; D-12 a D-18 |
+| 2.1 | 4 de septiembre de 2026 | Aprobado — vigencia diferida | Incorporación controlada de la familia SPEC, sus identificadores y su regla de activación; la versión 2.0 continúa vigente hasta la publicación de G3 | `ACTO-G3-GMS-20260904-07`; D-20 y D-23 |
 
 ---
 
@@ -490,6 +491,7 @@ Los prefijos actualmente utilizados son:
 |----------|-------------|
 | ADR | Architecture Decision Record. Registra decisiones arquitectónicas permanentes. |
 | INT | Documento técnico interno de la Dirección Técnica. |
+| SPEC | Especificación verificable de un incremento; su uso institucional permanece diferido hasta la publicación de `LB-G3-GMS-20260904-01`. |
 
 La numeración de cada familia es independiente y secuencial.
 
@@ -524,11 +526,73 @@ Ejemplos de familias documentales presentes o potenciales:
 | DOC | Manual de Ingeniería | Vigente |
 | ADR | Architecture Decision Records | Vigente |
 | INT | Documentación interna de Dirección Técnica | Vigente |
-| SPEC | Especificaciones técnicas | Reservado para evolución futura |
+| SPEC | Especificaciones de incrementos de GeoMotion Studio | Aprobado — activación diferida hasta la publicación de `LB-G3-GMS-20260904-01` |
 | RFC | Propuestas de cambio arquitectónico o técnico | Reservado para evolución futura |
 | MVA | Documentación de Minimum Viable Architecture | Reservado para evolución futura |
 
 La incorporación de una familia documental no implica necesariamente su adopción inmediata. Las familias marcadas como "Reservado para evolución futura" constituyen nomenclaturas disponibles para futuras necesidades del proyecto y deberán formalizarse mediante la documentación correspondiente antes de entrar en uso.
+
+### Familia SPEC
+
+| Campo | Regla |
+|---|---|
+| Prefijo oficial | `SPEC` |
+| Familia | Especificaciones de incrementos de GeoMotion Studio |
+| Propósito | Definir de forma suficiente, verificable y trazable el comportamiento aprobado de un incremento |
+| Ámbito | Un incremento funcional o técnico acotado |
+| Responsable de mantenimiento | Propietario documental designado en cada SPEC, bajo integración y control de conformidad de Dirección Técnica |
+| Autoridad de aprobación | Founder, salvo delegación institucional futura expresa y vigente |
+| Numeración | Secuencia global `SPEC-GMS-NNNN`, sin reutilización |
+| Versión | Conforme a DOC-018 y a esta Guía Editorial |
+| Ubicación prevista | `docs/spec/` |
+| Relación | Se subordina a Visión, Constitución, Manual de Ingeniería, arquitecturas especializadas, ADR, glosarios e invariantes vigentes |
+
+Una SPEC no introduce arquitectura nueva. Cuando detecta una decisión arquitectónica faltante o contradictoria, queda bloqueada hasta que el proceso ADR la resuelva y los documentos afectados se actualicen cuando corresponda.
+
+Nombre material recomendado:
+
+`SPEC-GMS-NNNN_TITULO_BREVE_vMAJOR.MINOR.PATCH.md`
+
+Sus estados de madurez son `Borrador`, `En revisión`, `Candidato`, `Aprobada`, `Publicada`, `Sustituida` y `Retirada`. El estado debe declararse junto con la versión. `Aprobada` describe autoridad documental; no demuestra implementación. `Publicada` describe incorporación oficial; no equivale a funcionalidad implementada, aceptada o liberada.
+
+### Identificadores globales de gobierno SDD
+
+| Patrón | Elemento | Regla |
+|---|---|---|
+| `INI-GMS-NNNN` | Iniciativa | Registra una necesidad admitida para análisis; no autoriza solución ni código |
+| `SPEC-GMS-NNNN` | SPEC | Identifica una especificación durante toda su vida; la versión cambia, el ID no |
+| `CAM-GMS-NNNN` | Cambio controlado | Identifica una solicitud de cambio y su impacto |
+| `EXC-GMS-NNNN` | Excepción | Identifica un apartamiento extraordinario conforme al registro G2 |
+| `REV-GMS-NNNN` | Revisión | Identifica una actuación de revisión que deba conservarse como evidencia independiente |
+| `ACE-GMS-NNNN` | Aceptación | Identifica la decisión de aceptación de un resultado |
+| `CTX-GMS-NNNN` | Context Package | Identifica un paquete de contexto derivado de fuentes institucionales |
+
+Estos identificadores son únicos dentro de su familia, no se reutilizan y no confieren autoridad, aprobación ni vigencia. Cuando identifican un activo versionado deben acompañarse por versión y estado, y conservar relación con sus sucesores, sustituciones y retiros.
+
+### Identificadores internos de una SPEC
+
+| Patrón | Elemento |
+|---|---|
+| `SPEC-GMS-NNNN-RF-NNN` | Requisito funcional |
+| `SPEC-GMS-NNNN-RNF-NNN` | Requisito no funcional |
+| `SPEC-GMS-NNNN-CA-NNN` | Criterio de aceptación |
+| `SPEC-GMS-NNNN-CTR-NNN` | Contrato |
+| `SPEC-GMS-NNNN-ERR-NNN` | Error o condición excepcional |
+| `SPEC-GMS-NNNN-PRU-NNN` | Prueba o procedimiento de verificación |
+| `SPEC-GMS-NNNN-EVI-NNN` | Evidencia esperada o producida |
+
+La numeración interna es estable dentro de la SPEC. Un elemento retirado no libera su número. Una versión sucesora conserva el identificador cuando mantiene la identidad semántica y asigna uno nuevo cuando introduce otra obligación.
+
+### Entrada en vigor de la familia SPEC
+
+La familia SPEC quedará activa únicamente cuando concurran estas cuatro condiciones:
+
+1. aprobación de D-20 y D-23;
+2. integración de estas reglas en esta versión sucesora de la Guía Editorial;
+3. aprobación de la plantilla SPEC materializada; y
+4. aprobación y publicación material de `LB-G3-GMS-20260904-01`.
+
+Las tres primeras condiciones han sido satisfechas mediante `ACTO-G3-GMS-20260904-07`; la cuarta permanece pendiente. Hasta entonces, ningún archivo que utilice el prefijo `SPEC` adquiere condición de SPEC institucional.
 
 
 ## Documentos oficiales del Manual de Ingeniería
