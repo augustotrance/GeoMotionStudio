@@ -64,7 +64,13 @@ Referencias transversales de G2:
 
 La carpeta [`sdd/`](sdd/README.md) contiene el modelo operativo, las plantillas y la política aprobados para incorporar el Desarrollo Guiado por Especificaciones.
 
-Su vigencia permanece diferida hasta la aprobación y publicación material de `LB-G3-GMS-20260904-01`. Esta incorporación documental no crea una SPEC concreta, no abre G4 ni autoriza código funcional antes de G9.
+El conjunto y la familia SPEC están vigentes desde la publicación material de `LB-G3-GMS-20260904-01`. La vigencia de la familia no crea por sí misma una SPEC concreta ni autoriza código funcional antes de G9.
+
+## Producto
+
+La carpeta [`producto/`](producto/README.md) contiene los mapas de stakeholders, actores, capacidades y alcance, las fronteras de ediciones y licencias, y las iniciativas de producto aprobadas para incorporación.
+
+Los documentos G4 y `INI-GMS-0001` conservarán vigencia diferida hasta la publicación material de la Línea base G4 exacta que los incluya. La iniciativa no es una SPEC ni está Lista para Especificar.
 
 ---
 
@@ -100,6 +106,9 @@ docs/
 │
 ├── sdd/
 │   └── Gobierno operativo, plantillas y política SDD
+│
+├── producto/
+│   └── Stakeholders, capacidades, alcance e iniciativas
 │
 └── referencias/
     ├── Índice de glosarios de dominio

@@ -2,9 +2,9 @@
 
 **Proyecto:** GeoMotion Studio
 
-**Versión:** 2.1
+**Versión:** 2.2
 
-**Estado:** Aprobado — vigencia diferida hasta la publicación de `LB-G3-GMS-20260904-01`
+**Estado:** Aprobado para incorporación — vigencia de la versión 2.2 diferida hasta la publicación material de la Línea base G4 que la incluya
 
 **Última actualización:** 4 de septiembre de 2026
 
@@ -17,7 +17,8 @@
 | 1.0 | No consta en la documentación vigente | Vigente | Versión anterior a la corrección de nombres materiales en el árbol de documentación | Referencias `GUIA_EDITORIAL.md` e `Ingeniería/` |
 | 1.1 | 28 de julio de 2026 | Vigente | Corrección de dos nombres materiales en el árbol de documentación, sin alterar la organización prevista | `GUÍA_EDITORIAL.md`; `ingeniería/`; sección `Organización de la Documentación` |
 | 2.0 | 4 de septiembre de 2026 | Aprobado y vigente | Integración del vocabulario transversal de SDD; distinción de identidades, estados, participantes, invariantes, variantes y excepciones; corrección de Publicación y Revisión | `ACTO-G2-GMS-20260904-05`; D-12 a D-18 |
-| 2.1 | 4 de septiembre de 2026 | Aprobado — vigencia diferida | Incorporación controlada de la familia SPEC, sus identificadores y su regla de activación; la versión 2.0 continúa vigente hasta la publicación de G3 | `ACTO-G3-GMS-20260904-07`; D-20 y D-23 |
+| 2.1 | 4 de septiembre de 2026 | Aprobado y vigente | Incorporación controlada de la familia SPEC, sus identificadores y su regla de activación; activada por la publicación material de `LB-G3-GMS-20260904-01` | `ACTO-G3-GMS-20260904-07`; D-20 y D-23; commit `4a76985a24b74fb955bd806e7ac7a6c1481525d1` |
+| 2.2 | 4 de septiembre de 2026 | Aprobado para incorporación — vigencia diferida | Incorporación de los identificadores de stakeholders, actores y capacidades de producto aprobados en G4 | `ACTO-G4-GMS-20260904-09`; D-31 |
 
 ---
 
@@ -474,6 +475,7 @@ docs/
 ├── ingeniería/
 ├── adr/
 ├── ejemplos/
+├── producto/
 └── referencias/
 ```
 
@@ -491,7 +493,7 @@ Los prefijos actualmente utilizados son:
 |----------|-------------|
 | ADR | Architecture Decision Record. Registra decisiones arquitectónicas permanentes. |
 | INT | Documento técnico interno de la Dirección Técnica. |
-| SPEC | Especificación verificable de un incremento; su uso institucional permanece diferido hasta la publicación de `LB-G3-GMS-20260904-01`. |
+| SPEC | Especificación verificable de un incremento; su uso institucional está vigente desde la publicación material de `LB-G3-GMS-20260904-01`. |
 
 La numeración de cada familia es independiente y secuencial.
 
@@ -526,7 +528,7 @@ Ejemplos de familias documentales presentes o potenciales:
 | DOC | Manual de Ingeniería | Vigente |
 | ADR | Architecture Decision Records | Vigente |
 | INT | Documentación interna de Dirección Técnica | Vigente |
-| SPEC | Especificaciones de incrementos de GeoMotion Studio | Aprobado — activación diferida hasta la publicación de `LB-G3-GMS-20260904-01` |
+| SPEC | Especificaciones de incrementos de GeoMotion Studio | Vigente desde la publicación material de `LB-G3-GMS-20260904-01` |
 | RFC | Propuestas de cambio arquitectónico o técnico | Reservado para evolución futura |
 | MVA | Documentación de Minimum Viable Architecture | Reservado para evolución futura |
 
@@ -569,6 +571,16 @@ Sus estados de madurez son `Borrador`, `En revisión`, `Candidato`, `Aprobada`, 
 
 Estos identificadores son únicos dentro de su familia, no se reutilizan y no confieren autoridad, aprobación ni vigencia. Cuando identifican un activo versionado deben acompañarse por versión y estado, y conservar relación con sus sucesores, sustituciones y retiros.
 
+### Identificadores de producto
+
+| Patrón | Elemento | Regla |
+|---|---|---|
+| `STK-GMS-NNNN` | Stakeholder | Identifica una persona, grupo u organización relevante para el producto; no confiere autoridad institucional |
+| `ACTR-GMS-NNNN` | Actor | Identifica un participante humano o técnico de una interacción; no constituye un rol ni concede permisos |
+| `CAP-GMS-NNNN` | Capacidad | Identifica un resultado que la plataforma puede ofrecer con independencia de su implementación; no demuestra que esté implementado ni autorizado |
+
+Estos patrones fueron aprobados para incorporación mediante D-31. La versión 2.2 que los incorpora adquirirá vigencia únicamente con la publicación material de la Línea base G4 exacta que la incluya. Los identificadores son estables, no se reutilizan y no crean familias documentales, módulos, proveedores, roles o permisos.
+
 ### Identificadores internos de una SPEC
 
 | Patrón | Elemento |
@@ -592,7 +604,7 @@ La familia SPEC quedará activa únicamente cuando concurran estas cuatro condic
 3. aprobación de la plantilla SPEC materializada; y
 4. aprobación y publicación material de `LB-G3-GMS-20260904-01`.
 
-Las tres primeras condiciones han sido satisfechas mediante `ACTO-G3-GMS-20260904-07`; la cuarta permanece pendiente. Hasta entonces, ningún archivo que utilice el prefijo `SPEC` adquiere condición de SPEC institucional.
+Las tres primeras condiciones fueron satisfechas mediante `ACTO-G3-GMS-20260904-07`; la cuarta se satisfizo con la publicación material de `LB-G3-GMS-20260904-01` en el commit `4a76985a24b74fb955bd806e7ac7a6c1481525d1`. La familia SPEC está vigente. La existencia de la familia no crea, aprueba ni publica una SPEC concreta.
 
 
 ## Documentos oficiales del Manual de Ingeniería
