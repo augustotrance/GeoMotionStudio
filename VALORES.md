@@ -2,6 +2,26 @@
 
 > **Transformamos el mundo en historias.**
 
+**Nombre oficial:** Valores del Proyecto  
+**Versión del documento:** 1.0.0  
+**Estado:** Aprobado y vigente  
+**Autoridad responsable:** Founder  
+**Propietario documental:** Founder  
+**Última actualización:** 2026-09-03
+
+---
+
+# Control del documento
+
+| Edición | Fecha | Estado | Modificación |
+|---|---|---|---|
+| Edición histórica sin versión formal | Hasta 2026-09-03 | Activo sin metadato formal | Antecedente preservado en el repositorio canónico. |
+| 1.0.0 | 2026-09-03 | Aprobado y vigente | Formalización de identidad material, versión, estado, autoridad, propiedad y relación de precedencia; contenido sustantivo preservado. |
+
+La versión 1.0.0 sucede a la edición histórica sin número y conserva íntegramente su misión, visión, propósito, filosofía, lema, principios y compromiso.
+
+La versión 1.0.0 fue aprobada expresamente por el Founder mediante D-09 el 3 de septiembre de 2026.
+
 ---
 
 # Valores del Proyecto
@@ -13,6 +33,14 @@ Su propósito es establecer los principios permanentes que orientan la visión d
 Estos valores constituyen el fundamento sobre el cual se construye GeoMotion Studio y representan un compromiso de largo plazo con la calidad, la innovación y la sostenibilidad.
 
 Toda decisión estratégica deberá ser coherente con este documento.
+
+## Relación institucional y alcance
+
+`VALORES.md` define la misión, la visión, el propósito y los valores permanentes de GeoMotion Studio.
+
+No regula la autoridad documental, la custodia material del repositorio, los procedimientos de aprobación ni la operación de Dirección Técnica. Esas materias corresponden a `INT-008` y a los demás documentos institucionales aprobados y vigentes dentro de sus respectivas responsabilidades.
+
+El SDD organiza y relaciona estos documentos sin sustituirlos. Ante una contradicción entre responsabilidades documentales, solo una decisión expresa del Founder puede establecer la interpretación o el sucesor aplicable.
 
 ---
 

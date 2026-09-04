@@ -26,7 +26,7 @@ Esta organización permite comprender progresivamente los principios del proyect
 | Documento | Descripción |
 |-----------|-------------|
 | **README.md** | Presentación del Manual de Ingeniería, su propósito, alcance, principios y forma de utilización. |
-| **INDICE.md** | Índice general y guía de navegación del Manual de Ingeniería. |
+| **ÍNDICE.md** | Índice general y guía de navegación del Manual de Ingeniería. |
 
 ---
 

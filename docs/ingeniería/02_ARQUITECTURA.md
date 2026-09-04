@@ -2,7 +2,7 @@
 
 **Código:** DOC-002
 
-**Versión:** 1.0
+**Versión:** 1.2
 
 **Estado:** Publicado
 
@@ -12,7 +12,17 @@
 
 **Idioma original:** Español
 
-**Última actualización:** 24 de julio de 2026
+**Última actualización:** 28 de julio de 2026
+
+---
+
+# Historial de versiones
+
+| Versión | Fecha | Estado | Modificación | Trazabilidad |
+|---|---|---|---|---|
+| 1.0 | 24 de julio de 2026 | Publicado | Versión publicada anterior a la normalización del sistema ADR | Referencias documentales heredadas `ADR-001` a `ADR-015` |
+| 1.1 | 28 de julio de 2026 | Publicado | Normalización documental de quince decisiones, incorporando enlaces a los ADR independientes y cualificando las referencias heredadas sin modificar su contenido técnico | `ADR-016` a `ADR-030`; DOC-002 §§2.11–16.7 |
+| 1.2 | 28 de julio de 2026 | Publicado | Corrección del nombre físico de DOC-004 en el ejemplo del directorio `docs/`, sin cambios técnicos, normativos ni estructurales | `DOC-002 §3.6`; `04_PILA_TECNOLÓGICA.md` |
 
 ---
 
@@ -739,7 +749,11 @@ El incumplimiento de estas restricciones deberá considerarse una desviación ar
 
 ## 2.11 Primera decisión arquitectónica
 
-### ADR-001 · Arquitectura Modular basada en Capacidades
+### Arquitectura Modular basada en Capacidades
+
+**ADR independiente:** [ADR-016](../adr/ADR-016.md).
+
+**Referencia documental heredada:** `ADR-001` en `DOC-002 §2.11`.
 
 **Estado:** Aprobada.
 
@@ -914,7 +928,7 @@ docs/
 01_VISIÓN_DEL_PRODUCTO.md
 02_ARQUITECTURA.md
 03_SISTEMA_DE_DISEÑO.md
-04_PILA_TECNOLOGICA.md
+04_PILA_TECNOLÓGICA.md
 05_HOJA_DE_RUTA.md
 
 adr/
@@ -1030,7 +1044,11 @@ Toda la organización del repositorio deberá respetar las siguientes reglas:
 
 ## 3.13 Segunda decisión arquitectónica
 
-### ADR-002 · Organización del repositorio como Monorepo
+### Organización del repositorio como Monorepo
+
+**ADR independiente:** [ADR-017](../adr/ADR-017.md).
+
+**Referencia documental heredada:** `ADR-002` en `DOC-002 §3.13`.
 
 **Estado:** Aprobada.
 
@@ -1328,7 +1346,11 @@ Para mantener la coherencia del proyecto se establecen las siguientes reglas:
 
 ## 4.16 Tercera decisión arquitectónica
 
-### ADR-003 · Organización basada en Módulos Arquitectónicos
+### Organización basada en Módulos Arquitectónicos
+
+**ADR independiente:** [ADR-018](../adr/ADR-018.md).
+
+**Referencia documental heredada:** `ADR-003` en `DOC-002 §4.16`.
 
 **Estado:** Aprobada.
 
@@ -1550,7 +1572,11 @@ El módulo Project deberá respetar los siguientes principios:
 
 ## 5.12 Cuarta decisión arquitectónica
 
-### ADR-004 · Project como contexto raíz del sistema
+### Project como contexto raíz del sistema
+
+**ADR independiente:** [ADR-019](../adr/ADR-019.md).
+
+**Referencia documental heredada:** `ADR-004` en `DOC-002 §5.12`.
 
 **Estado:** Aprobada.
 
@@ -1757,7 +1783,11 @@ El módulo Scene deberá respetar los siguientes principios:
 
 ## 6.11 Quinta decisión arquitectónica
 
-### ADR-005 · Escenas como contextos independientes
+### Escenas como contextos independientes
+
+**ADR independiente:** [ADR-020](../adr/ADR-020.md).
+
+**Referencia documental heredada:** `ADR-005` en `DOC-002 §6.11`.
 
 **Estado:** Aprobada.
 
@@ -1968,7 +1998,11 @@ Estas decisiones corresponden a la implementación y no modifican la arquitectur
 
 ## 7.11 Sexta decisión arquitectónica
 
-### ADR-006 · Map como módulo cartográfico independiente
+### Map como módulo cartográfico independiente
+
+**ADR independiente:** [ADR-021](../adr/ADR-021.md).
+
+**Referencia documental heredada:** `ADR-006` en `DOC-002 §7.11`.
 
 **Estado:** Aprobada.
 
@@ -2224,7 +2258,11 @@ Estas decisiones pertenecen al ámbito de implementación y no modifican la arqu
 
 ## 8.13 Séptima decisión arquitectónica
 
-### ADR-007 · Separación entre Assets y Objects
+### Separación entre Assets y Objects
+
+**ADR independiente:** [ADR-022](../adr/ADR-022.md).
+
+**Referencia documental heredada:** `ADR-007` en `DOC-002 §8.13`.
 
 **Estado:** Aprobada.
 
@@ -2464,7 +2502,11 @@ Estas decisiones no modifican la organización arquitectónica del módulo.
 
 ## 9.12 Octava decisión arquitectónica
 
-### ADR-008 · Gestión centralizada de Assets
+### Gestión centralizada de Assets
+
+**ADR independiente:** [ADR-023](../adr/ADR-023.md).
+
+**Referencia documental heredada:** `ADR-008` en `DOC-002 §9.12`.
 
 **Estado:** Aprobada.
 
@@ -2671,7 +2713,11 @@ Estas decisiones pertenecen al ámbito de implementación y no modifican la orga
 
 ## 10.12 Novena decisión arquitectónica
 
-### ADR-009 · Timeline como dominio temporal centralizado
+### Timeline como dominio temporal centralizado
+
+**ADR independiente:** [ADR-024](../adr/ADR-024.md).
+
+**Referencia documental heredada:** `ADR-009` en `DOC-002 §10.12`.
 
 **Estado:** Aprobada.
 
@@ -2872,7 +2918,11 @@ La implementación podrá evolucionar para incorporar nuevas técnicas de optimi
 
 ## 11.11 Décima decisión arquitectónica
 
-### ADR-010 · Render como módulo independiente
+### Render como módulo independiente
+
+**ADR independiente:** [ADR-025](../adr/ADR-025.md).
+
+**Referencia documental heredada:** `ADR-010` en `DOC-002 §11.11`.
 
 **Estado:** Aprobada.
 
@@ -3113,7 +3163,11 @@ Estas decisiones pertenecen al ámbito de implementación y no modifican la arqu
 
 ## 12.11 Undécima decisión arquitectónica
 
-### ADR-011 · Export como módulo independiente de generación de artefactos
+### Export como módulo independiente de generación de artefactos
+
+**ADR independiente:** [ADR-026](../adr/ADR-026.md).
+
+**Referencia documental heredada:** `ADR-011` en `DOC-002 §12.11`.
 
 **Estado:** Aprobada.
 
@@ -3292,7 +3346,11 @@ Estas restricciones preservan la coherencia de la Arquitectura Modular.
 
 ## 13.11 Duodécima decisión arquitectónica
 
-### ADR-012 · Comunicación exclusivamente mediante contratos arquitectónicos
+### Comunicación exclusivamente mediante contratos arquitectónicos
+
+**ADR independiente:** [ADR-027](../adr/ADR-027.md).
+
+**Referencia documental heredada:** `ADR-012` en `DOC-002 §13.11`.
 
 **Estado:** Aprobada.
 
@@ -3462,7 +3520,11 @@ Este principio garantiza la preservación del conocimiento técnico a largo plaz
 
 ## 14.13 Decimotercera decisión arquitectónica
 
-### ADR-013 · Los principios arquitectónicos como guía permanente del proyecto
+### Los principios arquitectónicos como guía permanente del proyecto
+
+**ADR independiente:** [ADR-028](../adr/ADR-028.md).
+
+**Referencia documental heredada:** `ADR-013` en `DOC-002 §14.13`.
 
 **Estado:** Aprobada.
 
@@ -3603,7 +3665,11 @@ No estará permitido:
 
 ## 15.10 Decimocuarta decisión arquitectónica
 
-### ADR-014 · Evolución arquitectónica gobernada
+### Evolución arquitectónica gobernada
+
+**ADR independiente:** [ADR-029](../adr/ADR-029.md).
+
+**Referencia documental heredada:** `ADR-014` en `DOC-002 §15.10`.
 
 **Estado:** Aprobada.
 
@@ -3712,7 +3778,11 @@ La implementación podrá evolucionar con el tiempo, pero la arquitectura deber�
 
 ## 16.7 Decimoquinta decisión arquitectónica
 
-### ADR-015 · La arquitectura como referencia oficial del sistema
+### La arquitectura como referencia oficial del sistema
+
+**ADR independiente:** [ADR-030](../adr/ADR-030.md).
+
+**Referencia documental heredada:** `ADR-015` en `DOC-002 §16.7`.
 
 **Estado:** Aprobada.
 

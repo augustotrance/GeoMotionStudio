@@ -18,7 +18,7 @@ Contiene el **Manual de Ingeniería** de GeoMotion Studio.
 
 Este manual describe la arquitectura completa de la plataforma, los principios de diseño, los componentes principales y las decisiones fundamentales que guían el desarrollo del proyecto.
 
-Actualmente está compuesto por **18 documentos** que abarcan, entre otros temas:
+Actualmente está compuesto por **19 documentos** que abarcan, entre otros temas:
 
 - Arquitectura General
 - Sistema de Diseño
@@ -77,7 +77,7 @@ La documentación se mantiene bajo los mismos principios que el software:
 ```text
 docs/
 
-├── Ingeniería/
+├── ingeniería/
 │   └── Manual de Ingeniería
 │
 ├── adr/

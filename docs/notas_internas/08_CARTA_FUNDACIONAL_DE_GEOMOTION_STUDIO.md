@@ -4,9 +4,25 @@
 **Nombre oficial:** Carta Fundacional de GeoMotion Studio\
 **Proyecto:** GeoMotion Studio\
 **Tipo de documento:** Documento institucional\
-**Estado:** Activo\
+**Versión del documento:** 1.0.0\
+**Estado:** Aprobado y vigente\
 **Autoridad responsable:** Founder\
-**Propietario documental:** Founder
+**Propietario documental:** Founder\
+**Última actualización:** 2026-09-03\
+**Repositorio canónico:** https://github.com/augustotrance/GeoMotionStudio
+
+---
+
+# Control del documento
+
+| Edición | Fecha | Estado | Modificación |
+|---|---|---|---|
+| Edición histórica sin versión formal | Hasta 2026-09-03 | Activo | Antecedente preservado en el repositorio canónico. |
+| 1.0.0 | 2026-09-03 | Aprobado y vigente | Formalización de versión e incorporación de la decisión del Founder sobre autoridad documental, SDD y custodia material. |
+
+La versión 1.0.0 sucede a la edición histórica sin número. No modifica la identidad, la visión, el modelo de gobernanza ni los demás principios fundacionales.
+
+La versión 1.0.0 fue aprobada expresamente por el Founder mediante D-08 el 3 de septiembre de 2026.
 
 ---
 
@@ -59,10 +75,13 @@ coherencia arquitectónica, no como propietario del proyecto.
 
 # Principios fundacionales
 
-## 1. Custodia del repositorio
+## 1. Autoridad documental y custodia del repositorio
 
-El repositorio oficial constituye la fuente de verdad material del
-proyecto.
+Los documentos institucionales aprobados y vigentes constituyen la fuente de verdad de GeoMotion Studio.
+
+El Desarrollo Guiado por Especificaciones (SDD) los ordena, relaciona y hace verificables. No los sustituye, no crea una autoridad documental paralela y no confiere vigencia por sí mismo.
+
+El repositorio canónico constituye el medio oficial de publicación y custodia material del proyecto. Su contenido conserva la identidad material y la historia de los documentos, pero la presencia de un archivo, una ruta, un commit, un contenedor o una huella de integridad no le concede autoridad institucional por sí misma.
 
 La Dirección Técnica solo podrá incorporar modificaciones directamente al repositorio oficial cuando exista una autorización explícita del Founder para esa actuación.
 

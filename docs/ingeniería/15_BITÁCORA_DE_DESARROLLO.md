@@ -2,7 +2,7 @@
 
 **Código:** DOC-015
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Publicado
 
@@ -12,7 +12,16 @@
 
 **Idioma original:** Español
 
-**Última actualización:** 24 de julio de 2026
+**Última actualización:** 28 de julio de 2026
+
+---
+
+# Historial de versiones
+
+| Versión | Fecha | Estado | Modificación | Trazabilidad |
+|---|---|---|---|---|
+| 1.0 | 24 de julio de 2026 | Publicado | Versión publicada anterior a la normalización de la matriz ilustrativa del Anexo F | Anexo F original |
+| 1.1 | 28 de julio de 2026 | Publicado | Aclaración del carácter ilustrativo de la matriz y sustitución de tres referencias ADR ambiguas por el marcador neutral `ADR aplicable` | Revisión transversal del sistema ADR; sin asociaciones canónicas para las filas ilustrativas |
 
 ---
 
@@ -2234,11 +2243,13 @@ Este ciclo representa el proceso mediante el cual la experiencia adquirida duran
 
 La siguiente matriz permite establecer relaciones entre los distintos documentos del sistema de gestión del conocimiento.
 
+Las filas incluidas a continuación son ejemplos de estructura. Los valores de la columna ADR son marcadores ilustrativos y no representan identificadores históricos ni relaciones documentales vigentes.
+
 | Registro | ADR | Manual | Componentes | Versión |
 |----------|-----|--------|-------------|----------|
-| RC-001 | ADR-004 | DOC-013 | Render | 1.2 |
-| RC-002 | ADR-007 | DOC-009 | Plugins | 2.0 |
-| RC-003 | ADR-011 | DOC-014 | Arquitectura | 2.3 |
+| RC-001 | *ADR aplicable* | DOC-013 | Render | 1.2 |
+| RC-002 | *ADR aplicable* | DOC-009 | Plugins | 2.0 |
+| RC-003 | *ADR aplicable* | DOC-014 | Arquitectura | 2.3 |
 
 La utilización de esta matriz facilita la localización de antecedentes técnicos y fortalece la trazabilidad documental.
 

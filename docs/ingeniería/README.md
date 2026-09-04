@@ -89,7 +89,7 @@ El Manual de Ingeniería se organiza en cuatro grandes bloques:
 
 Cada bloque desarrolla una dimensión específica de la ingeniería de GeoMotion Studio y constituye la base para los documentos que le suceden.
 
-La descripción detallada de la estructura del Manual y del orden recomendado de lectura se encuentra en el documento **INDICE.md**.
+La descripción detallada de la estructura del Manual y del orden recomendado de lectura se encuentra en el documento **ÍNDICE.md**.
 
 ---
 

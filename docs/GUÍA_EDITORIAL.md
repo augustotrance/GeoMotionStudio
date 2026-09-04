@@ -2,11 +2,11 @@
 
 **Proyecto:** GeoMotion Studio
 
-**Versión:** 1.2
+**Versión:** 1.1
 
-**Estado:** Candidato
+**Estado:** Vigente
 
-**Última actualización:** 25 de agosto de 2026
+**Última actualización:** 28 de julio de 2026
 
 ---
 
@@ -16,7 +16,6 @@
 |---|---|---|---|---|
 | 1.0 | No consta en la documentación vigente | Vigente | Versión anterior a la corrección de nombres materiales en el árbol de documentación | Referencias `GUIA_EDITORIAL.md` e `Ingeniería/` |
 | 1.1 | 28 de julio de 2026 | Vigente | Corrección de dos nombres materiales en el árbol de documentación, sin alterar la organización prevista | `GUÍA_EDITORIAL.md`; `ingeniería/`; sección `Organización de la Documentación` |
-| 1.2 | 25 de agosto de 2026 | Candidato | Formalización editorial de las familias `RC` y `PDME`, sin modificar su regulación sustantiva o procedimental | `DOC-015`; `DOC-018`; `INT-011`; Regularización PDME |
 
 ---
 
@@ -388,10 +387,8 @@ Los prefijos actualmente utilizados son:
 |----------|-------------|
 | ADR | Architecture Decision Record. Registra decisiones arquitectónicas permanentes. |
 | INT | Documento técnico interno de la Dirección Técnica. |
-| RC | Registro de Conocimiento. Preserva conocimiento técnico conforme a DOC-015. |
-| PDME | Paquete de Delegación a Modelo Externo. Delimita una delegación a modelos, agentes o sistemas computacionales externos. |
 
-La identificación de cada familia es independiente, estable y trazable. Como regla general, la numeración será secuencial. Una familia podrá utilizar un identificador derivado de otra unidad institucional cuando su naturaleza lo requiera y su convención se encuentre definida expresamente.
+La numeración de cada familia es independiente y secuencial.
 
 Ejemplos:
 
@@ -399,8 +396,6 @@ Ejemplos:
 - ADR-002
 - INT-001
 - INT-002
-- RC-001
-- PDME-<ID_DE_MISIÓN_O_SUBMISIÓN>
 
 La utilización de nuevos prefijos deberá documentarse en esta guía cuando se incorporen nuevas familias documentales al proyecto.
 
@@ -426,56 +421,11 @@ Ejemplos de familias documentales presentes o potenciales:
 | DOC | Manual de Ingeniería | Vigente |
 | ADR | Architecture Decision Records | Vigente |
 | INT | Documentación interna de Dirección Técnica | Vigente |
-| RC | Registros de Conocimiento | Vigente |
-| PDME | Paquetes de Delegación a Modelo Externo | Vigente |
 | SPEC | Especificaciones técnicas | Reservado para evolución futura |
 | RFC | Propuestas de cambio arquitectónico o técnico | Reservado para evolución futura |
 | MVA | Documentación de Minimum Viable Architecture | Reservado para evolución futura |
 
 La incorporación de una familia documental no implica necesariamente su adopción inmediata. Las familias marcadas como "Reservado para evolución futura" constituyen nomenclaturas disponibles para futuras necesidades del proyecto y deberán formalizarse mediante la documentación correspondiente antes de entrar en uso.
-
-### Registros de Conocimiento (RC)
-
-La familia `RC — Registro de Conocimiento` preserva conocimiento técnico significativo generado durante la evolución del proyecto.
-
-- **Ámbito:** experiencias, observaciones, análisis, conclusiones y aprendizajes técnicos reutilizables.
-- **Responsabilidad documental:** la establecida por DOC-015.
-- **Identificación:** `RC-NNN`, mediante numeración propia, independiente y secuencial.
-- **Relación documental:** DOC-015 constituye la fuente sustantiva sobre estructura, plantilla, responsabilidades, trazabilidad y funcionamiento de los RC.
-
-La presente guía regula únicamente la identidad y clasificación editorial de la familia. No duplica ni sustituye el contenido normativo de DOC-015.
-
-### Paquetes de Delegación a Modelo Externo (PDME)
-
-La familia `PDME — Paquete de Delegación a Modelo Externo` delimita una delegación auxiliar hacia uno o varios modelos, agentes o sistemas computacionales o automatizados externos capaces de producir resultados candidatos.
-
-El concepto comprende funcionalmente, sin limitarse a una tecnología concreta:
-
-- modelos de Inteligencia Artificial;
-- agentes autónomos o semiautónomos;
-- asistentes y sistemas computacionales automatizados;
-- servicios automatizados accesibles mediante API o plataforma;
-- varios sistemas o agentes coordinados o independientes;
-- tecnologías futuras funcionalmente equivalentes.
-
-La familia es agnóstica respecto de proveedor, modelo, agente, arquitectura de Inteligencia Artificial, tecnología, plataforma y canal.
-
-- **Ámbito:** delegaciones delimitadas a capacidades computacionales externas y la producción candidata resultante.
-- **Responsabilidad documental:** Dirección Técnica, dentro de su autoridad y conforme al procedimiento vigente de INT-011.
-- **Identificación:** `PDME-<ID_DE_MISIÓN_O_SUBMISIÓN>`.
-- **Versionado:** la versión documental permanece separada del identificador y se rige por DOC-018.
-- **Relación documental:** un PDME no sustituye al Manual de Ingeniería, a los ADR, a los documentos institucionales ni a los Context Packages.
-
-PDME no constituye por sí mismo el régimen general para contratar personas, incorporar colaboradores humanos, dirigir consultores, contratistas, especialistas humanos externos, freelancers, asesores, estudios profesionales o proveedores cuya prestación sea esencialmente humana. La condición de externo al cuerpo institucional formal no convierte a una persona en destinataria PDME.
-
-Cuando un proveedor comercial suministre una capacidad automatizada, el PDME podrá gobernar la capacidad computacional utilizada y su producción candidata. No gobernará automáticamente la relación humana, profesional, laboral o contractual subyacente.
-
-La separación documental es la siguiente:
-
-- **PDME:** instrumento de delegación a modelos, agentes o sistemas computacionales externos.
-- **Context Package:** instrumento reservado para los usos institucionales formales definidos por el sistema documental vigente.
-
-El PDME se preservará canónicamente en Markdown. Una representación PDF u otro formato autorizado podrá utilizarse para transporte, pero no sustituirá la autoridad del Markdown canónico. Cada representación binaria posee identidad material propia; la equivalencia visual o semántica no implica identidad byte por byte.
 
 
 ## Documentos oficiales del Manual de Ingeniería

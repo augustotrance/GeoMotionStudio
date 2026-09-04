@@ -2,7 +2,7 @@
 
 **Código:** DOC-013
 
-**Versión:** 1.0
+**Versión:** 1.1
 
 **Estado:** Publicado
 
@@ -12,7 +12,16 @@
 
 **Idioma original:** Español
 
-**Última actualización:** 24 de julio de 2026
+**Última actualización:** 28 de julio de 2026
+
+---
+
+# Historial de versiones
+
+| Versión | Fecha | Estado | Modificación | Trazabilidad |
+|---|---|---|---|---|
+| 1.0 | 24 de julio de 2026 | Publicado | Versión publicada anterior a la normalización del sistema ADR | Referencias documentales heredadas `ADR-001` a `ADR-010` |
+| 1.1 | 28 de julio de 2026 | Publicado | Normalización documental de diez decisiones, incorporando enlaces a los ADR independientes y cualificando las referencias heredadas sin modificar su contenido técnico | `ADR-031` a `ADR-040`; DOC-013 §§1.6–10.8 |
 
 ---
 
@@ -213,7 +222,11 @@ La coordinación entre estas arquitecturas garantiza una plataforma preparada pa
 
 ## 1.6 Primera decisión arquitectónica
 
-### ADR-001 · La extensibilidad complementa la arquitectura, no la sustituye
+### La extensibilidad complementa la arquitectura, no la sustituye
+
+**ADR independiente:** [ADR-031](../adr/ADR-031.md).
+
+**Referencia documental heredada:** `ADR-001` en `DOC-013 §1.6`.
 
 **Estado:** Aprobada.
 
@@ -350,7 +363,11 @@ Esta separación garantiza que ambos puedan evolucionar de manera independiente 
 
 ## 2.6 Segunda decisión arquitectónica
 
-### ADR-002 · El núcleo permanece estable y las capacidades evolucionan mediante extensiones
+### El núcleo permanece estable y las capacidades evolucionan mediante extensiones
+
+**ADR independiente:** [ADR-032](../adr/ADR-032.md).
+
+**Referencia documental heredada:** `ADR-002` en `DOC-013 §2.6`.
 
 **Estado:** Aprobada.
 
@@ -479,7 +496,11 @@ Esta separación garantiza que la evolución funcional de la plataforma no impli
 
 ## 3.6 Tercera decisión arquitectónica
 
-### ADR-003 · Las extensiones constituyen el mecanismo oficial de evolución funcional
+### Las extensiones constituyen el mecanismo oficial de evolución funcional
+
+**ADR independiente:** [ADR-033](../adr/ADR-033.md).
+
+**Referencia documental heredada:** `ADR-003` en `DOC-013 §3.6`.
 
 **Estado:** Aprobada.
 
@@ -600,7 +621,11 @@ Este enfoque garantiza una arquitectura uniforme donde todas las capacidades ext
 
 ## 4.6 Cuarta decisión arquitectónica
 
-### ADR-004 · Las capacidades oficiales también utilizan la Arquitectura de Extensibilidad
+### Las capacidades oficiales también utilizan la Arquitectura de Extensibilidad
+
+**ADR independiente:** [ADR-034](../adr/ADR-034.md).
+
+**Referencia documental heredada:** `ADR-004` en `DOC-013 §4.6`.
 
 **Estado:** Aprobada.
 
@@ -726,7 +751,11 @@ Los Plugins Externos colaboran con dichos módulos exclusivamente mediante contr
 
 ## 5.6 Quinta decisión arquitectónica
 
-### ADR-005 · Los Plugins Externos utilizan el mismo modelo arquitectónico que las extensiones oficiales
+### Los Plugins Externos utilizan el mismo modelo arquitectónico que las extensiones oficiales
+
+**ADR independiente:** [ADR-035](../adr/ADR-035.md).
+
+**Referencia documental heredada:** `ADR-005` en `DOC-013 §5.6`.
 
 **Estado:** Aprobada.
 
@@ -923,7 +952,11 @@ La extensibilidad constituye una capacidad estratégica del sistema y no un meca
 
 ## 6.8 Sexta decisión arquitectónica
 
-### ADR-006 · Toda capacidad extensible se incorpora mediante Puntos de Extensión explícitos
+### Toda capacidad extensible se incorpora mediante Puntos de Extensión explícitos
+
+**ADR independiente:** [ADR-036](../adr/ADR-036.md).
+
+**Referencia documental heredada:** `ADR-006` en `DOC-013 §6.8`.
 
 **Estado:** Aprobada.
 
@@ -1137,7 +1170,11 @@ Este enfoque permite que la plataforma evolucione preservando la estabilidad del
 
 ## 7.9 Séptima decisión arquitectónica
 
-### ADR-007 · Los contratos constituyen el único mecanismo oficial de integración
+### Los contratos constituyen el único mecanismo oficial de integración
+
+**ADR independiente:** [ADR-037](../adr/ADR-037.md).
+
+**Referencia documental heredada:** `ADR-007` en `DOC-013 §7.9`.
 
 **Estado:** Aprobada.
 
@@ -1293,7 +1330,11 @@ La incorporación de nuevas capacidades no deberá comprometer la estabilidad gl
 
 ## 8.8 Octava decisión arquitectónica
 
-### ADR-008 · Las extensiones siguen un ciclo de vida arquitectónico gobernado
+### Las extensiones siguen un ciclo de vida arquitectónico gobernado
+
+**ADR independiente:** [ADR-038](../adr/ADR-038.md).
+
+**Referencia documental heredada:** `ADR-008` en `DOC-013 §8.8`.
 
 **Estado:** Aprobada.
 
@@ -1449,7 +1490,11 @@ Estas evaluaciones permiten preservar una arquitectura estable y evitar el creci
 
 ## 9.8 Novena decisión arquitectónica
 
-### ADR-009 · La evolución de la extensibilidad está sujeta a gobernanza arquitectónica
+### La evolución de la extensibilidad está sujeta a gobernanza arquitectónica
+
+**ADR independiente:** [ADR-039](../adr/ADR-039.md).
+
+**Referencia documental heredada:** `ADR-009` en `DOC-013 §9.8`.
 
 **Estado:** Aprobada.
 
@@ -1602,7 +1647,11 @@ Toda evolución deberá preservar el principio de que las extensiones amplían l
 
 ## 10.8 Décima decisión arquitectónica
 
-### ADR-010 · La Arquitectura de Extensibilidad evoluciona preservando la estabilidad de la plataforma
+### La Arquitectura de Extensibilidad evoluciona preservando la estabilidad de la plataforma
+
+**ADR independiente:** [ADR-040](../adr/ADR-040.md).
+
+**Referencia documental heredada:** `ADR-010` en `DOC-013 §10.8`.
 
 **Estado:** Aprobada.
 

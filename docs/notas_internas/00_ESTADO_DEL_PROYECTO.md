@@ -6,12 +6,12 @@
 **Tipo de documento:** Documento interno de gobierno y continuidad institucional  
 **Estado:** Activo  
 **Autoridad responsable:** Dirección Técnica  
-**Propietario documental:** Dirección Técnica  
+**Propietario documental:** Founder  
 **Idioma oficial:** Español  
 **Metodología rectora:** Architecture First  
-**Versión del documento:** 1.0.0  
+**Versión del documento:** 1.1.0  
 **Fecha de creación:** 2026-07-26  
-**Última actualización:** 2026-07-26  
+**Última actualización:** 2026-07-28  
 **Próxima revisión:** Al finalizar el siguiente hito arquitectónico relevante  
 **Ubicación recomendada:** `docs/notas_internas/00_ESTADO_DEL_PROYECTO.md`
 
@@ -38,6 +38,7 @@
 | Versión | Fecha | Autor | Descripción |
 |---|---|---|---|
 | 1.0.0 | 2026-07-26 | Dirección Técnica | Creación inicial del registro institucional del proyecto |
+| 1.1.0 | 2026-07-28 | Dirección Técnica | Actualización del estado institucional tras la consolidación del sistema ADR, la normalización de DOC-002, DOC-013 y DOC-015 y la evaluación integral previa a la incorporación al repositorio oficial |
 
 ## Reglas de versionado
 
@@ -135,7 +136,9 @@ Este documento no podrá contradecir el Manual de Ingeniería.
 
 ## 3.2 Autoridad de los ADR
 
-Cuando el sistema oficial de Architecture Decision Records se encuentre vigente, los ADR mantendrán la autoridad sobre:
+El sistema oficial de Architecture Decision Records se encuentra vigente.
+
+Los ADR mantienen la autoridad sobre:
 
 - decisiones arquitectónicas relevantes;
 - contexto de las decisiones;
@@ -144,6 +147,10 @@ Cuando el sistema oficial de Architecture Decision Records se encuentre vigente,
 - consecuencias;
 - sustitución de decisiones anteriores;
 - estado de cada decisión.
+
+Los registros `ADR-016` a `ADR-040` constituyen la línea base normativa consolidada del sistema ADR.
+
+Las referencias heredadas `ADR-001` a `ADR-015` se conservan exclusivamente como referencias documentales históricas, cualificadas mediante su documento y sección de origen. No constituyen identificadores canónicos disponibles para nuevos registros.
 
 Este documento podrá resumir o indexar ADR, pero no sustituirlos.
 
@@ -255,53 +262,53 @@ Toda entrada importante deberá indicar, cuando sea posible:
 
 ## 5.1 Estado general
 
-GeoMotion Studio se encuentra en una fase de consolidación arquitectónica bajo un enfoque **Architecture First**.
+GeoMotion Studio se encuentra en una fase de consolidación documental y preparación para la incorporación controlada de su estado local al repositorio oficial, bajo el enfoque **Architecture First**.
 
-El proyecto todavía no ha iniciado una implementación significativa. La prioridad continúa siendo establecer una arquitectura coherente, documentada, verificable y preparada para evolucionar durante muchos años.
+El proyecto no ha iniciado una fase oficial de implementación significativa. Existe material de implementación experimental, pero su presencia no constituye autorización institucional ni demuestra conformidad completa con la arquitectura aprobada.
 
 A la fecha de esta versión:
 
-- la Arquitectura Modular del Ciclo 1 ha sido desarrollada y aprobada como línea base de trabajo;
-- la Arquitectura de Contratos del Ciclo 1 ha sido desarrollada y aprobada;
-- la Arquitectura Física del Repositorio permanece pendiente de consolidación final;
-- el sistema oficial de ADR permanece pendiente;
+- la Arquitectura Modular del Ciclo 1 se encuentra aprobada;
+- la Arquitectura de Contratos del Ciclo 1 se encuentra aprobada;
+- la Arquitectura Física del Repositorio cuenta con aprobación técnica vigente de Dirección Técnica;
+- la incorporación oficial de la Arquitectura Física permanece sujeta a aprobación expresa del Founder;
+- el sistema oficial de ADR se encuentra consolidado;
+- `ADR-016` a `ADR-040` se encuentran aprobados definitivamente como línea base normativa;
+- DOC-002, DOC-013 y DOC-015 se encuentran normalizados respecto del sistema ADR;
+- la revisión transversal final de referencias ADR concluyó sin hallazgos materiales;
 - la Minimum Viable Architecture permanece pendiente;
-- la implementación permanece subordinada al cierre de las dependencias arquitectónicas necesarias.
+- la incorporación material del estado local al repositorio oficial permanece pendiente de ejecución por el Founder.
 
 ## 5.2 Estado ejecutivo por área
 
 | Área | Estado | Comentario |
 |---|---|---|
 | Identidad del proyecto | Consolidada | La visión, naturaleza y filosofía general del proyecto se consideran establecidas |
-| Metodología Architecture First | Vigente | Constituye el criterio rector del proyecto |
-| Manual de Ingeniería | En evolución | Existe una base documental amplia y se encuentra en proceso de consolidación |
+| Metodología Architecture First | Vigente | Continúa siendo el criterio rector |
+| Manual de Ingeniería | Vigente | Inventario material verificado; DOC-002, DOC-013 y DOC-015 normalizados |
 | Arquitectura Modular | Aprobada | Ciclo 1 concluido |
 | Arquitectura de Contratos | Aprobada | Ciclo 1 concluido |
-| Arquitectura Física | Pendiente de consolidación | Misión V0.1 aún no cerrada en este registro |
-| Sistema ADR | Pendiente | Misión V0.4 no iniciada o no consolidada |
-| MVA | Pendiente | Misión V0.5 no iniciada o no consolidada |
-| Implementación | No iniciada | No corresponde iniciar sin cerrar las dependencias mínimas |
+| Arquitectura Física | Aprobada técnicamente | La incorporación oficial requiere aprobación expresa del Founder |
+| Sistema ADR | Consolidado | `ADR-016` a `ADR-040` aprobados definitivamente |
+| MVA | Pendiente | Misión v.5 no iniciada ni consolidada |
+| Implementación | No autorizada como fase oficial | Existe un scaffold experimental que no altera este estado |
+| Preparación del repositorio | En curso | La integración material será realizada por el Founder |
 | Automatización arquitectónica | Pendiente | Se definirá en fases posteriores |
 | Validación sistémica | Candidata futura | Fuera del alcance del Ciclo 1 |
 
 ## 5.3 Último hito consolidado
 
-**Hito:** Finalización de la Arquitectura de Contratos del Ciclo 1.  
-**Resultado:** Aprobada como línea base normativa.  
-**Misión:** V0.3.  
+**Hito:** Consolidación normativa del sistema ADR.  
+**Resultado:** `ADR-016` a `ADR-040` aprobados definitivamente; DOC-002, DOC-013 y DOC-015 normalizados; verificación transversal concluida sin hallazgos materiales.  
 **Estado:** Concluida.
 
 ## 5.4 Próxima decisión estratégica
 
-Determinar el siguiente paso entre:
+Completar las correcciones institucionales y estructurales necesarias para una incorporación segura al repositorio oficial.
 
-- consolidar la Arquitectura Física del Repositorio;
-- formalizar el sistema ADR;
-- preparar la MVA;
-- realizar primero una integración documental de V0.2 y V0.3;
-- ejecutar una revisión de dependencias antes de continuar.
+La incorporación será realizada manualmente por el Founder y no modifica por sí misma el estado histórico de las decisiones o misiones ya evaluadas.
 
-La decisión deberá respetar el orden de dependencias aprobado por Dirección Técnica.
+La definición de la MVA permanecerá pendiente hasta que el Founder autorice el inicio de la misión correspondiente.
 
 ---
 
@@ -549,115 +556,47 @@ No constituye normativa arquitectónica salvo resolución expresa.
 
 ## 10.3 Ubicación actual
 
-Ruta recomendada:
+Ubicación material vigente:
 
 ```text
 docs/
 └── notas_internas/
     ├── 00_ESTADO_DEL_PROYECTO.md
-    ├── 01_MAPA_DE_INTEGRACIÓN_DOCUMENTAL.md
-    ├── 02_INFORME_DE_INTEGRACIÓN_TÉCNICA_v1.md
-    ├── 03_EVOLUCIÓN_DEL_MANUAL.md
-    ├── 04_DECISIONES_PENDIENTES.md
-    ├── 05_IDEAS.md
-    └── 06_OBSERVACIONES.md
+    ├── 01_EVOLUCIÓN_DEL_MANUAL.md
+    ├── 02_MAPA_DE_INTEGRACIÓN_DOCUMENTAL.md
+    ├── 03_INFORME_DE_INTEGRACIÓN_TÉCNICA.md
+    ├── 04_IDEAS.md
+    ├── 05_DECISIONES_PENDIENTES.md
+    ├── 06_OBSERVACIONES.md
+    ├── 07_ACTA_DE_APROBACIÓN_ARQUITECTÓNICA.md
+    ├── 08_CARTA_FUNDACIONAL_DE_GEOMOTION_STUDIO.md
+    ├── 09_CONTEXTO_MAESTRO_DIRECCIÓN_TÉCNICA.md
+    ├── 10_CONTEXTO_OPERATIVO_DT.md
+    └── 11_PROTOCOLO_OPERATIVO_DT.md
 ```
 
-La numeración podrá ajustarse, pero deberá preservar un orden estable y comprensible.
+Esta relación representa el inventario material existente. No constituye autorización para renombrar, mover o sustituir documentos.
 
 ---
 
 # 11. Estado de los documentos internos existentes
 
-## 11.1 INT-000 — Estado del Proyecto
+| Código | Nombre oficial | Estado material | Función o situación vigente |
+|---|---|---|---|
+| INT-000 | Estado del Proyecto | Activo | Registro institucional vivo del estado consolidado |
+| INT-001 | Evolución Manual | Activo | Registro de recomendaciones documentales no urgentes |
+| INT-002 | Mapa de Integración Documental | Activo | Mapa auxiliar del ecosistema documental |
+| INT-003 | Informe de Integración Técnica | Histórico | Conserva IT-001 como evidencia de una integración finalizada; no describe permanentemente el estado actual |
+| INT-004 | Ideas | Activo | Registro válido; actualmente no contiene ideas |
+| INT-005 | Decisiones Pendientes | Activo | Registro válido; actualmente no contiene decisiones pendientes |
+| INT-006 | Observaciones | Activo | Registro válido; actualmente no contiene observaciones |
+| INT-007 | Actas de Aprobación Arquitectónica | Activo | Conserva ACTA-001; su futura armonización deberá distinguir aprobación técnica de incorporación institucional |
+| INT-008 | Carta Fundacional de GeoMotion Studio | Activo | Fuente institucional superior sobre identidad, autoridad del Founder e incorporación oficial |
+| INT-009 | Contexto Maestro Dirección Técnica | Activo | Define identidad, responsabilidades y límites de Dirección Técnica |
+| INT-010 | Contexto Operativo del Director Técnico | Activo | Define la organización operativa del trabajo |
+| INT-011 | Protocolo Operativo de Ejecución del Director Técnico | Activo | Define procedimientos, controles y validaciones de ejecución |
 
-**Estado:** Activo.  
-**Función:** Fuente institucional sobre el estado consolidado del proyecto.  
-**Acción:** Mantener y actualizar por hitos.
-
-## 11.2 INT-001 — Nota Interna Evolución Manual
-
-**Estado actual:** Activo.  
-**Contenido conocido:** Registra recomendaciones estructurales futuras del Manual que no requieren acción inmediata.  
-**Valor:** Alto.  
-**Recomendación:** Conservar.
-
-Nombre recomendado:
-
-```text
-03_EVOLUCIÓN_DEL_MANUAL.md
-```
-
-El nombre puede simplificarse porque la ubicación ya indica que se trata de una nota interna.
-
-## 11.3 INT-002 — Mapa de Integración Documental
-
-**Estado:** Activo.  
-**Valor:** Alto.  
-**Función:** Define organización documental y relaciones entre niveles.  
-**Recomendación:** Conservar y actualizar cuando cambie la estructura documental.
-
-## 11.4 INT-003 — Informe de Integración Técnica v1
-
-**Estado:** Activo.  
-**Valor:** Medio o alto según vigencia.  
-**Función:** Registrar una ronda específica de integración.  
-**Recomendación:** Conservar como evidencia histórica.
-
-Cuando existan múltiples informes:
-
-```text
-informes_integración/
-├── INFORME_DE_INTEGRACIÓN_TÉCNICA_v1.md
-├── INFORME_DE_INTEGRACIÓN_TÉCNICA_v2.md
-└── ...
-```
-
-No deberá sobrescribirse un informe histórico.
-
-## 11.5 INT-004 — Ideas
-
-**Estado:** Activo, pero actualmente vacío o casi vacío.  
-**Valor potencial:** Medio.  
-**Riesgo:** Convertirse en depósito informal sin gobierno.  
-**Recomendación:** Conservar únicamente si se define una estructura mínima.
-
-Toda idea deberá incluir:
-
-- identificador;
-- título;
-- origen;
-- descripción;
-- justificación;
-- estado;
-- relación con el proyecto;
-- decisión futura;
-- fecha.
-
-Si permanece vacío durante varios ciclos y no se utiliza, podrá retirarse.
-
-## 11.6 INT-005 — Decisiones Pendientes
-
-**Estado:** Activo, pero actualmente vacío o casi vacío.  
-**Valor potencial:** Alto.  
-**Recomendación:** Conservar.
-
-Debe funcionar como cola temporal anterior a los ADR o como registro de decisiones aún no resueltas.
-
-No debe contener decisiones ya aprobadas.
-
-## 11.7 INT-006 — Observaciones
-
-**Estado:** Activo, pero actualmente vacío o casi vacío.  
-**Valor potencial:** Bajo si no se define su alcance.  
-**Riesgo:** Duplicar Ideas, Evolución del Manual o Decisiones Pendientes.  
-**Recomendación:** Mantener provisionalmente.
-
-Definición recomendada:
-
-> Observaciones registra hallazgos de Dirección Técnica que requieren seguimiento, pero que todavía no constituyen una idea, una decisión pendiente, un riesgo ni una propuesta de evolución.
-
-Si no puede sostener una responsabilidad única, deberá fusionarse o retirarse.
+INT-003 deberá conservarse como documento histórico. Su contenido representa el estado de la integración IT-001 en el momento de su emisión y no deberá utilizarse como descripción del estado vigente del proyecto.
 
 ---
 
@@ -685,15 +624,27 @@ Un documento deberá eliminarse, archivarse o fusionarse cuando:
 
 ---
 
-# 13. Manual de Ingeniería
+# 13. Manual de Ingeniería e inventario documental
 
 ## 13.1 Estado general
 
 El Manual de Ingeniería constituye la referencia arquitectónica vigente del proyecto.
 
-Dispone de una base amplia de documentos oficiales.
+El inventario material verificado comprende:
 
-El número exacto, estado y versión de cada documento deberá mantenerse en un inventario específico.
+| Conjunto | Cantidad | Alcance |
+|---|---:|---|
+| Documentos codificados del Manual | 19 | `DOC-000` a `DOC-018` |
+| Archivos auxiliares del Manual | 2 | `README.md` e `ÍNDICE.md` |
+| ADR independientes | 25 | `ADR-016` a `ADR-040` |
+| Documentos internos | 12 | `INT-000` a `INT-011` |
+| Documentación general bajo `docs/` | 2 | `README.md` y `GUÍA_EDITORIAL.md` |
+| Documentos Markdown en la raíz | 3 | `README.md`, `CHANGELOG.md` y `VALORES.md` |
+| Documentación de aplicación | 1 | `apps/web/README.md` |
+
+La copia local contiene 64 archivos Markdown y 100 archivos pertenecientes al proyecto al excluir `.git/` y `apps/web/node_modules/`.
+
+`docs/README.md` todavía declara que el Manual contiene 18 documentos. El inventario material demuestra la existencia de 19 documentos codificados; esta discrepancia permanece fuera del alcance de la presente actualización de INT-000.
 
 ## 13.2 Estado institucional
 
@@ -701,32 +652,31 @@ El número exacto, estado y versión de cada documento deberá mantenerse en un 
 |---|---|
 | Existencia del Manual | Confirmada |
 | Autoridad arquitectónica | Vigente |
-| Consolidación completa | Pendiente |
-| Integración documental | En progreso |
-| Revisión editorial global | Pendiente |
-| Trazabilidad con ADR | Pendiente |
-| Alineación con V0.2 | Parcialmente consolidada |
-| Alineación con V0.3 | Pendiente de integración editorial |
+| Secuencia documental | Completa entre `DOC-000` y `DOC-018` |
+| Versiones declaradas | 1.0 |
+| Estados declarados | Publicado |
+| Inventario material | Verificado |
+| Sistema ADR | Consolidado |
+| Trazabilidad ADR de DOC-002 | Normalizada y validada |
+| Trazabilidad ADR de DOC-013 | Normalizada y validada |
+| Matriz ilustrativa de DOC-015 | Normalizada y validada |
+| Evaluación de versionado de DOC-002, DOC-013 y DOC-015 | Pendiente de resolución conforme a DOC-018 y al hallazgo HI-08 |
+| Revisión editorial global del Manual | No concluida por la misión ADR |
+| Incorporación al repositorio oficial | Pendiente de ejecución por el Founder |
 
-## 13.3 Principio documental rector
+## 13.3 Evidencia de las normalizaciones aprobadas
+
+| Documento | Resultado |
+|---|---|
+| DOC-002 | Quince decisiones vinculadas con `ADR-016` a `ADR-030` |
+| DOC-013 | Diez decisiones vinculadas con `ADR-031` a `ADR-040` |
+| DOC-015 | Matriz del Anexo F preservada como ilustrativa y sin asociaciones ADR ambiguas |
+
+## 13.4 Principio documental rector
 
 > El modelo arquitectónico constituye el conocimiento principal; inventarios y catálogos son evidencia de su aplicación, no su propósito.
 
-## 13.4 Próxima necesidad
-
-Preparar un inventario de todos los documentos oficiales con:
-
-- código;
-- nombre;
-- versión;
-- estado;
-- propietario;
-- autoridad;
-- dependencias;
-- fecha de última revisión;
-- especialista relacionado;
-- línea base;
-- observaciones.
+El inventario deberá actualizarse cuando se incorporen, retiren o reclasifiquen documentos. No sustituye al contenido ni a la autoridad de cada documento.
 
 ---
 
@@ -736,15 +686,15 @@ Preparar un inventario de todos los documentos oficiales con:
 
 | Misión | Área | Estado | Resultado |
 |---|---|---|---|
-| V0.1 | Arquitectura Física del Repositorio | Pendiente de consolidación | No cerrado |
-| V0.2 | Arquitectura Modular | Concluida | Aprobada |
-| V0.3 | Arquitectura de Contratos | Concluida | Aprobada |
-| V0.4 | Sistema ADR | Pendiente | No iniciado o no consolidado |
-| V0.5 | Minimum Viable Architecture | Pendiente | No iniciado o no consolidado |
+| v.1 | Arquitectura Física del Repositorio | Concluida técnicamente | Aprobación técnica vigente; incorporación oficial pendiente del Founder |
+| v.2 | Arquitectura Modular | Concluida | Línea base aprobada |
+| v.3 | Arquitectura de Contratos | Concluida | Línea base normativa aprobada |
+| v.4 | Sistema ADR | Concluida | Sistema consolidado y `ADR-016` a `ADR-040` aprobados definitivamente |
+| v.5 | Minimum Viable Architecture | Pendiente | No iniciada ni consolidada |
 
 ---
 
-# 15. Misión V0.1 — Arquitectura Física del Repositorio
+# 15. Misión v.1 — Arquitectura Física del Repositorio
 
 ## 15.1 Propósito
 
@@ -792,18 +742,24 @@ Por tanto, depende de:
 
 ## 15.5 Estado actual
 
-**Estado:** Pendiente de consolidación.
+**Estado técnico:** Concluida.
+
+La evaluación arquitectónica realizada por Dirección Técnica mantiene su validez como aprobación técnica de la Arquitectura Física del Repositorio.
+
+**Estado institucional:** Pendiente de incorporación oficial.
+
+La aprobación técnica no constituye por sí misma una incorporación al proyecto oficial. Dicha incorporación requiere aprobación expresa del Founder conforme a INT-008.
+
+ACTA-001 conserva valor como evidencia de la evaluación técnica realizada, sin desplazar la autoridad institucional del Founder.
 
 ## 15.6 Próxima acción
 
-Reactivar o iniciar formalmente V0.1 utilizando como insumos:
+Armonizar, en una intervención posterior y expresamente autorizada, el registro de aprobación de INT-007 con el modelo de doble nivel:
 
-- Arquitectura Modular aprobada;
-- Arquitectura de Contratos aprobada;
-- estructura actual del repositorio;
-- Manual de Ingeniería;
-- Mapa de Integración Documental;
-- reglas de crecimiento.
+1. aprobación técnica de Dirección Técnica;
+2. aprobación institucional del Founder para la incorporación oficial.
+
+No corresponde reiniciar la misión v.1 ni repetir su evaluación técnica.
 
 ## 15.7 Riesgo principal
 
@@ -817,7 +773,7 @@ Definir una estructura física antes de consolidar dependencias podría:
 
 ---
 
-# 16. Misión V0.2 — Arquitectura Modular
+# 16. Misión v.2 — Arquitectura Modular
 
 ## 16.1 Estado
 
@@ -833,7 +789,7 @@ La misión no tenía como objetivo rediseñar la arquitectura modular desde cero
 
 ## 16.3 Resultado general
 
-V0.2 entregó una arquitectura modular consolidada capaz de servir como base para:
+v.2 entregó una arquitectura modular consolidada capaz de servir como base para:
 
 - contratos;
 - arquitectura física;
@@ -866,7 +822,7 @@ Conclusiones:
 - mantuvo el enfoque Architecture First;
 - evitó convertir carpetas o tecnologías en arquitectura;
 - mantuvo responsabilidades separadas;
-- proporcionó una base suficiente para V0.3;
+- proporcionó una base suficiente para v.3;
 - identificó decisiones aún no maduras;
 - no presentó contradicciones críticas;
 - fue aceptada como línea base.
@@ -886,19 +842,20 @@ Estas cuestiones no invalidaron la línea base modular.
 
 ## 16.7 Relación con otras misiones
 
-V0.2 es insumo directo para:
+v.2 es insumo directo para:
 
-- V0.3 — Arquitectura de Contratos;
-- V0.1 — Arquitectura Física;
-- V0.4 — ADR;
-- V0.5 — MVA.
+- v.3 — Arquitectura de Contratos;
+- v.1 — Arquitectura Física;
+- v.4 — ADR;
+- v.5 — MVA.
 
 ## 16.8 Estado de integración
 
 - Aprobada conceptualmente.
-- Utilizada como Anexo A para V0.3.
-- Pendiente de integración editorial total dentro del Manual de Ingeniería.
-- Pendiente de formalización de decisiones mediante ADR cuando corresponda.
+- Utilizada como Anexo A para v.3.
+- La integración editorial total de los resultados de v.2 permanece registrada como deuda documental.
+- La formalización ADR correspondiente al conjunto evaluado se encuentra concluida mediante `ADR-016` a `ADR-040`.
+- La conclusión de la formalización ADR no implica por sí misma el cierre de toda integración editorial pendiente de v.2.
 
 ## 16.9 Documento derivado
 
@@ -906,7 +863,7 @@ Se preparó:
 
 > **Anexo A — Arquitectura Modular Consolidada**
 
-El Anexo A sirvió como referencia contractual para V0.3.
+El Anexo A sirvió como referencia contractual para v.3.
 
 ## 16.10 Lecciones aprendidas
 
@@ -918,7 +875,7 @@ El Anexo A sirvió como referencia contractual para V0.3.
 
 ---
 
-# 17. Misión V0.3 — Arquitectura de Contratos
+# 17. Misión v.3 — Arquitectura de Contratos
 
 ## 17.1 Estado
 
@@ -931,7 +888,7 @@ Definir el sistema arquitectónico mediante el cual los módulos de GeoMotion St
 
 ## 17.3 Dependencia principal
 
-V0.3 dependía de la Arquitectura Modular consolidada.
+v.3 dependía de la Arquitectura Modular consolidada.
 
 Inicialmente el especialista indicó correctamente que no podía derivar contratos concretos sin disponer de dicha arquitectura.
 
@@ -972,7 +929,7 @@ La misión se organizó en ocho partes:
 
 ---
 
-# 18. V0.3 — Parte I: Fundamentos
+# 18. v.3 — Parte I: Fundamentos
 
 ## 18.1 Estado
 
@@ -1013,7 +970,7 @@ La sección cumplía su objetivo y no presentaba inconsistencias.
 
 ---
 
-# 19. V0.3 — Parte II: Modelo Contractual
+# 19. v.3 — Parte II: Modelo Contractual
 
 ## 19.1 Estado
 
@@ -1101,7 +1058,7 @@ Dirección Técnica registró este principio como candidato consolidado.
 
 ---
 
-# 20. V0.3 — Parte III: Taxonomía Oficial
+# 20. v.3 — Parte III: Taxonomía Oficial
 
 ## 20.1 Estado
 
@@ -1160,7 +1117,7 @@ Dirección Técnica aceptó la taxonomía y registró la categoría raíz como p
 
 ---
 
-# 21. V0.3 — Parte IV: Reglas Arquitectónicas
+# 21. v.3 — Parte IV: Reglas Arquitectónicas
 
 ## 21.1 Estado
 
@@ -1245,7 +1202,7 @@ Dirección Técnica decidió no incorporarla todavía, pero la registró para co
 
 ---
 
-# 22. V0.3 — Parte V: Catálogo Inicial
+# 22. v.3 — Parte V: Catálogo Inicial
 
 ## 22.1 Estado
 
@@ -1294,7 +1251,7 @@ Dirección Técnica registró la propuesta como cuestión futura de gobernanza d
 
 ---
 
-# 23. V0.3 — Parte VI: Validaciones Arquitectónicas
+# 23. v.3 — Parte VI: Validaciones Arquitectónicas
 
 ## 23.1 Estado
 
@@ -1353,7 +1310,7 @@ Esta permitiría analizar:
 
 ---
 
-# 24. V0.3 — Parte VII: Riesgos Arquitectónicos
+# 24. v.3 — Parte VII: Riesgos Arquitectónicos
 
 ## 24.1 Estado
 
@@ -1386,7 +1343,7 @@ La sostenibilidad depende más de la disciplina de gobernanza que del crecimient
 
 ---
 
-# 25. V0.3 — Parte VIII: Consolidación y Conclusiones
+# 25. v.3 — Parte VIII: Consolidación y Conclusiones
 
 ## 25.1 Estado
 
@@ -1423,13 +1380,13 @@ La Arquitectura de Contratos:
 Dirección Técnica declaró:
 
 - Parte VIII aprobada;
-- misión V0.3 concluida;
+- misión v.3 concluida;
 - documento preparado para integración editorial;
 - evoluciones futuras registradas sin alterar la línea base.
 
 ---
 
-# 26. Evaluación integral de V0.3
+# 26. Evaluación integral de v.3
 
 ## 26.1 Resultado
 
@@ -1471,7 +1428,7 @@ GeoMotion Studio dispone ahora de:
 
 ---
 
-# 27. Misión V0.4 — Sistema ADR
+# 27. Misión v.4 — Sistema ADR
 
 ## 27.1 Propósito
 
@@ -1511,30 +1468,42 @@ No utilizar ADR para:
 
 ## 27.4 Estado actual
 
-**Pendiente.**
+**Estado:** Concluida.
 
-## 27.5 Dependencias
+## 27.5 Resultado
 
-V0.4 deberá tomar como insumo:
+La misión produjo y consolidó el sistema oficial de Architecture Decision Records.
 
-- decisiones surgidas de V0.2;
-- decisiones surgidas de V0.3;
-- estructura de gobierno;
-- Mapa de Integración Documental;
-- reglas de autoridad;
-- futuro orden del repositorio.
+Como parte de su ejecución:
 
-## 27.6 Riesgo
+- se inspeccionaron las decisiones arquitectónicas incrustadas en DOC-002 y DOC-013;
+- se preservaron `ADR-001` a `ADR-015` como referencias documentales heredadas;
+- se reservaron dichos identificadores para impedir su reutilización canónica;
+- se crearon `ADR-016` a `ADR-040` como registros independientes;
+- se normalizaron DOC-002 y DOC-013 mediante enlaces bidireccionales;
+- se eliminó de DOC-015 el uso ambiguo de identificadores ADR dentro de su matriz ilustrativa;
+- se realizó una revisión consolidada del sistema ADR;
+- se resolvieron H-02, H-04 y H-05;
+- H-06 y H-07 se cerraron sin modificaciones;
+- la verificación transversal final concluyó sin hallazgos materiales.
 
-Crear el sistema ADR demasiado pronto podría formalizar categorías aún inmaduras.
+`ADR-016` a `ADR-040` se encuentran aprobados definitivamente como línea base normativa consolidada.
 
-Crearlo demasiado tarde podría provocar pérdida de decisiones.
+## 27.6 Trazabilidad histórica
 
-El momento actual es adecuado para evaluar su inicio.
+Los riesgos originales de crear el sistema demasiado pronto o demasiado tarde se conservan como antecedentes de planificación.
+
+La normalización resolvió ambos riesgos mediante:
+
+- evaluación individual de las decisiones;
+- preservación de referencias heredadas;
+- secuencia canónica única iniciada en `ADR-016`;
+- formalización sin alteración del contenido técnico histórico;
+- revisión consolidada antes de actualizar los documentos de origen.
 
 ---
 
-# 28. Misión V0.5 — Minimum Viable Architecture
+# 28. Misión v.5 — Minimum Viable Architecture
 
 ## 28.1 Propósito
 
@@ -1583,7 +1552,7 @@ La MVA deberá apoyarse en:
 
 ## 28.6 Riesgo
 
-Iniciar V0.5 sin arquitectura física y sin gobierno de decisiones podría convertir la MVA en un plan de implementación prematuro.
+Iniciar v.5 sin arquitectura física y sin gobierno de decisiones podría convertir la MVA en un plan de implementación prematuro.
 
 ---
 
@@ -1591,54 +1560,65 @@ Iniciar V0.5 sin arquitectura física y sin gobierno de decisiones podría conve
 
 El orden de trabajo consolidado fue:
 
-1. Cerrar V0.2.
+1. Cerrar v.2.
 2. Aprobar Arquitectura Modular como línea base.
-3. Ejecutar V0.3.
-4. Ejecutar V0.1.
-5. Ejecutar V0.4.
-6. Ejecutar V0.5.
+3. Ejecutar v.3.
+4. Ejecutar v.1.
+5. Ejecutar v.4.
+6. Ejecutar v.5.
 
 ## 29.1 Estado respecto al plan
 
 - Paso 1: completado.
 - Paso 2: completado.
 - Paso 3: completado.
-- Paso 4: pendiente.
-- Paso 5: pendiente.
+- Paso 4: completado en su evaluación técnica; incorporación institucional pendiente.
+- Paso 5: completado.
 - Paso 6: pendiente.
 
 ## 29.2 Próxima acción recomendada
 
-La siguiente misión natural es V0.1 — Arquitectura Física del Repositorio.
+Completar la preparación institucional y material previa a la integración del estado local en el repositorio oficial.
 
-Antes de iniciarla, Dirección Técnica deberá:
-
-- consolidar los insumos;
-- verificar el árbol actual;
-- entregar Arquitectura Modular;
-- entregar reglas contractuales relevantes;
-- definir claramente qué no debe diseñar;
-- mantener la estructura física subordinada a la lógica.
+Una vez resueltos los bloqueos de integración y realizada la incorporación por el Founder, podrá evaluarse el inicio de v.5 — Minimum Viable Architecture.
 
 ---
 
-# 30. Líneas base vigentes
+# 30. Líneas base y resultados consolidados
 
 ## 30.1 Arquitectura Modular
 
 **Estado:** Aprobada.  
 **Ciclo:** Ciclo 1.  
-**Autoridad:** Dirección Técnica.  
 **Uso:** Base para contratos, repositorio, ADR y MVA.
 
 ## 30.2 Arquitectura de Contratos
 
 **Estado:** Aprobada.  
 **Ciclo:** Ciclo 1.  
-**Autoridad:** Dirección Técnica.  
 **Uso:** Base normativa para colaboración entre módulos.
 
-## 30.3 Estado del Proyecto
+## 30.3 Arquitectura Física del Repositorio
+
+**Estado técnico:** Aprobada por Dirección Técnica.  
+**Estado institucional:** Pendiente de incorporación oficial por el Founder.  
+**Uso:** Referencia técnica evaluada para la estructura física.
+
+## 30.4 Sistema ADR
+
+**Estado:** Consolidado.  
+**Registros:** `ADR-016` a `ADR-040`.  
+**Autoridad:** DOC-014 y cada ADR independiente.  
+**Resultado:** Línea base normativa aprobada definitivamente.
+
+## 30.5 Normalización documental ADR
+
+**Estado:** Aprobada en la copia local.  
+**Documentos:** DOC-002, DOC-013 y DOC-015.  
+**Resultado:** Trazabilidad bidireccional validada y ausencia de referencias heredadas ambiguas.  
+**Incorporación al repositorio oficial:** Pendiente de ejecución por el Founder.
+
+## 30.6 Estado del Proyecto
 
 **Estado:** Activo.  
 **Naturaleza:** Registro institucional.  
@@ -1680,84 +1660,84 @@ Antes de iniciarla, Dirección Técnica deberá:
 ## PA-005 — Los modelos prevalecen sobre los inventarios
 
 **Estado:** Vigente.  
-**Origen:** Revisión de V0.3.  
+**Origen:** Revisión de v.3.  
 **Descripción:** El modelo arquitectónico es el conocimiento principal; catálogos e inventarios demuestran su aplicación.  
 **Impacto:** Contratos, módulos, repositorio y MVA.
 
 ## PA-006 — Un contrato no es una API
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** La API es una posible materialización técnica; el contrato es una especificación arquitectónica.  
 **Impacto:** Contratos y especificaciones.
 
 ## PA-007 — Un contrato no es un mecanismo de transporte
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** Protocolos y transportes no definen la naturaleza del contrato.  
 **Impacto:** Integración futura.
 
 ## PA-008 — Propiedad contractual única
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** Todo contrato pertenece al módulo propietario de la capacidad.  
 **Impacto:** Gobierno y evolución.
 
 ## PA-009 — Dependencia sobre contrato
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** El consumidor depende de las garantías públicas, no de la organización interna del proveedor.  
 **Impacto:** Encapsulamiento.
 
 ## PA-010 — Invariancia contractual
 
 **Estado:** Vigente como principio consolidado.  
-**Origen:** V0.3 Parte II.  
+**Origen:** v.3 Parte II.  
 **Descripción:** La evolución interna no implica automáticamente evolución contractual.  
 **Impacto:** Compatibilidad y autonomía modular.
 
 ## PA-011 — Contrato de Capacidad como raíz
 
 **Estado:** Vigente.  
-**Origen:** V0.3 Parte III.  
+**Origen:** v.3 Parte III.  
 **Descripción:** Toda colaboración contractual representa una capacidad expuesta.  
 **Impacto:** Taxonomía.
 
 ## PA-012 — El contrato no modifica la Arquitectura Modular
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** El contrato materializa colaboraciones autorizadas, no crea nuevas dependencias.  
 **Impacto:** Fronteras.
 
 ## PA-013 — Mínima exposición
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** Solo se publica la información imprescindible.  
 **Impacto:** Acoplamiento.
 
 ## PA-014 — Independencia tecnológica contractual
 
 **Estado:** Vigente.  
-**Origen:** V0.3.  
+**Origen:** v.3.  
 **Descripción:** La definición arquitectónica no depende de tecnologías.  
 **Impacto:** Longevidad del modelo.
 
 ## PA-015 — Validación arquitectónica previa
 
 **Estado:** Vigente.  
-**Origen:** V0.3 Parte VI.  
+**Origen:** v.3 Parte VI.  
 **Descripción:** La conformidad arquitectónica precede a la implementación.  
 **Impacto:** Flujo de aprobación.
 
 ## PA-016 — Gobernanza sobre expansión normativa
 
 **Estado:** Principio orientador.  
-**Origen:** V0.3 Parte VII.  
+**Origen:** v.3 Parte VII.  
 **Descripción:** La sostenibilidad depende más del cumplimiento consistente que de añadir reglas.  
 **Impacto:** Gobierno.
 
@@ -1771,7 +1751,7 @@ Antes de iniciarla, Dirección Técnica deberá:
 ## PA-018 — La estructura física refleja la arquitectura
 
 **Estado:** Vigente.  
-**Origen:** Misión V0.1.  
+**Origen:** Misión v.1.  
 **Descripción:** Las carpetas no definen por sí mismas la arquitectura.  
 **Impacto:** Monorepo.
 
@@ -1797,17 +1777,17 @@ Antes de iniciarla, Dirección Técnica deberá:
 ## DC-004 — Arquitectura Modular como dependencia de Contratos
 
 **Estado:** Aprobada.  
-**Impacto:** V0.2 y V0.3.
+**Impacto:** v.2 y v.3.
 
 ## DC-005 — Modelo contractual como entregable principal
 
 **Estado:** Aprobada.  
-**Impacto:** V0.3.
+**Impacto:** v.3.
 
 ## DC-006 — Catálogo no exhaustivo
 
 **Estado:** Aprobada.  
-**Impacto:** V0.3 Parte V.
+**Impacto:** v.3 Parte V.
 
 ## DC-007 — No iniciar implementación significativa
 
@@ -1823,76 +1803,109 @@ Antes de iniciarla, Dirección Técnica deberá:
 
 # 33. Decisiones pendientes
 
-Las decisiones pendientes deberán registrarse también en `DECISIONES_PENDIENTES.md`.
+## 33.1 Situación vigente del registro
+
+Las entradas DP-001 a DP-010 se conservan como inventario histórico de cuestiones registradas en la versión 1.0.0 de INT-000.
+
+La fuente operativa vigente para decisiones pendientes es INT-005, que actualmente declara:
+
+> Actualmente no existen decisiones pendientes registradas.
+
+La ausencia de una entrada en INT-005 no demuestra por sí misma que cada cuestión histórica haya sido resuelta. Cuando no existe una resolución individual verificable, INT-000 deberá declararlo expresamente en lugar de reconstruirla.
+
+| Entrada histórica | Situación vigente verificable |
+|---|---|
+| DP-001 · Propiedad documental | No consta como decisión pendiente activa en INT-005. No consta una resolución individual de cierre en la documentación inspeccionada. |
+| DP-002 · Propiedad de recursos | No consta como decisión pendiente activa. ADR-022 y ADR-023 tratan Assets, pero no existe evidencia suficiente para declarar equivalencia completa con la pregunta histórica. |
+| DP-003 · Capacidades opcionales | No consta como decisión pendiente activa. ADR-031 a ADR-040 aportan decisiones relacionadas con extensibilidad, sin documentar expresamente el cierre individual de DP-003. |
+| DP-004 · Extensibilidad | La materia arquitectónica se encuentra formalizada mediante ADR-031 a ADR-040. No existe una resolución separada de cierre de la entrada histórica. |
+| DP-005 · Temporalidad | La responsabilidad temporal central se encuentra formalizada mediante ADR-024. No existe una resolución separada de cierre de la entrada histórica. |
+| DP-006 · Animación | No consta como decisión pendiente activa ni como ADR independiente. Tampoco consta una resolución individual de cierre. |
+| DP-007 · Familias de reglas contractuales | Conservada como evolución candidata, no como decisión pendiente activa. |
+| DP-008 · Catálogo y Registro Operativo | Conservada como evolución candidata, no como decisión pendiente activa. |
+| DP-009 · Validación sistémica | Conservada como evolución candidata, no como decisión pendiente activa. |
+| DP-010 · Orden inmediato de la siguiente misión | Resuelta por la ejecución de v.1 y v.4 conforme al orden de dependencias. |
+
+Si alguna de las cuestiones sin cierre verificable vuelve a requerir resolución, deberá registrarse en INT-005 con su contexto vigente. No se reactivará automáticamente la entrada histórica.
 
 ## DP-001 — Propiedad documental
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Cómo se asignará propiedad a documentos oficiales y derivados?  
 **Impacto:** Manual, contratos, ADR y mantenimiento.
 
 ## DP-002 — Propiedad de recursos
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Cómo se gobiernan recursos compartidos y especializados?  
 **Impacto:** Arquitectura Modular y Física.
 
 ## DP-003 — Capacidades opcionales
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Cómo se representan capacidades no siempre presentes?  
 **Impacto:** Extensibilidad y MVA.
 
 ## DP-004 — Extensibilidad
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Qué modelo oficial gobernará extensiones futuras?  
 **Impacto:** Módulos, contratos y plugins.
 
 ## DP-005 — Temporalidad
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Dónde reside la responsabilidad temporal?  
 **Impacto:** Dominio, animación y reproducción.
 
 ## DP-006 — Animación
 
-**Origen:** V0.2.  
-**Estado:** Pendiente.  
+**Origen:** v.2.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** Véase §33.1; no consta como decisión pendiente activa.  
 **Pregunta:** ¿Cómo se modelará sin contaminar responsabilidades?  
 **Impacto:** Capacidades especializadas.
 
 ## DP-007 — Familias de reglas contractuales
 
-**Origen:** V0.3.  
-**Estado:** Candidata, no urgente.  
+**Origen:** v.3.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** No consta como decisión pendiente activa; se conserva como evolución candidata.  
 **Pregunta:** ¿Conviene explicitar reglas estructurales y evolutivas?  
 **Impacto:** Claridad documental.
 
 ## DP-008 — Catálogo y Registro Operativo
 
-**Origen:** V0.3.  
-**Estado:** Candidata futura.  
+**Origen:** v.3.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** No consta como decisión pendiente activa; se conserva como evolución candidata.  
 **Pregunta:** ¿Debe separarse el catálogo normativo del inventario de contratos implementados?  
 **Impacto:** Gobierno documental y desarrollo.
 
 ## DP-009 — Validación sistémica
 
-**Origen:** V0.3.  
-**Estado:** Candidata futura.  
+**Origen:** v.3.  
+**Estado histórico en INT-000 1.0.0:** Pendiente.  
+**Estado vigente:** No consta como decisión pendiente activa; se conserva como evolución candidata.  
 **Pregunta:** ¿Cuándo incorporar validaciones del ecosistema completo?  
 **Impacto:** Escalabilidad de gobierno.
 
 ## DP-010 — Orden inmediato de la siguiente misión
 
 **Origen:** Dirección Técnica.  
-**Estado:** Pendiente de resolución.  
-**Pregunta:** ¿Se inicia V0.1 directamente o se realiza una integración editorial previa?  
+**Estado histórico en INT-000 1.0.0:** Pendiente de resolución.  
+**Estado vigente:** Resuelta por la secuencia de misiones ejecutada.  
+**Pregunta:** ¿Se inicia v.1 directamente o se realiza una integración editorial previa?  
 **Impacto:** Plan próximo.
 
 ---
@@ -1999,7 +2012,7 @@ No pertenece al Ciclo 1.
 
 ## RE-005 — Arquitectura por carpetas
 
-**Probabilidad:** Media durante V0.1.  
+**Probabilidad:** Media durante v.1.  
 **Impacto:** Alto.  
 **Mitigación:** Subordinar estructura física a arquitectura lógica.
 
@@ -2019,53 +2032,35 @@ No pertenece al Ciclo 1.
 
 **Probabilidad:** Baja o media.  
 **Impacto:** Medio.  
-**Mitigación:** Diseñar primero el sistema oficial.
+**Mitigación:** Diseñar primero el sistema oficial.  
+**Estado actual:** Controlado. La formalización se realizó mediante evaluación individual y revisión consolidada, sin alterar decisiones históricas.
 
 ## RE-009 — Retraso del sistema ADR
 
 **Probabilidad:** Media.  
 **Impacto:** Alto.  
-**Mitigación:** Iniciar V0.4 después de V0.1 o cuando DT lo determine.
+**Mitigación:** Iniciar v.4 después de v.1 o cuando DT lo determine.  
+**Estado actual:** Cerrado como riesgo de transición. El sistema ADR se encuentra vigente y consolidado.
 
 ## RE-010 — Catálogo contractual exhaustivo
 
-**Probabilidad:** Baja tras V0.3.  
+**Probabilidad:** Baja tras v.3.  
 **Impacto:** Medio.  
 **Mitigación:** Mantener catálogo demostrativo.
 
 ---
 
-# 36. Deuda arquitectónica reconocida
+# 36. Deuda arquitectónica y documental reconocida
 
-## DA-001 — Integración editorial de V0.2
+| Deuda | Estado vigente | Evidencia |
+|---|---|---|
+| DA-001 · Integración editorial de v.2 | Abierta | La normalización ADR redujo parte de la deuda, pero no constituye evidencia de integración editorial total |
+| DA-002 · Integración editorial de v.3 | Abierta | No consta una consolidación editorial total posterior |
+| DA-003 · Formalización de decisiones | Resuelta | `ADR-016` a `ADR-040` aprobados; DOC-002, DOC-013 y DOC-015 normalizados |
+| DA-004 · Inventario completo del Manual | Resuelta para la copia material evaluada | Se verificaron 19 documentos codificados, más README e ÍNDICE |
+| DA-005 · Revisión de notas internas vacías | Resuelta | INT-004, INT-005 e INT-006 son registros activos sin entradas; INT-003 fue clasificado como Histórico |
 
-**Estado:** Abierta.  
-**Naturaleza:** Documental.  
-**Impacto:** Medio.
-
-## DA-002 — Integración editorial de V0.3
-
-**Estado:** Abierta.  
-**Naturaleza:** Documental.  
-**Impacto:** Medio.
-
-## DA-003 — Formalización de decisiones
-
-**Estado:** Abierta.  
-**Naturaleza:** Gobernanza.  
-**Impacto:** Alto.
-
-## DA-004 — Inventario completo del Manual
-
-**Estado:** Abierta.  
-**Naturaleza:** Documental.  
-**Impacto:** Medio.
-
-## DA-005 — Revisión de notas internas vacías
-
-**Estado:** Abierta.  
-**Naturaleza:** Gobierno documental.  
-**Impacto:** Bajo.
+El cierre de DA-003 a DA-005 no implica que se hayan resuelto inconsistencias externas a su alcance, como metadatos desactualizados en otros documentos o la incorporación pendiente al repositorio.
 
 ---
 
@@ -2092,18 +2087,18 @@ No pertenece al Ciclo 1.
 ## HITO-004 — Consolidación de Arquitectura Modular
 
 **Estado:** Completado.  
-**Misión:** V0.2.  
+**Misión:** v.2.  
 **Resultado:** Línea base aprobada.
 
 ## HITO-005 — Creación del Anexo A
 
 **Estado:** Completado.  
-**Resultado:** V0.3 recibe la Arquitectura Modular consolidada como insumo.
+**Resultado:** v.3 recibe la Arquitectura Modular consolidada como insumo.
 
 ## HITO-006 — Consolidación de Arquitectura de Contratos
 
 **Estado:** Completado.  
-**Misión:** V0.3.  
+**Misión:** v.3.  
 **Resultado:** Línea base normativa aprobada.
 
 ## HITO-007 — Creación del Estado del Proyecto
@@ -2113,11 +2108,14 @@ No pertenece al Ciclo 1.
 
 ## HITO-008 — Arquitectura Física
 
-**Estado:** Pendiente.
+**Estado:** Completado en su evaluación técnica.  
+**Resultado:** Aprobación técnica vigente de Dirección Técnica.  
+**Pendiente:** Incorporación oficial mediante aprobación expresa del Founder.
 
 ## HITO-009 — Sistema ADR
 
-**Estado:** Pendiente.
+**Estado:** Completado.  
+**Resultado:** Sistema oficial consolidado; `ADR-016` a `ADR-040` aprobados definitivamente; DOC-002, DOC-013 y DOC-015 normalizados.
 
 ## HITO-010 — MVA
 
@@ -2140,14 +2138,14 @@ No pertenece al Ciclo 1.
 
 ## Etapa 2 — Especialización
 
-- Se crean misiones V0.1 a V0.5.
+- Se crean misiones v.1 a v.5.
 - Se asignan responsabilidades.
 - Dirección Técnica actúa como integrador.
 - Se evita que especialistas sean autoridad final.
 
 ## Etapa 3 — Arquitectura Modular
 
-- Se desarrolla V0.2.
+- Se desarrolla v.2.
 - Se revisan entregas progresivas.
 - Se consolidan módulos, fronteras y dependencias.
 - Se aprueba la línea base modular.
@@ -2155,7 +2153,7 @@ No pertenece al Ciclo 1.
 
 ## Etapa 4 — Arquitectura de Contratos
 
-- V0.3 identifica dependencia de la Arquitectura Modular.
+- v.3 identifica dependencia de la Arquitectura Modular.
 - Dirección Técnica entrega Anexo A.
 - Se ajusta el foco hacia el modelo contractual.
 - Se aprueban ocho partes.
@@ -2169,14 +2167,24 @@ No pertenece al Ciclo 1.
 - Se decide crear `00_ESTADO_DEL_PROYECTO.md`.
 - Se establece un registro vivo por hitos.
 
-## Etapa 6 — Próxima fase
+## Etapa 6 — Arquitectura Física y sistema ADR
 
-Pendiente de decisión:
+- Se completa la evaluación técnica de la Arquitectura Física.
+- Dirección Técnica emite su aprobación técnica.
+- Se mantiene pendiente la incorporación institucional por el Founder.
+- Se diseña y consolida el sistema ADR.
+- Se formalizan `ADR-016` a `ADR-040`.
+- Se normalizan DOC-002, DOC-013 y DOC-015.
+- La revisión transversal concluye sin hallazgos materiales.
 
-- V0.1;
-- integración editorial;
-- V0.4;
-- V0.5.
+## Etapa 7 — Preparación para el repositorio oficial
+
+- Se realiza una evaluación integral de la copia local.
+- Se confirma la coherencia del sistema ADR y de sus enlaces.
+- Se identifica la desactualización de INT-000 como bloqueo institucional.
+- Se mantiene pendiente la armonización de INT-007 con el modelo de doble aprobación.
+- La incorporación material al repositorio permanece a cargo del Founder.
+- v.5 continúa pendiente.
 
 ---
 
@@ -2184,47 +2192,29 @@ Pendiente de decisión:
 
 ## Objetivo inmediato 1
 
-Aprobar y guardar este documento como fuente institucional.
+Resolver los bloqueos institucionales y estructurales aceptados durante la evaluación previa a la integración.
 
 ## Objetivo inmediato 2
 
-Revisar la numeración de `docs/notas_internas`.
+Armonizar INT-007 con la distinción entre aprobación técnica e incorporación institucional, mediante una propuesta separada y autorización previa.
 
 ## Objetivo inmediato 3
 
-Evaluar documentos internos vacíos:
-
-- Ideas;
-- Decisiones Pendientes;
-- Observaciones.
-
-## Objetivo inmediato 4
-
-Preparar el Context Package definitivo para V0.1.
-
-## Objetivo inmediato 5
-
-Cerrar la Arquitectura Física.
+Preparar el conjunto material aprobado para su integración manual por el Founder, verificando seguimiento por Git, rutas y exclusiones.
 
 ## Objetivo posterior 1
 
-Diseñar el sistema ADR.
+Evaluar el inicio de v.5 — Minimum Viable Architecture.
 
 ## Objetivo posterior 2
 
-Formalizar decisiones surgidas de V0.2 y V0.3.
-
-## Objetivo posterior 3
-
-Definir la MVA.
-
-## Objetivo posterior 4
-
-Preparar el inicio controlado de implementación.
+Preparar el inicio controlado de implementación cuando se cumplan las dependencias arquitectónicas y exista autorización institucional.
 
 ---
 
 # 40. Criterios para elegir el siguiente paso
+
+Los criterios de §40.1 y §40.2 se conservan como antecedentes de planificación. Las condiciones de inicio de v.1 y v.4 ya fueron satisfechas. §40.3 continúa vigente para la futura misión v.5.
 
 La siguiente misión deberá elegirse evaluando:
 
@@ -2237,7 +2227,7 @@ La siguiente misión deberá elegirse evaluando:
 - coste de retraso;
 - reversibilidad.
 
-## 40.1 Iniciar V0.1 cuando
+## 40.1 Iniciar v.1 cuando
 
 - Arquitectura Modular esté disponible;
 - Arquitectura de Contratos esté disponible;
@@ -2245,14 +2235,14 @@ La siguiente misión deberá elegirse evaluando:
 - las restricciones estén claras;
 - no se pretenda diseñar lógica mediante carpetas.
 
-## 40.2 Iniciar V0.4 cuando
+## 40.2 Iniciar v.4 cuando
 
 - exista suficiente material decisional;
 - se necesite formalizar decisiones;
 - la estructura de gobierno esté preparada;
 - el Manual pueda enlazar ADR.
 
-## 40.3 Iniciar V0.5 cuando
+## 40.3 Iniciar v.5 cuando
 
 - módulos, contratos y repositorio mínimo estén claros;
 - existan decisiones esenciales;
@@ -2261,68 +2251,53 @@ La siguiente misión deberá elegirse evaluando:
 
 ---
 
-# 41. Estado del repositorio
+# 41. Estado de la copia local y del repositorio
 
-## 41.1 Estructura observada
-
-La raíz contiene, entre otros:
+## 41.1 Estructura material observada
 
 ```text
-.github/
-apps/
-assets/
-docs/
-ejemplos/
-packages/
-scripts/
-CHANGELOG.md
-LICENSE
-README.md
-VALORES.md
+GeoMotionStudio/
+├── apps/
+│   └── web/
+├── docs/
+│   ├── adr/
+│   │   └── ADR-016.md ... ADR-040.md
+│   ├── ingeniería/
+│   ├── notas_internas/
+│   ├── GUÍA_EDITORIAL.md
+│   └── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+└── VALORES.md
 ```
 
-Dentro de `docs/` se observan:
+No se observaron directorios completamente vacíos en la copia evaluada.
 
-```text
-adr/
-ejemplos/
-imágenes/
-ingeniería/
-notas_internas/
-referencias/
-GUÍA_EDITORIAL.md
-README.md
-```
+`docs/adr/` forma parte efectiva de la estructura y contiene los 25 registros de la línea base ADR. Por tanto, ya no requiere un marcador destinado únicamente a conservar un directorio vacío.
 
-## 41.2 Estado
+## 41.2 Estado de incorporación
 
-La estructura actual constituye un punto de partida.
+La copia local contiene documentación y normalizaciones aprobadas que todavía deben incorporarse materialmente al repositorio oficial por el Founder.
 
-No debe considerarse todavía una arquitectura física consolidada.
+Durante la evaluación, `ADR-016` a `ADR-040` se encontraban presentes en la copia local pero no rastreados por Git. Su incorporación deberá incluir expresamente los 25 archivos.
+
+`apps/web/node_modules/` permanece ignorado y no deberá incorporarse al repositorio.
 
 ## 41.3 Restricción
 
-La presencia de carpetas no prueba:
+La presencia de carpetas o archivos no demuestra por sí sola conformidad arquitectónica, incorporación institucional ni autorización de implementación.
 
-- separación real;
-- propiedad;
-- límites;
-- dependencias;
-- encapsulamiento;
-- arquitectura.
+## 41.4 Criterio de integración
 
-## 41.4 Próxima evaluación
+Antes de considerar concluida la incorporación, deberá verificarse:
 
-V0.1 deberá determinar:
-
-- qué conservar;
-- qué renombrar;
-- qué mover;
-- qué crear;
-- qué prohibir;
-- cómo crecer;
-- cómo reflejar módulos;
-- cómo preservar documentación.
+- inclusión de los 25 ADR;
+- conservación de las versiones aprobadas de DOC-002, DOC-013 y DOC-015;
+- resolución de rutas inconsistentes que hayan sido aceptadas como hallazgos;
+- conservación de exclusiones de dependencias, cachés y resultados generados;
+- ausencia de secretos;
+- aprobación e integración manual por el Founder.
 
 ---
 
@@ -2330,19 +2305,23 @@ V0.1 deberá determinar:
 
 ## 42.1 Situación
 
-No se registra una implementación arquitectónicamente autorizada como fase activa.
+Existe un scaffold experimental bajo `apps/web/`.
+
+Su presencia no constituye una fase oficial de implementación significativa, no modifica el estado de las misiones arquitectónicas y no prueba conformidad completa con la arquitectura aprobada.
 
 ## 42.2 Criterio de inicio
 
-La implementación podrá comenzar cuando Dirección Técnica determine que existe:
+El inicio de una fase oficial de implementación requerirá:
 
 - arquitectura modular suficiente;
 - contratos suficientes;
-- arquitectura física mínima;
+- arquitectura física incorporada institucionalmente;
 - decisiones críticas resueltas;
 - MVA definida;
 - validación básica;
-- trazabilidad.
+- trazabilidad;
+- evaluación técnica de Dirección Técnica;
+- autorización expresa del Founder.
 
 ## 42.3 Regla
 
@@ -2354,17 +2333,21 @@ La existencia de código experimental no implica el inicio oficial de implementa
 
 ## 43.1 Validación arquitectónica contractual
 
-Definida conceptualmente en V0.3.
+Definida conceptualmente en v.3.
 
-## 43.2 Automatización
+## 43.2 Validación del sistema ADR
+
+Concluida sin hallazgos materiales pendientes. Se verificaron identificadores, referencias heredadas, enlaces bidireccionales y preservación del contenido histórico.
+
+## 43.3 Automatización
 
 Pendiente.
 
-## 43.3 Validación sistémica
+## 43.4 Validación sistémica
 
 Candidata futura.
 
-## 43.4 MVA
+## 43.5 MVA
 
 Pendiente.
 
@@ -2372,17 +2355,30 @@ Pendiente.
 
 # 44. Registro de preguntas abiertas
 
+Las preguntas siguientes se conservan por trazabilidad. Su situación vigente es:
+
+| Pregunta | Situación |
+|---|---|
+| PREG-001 | Resuelta mediante la secuencia ejecutada |
+| PREG-002 | Resuelta: v.1 fue evaluada antes de concluir la consolidación ADR |
+| PREG-003 | Resuelta mediante la evaluación y formalización de `ADR-016` a `ADR-040` |
+| PREG-004 | Parcialmente resuelta: DOC-002, DOC-013 y DOC-015 están normalizados; DA-001 y DA-002 permanecen abiertas |
+| PREG-005 | Resuelta: INT-004, INT-005 e INT-006 se conservan como registros activos sin entradas; INT-003 es Histórico |
+| PREG-006 | Abierta como evolución futura |
+| PREG-007 | Abierta como evolución futura |
+| PREG-008 | No consta una resolución individual completa; INT-008 establece al Founder como propietario documental e institucional |
+
 ## PREG-001
 
-¿Cuál es el siguiente paso óptimo después de V0.3?
+¿Cuál es el siguiente paso óptimo después de v.3?
 
 ## PREG-002
 
-¿Debe V0.1 ejecutarse antes de V0.4?
+¿Debe v.1 ejecutarse antes de v.4?
 
 ## PREG-003
 
-¿Qué decisiones de V0.2 y V0.3 requieren ADR?
+¿Qué decisiones de v.2 y v.3 requieren ADR?
 
 ## PREG-004
 
@@ -2444,26 +2440,35 @@ La estructura física debe reflejar decisiones previas.
 
 # 46. Índice de artefactos relevantes
 
-## Arquitectura
+## Arquitectura y normativa
 
 - Manual de Ingeniería.
+- DOC-002 — Arquitectura.
+- DOC-013 — Arquitectura de Extensibilidad.
+- DOC-014 — Decisiones de Arquitectura.
+- DOC-015 — Bitácora de Desarrollo.
 - Arquitectura Modular.
 - Arquitectura de Contratos.
 - Anexo A — Arquitectura Modular Consolidada.
+- `ADR-016` a `ADR-040`.
 
-## Gobierno
+## Gobierno institucional y operativo
 
-- Estado del Proyecto.
-- Mapa de Integración Documental.
-- Informe de Integración Técnica.
-- Decisiones Pendientes.
-- Evolución del Manual.
-- Ideas.
-- Observaciones.
+- INT-000 — Estado del Proyecto.
+- INT-001 — Evolución Manual.
+- INT-002 — Mapa de Integración Documental.
+- INT-003 — Informe de Integración Técnica, Histórico.
+- INT-004 — Ideas.
+- INT-005 — Decisiones Pendientes.
+- INT-006 — Observaciones.
+- INT-007 — Actas de Aprobación Arquitectónica.
+- INT-008 — Carta Fundacional de GeoMotion Studio.
+- INT-009 — Contexto Maestro Dirección Técnica.
+- INT-010 — Contexto Operativo del Director Técnico.
+- INT-011 — Protocolo Operativo de Ejecución del Director Técnico.
 
-## Futuro
+## Evolución futura
 
-- ADR.
 - MVA.
 - Especificaciones técnicas.
 - Registro Operativo de Contratos.
@@ -2800,38 +2805,33 @@ Obligación reconocida de corregir o completar una carencia arquitectónica.
 
 Esta versión registra:
 
-- estado general;
-- gobierno;
-- metodología;
-- ecosistema documental;
-- notas internas;
-- misiones V0.1 a V0.5;
-- cierre de V0.2;
-- cierre completo de V0.3;
-- principios;
-- decisiones;
-- pendientes;
-- evoluciones;
-- riesgos;
-- hitos;
-- cronología;
-- próximos pasos;
-- plantillas de mantenimiento.
+- el estado técnico e institucional diferenciado de la Arquitectura Física;
+- la conclusión de la misión v.4;
+- la consolidación de `ADR-016` a `ADR-040`;
+- la normalización aprobada de DOC-002, DOC-013 y DOC-015;
+- el inventario material de 19 documentos codificados del Manual;
+- el inventario de 25 ADR y 12 documentos internos;
+- el carácter histórico de INT-003;
+- la situación verificable de las decisiones anteriormente registradas como pendientes;
+- el estado actualizado de riesgos, deudas e hitos;
+- la preparación pendiente para la incorporación al repositorio oficial.
 
-## Información pendiente de confirmación
+## Información o actuaciones todavía pendientes
 
 - fechas exactas de inicio y cierre de todas las misiones;
-- versiones oficiales de documentos de V0.2 y V0.3;
-- nombres definitivos dentro del Manual;
-- inventario completo de los diecisiete documentos;
-- estado real de V0.1;
-- responsable nominal de cada documento;
-- orden final de V0.1, V0.4 y V0.5;
-- rutas definitivas tras la Arquitectura Física.
+- versiones oficiales de documentos de v.2 y v.3;
+- integración editorial total de los resultados de v.2 y v.3;
+- incorporación institucional de la Arquitectura Física;
+- armonización futura de INT-007 con el modelo de doble aprobación;
+- evaluación de versionado de DOC-002, DOC-013 y DOC-015 conforme a DOC-018 y al hallazgo HI-08;
+- corrección de inconsistencias materiales externas a INT-000;
+- incorporación del estado local al repositorio oficial por el Founder;
+- definición e inicio de v.5 — Minimum Viable Architecture;
+- autorización de una fase oficial de implementación.
 
 ## Próxima actualización requerida
 
-Después de que Dirección Técnica determine el siguiente paso y emita la resolución correspondiente.
+Después de que el Founder resuelva los bloqueos restantes de preparación, realice la incorporación material al repositorio oficial o autorice el inicio de una nueva misión relevante.
 
 ---
 

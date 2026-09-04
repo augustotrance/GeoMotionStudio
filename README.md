@@ -249,7 +249,7 @@ Esta arquitectura permite incorporar nuevas capacidades sin comprometer la estab
 
 # Manual de Ingeniería
 
-El proyecto dispone de un **Manual de Ingeniería** compuesto por dieciocho documentos que describen la arquitectura, principios y evolución de la plataforma.
+El proyecto dispone de un **Manual de Ingeniería** compuesto por diecinueve documentos que describen la arquitectura, principios y evolución de la plataforma.
 
 Entre ellos:
 
@@ -274,12 +274,12 @@ GeoMotionStudio/
 ├── docs/
 │   ├── adr/
 │   ├── ejemplos/
-│   ├── Ingeniería/
+│   ├── ingeniería/
 │   └── referencias/
 └── ...
 ```
 
-La carpeta `docs/Ingeniería` contiene el Manual de Ingeniería del proyecto.
+La carpeta `docs/ingeniería` contiene el Manual de Ingeniería del proyecto.
 
 ---
 

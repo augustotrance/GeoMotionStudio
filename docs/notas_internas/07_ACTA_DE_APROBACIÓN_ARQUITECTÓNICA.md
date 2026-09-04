@@ -3,27 +3,63 @@
 **Código:** INT-007  
 **Nombre oficial:** Actas de Aprobación Arquitectónica  
 **Proyecto:** GeoMotion Studio  
-**Tipo de documento:** Registro institucional de actas de aprobación arquitectónica  
+**Tipo de documento:** Registro acumulativo de actuaciones técnicas e institucionales relacionadas con arquitecturas  
 **Estado:** Activo  
-**Responsable institucional:** Dirección Técnica  
-**Propietario documental:** Dirección Técnica  
+**Responsable documental:** Dirección Técnica  
+**Autoridad técnica:** Dirección Técnica  
+**Autoridad institucional:** Founder  
+**Propietario documental:** Founder  
 **Idioma oficial:** Español  
 **Metodología rectora:** Architecture First  
-**Versión del documento:** 1.0.0  
+**Versión del documento:** 1.1.0  
 **Ubicación:** `docs/notas_internas/07_ACTA_DE_APROBACIÓN_ARQUITECTÓNICA.md`
+
+---
+
+# Control del documento
+
+## Historial de versiones
+
+| Versión | Fecha | Autor | Descripción |
+|---|---|---|---|
+| 1.0.0 | No consta en la documentación de origen | No consta en la documentación de origen | Versión inicial del registro |
+| 1.1.0 | 2026-07-28 | Dirección Técnica | Armonización de la interpretación del registro con INT-008, preservando ACTA-001 como antecedente histórico |
+
+## Regla de interpretación
+
+INT-007 registra actuaciones y preserva su evidencia documental.
+
+No concede autoridad, no amplía competencias y no sustituye las fuentes institucionales u operativas vigentes.
+
+Toda interpretación del presente registro queda subordinada a:
+
+- INT-008 — Carta Fundacional de GeoMotion Studio;
+- INT-009 — Contexto Maestro Dirección Técnica;
+- INT-010 — Contexto Operativo del Director Técnico;
+- INT-011 — Protocolo Operativo de Ejecución del Director Técnico.
 
 ---
 
 # 1. Propósito
 
-El presente documento constituye el registro institucional oficial de las actas
-mediante las cuales la Dirección Técnica formaliza la aprobación,
-sustitución, derogación o cualquier otra resolución que afecte a las
-arquitecturas oficiales de GeoMotion Studio.
+El presente documento constituye el registro acumulativo de actuaciones técnicas e institucionales relacionadas con las arquitecturas de GeoMotion Studio.
 
-Su finalidad es preservar la evidencia documental de dichas resoluciones,
-garantizando su trazabilidad histórica y su conservación como parte del
-patrimonio documental del proyecto.
+Su finalidad consiste en:
+
+- preservar evidencia documental;
+- mantener trazabilidad histórica;
+- identificar la autoridad que emitió cada actuación;
+- distinguir su naturaleza técnica o institucional;
+- registrar su relación con actuaciones anteriores;
+- reflejar el estado de incorporación material cuando corresponda.
+
+INT-007 no concede autoridad.
+
+No amplía las competencias de Dirección Técnica ni del Founder.
+
+No convierte una evaluación técnica en una aprobación institucional.
+
+No incorpora automáticamente una arquitectura al proyecto oficial.
 
 Este documento no define arquitectura.
 
@@ -35,19 +71,21 @@ No sustituye a los documentos arquitectónicos aprobados.
 
 No sustituye a los Architecture Decision Records.
 
-Su única finalidad consiste en registrar las resoluciones emitidas por la
-Dirección Técnica respecto de las arquitecturas oficiales del proyecto.
+No sustituye a INT-008, INT-009, INT-010 o INT-011.
 
 ---
 
 # 2. Naturaleza del documento
 
-INT-007 constituye un registro institucional acumulativo.
+INT-007 constituye un registro histórico y acumulativo.
 
-Cada resolución aprobada por Dirección Técnica se incorporará como un acta
-independiente dentro del presente documento.
+Podrá registrar:
 
-Las actas se identificarán mediante una numeración correlativa permanente.
+- actuaciones técnicas emitidas por Dirección Técnica;
+- actuaciones institucionales emitidas expresamente por el Founder;
+- información verificable sobre la incorporación material de una arquitectura o decisión.
+
+Las actas se identificarán mediante una numeración correlativa permanente:
 
 ```text
 ACTA-001
@@ -58,76 +96,88 @@ ACTA-003
 
 El código INT-007 identifica el documento registral.
 
-Los códigos ACTA-XXX identifican cada resolución individual registrada dentro
-del mismo.
+Los códigos ACTA-XXX identifican cada actuación individual conservada en el registro.
 
-Las actas incorporadas al presente registro constituyen evidencia histórica del
-proyecto y no deberán modificarse una vez emitidas.
+Las actuaciones registradas constituyen evidencia histórica y no deberán reescribirse para adaptarlas retroactivamente a criterios posteriores.
 
-Toda modificación posterior de una arquitectura deberá formalizarse mediante
-una nueva resolución, preservando íntegramente las actas anteriores.
+Cuando resulte necesario aclarar su interpretación vigente, deberá añadirse una nota o actuación posterior vinculada con el registro original.
 
-No deberán crearse nuevos documentos INT destinados a registrar aprobaciones
-individuales mientras permanezca vigente el presente modelo de gobernanza.
+Ninguna actuación posterior eliminará o reescribirá el antecedente histórico.
 
 ---
 
 # 3. Alcance
 
-El presente documento registra exclusivamente las resoluciones emitidas por
-Dirección Técnica respecto de:
+INT-007 registra actuaciones relacionadas con:
 
-- aprobación de arquitecturas;
-- aprobación de líneas base arquitectónicas;
-- sustitución de arquitecturas oficiales;
-- derogación de arquitecturas oficiales;
-- otras resoluciones institucionales expresamente emitidas por Dirección
-  Técnica.
+- evaluación técnica de arquitecturas;
+- conclusiones técnicas emitidas por Dirección Técnica;
+- decisiones institucionales expresamente emitidas por el Founder;
+- incorporación material de arquitecturas o decisiones;
+- revisión o sustitución de conclusiones técnicas anteriores;
+- actuaciones posteriores con efectos institucionales cuando exista decisión expresa del Founder.
 
-El presente documento no reproduce el contenido técnico de las arquitecturas
-aprobadas.
+La inclusión de una actuación en este registro no amplía los efectos que le correspondan conforme a INT-008, INT-009, INT-010 e INT-011.
 
-Cada resolución hace referencia al documento correspondiente, que constituye la
-única fuente normativa de su contenido arquitectónico.
+Cada actuación deberá interpretarse de acuerdo con:
 
----
+- su autoridad emisora;
+- su naturaleza técnica o institucional;
+- la evidencia documental disponible;
+- las fuentes institucionales y operativas vigentes.
 
-# 4. Autoridad documental
-
-La emisión de las actas registradas en el presente documento corresponde
-exclusivamente a Dirección Técnica.
-
-Cada resolución deberá estar respaldada por un proceso formal de revisión
-arquitectónica conforme al modelo de gobernanza definido por el Manual de
-Ingeniería.
-
-La incorporación de un acta al presente registro constituye evidencia de la
-resolución institucional emitida.
-
-No implica, por sí misma, la modificación automática de otros documentos del
-Manual de Ingeniería, cuya actualización se realizará mediante los mecanismos
-editoriales correspondientes.
+Cada acta hará referencia al documento evaluado o afectado. Dicho documento conserva la autoridad que le corresponda sobre su contenido técnico.
 
 ---
 
-# 5. Reglas del registro
+# 4. Subordinación documental
 
-Cada acta incorporada al presente documento deberá contener, como mínimo:
+INT-007 no constituye una fuente autónoma de autoridad o de procedimiento.
 
-- identificador del acta;
-- documento arquitectónico evaluado;
-- fecha de emisión;
-- autoridad que emite la resolución;
-- resultado de la revisión;
-- resolución adoptada;
-- vigencia.
+La autoridad y las responsabilidades institucionales u operativas se determinan mediante:
 
-Las actas podrán incorporar antecedentes u observaciones cuando Dirección
-Técnica considere necesaria su conservación para preservar el contexto de la
-decisión.
+- INT-008 — Carta Fundacional de GeoMotion Studio;
+- INT-009 — Contexto Maestro Dirección Técnica;
+- INT-010 — Contexto Operativo del Director Técnico;
+- INT-011 — Protocolo Operativo de Ejecución del Director Técnico.
 
-No deberán reproducir el contenido técnico del documento arquitectónico
-evaluado.
+La incorporación de un acta en INT-007 constituye evidencia de la actuación documentada.
+
+No amplía las competencias de su autoridad emisora.
+
+Una actuación técnica documenta una conclusión técnica.
+
+Una actuación institucional solo podrá registrarse cuando exista una decisión expresa del Founder.
+
+La incorporación oficial de una arquitectura requiere aprobación expresa del Founder y su correspondiente integración material.
+
+Ante cualquier contradicción, la interpretación de INT-007 deberá ajustarse a las fuentes institucionales y operativas indicadas.
+
+---
+
+# 5. Información de las actuaciones
+
+Cada actuación podrá identificar:
+
+- identificador;
+- documento evaluado o afectado;
+- fecha;
+- autoridad emisora;
+- naturaleza técnica o institucional;
+- alcance;
+- resultado técnico, cuando corresponda;
+- decisión institucional, cuando corresponda;
+- estado de incorporación material;
+- relación con actuaciones anteriores;
+- evidencia documental disponible.
+
+Cuando una información no conste, deberá declararse:
+
+> No consta en la documentación de origen.
+
+No deberán incorporarse inferencias ni reconstrucciones.
+
+Las actas no reproducirán innecesariamente el contenido técnico completo de los documentos relacionados.
 
 ---
 
@@ -135,11 +185,19 @@ evaluado.
 
 Las actas deberán incorporarse respetando el orden cronológico de emisión.
 
-Cada nueva resolución se añadirá al final del registro, manteniendo
-inalterables las resoluciones previamente emitidas.
+Cada nueva actuación se añadirá al final del registro, preservando las actuaciones anteriores.
 
-El historial de aprobaciones constituye un registro permanente de la evolución
-arquitectónica de GeoMotion Studio.
+Cuando una actuación revise o sustituya una conclusión técnica anterior, deberá identificar expresamente el antecedente afectado.
+
+Dirección Técnica podrá revisar o sustituir sus propias conclusiones técnicas mediante una actuación posterior.
+
+Cualquier efecto institucional requerirá una decisión expresa del Founder.
+
+Ninguna actuación posterior reescribirá o eliminará el registro histórico anterior.
+
+Las actuaciones relacionadas deberán mantener referencias entre sí cuando resulte necesario para reconstruir su trazabilidad.
+
+Deberá evitarse la duplicación innecesaria de actuaciones ya registradas. Esta consideración no limita la forma documental mediante la cual el Founder pueda emitir o preservar una decisión institucional.
 
 ---
 
@@ -241,6 +299,64 @@ Permanecerá vigente hasta que una resolución posterior de Dirección Técnica 
 
 ---
 
+## 7. Nota de interpretación institucional vigente
+
+ACTA-001 se conserva íntegramente como evidencia histórica de la evaluación realizada por Dirección Técnica el 2026-07-27.
+
+La presente nota no repite, reabre ni modifica dicha evaluación.
+
+### 7.1 Resultado técnico
+
+El resultado `Aprobada` registrado en ACTA-001 corresponde a una aprobación técnica emitida por Dirección Técnica.
+
+La evaluación técnica permanece vigente.
+
+La misión V0.1 se considera concluida en su dimensión técnica.
+
+No corresponde repetir su evaluación ni reiniciar la misión.
+
+### 7.2 Estado institucional
+
+No consta en ACTA-001 una aprobación institucional expresa del Founder.
+
+Tampoco consta en ACTA-001 evidencia de la incorporación material de la Arquitectura Física del Repositorio al proyecto oficial.
+
+Por tanto:
+
+- la aprobación institucional no se encuentra acreditada por ACTA-001;
+- la incorporación oficial permanece pendiente;
+- ACTA-001 no autoriza por sí misma la integración del documento;
+- la Arquitectura Física conserva su valor como referencia técnica evaluada;
+- cualquier efecto institucional requiere decisión expresa del Founder.
+
+### 7.3 Formulaciones históricas
+
+Las siguientes formulaciones se conservan como antecedentes del modelo utilizado al emitirse ACTA-001:
+
+| Formulación histórica | Interpretación vigente |
+|---|---|
+| `Validación Institucional` | Denominación histórica del proceso realizado; no acredita por sí misma aprobación institucional del Founder |
+| `competencias atribuidas a Dirección Técnica para la aprobación de arquitecturas oficiales` | Referencia histórica que actualmente debe limitarse a la evaluación y aprobación técnica |
+| `Aprobar ... como arquitectura oficial` | Resultado técnico favorable; no constituye incorporación institucional |
+| `Autorizar la incorporación` | Formulación histórica sin efecto de autorización institucional bajo INT-008 |
+| `pasa a formar parte de las arquitecturas oficiales` | Efecto institucional no acreditado por ACTA-001; la incorporación permanece pendiente |
+| `podrá utilizarse como referencia normativa` | Puede utilizarse como referencia técnica evaluada; su incorporación oficial requiere decisión expresa del Founder |
+| `vigente hasta que una resolución posterior de Dirección Técnica disponga su sustitución o derogación` | Vigencia de la conclusión técnica; cualquier efecto institucional requiere decisión expresa del Founder |
+
+Estas formulaciones se conservan para preservar la trazabilidad de la versión anterior.
+
+No amplían las competencias vigentes de Dirección Técnica.
+
+### 7.4 Actuaciones posteriores
+
+Dirección Técnica podrá revisar o sustituir su conclusión técnica mediante una actuación posterior vinculada con ACTA-001.
+
+Cualquier aprobación, incorporación, sustitución o derogación con efectos institucionales requerirá decisión expresa del Founder.
+
+Ninguna actuación posterior reescribirá o eliminará ACTA-001.
+
+---
+
 # Registro de actas
 
 El presente registro constituye el índice histórico de las resoluciones
@@ -253,9 +369,11 @@ correspondientes.
 Toda nueva acta incorporada al presente documento deberá añadirse también al
 presente registro.
 
-| Acta | Documento aprobado | Fecha | Resultado | Estado |
-|------|--------------------|------------|------------|---------|
-| ACTA-001 | V0.1 — Arquitectura Física del Repositorio | 2026-07-27 | Aprobada | Vigente |
+| Acta | Naturaleza | Documento evaluado | Fecha | Resultado técnico | Estado institucional | Incorporación material |
+|---|---|---|---|---|---|---|
+| ACTA-001 | Técnica | V0.1 — Arquitectura Física del Repositorio | 2026-07-27 | Aprobada técnicamente; evaluación vigente | No consta aprobación expresa del Founder | Pendiente |
+
+El registro no contiene actualmente una actuación institucional del Founder ni evidencia de incorporación material relacionada con ACTA-001.
 
 ---
 
