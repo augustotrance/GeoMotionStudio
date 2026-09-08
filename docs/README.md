@@ -73,7 +73,7 @@ El conjunto y la familia SPEC están vigentes desde la publicación material de 
 
 La carpeta [`producto/`](producto/README.md) contiene los mapas de stakeholders, actores, capacidades y alcance, las fronteras de ediciones y licencias, y las iniciativas de producto aprobadas para incorporación.
 
-Los documentos G4 y `INI-GMS-0001` están vigentes desde la publicación material de `LB-G4-GMS-20260904-01`. La iniciativa está admitida y priorizada operativamente, pero no es una SPEC ni está declarada Lista para Especificar.
+Los documentos G4 y `INI-GMS-0001` están vigentes desde la publicación material de `LB-G4-GMS-20260904-01`. La iniciativa está admitida y priorizada operativamente y fue declarada Lista para Especificar por `ACTO-G8-GMS-20260908-17`. La declaración habilita la elaboración documental de su SPEC, pero no equivale a aprobación, publicación o permiso de implementación.
 
 ## Especialización arquitectónica del piloto
 
@@ -85,7 +85,11 @@ El Manual incorpora [DOC-019 · Arquitectura y dominio mínimos del piloto](inge
 
 ## Fundación ejecutable de G7
 
-[DOC-021 · Fundación ejecutable y conformidad automática del repositorio](ingeniería/21_FUNDACIÓN_EJECUTABLE_Y_CONFORMIDAD_AUTOMÁTICA_DEL_REPOSITORIO.md) y ADR-048 a ADR-054 fueron aprobados para incorporación mediante D-61 a D-72. Su vigencia permanece diferida hasta la publicación material de la futura `LB-G7-GMS-20260908-01`. La materialización no cierra G7, no abre G8, no crea una SPEC concreta y no autoriza código funcional.
+[DOC-021 · Fundación ejecutable y conformidad automática del repositorio](ingeniería/21_FUNDACIÓN_EJECUTABLE_Y_CONFORMIDAD_AUTOMÁTICA_DEL_REPOSITORIO.md) y ADR-048 a ADR-054 están vigentes desde la publicación material verificada de `LB-G7-GMS-20260908-01`. Los defectos de automatización `H-G7-CI-01` a `H-G7-CI-03` fueron corregidos y la ejecución `G7 quality gate` concluyó conforme sobre el corte sucesor `41d73ceede9ccfe6ec6dd035e6ea448241c97a0a`, árbol `990f169458ccf403788cc70ceea5e434087bc2b0`.
+
+## Especificación candidata de G8
+
+La carpeta [`spec/`](spec/README.md) contiene la candidata `SPEC-GMS-0001` v1.0.0 y su índice. Mediante `ACTO-G8-GMS-20260908-17`, el Founder declaró `INI-GMS-0001` Lista para Especificar y autorizó esta materialización documental. La SPEC aún no está aprobada como corte exacto ni publicada; G8 permanece abierto, G9 permanece cerrado y el código funcional continúa prohibido.
 
 ---
 
@@ -124,6 +128,9 @@ docs/
 │
 ├── producto/
 │   └── Stakeholders, capacidades, alcance e iniciativas
+│
+├── spec/
+│   └── Especificaciones concretas y su estado
 │
 └── referencias/
     ├── Índice de glosarios de dominio

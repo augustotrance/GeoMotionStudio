@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { dirname, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -134,9 +134,128 @@ for (const [path, id] of governed) {
 
 const concreteSpecs = filesUnder(root).filter((path) => {
   const repoPath = relative(root, path).split(sep).join("/");
-  return /(?:^|\/)SPEC-[^/]+\.(?:md|ya?ml|json)$/u.test(repoPath);
+  return /(?:^|\/)SPEC-[^/]+\.(?:md|ya?ml|json)$/iu.test(repoPath);
 });
-assert(concreteSpecs.length === 0, "Existe una SPEC concreta antes de G8");
+
+const g8GovernancePath = resolve(root, "configs/governance/g8-spec.json");
+let g8Governance;
+if (existsSync(g8GovernancePath)) {
+  try {
+    g8Governance = JSON.parse(readFileSync(g8GovernancePath, "utf8"));
+  } catch (error) {
+    errors.push(
+      `configs/governance/g8-spec.json: JSON inválido (${error.message})`,
+    );
+  }
+}
+
+if (g8Governance === undefined) {
+  assert(concreteSpecs.length === 0, "Existe una SPEC concreta antes de G8");
+} else {
+  const expectedSpecPath =
+    "docs/spec/SPEC-GMS-0001_PROYECTO_LOCAL_PERSISTENTE_CON_ESCENA_Y_MAPA_BASE_2D_v1.0.0.md";
+  const concreteSpecPaths = concreteSpecs
+    .map((path) => relative(root, path).split(sep).join("/"))
+    .sort();
+
+  assert(
+    concreteSpecPaths.length === 1 && concreteSpecPaths[0] === expectedSpecPath,
+    `G8 permite exclusivamente ${expectedSpecPath}; encontradas: ${concreteSpecPaths.join(", ") || "ninguna"}`,
+  );
+  assert(
+    g8Governance.specification?.id === "SPEC-GMS-0001",
+    "G8 no autoriza una identidad SPEC distinta de SPEC-GMS-0001",
+  );
+  assert(
+    g8Governance.specification?.version === "1.0.0",
+    "G8 no autoriza una versión SPEC distinta de 1.0.0",
+  );
+  assert(
+    g8Governance.specification?.exactCutApproved === false,
+    "G8 anticipa indebidamente la aprobación del corte exacto",
+  );
+  assert(
+    g8Governance.specification?.published === false,
+    "G8 anticipa indebidamente la publicación de la SPEC",
+  );
+  assert(
+    g8Governance.constraints?.functionalCodeAllowed === false &&
+      g8Governance.constraints?.productFunctionalityAllowed === false,
+    "G8 anticipa indebidamente funcionalidad o código funcional",
+  );
+  assert(
+    g8Governance.constraints?.g8Closed === false &&
+      g8Governance.constraints?.g9Open === false &&
+      g8Governance.constraints?.publicationAllowed === false,
+    "G8 anticipa indebidamente cierre, apertura de G9 o publicación",
+  );
+
+  if (concreteSpecPaths.includes(expectedSpecPath)) {
+    const spec = readFileSync(resolve(root, expectedSpecPath), "utf8");
+    const header = spec.split("\n").slice(0, 40).join("\n");
+    assert(
+      header.includes("**Identificador:** `SPEC-GMS-0001`"),
+      `${expectedSpecPath}: identidad incorrecta`,
+    );
+    assert(
+      header.includes("**Versión:** `1.0.0`"),
+      `${expectedSpecPath}: versión incorrecta`,
+    );
+    const maturityLines = (
+      header.match(/^\*\*Estado de madurez:\*\*.*$/gmu) ?? []
+    ).map((line) => line.trimEnd());
+    assert(
+      maturityLines.length === 1 &&
+        maturityLines[0] ===
+          "**Estado de madurez:** Candidato — pendiente de aprobación del corte exacto y publicación de G8",
+      `${expectedSpecPath}: el estado de madurez debe ser el candidato G8 autorizado`,
+    );
+    assert(
+      header.includes("**Estado de implementación:** No iniciada"),
+      `${expectedSpecPath}: el estado de implementación debe ser No iniciada`,
+    );
+
+    const sections = [...spec.matchAll(/^## (\d+)\./gmu)].map((match) =>
+      Number(match[1]),
+    );
+    assert(
+      sections.length === 23 &&
+        sections.every((number, index) => number === index + 1),
+      `${expectedSpecPath}: se requieren las secciones consecutivas 1 a 23`,
+    );
+
+    const expectedFamilies = new Map([
+      ["RF", 16],
+      ["RNF", 27],
+      ["CA", 29],
+      ["PRU", 16],
+    ]);
+    for (const [family, expectedCount] of expectedFamilies) {
+      const pattern = new RegExp(
+        "^\\| `SPEC-GMS-0001-" + family + "-(\\d{3})` \\|",
+        "gmu",
+      );
+      const identifiers = [...spec.matchAll(pattern)].map((match) =>
+        Number(match[1]),
+      );
+      assert(
+        identifiers.length === expectedCount &&
+          identifiers.every((number, index) => number === index + 1),
+        `${expectedSpecPath}: la secuencia ${family} debe contener 001 a ${String(expectedCount).padStart(3, "0")}`,
+      );
+    }
+
+    const acceptanceRows = spec
+      .split("\n")
+      .filter((line) => /^\| `SPEC-GMS-0001-CA-\d{3}` \|/u.test(line));
+    assert(
+      acceptanceRows.every((line) =>
+        /\| (?:`?PRU-|SPEC-GMS-0001-PRU-)/u.test(line),
+      ),
+      `${expectedSpecPath}: cada criterio CA debe identificar al menos un método PRU`,
+    );
+  }
+}
 
 assert(declaredIds.get("DOC-021") !== undefined, "DOC-021 no está declarado");
 for (let number = 48; number <= 54; number += 1) {

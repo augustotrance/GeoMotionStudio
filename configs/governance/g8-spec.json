@@ -1,0 +1,116 @@
+{
+  "baselineInput": {
+    "id": "LB-G7-GMS-20260908-01",
+    "publishedCommit": "072ef36a876b2386e832eb6b9da5369f3de64938",
+    "publishedTree": "b2e06bcd41f630600bbddb6a4d523b52d7d6eca8",
+    "workingCommit": "41d73ceede9ccfe6ec6dd035e6ea448241c97a0a",
+    "workingTree": "990f169458ccf403788cc70ceea5e434087bc2b0"
+  },
+  "baselinePlanned": "LB-G8-GMS-20260908-01",
+  "decisionAct": "ACTO-G8-GMS-20260908-17",
+  "decisionReport": "INF-G8-GMS-20260908-01",
+  "decisions": [
+    "D-73",
+    "D-74",
+    "D-75",
+    "D-76",
+    "D-77",
+    "D-78",
+    "D-79",
+    "D-80",
+    "D-81",
+    "D-82",
+    "D-83",
+    "D-84"
+  ],
+  "initiative": {
+    "id": "INI-GMS-0001",
+    "readyForSpecification": true,
+    "readyAct": "ACTO-G8-GMS-20260908-17"
+  },
+  "specification": {
+    "id": "SPEC-GMS-0001",
+    "version": "1.0.0",
+    "maturity": "approved-for-materialization",
+    "implementation": "not-started",
+    "reviewClass": "R2",
+    "acceptanceCriteria": 29,
+    "verificationMethods": 16,
+    "exactCutApproved": false,
+    "published": false
+  },
+  "review": {
+    "id": "REV-GMS-0001",
+    "class": "R2",
+    "status": "conformant",
+    "blockingFindings": [],
+    "substantiveContentConformant": true,
+    "baselineRecommended": true
+  },
+  "validation": {
+    "formatCheck": "passed",
+    "structuralSpecCheck": "passed",
+    "documentValidator": "passed",
+    "cleanQualityGate": "passed",
+    "documentValidatorExitCode": 0,
+    "cleanQualityGateExitCode": 0,
+    "verifiedPreManifestTree": "e490fa55c8b4dfa8340cd3f9cd74f1b74062196a"
+  },
+  "correction": {
+    "id": "H-G8-VAL-01",
+    "path": "scripts/validate-docs.mjs",
+    "sha256": "6401a7a39a9ad3490d426778288e258c4506fa40203e6b5c4a5a2b475921de7a",
+    "status": "verified-locally",
+    "effectiveOn": "verified-publication-of-LB-G8-GMS-20260908-01"
+  },
+  "openIssue": {
+    "id": "OPEN-INI-0001-09",
+    "status": "resolved-for-incorporation",
+    "effectiveOn": "verified-publication-of-LB-G8-GMS-20260908-01"
+  },
+  "allowedPathClasses": [
+    "docs/spec/**",
+    "docs/*index-or-status*",
+    "itinerario/G8/**",
+    "configs/governance/g8-spec.json",
+    "scripts/validate-docs.mjs",
+    "CHANGELOG.md"
+  ],
+  "materializedPaths": [
+    "CHANGELOG.md",
+    "configs/governance/g8-spec.json",
+    "docs/README.md",
+    "docs/producto/README.md",
+    "docs/sdd/README.md",
+    "docs/spec/README.md",
+    "docs/spec/SPEC-GMS-0001_PROYECTO_LOCAL_PERSISTENTE_CON_ESCENA_Y_MAPA_BASE_2D_v1.0.0.md",
+    "itinerario/G8/ACTO_FOUNDER_G8_D73_D84_v1.0.0.md",
+    "itinerario/G8/GMS_DELTA_REPRODUCIBLE_G8_DESDE_41d73cee_v1.0.0.csv",
+    "itinerario/G8/GMS_INVENTARIO_COMPLETO_CANDIDATO_G8_v1.0.0.csv",
+    "itinerario/G8/GMS_MANIFIESTO_REPOSITORIO_CANDIDATO_G8_v1.0.0.sha256",
+    "itinerario/G8/INF-G8-GMS-20260908-01.md",
+    "itinerario/G8/REV-GMS-0001_REVISION_SPEC-GMS-0001_v1.0.0.md",
+    "scripts/validate-docs.mjs"
+  ],
+  "forbiddenPathPrefixes": [
+    ".github/",
+    "apps/",
+    "assets/",
+    "packages/",
+    "tests/"
+  ],
+  "forbiddenPathRules": ["scripts/** except scripts/validate-docs.mjs"],
+  "constraints": {
+    "doc022Allowed": false,
+    "adr055Allowed": false,
+    "exceptionAllowed": false,
+    "contextPackageAllowed": false,
+    "implementationPlanAllowed": false,
+    "executableBehaviorTestsAllowed": false,
+    "productFunctionalityAllowed": false,
+    "functionalCodeAllowed": false,
+    "g8Closed": false,
+    "g9Open": false,
+    "publicationAllowed": false
+  }
+}

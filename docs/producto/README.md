@@ -18,15 +18,15 @@ Esta carpeta reúne los instrumentos de G4 que relacionan stakeholders, actores,
 
 La aprobación de D-29 a D-36 y la publicación material verificada de `LB-G4-GMS-20260904-01` incorporaron y activaron este conjunto documental.
 
-En particular, `INI-GMS-0001` está vigente, admitida y priorizada operativamente desde esa publicación. Continúa sin una SPEC concreta y sin condición Lista para Especificar.
+En particular, `INI-GMS-0001` está vigente, admitida y priorizada operativamente desde esa publicación. Mediante `ACTO-G8-GMS-20260908-17`, el Founder la declaró Lista para Especificar y autorizó la materialización documental controlada de `SPEC-GMS-0001` v1.0.0. La SPEC existe como candidata: su corte exacto todavía no está aprobado ni publicado.
 
 ## Límites
 
 Este conjunto:
 
-- no crea una SPEC concreta;
-- no declara `INI-GMS-0001` Lista para Especificar;
+- no convierte por sí mismo una SPEC candidata en aprobada o publicada;
+- no declara `INI-GMS-0001` Lista para Implementar;
 - no elige tecnologías, proveedores ni contratos de implementación;
 - no modifica ni adopta `apps/web`;
 - no autoriza código funcional; y
-- no anticipa G9.
+- no abre G9 ni anticipa su autorización de código funcional.
