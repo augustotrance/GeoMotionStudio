@@ -58,7 +58,8 @@ Este bloque describe la arquitectura principal de GeoMotion Studio y la organiza
 | **10_ESTADO_GLOBAL.md** | Gestión del estado global, comunicación entre módulos y flujo de información. |
 | **11_RENDERIZADO.md** | Arquitectura del sistema de renderizado y representación visual de la plataforma. |
 | **19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md** | Especialización mínima de Project, Scene, Map View y Project Document para el primer incremento; vigente desde la publicación de G5. |
-| **20_PERFIL_DE_CALIDAD_SEGURIDAD_Y_VERIFICACIÓN_DEL_PILOTO.md** | Entornos, métricas, umbrales, pruebas, seguridad, amenazas, observabilidad y dependencias del piloto; vigencia sujeta a la publicación de la Línea base G6. |
+| **20_PERFIL_DE_CALIDAD_SEGURIDAD_Y_VERIFICACIÓN_DEL_PILOTO.md** | Entornos, métricas, umbrales, pruebas, seguridad, amenazas, observabilidad y dependencias del piloto; vigente desde la publicación de G6. |
+| **21_FUNDACIÓN_EJECUTABLE_Y_CONFORMIDAD_AUTOMÁTICA_DEL_REPOSITORIO.md** | Árbol físico, entorno reproducible, aplicación mínima, controles automáticos, CI y evidencia de G7; vigencia diferida a la publicación de la Línea base G7. |
 
 ---
 

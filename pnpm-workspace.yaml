@@ -1,0 +1,37 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalogMode: strict
+cleanupUnusedCatalogs: true
+disallowWorkspaceCycles: true
+ignoreScripts: true
+linkWorkspacePackages: true
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - react@19.2.7
+  - react-dom@19.2.7
+  - typescript@7.0.2
+  - vite@8.1.2
+  - "@vitejs/plugin-react@6.1.1"
+  - vitest@5.0.0
+  - "@vitest/coverage-v8@5.0.0"
+  - "@playwright/test@1.63.0"
+  - prettier@3.9.6
+  - oxlint@1.81.0
+  # Artefactos nativos transitivos: el lockfile fija versión e integridad por plataforma.
+  - "@oxlint/binding-*"
+  - "@rolldown/binding-*"
+  - "@typescript/typescript-*"
+  - lightningcss-*
+  - fsevents@2.3.3
+  - ajv@8.20.0
+  - ol@10.10.0
+minimumReleaseAgeStrict: true
+resolutionMode: highest
+saveExact: true
+savePrefix: ""
+saveWorkspaceProtocol: rolling
+strictPeerDependencies: true
+trustLockfile: false
+verifyStoreIntegrity: true

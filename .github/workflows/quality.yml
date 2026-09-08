@@ -1,0 +1,67 @@
+name: G7 quality gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g7-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify foundation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version-file: .node-version
+
+      - name: Set up pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@12.3.4 --activate
+          pnpm --version
+
+      - name: Install frozen dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install pinned browser
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Install Gitleaks 8.30.1
+        shell: bash
+        run: |
+          mkdir -p /tmp/gitleaks-8.30.1
+          curl --fail --silent --show-error --location \
+            --output /tmp/gitleaks-8.30.1/gitleaks.tar.gz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  /tmp/gitleaks-8.30.1/gitleaks.tar.gz" | sha256sum --check --strict
+          tar --no-same-owner -xzf /tmp/gitleaks-8.30.1/gitleaks.tar.gz -C /tmp/gitleaks-8.30.1 gitleaks
+          /tmp/gitleaks-8.30.1/gitleaks version
+
+      - name: Run complete gate
+        env:
+          GITLEAKS_BIN: /tmp/gitleaks-8.30.1/gitleaks
+        run: pnpm verify
+
+      - name: Preserve non-sensitive evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: g7-conformance-${{ github.sha }}
+          path: evidence/g7
+          if-no-files-found: warn
+          retention-days: 14

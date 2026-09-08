@@ -1,0 +1,13 @@
+title = "GeoMotion Studio G7"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Huellas públicas y valores de prueba no sensibles"
+paths = [
+  '''pnpm-lock\.yaml''',
+  '''assets/maps/natural-earth/sources\.json''',
+  '''itinerario/.+\.sha256''',
+  '''itinerario/.+\.md'''
+]

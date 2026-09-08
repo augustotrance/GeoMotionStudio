@@ -53,6 +53,7 @@ En conjunto, el Manual describe:
 - La arquitectura principal de la plataforma.
 - La arquitectura y el dominio mínimos necesarios para especificar el primer incremento.
 - El perfil medible de calidad, seguridad y verificación aplicable al primer incremento.
+- La fundación ejecutable y los controles automáticos que demuestran la conformidad del repositorio.
 - Las arquitecturas transversales que amplían sus capacidades.
 - Los mecanismos de gobernanza que garantizan su evolución.
 

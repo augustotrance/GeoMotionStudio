@@ -1,0 +1,50 @@
+{
+  "baselineInput": {
+    "id": "LB-G6-GMS-20260908-01",
+    "commit": "d76b39bfc646e6236368cab06ec51cda5f66c484",
+    "tree": "a74a2562d87a51c2278dc7e1d5fbbaba1cc02a1f"
+  },
+  "baselinePlanned": "LB-G7-GMS-20260908-01",
+  "decisionAct": "ACTO-G7-GMS-20260908-15",
+  "decisions": [
+    "D-61",
+    "D-62",
+    "D-63",
+    "D-64",
+    "D-65",
+    "D-66",
+    "D-67",
+    "D-68",
+    "D-69",
+    "D-70",
+    "D-71",
+    "D-72"
+  ],
+  "institutionalDocuments": [
+    "DOC-021",
+    "ADR-048",
+    "ADR-049",
+    "ADR-050",
+    "ADR-051",
+    "ADR-052",
+    "ADR-053",
+    "ADR-054"
+  ],
+  "resolvedTechnicalDecisions": [
+    "TECH-G5-001",
+    "TECH-G5-002",
+    "TECH-G5-003",
+    "TECH-G5-004",
+    "TECH-G5-005",
+    "TECH-G5-006",
+    "TECH-G5-007",
+    "TECH-G5-008"
+  ],
+  "openForG8": ["OPEN-INI-0001-09"],
+  "constraints": {
+    "concreteSpecAllowed": false,
+    "productFunctionalityAllowed": false,
+    "initiativeReadyForSpecification": false,
+    "g8Open": false
+  }
+}

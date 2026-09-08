@@ -270,12 +270,24 @@ El manual constituye la referencia técnica oficial para el desarrollo de GeoMot
 ```text
 GeoMotionStudio/
 
+├── apps/web/
+├── packages/
 ├── assets/
+├── configs/
+├── scripts/
+├── tests/
 ├── docs/
 │   ├── adr/
 │   ├── ejemplos/
 │   ├── ingeniería/
-│   └── referencias/
+│   ├── producto/
+│   ├── referencias/
+│   └── sdd/
+├── itinerario/
+├── .github/workflows/
+├── package.json
+├── pnpm-workspace.yaml
+├── pnpm-lock.yaml
 └── ...
 ```
 
@@ -285,13 +297,14 @@ La carpeta `docs/ingeniería` contiene el Manual de Ingeniería del proyecto.
 
 # Estado del Proyecto
 
-Actualmente GeoMotion Studio se encuentra en desarrollo activo.
+GeoMotion Studio se encuentra en materialización controlada de G7 sobre la Línea base G6 publicada.
 
 Estado actual:
 
-- ✅ Arquitectura definida.
-- ✅ Manual de Ingeniería completo.
-- ✅ Plataforma en evolución continua.
+- ✅ G6 cerrado y vigente.
+- ✅ D-61 a D-72 aprobadas.
+- 🚧 Fundación ejecutable G7 en validación.
+- ⛔ Ninguna SPEC concreta y ningún código funcional autorizado antes de G9.
 
 ---
 
@@ -299,15 +312,37 @@ Estado actual:
 
 La plataforma se desarrolla utilizando tecnologías web modernas y una arquitectura preparada para evolucionar.
 
-Entre ellas:
+La fundación G7 aprobada fija:
 
-- TypeScript
-- React
-- OpenLayers
-- Three.js
-- Vite
+- Node.js 24.20.0 y pnpm 12.3.4.
+- TypeScript 7.0.2.
+- React y React DOM 19.2.7.
+- Vite 8.1.2.
+- OpenLayers 10.10.0 exclusivamente detrás de la frontera cartográfica.
+- Ajv 8.20.0 para JSON Schema Draft 2020-12.
 
 La arquitectura evita dependencias innecesarias respecto de tecnologías específicas para facilitar su evolución.
+
+## Fundación técnica G7
+
+Requisitos exactos: Node.js `24.20.0` y pnpm `12.3.4`.
+
+```bash
+pnpm install --frozen-lockfile
+pnpm verify
+```
+
+Comandos principales:
+
+- `pnpm dev`: servidor local de la superficie técnica mínima;
+- `pnpm build`: typecheck y build de producción;
+- `pnpm test`: pruebas unitarias y de contrato;
+- `pnpm test:e2e`: smoke en navegador;
+- `pnpm validate:docs`, `validate:architecture` y `validate:schemas`: controles institucionales y técnicos;
+- `pnpm security:secrets`: Gitleaks 8.30.1; y
+- `pnpm verify:clean`: reinstalación congelada y puerta completa en una copia temporal.
+
+El procedimiento completo, los límites y la recuperación del entorno se definen en [DOC-021](docs/ingeniería/21_FUNDACIÓN_EJECUTABLE_Y_CONFORMIDAD_AUTOMÁTICA_DEL_REPOSITORIO.md). La aplicación `apps/web` solo acredita montaje, compilación y smoke; no implementa el recorrido de producto.
 
 ---
 

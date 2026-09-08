@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:geomotion:schema:map-view:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["mapViewId", "sceneId", "mode", "center", "zoom", "baseMapRef"],
+  "properties": {
+    "mapViewId": { "$ref": "urn:geomotion:schema:common:1#/$defs/uuidV4" },
+    "sceneId": { "$ref": "urn:geomotion:schema:common:1#/$defs/uuidV4" },
+    "mode": { "const": "2D" },
+    "center": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["longitude", "latitude"],
+      "properties": {
+        "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+        "latitude": { "type": "number", "minimum": -90, "maximum": 90 }
+      }
+    },
+    "zoom": { "type": "number", "minimum": 0, "maximum": 24 },
+    "baseMapRef": { "type": "string", "minLength": 1, "maxLength": 120 }
+  }
+}

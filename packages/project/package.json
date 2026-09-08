@@ -1,0 +1,15 @@
+{
+  "name": "@geomotion/project",
+  "version": "0.0.0-g7",
+  "private": true,
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@geomotion/map": "workspace:*",
+    "@geomotion/scene": "workspace:*",
+    "@geomotion/shared": "workspace:*"
+  }
+}

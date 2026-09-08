@@ -4,7 +4,7 @@
 
 **Código:** `DOC-020`  
 **Versión:** `1.0.0`  
-**Estado:** Aprobado para incorporación — vigencia diferida hasta la publicación material de `LB-G6-GMS-20260908-01`  
+**Estado:** Vigente — publicación material de `LB-G6-GMS-20260908-01` verificada  
 **Fecha:** 8 de septiembre de 2026  
 **Clasificación:** Manual de Ingeniería  
 **Etapa:** G6 — Perfil de calidad, seguridad y verificación  
@@ -416,9 +416,9 @@ Las licencias permisivas o de dominio público no se aprueban automáticamente: 
 
 | Elemento | Clase | Estado G6 | Tratamiento |
 |---|---|---|---|
-| Natural Earth 1:110m — Land 4.0.0, Ocean 4.0.0 y Coastline 4.1.0 | Datos runtime locales | Aprobada para incorporación por ADR-047; vigencia diferida a G6 | Dominio público; G7 debe fijar descargas, hashes, receta y artefacto derivado |
-| Dependencias declaradas en `apps/web` | Spike histórico | Observadas, no adoptadas ni aprobadas | El lockfile conserva su inventario; G7 evaluará desde cero sin presumir continuidad |
-| Dependencias de la futura fundación | Software | Ninguna aprobada todavía | `TECH-G5-001` y `TECH-G5-003` a `-008` permanecen abiertas para G7 |
+| Natural Earth 1:110m — Land 4.0.0, Ocean 4.0.0 y Coastline 4.1.0 | Datos runtime locales | Vigente por ADR-047 y G6; incorporación material G7 autorizada por D-67 | Dominio público; el corte candidato G7 fija fuentes, hashes, receta y artefacto derivado |
+| Dependencias del antiguo `apps/web` | Spike histórico reemplazado | No adoptadas ni trasladadas | Recuperables solo mediante la historia Git de G6 |
+| Dependencias de la fundación G7 | Software | Aprobadas para incorporación por D-64 a D-71 | Versiones exactas, lockfile único, licencias, SBOM, audit y sustitución controlada |
 
 La presencia histórica de React, React DOM, TypeScript, Vite, Oxlint y paquetes asociados no los convierte en decisiones institucionales ni autoriza ejecutar o modificar `apps/web`.
 
@@ -466,14 +466,14 @@ En la tabla, `ENV-01`, `DEV-01` y `DAT-01` abrevían respectivamente `ENV-G6-01`
 | `OPEN-INI-0001-07` | Resuelta por §5: navegadores, sistemas, dispositivos y datos de prueba definidos |
 | `OPEN-INI-0001-08` | Resuelta por §§6–13: rendimiento, accesibilidad, fiabilidad y seguridad medibles |
 | `OPEN-INI-0001-09` | Conserva en G8 la traducción de contratos y errores a criterios funcionales binarios |
-| `TECH-G5-001` | Permanece en G7; deberá satisfacer compatibilidad, rendimiento, accesibilidad, licencia y sustitución de G6 |
-| `TECH-G5-002` | Cerrada documentalmente por ADR-047; incorporación material del dato y adaptador en G7 |
-| `TECH-G5-003` | Permanece en G7; deberá satisfacer matriz de compatibilidad, seguridad y recuperación |
-| `TECH-G5-004` | Permanece en G7; deberá habilitar schema cerrado, validación, límites y evolución |
-| `TECH-G5-005` | Perfil de garantía cerrado en §8; mecanismo material permanece en G7 |
-| `TECH-G5-006` | Permanece en G7; deberá preservar opacidad, estabilidad y no exposición de dato sensible |
-| `TECH-G5-007` | Permanece en G7; deberá preservar contrato WGS 84 y precisión verificable |
-| `TECH-G5-008` | Permanece en G7; deberá preservar ownership, ausencia de ciclos y eventos observables |
+| `TECH-G5-001` | Resuelta por D-67 y ADR-050; eficacia diferida a la publicación de G7 |
+| `TECH-G5-002` | Vigente por ADR-047 e incorporada materialmente en el corte candidato G7 |
+| `TECH-G5-003` | Resuelta por D-68 y ADR-051; eficacia diferida a la publicación de G7 |
+| `TECH-G5-004` | Resuelta por D-69 y ADR-052; eficacia diferida a la publicación de G7 |
+| `TECH-G5-005` | Resuelta por D-68 y ADR-051; eficacia diferida a la publicación de G7 |
+| `TECH-G5-006` | Resuelta por D-69 y ADR-053; eficacia diferida a la publicación de G7 |
+| `TECH-G5-007` | Resuelta por D-67 y ADR-050; eficacia diferida a la publicación de G7 |
+| `TECH-G5-008` | Resuelta por D-70 y ADR-054; eficacia diferida a la publicación de G7 |
 
 ## 15. Evidencia para la Puerta G6
 
@@ -487,14 +487,14 @@ En la tabla, `ENV-01`, `DEV-01` y `DAT-01` abrevían respectivamente `ENV-G6-01`
 | Seguridad y amenazas | §9 | Satisfecha |
 | Observabilidad | §10 | Satisfecha |
 | Pruebas por riesgo | §11 | Satisfecha |
-| Dependencias/licencias/sustitución | §12 y ADR-047 | Satisfecha para G6; ejecución en G7 |
-| Identidad material publicada | Futura Línea base G6 | Pendiente hasta aprobación y publicación |
+| Dependencias/licencias/sustitución | §12, DOC-021 y ADR-048 a ADR-050 | Materializada en el corte candidato G7; eficacia pendiente de publicación |
+| Identidad material publicada | `LB-G6-GMS-20260908-01` | Satisfecha |
 
 ## 16. Condición de vigencia
 
-Este documento fue aprobado para incorporación mediante D-49 a D-60 y materializado de forma controlada. Solo se considerará vigente si se publica con ADR-046 y ADR-047 dentro de `LB-G6-GMS-20260908-01`.
+Este documento está vigente desde su publicación material verificada junto con ADR-046 y ADR-047 dentro de `LB-G6-GMS-20260908-01`.
 
-Su vigencia habilitará únicamente el inicio documental de G7. No seleccionará ni incorporará una fundación ejecutable, no creará una SPEC concreta, no declarará `INI-GMS-0001` Lista para Especificar, no modificará `apps/web`, no autorizará código funcional y no anticipará G8 ni G9.
+Su vigencia habilitó el inicio documental de G7. D-61 a D-72 autorizan de forma separada la materialización controlada de la fundación ejecutable; ninguna de estas actuaciones crea una SPEC concreta, declara `INI-GMS-0001` Lista para Especificar, autoriza código funcional o anticipa G8 o G9.
 
 ## 17. Referencias externas controladas
 

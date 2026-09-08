@@ -1,11 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-import App from "./App";
-import "./styles/globals.css";
+import { App } from "./App";
+import "./styles.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+const rootElement = document.querySelector<HTMLElement>("#root");
+
+if (rootElement === null) {
+  throw new Error("No se encontró el elemento raíz de la fundación web.");
+}
+
+createRoot(rootElement).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>,
 );

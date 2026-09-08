@@ -63,7 +63,7 @@ La futura SPEC deberá delimitar como mínimo el siguiente resultado:
 9. restaurar la escena y el estado cartográfico definido; y
 10. comunicar de forma recuperable los errores incluidos en la SPEC.
 
-La palabra “local” describe ausencia de dependencia remota. G5 definió el puerto y las garantías conceptuales de persistencia; el backend y el mecanismo material permanecen en G7.
+La palabra “local” describe ausencia de dependencia remota. G5 definió el puerto y las garantías conceptuales de persistencia; D-61 a D-72 seleccionaron para G7 los mecanismos materiales, sin implementar el caso de uso funcional.
 
 ## 6. Alcance excluido
 
@@ -101,7 +101,7 @@ Sin sustituir los futuros criterios binarios de la SPEC, G4 considera valioso el
 - reabrir el mismo proyecto; y
 - comprobar que el estado definido fue restaurado o recibir un error recuperable y comprensible.
 
-DOC-020, aprobado para incorporación mediante D-49 a D-60, fija los umbrales, entornos, datos y métodos no funcionales de G6. G8 deberá transformarlos, junto con contratos y errores, en criterios binarios de una SPEC candidata.
+DOC-020, vigente desde la publicación material de G6, fija los umbrales, entornos, datos y métodos no funcionales. G8 deberá transformarlos, junto con contratos y errores, en criterios binarios de una SPEC candidata.
 
 ## 9. Dependencias y decisiones abiertas
 
@@ -109,15 +109,15 @@ DOC-020, aprobado para incorporación mediante D-49 a D-60, fija los umbrales, e
 |---|---|---|---|
 | `OPEN-INI-0001-01` | Fronteras exactas entre Project, Scene, Map y Project Document | G5 | Resuelta por DOC-019 y ADR-041 a ADR-043 |
 | `OPEN-INI-0001-02` | Entidades, estados, transiciones y ownership mínimos | G5 | Resuelta por DOC-019 |
-| `OPEN-INI-0001-03` | Motor o adaptador cartográfico | G5–G7 | Frontera resuelta; `TECH-G5-001` permanece en G7 |
-| `OPEN-INI-0001-04` | Formato, schema y versión persistente | G5–G7 | Modelo lógico resuelto; `TECH-G5-004` permanece en G7 |
-| `OPEN-INI-0001-05` | Mecanismo de almacenamiento local y recuperación | G5–G7 | Puerto y garantías resueltos; `TECH-G5-003/005` permanecen en G7 |
-| `OPEN-INI-0001-06` | Fuente, licencia y comportamiento offline del mapa base | G5–G6 | Resuelta documentalmente por D-59 y ADR-047; eficacia con la publicación de G6 |
-| `OPEN-INI-0001-07` | Navegadores, dispositivos y datos de prueba | G6 | Resuelta por D-51 y DOC-020 §5; eficacia con la publicación de G6 |
-| `OPEN-INI-0001-08` | Rendimiento, accesibilidad, fiabilidad y seguridad medibles | G6 | Resuelta por D-60 y DOC-020 §§6–13; eficacia con la publicación de G6 |
+| `OPEN-INI-0001-03` | Motor o adaptador cartográfico | G5–G7 | Resuelta por D-67 y ADR-050; eficacia diferida a la publicación de G7 |
+| `OPEN-INI-0001-04` | Formato, schema y versión persistente | G5–G7 | Resuelta por D-69 y ADR-052; eficacia diferida a la publicación de G7 |
+| `OPEN-INI-0001-05` | Mecanismo de almacenamiento local y recuperación | G5–G7 | Resuelta por D-68 y ADR-051; eficacia diferida a la publicación de G7 |
+| `OPEN-INI-0001-06` | Fuente, licencia y comportamiento offline del mapa base | G5–G6 | Resuelta y vigente por D-59, ADR-047 y la publicación de G6 |
+| `OPEN-INI-0001-07` | Navegadores, dispositivos y datos de prueba | G6 | Resuelta y vigente por D-51, DOC-020 §5 y la publicación de G6 |
+| `OPEN-INI-0001-08` | Rendimiento, accesibilidad, fiabilidad y seguridad medibles | G6 | Resuelta y vigente por D-60, DOC-020 §§6–13 y la publicación de G6 |
 | `OPEN-INI-0001-09` | Errores, contratos y criterios binarios | G5 y G8 | Contratos y errores resueltos en G5; criterios binarios permanecen en G8 |
 
-Las porciones todavía asignadas a G7–G8 deben cerrarse en sus puertas correspondientes; ninguna puede completarse desde el código. La resolución aprobada en G6 no adquiere vigencia documental antes de publicar la Línea base G6 exacta.
+Las decisiones tecnológicas de G7 están aprobadas para incorporación, pero solo serán eficaces con la publicación de la Línea base G7 exacta. `OPEN-INI-0001-09` permanece en G8; ninguna cuestión puede completarse desde el código.
 
 ## 10. Riesgos iniciales
 
@@ -127,7 +127,7 @@ Las porciones todavía asignadas a G7–G8 deben cerrarse en sus puertas corresp
 | Elegir tecnología desde G4 | Resolver alternativas y contratos en G5 |
 | Confundir guardar con exportar | Mantener persistencia de proyecto separada de Export |
 | Depender de red o proveedor | Exigir recorrido local y decidir mapa/offline antes de la SPEC |
-| Adoptar el spike histórico | Evaluarlo recién mediante cambio autorizado en G7 |
+| Adoptar por accidente el spike histórico | Sustituirlo solo por la fundación mínima autorizada y conservar su historia en Git |
 | Diseñar para todas las ediciones | Mantener el piloto dentro de Community |
 
 ## 11. Prioridad
@@ -143,7 +143,7 @@ La aprobación de D-36 y la publicación material de G4 incorporaron `INI-GMS-00
 - la creación ni aprobación de `SPEC-GMS-0001`;
 - la declaración de la iniciativa como Lista para Especificar;
 - la elección de tecnologías o proveedores fuera de decisiones posteriores aprobadas;
-- la modificación de `apps/web`;
+- comportamiento funcional en la fundación mínima de `apps/web`;
 - la autorización de código funcional; ni
 - la anticipación de G9.
 

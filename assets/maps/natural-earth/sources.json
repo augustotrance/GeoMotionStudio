@@ -1,0 +1,48 @@
+{
+  "dataset": "Natural Earth 1:110m physical vectors",
+  "license": "Public Domain",
+  "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "credit": "Made with Natural Earth",
+  "retrievedOn": "2026-09-08",
+  "repository": "https://github.com/nvkelso/natural-earth-vector",
+  "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+  "sources": [
+    {
+      "layer": "land",
+      "publishedVersion": "4.0.0",
+      "path": "sources/ne_110m_land.geojson",
+      "url": "https://github.com/nvkelso/natural-earth-vector/raw/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_land.geojson",
+      "githubBlob": "04811d72fff2701ec67587e30ad8942675b511e3",
+      "bytes": 138160,
+      "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+    },
+    {
+      "layer": "ocean",
+      "publishedVersion": "4.0.0",
+      "path": "sources/ne_110m_ocean.geojson",
+      "url": "https://github.com/nvkelso/natural-earth-vector/raw/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_ocean.geojson",
+      "githubBlob": "ab4bcc595550ad615aa324e714717d54b944d564",
+      "bytes": 117438,
+      "sha256": "5cf3eb6fb202ff7f1cc0b27b49235a05703687f6cd81e45115d4250aa15b8a76"
+    },
+    {
+      "layer": "coastline",
+      "publishedVersion": "4.1.0",
+      "path": "sources/ne_110m_coastline.geojson",
+      "url": "https://github.com/nvkelso/natural-earth-vector/raw/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_coastline.geojson",
+      "githubBlob": "0dde16b6687ab562b2ca8864bb1b8828b4093c99",
+      "bytes": 139907,
+      "sha256": "851f581ff5ffb844deed8ae1a9ce22e3c4bb3d74fa342cadb5d8e39b41ae7c3c"
+    }
+  ],
+  "derived": {
+    "path": "derived/natural-earth-110m-physical.geojson",
+    "mediaType": "application/geo+json",
+    "projection": "EPSG:4326",
+    "coordinateOrder": "longitude-latitude",
+    "bytes": 373637,
+    "gzipBytes": 140892,
+    "features": 263,
+    "sha256": "15d9b3d406807bfda709940e39f242c344de0cfb9e55a835299e3975a2520db7"
+  }
+}

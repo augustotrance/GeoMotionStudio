@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+playwright-report
+test-results
+evidence/g7/*.json
+evidence/g7/*.md
+assets/maps/natural-earth/sources
+assets/maps/natural-earth/derived
+docs
+itinerario
+CHANGELOG.md
+README.md
+LICENSE
+VALORES.md

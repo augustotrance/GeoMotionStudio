@@ -1,0 +1,45 @@
+{
+  "name": "geomotion-studio",
+  "version": "0.0.0-g7",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.20.0"
+  },
+  "packageManager": "pnpm@12.3.4+sha512-lhqkH7B32joEpEHZ+OFevAyW2o73ELLrZ7+e58sGEOq9SPH9hfUc/+c4RnhfoPh8VqOocqHYk/hEZ0G1zORUVw==",
+  "scripts": {
+    "dev": "pnpm --filter @geomotion/web dev",
+    "build": "pnpm typecheck && pnpm --filter @geomotion/web build",
+    "typecheck": "tsc --noEmit --pretty false -p tsconfig.json",
+    "lint": "oxlint --deny-warnings apps packages scripts tests *.ts",
+    "format:check": "prettier --check apps packages scripts tests configs .github package.json pnpm-workspace.yaml tsconfig.json vitest.config.ts playwright.config.ts",
+    "test": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "validate:docs": "node scripts/validate-docs.mjs",
+    "validate:architecture": "node scripts/validate-architecture.mjs",
+    "validate:schemas": "node scripts/validate-schemas.mjs",
+    "security:secrets": "node scripts/run-gitleaks.mjs",
+    "dependencies:check": "node scripts/check-dependencies.mjs",
+    "data:build": "node scripts/build-natural-earth.mjs",
+    "evidence:generate": "node scripts/generate-conformance.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:clean": "node scripts/verify-clean.mjs"
+  },
+  "devDependencies": {
+    "@geomotion/application": "workspace:*",
+    "@geomotion/identity": "workspace:*",
+    "@geomotion/infrastructure": "workspace:*",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "@vitest/expect": "5.0.0",
+    "@vitest/coverage-v8": "5.0.0",
+    "oxlint": "1.81.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "vite": "8.1.2",
+    "vitest": "5.0.0"
+  }
+}

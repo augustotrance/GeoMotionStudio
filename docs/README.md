@@ -18,7 +18,7 @@ Contiene el **Manual de Ingeniería** de GeoMotion Studio.
 
 Este manual describe la arquitectura completa de la plataforma, los principios de diseño, los componentes principales y las decisiones fundamentales que guían el desarrollo del proyecto.
 
-Actualmente está compuesto por **21 documentos** que abarcan, entre otros temas:
+Actualmente está compuesto por **22 documentos** que abarcan, entre otros temas:
 
 - Arquitectura General
 - Sistema de Diseño
@@ -29,6 +29,7 @@ Actualmente está compuesto por **21 documentos** que abarcan, entre otros temas
 - Gestión de Versiones
 - Arquitectura y dominio mínimos del piloto
 - Perfil de calidad, seguridad y verificación del piloto
+- Fundación ejecutable y conformidad automática del repositorio
 
 ---
 
@@ -76,11 +77,15 @@ Los documentos G4 y `INI-GMS-0001` están vigentes desde la publicación materia
 
 ## Especialización arquitectónica del piloto
 
-El Manual incorpora [DOC-019 · Arquitectura y dominio mínimos del piloto](ingeniería/19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md). DOC-019 y ADR-041 a ADR-045 están vigentes desde la publicación material verificada de `LB-G5-GMS-20260907-01`; G5 está cerrado y G6 habilitado únicamente en su dimensión documental.
+El Manual incorpora [DOC-019 · Arquitectura y dominio mínimos del piloto](ingeniería/19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md). DOC-019 y ADR-041 a ADR-045 están vigentes desde la publicación material verificada de `LB-G5-GMS-20260907-01`.
 
 ## Perfil medible del piloto
 
-[DOC-020 · Perfil de calidad, seguridad y verificación del piloto](ingeniería/20_PERFIL_DE_CALIDAD_SEGURIDAD_Y_VERIFICACIÓN_DEL_PILOTO.md), ADR-046 y ADR-047 fueron aprobados para incorporación mediante D-49 a D-60. Solo adquirirán vigencia con la publicación material de `LB-G6-GMS-20260908-01`. Su presencia no cierra G6, no abre G7, no crea una SPEC concreta y no autoriza código funcional.
+[DOC-020 · Perfil de calidad, seguridad y verificación del piloto](ingeniería/20_PERFIL_DE_CALIDAD_SEGURIDAD_Y_VERIFICACIÓN_DEL_PILOTO.md), ADR-046 y ADR-047 están vigentes desde la publicación material verificada de `LB-G6-GMS-20260908-01`. G6 está cerrado y G7 está habilitado únicamente para fundación e infraestructura de ingeniería.
+
+## Fundación ejecutable de G7
+
+[DOC-021 · Fundación ejecutable y conformidad automática del repositorio](ingeniería/21_FUNDACIÓN_EJECUTABLE_Y_CONFORMIDAD_AUTOMÁTICA_DEL_REPOSITORIO.md) y ADR-048 a ADR-054 fueron aprobados para incorporación mediante D-61 a D-72. Su vigencia permanece diferida hasta la publicación material de la futura `LB-G7-GMS-20260908-01`. La materialización no cierra G7, no abre G8, no crea una SPEC concreta y no autoriza código funcional.
 
 ---
 

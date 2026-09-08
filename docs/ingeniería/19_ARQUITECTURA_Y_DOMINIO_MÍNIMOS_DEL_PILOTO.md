@@ -26,7 +26,7 @@ El documento no es una SPEC, no selecciona una implementación, no modifica `app
 
 ## 2. Fuentes y precedencia
 
-La interpretación del presente candidato queda subordinada a las fuentes institucionales aprobadas y vigentes, entre ellas:
+La interpretación del presente documento queda subordinada a las fuentes institucionales aprobadas y vigentes, entre ellas:
 
 - DOC-001 · Visión del Producto;
 - DOC-002 · Arquitectura;
@@ -42,7 +42,7 @@ La interpretación del presente candidato queda subordinada a las fuentes instit
 - `INI-GMS-0001`; y
 - el Itinerario Maestro SDD v1.0.0.
 
-Ante una colisión, prevalece la fuente institucional competente y de mayor autoridad o la versión sucesora expresamente aprobada. Este documento fue aprobado para incorporación mediante D-37 a D-48; adquirirá vigencia únicamente con su publicación dentro de `LB-G5-GMS-20260907-01`.
+Ante una colisión, prevalece la fuente institucional competente y de mayor autoridad o la versión sucesora expresamente aprobada. Este documento está vigente desde su publicación dentro de `LB-G5-GMS-20260907-01`.
 
 ## 3. Alcance arquitectónico
 
@@ -217,7 +217,7 @@ ProjectDocument
     └── baseMapRef
 ```
 
-La codificación física, la extensión de archivo y el lenguaje formal del schema quedan abiertos para G7. Cualquier materialización deberá preservar exactamente estas responsabilidades y permitir validación automática.
+La codificación física, la extensión de archivo y el lenguaje formal del schema fueron resueltos para incorporación por D-69 y ADR-052. Su eficacia permanece diferida a la publicación de G7 y la materialización debe preservar exactamente estas responsabilidades y permitir validación automática.
 
 ## 7. Estados y transiciones
 
@@ -258,7 +258,7 @@ La condición de persistencia es ortogonal al estado operativo:
 
 Reglas de correspondencia con DOC-002: `Nuevo` se especializa como `NEW/UNSAVED`; `Abierto` como `OPEN`; `Modificado` como `OPEN/DIRTY`; `Guardado` como `OPEN/CLEAN`; `Cerrado` como `CLOSED`; y `Recuperado` como `OPEN/RECOVERED`.
 
-DOC-020 fija las garantías de recuperación aprobadas para incorporación; G7 decidirá y verificará el mecanismo material capaz de producir `RECOVERED`. La semántica no afirma que ese mecanismo exista antes de superar sus puertas.
+DOC-020 fija las garantías de recuperación; D-68 y ADR-051 resolvieron para incorporación el mecanismo material capaz de producir `RECOVERED`. La semántica no afirma que el caso de uso funcional exista antes de superar G9.
 
 ### 7.3 Estado operativo de Scene
 
@@ -469,16 +469,16 @@ Las siguientes cuestiones permanecen deliberadamente abiertas porque G5 fija arq
 
 | ID | Cuestión | Condición y etapa de cierre |
 |---|---|---|
-| `TECH-G5-001` | Motor cartográfico y adaptador | Permanece en G7; deberá satisfacer DOC-020 y ADR-046/047 cuando adquieran vigencia |
-| `TECH-G5-002` | Fuente/dataset del mapa base local y atribución | Cerrada documentalmente por D-59 y ADR-047; eficacia con `LB-G6-GMS-20260908-01`; incorporación material en G7 |
-| `TECH-G5-003` | Backend de almacenamiento local | Permanece en G7; deberá satisfacer compatibilidad, seguridad y recuperación de DOC-020 |
-| `TECH-G5-004` | Codificación física, extensión y lenguaje de schema del Project Document | G7; debe habilitar validación automática |
-| `TECH-G5-005` | Estrategia material de atomicidad, respaldo y recuperación | Garantías aprobadas para incorporación en DOC-020; mecanismo material permanece en G7 |
-| `TECH-G5-006` | Generador/formato de identificadores opacos | G7; no puede cambiar la semántica ni estabilidad aprobadas |
-| `TECH-G5-007` | Proyección y transformaciones internas del renderer | G7; el contrato externo conserva longitud/latitud WGS 84 |
-| `TECH-G5-008` | Mensajería/eventos internos concretos | G7; debe preservar contratos, ownership y ausencia de ciclos |
+| `TECH-G5-001` | Motor cartográfico y adaptador | Resuelta por D-67 y ADR-050; eficacia diferida a la publicación de G7 |
+| `TECH-G5-002` | Fuente/dataset del mapa base local y atribución | Vigente desde G6 e incorporada materialmente en el corte candidato G7 |
+| `TECH-G5-003` | Backend de almacenamiento local | Resuelta por D-68 y ADR-051; eficacia diferida a la publicación de G7 |
+| `TECH-G5-004` | Codificación física, extensión y lenguaje de schema del Project Document | Resuelta por D-69 y ADR-052; eficacia diferida a la publicación de G7 |
+| `TECH-G5-005` | Estrategia material de atomicidad, respaldo y recuperación | Resuelta por D-68 y ADR-051; eficacia diferida a la publicación de G7 |
+| `TECH-G5-006` | Generador/formato de identificadores opacos | Resuelta por D-69 y ADR-053; eficacia diferida a la publicación de G7 |
+| `TECH-G5-007` | Proyección y transformaciones internas del renderer | Resuelta por D-67 y ADR-050; eficacia diferida a la publicación de G7 |
+| `TECH-G5-008` | Mensajería/eventos internos concretos | Resuelta por D-70 y ADR-054; eficacia diferida a la publicación de G7 |
 
-Estas decisiones no autorizan adoptar `apps/web`. Ese experimento solo podrá tratarse mediante el cambio controlado de G7 expresamente autorizado.
+Estas decisiones de G5 no autorizaron adoptar `apps/web`. D-63 autorizó después su reemplazo controlado por la fundación mínima G7, con historia preservada en Git.
 
 ## 16. Tratamiento de las cuestiones de INI-GMS-0001
 
@@ -510,7 +510,7 @@ Estas decisiones no autorizan adoptar `apps/web`. Ese experimento solo podrá tr
 | IA excluida | §14 |
 | Tecnología no fingida | §15 |
 
-**Dictamen vigente:** la futura SPEC podrá redactarse sin inventar módulos, entidades, ownership, estados ni dependencias. G6 aprobó para incorporación las condiciones medibles; las decisiones tecnológicas asignadas a G7 deberán cerrarse antes de alcanzar las puertas posteriores aplicables.
+**Dictamen vigente:** la futura SPEC podrá redactarse sin inventar módulos, entidades, ownership, estados ni dependencias. G6 publicó las condiciones medibles; D-61 a D-72 resolvieron las decisiones tecnológicas de G7 para incorporación, cuya eficacia permanece diferida a la futura publicación de la Línea base G7.
 
 ## 18. Condición de vigencia
 

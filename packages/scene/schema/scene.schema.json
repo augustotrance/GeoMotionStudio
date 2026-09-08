@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:geomotion:schema:scene:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sceneId",
+    "projectId",
+    "name",
+    "order",
+    "mapViewId",
+    "operationalState"
+  ],
+  "properties": {
+    "sceneId": { "$ref": "urn:geomotion:schema:common:1#/$defs/uuidV4" },
+    "projectId": { "$ref": "urn:geomotion:schema:common:1#/$defs/uuidV4" },
+    "name": { "$ref": "urn:geomotion:schema:common:1#/$defs/nonEmptyName" },
+    "order": { "type": "integer", "minimum": 0 },
+    "mapViewId": { "$ref": "urn:geomotion:schema:common:1#/$defs/uuidV4" },
+    "operationalState": { "enum": ["ACTIVE", "INACTIVE"] }
+  }
+}
