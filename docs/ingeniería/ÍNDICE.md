@@ -57,6 +57,7 @@ Este bloque describe la arquitectura principal de GeoMotion Studio y la organiza
 | **09_RESPONSIVE.md** | Estrategia de adaptación de la interfaz a diferentes dispositivos y resoluciones. |
 | **10_ESTADO_GLOBAL.md** | Gestión del estado global, comunicación entre módulos y flujo de información. |
 | **11_RENDERIZADO.md** | Arquitectura del sistema de renderizado y representación visual de la plataforma. |
+| **19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md** | Especialización mínima de Project, Scene, Map View y Project Document para el primer incremento; vigencia sujeta a la publicación de la Línea base G5. |
 
 ---
 

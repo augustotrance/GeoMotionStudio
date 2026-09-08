@@ -51,6 +51,7 @@ En conjunto, el Manual describe:
 
 - Los fundamentos del proyecto.
 - La arquitectura principal de la plataforma.
+- La arquitectura y el dominio mínimos necesarios para especificar el primer incremento.
 - Las arquitecturas transversales que amplían sus capacidades.
 - Los mecanismos de gobernanza que garantizan su evolución.
 
@@ -157,7 +158,7 @@ Cada versión del proyecto deberá disponer de una versión equivalente del Manu
 
 | Propiedad | Valor |
 |-----------|-------|
-| **Versión** | 1.0 |
+| **Versión** | 1.1 |
 | **Estado** | Completo |
 | **Idioma** | Español |
 | **Mantenimiento** | Activo |
