@@ -18,7 +18,7 @@ Contiene el **Manual de Ingeniería** de GeoMotion Studio.
 
 Este manual describe la arquitectura completa de la plataforma, los principios de diseño, los componentes principales y las decisiones fundamentales que guían el desarrollo del proyecto.
 
-Actualmente está compuesto por **20 documentos** que abarcan, entre otros temas:
+Actualmente está compuesto por **21 documentos** que abarcan, entre otros temas:
 
 - Arquitectura General
 - Sistema de Diseño
@@ -28,6 +28,7 @@ Actualmente está compuesto por **20 documentos** que abarcan, entre otros temas
 - Autenticación y Seguridad
 - Gestión de Versiones
 - Arquitectura y dominio mínimos del piloto
+- Perfil de calidad, seguridad y verificación del piloto
 
 ---
 
@@ -75,7 +76,11 @@ Los documentos G4 y `INI-GMS-0001` están vigentes desde la publicación materia
 
 ## Especialización arquitectónica del piloto
 
-El Manual incorpora [DOC-019 · Arquitectura y dominio mínimos del piloto](ingeniería/19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md), aprobado para incorporación mediante D-37 a D-48. DOC-019 y ADR-041 a ADR-045 solo adquirirán vigencia con la publicación material de `LB-G5-GMS-20260907-01`; su presencia no cierra G5, no abre G6 y no crea una SPEC.
+El Manual incorpora [DOC-019 · Arquitectura y dominio mínimos del piloto](ingeniería/19_ARQUITECTURA_Y_DOMINIO_MÍNIMOS_DEL_PILOTO.md). DOC-019 y ADR-041 a ADR-045 están vigentes desde la publicación material verificada de `LB-G5-GMS-20260907-01`; G5 está cerrado y G6 habilitado únicamente en su dimensión documental.
+
+## Perfil medible del piloto
+
+[DOC-020 · Perfil de calidad, seguridad y verificación del piloto](ingeniería/20_PERFIL_DE_CALIDAD_SEGURIDAD_Y_VERIFICACIÓN_DEL_PILOTO.md), ADR-046 y ADR-047 fueron aprobados para incorporación mediante D-49 a D-60. Solo adquirirán vigencia con la publicación material de `LB-G6-GMS-20260908-01`. Su presencia no cierra G6, no abre G7, no crea una SPEC concreta y no autoriza código funcional.
 
 ---
 

@@ -4,7 +4,7 @@
 
 **Código:** `DOC-019`  
 **Versión:** `1.0.0`  
-**Estado:** Aprobado para incorporación — vigencia diferida hasta la publicación material de `LB-G5-GMS-20260907-01`  
+**Estado:** Vigente — publicación material de `LB-G5-GMS-20260907-01` verificada  
 **Fecha:** 7 de septiembre de 2026  
 **Clasificación:** Manual de Ingeniería  
 **Etapa:** G5 — Arquitectura y dominio mínimos  
@@ -22,7 +22,7 @@ Consolidar la arquitectura y el dominio estrictamente necesarios para especifica
 
 Este documento especializa la arquitectura vigente para el piloto. No reemplaza ni duplica la Visión, la Constitución, el Manual de Ingeniería, los ADR vigentes, el gobierno SDD ni los documentos de producto aprobados.
 
-El documento no es una SPEC, no selecciona una implementación, no modifica `apps/web` y no autoriza código funcional. Su aprobación para incorporación no equivale a vigencia antes de la publicación material de la Línea base G5 exacta.
+El documento no es una SPEC, no selecciona una implementación, no modifica `apps/web` y no autoriza código funcional. Se encuentra vigente desde la publicación material verificada de la Línea base G5 exacta.
 
 ## 2. Fuentes y precedencia
 
@@ -141,7 +141,7 @@ Datos mínimos:
 | Campo conceptual | Regla |
 |---|---|
 | `projectId` | Obligatorio, opaco, único y estable durante la vida del Project |
-| `name` | Obligatorio; reglas de longitud y caracteres se fijarán en la SPEC/G6 |
+| `name` | Obligatorio; reglas funcionales de longitud y caracteres se fijarán en la futura SPEC, ejercitando los datos internacionales de DOC-020 |
 | `sceneIds` | Colección no vacía para el piloto |
 | `activeSceneId` | Referencia exactamente a un miembro de `sceneIds` |
 | `lifecycleState` | Uno de los estados definidos en §7.1 |
@@ -258,7 +258,7 @@ La condición de persistencia es ortogonal al estado operativo:
 
 Reglas de correspondencia con DOC-002: `Nuevo` se especializa como `NEW/UNSAVED`; `Abierto` como `OPEN`; `Modificado` como `OPEN/DIRTY`; `Guardado` como `OPEN/CLEAN`; `Cerrado` como `CLOSED`; y `Recuperado` como `OPEN/RECOVERED`.
 
-El mecanismo que puede producir `RECOVERED` se decide en G6–G7; G5 reserva la semántica sin afirmar que exista todavía.
+DOC-020 fija las garantías de recuperación aprobadas para incorporación; G7 decidirá y verificará el mecanismo material capaz de producir `RECOVERED`. La semántica no afirma que ese mecanismo exista antes de superar sus puertas.
 
 ### 7.3 Estado operativo de Scene
 
@@ -423,7 +423,7 @@ Todo error que atraviese una frontera incluye como mínimo:
 | `GMS-AUT-001` | Acción local denegada por política o plataforma | Solicitar/otorgar acceso por el mecanismo anfitrión permitido |
 | `GMS-INT-001` | Fallo interno no clasificado | Preservar estado y ofrecer reintento seguro si corresponde |
 
-Un mensaje comprensible no debe exponer rutas privadas, tokens, stack traces, contenido completo del documento ni datos que G6 clasifique como sensibles.
+Un mensaje comprensible no debe exponer rutas privadas, tokens, stack traces, contenido completo del documento ni datos clasificados como sensibles por DOC-020.
 
 ## 13. Identidad y autorización mínima
 
@@ -469,11 +469,11 @@ Las siguientes cuestiones permanecen deliberadamente abiertas porque G5 fija arq
 
 | ID | Cuestión | Condición y etapa de cierre |
 |---|---|---|
-| `TECH-G5-001` | Motor cartográfico y adaptador | G7, después de criterios de licencia, sustitución, compatibilidad y datos de G6 |
-| `TECH-G5-002` | Fuente/dataset del mapa base local y atribución | G6; debe estar resuelta antes de la SPEC candidata de G8 |
-| `TECH-G5-003` | Backend de almacenamiento local | G7, conforme a seguridad, compatibilidad y recuperación de G6 |
+| `TECH-G5-001` | Motor cartográfico y adaptador | Permanece en G7; deberá satisfacer DOC-020 y ADR-046/047 cuando adquieran vigencia |
+| `TECH-G5-002` | Fuente/dataset del mapa base local y atribución | Cerrada documentalmente por D-59 y ADR-047; eficacia con `LB-G6-GMS-20260908-01`; incorporación material en G7 |
+| `TECH-G5-003` | Backend de almacenamiento local | Permanece en G7; deberá satisfacer compatibilidad, seguridad y recuperación de DOC-020 |
 | `TECH-G5-004` | Codificación física, extensión y lenguaje de schema del Project Document | G7; debe habilitar validación automática |
-| `TECH-G5-005` | Estrategia material de atomicidad, respaldo y recuperación | Perfil de fiabilidad en G6 y materialización en G7 |
+| `TECH-G5-005` | Estrategia material de atomicidad, respaldo y recuperación | Garantías aprobadas para incorporación en DOC-020; mecanismo material permanece en G7 |
 | `TECH-G5-006` | Generador/formato de identificadores opacos | G7; no puede cambiar la semántica ni estabilidad aprobadas |
 | `TECH-G5-007` | Proyección y transformaciones internas del renderer | G7; el contrato externo conserva longitud/latitud WGS 84 |
 | `TECH-G5-008` | Mensajería/eventos internos concretos | G7; debe preservar contratos, ownership y ausencia de ciclos |
@@ -482,16 +482,16 @@ Estas decisiones no autorizan adoptar `apps/web`. Ese experimento solo podrá tr
 
 ## 16. Tratamiento de las cuestiones de INI-GMS-0001
 
-| Cuestión | Resultado G5 candidato |
+| Cuestión | Resultado vigente y tratamiento posterior |
 |---|---|
 | `OPEN-INI-0001-01` | Resuelta arquitectónicamente por §§4–5 y ADR-041 a ADR-043 |
 | `OPEN-INI-0001-02` | Resuelta por §§6–9 |
 | `OPEN-INI-0001-03` | Frontera de adaptador resuelta; selección concreta registrada como `TECH-G5-001` |
 | `OPEN-INI-0001-04` | Modelo lógico y versión inicial resueltos; codificación física registrada como `TECH-G5-004` |
 | `OPEN-INI-0001-05` | Puerto y semántica resueltos; backend/recuperación material registrados como `TECH-G5-003` y `TECH-G5-005` |
-| `OPEN-INI-0001-06` | Independencia remota resuelta; fuente, licencia, atribución y comportamiento verificable pasan a `TECH-G5-002` y G6 |
-| `OPEN-INI-0001-07` | Permanece en G6 |
-| `OPEN-INI-0001-08` | Permanece en G6 |
+| `OPEN-INI-0001-06` | Resuelta documentalmente por D-59 y ADR-047; eficacia de la especialización con la publicación de `LB-G6-GMS-20260908-01` |
+| `OPEN-INI-0001-07` | Resuelta por D-51 y DOC-020 §5; eficacia con la publicación de `LB-G6-GMS-20260908-01` |
+| `OPEN-INI-0001-08` | Resuelta por D-60 y DOC-020 §§6–13; eficacia con la publicación de `LB-G6-GMS-20260908-01` |
 | `OPEN-INI-0001-09` | Contratos y errores resueltos en §§11–12; criterios binarios permanecen en G8 |
 
 ## 17. Evidencia para la Puerta G5
@@ -510,8 +510,8 @@ Estas decisiones no autorizan adoptar `apps/web`. Ese experimento solo podrá tr
 | IA excluida | §14 |
 | Tecnología no fingida | §15 |
 
-**Dictamen aprobado para materialización:** la futura SPEC podrá redactarse sin inventar módulos, entidades, ownership, estados ni dependencias cuando este documento y los ADR-041 a ADR-045 se publiquen dentro de la misma Línea base G5. Las condiciones medibles y decisiones tecnológicas registradas deberán cerrarse en G6–G7 antes de alcanzar las puertas posteriores aplicables.
+**Dictamen vigente:** la futura SPEC podrá redactarse sin inventar módulos, entidades, ownership, estados ni dependencias. G6 aprobó para incorporación las condiciones medibles; las decisiones tecnológicas asignadas a G7 deberán cerrarse antes de alcanzar las puertas posteriores aplicables.
 
 ## 18. Condición de vigencia
 
-Este documento fue aprobado para incorporación mediante D-37 a D-48 y materializado de forma controlada. Adquirirá vigencia únicamente con la publicación material de `LB-G5-GMS-20260907-01`. Su aprobación o publicación no crea una SPEC, no declara `INI-GMS-0001` Lista para Especificar, no abre G6 antes del cierre material de G5, no modifica `apps/web`, no autoriza código funcional ni anticipa G9.
+Este documento se encuentra vigente desde la publicación material verificada de `LB-G5-GMS-20260907-01` en el commit `e651bb65a514653d3f268daa1bd3ddfcfc4aa39d`. Su vigencia no crea una SPEC, no declara `INI-GMS-0001` Lista para Especificar, no modifica `apps/web`, no autoriza código funcional ni anticipa G9.

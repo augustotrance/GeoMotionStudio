@@ -52,6 +52,7 @@ En conjunto, el Manual describe:
 - Los fundamentos del proyecto.
 - La arquitectura principal de la plataforma.
 - La arquitectura y el dominio mínimos necesarios para especificar el primer incremento.
+- El perfil medible de calidad, seguridad y verificación aplicable al primer incremento.
 - Las arquitecturas transversales que amplían sus capacidades.
 - Los mecanismos de gobernanza que garantizan su evolución.
 

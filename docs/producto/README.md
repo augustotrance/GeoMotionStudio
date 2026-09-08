@@ -2,7 +2,7 @@
 
 Esta carpeta reúne los instrumentos de G4 que relacionan stakeholders, actores, perfiles, capacidades, alcance, fronteras de producto e iniciativas priorizadas de GeoMotion Studio.
 
-**Estado del conjunto:** Aprobado para incorporación — vigencia diferida hasta la publicación material de la Línea base G4 que lo incluya  
+**Estado del conjunto:** Vigente — publicación material de `LB-G4-GMS-20260904-01` verificada  
 **Autoridad:** Founder  
 **Trazabilidad:** `ACTO-G4-GMS-20260904-09`; D-29 a D-36  
 **Línea base de entrada:** `LB-G3-GMS-20260904-01`
@@ -14,11 +14,11 @@ Esta carpeta reúne los instrumentos de G4 que relacionan stakeholders, actores,
 - [Fronteras de ediciones, licencias y propiedad intelectual](FRONTERAS_EDICIONES_LICENCIAS_Y_PI_v1.0.0.md).
 - [INI-GMS-0001 — Proyecto local persistente con escena y mapa base 2D](INICIATIVA_INI-GMS-0001_v1.0.0.md).
 
-## Condición de vigencia
+## Estado vigente
 
-La aprobación de D-29 a D-36 autoriza esta incorporación documental. El conjunto solo adquirirá vigencia con la publicación material de la Línea base G4 exacta que lo incluya.
+La aprobación de D-29 a D-36 y la publicación material verificada de `LB-G4-GMS-20260904-01` incorporaron y activaron este conjunto documental.
 
-En particular, `INI-GMS-0001` todavía no está admitida ni priorizada operativamente. Su publicación dentro de esa línea base producirá ambos efectos y habilitará recién entonces el inicio documental de G5.
+En particular, `INI-GMS-0001` está vigente, admitida y priorizada operativamente desde esa publicación. Continúa sin una SPEC concreta y sin condición Lista para Especificar.
 
 ## Límites
 

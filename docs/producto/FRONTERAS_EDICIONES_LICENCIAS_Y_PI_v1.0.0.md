@@ -4,7 +4,7 @@
 
 **Identificador:** `CAND-G4-EDI-LIC-01`  
 **Versión:** `1.0.0`  
-**Estado:** Aprobado para incorporación — vigencia diferida hasta la publicación material de la Línea base G4 que lo incluya  
+**Estado:** Vigente — publicación material de `LB-G4-GMS-20260904-01` verificada  
 **Fecha:** 4 de septiembre de 2026  
 **Etapa:** G4 — Stakeholders, actores, alcance y capacidades  
 **Autoridad:** Founder  
@@ -71,8 +71,8 @@ Por tanto, el material actualmente publicado en el repositorio se distribuye con
 |---|---|---|---|
 | `PI-G4-01` | Política de marca, nombres e identidad visual | Antes de distribución de marca por terceros | No |
 | `PI-G4-02` | Mecanismo de contribución y declaraciones de autoría o procedencia | Antes de aceptar contribuciones externas materiales | No para seleccionar el piloto |
-| `PI-G4-03` | Inventario y control de licencias de dependencias | G6–G7, antes de fundación ejecutable aprobada | No en G4 |
-| `PI-G4-04` | Fuente cartográfica, datos y condiciones del mapa base | G5–G6, antes de aprobar la SPEC piloto | No en G4; sí antes de G8 |
+| `PI-G4-03` | Política aprobada para incorporación en DOC-020; inventario ejecutable y control de dependencias permanecen en G7 | G6–G7, antes de fundación ejecutable aprobada | No en G4 |
+| `PI-G4-04` | Fuente y condiciones resueltas documentalmente por D-59 y ADR-047; incorporación material permanece en G7 | G6–G7, antes de aprobar la SPEC piloto | No en G4; sí antes de G8 |
 | `PI-G4-05` | Licencias de assets, tipografías, modelos y contenido premium | Antes de incorporar cada activo o catálogo | No |
 | `PI-G4-06` | Régimen de código o servicios futuros fuera del núcleo Community | Antes de materializar Pro, Cloud, AI, Marketplace o Enterprise | No |
 | `PI-G4-07` | Términos de servicio, privacidad y tratamiento de datos remotos | Antes de servicios remotos o cuentas | No |
@@ -95,4 +95,4 @@ La aprobación de este documento:
 
 ## 8. Condición de vigencia
 
-Este registro fue aprobado para incorporación mediante D-35 y materializado de forma controlada. Solo adquirirá vigencia con la publicación material de la Línea base G4 exacta que lo incluya.
+Este registro se encuentra vigente desde la publicación material verificada de `LB-G4-GMS-20260904-01`. Las resoluciones aprobadas para incorporación en G6 adquirirán vigencia únicamente con la publicación material de `LB-G6-GMS-20260908-01`.
